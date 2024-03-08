@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: kjz-geo-search-sdk
+Version: 1.0.0
+Summary: 空间站数据搜索SDK
+Author: yc
+Author-email: liu.fei@yunstorm.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# pyencrypt3
+
+
+
+![](https://img.shields.io/badge/python-3.11-brightgreen)
+
+
+
+## 简介
+
+
+
+    空间站数据搜索SDK
+
+
+
+## 安装
+
+
+
+    pip install kjz_geo_search_sdk
+
+
+
+## 使用方法
+
+
+
+    from kjz_geo_search_sdk.get_data import get_kjz_data
+
+    url = "http://xxx.com"
+
+    query = {
+
+        "from": 0,
+
+        "size": 5,
+
+        "query": {
+
+            "bool": {
+
+                "must": [
+
+                    {
+
+                        "match_all": {}
+
+                    }
+
+                ]
+
+            }
+
+        }
+
+    }
+
+    get_kjz_data(url, query)
+
+
+
+## 参数说明：
+
+
+
+    url   | 请求地址
+
+    query | 请求参数
+
