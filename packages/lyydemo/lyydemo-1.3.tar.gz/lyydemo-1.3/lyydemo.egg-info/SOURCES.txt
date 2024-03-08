@@ -1,0 +1,8 @@
+LICENSE
+README.md
+lyydemo.py
+setup.py
+lyydemo.egg-info/PKG-INFO
+lyydemo.egg-info/SOURCES.txt
+lyydemo.egg-info/dependency_links.txt
+lyydemo.egg-info/top_level.txt
