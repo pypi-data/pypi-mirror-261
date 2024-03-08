@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cwruhunnu
+Version: 0.1.0
+Summary: 导入cwru数据集和一些预操作
+Author: xiaozhengyi
+Author-email: 201930222056@hunnu.edu.cn
+License: apache 3.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
