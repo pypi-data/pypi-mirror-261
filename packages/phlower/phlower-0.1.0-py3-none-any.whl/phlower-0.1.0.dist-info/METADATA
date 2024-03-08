@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: phlower
+Version: 0.1.0
+Summary: This is a Python package which helps you handle GNN especially for physics problems.
+License: Apache-2.0
+Author: sakamoto
+Author-email: sakamoto@ricos.co.jp
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# phlower
+
+This is a Python package which helps you handle GNN especially for physics problems.
+
+
