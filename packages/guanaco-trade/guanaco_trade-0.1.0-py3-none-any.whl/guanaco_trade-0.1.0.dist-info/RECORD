@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clock.py,sha256=MmEnxYtPV3rWHH-NwNo_v_zTIPLAEyJF5bgaJIKE0no,1961
+configuration.py,sha256=Jy036qgSUWsbetG4Y5qvp7A9H3GPwiDJq3PL3b3Ev5Q,3804
+data.py,sha256=lUhT8aHbfCuWfQDgJZxTDM4hfTAc8FoHjeIl_lQsIfw,2346
+guanaco.py,sha256=cErZGYPVnXIuVSysAb2gaLAwJAIJgYW6YPsF_rK02tQ,6728
+guanaco_trade-0.1.0.dist-info/LICENSE.txt,sha256=_5RQ9cUDLvSDW6t204AZvFn_GL8HvEslV8l5fmgRCS4,1068
+guanaco_trade-0.1.0.dist-info/METADATA,sha256=d8RQX4OohbQHbQapfZb-RCEDqTkyLgm2N5YGqH6fD3Q,2604
+guanaco_trade-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+guanaco_trade-0.1.0.dist-info/top_level.txt,sha256=KF2OVyzUrKFb-puKFQ8UWz5KG6OTdxaQ1x5cCs00moQ,42
+guanaco_trade-0.1.0.dist-info/RECORD,,
