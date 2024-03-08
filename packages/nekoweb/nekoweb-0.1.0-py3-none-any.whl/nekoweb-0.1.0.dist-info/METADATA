@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nekoweb
+Version: 0.1.0
+Summary: Nekoweb API wrapper
+License: GPLv3
+Author: TheCreatorrr333
+Author-email: thecreatorrr333@gmail.com
+Requires-Python: >=3.12,<3.13
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: tcrutils (>=12.0.122,<13.0.0)
+Description-Content-Type: text/markdown
+
+# Nekoweb API wrapper
+
