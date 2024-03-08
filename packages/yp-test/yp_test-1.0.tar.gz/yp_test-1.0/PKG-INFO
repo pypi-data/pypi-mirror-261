@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yp_test
+Version: 1.0
+Summary: test 
+Author: py7272
+Author-email: 
+Keywords: python,menu,dumb_menu,windows,mac,linux
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+"""测试"""
