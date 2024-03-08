@@ -1,0 +1,7 @@
+betterproto==1.2.5
+
+[notebook]
+notebook
+jupyterlab
+dask-sql
+python-graphviz
