@@ -1,0 +1,42 @@
+[project]
+name = "utilblob-py"
+version = "0.1.0"
+description = "Various Python utilities."
+authors = [
+    { name = "Mateusz Obszanski", email = "matobszanski@gmail.com" },
+]
+dependencies = [
+    "more-itertools>=10.2.0",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+rich = [
+    "rich>=13.7.1",
+]
+progress = [
+    "rich>=13.7.1",
+]
+err = [
+    "rich>=13.7.1",
+]
+csv = [
+    "pandas>=2.2.1",
+]
+all = [
+    "rich>=13.7.1",
+    "pandas>=2.2.1",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
