@@ -1,0 +1,1 @@
+from scythe_auto_update import check_for_updates
