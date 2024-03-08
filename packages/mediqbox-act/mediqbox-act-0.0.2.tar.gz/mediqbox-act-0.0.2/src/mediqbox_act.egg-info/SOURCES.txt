@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/mediqbox/act/__init__.py
+src/mediqbox/act/act.py
+src/mediqbox/act/helpers.py
+src/mediqbox_act.egg-info/PKG-INFO
+src/mediqbox_act.egg-info/SOURCES.txt
+src/mediqbox_act.egg-info/dependency_links.txt
+src/mediqbox_act.egg-info/requires.txt
+src/mediqbox_act.egg-info/top_level.txt
+tests/test_translate_files.py
+tests/test_translate_texts.py
