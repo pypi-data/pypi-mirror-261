@@ -1,0 +1,12 @@
+README.md
+setup.py
+zsindy/__init__.py
+zsindy/dynamical_models.py
+zsindy/experiments.py
+zsindy/ml_module.py
+zsindy/plotting.py
+zsindy.egg-info/PKG-INFO
+zsindy.egg-info/SOURCES.txt
+zsindy.egg-info/dependency_links.txt
+zsindy.egg-info/requires.txt
+zsindy.egg-info/top_level.txt

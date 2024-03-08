@@ -1,0 +1,7 @@
+cmcrameri==1.7
+matplotlib
+numpy
+pysindy==1.7.5
+scipy==1.11.3
+setuptools==67.4.0
+tqdm==4.64.1
