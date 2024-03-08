@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: bluevision
+Version: 0.0.3
+Summary: Bluesignal Vision AI project
+Project-URL: Documentation, https://github.com/dh031200/bluevision#readme
+Project-URL: Issues, https://github.com/dh031200/bluevision/issues
+Project-URL: Source, https://github.com/dh031200/bluevision
+Author-email: dh031200 <imbird0312@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: AI,Bluesignal,computer-vision
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Requires-Dist: lapx>=0.5.2
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: torchvision
+Description-Content-Type: text/markdown
+
+# bluevision
+
+[![PyPI - Version](https://img.shields.io/pypi/v/bluevision.svg)](https://pypi.org/project/bluevision)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bluevision.svg)](https://pypi.org/project/bluevision)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Test
+```text
+$ python test_with_time.py
+Using device: mps
+preprocess: 0.00225s, infer: 0.015508s, postprocess: 0.01313s, track: 0.00108s, draw: 0.000670s, total: 0.03462s, t-avg: 0.03576s
+total frame : 1050
+total elapsed time: 56.25610s
+total inference time: 37.55273s
+```
+
+
+## Installation
+
+```console
+pip install bluevision
+```
+
+## License
+
+`bluevision` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
