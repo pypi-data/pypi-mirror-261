@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "nlu-trainer"
+version = "0.2.1"
+description = "普强信息语言理解模型训练框架"
+authors = ["wangmengdi <wangmengdi@pachiratech.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+fasttext = ">=0.9.1"
+nlp-data = ">=0.2.1"
+lightning = ">=2.1.0"
+wasabi = ">=1.1.2"
+datasets = ">=2.14.5"
+pandas = ">=1.9.0"
+jsonargparse = {version = ">=4.26.0", extras = ["signatures"]}
+rich = ">=13.5.3"
+onnxruntime = ">=1.15.1"
+nlu-inference = ">=0.3.0"
+onnx = ">=1.14.0"
+
+[tool.poetry.scripts]
+nlu-trainer = "nlu_trainer.cli:run_cli"
+
+[[tool.poetry.source]]
+name = "pachira"
+url = "http://192.168.130.5:5002/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

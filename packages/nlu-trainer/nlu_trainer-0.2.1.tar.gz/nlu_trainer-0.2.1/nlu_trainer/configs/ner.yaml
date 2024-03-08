@@ -1,0 +1,16 @@
+lr: 0.001
+devices: [0]
+hidden_size: 128
+max_epochs: 10
+freeze_embedding: True
+embedding_name: null
+batch_size: 32
+max_length: 32
+pad_side: left
+num_workers: 4
+patience: 3
+save_cloud: true
+save_local: true
+optimize: false
+process_batch_size: 5000
+compile: false
