@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: radar-models
+Version: 1.1.2
+Summary: DB models for Radar
+License: MIT
+Author: Andrew Atterton
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.6.3,<3.0.0)
+Requires-Dist: sqlmodel (>=0.0.16,<0.0.17)
+Description-Content-Type: text/markdown
+
+# radar-models
