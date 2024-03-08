@@ -1,0 +1,1 @@
+include src/ts_to_s3_sftp/*.yaml
