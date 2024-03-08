@@ -1,0 +1,11 @@
+LICENCE.txt
+README.md
+setup.cfg
+setup.py
+rvs_palmvision/__init__.py
+rvs_palmvision/palmvision.py
+rvs_palmvision.egg-info/PKG-INFO
+rvs_palmvision.egg-info/SOURCES.txt
+rvs_palmvision.egg-info/dependency_links.txt
+rvs_palmvision.egg-info/requires.txt
+rvs_palmvision.egg-info/top_level.txt
