@@ -1,0 +1,604 @@
+DEBUG: cli.cli: Debug mode enabled.
+DEBUG: scraper.main: Instantiate vendor.
+DEBUG: Vendor.set_vendor_data: Vendor data is: '{'code': 'gj', 'name': 'Great Jones', 'isbn_key': 'IsbN-13', 'failover_scraper': 'GJScraper'}'
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+ERROR: Item.validate_isbn: Err reading isbn 'None', err: 'int() argument must be a string, a bytes-like object or a real number, not 'NoneType''
+DEBUG: Item._sort_data: Sorted keys: ['TITLE', 'SUBTITLE', 'AUTHOR', 'PUBLISHER', 'P/C', 'RETAIL $', 'GJ $', 'NET $', 'SUBJECT', 'TYPE', 'DIMENSION', 'ISBN-13', 'DESCRIPTION']
+INFO: scraper.main: Searching for 9780307272720 ...
+INFO: scraper.main: 9780307272720 found in database, skipping
+INFO: scraper.main: Searching for 9782072943270 ...
+INFO: scraper.main: 9782072943270 found in database, skipping
+INFO: scraper.main: Searching for 9780500024652 ...
+INFO: scraper.main: 9780500024652 found in database, skipping
