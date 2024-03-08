@@ -1,0 +1,10 @@
+logo_diagram_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logo_diagram_generator/cli.py,sha256=tRUMe4lZUOJ-QwguFD0I33ROFsJj6F6u9SkhscNFiFw,4184
+logo_diagram_generator/download_logos.py,sha256=VeGe6aVeAS2gaE78kSf7_Ksx3gfxo6HzLHJZ1lCyz-4,6276
+logo_diagram_generator/generate_diagram.py,sha256=SAbbdjpWECHPm2RKtBWDuRP32hiqLItZdpcnJOztsss,14754
+logo_diagram_generator/utils.py,sha256=mUlBoMJYaE-7CM7JIdL5uBEaXXeLwSjRZ8aL4ZbQKcM,4612
+logo_diagram_generator-0.3.5.dist-info/LICENSE,sha256=0li1XKGd12dkWRDkAk88ZNHuFKcG-i5XxojTFlUaB4s,1080
+logo_diagram_generator-0.3.5.dist-info/METADATA,sha256=DS12Wo7XPEua0Ax6pTJNd_1L1bt140Df0XZG_1AmE3I,8403
+logo_diagram_generator-0.3.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+logo_diagram_generator-0.3.5.dist-info/entry_points.txt,sha256=HHJZbkDywmxUkC6btThTMEiDxBu7XWsMCchi1PrLEa8,74
+logo_diagram_generator-0.3.5.dist-info/RECORD,,
