@@ -1,0 +1,13 @@
+pysparql_anything/__about__.py,sha256=QZEzxkgj_BAWU3LRqbx6_MteX1Kf6OIhbMMdrOh5XQU,625
+pysparql_anything/__init__.py,sha256=GHyMU9vFAG9jeu1iubn1OpmkwIS6PAJlTClT34a5Hzk,1386
+pysparql_anything/args_handlers.py,sha256=acJoSOlx1Aq70K0vw0ekZlNZHAxYs0VOueQX9zdcVF0,3683
+pysparql_anything/cli.py,sha256=l42VIk1Xpvpy1YqIvxQrJnrIvZtQDhjM1dR5ltCG6lQ,2885
+pysparql_anything/command.py,sha256=cqdW-Pv8THSi5Z9z5dbNsmb5o6FcxBgszPiGk4RY4Vc,4031
+pysparql_anything/sparql_anything.py,sha256=BwfDXFUTSEqSokSC68ffMe_Ffxcy6nXZbF-TUWYFqFs,4279
+pysparql_anything/sparql_anything_reflection.py,sha256=eMbPJhdT8m8nY4JUw0JorQ19CoaNAJXkXQToi6kgmEU,3270
+pysparql_anything/utilities.py,sha256=2c4IgLNCmIptZUPXZ_2u2M0AUwz4enWgZPgPdezd3G0,4655
+pysparql_anything-0.9.0.2.dist-info/METADATA,sha256=FJpJanHpXCJ0h5LrDYNXt5XCNzNDlACRibun5GKBJoQ,15863
+pysparql_anything-0.9.0.2.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+pysparql_anything-0.9.0.2.dist-info/entry_points.txt,sha256=FpjG7l9fas6lIygk_UG0vqrDpnYdslh1RrirHGiMD1c,63
+pysparql_anything-0.9.0.2.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pysparql_anything-0.9.0.2.dist-info/RECORD,,
