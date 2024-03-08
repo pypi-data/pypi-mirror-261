@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+pub_worm.egg-info/PKG-INFO
+pub_worm.egg-info/SOURCES.txt
+pub_worm.egg-info/dependency_links.txt
+pub_worm.egg-info/not-zip-safe
+pub_worm.egg-info/requires.txt
+pub_worm.egg-info/top_level.txt
+pub_worm/impact_factor/data/2022_JCR_IF.csv
+pub_worm/wormbase/data/wormbase_field_gene.json
+pub_worm/wormbase/data/wormbase_field_paper.json
+pub_worm/wormbase/data/wormbase_widget_gene.json
