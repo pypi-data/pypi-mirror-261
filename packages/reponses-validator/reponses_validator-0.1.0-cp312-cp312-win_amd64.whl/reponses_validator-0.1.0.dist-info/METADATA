@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: reponses-validator
+Version: 0.1.0
+Summary: Write response validation scripts for requests using flexible YAML syntax, including: status_code, headers, text, and json()
+License: MIT
+Author-email: dongfangtianyu <7629022+dongfangtianyu@users.noreply.github.com>
+Requires-Python: >=3.12
+Requires-Dist: genson>=1.2.2
+Requires-Dist: jsonpath>=0.82.2
+Requires-Dist: jsonschema>=4.21.1
+Description-Content-Type: text/markdown
+
+# requests-asserts
+
