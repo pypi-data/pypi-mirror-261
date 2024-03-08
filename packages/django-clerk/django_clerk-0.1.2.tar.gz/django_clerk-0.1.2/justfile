@@ -1,0 +1,8 @@
+bump: 
+  hatch version patch
+
+build:
+  hatch build
+
+publish: bump build
+  hatch publish
