@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pgame_simple
+Version: 0.1.1
+Summary: a framework based on pygame
+Author: MRanos
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+pgame_simple is a simple lib based on pygame
+by MRanos
+
+
+simple example:
+
+from pgame_simple import pgame_simple
+game = pgame_simple.screen(400,400)
+player = game.image("player.png")
+player_x,player_y=50,50
+def update():
+   global player_x , player_y
+   game.bg((255,255,255))
+   game.draw(player,player_x,player_y)
+   player_x = game.movex(player_x,1)
+   player_y = game.movey(player_y,1)
+   
+game.start(update)
