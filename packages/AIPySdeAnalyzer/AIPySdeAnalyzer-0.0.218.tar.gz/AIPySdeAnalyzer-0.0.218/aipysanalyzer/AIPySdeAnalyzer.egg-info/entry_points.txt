@@ -1,0 +1,3 @@
+[console_scripts]
+load-parameters = aipysanalyzer.CLI.loadParametres:main
+updateParameters = aipysanalyzer.CLI.setParameters:update_user_parameters
