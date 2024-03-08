@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+rnastructure_wrapper/__init__.py
+rnastructure_wrapper/main.py
+rnastructure_wrapper.egg-info/PKG-INFO
+rnastructure_wrapper.egg-info/SOURCES.txt
+rnastructure_wrapper.egg-info/dependency_links.txt
+rnastructure_wrapper.egg-info/requires.txt
+rnastructure_wrapper.egg-info/top_level.txt
