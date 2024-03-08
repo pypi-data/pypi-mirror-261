@@ -1,0 +1,149 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/prefs_main_template/macros/master"
+      i18n:domain="LoginLockout">
+  <body>
+    <span metal:fill-slot="prefs_configlet_main"
+        tal:define="tool context/loginlockout_tool" >
+        <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active"  tal:attributes="href string:${context/portal_url}/@@loginlockout_settings" i18n:translate="">Locked Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  tal:attributes="href string:${context/portal_url}/@@loginlockout_history" i18n:translate="">Login history</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link"  tal:attributes="href string:${context/portal_url}/@@loginlockout_last_password_changes" i18n:translate="">History password changes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" tal:attributes="href string:${context/portal_url}/@@loginlockout-settings"  i18n:translate="">Lockout Settings</a>
+              </li>
+        </ul>
+
+      <div metal:use-macro="here/global_statusmessage/macros/portal_message">
+        Portal status message
+      </div>
+
+      <h2 i18n:translate="">Login Lockout configuration</h2>
+      <a href="/plone_control_panel"
+          tal:attributes="href
+              string:${context/portal_url}/plone_control_panel"
+          class="link-parent"
+          i18n:domain="plone" i18n:translate="">
+        Site Setup
+      </a>
+      <p i18n:translate="">
+        Configuration and logging for the LoginLockout plugin.
+      </p>
+      <p i18n:translate="">
+        Current detected Client IP: <span i18n:name="remote_ip" tal:content="tool/getRemoteIP">127.0.0.1</span>
+      </p>
+      <form method="post"
+            tal:define="attempts tool/listGroupedAttempts"
+            action="@@loginlockout_settings">
+        <fieldset>
+          <legend i18n:translate="">
+            View and reset unsuccesful attempts
+          </legend>
+          <table class="listing"
+              tal:condition='python: attempts[0]'
+              tal:define="attempt_properties python: ['login','fullname',
+                                'email', 'count', 'last', 'IP']">
+           <thead>
+            <tr>
+              <th colspan="7" class="nosort" i18n:translate="">
+                Plone members:
+               </th>
+            </tr>
+            <tr>
+              <th>
+              </th>
+              <th i18n:translate="label_login">
+                Login name
+              </th>
+              <th i18n:translate="label_fullname">
+                Full name
+              </th>
+              <th i18n:translate="label_email">
+               Email
+              </th>
+              <th i18n:translate="label_count">
+                Attempts
+              </th>
+              <th i18n:translate="label_last_attempt">
+                Last attempt
+              </th>
+              <th i18n:translate="label_IP">
+                Client IP
+              </th>
+            </tr>
+           </thead>
+            <tr tal:repeat="attempt python: attempts[0]"
+                tal:attributes="class python: repeat['attempt'].odd() and
+                    'odd' or 'even'">
+              <td>
+                <input type="checkbox" name="reset_ploneusers:list"
+                    tal:attributes="value attempt/login" />
+              </td>
+              <td tal:repeat="property attempt_properties">
+                  <span tal:condition="python: property == 'fullname'">
+                    <a href=""
+                        title="user profile" i18n:attributes="title"
+                        tal:attributes="href python: attempt.get('link_profile')"
+                        tal:content="python: attempt.get('fullname', None)" />
+                  </span>
+                  <span tal:condition="python: property != 'fullname'"
+                        tal:content="python: attempt.get(property, None)"/>
+              </td>
+            </tr>
+          </table>
+          <table class="listing"
+              tal:condition='python: attempts[1]'
+              tal:define="attempt_properties python: ['login','count','last','IP']">
+           <thead>
+            <tr>
+              <th colspan="6" class="nosort" i18n:translate="">
+                  Non plone members:
+               </th>
+            </tr>
+            <tr>
+              <th>
+              </th>
+              <th i18n:translate="label_login">
+                Login name
+              </th>
+              <th i18n:translate="label_count">
+                Attempts
+              </th>
+              <th i18n:translate="label_last">
+                Last attempt
+              </th>
+              <th i18n:translate="label_IP">
+                Client IP
+              </th>
+            </tr>
+           </thead>
+            <tr tal:repeat="attempt python: attempts[1]"
+                tal:attributes="class python: repeat['attempt'].odd() and
+                    'odd' or 'even'">
+              <td>
+                <input type="checkbox" name="reset_nonploneusers:list"
+                    tal:attributes="value attempt/login" />
+              </td>
+              <td tal:repeat="property attempt_properties"
+                  tal:content="python: attempt.get(property, None)" />
+            </tr>
+          </table>
+          <div class="formControls" tal:condition='attempts'>
+            <input type="hidden" name="form.submitted" value="1"/>
+            <input type="submit" value="Reset selected accounts" class="context"
+                name="form.button.submit"
+                i18n:attributes="value button_reset" />
+          </div>
+          <p tal:condition='not: attempts' i18n:translate="">No accounts to reset</p>
+
+        </fieldset>
+      </form>
+    </span>
+  </body>
+</html>
