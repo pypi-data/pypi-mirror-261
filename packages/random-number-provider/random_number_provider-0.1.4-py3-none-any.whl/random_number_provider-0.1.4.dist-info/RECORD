@@ -1,0 +1,10 @@
+random_number_provider/__init__.py,sha256=E5xRajyBiMinOm6L5K5M61SG1tDE2Glw5qNGpQZgb3c,100
+random_number_provider/_version.py,sha256=cje85YFzl4nNXZMO9_btN4itF3CPPtrE7AImjj7NBok,497
+random_number_provider/app.py,sha256=AAmmWAgud_OiUqShAz_ejFsqxf_5DFkrcOBPtsLsDK0,4708
+random_number_provider/wsgi.py,sha256=9Jgxb2EadNEIEWwVlYO4YJ5hMo30-FfAmAXVi9bFwp4,124
+random_number_provider/xsd/random_numbers_request.xsd,sha256=TEnzIOmJ4vRal5MJ7_HxX-hTEL9-GjtoU_lhQbUiU3U,10644
+random_number_provider-0.1.4.dist-info/METADATA,sha256=5Z0SioU9LWaReJ83Efpzi524jotVwoRbKs2RkIdy-74,477
+random_number_provider-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+random_number_provider-0.1.4.dist-info/entry_points.txt,sha256=ocLUx1d0SOKh0gG3iv0CebQvD_7A7iSDkFHPj9GJzn0,76
+random_number_provider-0.1.4.dist-info/top_level.txt,sha256=LefVUV3ABvPb9uOTkk89VPK_bLqUOv3ExGqYw81VXZ4,23
+random_number_provider-0.1.4.dist-info/RECORD,,
