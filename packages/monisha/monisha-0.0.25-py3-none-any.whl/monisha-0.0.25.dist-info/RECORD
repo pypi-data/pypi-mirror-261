@@ -1,0 +1,17 @@
+Monisha/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+Monisha/functions/__init__.py,sha256=c0toS8xQsR0-x9PTA8txLqSZ7V4E-peEsiYyNbVh5bM,258
+Monisha/functions/function01.py,sha256=LFeVZ_MTF2uEZiy9xzqBc9zBApzFWOp1V15AzK1_6q8,1306
+Monisha/functions/function02.py,sha256=d9oH2APkMMHhGtOMJxYWiWVIJHPaMF83iQVsZcMW6hk,1021
+Monisha/functions/function03.py,sha256=Cov00NxWNlKWK647Ij6H5vVtLlaGLYKPdOEDhKKBUKE,211
+Monisha/functions/function04.py,sha256=vm45M8TivpYArzRsmAFlHnEUfGVcdtgn44SaIjj05lA,1241
+Monisha/functions/function05.py,sha256=j9ji0EYF_0ZFy8L2IfxQtSKNIhvDrSyeBIhV0pisfe4,210
+Monisha/functions/function06.py,sha256=uEzr8YSEF3xZw-XRqkKZrhCvnqlDc1mJKW2-Rgbl28A,667
+Monisha/functions/function08.py,sha256=hbJX776ljkLA5O8pL6zj_I_HDmeY1CmFf6TFvKZf13Q,364
+Monisha/scripts/__init__.py,sha256=yjsyLSdPccKx_m_8s_N3cpno9tqCBXzvSnJCPhU4-ys,47
+Monisha/scripts/en.py,sha256=yZqTmIlerQcA24byXDTfKPkHWXrZTonyJENjtgNOfzo,77
+Monisha/scripts/uo.py,sha256=rWEIwai65BmQIPL6jfNa9gWMinO9UaaVgZrDD-FbCdI,224
+monisha-0.0.25.dist-info/LICENSE,sha256=q5ZDw4z5SA3hq3dK5XaEQfGCAk9k-EXFdifNETEaw4Y,1076
+monisha-0.0.25.dist-info/METADATA,sha256=dEbllcriz_3DW1y6eQBEZ5i9L1y9oqkeD7hAcNiqpew,1798
+monisha-0.0.25.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+monisha-0.0.25.dist-info/top_level.txt,sha256=XNmRVe55lc64KtPMDifEQMTKj-qgAEwMlmy2hQF1dow,8
+monisha-0.0.25.dist-info/RECORD,,
