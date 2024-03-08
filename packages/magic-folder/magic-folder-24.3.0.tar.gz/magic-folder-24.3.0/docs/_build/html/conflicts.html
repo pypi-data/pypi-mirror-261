@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic Folder Conflicts and Resolution &mdash; Magic-Folder 1.x documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=05353d0c" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=16df9e97"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Magic-Folder
+          </a>
+              <div class="version">
+                1.x
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Using Magic Folder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invites.html">How invites work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="limitations.html">Known Issues and Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Releases of Magic Folder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backdoors.html">Statement on Backdoors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Magic-Folder Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface.html">Local HTTP Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Configuration Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snapshots.html">Snapshots Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datamodel.html">Magic Folder Data Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="downloader.html">Downloader Operation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release-process.html">Magic-Folder Release Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release-process.html#making-a-release">Making a Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leif-design.html">The Leif Design: synchronization model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proposed/index.html">Proposed Specifications</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Magic-Folder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Magic Folder Conflicts and Resolution</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/conflicts.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="magic-folder-conflicts-and-resolution">
+<span id="conflicts"></span><h1>Magic Folder Conflicts and Resolution<a class="headerlink" href="#magic-folder-conflicts-and-resolution" title="Link to this heading"></a></h1>
+<p>When we have two or more participants updating a folder, it can happen that a file is modified “at the same time” by two or more participants.
+More correctly, “at the same time” here means “between communications”.</p>
+<p>Effectively, participants are speaking a protocol by posting messages to their mutable Capabilities.
+Namely, updading which Snapshot object a particular (file) name points to.</p>
+<p>We do not know <em>when</em> another Participant has updated their notion of the current state.
+However, what we <em>can</em> notice is when they “commit” to that state (that is, they update publically their current Snapshot pointer).</p>
+<p>Each file is considered individually, and is represented by a tree of Snapshots of the contents (plus metadata).
+Included in the metadata are one or more “parent” Snapshots (a brand new file has zero parents).</p>
+<p>For more on this, the <a class="reference internal" href="datamodel.html#datamodel"><span class="std std-ref">Magic Folder Data Model</span></a> has a section on <a class="reference internal" href="datamodel.html#datamodel-conflicts"><span class="std std-ref">Conflicts</span></a>.</p>
+<section id="communication-between-folders">
+<h2>Communication Between Folders<a class="headerlink" href="#communication-between-folders" title="Link to this heading"></a></h2>
+<p>Consider a single file named <code class="docutils literal notranslate"><span class="pre">&quot;foo&quot;</span></code>.
+When this file is created (for example on the device called Laptop) that device uploads a Snapshot (<code class="docutils literal notranslate"><span class="pre">S0</span></code>) with no parent Snapshots.</p>
+<p>By “upload” we mean to push the content and metadata to the Tahoe-LAFS client, receiving ultimately a Capability for the Snapshot <code class="docutils literal notranslate"><span class="pre">S0</span></code>.
+The file entry for <code class="docutils literal notranslate"><span class="pre">&quot;foo&quot;</span></code> is then updated, visualized as: <code class="docutils literal notranslate"><span class="pre">foo</span> <span class="pre">-&gt;</span> <span class="pre">S0</span></code></p>
+<p>Now, all other Participants can (and, eventually, will) notice this update when they poll the magic-folder.</p>
+<p>Each of these is a “communication event”, so we talk about the regions between these as a cohesive state of that client.
+That is, anything that happens during that time is “at the same time” for the purposes of this protocol.</p>
+<p>Note that this time interval could be as short as a few seconds or as long as days (or more).</p>
+<p>Observe too that the “parents” of a particular Snapshot are a commitment as to the state visible to that client when creating the Snapshot.</p>
+</section>
+<section id="detecting-conflicts">
+<h2>Detecting Conflicts<a class="headerlink" href="#detecting-conflicts" title="Link to this heading"></a></h2>
+<p>A new update is communicated to us – that is, we’ve downloaded a previously-unknown Snapshot from some other Participant’s mutable Capbility.</p>
+<p>We now look at our own Snapshot for the corresponding file.
+Either our Snapshot appears in some parents (including grandparents, etc) of the new Snapshot, or it doesn’t.</p>
+<p>If it does appear, this is an “update” (and we simply replace the local content with the incoming content).</p>
+<p>Instead if our Snapshot does not appear as any ancestor of the incoming Snapshot, a commit is determined.</p>
+<p>This is because when the other device created their Snapshot, they didn’t know about ours (or else it would appear as an ancestor) so we have made a change “at the same time”.</p>
+<p>Note that unlike tools like Git, we do not examine the contents of the file or try to produce differences – everything is determined from the metadata in the Snapshot.</p>
+</section>
+<section id="showing-conflicts-locally">
+<h2>Showing Conflicts Locally<a class="headerlink" href="#showing-conflicts-locally" title="Link to this heading"></a></h2>
+<p>Once a conflict is detected, “conflict marker” files are put into the local magic folder location (our local file remains unmodified, and something like <code class="docutils literal notranslate"><span class="pre">foo.conflict-desktop</span></code> will appear.
+The state database is also updated (conflicts can also be listed via the API and CLI)</p>
+</section>
+<section id="resolving-conflicts">
+<h2>Resolving Conflicts<a class="headerlink" href="#resolving-conflicts" title="Link to this heading"></a></h2>
+<p>We cannot “magically” solve a conflict: two devices produced new Snapshots while not communicating with each other.</p>
+<p>Thus, it is up to the humans using these devices to determine what happens.
+Once appropriate changes are decided upon, a new Snapshot is produced with <em>two or more parents</em>: one parent for each of the Snapshots involved in the conflict (we’ve only talked about one other participant so far, but there could be more).</p>
+<p>Such a Snapshot (with two or more parents) indicates to the other clients a particular resoltion to the conflict has been decided.</p>
+<p>So there’s another case when we see an incoming new Snapshot: it may in fact <em>resolve an existing</em> conflict.</p>
+</section>
+<section id="resolving-via-filesystem">
+<h2>Resolving via Filesystem<a class="headerlink" href="#resolving-via-filesystem" title="Link to this heading"></a></h2>
+</section>
+<section id="resolving-via-the-cli">
+<h2>Resolving via the CLI<a class="headerlink" href="#resolving-via-the-cli" title="Link to this heading"></a></h2>
+<p>The subcommand <code class="docutils literal notranslate"><span class="pre">magic-folder</span> <span class="pre">resolve</span></code> may be used to specify a resolution.
+It allows you to choose <code class="docutils literal notranslate"><span class="pre">--mine</span></code> or <code class="docutils literal notranslate"><span class="pre">--theirs``(if</span> <span class="pre">there</span> <span class="pre">is</span> <span class="pre">only</span> <span class="pre">one</span> <span class="pre">other</span> <span class="pre">conflict).</span>
+<span class="pre">Otherwise,</span> <span class="pre">you</span> <span class="pre">must</span> <span class="pre">use</span> <span class="pre">``--use</span> <span class="pre">&lt;name&gt;</span></code> to specify which version to keep.</p>
+<p>Currently there is no API for doing something more complex (e.g. simultaneuously replacing the latest version with new content).</p>
+<p>Complete example:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">magic-folder resolve --mine ~/Documents/Magic/foo</span>
+</pre></div>
+</div>
+</section>
+<section id="resolving-via-the-http-api">
+<h2>Resolving via the HTTP API<a class="headerlink" href="#resolving-via-the-http-api" title="Link to this heading"></a></h2>
+<p>See <a class="reference internal" href="interface.html#api-resolve-conflict"><span class="std std-ref">POST /v1/magic-folder/&lt;folder-name&gt;/resolve-conflict</span></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The Tahoe-LAFS Developers, The Magic-Folder Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
