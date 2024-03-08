@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: wagtailterms
+Version: 0.1.0
+Summary: A Wagtail plugin to add support for glossary terms entity to Draftail
+Home-page: https://github.com/smark-1/wagtailterms/
+Download-URL: https://pypi.python.org/pypi/wagtailterms
+License: MIT
+Keywords: wagtail,draftjs,Draftail,picker,term,definition,glossary
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 5
+Classifier: Framework :: Wagtail :: 6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wagtail>=5.2
+Requires-Dist: djangorestframework>=3.12.0
+
+# Wagtail Terms
+A Wagtail plugin to add support for a glossary terms entity to Draftail
+
+## Installation
+```bash
+pip install wagtailterms
+```
+add `wagtailterms` to your `INSTALLED_APPS` in your Django settings file.
+make sure you have rest_framework in your installed apps as well.
+
+Add `wagtailterms.urls` to your `urlpatterns` in your Django urls file.
+the url should look like this:
+```python
+    path('api/terms/', include('wagtailterms.urls')),
+```
+
+---
+**NOTE**
+
+The url path can be anything you want. This is the url that will be used to access the terms on the frontend
+
+---
+
+ run `python manage.py migrate` to create the database tables.
