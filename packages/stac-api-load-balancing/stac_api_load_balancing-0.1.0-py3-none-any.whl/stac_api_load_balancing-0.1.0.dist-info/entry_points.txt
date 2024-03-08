@@ -1,0 +1,2 @@
+[console_scripts]
+stac-api-load-balancing = stac_api_load_balancing.cli:main
