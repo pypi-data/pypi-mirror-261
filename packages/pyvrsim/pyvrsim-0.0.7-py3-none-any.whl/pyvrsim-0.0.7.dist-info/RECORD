@@ -1,0 +1,13 @@
+pyvrsim/__init__.py,sha256=TG6YjXvPvQMoIaEP8UIAoaMQyOxy32QzrotNVyXLDis,358
+pyvrsim/customer.py,sha256=xygVhzHAXxff4M7xfNTZTY85cAhnCxh5iAaFAqyu_AE,216
+pyvrsim/demand.py,sha256=yo2XBpykHCDa4ZdcS8znNH2Pm0zrxN80egxoxZIoUz8,374
+pyvrsim/drone.py,sha256=_yk7tvakV_JsLjPM5kwoAJPj9qHbtUhJTM21WdylwFE,2695
+pyvrsim/fleet.py,sha256=Gcoj4sYF2OIh2Dx_Mi6KtVtT4J6pQNhRU7wKWTODcFw,3390
+pyvrsim/location.py,sha256=yEY9BwWxT-G5sEwVGsGXGhNm6qau-bJzNcXCGy0EVw0,2021
+pyvrsim/locations.py,sha256=Qa_hiNb_oBegEjaeo8LsnZ_UOHaRmT4791rVqOlOZS4,5884
+pyvrsim/truck.py,sha256=hHGclen_tN0VQgbNj-XrXkXSB722H2HoSgyz6121txo,2238
+pyvrsim-0.0.7.dist-info/LICENSE,sha256=_R-InuJIPXilAh7f8oPuMzOU0qISXNE_Yf-4pRS686c,1100
+pyvrsim-0.0.7.dist-info/METADATA,sha256=sj4I8l6ZrTgFDf4caoJHfzxiPJx7Nww6V8JVrV930EY,6044
+pyvrsim-0.0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyvrsim-0.0.7.dist-info/top_level.txt,sha256=Rl5mu_p2FH-mk1PJ0-NFlbj73wdEjicCTbMxp6WIfnc,8
+pyvrsim-0.0.7.dist-info/RECORD,,
