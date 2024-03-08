@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: falcon_challenge
+Version: 0.0.1
+Home-page: https://github.com/snel-repo/stability-benchmark
+Author: Joel Ye
+Author-email: joelye9@gmail.com
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: hydra-core
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+
