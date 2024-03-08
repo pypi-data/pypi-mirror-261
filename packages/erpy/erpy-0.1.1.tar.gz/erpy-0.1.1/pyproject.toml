@@ -1,0 +1,23 @@
+[project]
+name = "erpy"
+version = "0.1.1"
+authors = [
+  { name="Liam Strand", email="strandliam@gmail.com" },
+]
+description = "Leverages the existing Term package to implement a simple Erlang port driver that communicates over standard input and output."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/liam-strand/erpy"
+Issues = "https://github.com/liam-strand/erpy/issues"
+Repository = "https://github.com/liam-strand/erpy"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
