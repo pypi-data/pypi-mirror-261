@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "plottah"
+version = "1.0.1"
+description = ""
+authors = ["Niels Ota - BCG"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pre-commit = "^3.3.3"
+pytest = "^7.3.2"
+jupyter = "^1.0.0"
+pydantic = {extras = ["dotenv"], version = "^1.10.9"}
+pyyaml = "^6.0"
+plotly = "^5.15.0"
+pandas = "<=1.2"
+seaborn = "^0.12.2"
+tqdm = "^4.65.0"
+scikit-learn = "^1.2.2"
+python-pptx = "^0.6.21"
+kaleido = "0.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
