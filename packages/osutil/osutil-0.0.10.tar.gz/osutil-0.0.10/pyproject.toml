@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osutil"
+version = "0.0.10"
+authors = [
+  { name="PencilShavings", email="eb.pencilshavings@protonmail.com" },
+]
+description = "A wrapper for various shell based functions found in the os & shutil modules."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha"
+]
+
+[project.urls]
+Homepage = "https://github.com/PencilShavings/python-osutil"
+Issues = "https://github.com/PencilShavings/python-osutil/issues"

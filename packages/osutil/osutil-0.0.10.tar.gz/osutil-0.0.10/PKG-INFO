@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: osutil
+Version: 0.0.10
+Summary: A wrapper for various shell based functions found in the os & shutil modules.
+Author-email: PencilShavings <eb.pencilshavings@protonmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/PencilShavings/python-osutil
+Project-URL: Issues, https://github.com/PencilShavings/python-osutil/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## python-osutil
+
+A wrapper for various shell based functions found in the os & shutil modules.
+
+## Installation
+
+Install via pip:
+```bash
+pip install --user osuitl
+```
+
+OR just download the script and place it somewhere in your PYTHONPATH:
+
+```bash
+wget -N https://raw.githubusercontent.com/PencilShavings/python-osutil/master/osutil.py
+```
