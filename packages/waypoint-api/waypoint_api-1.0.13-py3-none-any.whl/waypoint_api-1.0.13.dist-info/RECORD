@@ -1,0 +1,9 @@
+waypoint_api/__init__.py,sha256=S0agZfsffkb2ON0O6YLjedQxkjjYeHdVYEUM1BKWLLg,88
+waypoint_api/auth_flow.py,sha256=neAYOBIq2Av7VXZZ0piN2zNLUHvsROxyvMdGXeGNSHE,7577
+waypoint_api/waypoint.py,sha256=TouhsOzgobaVx19ofkFG0GQs0PtsN7sUrvX5rLy9Gas,8804
+waypoint_api/endpoints/h5.json,sha256=L1HeXp8i4w-gM9apm8oN7WIc6MJY2Na4pNn80gnqMik,47667
+waypoint_api/endpoints/hi.json,sha256=veTp8-E0Ogw7Ydx35-RsWVN_3C2a7qFKt-W4ULlKpv0,74306
+waypoint_api-1.0.13.dist-info/METADATA,sha256=vq-KkEWF2u1M1kJ8fBJnMfbarfyTW4BaAzXvGSSsrOI,385
+waypoint_api-1.0.13.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+waypoint_api-1.0.13.dist-info/top_level.txt,sha256=_tNJLItNxTDMK5nEJgvHWQec5MKKiXMW_PjL5sqIcdg,13
+waypoint_api-1.0.13.dist-info/RECORD,,
