@@ -1,0 +1,185 @@
+Metadata-Version: 2.1
+Name: HyperEvalSR
+Version: 1.0
+Summary: An open source python package for super-resolution/recovery quality evaluation of hyperspectral images, including RMSE, ERGAS, SSIM, RSNR, PSNR, CC, DD, and SAM.
+Home-page: https://github.com/jingmengzhiyue/HyperEvalSR
+Author: jingmengzhiyue
+Author-email: jingmengzhiyue@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tifffile
+
+<div align="center">
+    <img src="./assets/HyperEvalSR.png" alt="Head">
+</div>
+
+---
+
+# HyperEvalSR
+
+HyperEvalSR is an open-source project that facilitates the reading of hyperspectral images and the quality assessment of various indices for unmixing, denoising, and super-resolution. Additionally, it provides algorithms related to the fusion of hyperspectral and multispectral images. In the future, it will also offer algorithms for unmixing, material identification, classification, segmentation, denoising, change detection, and target detection in remote sensing (hyperspectral) images.
+
+## Data loading
+The data loading module supports direct reading of TIFF and MAT files. Support for other file formats is currently being added gradually.
+```python
+from HyperEvalSR import data
+img = data.load(file_path)
+```
+> **file_path** (str): The path to the image file. Support files ending in tiff and mat.
+
+## Fusion of HSI and MSI
+<div align="center">
+    <img src="./assets/Fusion.png" alt="Fusion process diagram of hyperspectral and multispectral images.">
+</div>
+The sr module supports the fusion of high spatial resolution multispectral images and high spectral resolution hyperspectral images to reconstruct images with both high spatial and spectral resolutions simultaneously. Currently, it supports the CNMF algorithm based on coupled non-negative matrix factorization.
+
+Reference:
+```
+[1] N. Yokoya, T. Yairi, and A. Iwasaki, "Coupled nonnegative matrix factorization unmixing for hyperspectral and multispectral data fusion," IEEE Trans. Geosci. Remote Sens., vol. 50, no. 2, pp. 528-537, 2012.
+[2] N. Yokoya, N. Mayumi, and A. Iwasaki, "Cross-calibration for data fusion of EO-1/Hyperion and Terra/ASTER," IEEE J. Sel. Topics Appl. Earth Observ.Remote Sens., vol. 6, no. 2, pp. 419-426, 2013.
+[3] N. Yokoya, T. Yairi, and A. Iwasaki, "Hyperspectral, multispectral, and panchromatic data fusion based on non-negative matrix factorization," Proc. WHISPERS, Lisbon, Portugal, Jun. 6-9, 2011.
+```
+usage:
+```python
+from HyperEvalSR import algorithms as algo
+out = algo.CNMF(MSI, HSI, mask=0, verbose='off',MEMs=0)
+```
+> **MSI** (numpy.ndarray): Multispectral (MS) image data, shape (rows1, cols1, bands1).
+> 
+> **HSI** (numpy.ndarray): Low-spatial-resolution hyperspectral (HS) image data, shape (rows2, cols2, bands2).
+> 
+>**mask** (int or numpy.ndarray, optional): Binary mask for processing (rows2, cols2) (0: mask, 1: image). Defaults to 0.
+>**verbose** (str, optional): Verbosity mode ('on' or 'off'). Defaults to 'off'.
+        MEMs (int or numpy.ndarray, optional): Manually defined endmembers (bands2, num. of endmembers). Defaults to 0.
+## Quality assessment
+```python
+from HyperEvalSR import metrics
+```
+
+
+- **Peak Signal to Noise Ratio (PSNR)**: Measures the ratio between the maximum possible power of a signal and the power of corrupting noise.
+  `metrics.PSNR(ref_img, rec_img)`
+  > **ref_img** (numpy.ndarray): The reference image.
+
+  > **rec_img** (numpy.ndarray): The reconstructed image.
+  
+- **Reconstruction Signal-to-Noise Ratio (RSNR)**: Evaluates the signal-to-noise ratio of the reconstructed image.
+  `metrics.RSNR(ref_img, rec_img, mask=None)`
+  > **ref_img** (numpy.ndarray): The reference image.
+
+  > **rec_image** (numpy.ndarray): The reconstructed image.
+
+  > **mask** (numpy.ndarray, optional): A mask to apply to the images. Defaults to None.
+
+- **Degree of Distortion (DD)**: Represents the level of distortion in the image.
+    `metrics.DD(ref_img, rec_img)`
+- **Spectral Angle Mapper (SAM)**: Measures the spectral similarity between two images using the angle between their spectral vectors.
+    `metrics.SAM(ref_img, rec_img)`
+- **Root Mean Squared Error (RMSE)**: Computes the square root of the average squared differences between the reference and reconstructed images.
+    `metrics.RMSE(ref_img, rec_img)`
+- **Erreur Relative Globale Adimensionnelle de Synthèse (ERGAS)**: Calculates the relative global dimensionless synthesis error.
+  `metrics.ERGAS(ref_img, rec_img, downsampling_scale):`
+  > **downsampling_scale** (int): The downsampling scale factor.
+- **Structural Similarity Index (SSIM)**: Assesses the structural similarity between the reference and reconstructed images.
+  `metrics.SSIM(ref_img, rec_img, k1=0.01, k2=0.03, L=255)`
+  > **k1** (float, optional): Constant for stability. Defaults to 0.01.
+
+  > **k2** (float, optional): Constant for stability. Defaults to 0.03.
+
+  > **L** (int, optional): Dynamic range of the images. Defaults to 255.
+- **Cross-Correlation(CC)**: Measures the similarity between two images using the correlation coefficient between their pixels.
+  `metrics.CC(ref_img, rec_img, mask=None)`
+  > **mask** (numpy.ndarray, optional): A mask to apply to the images. Defaults to None.
+- **Universal Image Quality Index (UIQI)**:Calculate the Universal Image Quality Index (UIQI) between two images.
+  `metrics.UIQI(ref_img, rec_img)`
+
+---
+## Supplementary Evaluation Indicators
+In this context, we assume that the reference image and the reconstructed image obtained from the algorithm are denoted as $\mathbf{X}$ and $\widehat{\mathbf{X}}$, respectively.
+
+
+In addition, this also includes operations for loading TIFF data and MAT data as ndarrays.
+
+
+
+### PSNR
+Peak Signal-to-Noise Ratio (PSNR) is commonly used to measure the similarity between a reconstructed image and an original image. It is expressed in decibels (dB), and a higher value indicates a higher similarity between the reconstructed and original images. The calculation formula for PSNR is as follows:
+
+$$
+\mathrm{PSNR}=10\log _{10}\left( \frac{\max ^2\left( \widehat{\mathbf{X}} \right)}{\mathrm{MSE}\left( \mathbf{X},\widehat{\mathbf{X}} \right)} \right)\tag{1}
+$$
+
+where $\mathrm{MSE}$ represents the mean squared error, calculated as:
+
+$$
+\mathrm{MSE}=\frac{1}{N_wN_h}||\widehat{\mathbf{X}}-\mathbf{X}||_{F}^{2} 
+$$
+
+In this formula, $N_w$ and $N_h$ represent the width and height of the image, respectively.
+### RMSE
+The RMSE is a commonly used indicator to describe the degree of difference between the reconstructed image and the reference image. Smaller errors result in smaller RMSE values. When the reconstructed image and the reference image are exactly the same, the RMSE equals 0. The RMSE is defined as:
+
+$$
+\mathrm{RMSE}=\sqrt{\mathrm{MSE}}\tag{3}
+$$
+
+The definition of $\mathrm{MSE}$ is shown in formula.
+### RSNR
+The RSNR is commonly used to measure the spatial quality of the reconstructed image. Higher RSNR values indicate smaller differences between the reconstructed and original images, and thus better image quality. The RSNR is calculated as:
+
+$$
+\mathrm{RSNR}=10\log _{10}\left( \frac{||\mathbf{X}||_{F}^{2}}{||\widehat{\mathbf{X}}-\mathbf{X}||_{F}^{2}} \right)\tag{4}
+$$
+### DD
+The Degree of Distortion (DD) is an indicator used to describe the degree of signal distortion, typically used to evaluate the distortion during signal transmission or storage. Smaller distortions result in smaller DD values, with the optimal value being 0. The DD is defined as:
+
+$$
+\mathrm{DD}=\frac{1}{N_wN_h}||\mathrm{vec}\left( \widehat{\mathbf{X}} \right) -\mathrm{vec}\left( \mathbf{X} \right) ||_{1}^{2}\tag{5}
+$$
+
+In this formula, $N_w$ and $N_h$ represent the width and height of the image, respectively.
+### SAM
+The Spectral Angle Mapper (SAM) compares the similarity between the reconstructed and reference images by measuring the spectral angle of each pixel. The higher the similarity, the smaller the SAM value. The SAM is calculated as:
+
+$$
+\mathrm{SAM}=\frac{1}{M} \sum_{n=1}^{M} \text{arccos} (\frac{(\widehat{\mathbf{x}}[n])^{\mathrm{T}} \mathbf{x}[n]}{|\widehat{\mathbf{x}}[n]|_{2} \cdot | \mathbf{x}[n]|_{2}})\tag{6}
+$$
+
+In this formula, $\mathbf{x}\left[ n \right]$ represents the $n$-th column of $\mathbf{X}$, and $M$ represents the number of spectral bands.
+### ERGAS
+ERGAS is a relative error indicator that can be used to compare the quality of reconstructed remote sensing images with different resolutions and sizes, as well as to evaluate image quality at different compression ratios. Smaller ERGAS values indicate higher spatial and spectral similarity between the reconstructed and reference images. The ERGAS is calculated as:
+
+$$
+\mathrm{ERGAS}=\frac{100}{r}\sqrt{\frac{1}{M}\sum_{m=1}^M{\frac{\mathrm{RMSE}_{m}^{2}}{\mu _{\mathbf{X}^{\left( m \right)}}^{2}}}}\tag{7}
+$$
+
+In this formula, $r$ represents the spatial down-sampling ratio, $\mu _{\mathbf{X}^{\left( m \right)}}$ represents the mean of the $m$-th row of $\mathbf{X}$, and $\mathrm{RMSE}_m$ represents the RMSE value of the $m$-th spectral band.
+### SSIM
+The Structural Similarity Index (SSIM) is an indicator used to evaluate the similarity between two images and to quantitatively assess the degree of image distortion. The SSIM value ranges between $[-1,1]$, with larger values indicating greater similarity. The SSIM index calculation is based on the characteristics of the human visual system, simulating human perception. Specifically, the SSIM index decomposes the image into three components for evaluation: luminance, contrast, and structure. The luminance component represents the similarity between the average brightness of the two images; the contrast component represents the similarity between the standard deviations of the two images; and the structure component represents the difference between the correlations of the two images. The SSIM index can be calculated using the following formula:
+
+$$
+\mathrm{SSIM}=\left[ l\left( \widehat{\mathbf{X}},\mathbf{X} \right) \right] ^{\alpha}\left[ c\left( \widehat{\mathbf{X}},\mathbf{X} \right) \right] ^{\beta}\left[ s\left( \widehat{\mathbf{X}},\mathbf{X} \right) \right] ^{\gamma}\tag{8}
+$$
+
+In this formula, $\widehat{\mathbf{X}}$ and $\mathbf{X}$ represent the two images to be compared, and $l\left( \widehat{\mathbf{X}},\mathbf{X} \right)$, $c\left( \widehat{\mathbf{X}},\mathbf{X} \right)$, and $s\left( \widehat{\mathbf{X}},\mathbf{X} \right)$ represent their luminance, contrast, and structure similarity, respectively. These are defined as:
+
+$$
+l\left( \widehat{\mathbf{X}},\mathbf{X} \right) =\frac{2\mu _{\widehat{\mathbf{X}}}\mu _{\mathbf{X}}+c_1}{\mu _{\widehat{\mathbf{X}}}^{2}+\mu _{\mathbf{X}}^{2}+c_1}\tag{9}
+$$
+
+$$
+c\left( \widehat{\mathbf{X}},\mathbf{X} \right) =\frac{2\sigma _{\widehat{\mathbf{X}}\mathbf{X}}+c_2}{\sigma _{\widehat{\mathbf{X}}}^{2}+\sigma _{\mathbf{X}}^{2}+c_2}
+$$
+
+$$
+s\left( \widehat{\mathbf{X}},\mathbf{X} \right) =\frac{\sigma _{\widehat{\mathbf{X}}\mathbf{X}}+c_3}{\sigma _{\widehat{\mathbf{X}}}+\sigma _{\mathbf{X}}+c_3}
+$$
+
+In these formulas, $\mu$ represents the mean of the image, $\sigma$ represents the standard deviation of the image, and $\sigma _{\widehat{\mathbf{X}}\mathbf{X}}$ represents the covariance between the two images. $c_1, c_2$, and $c_3$ are constants, usually set to $c_1=\left( 0.01 \cdot N_w \cdot N_h \right) ^2, c_2=\left( 0.03 \cdot N_w \cdot N_h \right) ^2, c_3=\frac{c_2}{2}$. The values of $\alpha$, $\beta$, and $\gamma$ are usually set to 1.
+
