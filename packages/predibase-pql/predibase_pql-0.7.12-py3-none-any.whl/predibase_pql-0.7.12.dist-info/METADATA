@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: predibase-pql
+Version: 0.7.12
+Summary: Predibase PQL client and proto definition.
+Author: Predibase Inc.
+Requires-Python: >=3.8
+Requires-Dist: betterproto ==1.2.5
+Provides-Extra: notebook
+Requires-Dist: notebook ; extra == 'notebook'
+Requires-Dist: jupyterlab ; extra == 'notebook'
+Requires-Dist: dask-sql ; extra == 'notebook'
+Requires-Dist: python-graphviz ; extra == 'notebook'
+
