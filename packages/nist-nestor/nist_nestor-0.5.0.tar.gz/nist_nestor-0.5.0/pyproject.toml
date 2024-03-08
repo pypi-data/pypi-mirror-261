@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "nist-nestor"
+version = "0.5.0"
+description = "Quantifying tacit human knowledge for Smart Manufacturing Maintenance, for maintnenance-based investigatory analysis"
+authors = ["rtbs-dev <rtbs@nist.gov>"]
+include = ["./*.md", "nestor/settings.yaml"]
+classifiers=[
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Manufacturing",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Programming Language :: Python :: 3",
+    "License :: Public Domain"
+]
+keywords = [ "nlp", "smart", "manufacturing", "maintenance", "tag" ]
+homepage = "https://www.nist.gov/services-resources/software/nestor"
+
+packages = [
+    {include = "nestor"}
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+scikit-learn = "~0"
+networkx = "^2.4"
+pyyaml = "^5.3.1"
+tqdm = "^4.48.2"
+fuzzywuzzy = "^0.18.0"
+pandas = "^1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0.1"
+pytest-check = "^0.3.9"
+black = "^19.10b0"
+taskipy = "^1.2.1"
+mkdocs = "^1.1.2"
+mkdocs-bibtex = "^0.3.0"
+mkdocs-material = "^5.5.14"
+mkdocs-mermaid2-plugin = "^0.4.2"
+mkdocs-with-pdf = "^0.9.2"
+datatest = "^0.11.1"
+mknotebooks = "^0.7.1"
+mypy = "^0.910"
+pandas-stubs = "^1.2.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocstrings = {extras = ["python"], version = "^0.22.0"}
+
+[tool.taskipy.tasks]
+lint_format = "black nestor/ && black tests/"
+lint_mypy = "mypy nestor/keyword.py nestor/settings.py nestor/datasets"
+lint = "task lint_format && task lint_mypy"
+
+env_update = "conda env update --file docs/examples/nb-env.yml"
+env_nb-exec = "jupytext --to notebook --execute docs/examples/**/*.py"
+env = "task env_update && task env_nb-exec"
+
+deploy_docs = "ENABLE_PDF_EXPORT=1 mkdocs build --verbose --clean"
+pre_deploy = "task env"
+deploy = "task deploy_docs"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "semver"
+format = "{base}"
+
+[tool.poetry-dynamic-versioning.substitution]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
