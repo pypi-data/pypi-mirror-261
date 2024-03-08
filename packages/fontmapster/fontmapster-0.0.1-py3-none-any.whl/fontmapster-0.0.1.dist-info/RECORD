@@ -1,0 +1,9 @@
+fontmapster/__init__.py,sha256=PlXELhyqMIEdapVxGYNI8kYSgv4GpwgkJx74OpTg33Y,117
+fontmapster/common/typevars.py,sha256=XlsZ2pW1pgy4SsZD91p3EHdzKy8mh2y-zoJ7_U3VQ5A,762
+fontmapster/common/utils.py,sha256=t0DDQGahjIgHx3wb6RQwMjxxXflnKRwTBF_ruZW3-6g,954
+fontmapster/main.py,sha256=DnfDQKaUbq-FOoNnC3YCMAYUzhT3RkS_Glf69FBVPd4,7233
+fontmapster/settings/__init__.py,sha256=8ArOlhN5TxU1oOzZsfs1LPG6PEfZeMZyOHFp-AM5JgU,1415
+fontmapster/settings/default_settings.py,sha256=w4lBk_Bnk_z_JiQC7bsZ7BdsGYQewbNTNk24mdgkGrc,173
+fontmapster-0.0.1.dist-info/METADATA,sha256=PinV0-M0N89FosAtPHZV6U_FZiBtqnL9NzgMHxGelro,794
+fontmapster-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fontmapster-0.0.1.dist-info/RECORD,,
