@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: predibase-pql
+Version: 0.7.5
+Summary: Predibase PQL client and proto definition.
+Author: Predibase Inc.
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Provides-Extra: notebook
+
+UNKNOWN
+
