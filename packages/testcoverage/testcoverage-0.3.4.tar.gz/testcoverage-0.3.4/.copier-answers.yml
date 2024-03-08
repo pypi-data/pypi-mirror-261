@@ -1,0 +1,12 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 2024.01.24
+_src_path: gh:scientific-python/cookie
+backend: skbuild
+email: agr.saurav1@gmail.com
+full_name: Saurav Agarwal
+license: GPL-3.0
+org: agarwalsaurav
+project_name: testrobot
+project_short_description: A great package.
+url: https://github.com/agarwalsaurav/TestCC
+vcs: true
