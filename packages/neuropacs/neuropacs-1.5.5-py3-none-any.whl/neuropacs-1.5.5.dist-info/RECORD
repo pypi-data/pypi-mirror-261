@@ -1,0 +1,12 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/example1.py,sha256=X0f5aIZnTM5OZ7MPNr_arCVUV9TXZH3lRl9twK5otlw,904
+neuropacs/__init__.py,sha256=ZwFVeKHaJY9ak3hn79YMdMr1ddUU8EfMjMGcR4pRahs,163
+neuropacs/ex.py,sha256=2ZsD5Gk6yC1YkaFJO6KC3atnaEGrab0NaUSlnLwiS0A,1131
+neuropacs/sdk.py,sha256=W_L9ksJJ3EZl2ZNTcOC4raEEV4i5LP-8j2obdNNL1CE,17985
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests_neuropacs.py,sha256=4QVxjC9M1mjNXKb_ASKcGUXQixF7gHENRfj5203RssA,26402
+neuropacs-1.5.5.dist-info/LICENSE,sha256=s83REKCnvvTaaNPbVIFvf_wyF-cZ0-uOK3Z1Eg96HIM,1061
+neuropacs-1.5.5.dist-info/METADATA,sha256=c6qy-40AhclhpXXvB_tOYY1CHkzwdFn43-2-C_m4800,2725
+neuropacs-1.5.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+neuropacs-1.5.5.dist-info/top_level.txt,sha256=drfTTHld35XirQayP0Yvq4upTRRiP0XLIFsc-PAPoRI,25
+neuropacs-1.5.5.dist-info/RECORD,,
