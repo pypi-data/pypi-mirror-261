@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PyZSindy
+Version: 0.1.0
+Summary: A Bayesian statistical mechanical approach to sparse equation discovery
+Author: Joseph Bakarji and Andrei Klishin
+Author-email: joseph.bakarji0@aub.edu.lb
+Requires-Dist: cmcrameri==1.7
+Requires-Dist: matplotlib==3.7.1
+Requires-Dist: numpy==1.23.5
+Requires-Dist: pysindy==1.7.5
+Requires-Dist: scipy==1.11.3
+Requires-Dist: setuptools==67.4.0
+Requires-Dist: tqdm==4.64.1

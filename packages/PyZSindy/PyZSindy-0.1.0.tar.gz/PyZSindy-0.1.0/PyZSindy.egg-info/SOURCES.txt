@@ -1,0 +1,7 @@
+README.md
+setup.py
+PyZSindy.egg-info/PKG-INFO
+PyZSindy.egg-info/SOURCES.txt
+PyZSindy.egg-info/dependency_links.txt
+PyZSindy.egg-info/requires.txt
+PyZSindy.egg-info/top_level.txt
