@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20240307.0
+-------------
+
+* chore(deps): update dependency kubernetes.core to v3.0.1 (#810)
