@@ -1,0 +1,3 @@
+[console_scripts]
+cdev-cli=cdev_cli.__main__:main
+
