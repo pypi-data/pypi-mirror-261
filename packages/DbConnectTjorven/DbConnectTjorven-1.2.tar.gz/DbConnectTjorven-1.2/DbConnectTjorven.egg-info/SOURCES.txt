@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+DbConnectTjorven/Connector.py
+DbConnectTjorven/__init__.py
+DbConnectTjorven.egg-info/PKG-INFO
+DbConnectTjorven.egg-info/SOURCES.txt
+DbConnectTjorven.egg-info/dependency_links.txt
+DbConnectTjorven.egg-info/requires.txt
+DbConnectTjorven.egg-info/top_level.txt

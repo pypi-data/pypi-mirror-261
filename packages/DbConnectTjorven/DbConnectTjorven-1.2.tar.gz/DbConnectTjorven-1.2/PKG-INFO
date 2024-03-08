@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: DbConnectTjorven
+Version: 1.2
+Home-page: https://github.com/tj0vtj0v/DbConnect
+Download-URL: https://github.com/tj0vtj0v/DbConnect/archive/refs/tags/Alpha.tar.gz
+Author: Tjorven Burdorf
+Author-email: BurdorfTjorven@gmail.com
+License: GNU
+Keywords: MYSQL,Database,Connector,Private
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE.txt
+Requires-Dist: mysql-connector-python
