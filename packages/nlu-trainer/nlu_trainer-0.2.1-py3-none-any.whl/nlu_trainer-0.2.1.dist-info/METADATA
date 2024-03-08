@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: nlu-trainer
+Version: 0.2.1
+Summary: 普强信息语言理解模型训练框架
+Author: wangmengdi
+Author-email: wangmengdi@pachiratech.com
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: datasets (>=2.14.5)
+Requires-Dist: fasttext (>=0.9.1)
+Requires-Dist: jsonargparse[signatures] (>=4.26.0)
+Requires-Dist: lightning (>=2.1.0)
+Requires-Dist: nlp-data (>=0.2.1)
+Requires-Dist: nlu-inference (>=0.3.0)
+Requires-Dist: onnx (>=1.14.0)
+Requires-Dist: onnxruntime (>=1.15.1)
+Requires-Dist: pandas (>=1.9.0)
+Requires-Dist: rich (>=13.5.3)
+Requires-Dist: wasabi (>=1.1.2)
+Description-Content-Type: text/markdown
+
+# NLU Trainer
+
+nlu-trainer 是一个用于训练nlu模型的工具，它主要有以下特点：
+
+- 完整的命令行应用,使用方便
+- 端侧和云侧模型皆可训练
+- fasttext模型量化和导出onnx模型功能
+- 模型测试功能
+- 模型发布功能
+
+### 安装
+- 安装[pytorch](https://pytorch.org/)
+- 安装nlu-trainer
+```bash
+pip install nlu-trainer --upgrade -i http://192.168.130.5:5002/simple  --trusted-host 192.168.130.5 --extra-index-url https://mirrors.aliyun.com/pypi/simple/
+```
+
+### 使用
+
+#### 项目初始化
+```bash
+nlu-trainer init --name schedule_cmn
+```
+当你执行完上述命令后，你会初始化一个名为schedule_cmn的项目，项目结构如下：
+```bash
+schedule_cmn
+├── configs
+│   ├── corpus.yaml
+│   ├── dataset.yaml
+│   ├── docs.yaml
+│   ├── intentention.yaml
+│   ├── ner.yaml
+│   ├── domain.yaml
+|-- corpus
+│   ├── abnf
+│   ├── |--- run.sh
+│   ├── Generator.jar
+│   ├── neg_extra.txt
+│   ├── pos_extra.txt
+
+```
+
+#### 数据准备
+- 在`corpus/abnf/`目录下面编写abnf语法文件,**注意**：语法文件的命名必须是`*.abnf`,且每个文件的名称必须是意图标签名称
+- 命令行生成NLUDoc格式文档
+```bash
+nlu-trainer prepare docs --help
+```
+- 生成领域训练语料
+```bash
+nlu-trainer prepare corpus --help
+```
+- 生成数据集
+```bash
+nlu-trainer prepare dataset --help
+```
+
+#### 模型训练
+- 训练意图识别模型
+```bash
+# 查看帮助
+nlu-trainer train intention --help
+# 通过配置文件训练
+nlu-trainer train intention --config configs/intention.yaml
+```
+- 训练槽位识别模型
+```bash
+# 查看帮助
+nlu-trainer train ner --help
+# 通过配置文件训练
+nlu-trainer train ner --config configs/ner.yaml
+```
+- 训练领域识别模型
+```bash
+# 查看帮助
+nlu-trainer train domain --help
+# 通过配置文件训练
+nlu-trainer train domain --config configs/domain.yaml
+```
+
+#### 模型测试
+
+- 添加领域测试用例: `corpus/pos_extra`中添加正向测试用例, 在`corpus/neg_extra`中添加负向测试用例
+- 添加nlu测试用例:
+```bash
+# 查看帮助
+nlu-trainer test add --help
+```
+- 列出测试用例
+```bash
+# 查看帮助
+nlu-trainer test list --help
+```
+
+- 删除测试用例
+```bash
+# 查看帮助
+nlu-trainer test delete --help
+```
+
+
+- 测试云端模型
+```bash
+# 查看帮助
+nlu-trainer test cloud --help
+```
+
+- 测试端侧模型
+```bash
+# 查看帮助
+nlu-trainer test local --help
+```
+
+
+

@@ -1,0 +1,13 @@
+epochs: 30
+lr: 0.1
+ngrams: 2
+bucket: 100000
+dim: 100
+quantize: true
+qnorm: false
+retrain: true
+retrain_epoch: 1
+cutoff: 100000
+qout: false
+save_cloud: true
+save_local: true

@@ -1,0 +1,4 @@
+up_sample: false
+domain: true 
+intention: true
+ner: true

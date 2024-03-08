@@ -1,0 +1,3 @@
+[console_scripts]
+nlu-trainer=nlu_trainer.cli:run_cli
+
