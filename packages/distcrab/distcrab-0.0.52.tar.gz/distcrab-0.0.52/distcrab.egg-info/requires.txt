@@ -1,0 +1,9 @@
+GitPython
+aiodav
+aiofiles
+aiostream
+asyncssh
+dnspython
+httpx
+humanize
+pyOpenSSL
