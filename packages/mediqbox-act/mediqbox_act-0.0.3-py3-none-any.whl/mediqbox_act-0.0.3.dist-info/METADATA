@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mediqbox-act
+Version: 0.0.3
+Summary: A mediqbox component for translating texts and files
+Description-Content-Type: text/markdown
+Requires-Dist: mediqbox-download
+Requires-Dist: requests-toolbelt
+
+# mediqbox-act
+
+A mediqbox component for translating texts and files.
