@@ -1,0 +1,10 @@
+azure-identity
+azure-keyvault
+azure-keyvault-secrets
+azure-storage-file-datalake
+joblib
+numpy
+pandas
+pyarrow
+openpyxl
+python-dotenv
