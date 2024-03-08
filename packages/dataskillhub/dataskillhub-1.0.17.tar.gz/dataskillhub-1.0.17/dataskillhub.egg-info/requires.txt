@@ -1,0 +1,9 @@
+Jinja2
+Markdown
+PyYAML
+black
+click
+flake8
+pydantic
+pytest
+weasyprint

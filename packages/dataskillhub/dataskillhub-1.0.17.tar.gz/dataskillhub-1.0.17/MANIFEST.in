@@ -1,0 +1,3 @@
+include sources_exemple/assets/*
+include sources_exemple/config/*
+include sources_exemple/templates/*
