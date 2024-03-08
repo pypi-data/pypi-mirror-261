@@ -1,0 +1,3 @@
+[console_scripts]
+zoomeyehk = zoomeyehk.cli:main
+
