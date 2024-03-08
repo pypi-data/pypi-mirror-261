@@ -1,0 +1,5 @@
+llama_index/vector_stores/tidbvector/__init__.py,sha256=KjqZ8vpLGYFuw9ack0SaLTC8XUoMDAwS5jqXKAxWtr8,102
+llama_index/vector_stores/tidbvector/base.py,sha256=aThqctbBqEetwoi2uFNxsQ92TFYZlMPqQxRsJQigMNY,10144
+llama_index_vector_stores_tidbvector-0.1.0.dist-info/METADATA,sha256=hU8BsyXomwfAYUP7c331QEkpXJwFNNvUaNK16mHDJe0,697
+llama_index_vector_stores_tidbvector-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_vector_stores_tidbvector-0.1.0.dist-info/RECORD,,
