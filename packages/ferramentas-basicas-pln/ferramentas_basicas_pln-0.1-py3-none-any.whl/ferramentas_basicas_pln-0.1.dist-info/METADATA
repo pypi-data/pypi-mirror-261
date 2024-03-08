@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ferramentas_basicas_pln
+Version: 0.1
+Requires-Dist: regex
+Requires-Dist: unidecode
+
