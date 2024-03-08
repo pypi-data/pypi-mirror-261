@@ -1,0 +1,74 @@
+[project]
+name = "flet-easy"
+version = "0.2.0.dev5"
+description = "Flet-Easy is a package created as a Flet add-on, designed to be easy to use with a cleaner order in the code, having many customizable features."
+authors = [
+    { name = "Daxexs", email = "Daxexsdev@gmail.com" },
+]
+dependencies = [
+    "parse>=1.20.1",
+    "schedule>=1.2.1",
+    "pytoml>=0.1.21",
+    "typer[all]>=0.9.0",
+    "PyJWT>=2.8.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+keywords = [
+    "flet easy",
+    "flet",
+    "python",
+    "flet router",
+]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.license]
+text = "apache-2.0"
+
+[project.urls]
+Homepage = "https://github.com/Daxexs"
+Repository = "https://github.com/Daxexs/flet-easy"
+Documentation = "https://github.com/Daxexs/flet-easy/blob/main/README.md"
+Changelog = "https://github.com/Daxexs/flet-easy/blob/main/README.md"
+
+[project.scripts]
+fs = "flet_easy.cli.main:app"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+excludes = [
+    "./**/.git",
+]
+package-dir = "src"
+includes = [
+    "src/flet_easy",
+]
+source-includes = [
+    "LICENSE",
+    "README.md",
+]
+
+[tool.pdm.dev-dependencies]
+test = [
+    "python-dotenv>=1.0.1",
+    "peewee>=3.17.1",
+    "flet>=0.21.1",
+]
+
+[tool.pdm.scripts.f]
+call = "flet_easy.cli.main:app"
