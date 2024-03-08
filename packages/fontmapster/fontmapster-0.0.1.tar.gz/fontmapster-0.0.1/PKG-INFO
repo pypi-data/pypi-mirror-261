@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fontmapster
+Version: 0.0.1
+Summary: 动态字体映射
+Author: ayuge
+Author-email: ayugesheng@gmail.com
+Requires-Python: >=3.8.1,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: brotli (>=1.1.0,<2.0.0)
+Requires-Dist: cnocr (==2.3.0.1)
+Requires-Dist: fonttools (==4.49.0)
+Requires-Dist: numpy (>=1.24.3,<1.25.0) ; python_version < "3.9"
+Requires-Dist: numpy (>=1.26.0,<1.27.0) ; python_version >= "3.9" and python_version < "3.13"
+Requires-Dist: pillow (>=10.2.0,<11.0.0)
+Requires-Dist: rapidocr-onnxruntime (>=1.3.15,<2.0.0)
+Description-Content-Type: text/markdown
+
+# FontMapster 项目说明
+
