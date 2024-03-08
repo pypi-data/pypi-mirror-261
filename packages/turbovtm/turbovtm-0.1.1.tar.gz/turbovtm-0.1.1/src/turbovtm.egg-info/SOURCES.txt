@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/turbovtm/__init__.py
+src/turbovtm/__main__.py
+src/turbovtm.egg-info/PKG-INFO
+src/turbovtm.egg-info/SOURCES.txt
+src/turbovtm.egg-info/dependency_links.txt
+src/turbovtm.egg-info/requires.txt
+src/turbovtm.egg-info/top_level.txt
