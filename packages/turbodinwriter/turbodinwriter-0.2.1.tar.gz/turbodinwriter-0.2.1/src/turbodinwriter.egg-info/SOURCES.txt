@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/turbodinwriter/__init__.py
+src/turbodinwriter.egg-info/PKG-INFO
+src/turbodinwriter.egg-info/SOURCES.txt
+src/turbodinwriter.egg-info/dependency_links.txt
+src/turbodinwriter.egg-info/requires.txt
+src/turbodinwriter.egg-info/top_level.txt
