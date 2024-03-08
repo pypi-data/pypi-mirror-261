@@ -1,0 +1,3 @@
+[console_scripts]
+frun = frunner.cli:main
+frunner = frunner.cli:main
