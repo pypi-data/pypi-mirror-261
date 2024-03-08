@@ -1,0 +1,10 @@
+fsl_pipe/__init__.py,sha256=-MyGVW4uQ9XGtTKi5pC5Bm92xQjZQjf2UBansFfGbFE,420
+fsl_pipe/datalad.py,sha256=lS5UFW_FRGZh_fqziempzy7paef_pPwABOwUflejYFo,1233
+fsl_pipe/job.py,sha256=Ak18Qlp7rUadW_xtr54J-Be63BCA5noDqhRc6nQOoIU,34049
+fsl_pipe/pipeline.py,sha256=9PTDsFa4mI8-USmZFqOeR6WWdQnRr7q4Jgl7o9BP4-w,38283
+fsl_pipe/testing.py,sha256=9tZR0UmWEKm54qHWYSalNhlxsxlWFd5Z9srllDo14lU,162
+fsl_pipe-1.0.3.dist-info/LICENSE,sha256=LVIw5JARlWv5P3qRV75x4EQYqbF0G2XO18myh7NoDCA,1094
+fsl_pipe-1.0.3.dist-info/METADATA,sha256=qLan5iuB1xNhcpP8_Zul437_hw3_DIjVEXYq-DM7HKc,3694
+fsl_pipe-1.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fsl_pipe-1.0.3.dist-info/top_level.txt,sha256=gsvDmkgMg1gKZFgDEaOsAPPejqQcZR5Ws0JCeAkziKQ,9
+fsl_pipe-1.0.3.dist-info/RECORD,,
