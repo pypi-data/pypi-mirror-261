@@ -1,0 +1,2 @@
+[console_scripts]
+random_number_provider = random_number_provider.app:start
