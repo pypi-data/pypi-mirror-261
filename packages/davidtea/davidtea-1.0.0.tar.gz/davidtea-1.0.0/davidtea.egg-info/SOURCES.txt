@@ -1,0 +1,6 @@
+README.md
+setup.py
+davidtea.egg-info/PKG-INFO
+davidtea.egg-info/SOURCES.txt
+davidtea.egg-info/dependency_links.txt
+davidtea.egg-info/top_level.txt
