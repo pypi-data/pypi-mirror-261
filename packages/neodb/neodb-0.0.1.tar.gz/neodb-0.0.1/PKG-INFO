@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: neodb
+Version: 0.0.1
+Summary: a simple tool to monitor execution times of functions.
+Home-page: https://github.com/eyukselen/bumi
+Author: emre
+Author-email: 
+License: MIT
+Project-URL: Homepage, https://github.com/eyukselen/bumi
+Project-URL: Source, https://github.com/eyukselen/bumi
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# neodb
+
+a simple module for a document store
+
+
+
