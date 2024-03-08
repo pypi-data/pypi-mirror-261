@@ -1,0 +1,9 @@
+zsindy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zsindy/dynamical_models.py,sha256=626YJrjgZ9pFAeq-qpl7JprXFrImSQ1oZ85JR8ykHTA,11486
+zsindy/experiments.py,sha256=KS1qukSgWLC2ra1--FskhdLLsznlUiiaW_3gpZEVAJA,22916
+zsindy/ml_module.py,sha256=viboG-QANO4WiothGKbj89peq75JE1pBStZWa12zkPo,19235
+zsindy/plotting.py,sha256=Gq8I7xV_kvbLPXonsuJ3WOTJSfau_qzVIPd5eDz4Wk0,8760
+zsindy-0.1.1.dist-info/METADATA,sha256=JDdrSNHA2SZLWsQZaSPIoD7wk5EsqUmv2MGzs4tS9k4,418
+zsindy-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+zsindy-0.1.1.dist-info/top_level.txt,sha256=0dqvO2U5OKkINHHoQuXeeILUEMrLNg11mZsVTMaeO8Q,7
+zsindy-0.1.1.dist-info/RECORD,,
