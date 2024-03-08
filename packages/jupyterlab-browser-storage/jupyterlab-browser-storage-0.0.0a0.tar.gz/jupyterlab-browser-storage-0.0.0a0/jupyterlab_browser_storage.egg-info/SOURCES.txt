@@ -1,0 +1,5 @@
+setup.py
+jupyterlab_browser_storage.egg-info/PKG-INFO
+jupyterlab_browser_storage.egg-info/SOURCES.txt
+jupyterlab_browser_storage.egg-info/dependency_links.txt
+jupyterlab_browser_storage.egg-info/top_level.txt
