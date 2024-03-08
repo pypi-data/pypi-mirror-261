@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dynaphos/__init__.py
+dynaphos/cortex_models.py
+dynaphos/image_processing.py
+dynaphos/plotting.py
+dynaphos/simulator.py
+dynaphos/utils.py
+dynaphos.egg-info/PKG-INFO
+dynaphos.egg-info/SOURCES.txt
+dynaphos.egg-info/dependency_links.txt
+dynaphos.egg-info/top_level.txt
+test/test_all.py
