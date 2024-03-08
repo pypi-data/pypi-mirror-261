@@ -1,0 +1,249 @@
+{# vim: set et ts=8 sts=4 sw=4 ai: #}
+{% extends "preview.html" %}
+{#
+    Head
+#}
+{% block head %}
+<style type="text/css" media="screen">
+</style>
+<link href="{{ url_for("static", filename="css/codemirror.css") | debug_unixtime }}" rel="stylesheet" />
+<link href="{{ url_for("static", filename="css/codemirror-theme.css") | debug_unixtime }}" rel="stylesheet" />
+{% endblock %}
+{% block navbar_editor %}
+<button onclick="otterwiki_editor.undo()" class="btn btn-editor btn-xs ml-10" title="Undo"><i class="fas fa-undo"></i></button>
+<button onclick="otterwiki_editor.redo()" class="btn btn-editor btn-xs" style="margin-left: 0.1rem;" title="Redo"><i class="fas fa-redo"></i></button>
+<button onclick="otterwiki_editor.bold()" class="btn btn-editor btn-xs ml-5 hidden-sm-and-down" title="Bold"><i class="fa fa-bold"></i></button>
+<button onclick="otterwiki_editor.italic()" class="btn btn-editor btn-xs hidden-sm-and-down" title="Italic"><i class="fa fa-italic"></i></button>
+<button onclick="otterwiki_editor.strikethrough()" class="btn btn-editor btn-xs hidden-sm-and-down" title="Strikethrough"><i class="fa fa-strikethrough"></i></button>
+<button onclick="otterwiki_editor.code()" class="btn btn-editor btn-xs hidden-sm-and-down" title="Code"><i class="fa fa-code"></i></button>
+<button onclick="otterwiki_editor.header()" class="btn btn-editor btn-xs ml-5 hidden-sm-and-down" title="Header"><i class="fa fa-heading"></i></button>
+<button onclick="otterwiki_editor.ul()" class="btn btn-editor btn-xs ml-5 hidden-sm-and-down" title="List"><i class="fas fa-list-ul"></i></button>
+<button onclick="otterwiki_editor.ol()" class="btn btn-editor btn-xs hidden-sm-and-down" title="Ordered List"><i class="fas fa-list-ol"></i></button>
+<button onclick="otterwiki_editor.cl()" class="btn btn-editor btn-xs hidden-sm-and-down" title="Checklist"><i class="far fa-check-square"></i></button>
+<button onclick="otterwiki_editor.link()" class="btn btn-editor btn-xs ml-5 hidden-sm-and-down" title="Link"><i class="fas fa-link"></i></button>
+<button onclick="otterwiki_editor.img()" class="btn btn-editor btn-xs hidden-sm-and-down" title="Picture"><i class="far fa-image"></i></button>
+<button onclick="otterwiki_editor.table()" class="btn btn-editor btn-xs hidden-sm-and-down" title="Table"><i class="fas fa-table"></i></button>
+<div class="dropdown">
+  <button class="btn btn-editor mr-5 hidden-sm-and-down" data-toggle="dropdown" type="button" id="navbar-dropdown-toggle-table">
+    <i class="fas fa-th fa-rotate-90"></i>
+  </button>
+  <div class="dropdown-menu dropdown-menu-right w-200" aria-labelledby="navbar-dropdown-toggle-table">
+    <a onclick="otterwiki_editor.table_add_row()" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-plus-circle"></i>
+        </span>
+        Add Row
+    </a>
+    <a onclick="otterwiki_editor.table_remove_row()" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-minus-circle"></i>
+        </span>
+        Remove Row
+    </a>
+    <a onclick="otterwiki_editor.table_move_row_up()" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-arrow-up"></i>
+        </span>
+        Move Row up
+    </a>
+    <a onclick="otterwiki_editor.table_move_row_down()" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-arrow-down"></i>
+        </span>
+        Move Row down
+    </a>
+    <div class="dropdown-divider"></div>
+    <a onclick="otterwiki_editor.table_add_column()" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-plus-circle"></i>
+        </span>
+        Add Column
+    </a>
+    <a onclick="otterwiki_editor.table_remove_column()" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-minus-circle"></i>
+        </span>
+        Remove Column
+    </a>
+    <a onclick="otterwiki_editor.table_move_column(-1)" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-arrow-left"></i>
+        </span>
+        Move Column left
+    </a>
+    <a onclick="otterwiki_editor.table_move_column(1)" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-arrow-right"></i>
+        </span>
+        Move Column right
+    </a>
+     <div class="dropdown-divider"></div>
+    <a onclick="otterwiki_editor.table_align_col('left')" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-align-left"></i>
+        </span>
+        Align left
+    </a>
+    <a onclick="otterwiki_editor.table_align_col('center')" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-align-center"></i>
+        </span>
+        Align center
+    </a>
+    <a onclick="otterwiki_editor.table_align_col('right')" href="#" class="dropdown-item-with-icon">
+        <span class="dropdown-icon">
+            <i class="fas fa-align-right"></i>
+        </span>
+        Align right
+    </a>
+  </div>
+</div>
+{% endblock %}
+{#
+    Navbar
+#}
+{% block navbar %}
+<a href="{{ url_for('view', path=pagepath) }}" class="btn btn-danger mr-5" role="button"><i class="fas fa-window-close"></i></a>
+<button class="btn btn-success mr-5" onclick="otterwiki.toggleModal('modal-commit')"><i class="fas fa-save"></i></button>
+<button type="submit" class="btn btn-primary" form="pagecontent"><i class="far fa-eye"></i></button>
+{% endblock %}
+{#
+    Sidebar Menu
+#}
+{% block menu %}
+{{ super() }}
+{% endblock %}
+{% block navbardropdown_outer %}
+{% endblock %}
+{#
+    Content
+#}
+{% block content_wrapper %}
+<!-- Content wrapper start -->
+<form id="pagecontent" action="{{ url_for('preview', path=pagepath) }}" method="post">
+<input id="pc_cursor_line" type="hidden" name="cursor_line" value="" />
+<input id="pc_cursor_ch" type="hidden" name="cursor_ch" value="" />
+<textarea id="content_editor" name="content_editor">{{ content_editor }}</textarea>
+</form>
+<div id="editor-bottom-panel" class="editor-bottom-panel" style="display:none;">
+    <a href="#" onclick="otterwiki.toggleMarkdownHelp()" class="btn btn-xsm"><i class="fab fa-markdown"></i> Markdown Syntax</a>
+    <div id="editor-help-markdown" class="content card border rounded-top p-5" style="display: none;">
+        <a href="{{ url_for("syntax") }}" class="btn btn-xsm" target="_blank" style="float:right;">
+            <i class="fas fa-expand-arrows-alt"></i>
+                    Full Syntax Guide
+        </a>
+
+          {% include "snippets/syntax.html" %}
+    </div>
+</div>
+<!-- Content wrapper end -->
+{% endblock %}
+{#
+    extra-navbar
+#}
+{% block extra_nav -%}
+<h5 class="sidebar-title"><a class="sidebar-title-link" href="{{ url_for('attachments', pagepath=pagepath ) }}">Attachments <i class="fa fa-paperclip"></i></a></h5>
+                    <div class="sidebar-divider" ></div>
+                    {% for f in files %}
+    {#                            <a href="{{f.url}}">{% if f.thumbnail_url %}<img src="{{f.thumbnail_url}}"/>{%else%}{{f.thumbnail_icon|safe}}{%endif%}</a>#}
+                        <details class="collapse-panel pb-5">
+                          <summary class="collapse-header font-size-12">
+                            {{f.filename}}
+                          </summary>
+                          <div class="position-relative collapse-content font-size-12 extra-nav-attachment">
+{% if f.thumbnail_url %}
+                            <span class="font-weight-semi-bold">Inline Image:</span>
+                            <a href="#" onclick="otterwiki_editor.img('![]({{f.url}})')" class="btn btn-xsm position-absolute" style="right: 3.5rem;"><i class="far fa-image"></i></a>
+                            <a href="#" title="Copy to clipboard" onclick="navigator.clipboard.writeText('![]({{f.url}})')" class="btn btn-xsm position-absolute right-02"><i class="fas fa-copy"></i></a>
+                            <div class="font-size-10 text-monospace py-5 break-all">![]({{f.url}})</div>
+                            <!-- -->
+                            <span class="font-weight-semi-bold">Link with Thumbnail:</span>
+                            <a href="#" onclick="otterwiki_editor.img('[![]({{f.thumbnail_url}})]({{f.url}})')" class="btn btn-xsm position-absolute" style="right: 3.5rem;"><i class="far fa-image"></i></a>
+                            <a href="#" onclick="navigator.clipboard.writeText('[![]({{f.thumbnail_url}})]({{f.url}})')" class="btn btn-xsm position-absolute right-02"><i class="fas fa-copy"></i></a>
+                            <div class="font-size-10 text-monospace py-5 break-all">[![]({{f.thumbnail_url}})]({{f.url}})</div>
+                            <!-- -->
+{% endif %}
+                            <span class="font-weight-semi-bold">Link:</span>
+                            <a href="#" onclick="otterwiki_editor.img('[{{f.filename}}]({{f.url}})')" class="btn btn-xsm position-absolute" style="right: 3.5rem;"><i class="fas fa-link"></i></a>
+                            <a href="#" onclick="navigator.clipboard.writeText('[{{f.filename}}]({{f.url}})')" class="btn btn-xsm position-absolute right-02"><i class="fas fa-copy"></i></a>
+                            <div class="font-size-10 text-monospace py-5 break-all">[{{f.filename}}]({{f.url}})</div>
+                          </div>
+                        </details>
+                        {% endfor %}
+                        <p class="font-size-12 p-15 text-muted">Additional media can be added via the 'Attachments' of this page, or, you can drag and drop a file into the web editor and it will be uploaded and embedded when the page is saved.</p>
+{%- endblock extra_nav %}
+{#
+    Javascript
+#}
+{% block js %}
+{{ super() }}
+{# load the codemirror stuff #}
+<script src="{{ url_for("static", filename="js/codemirror.min.js") | debug_unixtime }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ url_for("static", filename="js/cm-continuelist.js") | debug_unixtime }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ url_for("static", filename="js/cm-panel.js") }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ url_for("static", filename="js/inline-attachment.js") }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ url_for("static", filename="js/codemirror-4.inline-attachment.js") }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ url_for("static", filename="js/cm-modes.min.js") | debug_unixtime }}" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    var cm_editor = CodeMirror.fromTextArea(document.getElementById("content_editor"), {
+        mode: 'markdown',
+        lineNumbers: true,
+        theme: "otterwiki",
+        lineWrapping: true,
+        indentWithTabs: false,
+        indentUnit: 4,
+        autofocus: true,
+        fencedCodeBlockHighlighting: true,
+        fencedCodeBlockDefaultMode: "bash",
+        extraKeys: {
+            "Enter": "newlineAndIndentContinueMarkdownList",
+            'Cmd-S': function () {
+                return false
+            },
+            'Ctrl-S': function () {
+                return false
+            },
+            "Shift-Tab": "indentLess",
+        },
+      });
+    cm_editor.setCursor({ line: {{cursor_line or 0}}, ch: {{cursor_ch or 0}} } );
+    var bottom_panel = document.getElementById('editor-bottom-panel');
+    bottom_panel.style.display = 'block';
+    cm_editor.addPanel(bottom_panel, {position: "bottom", stable: true});
+
+{#
+thx to https://github.com/sparksuite/simplemde-markdown-editor/issues/328#issuecomment-227075500
+#}
+    inlineAttachment.editors.codemirror4.attach(cm_editor, {
+        uploadUrl: '{{ url_for('inline_attachment', pagepath=pagepath) }}',
+        urlText: "![]({filename})",
+        onFileUploadResponse: function(xhr) {
+            var result = JSON.parse(xhr.responseText),
+            filename = result[this.settings.jsonFieldName];
+
+            if (result && filename) {
+                var newValue;
+                if (typeof this.settings.urlText === 'function') {
+                    newValue = this.settings.urlText.call(this, filename, result);
+                } else {
+                    newValue = this.settings.urlText.replace(this.filenameTag, filename);
+                }
+                var text = this.editor.getValue().replace(this.lastValue, newValue);
+                this.editor.setValue(text);
+                this.settings.onFileUploaded.call(this, filename);
+            }
+            return false;
+        }
+    });
+    document.getElementById('pagecontent').onsubmit = function() {
+        var cm_cursor = cm_editor.getCursor();
+        document.getElementById('pc_cursor_line').value = cm_cursor.line;
+        document.getElementById('pc_cursor_ch').value = cm_cursor.ch;
+
+    }
+    document.getElementById('saveform').onsubmit = function() {
+        var content_editor = cm_editor.getValue();
+        document.getElementById('content_update').value = content_editor;
+    };
+</script>
+{% endblock %}

@@ -1,0 +1,29 @@
+/* vim: set et sts=4 ts=4 ai: */
+
+/* hide navbar and menu */
+.navbar {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+.sidebar-toc {
+    display: none;
+}
+
+.extra-nav-container {
+    display: none;
+}
+
+.alert, /* hide alerts */
+a.anchor {
+    display: none;
+}
+
+
