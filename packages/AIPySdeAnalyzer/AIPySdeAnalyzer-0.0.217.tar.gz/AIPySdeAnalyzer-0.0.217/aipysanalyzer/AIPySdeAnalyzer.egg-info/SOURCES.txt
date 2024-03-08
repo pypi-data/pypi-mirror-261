@@ -1,0 +1,16 @@
+setup.py
+aipysanalyzer/AIPySdeAnalyzer.egg-info/PKG-INFO
+aipysanalyzer/AIPySdeAnalyzer.egg-info/SOURCES.txt
+aipysanalyzer/AIPySdeAnalyzer.egg-info/dependency_links.txt
+aipysanalyzer/AIPySdeAnalyzer.egg-info/entry_points.txt
+aipysanalyzer/AIPySdeAnalyzer.egg-info/requires.txt
+aipysanalyzer/AIPySdeAnalyzer.egg-info/top_level.txt
+aipysanalyzer/CLI/__init__.py
+aipysanalyzer/CLI/loadParametres.py
+aipysanalyzer/CLI/setParameters.py
+aipysanalyzer/func/__init__.py
+aipysanalyzer/func/mapSgRNA.py
+aipysanalyzer/func/unPacking.py
+aipysanalyzer/simulation/Simulate.py
+aipysanalyzer/simulation/__init__.py
+aipysanalyzer/simulation/runSimulation.py
