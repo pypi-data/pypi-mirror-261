@@ -1,0 +1,13 @@
+fructose/__init__.py,sha256=zpfnWqANd3OHGWm7NCF5Y6m01BWG4NkNk8SK9Ex48nA,18
+fructose/ai.py,sha256=h53rr3aOESIAynbgMayLJAIWBKbeQr2tzb2SQ5zth5Q,3393
+fructose/function_helpers.py,sha256=xrXP4_PXsAk7aK76wmH6gvmvavxUxOO76Y95-n8IBzs,2258
+fructose/llm_function_handler.py,sha256=lVYEimJ7iIp5RQi9zSukYzNKNpYRfFTQPhN6hbuiCF0,9098
+fructose/type_parser.py,sha256=nKgcGR33MoI1L5lrb1SST9HDKBD72sF3uVfuxN0JHxI,7674
+fructose/types.py,sha256=GGwaWpZS6rURqIWOGL-GGbDrXFy9KNlpyDTuR-6wCBQ,107
+fructose/templates/chain_of_thought_prompt.jinja,sha256=zwtpZ3CGNF4L9FN3IevknssOxH8GhSA9G4tidxH2Rc8,517
+fructose/templates/default_prompt.jinja,sha256=tXEvK7bQhR53WtH9ryScSDtlLVhh-dGTq6PGkE71i4I,467
+fructose-0.0.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fructose-0.0.11.dist-info/METADATA,sha256=NZLQbwQWKSW3i29YfPcHEtnhOiYpE9bwD-z-V3xnhzU,272
+fructose-0.0.11.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fructose-0.0.11.dist-info/top_level.txt,sha256=xeL_HEHrB8iu2VRnnbDC2D3yCfhWr_A4HNCOEWvZg2g,9
+fructose-0.0.11.dist-info/RECORD,,
