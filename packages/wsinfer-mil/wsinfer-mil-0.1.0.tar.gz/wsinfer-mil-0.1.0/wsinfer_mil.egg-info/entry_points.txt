@@ -1,0 +1,2 @@
+[console_scripts]
+wsinfer-mil = wsinfer_mil.cli:cli
