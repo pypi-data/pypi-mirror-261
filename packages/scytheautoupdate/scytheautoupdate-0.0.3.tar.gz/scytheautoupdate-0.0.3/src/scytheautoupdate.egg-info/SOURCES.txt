@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/scytheautoupdate/__init__.py
+src/scytheautoupdate/scythe_auto_update.py
+src/scytheautoupdate.egg-info/PKG-INFO
+src/scytheautoupdate.egg-info/SOURCES.txt
+src/scytheautoupdate.egg-info/dependency_links.txt
+src/scytheautoupdate.egg-info/top_level.txt
