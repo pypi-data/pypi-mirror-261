@@ -1,0 +1,3 @@
+[console_scripts]
+iaa-seminario1=iaa_seminario1.__main__:main
+
