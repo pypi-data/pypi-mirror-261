@@ -1,0 +1,8 @@
+htmlishell/__init__.py,sha256=XhQZZSCqk0pkSs0swXtdLv_rPlWi2gDKy_gFmJpuG0g,39
+htmlishell/__main__.py,sha256=JZk7IONNRsTcFwze0knbW8i1eMr2PK-OhAuw9DadcC4,526
+htmlishell/parsing.py,sha256=dHKcE5ne7ZqvAw1gunLk3py6zRYqj-ehfGZA8puSJfA,1063
+htmlishell-0.2.0.dist-info/LICENSE,sha256=MKeLmrZer9v8-lzYpvNjRe4wGOlgv7yr2htYxKm-KMs,1098
+htmlishell-0.2.0.dist-info/METADATA,sha256=Uq3D8YU332YgXShXrbLANyoaOree782CE13sDrlfKEo,2990
+htmlishell-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+htmlishell-0.2.0.dist-info/entry_points.txt,sha256=21dW7gh_v6vksliIW_WLBPQyRBWz4mftIrXGfAmBAno,55
+htmlishell-0.2.0.dist-info/RECORD,,
