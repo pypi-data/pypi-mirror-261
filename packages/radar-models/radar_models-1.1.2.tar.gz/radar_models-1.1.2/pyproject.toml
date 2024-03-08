@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "radar-models"
+version = "1.1.2"
+description = "DB models for Radar"
+authors = ["Andrew Atterton"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "radar_models"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlmodel = "^0.0.16"
+pydantic = "^2.6.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+pytest = "^7.4.4"
+faker = "^16.9.0"
+tox = "^4.14.1"
+pylint = "^3.1.0"
+mypy = "^1.8.0"
+bandit = "^1.7.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+exclude = '(\.eggs|\.git|\.venv|\.tox|\.vscode)'
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = "too-many-lines, too-few-public-methods, missing-module-docstring, missing-class-docstring, duplicate-code, line-too-long"
+max-line-length = 160
