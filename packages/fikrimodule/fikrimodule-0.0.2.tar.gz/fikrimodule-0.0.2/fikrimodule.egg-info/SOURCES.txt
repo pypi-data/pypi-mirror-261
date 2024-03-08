@@ -1,0 +1,11 @@
+setup.py
+fikrimodule/__init__.py
+fikrimodule/add.py
+fikrimodule/subtract.py
+fikrimodule.egg-info/PKG-INFO
+fikrimodule.egg-info/SOURCES.txt
+fikrimodule.egg-info/dependency_links.txt
+fikrimodule.egg-info/top_level.txt
+fikrimodule/extras/__init__.py
+fikrimodule/extras/divide.py
+fikrimodule/extras/multiply.py
