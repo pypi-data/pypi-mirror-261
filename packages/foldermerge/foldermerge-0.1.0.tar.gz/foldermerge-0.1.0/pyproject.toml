@@ -1,0 +1,57 @@
+[project]
+name = "foldermerge"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "JostTim", email = "44769559+JostTim@users.noreply.github.com" },
+]
+dependencies = [
+    "pandas>=2.1.4",
+    "tqdm>=4.66.1",
+]
+requires-python = ">=3.12, <3.13"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+gui = [
+    "flask>=3.0.2",
+]
+
+[project.scripts]
+foldermerge = "foldermerge:console"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pytest.ini_options]
+addopts = "--pdbcls=IPython.terminal.debugger:TerminalPdb --cov-report html --cov --junitxml=pytest_results.xml"
+testpaths = [
+    "tests",
+]
+
+[tool.pdm]
+includes = [
+    "src/foldermerge/*.py",
+    "src/foldermerge/*.html",
+    "src/foldermerge/*.css",
+    "src/foldermerge/*.js",
+    "LICENSE",
+]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.4.4",
+    "tox-pdm>=0.7.2",
+    "pytest-cov>=4.1.0",
+    "hypothesis>=6.97.4",
+    "ipdb>=0.13.13",
+    "jupyter>=1.0.0",
+    "line-profiler>=4.1.2",
+]
