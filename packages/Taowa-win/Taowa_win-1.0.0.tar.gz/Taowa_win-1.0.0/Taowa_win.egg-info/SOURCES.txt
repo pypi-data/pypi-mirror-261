@@ -1,0 +1,9 @@
+setup.py
+Taowa_win/__init__.py
+Taowa_win/taowa_win32.py
+Taowa_win/按键键值.py
+Taowa_win.egg-info/PKG-INFO
+Taowa_win.egg-info/SOURCES.txt
+Taowa_win.egg-info/dependency_links.txt
+Taowa_win.egg-info/requires.txt
+Taowa_win.egg-info/top_level.txt
