@@ -1,0 +1,2 @@
+include src/myRIO_library/data/*
+include src/myRIO_library/examples/*
