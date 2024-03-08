@@ -1,0 +1,9 @@
+scraptrawler/deck.py,sha256=iqpn8NMq2OuS2kZsq6peqLISfykmHHh-ZRCCGyvUxQE,7183
+scraptrawler/extractor.py,sha256=A3dzpJSKhdHB_xWf3CQ9xJ1UCWKFKfO9E0BVjI_Ltec,6189
+scraptrawler/scraper/base.py,sha256=uZbq5DgJdJimOsbWY_1q6HYwzkx7bzsCzEjmMFPY-Hs,5370
+scraptrawler/scraper/melee.py,sha256=91cGZ4hrG4zQvqt8WFwFmAPVqB4ZNiKLrl2bK60F98c,12909
+scraptrawler/scraper/mtgo.py,sha256=gTiWsoggYsb98h37SIbRgwD_LwCibohtlwrSqkTmm6g,7333
+scraptrawler/utils.py,sha256=sbxQlsVuD0klcPoOoRTuDlhZhJVXDkmvBjH7LcMHH6E,2599
+scraptrawler-1.0.1.dist-info/METADATA,sha256=35XwE3rol4H-FXbPydSccuRPEuVo0JAnNhdVNph173c,933
+scraptrawler-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+scraptrawler-1.0.1.dist-info/RECORD,,
