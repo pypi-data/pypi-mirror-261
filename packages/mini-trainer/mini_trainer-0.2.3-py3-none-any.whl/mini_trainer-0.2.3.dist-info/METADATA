@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mini-trainer
+Version: 0.2.3
+Summary: The PyTorch micro framework for training neural networks.
+Home-page: https://github.com/liaoyuhua/mini-trainer
+Author: liaoyuhua
+Author-email: ml.liaoyuhua@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch ~=2.2.0
+Requires-Dist: tqdm ~=4.66.2
+Requires-Dist: numpy ~=1.26.4
+Requires-Dist: matplotlib ~=3.8.3
+
+
+
+<div align="center">
+
+<img src="./img/logo.png" alt="Logo" width="260"/>
+
+The PyTorch micro framework for training neural networks.
+
+</div>
+
+- **Lightweight**: As few lines of code as possible. Easy to use and understand. If you don't call a function, you don't need to know how it works.
+
+- **Plug and play**: The framework is designed to be used with extensions. You can use the extensions provided by the framework or write your own. This provides a lot of flexibility and customization.
+
+- **Templates**: The framework provides 3 levels of templates for starting a new project.
