@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: easygcpz
+Version: 0.1.0
+Home-page: https://github.com/mw-os/EasyGCPz
+Author: Mitchell Williams
+License-File: License
+Requires-Dist: google.cloud
+
