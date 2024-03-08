@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: mklib-manmadegod
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/unknown/mklib-manmadegod#readme
+Project-URL: Issues, https://github.com/unknown/mklib-manmadegod/issues
+Project-URL: Source, https://github.com/unknown/mklib-manmadegod
+Author-email: ManMade <kristensen.mads.90@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# mklib-manmadegod
+
+[![PyPI - Version](https://img.shields.io/pypi/v/mklib-manmadegod.svg)](https://pypi.org/project/mklib-manmadegod)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mklib-manmadegod.svg)](https://pypi.org/project/mklib-manmadegod)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install mklib-manmadegod
+```
+
+## License
+
+`mklib-manmadegod` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
