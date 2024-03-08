@@ -1,0 +1,17 @@
+tooltils/__init__.py,sha256=ibfTHdWN0o8vuhj4UsT30VSleCbqsskFPkdXg1_zUuY,19586
+tooltils/_external.py,sha256=OzVuxISqHOYV6nYjWF34o1MEfGMXl6JN2NRBuZCucos,835
+tooltils/errors.py,sha256=5U0CtIjSG5vXDcGj4j4FGdz0n1a5K_4CHzrGcN5LgvM,11731
+tooltils/info.py,sha256=rRSGxLcyX2dh8nLYQzUpTmeoy_1bE6Oh-gVCgo_49oA,20336
+tooltils/os.py,sha256=CH52ElKz_j3cImnpdbN5gx1TTlVvSHWTzc_sEfVeUxA,20993
+tooltils/requests/__init__.py,sha256=5gqLhdLJGQ1_g4ab7-j58gVG7iuyUl5rzKUtD2QH_0w,50439
+tooltils/requests/_helpers.py,sha256=zuAjjfbDVc8UIhKl_jyScMU-B81XFnEwI-MJNkn9Uic,4801
+tooltils/requests/urllib.py,sha256=X1L14gGA1ttoSIA9DMzOHI5opPq5IXFMH9sBGVYbXZM,19746
+tooltils-1.7.1.dist-info/LICENSE,sha256=KYMJhxjnZhJcQXC_h09qBky6E1bS5AfRGNDvylxYU0I,1070
+tooltils-1.7.1.dist-info/METADATA,sha256=39q8Nb7O3uB1u7bu9joGAabIzoQ2wGJBQ0ENtDzXBa8,2300
+tooltils-1.7.1.dist-info/PKG-INFO 2,sha256=39q8Nb7O3uB1u7bu9joGAabIzoQ2wGJBQ0ENtDzXBa8,2300
+tooltils-1.7.1.dist-info/SOURCES 2.txt,sha256=VWqCB-5hu8f5YM8MgqPCe1xp1UmZCGKKK90QYNN1EBM,365
+tooltils-1.7.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tooltils-1.7.1.dist-info/dependency_links 2.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tooltils-1.7.1.dist-info/top_level 2.txt,sha256=4uKXlMhL5xFe_s9ST6dsjLPzfvXJDJfpShn8EGyArhA,9
+tooltils-1.7.1.dist-info/top_level.txt,sha256=4uKXlMhL5xFe_s9ST6dsjLPzfvXJDJfpShn8EGyArhA,9
+tooltils-1.7.1.dist-info/RECORD,,
