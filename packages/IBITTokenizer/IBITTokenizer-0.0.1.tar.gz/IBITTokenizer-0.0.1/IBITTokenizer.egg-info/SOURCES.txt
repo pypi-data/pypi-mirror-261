@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+IBITTokenizer/__init__.py
+IBITTokenizer/tokenizer.py
+IBITTokenizer.egg-info/PKG-INFO
+IBITTokenizer.egg-info/SOURCES.txt
+IBITTokenizer.egg-info/dependency_links.txt
+IBITTokenizer.egg-info/requires.txt
+IBITTokenizer.egg-info/top_level.txt
+IBITTokenizer/resource/IBIT_TOKENIZER.json
