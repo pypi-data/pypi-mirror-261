@@ -1,0 +1,11 @@
+.env,sha256=lSW76taEqF7FMECUtk97U9aLPw4AFBzmWDJJJPHTDfk,6171
+miniogre/__init__.py,sha256=v77T2Mkpzkn40VRqP3nx4sHLIT1GZfn9Oj18Ecp8U5I,125
+miniogre/actions.py,sha256=bV-4lp4iG5oc0DfMB-KsAqT1aGvo0u7DmGuInFvTAUM,16484
+miniogre/config.py,sha256=ZBW-AsudPVG7QPAboLiJrlOjgBXcIxspaXyXkk54zXc,4548
+miniogre/constants.py,sha256=C8DbkzkK34GkDiB8cY9M2u8YEAbk12FREF9AjyYhqhI,3190
+miniogre/main.py,sha256=qFfHtkB8Fng10bplnEOup2cSjBFxfIHR0IEvtvr9QlE,2960
+miniogre-0.4.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+miniogre-0.4.1.dist-info/METADATA,sha256=vuR3Vi5KGoN6x2wBgFkTL8N00dw9BeUUOXe_FpE4sD0,5100
+miniogre-0.4.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+miniogre-0.4.1.dist-info/entry_points.txt,sha256=cC0KiF23U_cZr5-ydf7I6ZCiAYEySQiXLvUbGonQA0Q,46
+miniogre-0.4.1.dist-info/RECORD,,
