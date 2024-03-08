@@ -1,0 +1,3 @@
+[console_scripts]
+foldermerge = foldermerge:console
+

@@ -1,0 +1,17 @@
+foldermerge-0.1.0.dist-info/METADATA,sha256=tPes_7lKAcKyJjraaX1rSw_Btb7Xh-UMEzj8Maww_bU,2989
+foldermerge-0.1.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+foldermerge-0.1.0.dist-info/entry_points.txt,sha256=OGx9itmsuDPxMKKQ8aFLp-zc4mxTPID9Um7IPlF7t0E,53
+foldermerge-0.1.0.dist-info/licenses/LICENSE,sha256=uSkMLpxlJ9HaZAjcXJGD3QhEtCMyL4w1iH2uxcmNk04,1064
+foldermerge/__init__.py,sha256=8LoOMgul1PrWqfBoqlhs_pvkb6gNlvqUAc40TaSx6jU,1430
+foldermerge/core.py,sha256=b4K8TLw_xzo21QO0RqKUwwt-OKLtpIuHRnvO99mNN0o,23168
+foldermerge/custom_accessors.py,sha256=a624YhCIl-IhfTi8Pez0VXbc5JOldI56RHz8QaJjXT0,915
+foldermerge/gui/flask.py,sha256=83GmVtvZIBVjJwekX3QctoWF--ggy9wCHsrZHGDRy-0,5779
+foldermerge/gui/static/css/files_view_style.css,sha256=ynnZowZLWdqWKcwL8BY2yvSyZzVhY2m3o1fW5b9qXd8,1720
+foldermerge/gui/static/css/index_style.css,sha256=pi0QrExuJRjT9xtfNu5lAN-YpnLT_LuJ5NUin22Srtc,4576
+foldermerge/gui/static/js/files_view_script.js,sha256=-gYNDgvGy2bLw5GdXU0yCKDbHLmGqXExrLZX-jro_AU,365
+foldermerge/gui/static/js/index_script.js,sha256=JdqZuJBQmxH9THySLicfFWknhUHGGkxGxF9wVURvkXQ,4584
+foldermerge/gui/static/js/report_view_script.js,sha256=DENMrJ-DPuu3xJRVQ84qmAFuSneLA8FGZAyVl-tmYLA,357
+foldermerge/gui/templates/files_view.html,sha256=wogJ9v2Zj6Sp2IFU1wUqy22fJSYxM9upWhP3i-NFkZc,876
+foldermerge/gui/templates/index.html,sha256=vG9VFxELrNkbjn377nkeLD35BJjbqfGoclK7EQjeuHE,3103
+foldermerge/gui/templates/report_view.html,sha256=CxUon7U8tgDJSrQZqWolGu_TQaAPvhUTl02XwmwyIF0,2088
+foldermerge-0.1.0.dist-info/RECORD,,
