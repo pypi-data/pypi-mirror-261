@@ -1,0 +1,10 @@
+pyprevent-0.1.5.dist-info/METADATA,sha256=3i73JFBEZ-qnV2hUm4LY2ekForFqWx1APlgygI0DvkU,4150
+pyprevent-0.1.5.dist-info/WHEEL,sha256=O4vGp2v8S-yRkNyuFD9HZOD-Qc6jiwOvcp2HvM9Jh5o,134
+pyprevent-0.1.5.dist-info/license_files/LICENSE.txt,sha256=-HCQQGxDHWAtk0wW4xZezEdYIfumZZgUrvBVxCzGzJI,1074
+pyprevent/__init__.py,sha256=oeZcdyoobh5OqCl1ZfmsTQ1s9zNv4jEhaRBYaDWfA8E,393
+pyprevent/heart_failure.py,sha256=IKc6nf5sByEkg-WN-U305HrUa0PDPXZf-ZcyclprT8w,13550
+pyprevent/utils.py,sha256=DXKCaC0ZcYWIBBAn0uu7mZrjgqPft5QunVnGIlLlAvQ,2235
+pyprevent/ascvd_calc.py,sha256=cEQlSTdM9pGQU11-FQqGKzOoy998-jzqZyAAHg79A8w,13597
+pyprevent/cvd.py,sha256=PkintrsPYnUA03IZeXJGK6CSB2cudxr5j9wCOWpMwVU,14597
+pyprevent/_pyprevent.pypy39-pp73-x86_64-linux-gnu.so,sha256=FVOCmUPl5SK0xCsp_I4rlokLvDn1eQqoX3W1oQfYyB0,4244288
+pyprevent-0.1.5.dist-info/RECORD,,
