@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: scraptrawler
+Version: 0.1.0
+Summary: Tools for scraping Magic: the Gathering tournaments and decklists.
+License: N/A
+Author: Alex Gimmi
+Author-email: iambroadband@gmail.com
+Requires-Python: >=3.11,<4
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bs4 (>=0.0.2,<0.0.3)
+Requires-Dist: ftfy (>=6.1.1,<7.0.0)
+Requires-Dist: logging (>=0.4.9.6,<0.5.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: scooze (>=1.0.6,<2.0.0)
+Requires-Dist: selenium (>=4.11.2,<5.0.0)
+Requires-Dist: strenum (>=0.4.15,<0.5.0)
+Requires-Dist: webdriver-manager (>=4.0.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# scraptrawler
+Tools for scraping Magic: the Gathering tournaments and decklists.
+
+![Scrap Trawler](https://cards.scryfall.io/large/front/3/6/36ec47ec-f86c-489d-ad0b-d0fbdee10102.jpg?1674092624)
+
