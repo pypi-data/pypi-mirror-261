@@ -1,0 +1,16 @@
+cogapp/__init__.py,sha256=ARY6ll7hBBS-9K67zyh502pXKM1t2wpf5DMpn_y6EZs,163
+cogapp/__main__.py,sha256=K19C8XF-Tdaf2E7CD_ZWxSQIvMQjtJHYJ5wyspCCSD0,118
+cogapp/cogapp.py,sha256=jTql7kRIZRfaLPVMZrAxwUXnWl1I1t6qQy1zmoTMiio,29761
+cogapp/makefiles.py,sha256=V9hCFnaKQGoAzY2EbsVIQzUU0-7547jZcBveanwYnsk,1117
+cogapp/test_cogapp.py,sha256=woU_ssSnNIvUnzUAmJrxg0Dq5Jrjqinsh7XsqESzT3w,83162
+cogapp/test_makefiles.py,sha256=ybhf7DDoLEduQIwUqoZQC5hg2C7BLb85646HZzM9LYM,3511
+cogapp/test_whiteutils.py,sha256=1lktNLuiIZqiz7--AIT7enWzpXfs7I80t4VDzer2_gI,3931
+cogapp/utils.py,sha256=l4jj7WlfgscRUxVwL5FoMcC2-sJpCD3r6w9vBNT_D0E,1531
+cogapp/whiteutils.py,sha256=Fo2Pf9md4mZqnIYKEHcPLOBJHDUZIsc_IawVR9Om7OA,1929
+cogapp-3.4.1.dist-info/AUTHORS.txt,sha256=KoT77T7YcPPftf_HlFIswoBJXvWh2voRcqYSRBVWwkA,269
+cogapp-3.4.1.dist-info/LICENSE.txt,sha256=1wMKLhBlAA7j2X63ke6HIUVGb0OCPfFcSyz7eVKaGwA,1076
+cogapp-3.4.1.dist-info/METADATA,sha256=eaBzfFI0EcgkQaMBQYR7dQuBDilF9-TMZUQRYDHDvdk,2460
+cogapp-3.4.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cogapp-3.4.1.dist-info/entry_points.txt,sha256=k0WJH7-3xavXMklGb2fwA-jFQaI18E-DkX4WyRo5kGM,36
+cogapp-3.4.1.dist-info/top_level.txt,sha256=MDytiBPJxd9oq-f8HeQLCLjynm4K1GbfGUEXeREefXE,7
+cogapp-3.4.1.dist-info/RECORD,,
