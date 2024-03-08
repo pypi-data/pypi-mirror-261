@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/django_pita.egg-info/PKG-INFO
+src/django_pita.egg-info/SOURCES.txt
+src/django_pita.egg-info/dependency_links.txt
+src/django_pita.egg-info/requires.txt
+src/django_pita.egg-info/top_level.txt
+src/pita/__init__.py
+src/pita/api.py
+src/pita/models.py
+src/pita/utils.py
+tests/tests.py
