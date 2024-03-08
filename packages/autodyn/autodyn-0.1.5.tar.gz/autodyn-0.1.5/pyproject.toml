@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "autodyn"
+version = "0.1.5"
+description = "Differentiable Dynamical Systems"
+authors = ["Vineet Tiruvadi <virati@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jax = "^0.4.25"
+matplotlib = "^3.8.3"
+networkx = "^3.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
