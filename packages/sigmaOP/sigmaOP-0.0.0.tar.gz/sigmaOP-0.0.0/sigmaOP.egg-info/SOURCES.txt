@@ -1,0 +1,5 @@
+setup.py
+sigmaOP.egg-info/PKG-INFO
+sigmaOP.egg-info/SOURCES.txt
+sigmaOP.egg-info/dependency_links.txt
+sigmaOP.egg-info/top_level.txt
