@@ -1,0 +1,8 @@
+setup.py
+Taowa_web3/__init__.py
+Taowa_web3/taowa_web3.py
+Taowa_web3.egg-info/PKG-INFO
+Taowa_web3.egg-info/SOURCES.txt
+Taowa_web3.egg-info/dependency_links.txt
+Taowa_web3.egg-info/requires.txt
+Taowa_web3.egg-info/top_level.txt
