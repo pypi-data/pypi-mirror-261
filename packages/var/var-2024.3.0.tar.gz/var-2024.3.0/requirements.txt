@@ -1,0 +1,18 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+arch
+fitter
+matplotlib
+matplotlib-inline
+numba=0.57.0
+numpy
+numpy-base
+pandas
+scipy
+seaborn
+setuptools
+tox
+tqdm
+var
+vartests
