@@ -1,0 +1,31 @@
+[project]
+name = "nmrpeaklists"
+version = "0.9.0"
+authors = [{ name="Bradley Harden", email="bradleyharden@gmail.com" }]
+description = "A Python library for handling NMR peak lists"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/bradleyharden/nmrpeaklists"
+
+[build-system]
+requires = ["setuptools>=34.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+script-files = [
+  'bin/cara2tab',
+  'bin/cluster_tab',
+  'bin/comment_peaklist',
+  'bin/filter_NOESY_fits',
+  'bin/filter_spin_links',
+  'bin/find_eliminated_spin_links',
+  'bin/print_tab_clusters'
+]
