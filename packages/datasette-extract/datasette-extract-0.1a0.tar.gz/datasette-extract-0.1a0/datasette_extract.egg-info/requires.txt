@@ -1,0 +1,10 @@
+datasette>=1.0a12
+sqlite-utils
+openai>=1.0
+ijson
+ulid
+starlette
+
+[test]
+pytest
+pytest-asyncio
