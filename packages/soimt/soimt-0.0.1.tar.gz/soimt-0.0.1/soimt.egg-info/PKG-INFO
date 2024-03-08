@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: soimt
+Version: 0.0.1
+Summary: Evaluate the reliability of image classification models
+Home-page: https://github.com/Agiraffea/model_test_program
+Author: BUCT-IST
+Author-email: 2023210599@buct.edu.cn
+Maintainer: cjlw
+Maintainer-email: 2023210599@buct.edu.cn
+License: MIT License
+Platform: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+License-File: LICENSE.txt
