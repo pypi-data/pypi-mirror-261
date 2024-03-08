@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/__init__.py
+src/clock.py
+src/configuration.py
+src/data.py
+src/guanaco.py
+src/guanaco_trade.egg-info/PKG-INFO
+src/guanaco_trade.egg-info/SOURCES.txt
+src/guanaco_trade.egg-info/dependency_links.txt
+src/guanaco_trade.egg-info/top_level.txt
