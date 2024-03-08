@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: deepcallib
+Version: 0.2
+Summary: ML speedup for Vam Tool Box projection generation
+Home-page: https://github.com/Clamepending/deepCAL/tree/tweaking_ML
+Author: Mark Ogata
+Author-email: ogata@berkeley.edu
+License: MIT
+Keywords: CAL,vamtoolbox
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
