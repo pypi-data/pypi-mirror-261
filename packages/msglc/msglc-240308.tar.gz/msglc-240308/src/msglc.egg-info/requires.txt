@@ -1,0 +1,6 @@
+msgpack>=1
+bitarray
+
+[test]
+pytest-cov
+black
