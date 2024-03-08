@@ -1,0 +1,3 @@
+[console_scripts]
+load-parameters = aipsanalyser.CLI.loadParametres:main
+updateParameters = aipsanalyser.CLI.setParameters:update_user_parameters

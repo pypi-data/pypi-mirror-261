@@ -1,0 +1,16 @@
+setup.py
+aipsanalyser/AIPySdeAnalyzer.egg-info/PKG-INFO
+aipsanalyser/AIPySdeAnalyzer.egg-info/SOURCES.txt
+aipsanalyser/AIPySdeAnalyzer.egg-info/dependency_links.txt
+aipsanalyser/AIPySdeAnalyzer.egg-info/entry_points.txt
+aipsanalyser/AIPySdeAnalyzer.egg-info/requires.txt
+aipsanalyser/AIPySdeAnalyzer.egg-info/top_level.txt
+aipsanalyser/CLI/__init__.py
+aipsanalyser/CLI/loadParametres.py
+aipsanalyser/CLI/setParameters.py
+aipsanalyser/func/__init__.py
+aipsanalyser/func/mapSgRNA.py
+aipsanalyser/func/unPacking.py
+aipsanalyser/simulation/Simulate.py
+aipsanalyser/simulation/__init__.py
+aipsanalyser/simulation/runSimulation.py
