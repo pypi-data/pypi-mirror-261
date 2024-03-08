@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: utilblob-py
+Version: 0.1.0
+Summary: Various Python utilities.
+Author-Email: Mateusz Obszanski <matobszanski@gmail.com>
+License: MIT
+Requires-Python: >=3.12
+Requires-Dist: more-itertools>=10.2.0
+Requires-Dist: rich>=13.7.1; extra == "rich"
+Requires-Dist: rich>=13.7.1; extra == "progress"
+Requires-Dist: rich>=13.7.1; extra == "err"
+Requires-Dist: pandas>=2.2.1; extra == "csv"
+Requires-Dist: rich>=13.7.1; extra == "all"
+Requires-Dist: pandas>=2.2.1; extra == "all"
+Provides-Extra: rich
+Provides-Extra: progress
+Provides-Extra: err
+Provides-Extra: csv
+Provides-Extra: all
+Description-Content-Type: text/markdown
+
+# utilblob-py
