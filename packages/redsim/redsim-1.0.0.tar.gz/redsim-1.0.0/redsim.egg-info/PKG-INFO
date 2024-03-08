@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: redsim
+Version: 1.0.0
+Summary: Simulation framework for Gas Management in Redstone
+Author-email: Maria Silva <misilva73@gmail.com>
+Project-URL: Homepage, https://github.com/latticexyz/redstone-gas
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
+# Redstone Gas Management Project
+
+This repository contains all the code and analysis related to the Redstone Gas Management Project.
+
+Redstone is an Optimistic Rollup built on the OP Stack by Lattice. It aims to be a highly efficient and cost-effective rollup for on-chain games and other heavy applications. This project focuses on modeling the costs of running the Redstone mainnet and stress-testing the operation’s sustainability.
+
+For more information on the project, check-out the technical reports on [HackMD](https://hackmd.io/@nightingale/redstone-gas).

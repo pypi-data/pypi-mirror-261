@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+redsim/__init__.py
+redsim/costs.py
+redsim/market.py
+redsim/params.py
+redsim/revenue.py
+redsim/sim.py
+redsim.egg-info/PKG-INFO
+redsim.egg-info/SOURCES.txt
+redsim.egg-info/dependency_links.txt
+redsim.egg-info/requires.txt
+redsim.egg-info/top_level.txt
