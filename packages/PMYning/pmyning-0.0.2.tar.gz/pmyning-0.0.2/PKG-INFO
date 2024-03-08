@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: PMYning
+Version: 0.0.2
+Summary: A process mining tool
+Home-page: https://willembressers.github.io/pmyning
+License: MIT
+Keywords: process,mining
+Author: Willem Bressers
+Author-email: dhr.bressers@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: install (>=1.3.5,<2.0.0)
+Requires-Dist: opyenxes (>=0.3.0,<0.4.0)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/willembressers/pmyning/issues
+Project-URL: Documentation, https://willembressers.github.io/pmyning
+Project-URL: Repository, https://github.com/willembressers/pmyning
+Description-Content-Type: text/markdown
+
+# Welcome to PMYning
+
+This package aims to lower the barier for data scientist to get started with process mining.
+
+## Installation
+Install via PyPI
+```shell
+pip install pmyning
+```
+
+Install via Poetry
+```shell
+poetry add pmyning
+```
+
+Install via Conda
+```shell
+conda install -c conda-forge pmyning
+```
