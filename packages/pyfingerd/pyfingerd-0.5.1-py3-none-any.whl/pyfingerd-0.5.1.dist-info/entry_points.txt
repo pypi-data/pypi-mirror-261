@@ -1,0 +1,3 @@
+[console_scripts]
+pyfingerd=pyfingerd.cli:cli
+

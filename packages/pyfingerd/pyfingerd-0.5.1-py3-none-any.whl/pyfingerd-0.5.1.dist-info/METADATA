@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pyfingerd
+Version: 0.5.1
+Summary: finger (RFC 1288) server-side daemon
+Home-page: https://pyfingerd.org/
+Keywords: finger,fingerd,rfc742,rfc1288,79,tcp/79
+Author: Thomas Touhey
+Author-email: thomas@touhey.fr
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: Finger
+Classifier: Topic :: Utilities
+Requires-Dist: click (>=8.1.6,<9.0.0)
+Requires-Dist: coloredlogs (>=15.0.1,<16.0.0)
+Requires-Dist: croniter (>=1.4.1,<2.0.0)
+Requires-Dist: pydantic (>=2.1.1,<3.0.0)
+Requires-Dist: pyutmpx (>=0.4.1,<0.5.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://gitlab.com/pyfingerd/pyfingerd
+Description-Content-Type: text/x-rst
+
+finger (RFC 1288) server-side daemon
+====================================
+
+finger is both a protocol and a utility to get the information and status
+from a user on a distant machine. It was standardized in `RFC 742`_
+in 1977, then in `RFC 1288`_ in 1991, and has been abandoned since.
+
+While describing the protocol in `a blog post of mine`_, I wanted
+to implement this protocol for fun, but didn't want to present the
+real information about the users on my server, so I made this to present
+some fictional information in order to be able to tell a story through
+finger.
+
+For more information, consult the following links:
+
+* `pyfingerd documentation`_;
+* `PyPI package detail`_;
+* `Issue tracker`_;
+* `Pending contributions`_.
+
+.. _RFC 742: https://tools.ietf.org/html/rfc742
+.. _RFC 1288: https://tools.ietf.org/html/rfc1288
+.. _a blog post of mine: https://thomas.touhey.fr/2018/09/12/finger.en.html
+.. _pyfingerd documentation: https://pyfingerd.org/
+.. _PyPI package detail: https://pypi.org/project/pyfingerd/
+.. _Issue tracker: https://gitlab.com/pyfingerd/pyfingerd/-/issues
+.. _Pending contributions:
+    https://gitlab.com/pyfingerd/pyfingerd/-/merge_requests
+
