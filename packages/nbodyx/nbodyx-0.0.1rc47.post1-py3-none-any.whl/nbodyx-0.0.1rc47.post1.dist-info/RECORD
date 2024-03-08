@@ -1,0 +1,7 @@
+nbodyx/__init__.py,sha256=-GALrNU41JwfREj3bpRxq069cehi5O5UgiXPGhQ93zo,71
+nbodyx/constants.py,sha256=7nfJo7m8lkTWzF9PndKTrWoPJsOpsFcaweibR0HOutA,140
+nbodyx/ode.py,sha256=W-duPLU3zNqoVwUxgh32oOAxQZenJMNJ-nouj0y_eAA,1722
+nbodyx/rendering/opencv.py,sha256=1lOWu_yljcliBLkAXhuky0iz6dvBQbJEb7KB-m4lf-c,3885
+nbodyx-0.0.1rc47.post1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+nbodyx-0.0.1rc47.post1.dist-info/METADATA,sha256=jvUOb74ejxWs9p2kQsSnuVB27eMgfUMS0WgLdXdyjeA,16938
+nbodyx-0.0.1rc47.post1.dist-info/RECORD,,
