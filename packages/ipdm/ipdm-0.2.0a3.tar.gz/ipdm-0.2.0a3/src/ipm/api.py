@@ -1,0 +1,271 @@
+from pathlib import Path
+from typing import Optional
+from ipm.models.lock import ProjectLock
+from ipm.project.env import new_virtualenv
+from ipm.project.toml_file import add_yggdrasil, init_infini, init_pyproject
+from ipm.typing import StrPath
+from ipm.utils import freeze, urlparser, loader
+from ipm.const import GITIGNORE, INDEX, INDEX_PATH, STORAGE, SRC_HOME
+from ipm.logging import status, update, info, success, warning, error, confirm, ask
+from ipm.exceptions import (
+    FileTypeMismatch,
+    TomlLoadFailed,
+    FileNotFoundError,
+    PackageExsitsError,
+)
+from ipm.utils.version import require_update
+from ipm.models.ipk import InfiniProject, InfiniFrozenPackage
+
+# from ipm.models.lock import PackageLock, ProjectLock
+from ipm.models.index import Yggdrasil
+
+import tomlkit
+import shutil
+import os
+import configparser
+
+
+def check(source_path: StrPath, echo: bool = False) -> bool:
+    info("项目环境检查...", echo)
+
+    status.start()
+    status.update("检查环境中...")
+    if not (toml_path := Path(source_path).joinpath("infini.toml")).exists():
+        raise FileNotFoundError(
+            f"文件 [green]infini.toml[/green] 尚未被初始化, 你可以使用[bold green]`ipm init`[/bold green]来初始化项目."
+        )
+    project = InfiniProject(toml_path.parent)
+    success("环境检查完毕.", echo)
+
+    update("写入依赖锁文件...", echo)
+    lock = ProjectLock.init_from_project(project)
+    lock.dump()
+    success("项目依赖锁写入完成.", echo)
+    return True
+
+
+def init(target_path: StrPath, force: bool = False, echo: bool = False) -> bool:
+    info("初始化规则包...", echo)
+    update("检查环境...", echo)
+    target_path = Path(target_path).resolve()
+    if (toml_path := (target_path / "infini.toml")).exists() and not force:
+        warning(
+            f"无法在已经初始化的地址重新初始化, 如果你的确希望重新初始化, 请使用[bold red]`ipm init --force`[/bold red].",
+            echo,
+        )
+        return False
+    email = username = None
+    gitconfig_path = Path.home().joinpath(".gitconfig")
+    if gitconfig_path.exists():
+        config = configparser.ConfigParser()
+        config.read(str(gitconfig_path), encoding="utf-8")
+        if "user" in config.sections():
+            email = config["user"].get("email")
+            username = config["user"].get("name")
+    email = email or (os.getlogin() + "@example.com")
+    username = username or os.getlogin()
+    success("环境检查完毕.", echo)
+    status.stop()
+
+    name = ask("项目名称", default=target_path.name, echo=echo)
+    version = ask("项目版本", default="0.1.0", echo=echo)
+    description = ask(
+        "项目简介", default=f"{target_path.name.upper()} 规则包", echo=echo
+    )
+    author_name = ask("作者名称", default=username, echo=echo)
+    author_email = ask("作者邮箱", default=email, echo=echo)
+    license = ask("开源协议", default="MIT", echo=echo)
+
+    default_entries = ["__init__.py", f"{name}.py"]
+    info("请选择你要使用的入口文件:", echo)
+    for index, default_entry in enumerate(default_entries):
+        info(f"[bold cyan]{index}[/bold cyan]. [green]{default_entry}[/green]", echo)
+    entry_file = ask(
+        "入口文件:",
+        choices=[str(num) for num in range(len(default_entries))],
+        default="0",
+        echo=echo,
+    )
+
+    status.update("构建环境中...")
+    status.start()
+
+    init_infini(
+        toml_path,
+        target_path,
+        name,
+        version,
+        description,
+        author_name,
+        author_email,
+        license,
+        entry_file,
+        default_entries,
+    )
+    init_pyproject(
+        target_path,
+        name,
+        version,
+        description,
+        author_name,
+        author_email,
+        license,
+    )
+    new_virtualenv(target_path)
+    return True
+
+
+def new(dist_path: StrPath, echo: bool = False) -> bool:
+    info("新建规则包...", echo)
+
+    update("检查环境...", echo)
+    path = Path(dist_path).resolve()
+    if path.exists():
+        warning(
+            f"路径 [blue]{path.relative_to(Path('.').resolve())}[/blue] 已经存在.", echo
+        )
+        return False
+    path.mkdir(parents=True, exist_ok=True)
+    success("环境检查完毕.", echo)
+
+    init(path, echo=echo)
+
+    success(f"规则包 [bold green]{path.name}[/bold green] 新建完成!", echo)
+    return True
+
+
+def build(source_path: StrPath, echo: bool = False) -> Optional[InfiniFrozenPackage]:
+    info("构建规则包...", echo)
+    update("检查构建环境...", echo)
+
+    if not (Path(source_path).resolve() / "infini.toml").exists():
+        raise FileNotFoundError(
+            f"文件 [green]infini.toml[/green] 尚未被初始化, 你可以使用[bold green]`ipm init`[/bold green]来初始化项目."
+        )
+
+    try:
+        ipk = InfiniProject(source_path)
+    except TomlLoadFailed as e:
+        return error(f"环境存在异常: {e}", echo)
+
+    return freeze.build_ipk(ipk, echo)
+
+
+def extract(
+    source_path: StrPath, dist_path: Optional[StrPath] = None, echo: bool = False
+) -> Optional[InfiniProject]:
+    info("解压缩规则包...", echo)
+    dist_path = (
+        Path(dist_path).resolve() if dist_path else Path(source_path).resolve().parent
+    )
+    return freeze.extract_ipk(source_path, dist_path, echo)
+
+
+def yggdrasil_add(
+    source_path: StrPath, name: str, index: str, echo: bool = False
+) -> bool:
+    info(f"新增世界树: [bold green]{name}[/]")
+    status.start()
+    status.update("检查环境中...")
+    if not (toml_path := Path(source_path).joinpath("infini.toml")).exists():
+        raise FileNotFoundError(
+            f"文件 [green]infini.toml[/green] 尚未被初始化, 你可以使用[bold green]`ipm init`[/bold green]来初始化项目."
+        )
+    success("环境检查完毕.", echo)
+    status.update("同步世界树中...")
+    yggdrasil = Yggdrasil(index)
+    yggdrasil.sync()
+
+    add_yggdrasil(toml_path, name, index)
+    success("更改均已写入文件.", echo)
+    return True
+
+
+def require(
+    target_path: StrPath,
+    name: str,
+    *,
+    path: Optional[str] = None,
+    yggdrasil: Optional[str] = None,
+    index: Optional[str] = None,
+    echo: bool = False,
+) -> bool:
+    info(f"新增规则包依赖: [bold green]{name}[/bold green]", echo)
+    status.start()
+    status.update("检查环境中...")
+    if not (toml_path := Path(target_path).joinpath("infini.toml")).exists():
+        raise FileNotFoundError(
+            f"文件 [green]infini.toml[/green] 尚未被初始化, 你可以使用[bold green]`ipm init`[/bold green]来初始化项目."
+        )
+    project = InfiniProject(toml_path.parent)
+    success("环境检查完毕.", echo)
+
+    splited_name = name.split("==")  # TODO 支持 >= <= > < 标识
+    name = splited_name[0]
+
+    if len(splited_name) > 1:
+        version = splited_name[1]
+    else:
+        version = "*"
+
+    status.update("处理 Infini 项目依赖锁...")
+    project.require(
+        name,
+        version=version,
+        path=path,
+        yggdrasil=yggdrasil,
+        index=index,
+    )
+    project.dump()
+    success("项目文件写入完成.", echo)
+    check(target_path, echo=echo)
+    # sync()
+    success("规则包依赖新增完成.", echo)
+    return True
+
+
+def unrequire(target_path: StrPath, name: str, echo: bool = False):
+    info(f"删除规则包依赖: [bold green]{name}[/bold green]", echo)
+    update("处理 Infini 项目依赖锁...", echo)
+    project = InfiniProject()
+    project.unrequire(name)
+    project.dump()
+    success("项目文件写入完成.", echo)
+    check(target_path, echo=echo)
+    success("规则包依赖删除完成.", echo)
+    return True
+
+
+# def add(name: str, index: str = "", echo: bool = False) -> None:
+#     info("检查环境中...", echo)
+#     pkg_lock = PackageLock()
+#     lock = ProjectLock()
+#     ipk = InfiniProject()
+#     info("环境检查完毕.", echo)
+
+#     splited_name = name.split("==")  # TODO 支持 >= <= > < 标识
+#     name = splited_name[0]
+
+#     if len(splited_name) > 1:
+#         version = splited_name[1]
+#     else:
+#         version = None
+
+#     if not pkg_lock.has_package(name):
+#         # TODO pip 环境安装
+#         ...
+
+#     info("处理 Infini 项目依赖锁...", echo)
+#     ipk.add(name, version, dump=True)
+#     lock.add(name, version, dump=True)
+#     success("环境依赖新增完成.", echo)
+
+
+# def remove(name: str, echo: bool = False):
+#     info("处理 Infini 项目依赖锁...", echo)
+#     ipk = InfiniProject()
+#     lock = ProjectLock()
+
+#     ipk.remove(name, dump=True)
+#     lock.remove(name, dump=True)
+#     success("环境依赖删除完成.", echo)
