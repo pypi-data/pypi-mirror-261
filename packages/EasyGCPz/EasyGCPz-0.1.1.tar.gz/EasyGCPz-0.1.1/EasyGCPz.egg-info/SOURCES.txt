@@ -1,0 +1,10 @@
+License
+README.md
+setup.py
+EasyGCPz.egg-info/PKG-INFO
+EasyGCPz.egg-info/SOURCES.txt
+EasyGCPz.egg-info/dependency_links.txt
+EasyGCPz.egg-info/requires.txt
+EasyGCPz.egg-info/top_level.txt
+easygcpz/__init__.py
+easygcpz/main.py
