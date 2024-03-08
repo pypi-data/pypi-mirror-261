@@ -1,0 +1,10 @@
+requests
+ensure
+
+[testing]
+pytest
+mypy
+flake8
+tox
+black
+ensure
