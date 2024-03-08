@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: nmbrs_soap_api
+Version: 0.0.209
+Summary: Python SDK for the Visma Nmbrs SOAP API.
+Author: Lars Kluijtmans
+Author-email: info@lk-software.com
+Maintainer: Lars Kluijtmans
+Maintainer-email: info@lk-software.com
+License: Lars Kluijtmans
+Project-URL: Homepage, https://github.com/LarsKluijtmans/Visma-NMBRS-SOAP-API-SDK
+Project-URL: Source, https://github.com/LarsKluijtmans/Visma-NMBRS-SOAP-API-SDK
+Project-URL: Issues, https://github.com/LarsKluijtmans/Visma-NMBRS-SOAP-API-SDK/issues
+Keywords: nmbrs,soap
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: xmltodict==0.13.0
+Requires-Dist: zeep==4.2.1
+
+# Visma-NMBRS-SOAP-API-SDK
+
+Python SDK for the Visma Nmbrs SOAP API. Simplifying integration and enhancing developer productivity.
+
+# Tutorial
+
+[Tutorial used as source](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+
+# Install
+
+Package can be downloaded through:
+
+```shell
+pip install nmbrs_soap_api
+```
