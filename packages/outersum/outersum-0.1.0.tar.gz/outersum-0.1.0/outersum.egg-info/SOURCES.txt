@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+outersum/__init__.py
+outersum/core.py
+outersum/utils.py
+outersum.egg-info/PKG-INFO
+outersum.egg-info/SOURCES.txt
+outersum.egg-info/dependency_links.txt
+outersum.egg-info/not-zip-safe
+outersum.egg-info/requires.txt
+outersum.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
