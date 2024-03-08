@@ -1,0 +1,9 @@
+pkgLavanya/__init__.py,sha256=bSIOPy79yJ4Le5MiJ1WBc6JButM6HK-ZrADERZ4Fm9Y,32
+pkgLavanya/config.py,sha256=OqeCkdxt5mznQ2Tx14TO4LzpWnZR8JABTP1s5OeIQ0s,258
+pkgLavanya/data.txt,sha256=icdFDDQQy5ZtXRw-xzYkTRdMCwILwvDOm0Ks4WFPZwg,1875
+pkgLavanya/detect_info.py,sha256=XJAWMdMXqs2L1fdD0Y8tFxnp3yH-RYTJX9lQg_hoFnE,12177
+pkgLavanya/test_detect.py,sha256=bcp8lKR1LVnTGVIryc1plD0Bj2GFW5qhUUrZxg65cE4,3949
+pkgLavanya-0.1.12.dist-info/METADATA,sha256=l1klxpG0cxKHBkNgTTolNgVw_1ENOt0Bo5vZ-7z3kbo,2653
+pkgLavanya-0.1.12.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pkgLavanya-0.1.12.dist-info/top_level.txt,sha256=rAG8TRfTHrtxvCtA8soIVVjUsBW_HjcFk4TS5HJ6FU4,11
+pkgLavanya-0.1.12.dist-info/RECORD,,
