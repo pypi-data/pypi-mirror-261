@@ -1,0 +1,3 @@
+[console_scripts]
+markdown-blog-generator = markdown_blog_generator.generator:main
+

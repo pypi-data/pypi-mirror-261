@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: markdown-blog-generator
+Version: 0.1.0
+Summary: A simple static blog generator that converts Markdown files to HTML using Jinja2 templates.
+Home-page: https://github.com/yourusername/markdown_blog_generator
+Author: John Doe
+Author-email: tadeemanuel9@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/JohnDoe2332/MarkDownBlogGenerator
+Project-URL: Bug Tracker, https://github.com/JohnDoe2332/MarkDownBlogGenerator
+Keywords: blog generator markdown static-site jinja2
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: markdown
+Requires-Dist: jinja2
+
+# Markdown Blog Generator
+
+Markdown Blog Generator is a simple tool for converting Markdown files into a static HTML blog site using Jinja2 templates.
+
+## Features
+
+- Convert Markdown to HTML
+- Jinja2 templates for layout
+- Simple configuration
+- Easily extendable for more features
+
+## Installation
+
+```bash
+pip install markdown_blog_generator
+
+
