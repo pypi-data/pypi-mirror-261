@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: davidtea
+Version: 1.0.0
+Summary: A short description of your project
+Home-page: https://github.com/oakoro/davidtea
+Author: Oke Akoro
+Author-email: oke_akoro@hotmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/oakoro/davidtea
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# davidtea
+we do a lot other here
+
+
