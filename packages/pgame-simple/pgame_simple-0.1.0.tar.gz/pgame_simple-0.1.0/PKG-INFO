@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pgame_simple
+Version: 0.1.0
+Summary: a lib based on pygame
+Author: MRanos
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+pgame_simple is a simple lib based on pygame
+by MRanos
