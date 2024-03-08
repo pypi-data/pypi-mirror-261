@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: scytheautoupdate
+Version: 0.0.1
+Summary: A package to check for and auto update github repositiores
+Author-email: Dark_Eden <darkedenc9@gmail.com>
+Project-URL: Homepage, https://github.com/DarkEden-coding/scytheautoupdate
+Project-URL: Bug Tracker, https://github.com/DarkEden-coding/scytheautoupdate/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Scythe Auto Update
+
+This is a Python package that automatically checks for updates to a Git repository and applies them if available.
+
+## Features
+
+- Checks for updates to the Git repository
+- Automatically applies updates if available
+- Handles permission issues by using sudo if necessary
+
+## Usage
+
+To use this package, simply use the package as follows:
+
+```python
+from scytheautoupdate import check_for_updates
+
+check_for_updates()
+```
+
+
+This will check for updates and apply them if available.
+
+## Requirements
+
+- Python 3.6 or higher
+- Git
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
