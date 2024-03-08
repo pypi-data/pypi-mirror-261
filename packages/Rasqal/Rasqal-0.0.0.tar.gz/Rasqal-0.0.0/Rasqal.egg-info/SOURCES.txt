@@ -1,0 +1,5 @@
+pyproject.toml
+Rasqal.egg-info/PKG-INFO
+Rasqal.egg-info/SOURCES.txt
+Rasqal.egg-info/dependency_links.txt
+Rasqal.egg-info/top_level.txt
