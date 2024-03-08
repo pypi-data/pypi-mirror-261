@@ -1,0 +1,10 @@
+fikrimodule/__init__.py,sha256=RW6Dpug8z8F_QKuZqB6ih45XkOtw7PU08DR_mAWToQc,50
+fikrimodule/add.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fikrimodule/subtract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fikrimodule/extras/__init__.py,sha256=ae2dA6qND6c35l1Iu-AN6ZgAtnw47exlMDoQueOjYw4,56
+fikrimodule/extras/divide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fikrimodule/extras/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fikrimodule-0.0.1.dist-info/METADATA,sha256=IgpzLX-M9DrRverTTYTtmwoTGhoO4slyOrQ-akCxelA,529
+fikrimodule-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fikrimodule-0.0.1.dist-info/top_level.txt,sha256=QhGffAdGG6-IMyoSx-eNKUhRm3R7-47mV1biyFjkYOo,12
+fikrimodule-0.0.1.dist-info/RECORD,,
