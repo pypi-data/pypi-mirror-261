@@ -1,0 +1,7 @@
+setup.py
+aipys_analyse/AIPySdeAnalyzer.egg-info/PKG-INFO
+aipys_analyse/AIPySdeAnalyzer.egg-info/SOURCES.txt
+aipys_analyse/AIPySdeAnalyzer.egg-info/dependency_links.txt
+aipys_analyse/AIPySdeAnalyzer.egg-info/entry_points.txt
+aipys_analyse/AIPySdeAnalyzer.egg-info/requires.txt
+aipys_analyse/AIPySdeAnalyzer.egg-info/top_level.txt
