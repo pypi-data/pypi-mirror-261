@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: iaklogger
+Version: 1.0.0
+Summary: Very basic and easy logger
+Home-page: https://github.com/Iakl/iaklogger
+Author: Iakl
+Author-email: estebaniakl@gmail.com
+License: MIT
+Download-URL: https://github.com/Iakl/iaklogger/archive/refs/tags/v1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: LOGGER,EASY,LOGGING
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
