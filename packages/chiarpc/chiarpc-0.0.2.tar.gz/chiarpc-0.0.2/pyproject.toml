@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chiarpc"
+dynamic = ["version"]
+authors = [
+  { name="qqjt", email="itkid@live.com" },
+]
+description = "Chia RPC HTTP Client in Python."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests"
+]
+
+[project.urls]
+Homepage = "https://git.codegeass.cc/qqjt/chiarpc"
+Issues = "https://git.codegeass.cc/qqjt/chiarpc/-/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "chiarpc.__version__"}
