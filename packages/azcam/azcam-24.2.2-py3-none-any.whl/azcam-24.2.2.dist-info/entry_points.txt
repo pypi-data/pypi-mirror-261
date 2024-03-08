@@ -1,0 +1,4 @@
+[console_scripts]
+azcammonitor=azcam.monitor.__main__:main
+azcamobserve=azcam.observe.__main__:main
+
