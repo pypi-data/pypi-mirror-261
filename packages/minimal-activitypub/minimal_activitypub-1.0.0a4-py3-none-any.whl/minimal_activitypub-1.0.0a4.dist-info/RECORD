@@ -1,0 +1,5 @@
+minimal_activitypub/__init__.py,sha256=X7r3r1Oq40RAcf-ewo-iV2HUpOBEe7Y51d8Jr6U6XsU,399
+minimal_activitypub/client_2_server.py,sha256=pNcKd30cggqepZq2NqBLxA_bIkgOM2I1kw-09oNVITk,34803
+minimal_activitypub-1.0.0a4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+minimal_activitypub-1.0.0a4.dist-info/METADATA,sha256=tO4E9-UpnjdfdaLu_4b1lPC4a3KfiTGC9aTYMqYTzRk,4884
+minimal_activitypub-1.0.0a4.dist-info/RECORD,,
