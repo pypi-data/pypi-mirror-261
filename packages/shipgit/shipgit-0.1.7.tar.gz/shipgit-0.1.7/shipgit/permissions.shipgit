@@ -1,0 +1,12 @@
+{
+    "branches": {
+        "dev1": [
+            "tsomerville2",
+            "davie jones"
+        ],
+        "dev2": [
+            "somebodyelse"
+        ],
+        "master": []
+    }
+}
