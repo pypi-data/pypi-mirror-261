@@ -1,0 +1,12 @@
+iterpy/__init__.py,sha256=5K0AEGf6wRhLfxD9Rab5X5DrujcDmyLJCk8l2vY3tjU,52
+iterpy/_generate_pyi.py,sha256=QiTe_0mq0kiuMmqyAbG7gbjkqUH5wTGkgzQO4cpD2Js,1315
+iterpy/iter.py,sha256=nSdUK2XzK8pDobf7ErSK3pzfg1Q4HTbNrjly981U8uM,4724
+iterpy/iter.pyi,sha256=3ZXjXDD4wKwtijT_0mM2avk_rUQtWH4sNB_xxliLbNU,3264
+iterpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iterpy/test_iter.py,sha256=-YQn3zOKU1NWxdRKvXjvOlx7FNc0kqKyObLizhJyDy8,5205
+iterpy/test_main.py,sha256=JRfh4Gsr-FlW-j648He5uiK-cZS7LlfFHDu5JADNgXY,26
+iterpy-1.8.1.dist-info/LICENSE,sha256=grzrjEwtVjh0XtzjtaRIBxAqNLLn60yzKBWtS9xpfVY,1164
+iterpy-1.8.1.dist-info/METADATA,sha256=J3tbXsA42yEewhz1N3RZt5_snkRiuM8-WHCIG8fQtKI,6385
+iterpy-1.8.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+iterpy-1.8.1.dist-info/top_level.txt,sha256=erew-PaRSLHvYd_cpuzTDOTsSt4ItBHhPmsRiR_3tfs,7
+iterpy-1.8.1.dist-info/RECORD,,
