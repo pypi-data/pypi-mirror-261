@@ -1,0 +1,15 @@
+vmware_reporter/__init__.py,sha256=gtyyFoZIUCtBde9ahRGbFEYW82C9C1-j1W7D264TX7M,1685
+vmware_reporter/__main__.py,sha256=6EyquduOMcqyWpT8IcziZoikhpXRgSsx31-fsFeCW40,3286
+vmware_reporter/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+vmware_reporter/client.py,sha256=PQxmAklJ4rMvTd2alR1LeAJpnG4w2AGlvHQrvWC71HA,14987
+vmware_reporter/datastore.py,sha256=c_YLaGJLwEn-yHh9DXMrP3eztKcHi9MY0megmJ0hGuc,13730
+vmware_reporter/dump.py,sha256=W7bzCRFNjPXCv4jxYFZofY7uuAtCLcScDJnhouUhgtQ,2799
+vmware_reporter/inspect.py,sha256=Ej-0dxugLEHCFwVT412u6CrPwArgtpnrSdkjsL_Q6lc,7968
+vmware_reporter/inventory.py,sha256=hkS_kHKxWbBuiXCZTsCtZx0_HVTUPy_k5fdWslChNN0,7832
+vmware_reporter/utils.py,sha256=1_VDmK-jKMnp6cGCafkUhYfMRzWzMQhuEYiPVzwnvn0,23882
+vmware_reporter-0.1.0.dist-info/LICENSE.txt,sha256=CN-DDX60xapzqhzqH2fynhhVz07vtq8-3sGXbwr-5Sk,1063
+vmware_reporter-0.1.0.dist-info/METADATA,sha256=4Ooy1NyiMfl78whMlXiPY7Wb4JYApJzRSlkOUe0Zdvo,2182
+vmware_reporter-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+vmware_reporter-0.1.0.dist-info/entry_points.txt,sha256=Sd7R6PmUzLkJr4eez7nM8-z6yISX2pb3Dc8mnXDuguM,66
+vmware_reporter-0.1.0.dist-info/top_level.txt,sha256=uBrhSJjB5QxsyeQKqRdCv8l6JOmXKhnfPKnetEEAqso,16
+vmware_reporter-0.1.0.dist-info/RECORD,,
