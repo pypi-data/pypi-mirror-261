@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+build_plantuml = src.mkdocs_build_plantuml_plugin_ardihikaru.plantuml:BuildPlantumlPlugin
