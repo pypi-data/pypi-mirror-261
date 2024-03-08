@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: falcon_challenge
+Version: 0.1.0
+Home-page: https://github.com/snel-repo/stability-benchmark
+Author: Joel Ye
+Author-email: joelye9@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: hydra-core
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: pynwb
+
+# FALCON Benchmark and Challenge
+
+This package contains core code for submitting decoders to the FALCON challenge. Full github contains additional examples and documentation.
+
+## Installation
+Install `falcon_challenge` with:
+
+```bash
+pip install falcon-challenge
+```
+
+To create Docker containers for submission, you must have Docker installed.
+See, e.g. https://docs.docker.com/desktop/install/linux-install/. Try building and locally testing the provided `sklearn_sample.Dockerfile`, to confirm your setup works.
+
+## Submission
+To submit to the FALCON benchmark, prepare a decoder and Dockerfile.
+- DOCKER instructions todo.
+
+To run local evaluation, first setup a data directory at `./data`.
+You can then run:
+```bash
+python <my_decoder>.py --evaluation local
+```
