@@ -1,0 +1,17 @@
+xfastertransformer-devel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xfastertransformer-devel/include/abstract_decoder.h,sha256=0Imwj4lmoz2LlOCedyV_cJSMF1XMOytA124CHmYKcNs,2404
+xfastertransformer-devel/include/abstract_searcher.h,sha256=9YFDe2mg1PbmBI1nBRvX30c8JsTcXymkrLo5EaZjfGg,2308
+xfastertransformer-devel/include/dtype.h,sha256=CpN6il9_1bJWCFQhbNndFkiGlpCXgGmJkV0kNuxApdo,995
+xfastertransformer-devel/include/layers_attention.h,sha256=v7js8PZuW7anJGlBZuWi-i4PPl4OcinX8MkgPzk79vA,2507
+xfastertransformer-devel/include/layers_mlp.h,sha256=dm1mX9EcPqkZVrs_mtxF9XhjIe0Zyx25-qG9-FOEpbg,988
+xfastertransformer-devel/include/layers_norm.h,sha256=PByS521_rzgmSn8PZW1JC7J2zmqfLsKbrG0LHt1jAd0,1111
+xfastertransformer-devel/include/models.h,sha256=PsHU_Fkif4CecxO2K5B70TPim3wA1ZykFUp0z4GVsO4,2321
+xfastertransformer-devel/include/rotary_embedding_api.h,sha256=n46UZZTYb1W9vz0A3fptXVQQ0SarJvk0QdVR29D3STY,1288
+xfastertransformer-devel/include/xfastertransformer.h,sha256=C9ctlgL5ZwP-YrWuU59A3NoBZRn0vqO2l50y6sc4RWk,754
+xfastertransformer-devel/lib/libxfastertransformer.so,sha256=2_UdNhAUiRp5PLW4ipnWQAoIps00cSiQID9XqbMkBlY,121519472
+xfastertransformer-devel/lib/libxfastertransformer_static.a,sha256=HpkCjwNFICK7cwHXJki05POfj8Vpw0UTmaWD9huRayk,14399228
+xfastertransformer-devel/lib/libxft_comm_helper.so,sha256=cf1zJcHj5pHvbfSRzbLN51F6YCOdaTOGeEGLII7eZ60,24224
+xfastertransformer_devel-1.4.0.dist-info/METADATA,sha256=ay4HfPU8GNojIbreNPzYKP_ZOXYsQv_BSfPiYBEkVSY,15182
+xfastertransformer_devel-1.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+xfastertransformer_devel-1.4.0.dist-info/top_level.txt,sha256=nVCISADCerm7FhhUnGgLqG--ktZru-fNIc0PARbIncw,25
+xfastertransformer_devel-1.4.0.dist-info/RECORD,,
