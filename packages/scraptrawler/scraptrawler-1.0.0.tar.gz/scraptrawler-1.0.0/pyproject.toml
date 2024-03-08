@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "scraptrawler"
+version = "1.0.0"
+description = "Tools for scraping Magic: the Gathering tournaments and decklists."
+authors = [
+    "Alex Gimmi <iambroadband@gmail.com>",
+    "Ben Horkley <ben.horkley@gmail.com>",
+    "Jacob Ginsparg <jacobginsparg@gmail.com>",
+]
+readme = "README.md"
+packages = [{ include = "scraptrawler", from = "src" }]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+src_paths = ["scraptrawler", "tests"]
+
+[tool.poetry.dependencies]
+python = ">=3.11, <4"
+requests = "^2.31.0"
+logging = "^0.4.9.6"
+ftfy = "^6.1.1"
+selenium = "^4.11.2"
+webdriver-manager = "^4.0.0"
+strenum = "^0.4.15"
+scooze = "^1.0.6"
+bs4 = "^0.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+coverage = "^7.4.3"
+
+[tool.pytest.ini_options]
+addopts = "-m 'not slow'"
+markers = ["web: require access to the internet", "slow: expected to be slow,"]
