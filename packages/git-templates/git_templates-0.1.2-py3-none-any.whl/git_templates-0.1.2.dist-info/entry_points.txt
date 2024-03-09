@@ -1,0 +1,3 @@
+[console_scripts]
+git-templates=git_templates.main:main
+
