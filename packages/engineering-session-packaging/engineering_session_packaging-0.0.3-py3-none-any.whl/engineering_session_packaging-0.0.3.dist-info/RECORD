@@ -1,0 +1,15 @@
+engineering_session_packaging-0.0.3.data/scripts/run_app,sha256=QHpU1d8Uq0kE7c0dwov2ZkYOEIvE0dO5wEGdhVqIN8g,109
+example/__about__.py,sha256=kyY66p9WegkxO-MF5gh-z13mse0Ya378rfIPuQv8We8,533
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/app.py,sha256=RMYlui9Zhv63xwEDVdy0Y3xjj11sBl-BryQOtjQn96k,412
+example/util.py,sha256=ZomgT7-NI2p-3snE8A-sTuWOzSvvkEPbLEkXI-fD8UA,170
+example/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/bin/run_app,sha256=9JGKPTleyNZCfEo1mEn9W3mvuPpXcOiT73lUit86VRc,122
+example/submodule/__init__.py,sha256=v8FXrZk2hlekI1cQn4jWDdCNQV0tdKczPew-1uW56Do,222
+example/submodule/util.py,sha256=72bNzonfMx3ddszSA1sUh0MzDeBgoQqfgNeXYaHPCy0,156
+example/submodule/subsubmodule/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/submodule/subsubmodule/util.py,sha256=JkiSCGQ6p6Tus0097snQ2Lquj9QnGcdkpOVIMTd1JTU,179
+engineering_session_packaging-0.0.3.dist-info/METADATA,sha256=Fqnfw8Jq9hQOzewXY7d-vqYZDuNEqjh2JizbgJmMlm0,523
+engineering_session_packaging-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+engineering_session_packaging-0.0.3.dist-info/top_level.txt,sha256=E1UDUKhoHITIYarC5bRAFhwrM6Pk8wKsaAyltobeSN4,8
+engineering_session_packaging-0.0.3.dist-info/RECORD,,
