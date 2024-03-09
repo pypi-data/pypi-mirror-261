@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/isne_recommendation/FeatureRatingsKNN.py
+src/isne_recommendation/Hybrid.py
+src/isne_recommendation/TfidfLinearKernel.py
+src/isne_recommendation/__init__.py
+src/isne_recommendation.egg-info/PKG-INFO
+src/isne_recommendation.egg-info/SOURCES.txt
+src/isne_recommendation.egg-info/dependency_links.txt
+src/isne_recommendation.egg-info/top_level.txt
