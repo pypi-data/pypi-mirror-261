@@ -1,0 +1,4 @@
+astropy>=4.3
+numpy
+requests
+astroquery>=0.4.5
