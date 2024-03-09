@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: bigplanner
+Version: 0.1.0
+Summary: A Task Planner for big projects
+Home-page: https://github.com/asterio/bigplanner
+Author: Asterio Gonzalez
+Author-email: asterio.gonzalez@gmail.com
+License: MIT license
+Keywords: bigplanner
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: agptools
+Requires-Dist: syncmodels
+Requires-Dist: pydantic
+Requires-Dist: datamodel-code-generator
+Requires-Dist: datamodel-code-generator[http]
+Requires-Dist: datamodel-code-generator[graphql]
+Requires-Dist: aiohttp
+Requires-Dist: aiocache
+Requires-Dist: Click
+Requires-Dist: glom
+Requires-Dist: jmespath
+Requires-Dist: fastapi
+Requires-Dist: geopy
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: surrealdb
+Requires-Dist: uvicorn
+Requires-Dist: uvicorn[watchgodreload]
+Requires-Dist: uvloop
+Requires-Dist: watchfiles
+Requires-Dist: faker
+
+===========
+Big Planner
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/bigplanner.svg
+        :target: https://pypi.python.org/pypi/bigplanner
+
+.. image:: https://img.shields.io/travis/asterio/bigplanner.svg
+        :target: https://travis-ci.com/asterio/bigplanner
+
+.. image:: https://readthedocs.org/projects/bigplanner/badge/?version=latest
+        :target: https://bigplanner.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+A Task Planner for big projects
+
+
+* Free software: MIT license
+* Documentation: https://bigplanner.readthedocs.io.
+
+
+Features
+----------------
+
+* TODO
+
+Before Coding
+----------------
+
+* create a virtual env
+
+::
+
+	python3 -m venv .venv
+	source .venv/bin/activate
+	make install-testing-requisites
+
+
+
+Credits
+----------------
+
+This package was created with Cookiecutter_ and the `cib_pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`cib_pypackage`: https://git.spec-cibernos.com/spec/templates/cib_pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2024-03-08)
+------------------
+
+* First release on PyPI.
