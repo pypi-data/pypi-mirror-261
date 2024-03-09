@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+SquareCalcLib/NumberVariablesError.py
+SquareCalcLib/__init__.py
+SquareCalcLib/find_square_ellipse.py
+SquareCalcLib/find_square_triangle.py
+SquareCalcLib.egg-info/PKG-INFO
+SquareCalcLib.egg-info/SOURCES.txt
+SquareCalcLib.egg-info/dependency_links.txt
+SquareCalcLib.egg-info/top_level.txt
