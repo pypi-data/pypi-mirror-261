@@ -1,0 +1,7 @@
+deprecated
+requests
+ruamel.yaml
+typing-extensions
+
+[oci]
+conda-oci-mirror
