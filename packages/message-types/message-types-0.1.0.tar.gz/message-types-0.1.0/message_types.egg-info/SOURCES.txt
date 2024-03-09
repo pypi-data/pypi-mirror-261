@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+message_types.egg-info/PKG-INFO
+message_types.egg-info/SOURCES.txt
+message_types.egg-info/dependency_links.txt
+message_types.egg-info/top_level.txt
