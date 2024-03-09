@@ -1,0 +1,13 @@
+mumbojumbo/__init__.py,sha256=iNCN19IvnGGyqJfnM5ZZYs42przXgwbJHschoZZch1s,3476
+mumbojumbo/models/__init__.py,sha256=C6yZdkw9X288ehiav7Jqjj5689e0lkIghDDX43uqsAE,2733
+mumbojumbo/models/project_template.py,sha256=95W6AkDm8xLUy0C3RZkGH0hug0DJukIscYPckEFqPFw,7197
+mumbojumbo/models/template_variable.py,sha256=fMoA17vSwE7FFXavUoD7PXAz9Du-lstGsVRjUPMVTiI,4570
+mumbojumbo/scripts/__init__.py,sha256=Cvg4sEBtr8-mvT2vsGmsc8FBGfMeM_1wIWvjSXsDf8c,2639
+mumbojumbo/scripts/apply_template.py,sha256=f9faf4teNETnLsCzmfWj4TGy5sZiZJ1Yn6djSdDDDOo,6990
+mumbojumbo/template_loader.py,sha256=XBfbCBopOER9VAql7_MDyqLb8U77DMdGs4He1HhUYHY,10505
+mumbojumbo/template_renderer.py,sha256=S7U6mg1I0HOOfjuBCLjTzVo2Z2P4yuM9l74lqXKyybo,9552
+mumbojumbo-0.1.0.dist-info/LICENSE,sha256=BioyiG6o0frEKckwEGqfj55rO-C8HXmJZYbjyO-U8Ck,1482
+mumbojumbo-0.1.0.dist-info/METADATA,sha256=FM8LITBLqx-Ri2ESHhulKpTSvBnIMhV8PD-V1UA-bHI,4183
+mumbojumbo-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mumbojumbo-0.1.0.dist-info/entry_points.txt,sha256=5qOmuRBKebcDIZ9NK5nfS-TSs68MJ40koMoji9Ho2No,68
+mumbojumbo-0.1.0.dist-info/RECORD,,
