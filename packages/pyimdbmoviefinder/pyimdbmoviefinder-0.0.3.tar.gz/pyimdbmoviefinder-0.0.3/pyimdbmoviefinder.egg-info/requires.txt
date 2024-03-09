@@ -1,0 +1,6 @@
+requests
+imdbpy
+httplib2
+cinemagoer
+humanize
+configparser
