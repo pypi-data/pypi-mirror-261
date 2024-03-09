@@ -1,0 +1,8 @@
+pyocto-0.1.4.dist-info/RECORD,,
+pyocto-0.1.4.dist-info/WHEEL,sha256=oQ7qbIMFhPb2rrwvWOuKJZvgWATVJwHNqoZdkcC4EmQ,229
+pyocto-0.1.4.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyocto-0.1.4.dist-info/METADATA,sha256=piA6aOun9H2xQyUeGKZoSPoWRkt0br4_NLXuRtywErQ,3981
+pyocto-0.1.4.dist-info/licenses/LICENSE,sha256=TiRtkl48ynR7qqWQmx_sMPaP4UM3s9av-CZ0W-y6uxQ,1075
+pyocto/__init__.py,sha256=FyP27zgXUOxKQyLSk7AthvfCKXeKNWP5eJOE58nwWHM,144
+pyocto/_core.cpython-312-darwin.so,sha256=JgDGQI6d6tiP6gqO0c9bQfNVenc6dBzcxYRUNect2DM,578824
+pyocto/associator.py,sha256=_3oeIk11BuV1XGYdb5ahnEC0BJkGOTMa5gKisdK8QV8,37461
