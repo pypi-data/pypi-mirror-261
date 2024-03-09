@@ -1,0 +1,8 @@
+nbodyx/__init__.py,sha256=wwFqF5rmZI_-IshsFI314HOR1S_QFNlUatbqfVb2gUc,71
+nbodyx/constants.py,sha256=7nfJo7m8lkTWzF9PndKTrWoPJsOpsFcaweibR0HOutA,140
+nbodyx/ode.py,sha256=i7NZWcbULjSUclKkQgSMnViJpImFwyQBoi9M_aRpfmU,1943
+nbodyx/rendering/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nbodyx/rendering/opencv.py,sha256=1lOWu_yljcliBLkAXhuky0iz6dvBQbJEb7KB-m4lf-c,3885
+nbodyx-0.0.1rc54.post1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+nbodyx-0.0.1rc54.post1.dist-info/METADATA,sha256=VCrhIrttKAsEwkypmLDITmKcLdezYiH3MqAZi1lm67A,4513
+nbodyx-0.0.1rc54.post1.dist-info/RECORD,,
