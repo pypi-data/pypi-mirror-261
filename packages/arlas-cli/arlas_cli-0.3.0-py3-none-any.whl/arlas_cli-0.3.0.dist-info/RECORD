@@ -1,0 +1,13 @@
+arlas/cli/cli.py,sha256=SRWLbK7t-JCaaJkk4g9_sRh849l3pRz1_RZ-oCHFcJk,2919
+arlas/cli/collections.py,sha256=mu3mkWRz-3BuudXBsHkp0G-zLzL-3f9QZA-bB-ibRM8,4746
+arlas/cli/configurations.py,sha256=DE5d-Wzgde1gDA2XsrBDbL-gI3NkMVia1mZdXc0t7a8,4087
+arlas/cli/index.py,sha256=BC2scXcU-Cr3ppdbRRCQWtjLVHUIckOI9JjtiHwcoBM,5609
+arlas/cli/model_infering.py,sha256=Aqf3XMqsRx1eXIJNB0ukl10VsY1EDNS5lo2iNJUsAoA,7160
+arlas/cli/service.py,sha256=S4qy-vyEA4ZLv7oFdA-eLg8Ccc6hZFzkDwIh4odcuFA,16400
+arlas/cli/settings.py,sha256=TkRqUBn2THrEF_nlDCEe3qxrnntJvO7y26uRyBuE35E,2654
+arlas/cli/variables.py,sha256=-yVRbNjFUlRI50jKlMPLX8JjmXTSfZbEY2AEj5XuGok,131
+arlas_cli-0.3.0.dist-info/METADATA,sha256=LdHTM3yWJaMM7wQXLa0ufxOrtPwOnrkHnCPzI1TPyGE,18938
+arlas_cli-0.3.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+arlas_cli-0.3.0.dist-info/entry_points.txt,sha256=iMgJ_UkaD0NV8jxlsRxc49qhzP4ZsSukffRirtCtQdw,50
+arlas_cli-0.3.0.dist-info/top_level.txt,sha256=BWFNmX9VWzSkOdRksiLZOaPjpOd2Hn0_hwTl0EaTZ8w,6
+arlas_cli-0.3.0.dist-info/RECORD,,
