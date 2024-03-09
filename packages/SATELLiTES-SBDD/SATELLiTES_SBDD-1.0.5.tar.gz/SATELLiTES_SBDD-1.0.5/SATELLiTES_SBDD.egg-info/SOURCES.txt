@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+SATELLiTES_SBDD.egg-info/PKG-INFO
+SATELLiTES_SBDD.egg-info/SOURCES.txt
+SATELLiTES_SBDD.egg-info/dependency_links.txt
+SATELLiTES_SBDD.egg-info/requires.txt
+SATELLiTES_SBDD.egg-info/top_level.txt
+src/runSATELLiTES
