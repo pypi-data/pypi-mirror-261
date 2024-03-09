@@ -1,0 +1,5 @@
+flask_openai/__init__.py,sha256=Leegtw07bpq84-0ME5zm_3wXC6ho7l5oRcLxXqsK0Nw,697
+flask_openai-0.5.0.dist-info/LICENSE,sha256=sidZAiHQlLO2bxouPae6MKSrO68d-VpC4NZOAxNfvNI,1075
+flask_openai-0.5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+flask_openai-0.5.0.dist-info/METADATA,sha256=izlb32WjSTc-_cDjvbddgyCKj13EL_0IqsLNYIuiC74,3738
+flask_openai-0.5.0.dist-info/RECORD,,
