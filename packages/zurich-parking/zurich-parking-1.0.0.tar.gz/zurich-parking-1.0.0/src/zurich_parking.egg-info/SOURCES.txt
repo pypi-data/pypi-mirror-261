@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/zurich_parking/__init__.py
+src/zurich_parking/__main__.py
+src/zurich_parking/config.toml
+src/zurich_parking/parking.py
+src/zurich_parking/parking_helper.py
+src/zurich_parking.egg-info/PKG-INFO
+src/zurich_parking.egg-info/SOURCES.txt
+src/zurich_parking.egg-info/dependency_links.txt
+src/zurich_parking.egg-info/entry_points.txt
+src/zurich_parking.egg-info/requires.txt
+src/zurich_parking.egg-info/top_level.txt

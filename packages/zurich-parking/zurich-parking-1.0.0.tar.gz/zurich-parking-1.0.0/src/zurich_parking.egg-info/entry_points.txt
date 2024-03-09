@@ -1,0 +1,2 @@
+[console_scripts]
+realpython = zurich_parking.__main__:main

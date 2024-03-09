@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zurich-parking"
+version = "1.0.0"
+description = "Get information on free parking spaces in Zurich."
+readme = "README.md"
+authors = [{ name = "Sascha Corti", email = "sascha@corti.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["zurich", "parking"]
+dependencies = [
+    "feedparser >= 5.2.0",
+    'tomli; python_version < "3.11"',
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["ruff", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/techpreacher/zurich-parking"
+
+[project.scripts]
+realpython = "zurich_parking.__main__:main"
+
+[tool.bumpver]
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+pre_commit_hook = ""
+post_commit_hook = ""
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"',]
+"src/zurich_parking/__init__.py" = ["{version}"]
+

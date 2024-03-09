@@ -1,0 +1,9 @@
+feedparser>=5.2.0
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+ruff
+pip-tools
+pytest
