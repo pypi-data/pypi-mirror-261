@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: stringf
+Version: 0.0.7
+Summary: Functions for strings and lists
+Author: Mathdallas_code(Jaiwant Morampudi)
+Author-email: <krishnapacs255@gmail.com>
+Keywords: python,string,English,words,functions
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+
+String:
+    -NEW-
+    Added list_to_str(list) function
+    Fixed module not importing bug
+    A package that has several functions to work with strings and English words.
+    Functions-
+
+    plural-Converts any word to plural form.
+    e.g. plural("python")-"pythons"
+
+    join: joins two words e.g. 'pyt','hon'-'python'
+
+    add: Like the join() functions but can join word after the letter at the specified position
+    e.g. add("bore",1,"ef")-'before'
+
+    reverse: Reverses a string 
+    e.g. reverse("python")-"nohtyp"
+
+Lists:
+    list_to_str: Convert a list into a string e.g. ['p','y','t','h','o','n']-'python'
+
+More functions coming soon!
