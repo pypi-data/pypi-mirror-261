@@ -1,0 +1,10 @@
+numpy
+pandas
+argparse
+torch
+einops
+peft
+omegaconf
+evaluate
+accelerate
+transformers==4.29
