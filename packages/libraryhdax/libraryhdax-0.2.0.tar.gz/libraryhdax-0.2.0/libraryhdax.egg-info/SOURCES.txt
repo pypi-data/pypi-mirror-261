@@ -1,0 +1,5 @@
+setup.py
+libraryhdax.egg-info/PKG-INFO
+libraryhdax.egg-info/SOURCES.txt
+libraryhdax.egg-info/dependency_links.txt
+libraryhdax.egg-info/top_level.txt
