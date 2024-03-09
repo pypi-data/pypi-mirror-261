@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: rbf-lang
+Version: 0.1.0.dev1
+Summary: Reversible BitFuck (RBF) interpretor
+Author-email: Marcin Konowalczyk <marcin.konow@lczyk.xyz>
+Project-URL: home, https://github.com/marcinkonowalczyk/rbf
