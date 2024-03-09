@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "tscw_module"
+description = "Module to create input and process output of TSCW Software"
+long_description = "Module to create input and process output of TSCW Software"
+authors = [{name = "Thomas Simader", email = "simader@ugsnet.de"}]
+readme  = "README.md"
+
+[tool.poetry.metadata]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+
+[tool.poetry.files]
+"README.md" = "README.md"
+"LICENSE.txt" = "LICENSE.txt"
+"calculateForces_benchmark.py" = "calculateForces_benchmark.py"
+"docs" = "docs"
+"tscw_module/ffmpeg" = "tscw_module/ffmpeg"
