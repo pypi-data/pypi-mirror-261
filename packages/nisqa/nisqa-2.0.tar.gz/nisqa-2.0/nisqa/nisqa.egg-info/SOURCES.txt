@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+nisqa/nisqa.egg-info/PKG-INFO
+nisqa/nisqa.egg-info/SOURCES.txt
+nisqa/nisqa.egg-info/dependency_links.txt
+nisqa/nisqa.egg-info/requires.txt
+nisqa/nisqa.egg-info/top_level.txt
