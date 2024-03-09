@@ -1,0 +1,5 @@
+setup.py
+libraryhdutilsseed.egg-info/PKG-INFO
+libraryhdutilsseed.egg-info/SOURCES.txt
+libraryhdutilsseed.egg-info/dependency_links.txt
+libraryhdutilsseed.egg-info/top_level.txt
