@@ -1,0 +1,5 @@
+lystorage/__init__.py,sha256=5Qxm_w4jMwdE1OSuyf-M85ZSM5qZKY4gMwvPfUDt1KY,30
+lystorage/aws_s3.py,sha256=nG0fb7ZGiNBi41lHq8DSvGfL3hDnSNmqH1XL9gukdaw,3095
+quickstorage-0.1.0.dist-info/METADATA,sha256=Pvt63wH528H5NzMY9UxdsPF1AIexVmgG2-Z4ZJ7BEo0,255
+quickstorage-0.1.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+quickstorage-0.1.0.dist-info/RECORD,,

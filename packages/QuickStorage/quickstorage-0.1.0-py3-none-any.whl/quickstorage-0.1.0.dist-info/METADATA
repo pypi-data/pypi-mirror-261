@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: QuickStorage
+Version: 0.1.0
+Summary: A simple and easy-to-use storage wapper api for Python.
+Author-Email: Lyon <lyon@lyonyu.me>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: boto3>=1.34.58
+Requires-Dist: requests>=2.31.0
