@@ -1,0 +1,12 @@
+nonebot_plugin_lolmatch/__init__.py,sha256=7ux50RjqE2yVEkyyvafL-e85oOjyGsAwj1CyxRMjlD8,7806
+nonebot_plugin_lolmatch/config.py,sha256=yPaN38k3BCYwDkLZXj0EAo7qkD6QuJRiyKKaPQTMOjE,395
+nonebot_plugin_lolmatch/data_source.py,sha256=Bxc00utmuf6ly_v1RJabccLmmTyfxLsWQdnPNI7aYhY,17529
+nonebot_plugin_lolmatch/migrations/54eff20f9cc8_init_db.py,sha256=OW8jecY_zcIxN1rGajLpA6sb-qODQve_P3oFS3HTwBg,1317
+nonebot_plugin_lolmatch/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonebot_plugin_lolmatch/model.py,sha256=If0oJk-3xU_L-VM8-hRs2_34_P0eNPNBCv9qZNjEeDM,349
+nonebot_plugin_lolmatch/short.css,sha256=UwkaJ-Lv4_VXJERDZQgep9vCO796HEIzihlsld27oeU,10393
+nonebot_plugin_lolmatch/template.py,sha256=o8p8B3zfKAqDQFREo7jf7gYYGrZ9lbjSPhvi-49RFZs,42316
+nonebot_plugin_lolmatch-0.4.0b5.dist-info/LICENSE,sha256=hDPbfNPbtlDLvEHG6sUV5ph5Af0NQsXRqVS5tfPT4Po,1089
+nonebot_plugin_lolmatch-0.4.0b5.dist-info/METADATA,sha256=hr36WK4tPZamrqTOpfSkygWZJf_04ci_GjOJbQwUZ1s,3122
+nonebot_plugin_lolmatch-0.4.0b5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nonebot_plugin_lolmatch-0.4.0b5.dist-info/RECORD,,
