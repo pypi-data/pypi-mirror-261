@@ -1,0 +1,9 @@
+README.md
+setup.py
+mathsimple/__init__.py
+mathsimple/geometry.py
+mathsimple/operations.py
+mathtiar.egg-info/PKG-INFO
+mathtiar.egg-info/SOURCES.txt
+mathtiar.egg-info/dependency_links.txt
+mathtiar.egg-info/top_level.txt
