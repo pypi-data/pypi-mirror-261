@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-08 10:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ../behaviors/plausible_fields.py:71
+msgid "Add a link in the object menu"
+msgstr "Ajouter un lien dans le menu objet"
+
+#: ../upgrades/v1001.py:18
+msgid "Add a link in the user menu"
+msgstr "Ajouter un lien dans le menu utilisateur"
+
+#: ../behaviors/plausible_fields.py:72
+msgid "Add a link to the statistics browser view in the object menu"
+msgstr "Ajouter un lien vers la vue des statistiques dans le menu objet"
+
+#: ../upgrades/v1001.py:19
+msgid "Add a link to the statistics browser view in the user menu"
+msgstr "Ajouter un lien vers la vue des statistiques dans le menu utilisateur"
+
+#: ../views/plausible_healthcheck.pt:57
+msgid "Clickhouse :&nbsp;"
+msgstr "Clickouse :&nbsp;"
+
+#: ../behaviors/plausible_fields.py:37
+msgid "Enable Plausible"
+msgstr "Activer Plausible"
+
+#: ../behaviors/plausible_fields.py:38
+msgid "Enable Plausible analytics tracking on this content and all its children."
+msgstr "Activer le suivi des statistiques Plausible sur ce contenu et tous ses enfants."
+
+#: ../views/plausible_healthcheck.pt:61
+msgid "Error while trying to connect to Plausible API"
+msgstr "Erreur lors de la tentative de connexion à l'API Plausible"
+
+#: ../behaviors/plausible_fields.py:56
+msgid "Example : imio.be"
+msgstr "Exemple : imio.be"
+
+#: ../behaviors/plausible_fields.py:48
+msgid "Example : plausible.imio.be"
+msgstr "Exemple : plausible.imio.be"
+
+#: ../views/plausible_healthcheck.pt:47
+msgid "Fields state"
+msgstr "Etat des champs"
+
+#: ../configure.zcml:27
+msgid "Installs the collective.plausible add-on."
+msgstr "Installe le module collective.plausible."
+
+#: ../configure.zcml:35
+msgid "Installs the collective.plausible.testing profile."
+msgstr "Installe le profil de test collective.plausible.testing."
+
+#: ../controlpanels/plausible_control_panel/controlpanel.py:20
+#: ../profiles/default/controlpanel.xml
+msgid "Plausible Control Panel"
+msgstr "Panneau de configuration Plausible"
+
+#: ../behaviors/plausible_fields.py:55
+msgid "Plausible Site"
+msgstr "Site Plausible"
+
+#: ../behaviors/plausible_fields.py:47
+msgid "Plausible URL"
+msgstr "URL de l'instance Plausible"
+
+#: ../behaviors/plausible_fields.py:26
+msgid "Plausible analytics fields"
+msgstr "Champs Plausible analytics"
+
+#: ../views/plausible_view.pt:43
+msgid "Plausible analytics is not set"
+msgstr "Plausible analytics n'est pas configuré"
+
+#: ../behaviors/plausible_fields.py:64
+msgid "Plausible authentification token"
+msgstr "Token d'authentification Plausible"
+
+#: ../behaviors/plausible_fields.py:25
+msgid "Plausible fields"
+msgstr "Champs Plausible"
+
+#: ../views/plausible_healthcheck.pt:69
+msgid "Plausible fields are not set yet. You can define them on content properties."
+msgstr "Les champs Plausible ne sont pas encore définis. Vous pouvez les définir dans les propriétés du contenu."
+
+#: ../views/plausible_healthcheck.pt:50
+msgid "Plausible fields are set"
+msgstr "Les champs Plausible sont définis"
+
+#: ../controlpanels/plausible_control_panel/controlpanel.pt:44
+msgid "Plausible parameters are defined on content properties"
+msgstr "Les paramètres Plausible sont définis dans les propriétés du contenu"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/1002/actions.xml
+#: ../views/plausible_healthcheck.pt:53
+msgid "Plausible server healthcheck"
+msgstr "Etat du serveur Plausible"
+
+#: ../behaviors/plausible_fields.py:63
+msgid "Plausible token"
+msgstr "Token Plausible"
+
+#: ../views/plausible_healthcheck.pt:58
+msgid "Postgresql :&nbsp;"
+msgstr "Postgresql :&nbsp;"
+
+#: ../views/plausible_healthcheck.pt:59
+msgid "Sites cache :&nbsp;"
+msgstr "Cache des sites :&nbsp;"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/1001/actions.xml
+#: ../upgrades/1002/actions.xml
+msgid "Statistics"
+msgstr "Statistiques"
+
+#: ../configure.zcml:44
+msgid "Uninstalls the collective.plausible add-on."
+msgstr "Désinstalle le module collective.plausible."
+
+#: ../configure.zcml:27
+msgid "collective.plausible"
+msgstr "collective.plausible"
+
+#: ../configure.zcml:35
+msgid "collective.plausible (testing)"
+msgstr "collective.plausible (testing)"
+
+#: ../configure.zcml:44
+msgid "collective.plausible (uninstall)"
+msgstr "collective.plausible (désinstallation)"
