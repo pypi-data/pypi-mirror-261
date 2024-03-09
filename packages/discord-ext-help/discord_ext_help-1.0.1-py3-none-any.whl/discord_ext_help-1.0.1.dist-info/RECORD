@@ -1,0 +1,9 @@
+"discord_ext_help/__init__,py",sha256=0dWo3uKCHUKcuh-nIqPEgsEWjit-gHCE9ZjILlG49Qw,88
+discord_ext_help/help.py,sha256=7Nsf1_K4-saQ6moywKoGCglcqqsCoy7lzKhnsrRNek0,5464
+discord_ext_help/legacy/__init__.py,sha256=T5xlxQ5kj75WP3xYC2TA7zBHq4g-E-C9Qz-lnxIrPi0,160
+discord_ext_help/legacy/config.py,sha256=otzsIim7vTIZYyEh3FxaLqrOOO4PGJmgC6xBkFgT-R8,752
+discord_ext_help/legacy/extension.py,sha256=LaRgNsTpdKkrZfswejh41YCgGVTdLF6WCQG0Qmx9sWo,3838
+discord_ext_help-1.0.1.dist-info/LICENSE,sha256=DUaO1hobqh49lphW7kirEuOdVUi3y2M1I2qM_0t8wWU,1065
+discord_ext_help-1.0.1.dist-info/METADATA,sha256=D6MXVdRk2sUTA7qENBQkpMFKdkf_yyO1k1w5Ra4aQv4,2045
+discord_ext_help-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+discord_ext_help-1.0.1.dist-info/RECORD,,
