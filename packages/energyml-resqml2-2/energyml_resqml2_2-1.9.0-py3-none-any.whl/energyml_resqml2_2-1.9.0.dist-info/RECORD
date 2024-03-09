@@ -1,0 +1,8 @@
+energyml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+energyml/resqml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+energyml/resqml/v2_2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+energyml/resqml/v2_2/resqmlv2.py,sha256=_tVoGXpviXvMUc8kwAd5Gu9bHqU0y5bZKq82CyCpLZo,305924
+energyml_resqml2_2-1.9.0.dist-info/LICENSE,sha256=CxZTMnvwCBzv_MbzyfzaQroZ2D049sd-scyvBEyOZGE,11338
+energyml_resqml2_2-1.9.0.dist-info/METADATA,sha256=J1xI0Xyrs7o_RTbke-pn4u6mGhebm4G13LaU_6YnjO4,2253
+energyml_resqml2_2-1.9.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+energyml_resqml2_2-1.9.0.dist-info/RECORD,,
