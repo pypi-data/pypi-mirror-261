@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>{{ config.title }}</h1>
+<ul>
+    {% for page in root.pages() -%}
+    <li><a href="{{ page.url() }}">{{ page.title }}</a></li>
+    {% endfor -%}
+</ul>
+{% endblock %}
