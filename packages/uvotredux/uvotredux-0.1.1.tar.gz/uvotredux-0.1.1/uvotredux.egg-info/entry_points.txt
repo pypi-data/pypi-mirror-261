@@ -1,0 +1,2 @@
+[console_scripts]
+uvotredux = uvotredux.run:main
