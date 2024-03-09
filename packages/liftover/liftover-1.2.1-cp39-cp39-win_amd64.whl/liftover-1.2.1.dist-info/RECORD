@@ -1,0 +1,9 @@
+liftover/__init__.py,sha256=AiQbNB_RjSgoxJso82A2lNybe8uhGCjA7NCuf9pNUfY,183
+liftover/chain_file.cp39-win_amd64.pyd,sha256=XXRVogOKpUlp89O5UlUH8R-LfJeyUi_bLZhdLh2q2J0,189952
+liftover/download_file.py,sha256=SesN2irbzmwygZj7yoUoyXTzLgJhNE6jVdJZXSYbxSQ,360
+liftover/lifter.py,sha256=AJUovEEOKYXqoC23dJU0o5khFw1RLAkwckLDKOMbiso,1516
+liftover-1.2.1.dist-info/LICENSE.txt,sha256=s8QzEbOxxklbtka0rT1yqMeDqn90-KyAqDDWGHj_mMI,1076
+liftover-1.2.1.dist-info/METADATA,sha256=EikBm8PHBGqtwca8q7rnosRGabeHwkSk6N45kp0DsUM,1611
+liftover-1.2.1.dist-info/WHEEL,sha256=GZFS91_ufm4WrNPBaFVPB9MvOXR6bMZQhPcZRRTN5YM,100
+liftover-1.2.1.dist-info/top_level.txt,sha256=ZA5b1xNBTeDNgz3LAdiCKLvem6MKDinydTMn5avQF3o,9
+liftover-1.2.1.dist-info/RECORD,,
