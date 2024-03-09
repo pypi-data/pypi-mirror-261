@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kirigami
+Version: 0.0.1
+Summary: Reorganize and cut text in a dialogue
+Project-URL: Documentation, https://github.com/willingc/kirigami#readme
+Project-URL: Issues, https://github.com/willingc/kirigami/issues
+Project-URL: Source, https://github.com/willingc/kirigami
+Author-email: Carol Willing <carolcode@willingconsulting.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# kirigami
