@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hummingbird-ml
+Version: 0.4.11
+Home-page: https://github.com/microsoft/hummingbird
+Author: Microsoft Corporation
+Author-email: hummingbird-dev@microsoft.com
+License: MIT License
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Provides-Extra: tests
+Provides-Extra: sparkml
+Provides-Extra: onnx
+Provides-Extra: extra
+Provides-Extra: benchmark
+License-File: LICENSE
+License-File: NOTICE
