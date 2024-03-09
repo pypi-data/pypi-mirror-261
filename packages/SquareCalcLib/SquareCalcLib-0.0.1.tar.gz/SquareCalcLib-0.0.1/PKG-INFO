@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: SquareCalcLib
+Version: 0.0.1
+Summary: A module for calculating the areas of an ellipse and a triangle.
+Home-page: https://github.com/RdZilla/SquareCalcLib
+Author: Rzilla
+Author-email: pavel.eliseev.work@yandex.ru
+Project-URL: GitHub, https://github.com/RdZilla/
+Keywords: square,triangle,ellipse,calcutation
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
