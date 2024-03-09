@@ -1,0 +1,7 @@
+pytest_synodic-0.1.1.dev5.dist-info/METADATA,sha256=VGMRPucVUgPWhFKlvx3wbqu8V16rfKKfQhyQb87nwKs,539
+pytest_synodic-0.1.1.dev5.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+pytest_synodic-0.1.1.dev5.dist-info/licenses/LICENSE.md,sha256=wUELBJ0UKnpv6gI6lccpfQn9LyXZRT0vaLfW-pZDIuc,1073
+pytest_synodic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_synodic/plugin.py,sha256=wbKNe94BGAib6zbLDMOS4p8U4Y5xeC5u73jt-8JWilo,2049
+pytest_synodic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_synodic-0.1.1.dev5.dist-info/RECORD,,
