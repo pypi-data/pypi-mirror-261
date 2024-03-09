@@ -1,0 +1,11 @@
+schemarrow/__init__.py,sha256=P2vT3cXG4XgPgBJeaPrPVrhynBt1qd6fjPXJZnUfTDQ,63
+schemarrow/mappers/__init__.py,sha256=xWkVTClhEif2RiH9ysrafJl4wiKtJnAIGRfuARUGUC0,1089
+schemarrow/mappers/datetime_mapper.py,sha256=0A9P2cdqpVTdXrseaCRBUMNKJMWqvnB0pO0Bp74PMKA,1265
+schemarrow/mappers/db_types.py,sha256=bZtW0qM8xycUkevYnxsFqi8G6gPOSqiprQlLaiywKqg,133
+schemarrow/mappers/dtype_mapper.py,sha256=TeEoxi6-BmeCmyQ5zhs60_vGn5mCA52rbWluHt6Hv_M,561
+schemarrow/mappers/numeric_mapper.py,sha256=Yi4MiqbuGDvBZVZ-fdNq9WpWWYl8cszMkw7eROmr1hE,1021
+schemarrow/schema_arrow.py,sha256=vQ1xBiDLIJFdq7EuuMm4wK7TdbYYRZFZsvVDoJ7Brsc,1952
+schemarrow-0.1.1a0.dist-info/LICENSE,sha256=nQAjWnm3nqnfzyO4GrFPwZX58y12PDZw5AOOOrJiabI,1069
+schemarrow-0.1.1a0.dist-info/METADATA,sha256=7LwDp1UsmtzQjKsijtc02PC7n5Uqaf-LBDIgYTkXAa0,6853
+schemarrow-0.1.1a0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+schemarrow-0.1.1a0.dist-info/RECORD,,
