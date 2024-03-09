@@ -1,0 +1,14 @@
+LICENCE
+README.md
+setup.cfg
+setup.py
+scrapy_selenium/__init__.py
+scrapy_selenium/http.py
+scrapy_selenium/middlewares.py
+scrapy_selenium2.egg-info/PKG-INFO
+scrapy_selenium2.egg-info/SOURCES.txt
+scrapy_selenium2.egg-info/dependency_links.txt
+scrapy_selenium2.egg-info/requires.txt
+scrapy_selenium2.egg-info/top_level.txt
+tests/test_cases.py
+tests/test_middlewares.py
