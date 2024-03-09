@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: LegiaoUrbana
+Version: 0.1
+Summary: Show a list of the Legião Urbana albums
+Author-email: Jaqueline Coelho <jaquecoelhopt@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
