@@ -1,0 +1,5 @@
+gpu4pyscf_libxc_cuda11x-0.3.dist-info/RECORD,,
+gpu4pyscf_libxc_cuda11x-0.3.dist-info/METADATA,sha256=Ldcg0_0IZiQO4OzyKYbqQLCe_OJAXyx47k6CEPtIXlU,169
+gpu4pyscf_libxc_cuda11x-0.3.dist-info/WHEEL,sha256=G_40zPe-T3P6JW0ZUa0A5NsyaKs4arYkc-DZxJWAAS4,145
+gpu4pyscf_libxc_cuda11x-0.3.dist-info/top_level.txt,sha256=dM_KSyz2pya5Wp-GNk7TGHL0nlh7EzSzqEz2tP27II8,10
+gpu4pyscf/lib/deps/lib/libxc.so,sha256=DoApEdPRMr9gaceA40zN8l3cHGW0VLjdLunSDA9mocE,158068480
