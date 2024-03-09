@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: skills_network_authoring_jupyterlab_extension
+Version: 1.0.2
+Summary: skills_network_authoring_jupyterlab_extension is now skillsnetwork-jupyter-extension
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: skillsnetwork-jupyter-extension
+
+# skills_network_authoring_jupyterlab_extension is now skillsnetwork-jupyter-extension
+
+This package has been renamed. Use `pip install skillsnetwork-jupyter-extension` instead.
+
+New package: https://pypi.org/project/skillsnetwork-jupyter-extension/

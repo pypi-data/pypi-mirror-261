@@ -1,0 +1,7 @@
+README.md
+setup.py
+skills_network_authoring_jupyterlab_extension.egg-info/PKG-INFO
+skills_network_authoring_jupyterlab_extension.egg-info/SOURCES.txt
+skills_network_authoring_jupyterlab_extension.egg-info/dependency_links.txt
+skills_network_authoring_jupyterlab_extension.egg-info/requires.txt
+skills_network_authoring_jupyterlab_extension.egg-info/top_level.txt
