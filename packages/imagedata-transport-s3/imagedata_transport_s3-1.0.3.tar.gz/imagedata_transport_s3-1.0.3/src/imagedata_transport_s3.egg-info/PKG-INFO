@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: imagedata_transport_s3
+Version: 1.0.3
+Summary: Imagedata transport plugin for S3/Minio storage
+Home-page: https://github.com/erling6232/imagedata_transport_s3
+Author: Erling Andersen
+Author-email: Erling.Andersen@Helse-Bergen.NO
+License: MIT
+Project-URL: Documentation, https://imagedata.readthedocs.io
+Project-URL: Source Code, https://github.com/erling6232/imagedata_transport_s3
+Keywords: python,medical,imaging,s3,minio
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: <3.13,>=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: imagedata>=3.4.3
+Requires-Dist: minio
+
+######################
+imagedata-transport-s3
+######################
+
+|Docs Badge| |buildstatus|  |coverage| |pypi|
+
+
+Imagedata plugin for transport to S3/Minio storage
+
+
+.. |Docs Badge| image:: https://readthedocs.org/projects/imagedata/badge/
+    :alt: Documentation Status
+    :scale: 100%
+    :target: https://imagedata.readthedocs.io
+
+.. |buildstatus| image:: https://github.com/erling6232/imagedata_transport_s3/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/erling6232/imagedata_transport_s3/actions?query=branch%3Amaster
+    :alt: Build Status
+
+.. _buildstatus: https://github.com/erling6232/imagedata_transport_s3/actions
+
+.. |coverage| image:: https://codecov.io/gh/erling6232/imagedata_transport_s3/branch/main/graph/badge.svg
+    :alt: Coverage
+    :target: https://codecov.io/gh/erling6232/imagedata_transport_s3
+
+.. |pypi| image:: https://img.shields.io/pypi/v/imagedata-transport-s3.svg
+    :target: https://pypi.python.org/pypi/imagedata-transport-s3
+    :alt: PyPI Version
+
