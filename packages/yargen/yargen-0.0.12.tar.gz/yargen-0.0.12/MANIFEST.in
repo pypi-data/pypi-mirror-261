@@ -1,0 +1,7 @@
+include yargen/*.py
+include LICENSE
+include README.md
+include README.zh-TW.md
+include requirements.txt
+
+recursive-include yargen/templates *
