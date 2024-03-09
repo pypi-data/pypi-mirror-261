@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: current_temp_api
+Version: 0.0.1.19416830
+Summary: a simple client API module to get current temperature from service providers
+Home-page: https://github.com/hossein-amirabdollahi/Python-Current-Temperature-API
+Author: Hossein AmirAbdollahi
+Author-email: HosseinAmirAbdollahi8@gmail.com
+Project-URL: Author, https://www.linkedin.com/in/hossein-amirabdollahi-6070b7294/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Python-Current-Temperature-API
+ a client to gather temperature data from different service provide
