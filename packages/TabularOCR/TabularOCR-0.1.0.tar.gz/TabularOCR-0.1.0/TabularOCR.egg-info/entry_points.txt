@@ -1,0 +1,2 @@
+[console_scripts]
+tableocr = tableocr.cli:main
