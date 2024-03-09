@@ -1,0 +1,9 @@
+scrapy_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_scraper/scrapy_scraper.py,sha256=eA1DnX9bcGtFxPD5Y0RpcwFq7wGZu0maxk2O6rhXyjo,23580
+scrapy_scraper/user_agents.txt,sha256=amHZtkVR1pBN5_V4bH-hXm83VX9ms5slIT5ZXFfHOeU,11174
+scrapy_scraper-1.5.dist-info/LICENSE,sha256=kJNTCzmUbO9EbXM5fXaowGdH9m1WkR0EGOz5qjwPo-I,1090
+scrapy_scraper-1.5.dist-info/METADATA,sha256=Qh9BgOEmyRu-ZYKDaI_ED3l11L0WVtBTsNz3gXmHdTQ,4667
+scrapy_scraper-1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+scrapy_scraper-1.5.dist-info/entry_points.txt,sha256=n_ILS9EP06DElzuhlHIqYmsaIo2frU0vEnISXWh7q4Y,70
+scrapy_scraper-1.5.dist-info/top_level.txt,sha256=Nt-NI5udn-hQ4f05vkYST-4axKEuFuychr1CyrpVOnY,15
+scrapy_scraper-1.5.dist-info/RECORD,,
