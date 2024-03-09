@@ -1,0 +1,2 @@
+[gui_scripts]
+maligner = maligner.mainwindow:launch
