@@ -1,0 +1,10 @@
+PyQt6
+PyQt6-WebEngine
+minecraft-launcher-lib
+requests
+
+[shortcut-linux]
+desktop-entry-lib
+
+[window-icon-progress-windows]
+PyTaskbarProgress
