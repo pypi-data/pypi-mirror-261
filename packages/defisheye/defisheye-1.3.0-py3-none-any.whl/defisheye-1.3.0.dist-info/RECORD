@@ -1,0 +1,16 @@
+defisheye/__init__.py,sha256=co5TWNID8XJlCqUZJIiVoeQEQ-4F-x7735aUpuJJJ3s,750
+defisheye/__main__.py,sha256=vvTaI7t6il4ZzlUH8ZkTMGfgfsamD4g4dyTcvxbLNWI,4585
+defisheye/defisheye.py,sha256=KgBPMfBMeUc_A4RDVWwk5pIELe3_1FCz8H4AGGLnPy0,5416
+defisheye/defisheyeapp.py,sha256=CETjRjhXSUwiBAWCJOJR2Kg94Qu13iieZEvM3IfLl5s,6848
+defisheye/gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+defisheye/gui/camera.png,sha256=qjngWHTCyo0_Erbw_U-cwP0E8ljc3TswkZggBypQh5A,5613
+defisheye/gui/edit-image.png,sha256=axCDljTkZ76vH0UVazsZUZDoUAMTW6vXSHQGSSsQJII,5794
+defisheye/gui/image200x200.png,sha256=xQAmkj-wxL3OenptOsacG8cqzAWr4vCHdC9zSkwQugw,14024
+defisheye/gui/main.ui,sha256=lI0OtEdErElS-5PAIBedMKiVgeFwCx1iiMo98GYEq3o,14835
+defisheye/gui/open-image.png,sha256=A2Qmb8ufigghxxm59kqX5fa46qGOXglltyolwN5NQNI,9400
+defisheye-1.3.0.dist-info/LICENSE-2.0.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+defisheye-1.3.0.dist-info/METADATA,sha256=zSG0cf29rDCkcgIIXtkRZHDqbCGUVD1eeBJk2SDG4r8,6750
+defisheye-1.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+defisheye-1.3.0.dist-info/entry_points.txt,sha256=G4DmaEI_Em00qlLYAw5R3Ru--E2RyYtSEqKGhNANBG4,97
+defisheye-1.3.0.dist-info/top_level.txt,sha256=FM3X235L1UNnqoJcYs8kB6QHE0QceVxAvcUrIw4ggIc,10
+defisheye-1.3.0.dist-info/RECORD,,
