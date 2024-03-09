@@ -1,0 +1,10 @@
+numpy<2,>=1.16
+deprecation<3
+jax<1.0.0,>=0.3.15
+
+[compatible-jax]
+jax<=0.4.25,>=0.3.15
+
+[tests]
+jax[cpu]
+pytest
