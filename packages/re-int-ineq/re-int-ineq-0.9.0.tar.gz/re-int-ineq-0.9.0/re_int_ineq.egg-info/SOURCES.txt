@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+re_int_ineq/__init__.py
+re_int_ineq.egg-info/PKG-INFO
+re_int_ineq.egg-info/SOURCES.txt
+re_int_ineq.egg-info/dependency_links.txt
+re_int_ineq.egg-info/entry_points.txt
+re_int_ineq.egg-info/top_level.txt
+tests/test_re_int_ineq.py

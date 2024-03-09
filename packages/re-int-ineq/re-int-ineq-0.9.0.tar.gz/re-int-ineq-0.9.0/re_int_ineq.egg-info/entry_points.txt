@@ -1,0 +1,2 @@
+[console_scripts]
+re-int-ineq = re_int_ineq:main
