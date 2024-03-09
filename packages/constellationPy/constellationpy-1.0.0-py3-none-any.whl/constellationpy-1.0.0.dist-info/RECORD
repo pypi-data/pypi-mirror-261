@@ -1,0 +1,10 @@
+constellationPy/__init__.py,sha256=n57LvDa4Q33fX8Wegw2mrqYmTbjvUGs5ryzToKux4FI,379
+constellationPy/client.py,sha256=atVs0aX2woxau508i5hEysAMMTmoIhQWmufq2cKJHZU,12339
+constellationPy/const.py,sha256=R3ngVypeV9qcCkgfWYrdHrno4qe5bphJiG4c73ArSYM,489
+constellationPy/serveur.py,sha256=fvx5E8BikPhGVPwcEI6JCWenyMP4DRNSr98cFnxc4xg,13566
+constellationPy/sync.py,sha256=mKs8YKVwWDxstOfAGi5EU3U1I2ujU84omm0eXSOwi70,1287
+constellationPy/utils.py,sha256=FSuCOKu0PF48afEMar2zimyve2Yh29POfiq2q5Xc1O0,3826
+constellationpy-1.0.0.dist-info/METADATA,sha256=tgkyxKaPZm6SoslcXh1cn_eSbcvB7Q6OYLLO3FEuo8Q,16347
+constellationpy-1.0.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+constellationpy-1.0.0.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+constellationpy-1.0.0.dist-info/RECORD,,
