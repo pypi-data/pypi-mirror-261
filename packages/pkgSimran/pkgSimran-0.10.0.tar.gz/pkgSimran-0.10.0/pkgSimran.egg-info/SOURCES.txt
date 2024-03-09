@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pkgSimran.egg-info/PKG-INFO
+pkgSimran.egg-info/SOURCES.txt
+pkgSimran.egg-info/dependency_links.txt
+pkgSimran.egg-info/top_level.txt
+sensitiveInfoDetector/__init__.py
+sensitiveInfoDetector/config.py
+sensitiveInfoDetector/data.txt
+sensitiveInfoDetector/main.py
+sensitiveInfoDetector/test_detection_function.py
