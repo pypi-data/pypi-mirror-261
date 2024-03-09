@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: claudetools
+Version: 0.1.0
+Summary: Function calling using the Claude 3 family.
+Home-page: https://github.com/vatsalsaglani/claudetools
+Author: Vatsal J. Saglani
+Author-email: saglanivatsal@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Claudetools
