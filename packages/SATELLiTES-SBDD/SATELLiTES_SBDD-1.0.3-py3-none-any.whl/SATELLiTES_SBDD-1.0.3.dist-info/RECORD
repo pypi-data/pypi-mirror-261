@@ -1,0 +1,14 @@
+SATELLiTES_SBDD-1.0.3.data/scripts/SATELLiTES.py,sha256=BD7kSyaz-pTZ-UvQs-r9TxHBVcm8TmuNqbgWjNoDiCo,21500
+src/SATELLiTES.py,sha256=tdWM0TPDIrBFk0MzANDTRV4-gHFA_2kaW14FUGFln0c,21514
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/bin/Enumeration_CB_VDev.py,sha256=0b0HzA8Pg_Fu6qNVfcL2tlJsaywRdE6uF_AG7SKztMk,5552
+src/bin/SATELLiTES_gui.py,sha256=yiBtt8s-ztAI6OM8MP9t0Xs6CYtkGC52UxnX1hJTgp8,52237
+src/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/gui/tabs_2reagents.py,sha256=MCQD7S1VgH7XZM5c2NqTpy14IJh2KmwnEYqlnq2BPtE,17708
+src/gui/tabs_3reagents.py,sha256=aGonIGfQ6lGxE1gGoSs8NXX0T5kiyFqu0T8eWe7we3I,49221
+SATELLiTES_SBDD-1.0.3.dist-info/LICENSE,sha256=5Y8r9mNh8ufXnHpQQHMHRbzhKQMEaJlp-VY0RNAg6dY,1072
+SATELLiTES_SBDD-1.0.3.dist-info/METADATA,sha256=jJYCFrjL79XDvzSgc0FS9wJIesktLos2wGIRRMcvEho,1488
+SATELLiTES_SBDD-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+SATELLiTES_SBDD-1.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+SATELLiTES_SBDD-1.0.3.dist-info/RECORD,,
