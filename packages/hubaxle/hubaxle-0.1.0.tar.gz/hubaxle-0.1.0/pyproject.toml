@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hubaxle"
+version = "0.1.0"
+description = "Control interface for the GL Hub"
+authors = ["Groundlight <info@groundlight.ai>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "src", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^8.0.2"
+django = "^5.0.2"
+python-dotenv = "^1.0.1"
+pyyaml = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
