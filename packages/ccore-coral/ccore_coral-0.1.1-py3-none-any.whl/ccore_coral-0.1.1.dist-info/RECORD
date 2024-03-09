@@ -1,0 +1,8 @@
+coral/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coral/data.py,sha256=7q07GEJ0vkODnf8NgjBifi0QKct6tBBSIzZ9SxcHVRc,9486
+coral/main.py,sha256=l3Spvk8Znq9jjVAsyWCx0DKd4tsaKgVWQT62w1APUas,3247
+coral/utility.py,sha256=pqgYl7w1HcXbiE2plz58YkZSoOm9jouVl7H1yJI4GFo,1312
+ccore_coral-0.1.1.dist-info/entry_points.txt,sha256=fgP1ptcnCymtNRIcadmr7Z9qh8RTmKCsnY9ghzYhoFw,41
+ccore_coral-0.1.1.dist-info/METADATA,sha256=PNhlzbOWdvcoOE6WVinDphLWuN3clrzNJMN14tD8uJU,4397
+ccore_coral-0.1.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+ccore_coral-0.1.1.dist-info/RECORD,,
