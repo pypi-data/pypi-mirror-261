@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cserve
+Version: 0.0.1
+Summary: CentML CServe client library
+Author: Xin Li
+Author-email: xin@centml.ai
+Maintainer: CentML Team
+Maintainer-email: cserve-dev@centml.ai
+Project-URL: Homepage, https://centml.ai
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CServe Client
+
+CentML CServe client library - to be released.

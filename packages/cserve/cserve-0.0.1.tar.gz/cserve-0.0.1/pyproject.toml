@@ -1,0 +1,38 @@
+[build-system]
+requires = [
+  "setuptools>=64",
+  "wheel",               # for bdist package distribution
+  "setuptools_scm>=6.4", # for automated versioning
+]
+
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = { "" = "python" }
+
+[tool.setuptools.packages.find]
+where = ["python"]
+namespaces = true
+
+[tool.setuptools_scm]
+write_to = "python/cserve/_version.py"
+
+[project]
+name = "cserve"
+dynamic = ["version"]
+description = "CentML CServe client library"
+authors = [{ name = "Xin Li" }, { email = "xin@centml.ai" }]
+maintainers = [{ name = "CentML Team" }, { email = "cserve-dev@centml.ai" }]
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python",
+]
+
+[project.scripts]
+cserve-cli= "cserve.cli.main:main"
+
+[project.urls]
+Homepage = "https://centml.ai"
