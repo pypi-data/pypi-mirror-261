@@ -1,0 +1,5 @@
+setup.py
+rAXe_build.egg-info/PKG-INFO
+rAXe_build.egg-info/SOURCES.txt
+rAXe_build.egg-info/dependency_links.txt
+rAXe_build.egg-info/top_level.txt
