@@ -1,0 +1,28 @@
+[project]
+name = "masoud"
+version = "1.4.1"
+description = "Think Docker Compose + Ansible inventory + Python-scriptable"
+authors = [{ name = "satoqz", email = "mail@satoqz.net" }]
+dependencies = ["click>=8.1.7"]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["masoud"]
+
+[tool.rye]
+managed = true
+dev-dependencies = ["ruff>=0.3.1"]
+
+[tool.rye.scripts]
+fmt = ["ruff", "check", "--fix", "."]
+
+[tool.ruff.lint]
+extend-select = ["I"]
