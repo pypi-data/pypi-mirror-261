@@ -1,0 +1,12 @@
+octofitterpy/__init__.py,sha256=jkC1ddfrIRjFy1t2E5U0fTevSyfSJQNt35j-xhQ_688,424
+octofitterpy/__main__.py,sha256=jYpLoxyBGmrd91cPyJWgX9h6G9eVJ05vKsl6jiBriIo,113
+octofitterpy/julia_helpers.py,sha256=PnhtqJwWPi8RQ9WTmyKxnIl4NiIEncD0cN9Wbq5Z9HA,884
+octofitterpy/julia_import.py,sha256=XvBCnKKNzYUtBm5tyqBagy14XLM6RajHJeeeYnVRCVI,2989
+octofitterpy/juliapkg.json,sha256=Ub4iXkO_CdjjkDmsZtELxp-5Y5WypQQAQe7pNqqWUTI,682
+octofitterpy/python_interface.py,sha256=wF85526faPgunCXJm4yFFXI4zCrea3euhAl_0sjk4lU,3583
+octofitterpy/version.py,sha256=Ak_tcdrtyNf2oIH3r9doaBc3f8ydS4o6rJFXuPDpXJI,58
+octofitterpy-2.3.3.dist-info/LICENSE,sha256=x9QVqAJjAfKC0JygxUaKJg6U7l9JADxz9zDQkfipnzo,1073
+octofitterpy-2.3.3.dist-info/METADATA,sha256=8vBAoQFyehr_mqsag5zvMx4PlNXZYjBhW_Fj4oQUi5M,5767
+octofitterpy-2.3.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+octofitterpy-2.3.3.dist-info/top_level.txt,sha256=uOgAvIhmlv1iWb0Xne6tL-_VRCqc9UV41doKpBbItxA,13
+octofitterpy-2.3.3.dist-info/RECORD,,
