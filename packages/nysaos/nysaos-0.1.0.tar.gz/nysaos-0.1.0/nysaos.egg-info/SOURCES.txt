@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+nysaos.egg-info/PKG-INFO
+nysaos.egg-info/SOURCES.txt
+nysaos.egg-info/dependency_links.txt
+nysaos.egg-info/not-zip-safe
+nysaos.egg-info/top_level.txt
