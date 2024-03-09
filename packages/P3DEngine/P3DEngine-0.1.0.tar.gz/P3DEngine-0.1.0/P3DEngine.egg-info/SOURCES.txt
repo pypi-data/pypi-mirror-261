@@ -1,0 +1,16 @@
+README.md
+upload.py
+P3DEngine.egg-info/PKG-INFO
+P3DEngine.egg-info/SOURCES.txt
+P3DEngine.egg-info/dependency_links.txt
+P3DEngine.egg-info/top_level.txt
+P3Dcore/__init__.py
+P3Dcore/key.py
+P3Dcore/window.py
+P3Dobjects/__init__.py
+P3Dobjects/data.py
+P3Dobjects/object.py
+P3Dobjects/view.py
+P3Dobjects/pos/__init__.py
+P3Dobjects/pos/position.py
+P3Dobjects/pos/vec4.py
