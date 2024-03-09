@@ -1,0 +1,14 @@
+whitson/client/__init__.py,sha256=87l1Vc6Y7llKgomOdGcN5PAn0DrdiippvnrbAdZ8tzw,225
+whitson/client/_api_client.py,sha256=jSdHFavtj7cod8Jr-OCPuOhSFKs5r9Xf_jHT-5BR2rk,1409
+whitson/client/_whitson_client.py,sha256=f_R2kSNwrcOo5WXJ1bGjINGXk1B2JzFjgcogxhIsbfw,1470
+whitson/client/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whitson/client/api/fields.py,sha256=yWkrtjB0x1Uy0FhyFEvlg-H2FS-5WIoA-KsxxRadHl8,1153
+whitson/client/api/production_data.py,sha256=FHuMcrnqC-6zGW9UfjjoDwf_iingI0gbvWSubam7LsE,1836
+whitson/client/api/projects.py,sha256=iCyZBwS4XqhzknE4hu4lkX7c-KmEq8wuXStiih7XzeE,1448
+whitson/client/api/wells.py,sha256=E5VGf_LkoUySiuLpxZjn6p979ScBuAqG-U7AT5puHOI,6459
+whitson/client/config.py,sha256=m7lKJp54g5I74yW0boyAybalgyGGHWhr6H21SmahszU,4200
+whitson/client/dataclasses.py,sha256=5hRS2nFjY2xWmG7oAxbdL9PEZ0j0ZtvJkuOyBs5dG4E,3575
+whitson_sdk_python-0.4.0.dist-info/LICENSE.txt,sha256=K9v4ge8opfMxJNrtpS5EBna8pepYBdvwp8h9vRxlsCY,1077
+whitson_sdk_python-0.4.0.dist-info/METADATA,sha256=cNFfMGl5C6a8YKd3WL-rLoG1Hr-MA0JlB3JXf-_K0fE,4427
+whitson_sdk_python-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+whitson_sdk_python-0.4.0.dist-info/RECORD,,
