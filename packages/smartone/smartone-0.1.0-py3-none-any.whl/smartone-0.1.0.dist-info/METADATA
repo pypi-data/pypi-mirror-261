@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: smartone
+Version: 0.1.0
+Summary: SmartOne Toolkit is an open-source collection designed for DataOps and data labeling. Simplifying complex workflows, it enhances data quality and accelerates development with lightweight, efficient tools.
+License: MIT
+Author: Nicholas Nadeau
+Author-email: nicholas@smartone.ai
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# smartone-toolkit
+SmartOne Toolkit is an open-source collection designed for DataOps and data labeling. Simplifying complex workflows, it enhances data quality and accelerates development with lightweight, efficient tools.
+
