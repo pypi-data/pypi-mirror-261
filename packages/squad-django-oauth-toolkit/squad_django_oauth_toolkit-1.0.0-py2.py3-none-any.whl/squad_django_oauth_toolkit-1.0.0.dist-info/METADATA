@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: squad-django-oauth-toolkit
+Version: 1.0.0
+Summary: OAuth2 Provider for Django
+Home-page: https://github.com/squadstack/django-oauth-toolkit
+Download-URL: https://github.com/evonove/django-oauth-toolkit/tarball/master
+Author: Federico Frenguelli, Massimiliano Pippi
+Author-email: hemendra.sharma@squadstack.com
+Keywords: django,oauth,oauth2,oauthlib
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: django (>=1.10)
+Requires-Dist: oauthlib (>=2.0.1)
+Requires-Dist: requests (>=2.13.0)
+
