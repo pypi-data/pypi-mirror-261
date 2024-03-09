@@ -1,0 +1,5 @@
+setup.py
+tars_signal_processing.egg-info/PKG-INFO
+tars_signal_processing.egg-info/SOURCES.txt
+tars_signal_processing.egg-info/dependency_links.txt
+tars_signal_processing.egg-info/top_level.txt
