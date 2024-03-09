@@ -1,0 +1,7 @@
+click
+identify
+pre-commit
+strictyaml
+
+[tests]
+pytest
