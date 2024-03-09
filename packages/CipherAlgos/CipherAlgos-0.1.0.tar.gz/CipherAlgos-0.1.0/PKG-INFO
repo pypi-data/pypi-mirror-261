@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: CipherAlgos
+Version: 0.1.0
+Summary: A simple encryption package
+Home-page: https://github.com/idvb188/CipherAlgos
+Author: Ilyad
+Author-email: idvb188@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/idvb188/CipherAlgos
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Cipher Algorithms
+
+This package an implementation of popular cipher algorithms.
+
+## Installation
+
+```bash
+pip install CipherAlgos
