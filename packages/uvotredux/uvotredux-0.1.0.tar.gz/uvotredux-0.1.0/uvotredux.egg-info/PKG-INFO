@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: uvotredux
+Version: 0.1.0
+Summary: CLI to reduce Swift UVOT data
+Author-email: Robert Stein <rdstein@caltech.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/robertdstein/uvotredux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pathlib
+Requires-Dist: pre-commit
+Provides-Extra: dev
+Requires-Dist: black==24.2.0; extra == "dev"
+Requires-Dist: isort==5.13.2; extra == "dev"
+Requires-Dist: pylint==3.1.0; extra == "dev"
+
+# uvotredux
