@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AminoZ
+Version: 0.1.1
+Summary: Amino App Library
+Author: ZOOM
+Author-email: hgdcytdgh@gmail.com
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: httpx
+
+# AminoZ
+
+
+
+## to install:
+`pip install AminoZ`
