@@ -1,0 +1,12 @@
+vegas-6.0.1.dist-info/RECORD,,
+vegas-6.0.1.dist-info/WHEEL,sha256=teAgl2hmEj-c3zIIL7kvmnJNpl7hVIar7x-kUOWAdXc,113
+vegas-6.0.1.dist-info/LICENSE.txt,sha256=YQSKRpj-PNC7SScHem3AECgwVONM-whKrs74SDueZxM,31996
+vegas-6.0.1.dist-info/METADATA,sha256=4_PZV6-Gao88qZ8gXEkuzQioY82Cp8qDXKMqBITMUBE,1841
+vegas-6.0.1.dist-info/top_level.txt,sha256=rnAmsIvsHyplln9ev-uw4hM7slW7VUdBQu9VgX8knkE,6
+vegas/_vegas.pxd,sha256=Qe0-Zuep8t9OXUq8yLLZ1T_e-7zABM4aN2inX6N4BX4,3035
+vegas/_vegas.pyx,sha256=lTDQtHMRQk7ptU5aGuMGGf2wsa53PRMLxGY-2el6_N8,139995
+vegas/_vegas.c,sha256=L0RDzmmTn9wq3HaMCiqPNkKV7M0uW7AdlDB01tSVaK0,5519453
+vegas/__init__.pxd,sha256=MzfsI-0xD0rFnyHl1UFXz-2wSvGjfGA9QFKuCTr5nhs,646
+vegas/_version.py,sha256=93yuWfSjMLV-a1Yl8po4FbGC2MRnwmBMAJROqgk9gNM,22
+vegas/__init__.py,sha256=Z2u84nNK0yWBmCs5P-rT1I07SLfmA23uwYaVVyuRxL8,48621
+vegas/_vegas.cpython-310-x86_64-linux-gnu.so,sha256=25Tvgp0XMFMv_N7T-Y3YHnKs1BKRxPd1iDrWDuTExQk,12005608
