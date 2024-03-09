@@ -1,0 +1,14 @@
+P3Dcore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+P3Dcore/key.py,sha256=f9xYZaDHP6FdbD_T5yJCZ5chHcXUdUbSdz7_UY1j23g,64
+P3Dcore/window.py,sha256=cZXsggaIHoi7cZzGBD_3rLYdKZoTTbpjrdROM38lccs,2082
+P3Dobjects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+P3Dobjects/data.py,sha256=MEa5CGEpxFnVNLG6cc4WCtrmgUCGtOvifr-Q3uzY4CY,237
+P3Dobjects/object.py,sha256=xdODd0na3FGvkHSg4BmSLc7v-HSM06aOR-f2LxxABd0,192
+P3Dobjects/view.py,sha256=vKOYxIkdbPQ9VAnS9FvR8mQxT8QTOKXLJaY3xO5JUS8,1344
+P3Dobjects/pos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+P3Dobjects/pos/position.py,sha256=QKuUCZm7IxsaL8XVSCvkENaGLGjk7YwOeJ14gcTT_CY,218
+P3Dobjects/pos/vec4.py,sha256=hTZy3oLejRmllV3O4uQ1jFAFe_LPTErpqd8idDtlpvw,589
+P3DEngine-0.1.0.dist-info/METADATA,sha256=6_tLtmxi5Q34M8gbkY244IdgCO5W5cAggvG3z7vBIEc,449
+P3DEngine-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+P3DEngine-0.1.0.dist-info/top_level.txt,sha256=OMQJnzxlQTXCTlS-sP2yXDMNG8Q8zZ99NKcrd-og3OE,19
+P3DEngine-0.1.0.dist-info/RECORD,,
