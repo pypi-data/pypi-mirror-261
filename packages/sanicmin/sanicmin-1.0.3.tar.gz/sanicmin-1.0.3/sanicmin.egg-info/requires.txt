@@ -1,0 +1,4 @@
+htmlmin
+rcssmin
+rjsmin
+sanic

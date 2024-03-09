@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sanicmin
+Version: 1.0.3
+Summary: A plugin for Sanic framework to minimize data transfer
+Home-page: https://github.com/infernox-dev/sanicmin
+Author: Infernox-Dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: license.md
+Requires-Dist: htmlmin
+Requires-Dist: rcssmin
+Requires-Dist: rjsmin
+Requires-Dist: sanic

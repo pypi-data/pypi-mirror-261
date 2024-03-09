@@ -1,0 +1,10 @@
+license.md
+setup.py
+sanicmin/__init__.py
+sanicmin/__jsonmin.py
+sanicmin/__sanicmin.py
+sanicmin.egg-info/PKG-INFO
+sanicmin.egg-info/SOURCES.txt
+sanicmin.egg-info/dependency_links.txt
+sanicmin.egg-info/requires.txt
+sanicmin.egg-info/top_level.txt
