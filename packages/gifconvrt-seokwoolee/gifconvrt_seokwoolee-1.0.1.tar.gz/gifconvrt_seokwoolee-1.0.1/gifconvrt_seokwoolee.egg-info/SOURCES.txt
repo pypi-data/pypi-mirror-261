@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+gifconvrt_seokwoolee/__init__.py
+gifconvrt_seokwoolee/gif_converter.py
+gifconvrt_seokwoolee.egg-info/PKG-INFO
+gifconvrt_seokwoolee.egg-info/SOURCES.txt
+gifconvrt_seokwoolee.egg-info/dependency_links.txt
+gifconvrt_seokwoolee.egg-info/not-zip-safe
+gifconvrt_seokwoolee.egg-info/requires.txt
+gifconvrt_seokwoolee.egg-info/top_level.txt
