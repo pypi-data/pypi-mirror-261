@@ -1,0 +1,17 @@
+scaling_analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaling_analysis/experiment.py,sha256=2pngwIZzDqVIVkMeUfSWkNVKxjwriKF0Gl4Lhv_jZ5I,2190
+scaling_analysis/pca.py,sha256=A17bfnImFXFJmOuroNOAC9EgkVSbUbFGkcok1bk6IIo,3851
+scaling_analysis/plotting.py,sha256=pkqUexW-sR0NDmnhZzpHdb3MmGcFAKE5vyr3oRFX9Tk,4093
+scaling_analysis/predict.py,sha256=oUu5vWAIvk5O42HWZFpuwe7cGErUiDdDmjVKfESk1HY,14875
+scaling_analysis/predict_history.py,sha256=vnLX76bBRYht7vFjlBRMVu7Z-CTpJBzE6WZpbqBhC1s,20815
+scaling_analysis/session_permutation.py,sha256=HSkagXYheA_rJfc4f4c6ejzvtrOMUxKRvGo7OmcfiGU,5406
+scaling_analysis/spatial.py,sha256=qB3LV4QPB7QHbjyxBcD91ZZokZanzIhNNUvCA6NKnWY,4535
+scaling_analysis/svca.py,sha256=gIDv9YFA6MsVq83y-IDk1mdHPP3aPC-bNmxE6XwNOCE,14093
+scaling_analysis/temporal.py,sha256=krZfHjRpMtffJNO8fOsJoYkUmmOdI49JHwR0Ruo-LL4,7063
+scaling_analysis/utils.py,sha256=x-BoIg5PXbmVlZqAP6_ha8gqVAlekjocPdoCRk4D2e0,1396
+scaling_analysis/visual.py,sha256=q8avXv9rqVPak-YyWOtczzguisb2DDQiJI_JiVghKGE,13891
+scaling_analysis-0.1.0.dist-info/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+scaling_analysis-0.1.0.dist-info/METADATA,sha256=7jlLcUYh7ceB5wOPbHF6r-rSrklVRqbpEqDO4gXSQTo,43669
+scaling_analysis-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+scaling_analysis-0.1.0.dist-info/top_level.txt,sha256=PRIcisuSOotIOOnggD1y4D2ueNUwFRaJJM7Kmpquwc8,17
+scaling_analysis-0.1.0.dist-info/RECORD,,
