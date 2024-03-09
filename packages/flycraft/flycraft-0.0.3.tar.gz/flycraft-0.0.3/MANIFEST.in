@@ -1,0 +1,4 @@
+recursive-include . *.txt *.dat *.so *.lib *.dll
+include flycraft/planes/utils/f16
+include flycraft/planes/utils/libs
+exclude *test*
