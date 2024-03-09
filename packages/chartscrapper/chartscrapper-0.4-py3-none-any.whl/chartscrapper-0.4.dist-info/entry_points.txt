@@ -1,0 +1,2 @@
+[console_scripts]
+chart-scrapper = chartscrapper:get_chart
