@@ -1,0 +1,1 @@
+this is a simple QoL module which adds simple things like an rng function you can call.
