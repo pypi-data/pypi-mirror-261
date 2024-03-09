@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "smartone"
+version = "0.1.0"
+description = "SmartOne Toolkit is an open-source collection designed for DataOps and data labeling. Simplifying complex workflows, it enhances data quality and accelerates development with lightweight, efficient tools."
+authors = ["Nicholas Nadeau <nicholas@smartone.ai>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "smartone" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
