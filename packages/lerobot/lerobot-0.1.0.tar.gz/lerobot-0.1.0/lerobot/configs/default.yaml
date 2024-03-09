@@ -1,0 +1,35 @@
+defaults:
+  - _self_
+  - env: pusht
+  - policy: diffusion
+
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}_${env.name}_${policy.name}_${hydra.job.name}
+  job:
+    name: default
+
+seed: 1337
+device: cuda  # cpu
+prefetch: 4
+eval_freq: ???
+save_freq: ???
+eval_episodes: ???
+save_video: false
+save_model: false
+save_buffer: false
+train_steps: ???
+fps: ???
+
+offline_prioritized_sampler: true
+
+n_action_steps: ???
+env: ???
+
+policy: ???
+
+wandb:
+  enable: true
+  project: lerobot
+  entity: rcadene  # insert your own
+  notes: ""
