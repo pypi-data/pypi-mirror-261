@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: financialyear
+Version: 0.3.0
+Summary: It Calculate financial year related dates
+Home-page: https://github.com/piidus/FinancialYear
+Author: Sudiip
+Author-email: sudiipkumarbasu@gmail.com
+Description-Content-Type: text/markdown
+
+# FinancialYear
+It calculate financial year related issue
+Input may be in 2022 or 2022-23 in str
+ # Example usage:
+# financial_year = Financial_year("2023-24")
+# print(financial_year.start_month(1))  # Output: 01-04-2023
+# print(financial_year.end_month(1))    # Output: 30-04-2023
+# print(financial_year.previous_month_dates(month=1))
+# print(financial_year.month_list())    # Output: ['04-2023', '05-2023', '06-2023', ..., '03-2024']
