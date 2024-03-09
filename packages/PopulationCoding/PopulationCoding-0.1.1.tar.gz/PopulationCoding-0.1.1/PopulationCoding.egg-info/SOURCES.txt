@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+PopulationCoding/__init__.py
+PopulationCoding/corr.py
+PopulationCoding/dimred.py
+PopulationCoding/info.py
+PopulationCoding/predict.py
+PopulationCoding/utils.py
+PopulationCoding.egg-info/PKG-INFO
+PopulationCoding.egg-info/SOURCES.txt
+PopulationCoding.egg-info/dependency_links.txt
+PopulationCoding.egg-info/requires.txt
+PopulationCoding.egg-info/top_level.txt
