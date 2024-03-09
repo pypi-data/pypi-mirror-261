@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.2", "setuptools-scm[toml]>=7.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json-cfg-rw"
+version = "0.6.0"
+authors = [{name = "István Pásztor", email = "pasztorpisti@gmail.com"}]
+description = "JSON config file parser with extended syntax (e.g.: comments), line/column numbers in error messages, etc..."
+keywords = [ "json", "config", "file", "parser", "configuration", "comment"]
+classifiers = ["License :: OSI Approved :: MIT License","Development Status :: 4 - Beta","Intended Audience :: Developers","Topic :: Software Development :: Libraries :: Python Modules","Programming Language :: Python :: 3.12","Programming Language :: Python :: Implementation :: CPython","Programming Language :: Python :: Implementation :: PyPy",]
+dependencies = ["kwonly-args>=1.0.7"]
+
+[project.urls]
+Homepage = "https://github.com/pasztorpisti/json-cfg"
+
+[tool.setuptools_scm]
+write_to = "jsoncfg/version.py"
+
+#https://stackoverflow.com/a/75636144
+[tool.setuptools.packages.find]
+where = ["."]
+namespaces = false
+exclude = ["*_test.py"]
+
+# includes for data files - files outside of python packages
+[tool.setuptools.package-data]
+
+# exludes for data files - files outside of python packages
+[tool.setuptools.exclude-package-data]

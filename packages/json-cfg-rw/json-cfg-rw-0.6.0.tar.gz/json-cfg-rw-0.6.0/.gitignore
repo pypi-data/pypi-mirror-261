@@ -1,0 +1,10 @@
+/.eggs/
+/.idea/
+/build/
+/dist/
+/*.egg-info/
+
+/README.html
+/CHANGES.html
+
+*.py[cod]

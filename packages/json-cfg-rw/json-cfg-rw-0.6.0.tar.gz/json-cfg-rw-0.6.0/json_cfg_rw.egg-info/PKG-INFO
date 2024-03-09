@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: json-cfg-rw
+Version: 0.6.0
+Summary: JSON config file parser with extended syntax (e.g.: comments), line/column numbers in error messages, etc...
+Author-email: István Pásztor <pasztorpisti@gmail.com>
+Project-URL: Homepage, https://github.com/pasztorpisti/json-cfg
+Keywords: json,config,file,parser,configuration,comment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE.txt
+Requires-Dist: kwonly-args>=1.0.7
