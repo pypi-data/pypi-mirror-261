@@ -1,0 +1,2 @@
+config
+jscorp_payme
