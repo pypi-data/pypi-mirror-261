@@ -1,0 +1,4 @@
+/.pytest_cache
+/dist
+/src/dwdwfsapi/__pycache__
+/tests/__pycache__
