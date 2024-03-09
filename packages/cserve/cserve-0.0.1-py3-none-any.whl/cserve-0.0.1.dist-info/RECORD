@@ -1,0 +1,13 @@
+cserve/__init__.py,sha256=CTINWcqZqhyklh5XChwGJuW0xQecCoLQCtp2SduMo2g,23
+cserve/_version.py,sha256=pMnmqZnpVmaqR5nqHztNWzbbtb1oy5bPN_v7uhOH8K8,411
+cserve/cli/__init__.py,sha256=yQ8pziRisUBqe-Yg4KjzmN29jkqEYNttikxVpegdlVw,83
+cserve/cli/controller.py,sha256=-3oWpw-lNR_wVexJFHeN9EQ-Hocz_MajlFFm0PA2j28,2638
+cserve/cli/engine.py,sha256=oIdPpBn0riTCv9K_Swyg5tglT-vtXMX8ncM55sNVC40,2186
+cserve/cli/main.py,sha256=ks6RtE8SINtnJrj1k6Wq9oT81pHfwgP9gxIGsa23t6c,1009
+cserve/cli/plan.py,sha256=zp6BFq7B65fLPgkSdG7yOJzgh3PXJHn38bJO7E7Gpv8,5491
+cserve-0.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+cserve-0.0.1.dist-info/METADATA,sha256=Ucgxoy5ZkqusqcG6leh6zmNgAjo0ZK0NgRMY926hzcs,428
+cserve-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cserve-0.0.1.dist-info/entry_points.txt,sha256=w0xbFmrRSaWzmu0w8NX-j6SLYkLZdptAuyZJamw2RZw,52
+cserve-0.0.1.dist-info/top_level.txt,sha256=k-5ue_tIXXY1QUy6sbMnALjG6zsurR2uenJ4tvnojVY,7
+cserve-0.0.1.dist-info/RECORD,,
