@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: xasp
+Version: 0.8.1
+Summary: API for eXplainable Answer Set Programming
+Author: Mario Alviano
+Author-email: mario.alviano@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dumbo-asp (==0.3.4)
