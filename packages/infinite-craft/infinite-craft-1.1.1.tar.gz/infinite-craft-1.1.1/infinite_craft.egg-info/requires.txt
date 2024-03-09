@@ -1,0 +1,11 @@
+aiohttp
+
+[dev]
+pytest
+pytest-asyncio
+fastapi
+uvicorn
+bumpver
+pip-tools
+build
+twine
