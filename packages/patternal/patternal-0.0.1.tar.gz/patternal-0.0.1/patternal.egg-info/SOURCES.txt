@@ -1,0 +1,7 @@
+setup.py
+libname/__init__.py
+libname/patternal.py
+patternal.egg-info/PKG-INFO
+patternal.egg-info/SOURCES.txt
+patternal.egg-info/dependency_links.txt
+patternal.egg-info/top_level.txt

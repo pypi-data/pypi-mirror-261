@@ -1,0 +1,1 @@
+from patternal import Star
