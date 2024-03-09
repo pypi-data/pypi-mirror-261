@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycountries
+Version: 0.0.1
+Home-page: https://github.com/AivGitHub/python-country
+Author: author
+Author-email: Ivan Koldakov <ivan@koldakov.com>
+Project-URL: Homepage, https://github.com/AivGitHub/pycountries
+Project-URL: Issues, https://github.com/AivGitHub/pycountries/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
