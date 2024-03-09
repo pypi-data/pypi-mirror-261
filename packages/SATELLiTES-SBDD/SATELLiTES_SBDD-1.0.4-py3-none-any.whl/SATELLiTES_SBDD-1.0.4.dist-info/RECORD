@@ -1,0 +1,11 @@
+SATELLiTES_SBDD-1.0.4.data/scripts/SATELLiTES.py,sha256=NpuQU-Ik_UjV22VG7kg1xDT6AfyW8I33d7SpQ8vyFjQ,21500
+src/SATELLiTES.py,sha256=nk5NTWytUT6TRhVR0LjCS1aQm51MSGSfLWCEXRHhb4E,21514
+src/__init__.py,sha256=qmORARIFHMnb9yjoDTupsYE4_Dp2NmgOI9zgG27WXgI,109
+src/gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/gui/tabs_2reagents.py,sha256=fpS04G4Q8bNHBc2jJip9ezbA8zia5e5mOmE1eIRcgbo,17708
+src/gui/tabs_3reagents.py,sha256=oyKmvbK43nGjIWTAOcHLLxaaqiFGMb4sbBrIh2Ht64Q,49221
+SATELLiTES_SBDD-1.0.4.dist-info/LICENSE,sha256=5Y8r9mNh8ufXnHpQQHMHRbzhKQMEaJlp-VY0RNAg6dY,1072
+SATELLiTES_SBDD-1.0.4.dist-info/METADATA,sha256=22Kk-_bNK4xLW-x9r8xTnLZMb4FXiUyiTwrCirMgodw,1488
+SATELLiTES_SBDD-1.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+SATELLiTES_SBDD-1.0.4.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+SATELLiTES_SBDD-1.0.4.dist-info/RECORD,,
