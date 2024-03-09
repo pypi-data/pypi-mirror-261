@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+tests/test_generic.py
+tests/test_utils.py
+variatio/variatio.egg-info/PKG-INFO
+variatio/variatio.egg-info/SOURCES.txt
+variatio/variatio.egg-info/dependency_links.txt
+variatio/variatio.egg-info/top_level.txt
