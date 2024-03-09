@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: streamlit-free-text-select
+Version: 0.0.3
+Summary: A Streamlit component that allows you to select from a list of options or enter a custom value.
+Home-page: 
+Author: Sander Hummerich
+Author-email: sander.hummerich@gmx.de
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: devel
+License-File: LICENSE
+
+# streamlit-free-text-select
