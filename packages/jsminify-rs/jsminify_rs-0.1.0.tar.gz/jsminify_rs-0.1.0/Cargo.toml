@@ -1,0 +1,13 @@
+[package]
+name = "minify-js-odoo"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "jsminify_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20.3", features = ["extension-module"] }
+# don't upgrade, 0.6.0 will panic randomly
+minify-js = "0.5.6"
