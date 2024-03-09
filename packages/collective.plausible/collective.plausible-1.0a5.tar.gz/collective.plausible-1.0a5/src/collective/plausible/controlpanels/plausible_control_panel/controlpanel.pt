@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/prefs_main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+<style>
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem;
+        margin-bottom: 1em;
+    }
+    .card-header {
+        padding: .5rem 1rem;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, .03);
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+    }
+    .card-body {
+        flex: 1 1 auto;
+        padding: 1rem 1rem;
+    }
+</style>
+<div metal:fill-slot="prefs_configlet_main">
+
+    <h1 class="documentFirstHeading" tal:content="view/label">View Title</h1>
+
+    <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+      Portal status message
+    </div>
+
+    <div id="content-core">
+        <div class="card">
+                <h2 i18n:domain="collective.plausible" i18n:translate="">Plausible parameters are defined on content properties</h2>
+        </div>
+    <!-- <div class="card">
+        <div class="card-header">
+        </div>
+        <div id="layout-contents">
+            <span tal:replace="structure view/contents" />
+        </div>
+    </div> -->
+    </div>
+
+</div>
+</body>
+</html>
