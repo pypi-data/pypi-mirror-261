@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: yargen
+Version: 0.0.9
+Summary: 一個簡短的專案描述
+Home-page: https://github.com/zhaoxinnZ/Yargen
+Author: zhaoxinnZ
+Author-email: zhaoxinzhang0429@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+English | [繁體中文](README.zh-TW.md)
+
+
+# Yargen Plugin for IDA Pro
+
+## Introduction
+Yargen is an innovative IDA Pro plugin that aims to simplify the process of YARA analysis within the binary analysis environment. By leveraging the capabilities of the CAPA framework, Yargen provides a seamless and efficient experience for detecting and documenting capabilities in executable files. With its easy activation through the `Alt+Y` shortcut, Yargen streamlines the analysis workflow for both novice and experienced analysts.
+
+## Features
+- **Simplified YARA Analysis**: Streamlines the process of applying YARA rules to binaries, making the analysis more accessible.
+- **NetNode Exploration**: Automatically scans and displays CAPA netnodes within IDA Pro, highlighting key analytical findings.
+- **Data Serialization**: Offers custom JSON serialization for enhanced data handling, allowing for a clear representation of analysis results.
+- **Results Exportation**: Facilitates the exportation of analysis results into both JSON and Excel formats, enabling thorough examination and documentation.
+- **User Path Selection**: Provides flexibility in saving files, allowing users to choose between the desktop or a plugin-specific cache directory.
+
+## Installation
+1. Ensure you have IDA Pro version 8.3 and CAPA version 7.0.1 installed on your system.
+2. Clone or download the Yargen plugin repository to your local machine.
+3. Copy the `yargen.py` file to the `plugins` directory of your IDA Pro installation.
+4. Restart IDA Pro to automatically load the plugin.
+
+## Usage
+To initiate the Yargen plugin, open an executable file with IDA Pro and press `Alt+Y`. Follow the intuitive interface to perform YARA analysis, explore netnodes, and export analysis results effortlessly.
+
+## Principles
+The Yargen plugin is dedicated to making YARA analysis within IDA Pro more approachable by integrating with the CAPA framework. It utilizes Python scripting and IDA Pro's extensive API to offer a user-friendly approach to binary analysis, data serialization, and result exportation, enhancing the overall analysis workflow.
+
+## Contributing
+We welcome contributions to improve the Yargen plugin. Feel free to fork the repository, make your changes, and submit pull requests. For discussions and suggestions, please open an issue in the repository.
+
+## License
+Yargen is made available under the [MIT License](LICENSE). This license allows for a wide range of uses, promoting the open use, modification, and distribution of the plugin. For more details, see the LICENSE file.
+
+## Contact
+- Zhao-Xinn: zhaoxinzhang0429@gmail.com
+- Tsai, YA-HSUAN: aooood456@gmail.com
+- Ting0525: zg45154551@gmail.com
