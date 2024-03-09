@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LegiaoUrbana"
+version = "0.1"
+authors = [{ name = "Jaqueline Coelho", email = "jaquecoelhopt@gmail.com" }]
+description = "Show a list of the Legião Urbana albums"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]

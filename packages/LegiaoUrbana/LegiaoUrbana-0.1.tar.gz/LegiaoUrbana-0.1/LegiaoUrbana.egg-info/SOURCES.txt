@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+legiaoalbuns.py
+pyproject.toml
+LegiaoUrbana.egg-info/PKG-INFO
+LegiaoUrbana.egg-info/SOURCES.txt
+LegiaoUrbana.egg-info/dependency_links.txt
+LegiaoUrbana.egg-info/top_level.txt
