@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: RusticFS
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: A Rustic mockup File System running on top of a real file system
+Author: Tosic.Killer <emil.schutt@gmail.com>
+Author-email: Tosic.Killer <emil.schutt@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Rustic File System
+This is a simple file system written in Rust. It is a learning project and is not intended for production use.
