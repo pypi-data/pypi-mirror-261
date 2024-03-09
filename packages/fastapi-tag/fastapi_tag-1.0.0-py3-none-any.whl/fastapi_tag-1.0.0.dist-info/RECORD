@@ -1,0 +1,12 @@
+fastapi_tag/__init__.py,sha256=8lHdr1G6wP9PPPaPfuulHV2Xhf5HvUnGVfAERcjsPxo,282
+fastapi_tag/api.py,sha256=h99fqt3UnbzEE2KjgCyWLx0qPkEzEkC0__2TP7PXTqc,590
+fastapi_tag/application.py,sha256=xjkXOn-sR4h1FoMWGC32F2XS405w7OZN0LVTqNU5MbI,2577
+fastapi_tag/metadata.py,sha256=fWB2F3p_KFK8IHxTKmbKRq4zFW1uku1vCfMx-FfuaVk,1335
+fastapi_tag/model.py,sha256=Eh2Z7863q0WmGSEpc5zFLhNeP6T2FV1UQWsOJOy63PY,1244
+fastapi_tag/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_tag/routers.py,sha256=UUlo2dDF0Hwq9m4O5XCE8oRlHHBWVq195QUFp6zlG3E,4905
+fastapi_tag/type.py,sha256=LK88DRPFZt21vYCRaghWwk-50lRCGtvpVhgCQYxi0Js,164
+fastapi_tag-1.0.0.dist-info/METADATA,sha256=plomZ_GshY02TVtCMoCTCFMXctlQptXKdnfNs6wNuNI,5579
+fastapi_tag-1.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+fastapi_tag-1.0.0.dist-info/licenses/LICENSE,sha256=z5dAaJ6VioUuXWkVblzy9dHGXVIlKWJcWhHjiqI90tE,1106
+fastapi_tag-1.0.0.dist-info/RECORD,,
