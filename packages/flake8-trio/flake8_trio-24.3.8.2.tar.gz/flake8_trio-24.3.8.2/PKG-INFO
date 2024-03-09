@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flake8-trio
+Version: 24.3.8.2
+Summary: Micropackage to redirect users to flake8-async.
+Project-URL: Homepage, https://github.com/python-trio/flake8-async
+Project-URL: Issues, https://github.com/python-trio/flake8-async/issues
+Author: John Litborn
+License-File: LICENSE
+Classifier: Development Status :: 7 - Inactive
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: flake8-async>=24.3.8
+Description-Content-Type: text/markdown
+
+# Flake8-trio
+This project has been renamed flake8-async and now lives at https://github.com/python-trio/flake8-async
+
+This micropackage only serves to redirect users to use that instead.
