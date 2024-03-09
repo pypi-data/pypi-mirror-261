@@ -1,0 +1,11 @@
+matrix_webhook/__main__.py,sha256=39s0daSmKxl5ZIoWJCu-vHG8gxM8YKmBeWm0x2hwNcw,335
+matrix_webhook/app.py,sha256=ScC2oSBV5RGt54sS_Mzu5f167MY_KNIG8tSXHRc7kjY,1678
+matrix_webhook/conf.py,sha256=6-HEkpqeH36ftAq5zowiS1l6d3fz9sWslZ1Q2NtfMcQ,2421
+matrix_webhook/formatters.py,sha256=1m_Qc9Oz-Xg6kEDFSQvK9Z0eNEr4BtNT4xNZjmnUACo,3586
+matrix_webhook/handler.py,sha256=BexBXBpciKLmbrK7rN3iuX65wUJELaQnHhu3Po3o65c,3159
+matrix_webhook/utils.py,sha256=vL-yQaQm19weCoJ8Rtx0x0Z2dvxb5GIvX2zzKQKTiog,3325
+matrix_webhook-3.9.0.dist-info/LICENSE,sha256=Wi7kgsWUlK-XIKHuTLbaaISeDcwWvSP6XAhYJczWsRk,1320
+matrix_webhook-3.9.0.dist-info/METADATA,sha256=nM9CST8IDeWKDkXKg5eLOIxo5_ZaHEwG7YQHds0PaAo,6611
+matrix_webhook-3.9.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+matrix_webhook-3.9.0.dist-info/entry_points.txt,sha256=BqV1y9aH22Z0y12Itmykd_qs8CrQMMsEQioKguq5ewk,63
+matrix_webhook-3.9.0.dist-info/RECORD,,
