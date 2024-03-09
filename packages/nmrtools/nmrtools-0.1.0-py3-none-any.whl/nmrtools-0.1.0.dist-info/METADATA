@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: nmrtools
+Version: 0.1.0
+Summary: A package for NMR data processing
+Home-page: https://github.com/pratiman-de/Bruker-to-Numpy
+Author: pratiman-de
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+Requires-Dist: numpy
+
+## NMR tools ##
+The nmrtools pacakage provides a set of tools for processing NMR time domain data. Currently, you can only convert NMR time domain binary files to numpy array and vice versa for Bruker NMR data. 
+
+By default the package works on 1D and 2D NMR data. To customize for your own data you can use this [Jupyter notebook](https://github.com/pratiman-de/Bruker-to-Numpy/blob/main/brucker_numpy.ipynb).
+Future releases will include support for ML models for NMR data processing.
+
+This project is part of [Pratiman](https://github.com/pratiman-de)'s master's thesis at the National Institute of Science Education and Research (NISER), Bhubaneswar, India.
+
+## Example usage ##
+Currently, there are 2 cli commands available. ser2np and np2ser. ser2np converts the binary file to numpy array and np2ser converts the numpy array to binary file. Use --help to see the available options.
+
+```bash
+ser2np --input path/to/input/folder --output path/to/output/folder --npi 128 --npd 2048 --b 0
+np2ser -input path/to/npy/file --output path/to/output/folder --b 0
+``` 
+
+

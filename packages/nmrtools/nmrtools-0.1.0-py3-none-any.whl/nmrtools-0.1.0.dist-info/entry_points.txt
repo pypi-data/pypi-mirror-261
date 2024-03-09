@@ -1,0 +1,5 @@
+[console_scripts]
+nmrtools = nmrtools:nmr
+np2ser = nmrtools:np2ser
+ser2np = nmrtools:ser2np
+
