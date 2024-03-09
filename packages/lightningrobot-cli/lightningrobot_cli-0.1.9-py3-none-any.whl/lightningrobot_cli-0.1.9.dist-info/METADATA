@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lightningrobot-cli
+Version: 0.1.9
+Summary: 闪电机器人官方脚手架。
+Home-page: https://lightningrobot.github.io
+License: MIT
+Keywords: cli,lightningrobot,bot,robot
+Author: ZhiHan
+Author-email: zhihan2727@hotmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=0.0.1,<0.0.2)
+Requires-Dist: lightningrobot (>=0.0.1,<0.0.2)
+Project-URL: Documentation, https://lightningrobot.github.io
+Project-URL: Repository, https://github.com/LightningRobot/cli/
+Description-Content-Type: text/markdown
+
+# 闪电机器人-脚手架
+点[这里](https://lightningrobot.github.io/guide/quick-start.html)查看使用方法。

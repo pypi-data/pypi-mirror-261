@@ -1,0 +1,3 @@
+[console_scripts]
+lrcli=lightningrobot_cli:__init__
+
