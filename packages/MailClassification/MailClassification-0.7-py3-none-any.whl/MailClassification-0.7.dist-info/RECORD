@@ -1,0 +1,11 @@
+MailClassification/LoadClassModel.py,sha256=5R6ARF0hFA8Sw8HpKH6cOoGT6IziI1GB5U4EZwY1dM8,3321
+MailClassification/LoadEmbeddsModel.py,sha256=S7tKZAFxJdbuFhgO-KVEZ6kvvxZn-1zUr64aHsObSNI,3251
+MailClassification/LoadScalerModel.py,sha256=lUfw9a51PRT8RwRvjxYguROK8-K8apwxCa5uYtCeJio,1796
+MailClassification/MailClassification.py,sha256=X2IeLdWicr213wwNDL0q2XYDccq9XO-OTn5G05WFQiM,1424
+MailClassification/TextCleaner.py,sha256=FmprFRscrApgj0fLoBj0XPkuwgp3IRYuQuZz6a8WNsM,2752
+MailClassification/WordReplacements.py,sha256=WmnUd9Nozd5HMLvRnT3evhngehCElpe8AM2k40eIN6Y,3818
+MailClassification/__init__.py,sha256=5Q-5a6YKuEbu7gno9nvnouXJwvs5eeGSUfHHDlwaVCg,52
+MailClassification-0.7.dist-info/METADATA,sha256=H2W0gCjngSYz7F9c03SvrOUiUGWmZtbfZhuJ6rPNZR8,517
+MailClassification-0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+MailClassification-0.7.dist-info/top_level.txt,sha256=eNKZYUTGmk2nLI8akURxgXpvW-SeWi3sczhuejC-ppw,19
+MailClassification-0.7.dist-info/RECORD,,
