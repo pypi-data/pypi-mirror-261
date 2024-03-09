@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: michaelchen
+Version: 0.0.0
+Summary: Package description
+Author-email: Michael I Chen <michael.chen.0@gmail.com>
+Project-URL: source, https://github.com/michen00/michaelchen
+Project-URL: download, https://pypi.org/project/michaelchen/#files
+Requires-Dist: is-instance
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: coverage-badge ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
