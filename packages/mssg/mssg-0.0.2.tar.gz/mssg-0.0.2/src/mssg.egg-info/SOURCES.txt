@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/mssg/__init__.py
+src/mssg/mssg.py
+src/mssg.egg-info/PKG-INFO
+src/mssg.egg-info/SOURCES.txt
+src/mssg.egg-info/dependency_links.txt
+src/mssg.egg-info/top_level.txt
