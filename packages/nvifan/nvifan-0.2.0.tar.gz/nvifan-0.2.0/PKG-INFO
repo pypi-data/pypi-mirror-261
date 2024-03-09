@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nvifan
+Version: 0.2.0
+Summary: NVIDIA GPU fan control for Linux
+Home-page: https://github.com/a645162/nvidia-fan-control
+Author: Haomin Kong
+Author-email: a645162@gmail.com
+License: GPLv3
+License-File: LICENSE
+Requires-Dist: nvitop
+Requires-Dist: chardet
+Requires-Dist: PyYaml
