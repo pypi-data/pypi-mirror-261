@@ -1,0 +1,9 @@
+setup.py
+chartscrapper/__init__.py
+chartscrapper/main.py
+chartscrapper.egg-info/PKG-INFO
+chartscrapper.egg-info/SOURCES.txt
+chartscrapper.egg-info/dependency_links.txt
+chartscrapper.egg-info/entry_points.txt
+chartscrapper.egg-info/requires.txt
+chartscrapper.egg-info/top_level.txt
