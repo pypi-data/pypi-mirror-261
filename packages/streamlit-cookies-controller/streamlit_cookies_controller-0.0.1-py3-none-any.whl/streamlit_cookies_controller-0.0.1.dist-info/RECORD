@@ -1,0 +1,14 @@
+streamlit_cookies_controller/__init__.py,sha256=vr8D6Bx9BOPC3hEBOyG5M7AQ9HgkG-aPkXbBhhU0fvE,153
+streamlit_cookies_controller/cookie_controller.py,sha256=dF1sjow25m-Hlu9-UbR1bUyggIPo-PRc4ZGGHzsNr8I,5898
+streamlit_cookies_controller/utils.py,sha256=VGo39Q1PEXvKVN6rgzQYQjRXK65Cid49i5GqDR2DTTY,321
+streamlit_cookies_controller/frontend/build/asset-manifest.json,sha256=HIWJlG8p0MQYYUdRQrBuRq06T4cSSm9yiBmkE7SlYbY,221
+streamlit_cookies_controller/frontend/build/bootstrap.min.css,sha256=bEEkoREabBKOoD_e9jlju7mviXpjv5KRLYiunN9LUq0,225947
+streamlit_cookies_controller/frontend/build/index.html,sha256=iMmGYEmWbs7o3dHGIhzcAL_OziCwpGlPFPVFtNViVIM,492
+streamlit_cookies_controller/frontend/build/static/js/main.2f50eda7.js,sha256=sx5ZqzJkS6FI-9HotJ68tnFukswSfkluMCU9Ecvz9Mw,340791
+streamlit_cookies_controller/frontend/build/static/js/main.2f50eda7.js.LICENSE.txt,sha256=Skhl4cP4p3VcbyGAMuQKR-qQXnUT-6EgQlREaNfh3J8,1638
+streamlit_cookies_controller/frontend/build/static/js/main.2f50eda7.js.map,sha256=mWYHrWlHceJDC5-QsTE8jMyz24vHQWkvToCY_lLE_EU,1320388
+streamlit_cookies_controller-0.0.1.dist-info/LICENSE,sha256=DDA3xHZFTv4mdMstzXrDIqqSXw1V0iKKN7vVzhRW1qw,1089
+streamlit_cookies_controller-0.0.1.dist-info/METADATA,sha256=E5vu8KaqekMVNV_3hy39fv7nrJjh7lbXnULPgXRqP9o,3111
+streamlit_cookies_controller-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+streamlit_cookies_controller-0.0.1.dist-info/top_level.txt,sha256=ViTOGF5bRwwAfBke8Xz-lrpsWP70UlFZDCAfiPOS5jc,29
+streamlit_cookies_controller-0.0.1.dist-info/RECORD,,
