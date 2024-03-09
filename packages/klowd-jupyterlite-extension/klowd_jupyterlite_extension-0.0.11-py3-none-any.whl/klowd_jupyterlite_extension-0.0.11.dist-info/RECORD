@@ -1,0 +1,15 @@
+klowd_jupyterlite_extension/__init__.py,sha256=graJxE-hfW6LkR2T-6QrX2lZwkv9MOiGT-zIKLnGaTI,612
+klowd_jupyterlite_extension/_version.py,sha256=qDHKKtQbqZgUaeTI_SRS2Ofjha_XIPYSZP0V8lw2wOI,172
+klowd_jupyterlite_extension-0.0.11.data/data/share/jupyter/labextensions/klowd_jupyterlite_extension/package.json,sha256=W_cMfP6MKwRJJr0TwQji20mI_V3UByAr0A_hjs7FC_M,5742
+klowd_jupyterlite_extension-0.0.11.data/data/share/jupyter/labextensions/klowd_jupyterlite_extension/schemas/klowd_jupyterlite_extension/package.json.orig,sha256=W5OfFz5v4MILkouWY8NTG6j-gmo_QJIigUlFfrcCaHI,6476
+klowd_jupyterlite_extension-0.0.11.data/data/share/jupyter/labextensions/klowd_jupyterlite_extension/schemas/klowd_jupyterlite_extension/plugin.json,sha256=hZ0Tlk8I9MCuZZLrbp38l_-1SI78gji8VKarMBjUy6w,419
+klowd_jupyterlite_extension-0.0.11.data/data/share/jupyter/labextensions/klowd_jupyterlite_extension/static/509.bcc53c7aacbd5e3ae62d.js,sha256=vMU8eqy9XjrmLfAxcxhnknFYBa7IxbTK4rlpCLRX0VY,1661
+klowd_jupyterlite_extension-0.0.11.data/data/share/jupyter/labextensions/klowd_jupyterlite_extension/static/728.7aa47d1bcfb3e5038b77.js,sha256=eqR9G8-z5QOLd1YuRom730_OctuAEYxFqNH3pCZ_8Wg,4032
+klowd_jupyterlite_extension-0.0.11.data/data/share/jupyter/labextensions/klowd_jupyterlite_extension/static/remoteEntry.5f651dc2de590977da2a.js,sha256=X2Udwt5ZCXfaKtRRWwa1hTMEudBEScVJmeoMS1MvxKU,6805
+klowd_jupyterlite_extension-0.0.11.data/data/share/jupyter/labextensions/klowd_jupyterlite_extension/static/style.js,sha256=lD75w27Jr5qWJXBecx31LDO0vuoJliEfNcPXLKbJ6pY,170
+klowd_jupyterlite_extension-0.0.11.data/data/share/jupyter/labextensions/klowd_jupyterlite_extension/static/third-party-licenses.json,sha256=i4z96RB0T1_RGdmoFCyvPxH0skhEL5qSKT9D1EdclF8,2453
+klowd_jupyterlite_extension-0.0.11.data/data/share/jupyter/labextensions/klowd_jupyterlite_extension/install.json,sha256=v5MK9Tg2qv2b7kaW46EFPaVb8d2LTTeBNsnAtVBhTvI,215
+klowd_jupyterlite_extension-0.0.11.dist-info/METADATA,sha256=vRRbPqohJ0gyLvBu2Zb37Jfxi-OivSfj_5nk_6vWUak,2694
+klowd_jupyterlite_extension-0.0.11.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+klowd_jupyterlite_extension-0.0.11.dist-info/licenses/LICENSE,sha256=c_11JIEPQgvsl1Gic9zkOa473bAjx67NEVjwf6NC2Xs,1513
+klowd_jupyterlite_extension-0.0.11.dist-info/RECORD,,
