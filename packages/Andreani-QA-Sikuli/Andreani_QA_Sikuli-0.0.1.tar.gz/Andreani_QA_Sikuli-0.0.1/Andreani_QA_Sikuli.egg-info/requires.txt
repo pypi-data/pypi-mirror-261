@@ -1,0 +1,5 @@
+pyperclip3
+allure
+lackey
+easyocr
+pynput
