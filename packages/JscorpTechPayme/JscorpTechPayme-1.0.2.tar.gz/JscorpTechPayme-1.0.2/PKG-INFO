@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: JscorpTechPayme
+Version: 1.0.2
+Summary: JscorpTech Payme
+Home-page: https://github.com/JscorpTech/payme/
+Author: A'zamov Samandar
+Author-email: JscorpTech@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: django
+Requires-Dist: djangorestframework
