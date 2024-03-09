@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "remote-hub"
+version = "0.1.0"
+description = ""
+authors = ["Jean Carraro <jgcarraro@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+paramiko = "^3.4.0"
+pyyaml = "^6.0.1"
+scp = "^0.14.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+transfer = "transfer_file.transfer:main"
+ssh_to_server = "transfer_file.ssh_to_server:main"
