@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: analog-clock
+Version: 1.0.0
+Summary: Generate analog clock images
+Home-page: https://github.com/Core447/analog-clock
+Author: Core447
+Author-email: core447@proton.me
+Keywords: python,clock,analog,analog-clock,pillow
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Unix
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+
+A helper that lets you generate analog clock images.
