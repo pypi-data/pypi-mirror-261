@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+AreaCalc/Area.py
+AreaCalc/TestArea.py
+AreaCalc/__init__.py
+areacalc.egg-info/PKG-INFO
+areacalc.egg-info/SOURCES.txt
+areacalc.egg-info/dependency_links.txt
+areacalc.egg-info/top_level.txt
