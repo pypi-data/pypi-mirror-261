@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/lit_sandbox/__about__.py
+src/lit_sandbox/__init__.py
+src/lit_sandbox/my_module.py
+src/thunderjit.egg-info/PKG-INFO
+src/thunderjit.egg-info/SOURCES.txt
+src/thunderjit.egg-info/dependency_links.txt
+src/thunderjit.egg-info/not-zip-safe
+src/thunderjit.egg-info/requires.txt
+src/thunderjit.egg-info/top_level.txt
