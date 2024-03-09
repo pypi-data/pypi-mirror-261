@@ -1,0 +1,11 @@
+shipyard_sqlserver/__init__.py,sha256=8AMvFmHeeJ3khE3AQ54wUClngMmkxS3sGM6Nk9a2UkY,39
+shipyard_sqlserver/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shipyard_sqlserver/cli/authtest.py,sha256=VZgglBV289-rPeMuwc6IOeDemZI23vFs2IvJQuo7aDM,985
+shipyard_sqlserver/cli/execute_sql.py,sha256=K2rrCp64EqANo3ybjDG12_ywNKnLSA6IHO6u7ZLwUeA,2104
+shipyard_sqlserver/cli/store_query_results.py,sha256=90J-TeVpPsS0PD8M_kyQcABNM5k3uOZZKUntGS_dS6M,3105
+shipyard_sqlserver/cli/upload_file.py,sha256=rrviWkauiR6VqQKP4rp02uzE3qM33p5ot4g3RuEaMN0,4176
+shipyard_sqlserver/errors/exceptions.py,sha256=PLge4hQJul4tYpTJzpyh7eRWq21RReG2gN7alC9FUho,1192
+shipyard_sqlserver/sqlserver.py,sha256=iH2zxWeVX8jhTP9_PXfrWneDisOgjU5-iRjMywp9ovU,4530
+shipyard_sqlserver-0.2.0a1.dist-info/METADATA,sha256=EBZpdBLBn1Focg6bWw2iWkkAMgUm4LDMHyuYrdtYp0s,742
+shipyard_sqlserver-0.2.0a1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+shipyard_sqlserver-0.2.0a1.dist-info/RECORD,,
