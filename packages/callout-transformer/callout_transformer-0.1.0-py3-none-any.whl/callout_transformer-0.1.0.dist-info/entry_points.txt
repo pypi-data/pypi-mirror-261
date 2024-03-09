@@ -1,0 +1,2 @@
+[console_scripts]
+callout_transformer = callout_transformer.cli:main

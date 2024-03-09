@@ -1,0 +1,9 @@
+callout_transformer/__init__.py,sha256=acpfHgbvob35JK7RDFH8u6vzyCpZKob7K8r4E2BKZWM,52
+callout_transformer/__main__.py,sha256=84nrdNFCFk_GsIG7gwA5yWzC8RSJ6_oBuHcsNSMUYKk,64
+callout_transformer/cli.py,sha256=266LgEcKY4EjqGhXAij-l4OA05G2v_niYnzOJE7U-ZQ,53
+callout_transformer-0.1.0.dist-info/LICENSE,sha256=RSNFeuJtM4K-0N0d_ukRI878rDqjrsQWmkVIeUWrF50,1064
+callout_transformer-0.1.0.dist-info/METADATA,sha256=hck3ipTiYYbA1BmImB2ZRDvVGxSpIfB4KBEaJQY07_k,626
+callout_transformer-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+callout_transformer-0.1.0.dist-info/entry_points.txt,sha256=d6WKQ9uWAuKcoTwFFbx9BccsH3MAZrLoBCdZRK3OHpM,69
+callout_transformer-0.1.0.dist-info/top_level.txt,sha256=ZE3Z2cU0TIuIXgVWnSmm49UTTcE-nhDCSC3b5vpl688,20
+callout_transformer-0.1.0.dist-info/RECORD,,
