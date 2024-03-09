@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+ip_sibylsys/__init__.py
+ip_sibylsys/adv_text.py
+ip_sibylsys/ass_part.py
+ip_sibylsys/events.py
+ip_sibylsys/frame.py
+ip_sibylsys/match.py
+ip_sibylsys/read_ini.py
+ip_sibylsys/styles.py
+ip_sibylsys/time_fix.py
+ip_sibylsys.egg-info/PKG-INFO
+ip_sibylsys.egg-info/SOURCES.txt
+ip_sibylsys.egg-info/dependency_links.txt
+ip_sibylsys.egg-info/top_level.txt
