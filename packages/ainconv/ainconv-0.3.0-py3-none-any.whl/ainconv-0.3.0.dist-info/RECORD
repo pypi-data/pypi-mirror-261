@@ -1,0 +1,10 @@
+ainconv/__init__.py,sha256=Zq99BZdrpCxSlqkPAPcgD9yBvB6M7ds3BWYyOKenjgo,318
+ainconv/conversion/cyrillic.py,sha256=DMe0o7cqMae_WCUwbK15iK20nIATzvYPgN9vZfi-8a8,2588
+ainconv/conversion/katakana.py,sha256=f_OqBA9CfVGicTod1KCnz7M7EikHl-tsErSYgzfjJko,7093
+ainconv/conversion/latin.py,sha256=OxHif5xVJF2pllkVH1QkLwRHpFQk40i7yAHRR6bprZY,522
+ainconv/detection.py,sha256=LzO9AMR-Ar4O6RWSqt1P2DYBQvGg-3OyFK8B67ygKGo,1696
+ainconv/syllable.py,sha256=d4bpZsPyrSSYZFidrOSu5ZMXFyA34pEdhqvhA2BAylw,2192
+ainconv-0.3.0.dist-info/LICENSE,sha256=nm4VS494YSiCP1elY6zMaqn_j1DiSOmEoRxTxVjlHRc,1063
+ainconv-0.3.0.dist-info/METADATA,sha256=-FkTFwblqdRzu54F09-q-I0XDwGYMgMJQ2iI4h83yt4,6151
+ainconv-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ainconv-0.3.0.dist-info/RECORD,,
