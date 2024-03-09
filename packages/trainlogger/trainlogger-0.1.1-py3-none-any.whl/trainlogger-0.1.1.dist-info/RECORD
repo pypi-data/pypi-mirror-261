@@ -1,0 +1,8 @@
+trainlogger/__init__.py,sha256=S5sTStU2lMxthW4xLEZSrs0Kx8IVuvM2jpUE8dxnDJU,178
+trainlogger/basics.py,sha256=Dza-ejqV-KEf7RNOocC-087PGYNtpbxhOx0nZIOm1X0,2964
+trainlogger/extract_info.py,sha256=Ss0ty7MJO33079mU6ulxSdw6GmUQ9VCNG1MHcax_dTU,3082
+trainlogger/trainer.py,sha256=EvpIKfJi74m-MEqqBIlVPz3Ijh8hLa7gIp_ShhkVDzc,11522
+trainlogger-0.1.1.dist-info/METADATA,sha256=rmMV6VB47kkc5yBHZ3_o5qvUW-TGSve6oFKTf3jyE9Q,478
+trainlogger-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+trainlogger-0.1.1.dist-info/top_level.txt,sha256=_WnANgJ3MS7dz_r01cnLqEfuonhN9vSjtzD3ZdzG9ZU,12
+trainlogger-0.1.1.dist-info/RECORD,,
