@@ -1,0 +1,55 @@
+[project]
+name = "michaelchen"
+version = "0.0.0"
+authors = [
+    { name="Michael I Chen", email="michael.chen.0@gmail.com" },
+]
+description = "Package description"
+dependencies = [
+    "is_instance",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "coverage",
+    "coverage-badge",
+    "ipython",
+    "isort",
+    "flake8",
+    "mypy",
+    "pylint",
+    "pytest",
+    "twine",
+]
+
+# [project.scripts]
+# script-name = "package.bin.script_name:main"
+
+[project.urls]
+source = "https://github.com/michen00/michaelchen"
+download = "https://pypi.org/project/michaelchen/#files"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+exclude = "notebook/ | *.ipynb"
+packages = ["michaelchen"]

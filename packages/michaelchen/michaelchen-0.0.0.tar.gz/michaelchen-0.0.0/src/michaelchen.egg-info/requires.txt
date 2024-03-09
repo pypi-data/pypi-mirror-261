@@ -1,0 +1,13 @@
+is_instance
+
+[dev]
+black
+coverage
+coverage-badge
+ipython
+isort
+flake8
+mypy
+pylint
+pytest
+twine
