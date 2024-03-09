@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: victron_ble2mqtt
+Version: 0.0.1.dev0
+Summary: Emit MQTT events from victron-ble
+Author-email: Jens Diemer <git@jensdiemer.de>
+License: GPL-3.0-or-later
+Project-URL: Documentation, https://github.com/jedie/victron-ble2mqtt
+Project-URL: Source, https://github.com/jedie/victron-ble2mqtt
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: victron-ble
+Requires-Dist: ha-services
+Requires-Dist: cli-base-utilities>=0.6.0
+Requires-Dist: bx_py_utils
+Requires-Dist: click
+Requires-Dist: rich-click
+Requires-Dist: rich
+Provides-Extra: dev
+Requires-Dist: manageprojects; extra == "dev"
+Requires-Dist: urllib3; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: autopep8; extra == "dev"
+Requires-Dist: pyupgrade; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: flake8-bugbear; extra == "dev"
+Requires-Dist: pyflakes; extra == "dev"
+Requires-Dist: codespell; extra == "dev"
+Requires-Dist: EditorConfig; extra == "dev"
+Requires-Dist: safety; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: typeguard; extra == "dev"
+Requires-Dist: darker[color,flynt,isort]; extra == "dev"
+Requires-Dist: tomli; extra == "dev"
+
+# victron_ble2mqtt
+
+[![tests](https://github.com/jedie/victron-ble2mqtt/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jedie/victron-ble2mqtt/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/github/jedie/victron_ble2mqtt/branch/main/graph/badge.svg)](https://app.codecov.io/github/jedie/victron_ble2mqtt)
+[![victron_ble2mqtt @ PyPi](https://img.shields.io/pypi/v/victron_ble2mqtt?label=victron_ble2mqtt%20%40%20PyPi)](https://pypi.org/project/victron_ble2mqtt/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/victron_ble2mqtt)](https://github.com/jedie/victron-ble2mqtt/blob/main/pyproject.toml)
+[![License GPL-3.0-or-later](https://img.shields.io/pypi/l/victron_ble2mqtt)](https://github.com/jedie/victron-ble2mqtt/blob/main/LICENSE)
+
+Emit MQTT events from Victron Energy Solar Charger via [victron-ble](https://github.com/keshavdv/victron-ble)
+
+**This is in early, not useable state!**
+
+Tested with:
+
+ * Solar Charger: [SmartSolar MPPT 100/20](https://www.victronenergy.de/solar-charge-controllers/smartsolar-mppt-75-10-75-15-100-15-100-20)
+ * [Raspberry Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) with [Raspberry Pi OS Lite](https://www.raspberrypi.com/software/operating-systems/)
+ * [Mosquitto MQTT Broker](https://mosquitto.org/)
+ * [Home Assistant MQTT integration](https://www.home-assistant.io/integrations/mqtt/)
+
