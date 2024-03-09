@@ -1,0 +1,8 @@
+setup.py
+app/nmrtools.py
+app/nmrtools.egg-info/PKG-INFO
+app/nmrtools.egg-info/SOURCES.txt
+app/nmrtools.egg-info/dependency_links.txt
+app/nmrtools.egg-info/entry_points.txt
+app/nmrtools.egg-info/requires.txt
+app/nmrtools.egg-info/top_level.txt
