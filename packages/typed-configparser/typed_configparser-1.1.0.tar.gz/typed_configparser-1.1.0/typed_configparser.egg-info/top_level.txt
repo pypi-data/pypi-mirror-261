@@ -1,0 +1,6 @@
+assets
+dist
+examples
+htmlcov
+tests
+typed_configparser
