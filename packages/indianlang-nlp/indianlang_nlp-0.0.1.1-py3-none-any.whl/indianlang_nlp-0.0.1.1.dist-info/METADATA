@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: indianlang-nlp
+Version: 0.0.1.1
+Home-page: https://github.com/panditamey/indianlang-nlp
+Author: Amey Pandit
+Description-Content-Type: text/markdown
+Requires-Dist: keras
+Requires-Dist: tensorflow
+Requires-Dist: gdown
+
+
+**Package Name:**
+
+Indian Language NLP Toolkit
+
+**Description:**
+
+The Indian Language NLP Toolkit is a Python package designed to facilitate natural language processing (NLP) tasks for Indian languages. It provides pre-trained models and tools for text processing, tokenization, and language generation in various Indian languages, including Hindi, Marathi, Sanskrit, and more. Whether you're working on sentiment analysis, machine translation, or text generation tasks, this toolkit simplifies the process of building and deploying NLP models for Indian languages.
+
+**Key Features:**
+
+- Pre-trained models for Indian language NLP tasks.
+- Tokenization and text preprocessing utilities.
+- Seamless integration with popular deep learning frameworks like Keras.
+- Support for multiple Indian languages, with plans to expand language coverage.
+- Easy-to-use APIs for generating text in Indian languages.
+
+**Usage:**
+
+```python
+from indianl_nlp import generate_text
+
+# Generate text in Hindi
+seed_text = "मैं जा रहा हूँ"
+language = 'hindi'
+generated_text = generate_text(seed_text, language)
+print(generated_text)
+```
+
+**Installation:**
+
+```
+pip install indianl-nlp
+```
+**License:**
+
+This package is distributed under the MIT License.
+
+**Contributing:**
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please submit a GitHub issue or pull request.
+
