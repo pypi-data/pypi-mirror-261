@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+nisqa/NISQA_lib.py
+nisqa/NISQA_model.py
+nisqa/__init__.py
+nisqa.egg-info/PKG-INFO
+nisqa.egg-info/SOURCES.txt
+nisqa.egg-info/dependency_links.txt
+nisqa.egg-info/requires.txt
+nisqa.egg-info/top_level.txt
