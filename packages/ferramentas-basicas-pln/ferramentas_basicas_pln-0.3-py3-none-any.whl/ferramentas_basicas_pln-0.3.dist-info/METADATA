@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ferramentas_basicas_pln
+Version: 0.3
+Summary: Kit de ferramentas para processos básicos de Processamento de Linguagem Natural.
+Author: Igor Caetano de Souza
+Project-URL: GitHub Repository, https://github.com/IgorCaetano/pre_processing_text_basic_tools
+Description-Content-Type: text/markdown
+Requires-Dist: regex
+Requires-Dist: unidecode
+
