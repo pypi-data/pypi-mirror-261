@@ -1,0 +1,44 @@
+# Vhack Videos YT
+
+Una biblioteca de Python para ver los videos y soluciones de maquinas de htb al igual que videos de python.
+
+## videos disponibles:
+
+- python en 2 minutos
+- Maquina sequel
+- Maquina cocodrile
+
+## Instalación
+
+Instala el paquete usando `pip3`:
+
+```python3
+pip3 install vhack
+```
+
+## Uso básico
+
+### Listar todos los cursos
+
+```python
+from vhack import list_videos
+
+for video in list_videos():
+    print(video)
+```
+
+### Obtener un curso por nombre
+
+```python
+from vhack import video_by_name
+
+video = video_by_name("python en 2 minutos")
+print(video)
+```
+
+### Calcular duración total de los cursos
+
+```python3
+from vhack import total_duration
+print(f"Duracion total: {total_duration()} minutos")
+```
