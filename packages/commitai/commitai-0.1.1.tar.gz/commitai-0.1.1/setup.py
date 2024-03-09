@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+from setuptools import find_packages, setup
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setup(
+    name="commitai",
+    version="0.1.1",
+    author="Luis Guilherme",
+    author_email="lgpelin92@gmail.com",
+    packages=find_packages(),
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    install_requires=[
+        "langchain",
+        "click",
+        "langchain-community",
+        "langchain-anthropic",
+        "langchain-openai",
+    ],
+    entry_points={
+        "console_scripts": [
+            "commitai = commitai.cli:main",
+        ],
+    },
+)
