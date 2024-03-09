@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+src/kayer_pretty_logger.egg-info/PKG-INFO
+src/kayer_pretty_logger.egg-info/SOURCES.txt
+src/kayer_pretty_logger.egg-info/dependency_links.txt
+src/kayer_pretty_logger.egg-info/top_level.txt
