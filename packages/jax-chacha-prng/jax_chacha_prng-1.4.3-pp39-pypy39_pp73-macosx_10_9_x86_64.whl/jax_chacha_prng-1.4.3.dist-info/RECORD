@@ -1,0 +1,12 @@
+chacha/defs.py,sha256=LrtykF3OXE8avBCZ5URn6hNNAHkQe9OCZirk_S3pMD8,2021
+chacha/version.py,sha256=-1slmfHxfMRBJ9nROlDJ4i8WjYSN0StPmTeIH3XX_Zg,452
+chacha/jax_ops.py,sha256=uAR_nZBgheLAKi-wY5CWFi7hkseEf3_ug7v6hOcOG2E,6752
+chacha/native.pypy39-pp73-darwin.so,sha256=jy8diukHrstRH6A9_gSPujSrlCiXtxMgJ2WzWzjN4dw,114752
+chacha/__init__.py,sha256=6mkogejJvkpWT3vnJwXRAaZ2lbxwKyi4ZPvJCJ9NJaY,89
+chacha/random.py,sha256=_9GrODy81RSoNWscJlH5ntpPnI1EmwqOfEzCUz7GGNw,9005
+chacha/cipher.py,sha256=JJ9uw2NtvScxUW9wK0JlaAJuVRfotr8TorpiTn-X7eM,10512
+chacha/native.pyi,sha256=47VrJxLKRedpE4Q3nD9Pzp02-a3WsjI7mTFGrFcHVCM,453
+jax_chacha_prng-1.4.3.dist-info/RECORD,,
+jax_chacha_prng-1.4.3.dist-info/WHEEL,sha256=Ruy5FZVn4OmnWBD7j8hh_VUNKrEhiI_dnYjRixOgB8Y,116
+jax_chacha_prng-1.4.3.dist-info/top_level.txt,sha256=-B3x6kiOJQMIbjGfTC4FjfK7fmmQZCN7UoCQetcztwA,7
+jax_chacha_prng-1.4.3.dist-info/METADATA,sha256=Yz9ukQ0mehveo8bYP4IYRLipHhdxXzhFW194Z288ZAA,7836
