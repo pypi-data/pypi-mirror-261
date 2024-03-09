@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "influxbc"
+version = "0.1.2"
+description = "A universal Python client for InfluxDB"
+authors = [  # In alphabetical order of last names
+    "Paul Kernstock <paul.kernstock@posteo.de>",
+    "Philip Tillmann <philip.tillmann@haw-hamburg.de>",
+    "Jan Trosdorff <jan.trosdorff@haw-hamburg.de>"
+]
+maintainers = [  # In alphabetical order of last names
+    "Paul Kernstock <paul.kernstock@posteo.de>",
+    "Jan Trosdorff <jan.trosdorff@haw-hamburg.de>"
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://gitlab.com/waermewerk/influxbc"
+
+[tool.poetry.urls]
+Repository = "https://gitlab.com/waermewerk/influxbc"
+Issues = "https://gitlab.com/waermewerk/influxbc/issues"
+Changelog = "https://gitlab.com/waermewerk/influxbc/blob/main/CHANGELOG.md"
+
+[tool.poetry.dependencies]
+influxdb = "^5"
+influxdb-client = {extras = ["extra"], version = "^1"}
+python = ">=3.8,<3.13"
+pandas = "^2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "==7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 81

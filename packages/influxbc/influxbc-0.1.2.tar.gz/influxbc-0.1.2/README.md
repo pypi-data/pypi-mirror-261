@@ -1,0 +1,252 @@
+# InfluxBC
+
+[InfluxBC as in Influx Buzz Compensator]
+
+A universal Python client for InfluxDB.
+
+This project aims to provide a higher level API and compatibility layer to InfluxData's official Python [V1](https://github.com/influxdata/influxdb-python), [V2](https://github.com/influxdata/influxdb-client-python) (and eventually [V3](https://github.com/InfluxCommunity/influxdb3-python)) client libraries.
+
+The package provides two (eventually three, see above) client classes (`InfluxDBV1Client` and `InfluxDBV2Client`) with a common API to the respective InfluxDB version. With these clients one should be easily writing Python code to interact with one InfluxDB V1 instance over InfluxQL and than update and switch to V2 without needing to implement a whole different client API. See [Rationale](#rationale) below for more details.
+
+## Contents
+
+[[_TOC_]]
+
+## Features
+
+* **Schema management**
+    * List databases/buckets, measurements, fields, tag keys and values
+    * Delete data
+* **Data access**
+    * Read data as `pandas.DataFrame`s
+    * Retrieve first or last points for a specific field
+    * Poll for incoming data on a specific field
+* **Data ingestion**
+    * Write `pandas.DataFrame`s
+
+## Prerequisites
+
+- Python 3.8 or later
+- A running InfluxDB V1 or V2 instance
+
+## Installation
+
+Install the `influxbc` library from the [PyPI](https://pypi.org/project/influxbc) in your virtual environment:
+
+```bash
+python3 -m pip install influxbc
+```
+
+## Usage
+
+### Import and Initialize the Client
+
+```python
+from influxbc import InfluxDBV1Client, InfluxDBV2Client
+
+# InfluxDB V1 uses basic authorization
+USER = "your_influxdb_user"
+PASSWORD = "your_influxdb_password"
+DATABASE = "your_database"
+v1_client = InfluxDBV1Client(
+  host="localhost",
+  port=8086,
+  username=USER,
+  password=PASSWORD,
+  database=DATABASE,
+)
+
+# InfluxDB V2 uses token authorization
+TOKEN = "your_influxdb_token"
+BUCKET = "your_bucket"
+v2_client = InfluxDBV2Client(
+  url="http://localhost:8086",
+  token=TOKEN,
+  bucket_name=BUCKET
+)
+```
+After the initialization one can use the API using the same methods for v1 and v2 client (we will name them `client` for simplicity).
+
+### Manage Schema
+
+**List databases/buckets**
+
+```python
+client.get_databases()
+# ['your_database']
+```
+
+**List measurements**
+
+```python
+client.get_measurements()
+# ['cpu', 'mem', 'disk']
+```
+
+**List fields keys**
+
+```python
+client.get_fields(measurement="cpu")
+# ['usage_guest', 'usage_nice', 'usage_user', 'usage_system', ]
+```
+
+Omitting `measurement` will give all field keys in the database/bucket.
+
+**List tag keys**
+
+```python
+client.get_tag_keys(measurement="cpu")
+# ['location', 'host']
+```
+
+Omitting `measurement` will give all tag keys in the database/bucket.
+
+**List tag values**
+
+```python
+client.get_tag_values(measurement="cpu", tag_key="host")
+# ['node1.us.example.com', 'node2.us.example.com']
+```
+
+Omitting `measurement` will give all tag values for the key in the database/bucket.
+
+**Delete points from a database**
+
+One can delete data from a database/bucket.
+
+```python
+client.delete(measurement="my_measurement", tags={"sensor_id": "123"})
+```
+
+Omitting `measurement` will delete data from all measurements in the database/bucket.
+Omitting `tags` will delete all data from the given measurement.
+
+However, to prevent accidental wiping of databases/buckets, attempting so will raise a `DeleteError`:
+
+```python
+client.delete()
+# DeleteError(...)
+```
+
+### Access Data
+
+**Read data into a pandas DataFrame**
+
+```python
+client.read_data_frame(
+    measurement="my_measurement",
+    start="2023-02-22T00:00:00Z",
+    stop="2023-02-23T00:00:00Z",
+)
+#                            bar  baz  foo
+# 2022-12-21 00:00:00+00:00    3    7    1
+# 2022-12-22 00:00:00+00:00    4    8    2
+```
+
+**Get the first point in a series**
+
+```python
+client.read_first_point(
+    measurement="my_measurement",
+    field="foo",
+    start="2023-02-22T00:00:00Z",
+)
+# _time
+# 2022-12-21 00:00:00+00:00    1
+# Name: foo, dtype: int64
+```
+
+**Get the last point in a series**
+
+```python
+last_point = client.read_last_point(
+    measurement="my_measurement",
+    field="foo",
+    start="2023-02-22T00:00:00Z",
+)
+# _time
+# 2022-12-22 00:00:00+00:00    2
+# Name: foo, dtype: int64
+```
+
+**Poll for data that you expect inside a field**
+
+You can poll for data in a field while specifying the polling interval sleep time and a timeout to prevent infinite blocking.
+
+```python
+first_point = client.poll_field(
+    measurement="my_measurement",
+    field="foo",
+    start="2023-02-22T00:00:00Z",
+    return_first=True,
+    sleep_time_ms=60_000,
+    timeout=datetime.timedelta(seconds=10),
+)
+```
+
+Or you can set a validity period to accept earlier timestamps when you cannot exactly predict the date-time the data will come.
+
+```python
+first_point = client.poll_field(
+    measurement="my_measurement",
+    field="temperature",
+    start="2023-02-22T00:00:00Z",
+    return_first=True,
+    validity_period=datetime.timedelta(seconds=1),
+)
+```
+
+
+### Write Data
+
+```python
+import pandas as pd
+data = pd.DataFrame({
+    "time": pd.to_datetime(["2023-02-23T15:00:00Z"]),
+    "value": [10.5],
+})
+client.write_data_frame(data, measurement="my_measurement", tags={"sensor_id": "123"})
+```
+
+## Concepts
+
+- Missing data as a result of missing resources (e.g. a missing measurement, a failing filter criterion, etc.) will not raise an error but return empty data instead. This goes along best practices for HTTP APIs, which is the interface form of InfluxDB instances.
+- A client instance is always bound and connected to a database/bucket which has to be given upon client initialization (this is considered common sense in database clients).
+
+## Rationale
+
+The core structural concept of InfluxDB has been more or less the same acros all major InfluxDB versions.
+However unfortunately, implementations such as query language, client libraries as well as concept nomenclature have not. 
+
+Following is an overview of consistencies and inconsistencies among InfluxDB major version.
+Please note that we're completely ignoring potential benefits which come from using or upgrading to a higher major version of InfluxDB, such as say performance aspects.
+
+|                            | V1                                  | V2                              | V3                        |
+|----------------------------|-------------------------------------|---------------------------------|---------------------------|
+| Database                   | Database                            | Bucket                          | Database                  |
+| Measurement                | Measurement                         | Measurement                     | Measurement               |
+| Field                      | Field                               | Field                           | Field                     |
+| Tag                        | Tag                                 | Tag                             | Tag                       |
+| Series                     | Series                              | Series                          | Series                    |
+| Point                      | Point                               | Point                           | Point                     |
+| Organization               | -                                   | Organization                    | Organization              |
+| Query Language(s)          | InfluxQL (Flux via `/api/v2/query`) | Flux (InfluxQL via `/query`)    | InfluxQL, SQL             |
+| Write Protocol             | Line Protocol                       | Line Protocol                   | Line Protocol, (tba)      |
+| Authentication             | Basic, JWT                          | Token, Basic (UI)               | Token                     |
+| Retention                  | Retention Policy                    | Bucket ("DBRP mappings"[^dbrp]) | (tba)                     |
+| Inclusive Range            | Arbitrary (InfluxQL)                | Flux' `range` is half-open      | Arbitrary (InfluxQL, SQL) |
+| Continuous Processing      | Continuous Queries                  | Tasks                           | (tba)                     |
+| Frontend                   | Chronograf[^chronograf]             | Built-in                        | (tba)                     |
+| Python Client              | `influxdb-python`[^v1] (archived)   | `influxdb-client-python`[^v2]   | `influxdb3-python`[^v3]   |
+| State of development[^sod] | Maintenance                         | Active                          | Prototype development     |
+
+[^v1]: https://github.com/influxdata/influxdb-python
+[^v2]: https://github.com/influxdata/influxdb-client-python 
+[^v3]: https://github.com/InfluxCommunity/influxdb3-python
+[^chronograf]: https://www.influxdata.com/time-series-platform/chronograf
+[^dbrp]: https://docs.influxdata.com/influxdb/v2/reference/api/influxdb-1x/dbrp/
+[^sod]: March 2024 (https://github.com/influxdata/influxdb)
+
+## License
+
+This project is licensed under the terms of the [MIT](https://en.wikipedia.org/wiki/MIT_License#License_terms) license.
