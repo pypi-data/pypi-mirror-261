@@ -1,0 +1,12 @@
+modelbest_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelbest_data/file_format/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelbest_data/file_format/mbtable.py,sha256=rdDTMySeJGQ2swxXZNcvc1OHoDGEtCSLGjifpNmEnqg,4222
+modelbest_data/file_format/mbtable_builder.py,sha256=25OM8gkuuSwOXR6sk6wIPGXmd-CUcG_qAh-9PPK79JE,2820
+modelbest_data/file_format/mbtable_partition.py,sha256=ezRhbm0a9mhLKOOjCRopIrc4pbDnAcgouMEtX57o77A,4764
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_mbtable.py,sha256=CSgt9ocYGpePpjGfn-1gtF-EW0gn4zlVGsxhvojXYM8,2982
+test/test_mbtable_partition.py,sha256=Z7Q1etCfkiHm1WH5SMJETgzMPcDesrZAkhUV6_2Jbic,2395
+modelbest_data-0.0.6.dist-info/METADATA,sha256=YtIXltSaqANftiR0suicPPnyM0lvBWPCan5onlRgtD8,1080
+modelbest_data-0.0.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+modelbest_data-0.0.6.dist-info/top_level.txt,sha256=4qJz6cf0SYhkhz9XvoJcwnTym8Q2DEIfdgD7iYAMttk,20
+modelbest_data-0.0.6.dist-info/RECORD,,
