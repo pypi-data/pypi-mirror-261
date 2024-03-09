@@ -1,0 +1,5 @@
+setup.py
+libraryhdutils.egg-info/PKG-INFO
+libraryhdutils.egg-info/SOURCES.txt
+libraryhdutils.egg-info/dependency_links.txt
+libraryhdutils.egg-info/top_level.txt
