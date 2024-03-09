@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+hydroclassifation.egg-info/PKG-INFO
+hydroclassifation.egg-info/SOURCES.txt
+hydroclassifation.egg-info/dependency_links.txt
+hydroclassifation.egg-info/requires.txt
+hydroclassifation.egg-info/top_level.txt
