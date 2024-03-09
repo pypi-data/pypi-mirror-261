@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyooo3
+Version: 0.8.0
+Summary: ppyaa
+Project-URL: Homepage, https://github.com/jim3333/pyooo3
+Project-URL: Repository, https://github.com/jim3333/pyooo3
+Project-URL: Source, https://github.com/jim3333/pyooo3
+Author-email: ppyaa <ppyaa@no.github.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+test
