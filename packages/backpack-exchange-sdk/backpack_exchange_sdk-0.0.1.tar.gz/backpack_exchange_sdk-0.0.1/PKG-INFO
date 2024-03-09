@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: backpack_exchange_sdk
+Version: 0.0.1
+Summary: A simple SDK for backpack exchange
+Home-page: https://github.com/solomeowl/backpack_exchange_sdk
+Author: solomeowl
+Author-email: j19940430@gmail.com
+Project-URL: Source, https://github.com/solomeowl/backpack_exchange_sdk
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# backpack_exchange_sdk
