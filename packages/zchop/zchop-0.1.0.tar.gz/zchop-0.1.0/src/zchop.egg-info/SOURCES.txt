@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/zchop/__init__.py
+src/zchop/zchop.py
+src/zchop.egg-info/PKG-INFO
+src/zchop.egg-info/SOURCES.txt
+src/zchop.egg-info/dependency_links.txt
+src/zchop.egg-info/not-zip-safe
+src/zchop.egg-info/requires.txt
+src/zchop.egg-info/top_level.txt
