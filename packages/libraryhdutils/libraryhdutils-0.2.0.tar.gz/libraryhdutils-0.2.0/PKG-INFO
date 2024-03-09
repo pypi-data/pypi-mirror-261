@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: libraryhdutils
+Version: 0.2.0
+Summary: python package,function available: hackday_flag() (import craftflag from the library)
+Home-page: UNKNOWN
+Author: Axel
+Author-email: axel.biegalski@edu.esiee.fr
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
