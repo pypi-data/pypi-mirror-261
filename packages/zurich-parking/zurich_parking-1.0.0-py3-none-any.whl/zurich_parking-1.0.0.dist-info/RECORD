@@ -1,0 +1,11 @@
+zurich_parking/__init__.py,sha256=AWRIxgPmiZ6ub38F7W-aiXKb109PhkYQLCirZVqGRP8,378
+zurich_parking/__main__.py,sha256=zGhfYGfV-HxOtV0jxLGxDoek4zXkMpeCffMLhrXXaY8,1056
+zurich_parking/config.toml,sha256=vt-HAUYh46zfRvJfYzmqdg7swjMF9vh4KIFGD87PbfE,56
+zurich_parking/parking.py,sha256=AKYrghMu45S4q8M_KyN7alHOtb4BtEI15BG09xejkB4,159
+zurich_parking/parking_helper.py,sha256=yhp2FO_ijp4AGd2Jclxb9IGvqIzWiwHr41VGDfbehK0,1371
+zurich_parking-1.0.0.dist-info/LICENSE,sha256=0Rh-sgiq1KoUVZf2PRDVd2dAJ6cygfl-Nf0wK_6DY5E,1088
+zurich_parking-1.0.0.dist-info/METADATA,sha256=_lsB3RWGgeWHIHegd5w8fcnVQLfgPFuAesUgTbuDPEE,2785
+zurich_parking-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+zurich_parking-1.0.0.dist-info/entry_points.txt,sha256=jXxYedJGJZ_kh-3nszXs9rJtiRDzSdK9LjXrNVaPtxM,60
+zurich_parking-1.0.0.dist-info/top_level.txt,sha256=U_o_TqyxCN3lA-L6DQ2stNvLhImvO9xbS92a5ivqP60,15
+zurich_parking-1.0.0.dist-info/RECORD,,
