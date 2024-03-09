@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/cityjson2jsonfg/__init__.py
+src/cityjson2jsonfg/cli.py
+src/cityjson2jsonfg/convert.py
+src/cityjson2jsonfg.egg-info/PKG-INFO
+src/cityjson2jsonfg.egg-info/SOURCES.txt
+src/cityjson2jsonfg.egg-info/dependency_links.txt
+src/cityjson2jsonfg.egg-info/entry_points.txt
+src/cityjson2jsonfg.egg-info/requires.txt
+src/cityjson2jsonfg.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_convert.py
