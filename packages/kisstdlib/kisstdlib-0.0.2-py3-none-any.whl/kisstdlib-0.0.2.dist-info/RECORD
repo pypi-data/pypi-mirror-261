@@ -1,0 +1,17 @@
+kisstdlib/__init__.py,sha256=yFKqNMrK10dVK2TTm9vAyR-O7Fo1_fLhE_L_n2Ipmm4,1161
+kisstdlib/exceptions.py,sha256=t_dCNofxXNeAdYY2fYKpp96nn44i6V2KOYJ0v264mbA,1626
+kisstdlib/logging.py,sha256=EnH3afU0haZ4LVE1n9X0-_duojLQd5iQHSigHKnm2nM,1874
+kisstdlib/path.py,sha256=Sp7AzcQ2GPb5dGzJw4GT9kJpiQBrkhffPDS2CEeoE88,3680
+kisstdlib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kisstdlib/argparse/__init__.py,sha256=OSrve6Ut6Vye8xBLiBMTKZbD5zdZ5O2vzuGXIFQyzI4,1179
+kisstdlib/argparse/better.py,sha256=Hn14rte-y-6xxZn-bT5qhZR5bx6VybCLbDLh-0RNd9A,8631
+kisstdlib/io/__init__.py,sha256=aoHcBUXTvu7mJb98oTCgEImHBErLHOp45j_l-5rJbBY,2263
+kisstdlib/io/base.py,sha256=PXV03uTiH2FiLrJznF0YiEWx4KALUrd7h9kjpYiX5aw,3555
+kisstdlib/io/wrapper.py,sha256=ATnruWa3JqV35IYsOsQrOOD_7Qlhs5PzSVW0-3-LrY8,4250
+kisstdlib/io/encoder/__init__.py,sha256=FRWfcqd3gXsrz_DZ3eO1LcQe41QsDmkUkZyLxEm0wCg,1199
+kisstdlib/io/encoder/base.py,sha256=aeDjQyLHISiIU1Z79WVhS1EJf8zKtx3s6KoGJP93EL8,2994
+kisstdlib/io/encoder/pyrepr.py,sha256=OuW0QzuSu9FXjjnIiNpS13C9joh5asUD0SF-nSeANaI,5221
+kisstdlib-0.0.2.dist-info/METADATA,sha256=EWaTcwClQGLCnTNQX3OuIgz8bEnPNCrdSKKQNEwFehw,568
+kisstdlib-0.0.2.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+kisstdlib-0.0.2.dist-info/top_level.txt,sha256=qB7rKOidj0caDUYGReJOOFp4rDsmNWdiwiWW_yd1QEk,10
+kisstdlib-0.0.2.dist-info/RECORD,,
