@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yandex-pgmigrate
+Version: 1.0.8
+Summary: PostgreSQL migrations made easy
+Home-page: https://github.com/yandex/pgmigrate/
+Author: Yandex LLC
+Author-email: opensource@yandex-team.ru
+Maintainer: Yandex LLC
+Maintainer-email: opensource@yandex-team.ru
+License: PostgreSQL License
+Platform: Linux
+Platform: BSD
+Platform: MacOS
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: sqlparse>=0.3.0
+Requires-Dist: psycopg2>=2.8.2
+Requires-Dist: PyYAML>=5.2
