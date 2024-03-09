@@ -1,0 +1,8 @@
+fort/__init__.py,sha256=jmMzWntBg5Vls6BJsWdut0V2wWDfnpGmwxLG4TUWk-M,228
+fort/postgres.py,sha256=QBM1FUg6j6Syg3XJE8JsLVrQhr_Z92KGdbU0I4CwstI,2453
+fort/sqlite.py,sha256=G5QkpwL51pb_baBxmw7jZXd_EH7YWCRQ21eJ1OZKS_0,2180
+fort-2024.2.dist-info/LICENSE,sha256=REeZfLX0d9u3KHi9j6p9RLkLTD5NpSl828Vtxb8epfg,1054
+fort-2024.2.dist-info/METADATA,sha256=iapFXCMWYkYbkeNaOKDMwrv1Rqyv34bcbPc8Nexfx04,5907
+fort-2024.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fort-2024.2.dist-info/top_level.txt,sha256=EF_nBWN-YKMdxtx39ZYlfkxkQu7kifufWjrSuD_hI24,5
+fort-2024.2.dist-info/RECORD,,
