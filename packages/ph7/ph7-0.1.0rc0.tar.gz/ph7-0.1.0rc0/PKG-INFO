@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: ph7
+Version: 0.1.0rc0
+Summary: Python native HTML rendering
+Home-page: https://github.com/angrybayblade/ph7
+Author: Viraj Patel
+Author-email: vptl185@gmail.com
+Project-URL: Documentation, http://ph7.angrybayblade.me
+Project-URL: Changelog, https://github.com/angrybayblade/ph7/blob/main/docs/CHANGELOG
+Project-URL: Issue Tracker, https://github.com/angrybayblade/ph7/issues
+Keywords: html,css,js,templates,django
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+
+ <div style="display:flex; align-items: center; justify-content: center;">
+    <h1>💧 PH7</h1>
+</div>
+<div style="display:flex; align-items: center; justify-content: center;">
+    Python native HTML rendering
+</div>
+
+## Install
+```
+pip3 install ph7
+```
+## Quickstart
+Write your first block of markup
+<!-- {"type": "html", "file": "examples/hello.py"} -->
+```python
+from ph7.html import body, div, html
+
+template = html(
+    body(
+        div(
+            "Hello, World!",
+        )
+    )
+)
+
+print(template)
+```
+
+```html
+<html>
+  <body>
+    <div>Hello, World!</div>
+  </body>
+</html>
+```
+<!-- end -->
+
+
+Links:
+
+* [Documentation](http://ph7.angrybayblade.me)
+* [Changelog](https://github.com/angrybayblade/ph7/blob/main/docs/CHANGELOG)
+* [Issue Tracker](https://github.com/angrybayblade/ph7/issues)
