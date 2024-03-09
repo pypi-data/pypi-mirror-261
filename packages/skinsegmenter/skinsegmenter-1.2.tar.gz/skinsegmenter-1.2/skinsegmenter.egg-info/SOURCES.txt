@@ -1,0 +1,9 @@
+README.md
+setup.py
+skinsegmenter/SkinDetection.py
+skinsegmenter/__init__.py
+skinsegmenter.egg-info/PKG-INFO
+skinsegmenter.egg-info/SOURCES.txt
+skinsegmenter.egg-info/dependency_links.txt
+skinsegmenter.egg-info/requires.txt
+skinsegmenter.egg-info/top_level.txt
