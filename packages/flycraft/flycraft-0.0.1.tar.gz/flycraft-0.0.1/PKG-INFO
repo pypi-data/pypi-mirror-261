@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: flycraft
+Version: 0.0.1
+Summary: A fixed-wing UAV environment based on gymnasium.
+Home-page: https://github.com/gongxudong/fly-craft
+Author: Xudong Gong
+Author-email: gongxudong_cs@aliyun.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Provides-Extra: develop
+License-File: LICENSE
+
+# fly-craft
+
+## Documentation
+
+TODO:
+
+## Installation
+
+### Using PyPI
+
+```bash
+pip install fly-craft
+```
+
+### From source
+
+```bash
+git clone https://github.com/GongXudong/fly-craft.git
+pip install -e fly-craft
+```
+
+## Usage
+
+```python
+import gymnasium as gym
+import fly_craft
+
+env = gym.make('FlyCraft-v0')
+
+observation, info = env.reset()
+
+for _ in range(500):
+    action = env.action_space.sample() # random action
+    observation, reward, terminated, truncated, info = env.step(action)
+
+    if terminated or truncated:
+        observation, info = env.reset()
+
+env.close()
+```
+
+## Citation
+
+Cite as
+
+```bib
+@article{gong2024flycraft,
+  title        = {fly-craft: Open-Source Goal-Conditioned Environments for Fixed-Wing UAV Attitude Control},
+  author       = {Xudong, Gong and Hao, Wang and Dawei, Feng and Weijia, Wang},
+  year         = 2024,
+  journal      = {},
+}
+```
