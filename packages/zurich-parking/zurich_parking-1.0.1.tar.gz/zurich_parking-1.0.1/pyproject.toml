@@ -1,0 +1,37 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "zurich-parking"
+version = "1.0.1"
+description = "Get information on free parking spaces in Zurich."
+authors = ["Sascha Corti <sascha@corti.com>"]
+readme = "README.md"
+homepage = "https://github.com/techpreacher/zurich-"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+feedparser = "^6.0.8"
+tomli = "^2.0.1"
+
+[tool.poetry.scripts]
+realpython = "reader.__main__:main"
+
+[tool.bumpver]
+current_version = "1.0.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+pre_commit_hook = ""
+post_commit_hook = ""
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"',]
+"src/zurich_parking/__init__.py" = ['__version__ = "{version}"']
+
