@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+proteusPy/data/__init__.py
+proteusPy/proteusPy.egg-info/PKG-INFO
+proteusPy/proteusPy.egg-info/SOURCES.txt
+proteusPy/proteusPy.egg-info/dependency_links.txt
+proteusPy/proteusPy.egg-info/requires.txt
+proteusPy/proteusPy.egg-info/top_level.txt
+proteusPy/proteuspy.egg-info/PKG-INFO
+proteusPy/proteuspy.egg-info/SOURCES.txt
+proteusPy/proteuspy.egg-info/dependency_links.txt
+proteusPy/proteuspy.egg-info/requires.txt
+proteusPy/proteuspy.egg-info/top_level.txt
+tests/test_turtle3d.py
