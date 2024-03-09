@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "purehtml"
+version = "0.4.3"
+authors = [
+    { name="Hansimov" },
+]
+description = "Purify HTML by filtering tags and classes"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [ "tclogger", "beautifulsoup4", "markdownify" ]
+
+[project.urls]
+Homepage = "https://github.com/Hansimov/pure-html"
+Issues = "https://github.com/Hansimov/pure-html/issues"
+
+[tool.setuptools.packages.find]
+exclude = [".github/", "src/purehtml/samples/"]

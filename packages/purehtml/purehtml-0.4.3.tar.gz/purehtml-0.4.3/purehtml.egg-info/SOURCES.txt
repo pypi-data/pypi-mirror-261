@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+purehtml.egg-info/PKG-INFO
+purehtml.egg-info/SOURCES.txt
+purehtml.egg-info/dependency_links.txt
+purehtml.egg-info/requires.txt
+purehtml.egg-info/top_level.txt
+src/purehtml/__init__.py
+src/purehtml/constants.py
+src/purehtml/purehtml.py
