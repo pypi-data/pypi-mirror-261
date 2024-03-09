@@ -1,0 +1,10 @@
+relistats/__init__.py,sha256=8lmeVy4ULXGXIKaPGdLGxJiUuyPVzPVh0T07WNDyWdA,83
+relistats/__main__.py,sha256=1MndyJ-1JsTuLiLTT00CI31-8OYjuxfX1rdSnal3YI4,203
+relistats/binom_fin.py,sha256=Hr5ioER2uDB3nYDYbcMXZ0cPBfartQNmbW_OnoCLhcA,4746
+relistats/binomial.py,sha256=5xA2hoSkT6RRLy0EF_seavRdATrWiLKIuVbdzR2iBiw,5320
+relistats/intervals.py,sha256=GvxI9AGJR9EuEvLo37Q-NNS7T5l0GUn2nIGULKbQac4,12270
+relistats/percentile.py,sha256=lViUqzbWWmiOlTCVvpXqdJ7WwwmgmFDGlE35zyDNHcU,2632
+relistats-1.2.0.dist-info/METADATA,sha256=QSXtzguLAxwF78t7pMMlYqADrmo9Ry-xfoGAcZs6M9w,4227
+relistats-1.2.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+relistats-1.2.0.dist-info/licenses/LICENSE,sha256=SLZyFz9UeptppCJ9t45KworiUT1Welm84IsV9JrErTE,1095
+relistats-1.2.0.dist-info/RECORD,,
