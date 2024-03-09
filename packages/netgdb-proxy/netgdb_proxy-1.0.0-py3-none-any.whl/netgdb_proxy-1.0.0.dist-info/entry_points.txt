@@ -1,0 +1,4 @@
+[console_scripts]
+netgdb_proxy=netgdb_proxy.single:run
+netgdb_proxy_d=netgdb_proxy.daemon:run
+
