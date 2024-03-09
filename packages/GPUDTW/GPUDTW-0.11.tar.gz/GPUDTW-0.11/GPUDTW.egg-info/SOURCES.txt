@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+GPUDTW/OpenCL.dll
+GPUDTW/__init__.py
+GPUDTW/cpudtw.py
+GPUDTW/cudadtw.cu
+GPUDTW/cudadtw.py
+GPUDTW/opencldtw.cl
+GPUDTW/opencldtw.py
+GPUDTW/test.py
+GPUDTW.egg-info/PKG-INFO
+GPUDTW.egg-info/SOURCES.txt
+GPUDTW.egg-info/dependency_links.txt
+GPUDTW.egg-info/requires.txt
+GPUDTW.egg-info/top_level.txt
