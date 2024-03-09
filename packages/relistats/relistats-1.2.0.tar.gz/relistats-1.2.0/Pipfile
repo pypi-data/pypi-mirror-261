@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[packages]
+relistats = {editable = true, path = "."}
+ipykernel = "*"
+matplotlib = "*"
+pexpect = "*"
+seaborn = "*"
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+isort = "*"
+typing_extensions = "*"
+mypy = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+build = "*"
+twine = "*"
+flake8-pyproject = "*"
+sphinx = "*"

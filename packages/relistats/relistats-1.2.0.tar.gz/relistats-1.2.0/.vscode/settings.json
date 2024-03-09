@@ -1,0 +1,22 @@
+{
+    "cSpell.words": [
+        "binom",
+        "brentq",
+        "Colab",
+        "Cookiecutter",
+        "Joshi",
+        "optim",
+        "reli",
+        "relistats",
+        "rtype",
+        "scipy",
+        "sourcery",
+        "venv",
+        "xtol"
+    ],
+    "esbonio.sphinx.confDir": "",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+      }
+}
