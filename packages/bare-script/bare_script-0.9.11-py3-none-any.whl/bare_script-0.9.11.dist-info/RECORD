@@ -1,0 +1,17 @@
+bare_script/__init__.py,sha256=hInvySiogki-uiWHbUXMbCJa20SoIdFjJtNmaPvg-Mc,696
+bare_script/__main__.py,sha256=vgFzmiNuP05IKyuY6FrDLChkleyvER9L22OJNxsyf74,232
+bare_script/bare.py,sha256=8BexFkCXBG4po9Nycb1QlQH9w1SKjcIPQaTLnFBEQv8,4895
+bare_script/baredoc.py,sha256=uxoJSvAiNPxXCPdYJuDzrs1DN8t5XY5C_Qw0EVsOiwI,6608
+bare_script/data.py,sha256=KXafkRSkFpR_09tRA3J_HBCFmaWdMbeB_YJz1c2KYcA,16581
+bare_script/library.py,sha256=j7acZCx-XFzh-SAPo5JQtqOV_vzhysY36DZI0FdUvPc,58918
+bare_script/model.py,sha256=UKzuscYZWmJ1U7HOVY6OwevhUUTh6ADztZYgtCXwstI,13153
+bare_script/options.py,sha256=XbcLilSGaM8bMLN4qS17zLYlc8Gz-GittGvru5fBPds,2647
+bare_script/parser.py,sha256=037_ARhpWUhXh6onaHHyymB5ztpERtgZRxEmWosuUfI,29094
+bare_script/runtime.py,sha256=Imb9PRilHcDIZjhqaA_zCbszoJaMbQLy0M6-TQuVyZE,14528
+bare_script/value.py,sha256=-jc0gi2v_VJcNhB9V1tq0hisCqmv6h6h35nOu4GhuxM,7265
+bare_script-0.9.11.dist-info/LICENSE,sha256=legUTdYSyuztIaeQs3C2qoknw9dwIEdEVfOiF1UTaTs,1081
+bare_script-0.9.11.dist-info/METADATA,sha256=E0xCez9Ecfi_qRru6FkrJ45o1pPkPcG9XARpOIgFSho,6540
+bare_script-0.9.11.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bare_script-0.9.11.dist-info/entry_points.txt,sha256=FkrlFNSpZQc5RZR2HtyWJnBCGY0QuqVwlj1xMfDf0P0,82
+bare_script-0.9.11.dist-info/top_level.txt,sha256=LJr6EHeCFlEIlvy5P794yqrYxa3Ptu2zY1ziNxv2QRQ,12
+bare_script-0.9.11.dist-info/RECORD,,
