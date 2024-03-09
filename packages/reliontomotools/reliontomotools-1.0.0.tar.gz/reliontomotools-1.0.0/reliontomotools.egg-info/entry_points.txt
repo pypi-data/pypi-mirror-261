@@ -1,0 +1,4 @@
+[console_scripts]
+motl2relion = reliontomotools.motl2relion:motl2RelionProgram
+relion2motl = reliontomotools.relion2motl:relion2motlProgram
+warptomo2relion = reliontomotools.warptomo2relion:warpTomo2RelionProgram

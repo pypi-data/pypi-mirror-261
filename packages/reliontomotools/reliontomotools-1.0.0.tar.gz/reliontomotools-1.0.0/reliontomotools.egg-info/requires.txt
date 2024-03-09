@@ -1,0 +1,9 @@
+numpy
+pandas
+xmltodict
+docopt
+scipy
+tqdm
+transforms3d
+mrcfile
+emfile

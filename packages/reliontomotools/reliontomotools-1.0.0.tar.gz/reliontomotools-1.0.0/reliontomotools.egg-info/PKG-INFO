@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: reliontomotools
+Version: 1.0.0
+Summary: Additional tools for Relion tomo
+Home-page: https://github.com/joton/reliontomotools
+Author: Joaquín Otón
+License: MIT
+Project-URL: Bug Tracker, https://github.com/joton/reliontomotools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: xmltodict
+Requires-Dist: docopt
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: transforms3d
+Requires-Dist: mrcfile
+Requires-Dist: emfile
+
+# reliontomotools
+
+Additional tools for subtomogram analysis in Relion tomo.
+
+
+## Install
+```bash
+pip install reliontomotools
+```
+
+## Scripts
+
+```python
+warptomo2relion
+
+motl2relion
+
+relion2motl
+```
+
+Converts refinement of deformation models, particle poses and CTF paramaters from WARP/M to Relion tomo.
+
+### Example
+```bash
+warptomo2relion -i 'WarpXML/TS_*.xml' -s 'tomograms/TS_*/TS_*_aligned.mrc' -d 1800 -o WarpConverted -p Refine3D/job010/run_data.star
+
+motl2relion allmotl_at_17.em -o allmotl_at_17.star -p 1.75
+motl2relion --evenodd allmotl_at_even_17.em allmotl_at_odd_17.em -o allmotl_at_17_2.star -p 1.75
+
+relion2motl -i allmotl_at_17.star -o allmotl_at_17_star.em --angpix 1.75
+```
