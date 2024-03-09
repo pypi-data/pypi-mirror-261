@@ -1,0 +1,8 @@
+scrapy_selenium/__init__.py,sha256=jrK4ApZkRO9lU5gyst9v-hSyMzIbtQiEt418WsTb9pA,103
+scrapy_selenium/http.py,sha256=q71ZlkkmnITO1WXJubCNrII43NiOOeCSABZfMBTGGWs,1122
+scrapy_selenium/middlewares.py,sha256=i2FIk3M0x-PvyoSkC_A1MSwoJDD1sKBW7v-MCAwWyfU,5356
+scrapy_selenium2-0.0.8.dist-info/LICENCE,sha256=VzAt9GJl8wprzZMgm0aUCJkGBlYQxyrW-3QO0xgCksk,496
+scrapy_selenium2-0.0.8.dist-info/METADATA,sha256=FM4YN7xMziZ0Or1lqZZLz8Fq5dI2MOOCS3IOjoSNK14,4238
+scrapy_selenium2-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+scrapy_selenium2-0.0.8.dist-info/top_level.txt,sha256=dFaFroMt_cTzD7Yk9pLqSjehSrEYtcoPY-Ey5K4dNJc,16
+scrapy_selenium2-0.0.8.dist-info/RECORD,,
