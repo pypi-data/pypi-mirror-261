@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: influxobject
+Version: 0.0.1
+Summary: Influx Object Package
+Home-page: https://gitlab.com/m-unlock/influx-object
+Author: John Doe
+Author-email: john.doe@gmail.com
+Project-URL: Documentation, https://gitlab.com/m-unlock/influx-object
+Project-URL: Bug Reports, https://gitlab.com/m-unlock/influx-object/-/issues
+Project-URL: Source Code, https://gitlab.com/m-unlock/influx-object
+Keywords: influx,json,package
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+
+# Influx Point
+
+This module enables the creation of an influx point object that can be transformed into either a JSON or LineProtocol format.
+
+## Uage
+
+```python
+
+ influx_point = InfluxPoint()
+        influx_point.set_measurement("measurement")
+        influx_point.set_tags({"tag1": "value1"})
+        influx_point.set_fields({"field1": 1, "field2": 2})
+        influx_point.set_timestamp(datetime.datetime(2021, 1, 1))\
+        
+        print(influx_point.to_json())
+
+            # {
+            #     "measurement": "measurement",
+            #     "tags": {"tag1": "value1"},
+            #     "fields": {"field1": 1, "field2": 2},
+            #     "timestamp": 1609455600,
+            # }
+        
+        print(influx_point.to_line_protocol())
+
+            # "measurement,tag1=value1 field1=1,field2=2 1609455600"
+```
