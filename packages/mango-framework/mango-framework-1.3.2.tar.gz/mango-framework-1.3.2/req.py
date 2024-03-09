@@ -1,0 +1,1 @@
+print(__import__('requests').get("http://127.0.0.1:8001/redirect"))
