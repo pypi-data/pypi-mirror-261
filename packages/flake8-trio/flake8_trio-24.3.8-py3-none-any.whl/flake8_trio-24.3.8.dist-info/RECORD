@@ -1,0 +1,5 @@
+src/flake8-trio/__init.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_trio-24.3.8.dist-info/METADATA,sha256=vq8SerKYx2idwseXFDhVWWUGnfAhoiAVbxdoC3YsmGQ,752
+flake8_trio-24.3.8.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+flake8_trio-24.3.8.dist-info/licenses/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+flake8_trio-24.3.8.dist-info/RECORD,,
