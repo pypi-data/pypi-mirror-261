@@ -1,0 +1,13 @@
+[project]
+name = "teddies"
+version = "0.0.1"
+authors = [
+  { name="Krisztian Szucs", email="szucs.krisztian@gmail.com" },
+]
+description = "Super dialect for all the bearish dataframe libraries"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]

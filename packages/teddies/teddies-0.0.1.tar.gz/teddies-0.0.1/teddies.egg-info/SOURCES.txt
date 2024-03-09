@@ -1,0 +1,6 @@
+pyproject.toml
+setup.py
+teddies.egg-info/PKG-INFO
+teddies.egg-info/SOURCES.txt
+teddies.egg-info/dependency_links.txt
+teddies.egg-info/top_level.txt
