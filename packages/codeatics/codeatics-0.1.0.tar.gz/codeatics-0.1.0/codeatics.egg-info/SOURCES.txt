@@ -1,0 +1,6 @@
+README.md
+setup.py
+codeatics.egg-info/PKG-INFO
+codeatics.egg-info/SOURCES.txt
+codeatics.egg-info/dependency_links.txt
+codeatics.egg-info/top_level.txt

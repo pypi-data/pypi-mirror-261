@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: codeatics
+Version: 0.1.0
+Summary: A collection of useful stuff
+Home-page: https://github.com/PrabhuBikash/codeatics
+Author: PrabhuBikash😎
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# codeatics
+Some python crafts
+
+
+# Codeatics
+
+[![Build Status](https://travis-ci.org/PrabhuBikash/codeatics.svg?branch=main)](https://travis-ci.org/PrabhuBikash/codeatics)
+[![PyPI version](https://badge.fury.io/py/codeatics.svg)](https://badge.fury.io/py/codeatics)
+
+A collection of useful stuff by PrabhuBikash😎.
+
+## Installation
+
+```bash
+pip install codeatics
+
+
+##usage
+
+import codeatics
+GenerateSequence("n**(1-n)")
+
