@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: donutdb
+Version: 0.1.0
+Summary: (distributed) vector database
+Home-page: https://github.com/notahuman-1-0/donut
+Author: Srinivas T B
+Author-email: tbsrinivas.x@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: hnswlib
+Requires-Dist: openai
+Requires-Dist: psycopg[c]
+Requires-Dist: psycopg[pool]
+
+# 🍩 donut.
+### rad vector db
+
+
+
