@@ -1,0 +1,9 @@
+src/mytcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/mytcli/myt.py,sha256=rvM66ngaHSuiizEh0IobMHOMr_jFwLaQ1lZqso-4k2Y,286099
+tests/test_myt.py,sha256=tgsT_skXUfCFE9C-TjcvB0XSvenIi1ImLb0BY27e-aY,51426
+myt_cli-0.1.7.dist-info/LICENSE,sha256=d-0ZXDKJEr8Hypc0UR3FlJtOlQeG4hmiT6q45JTuXC8,1089
+myt_cli-0.1.7.dist-info/METADATA,sha256=rxGtg8Gj_MmN-J-CiZBUtAf1mKo8DjS7VR1o9nprsL8,2572
+myt_cli-0.1.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+myt_cli-0.1.7.dist-info/entry_points.txt,sha256=SRLcoleXd-rUQCyUAyRV-2XMY9biClRrFuJAzrBaFoA,43
+myt_cli-0.1.7.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+myt_cli-0.1.7.dist-info/RECORD,,
