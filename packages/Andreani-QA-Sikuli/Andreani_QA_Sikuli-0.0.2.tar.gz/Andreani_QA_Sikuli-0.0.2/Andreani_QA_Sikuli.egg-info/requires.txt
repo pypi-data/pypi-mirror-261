@@ -1,0 +1,4 @@
+pyperclip3
+lackey
+easyocr
+pynput
