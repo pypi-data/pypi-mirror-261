@@ -1,0 +1,9 @@
+hdf5storage
+h5py
+joblib
+matplotlib
+numpy
+PopulationCoding
+scikit-learn
+scipy
+tqdm
