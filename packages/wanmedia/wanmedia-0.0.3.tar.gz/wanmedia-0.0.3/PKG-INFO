@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: wanmedia
+Version: 0.0.3
+Summary: Social Media  Analysis 
+Requires-Dist: nltk
+Requires-Dist: jupyter
