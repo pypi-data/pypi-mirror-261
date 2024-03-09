@@ -1,0 +1,24 @@
+{
+"references": {
+    "references_list": { 
+        "ROOT"    : ["references", "data", "results"],
+        "abstract": ["abstract"],
+        "id"      : ["name", "id"],
+        "title"   : ["title"],
+        "journal" : ["journal"],
+        "year"    : ["year"],
+        "author"  : {
+            "ROOT": ["author"],
+            "CONCAT": ["label"]
+        }
+        
+    }
+  },
+  "phenotype": {
+    "phenotype_list": { 
+        "ROOT" : ["phenotype", "data"],
+        "name" : ["phenotype","label"],
+        "id"   : ["phenotype", "id"]
+    }
+  }
+}
