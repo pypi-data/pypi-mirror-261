@@ -1,0 +1,10 @@
+yputils/__init__.py,sha256=moG3uO_zURqeygxEnD2cil3tRBfku2jVk_8tAUYlbzI,61
+yputils/ycfg.py,sha256=5TCzic-bvAh2NOrNVJwbeC6SbNlUoxE6GzzYFje3K8c,177
+yputils/yfile.py,sha256=wfPuFjMHyUnNcd__iUMl9gPTz61lUzaAwseWP_jU69g,2015
+yputils/yimage.py,sha256=X1_zyTkGpkaB57uBK35gdP-aHOLDzPr-OtF1q1vJeRo,2847
+yputils/ypdf.py,sha256=V17yiLDcUWEIOvdXNBjnX4w284-2uUotZnFeAKHWFe4,67
+yputils-0.6.3.dist-info/LICENSE,sha256=fkBbZ8Am-3pvyhBJ49JXg_t5AsNyNhxE41rt31MWaIw,1061
+yputils-0.6.3.dist-info/METADATA,sha256=orSe2OVXwCz3m8YZYVXggws8GjIfrKuPN9BJ4BsmeHc,514
+yputils-0.6.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+yputils-0.6.3.dist-info/top_level.txt,sha256=UqU81Bn9YzbzW8nOZUvc0X4dkGgUON3qYNKeGg5Gqd0,8
+yputils-0.6.3.dist-info/RECORD,,
