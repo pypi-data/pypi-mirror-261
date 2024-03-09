@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: myimg
+Version: 0.2
+Summary: Batch processing of micrographs
+Home-page: https://github.com/mirekslouf/myimg/
+Author: Mirek Slouf
+Author-email: mirek.slouf@gmail.com
+License: MIT
+Project-URL: Documentation, https://mirekslouf.github.io/myimg/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+MyImg :: Processing of micrographs
+----------------------------------
+
+* MyImg contains tools for the processing of microscopic images.
+* The package is under development, but some basic tools do work.
+
+Quick start
+-----------
+
+* TODO
+
+Documentation, help and examples
+--------------------------------
+
+* TODO
+
+Versions of MyImg
+-----------------
+
+* Version 0.1 = 1st draft, too complex, later completely re-written 
+* Version 0.2 = 2nd draft, better concept; functions: cut, crop, label, scalebar
+* Version 0.3 = TODO: scalebar/stripes, montage, description, border...
