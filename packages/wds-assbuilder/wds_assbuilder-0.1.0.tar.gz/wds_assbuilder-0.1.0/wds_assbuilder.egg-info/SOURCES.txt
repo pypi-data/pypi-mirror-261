@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+wds_assbuilder/__init__.py
+wds_assbuilder/ass_part.py
+wds_assbuilder/create_axis.py
+wds_assbuilder/draw.py
+wds_assbuilder/events.py
+wds_assbuilder/frame.py
+wds_assbuilder/match.py
+wds_assbuilder/read_ini.py
+wds_assbuilder/speaker.py
+wds_assbuilder/styles.py
+wds_assbuilder.egg-info/PKG-INFO
+wds_assbuilder.egg-info/SOURCES.txt
+wds_assbuilder.egg-info/dependency_links.txt
+wds_assbuilder.egg-info/top_level.txt
