@@ -1,0 +1,8 @@
+setup.py
+analog_clock/AnalogClockGenerator.py
+analog_clock/__init__.py
+analog_clock.egg-info/PKG-INFO
+analog_clock.egg-info/SOURCES.txt
+analog_clock.egg-info/dependency_links.txt
+analog_clock.egg-info/requires.txt
+analog_clock.egg-info/top_level.txt
