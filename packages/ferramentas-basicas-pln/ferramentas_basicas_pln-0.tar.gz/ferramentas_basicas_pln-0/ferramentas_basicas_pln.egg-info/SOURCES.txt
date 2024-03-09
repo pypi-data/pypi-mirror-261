@@ -1,0 +1,8 @@
+README.md
+setup.py
+ferramentas_basicas_pln.egg-info/PKG-INFO
+ferramentas_basicas_pln.egg-info/SOURCES.txt
+ferramentas_basicas_pln.egg-info/dependency_links.txt
+ferramentas_basicas_pln.egg-info/top_level.txt
+nlp_basic_tools_br/__init__.py
+nlp_basic_tools_br/main.py
