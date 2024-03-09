@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/AminoZ/__init__.py
+src/AminoZ/client.py
+src/AminoZ.egg-info/PKG-INFO
+src/AminoZ.egg-info/SOURCES.txt
+src/AminoZ.egg-info/dependency_links.txt
+src/AminoZ.egg-info/requires.txt
+src/AminoZ.egg-info/top_level.txt
