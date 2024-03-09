@@ -1,0 +1,8 @@
+README.md
+setup.py
+amount_field.egg-info/PKG-INFO
+amount_field.egg-info/SOURCES.txt
+amount_field.egg-info/dependency_links.txt
+amount_field.egg-info/requires.txt
+amount_field.egg-info/top_level.txt
+migrations/__init__.py
