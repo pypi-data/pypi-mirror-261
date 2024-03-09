@@ -1,0 +1,7 @@
+setup.py
+santoshkumarhatti/__init__.py
+santoshkumarhatti/main.py
+santoshkumarhatti.egg-info/PKG-INFO
+santoshkumarhatti.egg-info/SOURCES.txt
+santoshkumarhatti.egg-info/dependency_links.txt
+santoshkumarhatti.egg-info/top_level.txt
