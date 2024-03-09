@@ -1,0 +1,210 @@
+pgame_simple is a simple lib based on pygame
+by MRanos
+
+
+
+
+
+to make a screen:
+
+from pgame_simple import pgame_simple
+
+game = pgame_simple(400,400)
+
+def update():
+
+     pass
+	 
+game.start(update)
+
+
+
+
+
+to change background color :
+
+from pgame_simple import pgame_simple
+
+game = pgame_simple(400,400)
+
+
+def update():
+     
+	 game.bg((255,255,255))
+	 
+	 
+	 
+
+game.start(update)
+
+
+
+
+
+
+to make a sprite:
+
+from pgame_simple import pgame_simple
+
+game = pgame_simple(400,400)
+
+player = game.load("player.png")
+
+player_x,player_y=50,50
+
+def update():
+     
+	 game.bg((255,255,255))
+	 
+	 game.draw(player,player_x,player_y)
+	 
+	 
+
+game.start(update)
+
+
+
+
+
+to make the sprite move:
+
+from pgame_simple import pgame_simple
+
+game = pgame_simple(400,400)
+
+player = game.load("player.png")
+
+player_x,player_y=50,50
+
+def update():
+     global player_x,player_y
+	 
+	 game.bg((255,255,255))
+	 
+	 game.draw(player,player_x,player_y)
+	 
+	 player_x = game.movex(player_x,1)
+	 
+	 player_y = game.movex(player_y,1)
+	 
+	 
+	 
+	 
+
+game.start(update)
+
+
+
+
+
+to play sound:
+
+
+from pgame_simple import pgame_simple
+
+game = pgame_simple(400,400)
+
+test = game.sound("test.wav")
+
+def update():
+
+	 game.bg((255,255,255))
+	 
+	 game.play_sound(test)
+	 
+	 
+	 
+
+game.start(update)
+
+
+to add text:
+
+from pgame_simple import pgame_simple
+
+game = pgame_simple(400,400)
+
+
+def update():
+
+	 game.bg((255,255,255))
+	 
+	 simple_text = game.text("hello world",25)
+	 
+	 game.draw(simple_text,50,50)
+	 
+	 
+	 
+
+game.start(update)
+
+
+
+
+
+to change the title and icon:
+
+
+
+from pgame_simple import pgame_simple
+
+game = pgame_simple(400,400)
+
+game.title("hello world")
+
+game.icon("logo.png")
+
+
+
+def update():
+
+	 game.bg((255,255,255))
+	 
+	 
+	 
+	 
+
+game.start(update)
+
+
+
+
+
+
+how use collision:
+
+
+
+from pgame_simple import pgame_simple
+
+game = pgame_simple(400,400)
+
+player = game.load("player.png")
+
+player_x,player_y=50,50
+
+enemy = game.load("enemy.png")
+
+enemy_x,enemy_y=100,100
+
+def update():
+
+     global player_x,player_y,enemy_x,enemy_y
+	 
+	 game.bg((255,255,255))
+	 
+	 game.draw(player,player_x,player_y)
+	 
+	 player_x = game.movex(player_x,1)
+	 
+	 player_y = game.movex(player_y,1)
+	 
+	 if game.collisionx(player_x,enemy_x,enemy) and game.collisiony(player_y,enemy_y,enemy):
+	 
+	      print("the player lose")
+	 
+	 
+	 
+	 
+
+game.start(update)
