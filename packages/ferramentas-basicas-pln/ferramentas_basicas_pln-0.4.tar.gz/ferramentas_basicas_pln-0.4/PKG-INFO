@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: ferramentas_basicas_pln
+Version: 0.4
+Summary: Kit de ferramentas para processos básicos de Processamento de Linguagem Natural.
+Author: Igor Caetano de Souza
+Project-URL: GitHub Repository, https://github.com/IgorCaetano/pre_processing_text_basic_tools
+Description-Content-Type: text/markdown
+Requires-Dist: regex
+Requires-Dist: unidecode
+
+
+# Ferramentas bÃ¡sicas para Processamento de Linguagem Natural
+
+Este pacote Ã© um kit de ferramentas (variadas funÃ§Ãµes) para execuÃ§Ã£o de processos bÃ¡sicos relacionados ao processamento de linguagem natural, muito utilizados para limpeza / prÃ©-processamento de texto antes de inserir os corpus de textos num modelo de treinamento.
+
+
+
+
+## Uso/Exemplos
+
+### Removendo caractÃ©res especiais
+
+```python
+from ferramentas_basicas_pln import removerCaracteresEspeciais
+
+texto = "Este Ã© um $ exemplo, de texto? com caractÃ©res# especiai.s. Quero limpÃ¡-lo!!!"
+
+texto_limpo = removerCaracteresEspeciais(texto)
+
+print(texto_limpo)
+```
+```python
+>>>Este Ã© um exemplo de texto com caractÃ©res especiais Quero limpÃ¡-lo
+```
+
+Ã‰ importante destacar que as funÃ§Ãµes foram pensadas para aplicaÃ§Ãµes para a lÃ­ngua portuguesa. Com isso, palavras com hÃ­fen, como sexta-feira, nÃ£o tem seu caracter especial "-" removido por padrÃ£o, mas pode-se escolher pela remoÃ§Ã£o dos hÃ­fens de tais palavras usando o parÃ¢metro *remover_hifen_de_palavras*, passando para *True*.
+
+```python
+texto_limpo = removerCaracteresEspeciais(texto,remover_hifen_de_palavras=True)
+
+print(texto_limpo)
+```
+```python
+>>>Este Ã© um exemplo de texto com caractÃ©res especiais Quero limpÃ¡lo
+```
+
+### FormataÃ§Ã£o e padronizaÃ§Ã£o total do texto
+
+```python
+from ferramentas_basicas_pln import formatacaoTotalDeTexto
+
+texto = "Este Ã© um $ exemplo, de texto? que/ que.ro# formatar e&*. padronizar!?"
+
+texto_formatado = formatacaoTotalDeTexto(texto=texto,
+                                         padronizar_texto_para_minuscula=True,
+                                         remover_caracteres_especiais=True,
+                                         remover_caracteres_mais_que_especiais=True,
+                                         remover_espacos_em_branco_em_excesso=True,
+                                         padronizar_com_unidecode=True)
+
+print(texto_formatado)
+```
+```python
+>>>este e um exemplo de texto que quero formatar e padronizar
+```
+
+### PadronizaÃ§Ã£o de elementos diversos
+
+```python
+from ferramentas_basicas_pln import formatacaoTotalDeTexto
+
+texto = '''Se eu tiver um texto com e-mail tipo esteehumemail@gmail.com ou noreply@hotmail.com ou atÃ© mesmo emaildeteste@yahoo.com.br.
+AlÃ©m disso terei tambÃ©m vÃ¡rios telefones do tipo +55 48 911223344 ou 4890011-2233 e por que nÃ£o um fixo do tipo 48 0011-2233?
+Pode-se ter tambÃ©m datas como 12/12/2024 ou 2023-06-12 em variados tipos tipo 1/2/24
+E se o texto tiver muito dinheiro envolvido? Falamos de R$ 200.000,00 ou R$200,00 ou atÃ© com 
+a formataÃ§Ã£o errada tipo R$   2500!
+AlÃ©m disso podemos simplesmente padronizar nÃºmeros como 123123 ou 24 ou 129381233 ou atÃ© mesmo 1.200.234!'''
+
+texto_formatado = formatacaoTotalDeTexto(texto=texto,                                        
+                                         padronizar_com_unidecode=True,
+                                         padronizar_datas=True,
+                                         padrao_data='_data_',
+                                         padronizar_dinheiros=True,
+                                         padrao_dinheiro='$',
+                                         padronizar_emails=True,
+                                         padrao_email='_email_',
+                                         padronizar_telefone_celular=True,
+                                         padrao_tel='_tel_',
+                                         padronizar_numeros=True,
+                                         padrao_numero='0',
+                                         padronizar_texto_para_minuscula=True)
+
+print(texto_formatado)
+```
+```python
+>>>se eu tiver um texto com e-mail tipo _email_ ou _email_ ou ate mesmo _email_
+alem disso terei tambem varios telefones do tipo _tel_ ou _tel_ e por que nao um fixo do tipo _tel_
+pode-se ter tambem datas como _data_ ou _data_ em variados tipos tipo _data_
+e se o texto tiver muito dinheiro envolvido falamos de $ ou $ ou ate com 
+a formatacao errada tipo $
+alem disso podemos simplesmente padronizar numeros como 0 ou 0 ou 0 ou ate mesmo 0
+```
