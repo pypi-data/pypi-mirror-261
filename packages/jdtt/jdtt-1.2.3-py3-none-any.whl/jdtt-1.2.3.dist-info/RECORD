@@ -1,0 +1,13 @@
+jdtt/__init__.py,sha256=C-D_WWrVkBDmQmApLcm0sWNh2CgIrwWfc8_sB5vvU-Q,22
+jdtt/__main__.py,sha256=qCfM9YNmqHuiQ9ClyUx64jqD8j6D2mBwZFHFTn3T-Ck,1547
+jdtt/exceptions.py,sha256=MfSiwuULDWJjmJsxRfjwu3ZwUirGVzJPiTPwQy2xKS8,41
+jdtt/schema.py,sha256=_8hrPzYfVbeU8Q6scFeb3j6tsjXcqU_YOkl60a3Psos,588
+jdtt/transcompilation/__init__.py,sha256=qag47lSoLpjkd8cTFOtgQakWoLpU1Y0925SXyEAlyZM,219
+jdtt/transcompilation/_schemas_to_language.py,sha256=6m7T3v7FoIr6fRTHSRXTF1sOjNNmDy5qifsMPMW-QFI,4771
+jdtt/transcompilation/_transcompilation.py,sha256=q84LqJqGUmolATD2gfqfJg70NYAlnbD0d0P8Rr09Fxg,4024
+jdtt-1.2.3.dist-info/LICENSE,sha256=_elTvrBkfvJXIZuOvxt-bD_Lt08RHzHptw-rXHpANu0,1065
+jdtt-1.2.3.dist-info/METADATA,sha256=btzvymlcoBuHYAQH6yP3K7lf6cTE5aAoidSpt2DeXcs,1432
+jdtt-1.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jdtt-1.2.3.dist-info/entry_points.txt,sha256=cbB84DY7ATT8dz2tYOp6qA5-1t62BtTuFaZCzKF8_58,44
+jdtt-1.2.3.dist-info/top_level.txt,sha256=Ukt2HTV-uWEeof8rJcqzoiX0IQT-ZUYr71iY35JMcf0,5
+jdtt-1.2.3.dist-info/RECORD,,
