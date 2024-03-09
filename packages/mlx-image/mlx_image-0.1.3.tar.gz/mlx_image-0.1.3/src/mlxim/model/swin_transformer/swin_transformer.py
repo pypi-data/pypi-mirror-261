@@ -1,0 +1,1 @@
+from torchvision.models import vision_transformer
