@@ -1,0 +1,29 @@
+[project]
+name = "donutdb"
+version = "0.1.0"
+
+authors = [
+  { name="Srinivas T B", email="tbsrinivas.x@gmail.com },
+]
+description = "a rad vector db that's ymmy and fast :")"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'hnswlib >= 0.7',
+  'numpy >= 1.21.6',
+  'openai >= 0.27',
+  'psycopg[c] >= 3.1.9',
+  'psycopg[pool] >= 3.1.7'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/notahuman-1-0/donut"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
