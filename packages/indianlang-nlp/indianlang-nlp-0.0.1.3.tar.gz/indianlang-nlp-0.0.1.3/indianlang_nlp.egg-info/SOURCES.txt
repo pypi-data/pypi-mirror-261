@@ -1,0 +1,9 @@
+README.md
+setup.py
+indianl_nlp/__init__.py
+indianl_nlp/generate_text.py
+indianlang_nlp.egg-info/PKG-INFO
+indianlang_nlp.egg-info/SOURCES.txt
+indianlang_nlp.egg-info/dependency_links.txt
+indianlang_nlp.egg-info/requires.txt
+indianlang_nlp.egg-info/top_level.txt
