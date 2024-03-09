@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+callout_transformer/__init__.py
+callout_transformer/__main__.py
+callout_transformer/cli.py
+callout_transformer.egg-info/PKG-INFO
+callout_transformer.egg-info/SOURCES.txt
+callout_transformer.egg-info/dependency_links.txt
+callout_transformer.egg-info/entry_points.txt
+callout_transformer.egg-info/requires.txt
+callout_transformer.egg-info/top_level.txt

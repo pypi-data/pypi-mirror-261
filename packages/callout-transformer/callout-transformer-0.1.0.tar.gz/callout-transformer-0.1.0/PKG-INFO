@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: callout-transformer
+Version: 0.1.0
+Summary: A simple markdown admonition transformer
+Author: xzqbear
+Author-email: xzqbear@outlook.com
+License: MIT License
+Project-URL: Source, https://github.com/xiong-ZH-zq/callout-transformer
+Project-URL: Documentation, https://github.com/xiong-ZH-zq/callout-transformer/blob/main/README.md
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: markdown
+
+# callout-transformer
+A simple markdown admonition transformer
