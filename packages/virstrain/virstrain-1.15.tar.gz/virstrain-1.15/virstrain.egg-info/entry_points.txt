@@ -1,0 +1,6 @@
+[console_scripts]
+virstrain = VirStrain.VirStrain:main
+virstrain_build = VirStrain.VirStrain_build:main
+virstrain_contig = VirStrain.VirStrain_contig:main
+virstrain_merge = VirStrain.VirStrain_contigDB_merge:main
+
