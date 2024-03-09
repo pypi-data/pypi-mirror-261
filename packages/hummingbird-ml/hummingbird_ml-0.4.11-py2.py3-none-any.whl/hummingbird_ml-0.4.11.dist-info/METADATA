@@ -1,0 +1,56 @@
+Metadata-Version: 2.0
+Name: hummingbird-ml
+Version: 0.4.11
+Home-page: https://github.com/microsoft/hummingbird
+Author: Microsoft Corporation
+Author-email: hummingbird-dev@microsoft.com
+License: MIT License
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Provides-Extra: tests
+Provides-Extra: sparkml
+Provides-Extra: onnx
+Provides-Extra: extra
+Provides-Extra: benchmark
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: onnxconverter-common (>=1.6.0)
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: torch (>1.7.0)
+Requires-Dist: psutil
+Requires-Dist: dill
+Requires-Dist: protobuf (>=3.20.2)
+Provides-Extra: benchmark
+Requires-Dist: onnxruntime (>=1.0.0); extra == 'benchmark'
+Requires-Dist: onnxmltools (>=1.6.0); extra == 'benchmark'
+Requires-Dist: skl2onnx (>=1.7.0); extra == 'benchmark'
+Requires-Dist: xgboost (<2.0.0,>=0.90); extra == 'benchmark'
+Requires-Dist: lightgbm (>=2.2); extra == 'benchmark'
+Requires-Dist: holidays; extra == 'benchmark'
+Requires-Dist: prophet; extra == 'benchmark'
+Requires-Dist: memory-profiler; extra == 'benchmark'
+Requires-Dist: psutil; extra == 'benchmark'
+Provides-Extra: extra
+Requires-Dist: xgboost (<2.0.0,>=0.90); extra == 'extra'
+Requires-Dist: lightgbm (>=2.2); extra == 'extra'
+Requires-Dist: holidays; extra == 'extra'
+Requires-Dist: prophet; extra == 'extra'
+Provides-Extra: onnx
+Requires-Dist: onnxruntime (>=1.0.0); extra == 'onnx'
+Requires-Dist: onnxmltools (>=1.6.0); extra == 'onnx'
+Requires-Dist: skl2onnx (>=1.7.0); extra == 'onnx'
+Provides-Extra: sparkml
+Requires-Dist: pyspark (>=2.4.4); extra == 'sparkml'
+Requires-Dist: pyarrow (>1.0); extra == 'sparkml'
+Provides-Extra: tests
+Requires-Dist: flake8; extra == 'tests'
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: coverage; extra == 'tests'
+Requires-Dist: pre-commit; extra == 'tests'
+
