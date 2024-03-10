@@ -1,0 +1,10 @@
+README.md
+setup.py
+tests/test_core.py
+weclimb_correlation_module/__init__.py
+weclimb_correlation_module/core.py
+weclimb_correlation_module.egg-info/PKG-INFO
+weclimb_correlation_module.egg-info/SOURCES.txt
+weclimb_correlation_module.egg-info/dependency_links.txt
+weclimb_correlation_module.egg-info/requires.txt
+weclimb_correlation_module.egg-info/top_level.txt
