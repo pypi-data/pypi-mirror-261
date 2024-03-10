@@ -1,0 +1,13 @@
+lotodice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lotodice/__main__.py,sha256=MrbkkRo2cwCA-S6LmxnbiGXsqIzo1xzLAtdH-QjeLR4,1931
+lotodice/browser.py,sha256=TLuYFp4I-Pj9RyaQoHF-XH3wlrACk1lBIzs6LujZKyQ,3276
+lotodice/jogo.py,sha256=UywTDX8DZ4-rKakVHD4YkUAWv86PYfVtvMJ92n9SfuU,1297
+lotodice/mega.py,sha256=QAe1PZyQn1L946inwg-fXwjR54zMzjIbJF7F5EUsHTY,730
+lotodice/quina.py,sha256=ZjsLjAfhjJrfiQgCHCDgg_i4mfg57hE2_6hiWGCVlrQ,887
+lotodice/resultados.py,sha256=H8IEQWBj3aJPY5pedCdvkwMx6EKLxDDxPEGist1nNz0,515
+lotodice-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lotodice-0.1.0.dist-info/METADATA,sha256=2ouUcD-qLjvd7apysDoCTx6Zm-fZETMrDPF55cFLOwg,2684
+lotodice-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+lotodice-0.1.0.dist-info/entry_points.txt,sha256=VXjR7ijsBTb99iR0iUuzUfVurXr_lqKSJ9UZcckW-MM,52
+lotodice-0.1.0.dist-info/top_level.txt,sha256=jDVJLLn7DlfHT8cCSK3LQIie1FgqWajR426wV6OEGdc,9
+lotodice-0.1.0.dist-info/RECORD,,
