@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sphinx-needs-data-explorer
+Version: 0.8.0
+Summary: sphinx-needs-data-explorer is a Sphinx extension to visualize Sphinx-Needs data
+Home-page: https://github.com/mi-parkes/sphinx-needs-data-explorer
+Author: Michael Parkes
+Author-email: mparkes@post.cz
+License: MIT License
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: Sphinx>=5.3.0
