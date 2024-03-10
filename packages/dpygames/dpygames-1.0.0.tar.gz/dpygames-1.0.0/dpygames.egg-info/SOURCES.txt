@@ -1,0 +1,5 @@
+dpygames.egg-info/PKG-INFO
+dpygames.egg-info/SOURCES.txt
+dpygames.egg-info/dependency_links.txt
+dpygames.egg-info/requires.txt
+dpygames.egg-info/top_level.txt
