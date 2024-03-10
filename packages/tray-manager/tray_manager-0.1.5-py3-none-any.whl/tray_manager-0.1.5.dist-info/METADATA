@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tray_manager
+Version: 0.1.5
+Summary: An "easier" version to use of the pystray librairy (https://github.com/moses-palmer/pystray by Moses Palmér)
+Home-page: https://github.com/Adastram1/tray_manager
+Author: Adastram
+Author-email: 
+License: GNU Lesser General Public License v3 (LGPLv3)
+Keywords: python,manager,system tray,pystray
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires: pystray
+Requires: pillow
+Requires: enum
+Requires: typing
+Requires: types
+Requires: threading
+Description-Content-Type: text/markdown
+License-File: COPYING
+License-File: COPYING.LGPL
+
+A package for adding a system tray icon, based on pystray (https://github.com/moses-palmer/pystray by Moses Palmér), this package is an "easier" version of pystray to manipulate
