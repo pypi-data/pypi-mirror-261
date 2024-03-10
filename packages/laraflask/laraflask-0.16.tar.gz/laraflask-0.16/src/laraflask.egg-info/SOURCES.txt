@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+src/laraflask/core.py
+src/laraflask.egg-info/PKG-INFO
+src/laraflask.egg-info/SOURCES.txt
+src/laraflask.egg-info/dependency_links.txt
+src/laraflask.egg-info/requires.txt
+src/laraflask.egg-info/top_level.txt
