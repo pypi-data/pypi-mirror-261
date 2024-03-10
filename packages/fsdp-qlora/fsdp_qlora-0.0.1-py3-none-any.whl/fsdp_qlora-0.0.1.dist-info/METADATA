@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fsdp-qlora
+Version: 0.0.1
+Summary: Package for training big freaking models on your small GPUs
+Author-email: Chris Brousseau <chrisbrousseau304+fsdpqlora@gmail.com>, Tanner Davis <cholojuanito.dev+fsdpqlora@gmail.com>
+Project-URL: Homepage, https://github.com/IMJONEZZ/FDSP_QLORA
+Keywords: qlora,fsdp
+Requires-Python: >=3.11.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch >2.2
+Requires-Dist: llama-recipes
+Requires-Dist: fastcore
+Requires-Dist: bitsandbytes >=0.43.0
+

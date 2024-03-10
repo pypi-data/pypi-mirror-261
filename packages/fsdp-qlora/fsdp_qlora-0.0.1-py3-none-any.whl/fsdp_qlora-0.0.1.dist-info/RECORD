@@ -1,0 +1,11 @@
+FSDP_QLORA_IMJONEZZ/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FSDP_QLORA_IMJONEZZ/dataloading.py,sha256=FDNp6i3jMR7HyPXrTiaqjYrsPe4n-UbMQDP4SUejHP8,12363
+FSDP_QLORA_IMJONEZZ/logging.py,sha256=nEArNKgRGJMtBqn-R9LfFoXCqIADYFlB3FXuW6LYvgA,975
+FSDP_QLORA_IMJONEZZ/model.py,sha256=Ss2lgg5vXpRUAoTwpb7PQpClC758yojIfmFlt7RS7Qo,1740
+FSDP_QLORA_IMJONEZZ/train.py,sha256=HLPsWHhV3Sk5Osz6sWIFv-WlBHe2qdPW_-ylmTPjXA8,9298
+FSDP_QLORA_IMJONEZZ/utils.py,sha256=k-TW2cw2TRlzuPdBEA0XainlR574DOoBDCysAxuUCVk,27754
+fsdp_qlora-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fsdp_qlora-0.0.1.dist-info/METADATA,sha256=eGu9rTb5QhXGxEK39tZiSLfz7EeY-9G4PZLw3i3OGgU,549
+fsdp_qlora-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fsdp_qlora-0.0.1.dist-info/top_level.txt,sha256=5U38qgOuAOfqbbt7nldvMqdinW2QeBGz9uyDnTDMh-w,20
+fsdp_qlora-0.0.1.dist-info/RECORD,,
