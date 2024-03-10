@@ -1,0 +1,11 @@
+xasp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xasp/commands.py,sha256=vOEXV0I-lmZYiYSLpPXoqEn-_hrbpu8Qvl7Ej8kwEvs,487
+xasp/contexts.py,sha256=vh9lrGc3qZpF3e_DdPy4xIX3mKIgLlN_Vr-VtRHDp6Y,6147
+xasp/entities.py,sha256=yTCpciJVPtin77nnQ97BW2KtGrOLLow8DPKRwVyb9yw,40286
+xasp/main.py,sha256=lVUXV9-V113gGRRR7eovEQ70TUAHX93ZliTXXfGOjAA,24057
+xasp/queries.py,sha256=Ld3iquXMQ_yPqdIaDKC-XbQHE_oHJOWDHzTzx1LuF7E,3874
+xasp/transformers.py,sha256=C35CgzlI8WL4hET43DelUJ-Zv0elYenC0m2qVTAlX1k,9817
+xasp/utils.py,sha256=9ThXMmYFf48X_vVhCbQPuzZzaTzwWppeeBI3eL1MsNc,384
+xasp-0.8.3.dist-info/METADATA,sha256=gRXMydr-5tuu5XuOvGoop3frXH9mT7WRHvY35WG0NZY,374
+xasp-0.8.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+xasp-0.8.3.dist-info/RECORD,,
