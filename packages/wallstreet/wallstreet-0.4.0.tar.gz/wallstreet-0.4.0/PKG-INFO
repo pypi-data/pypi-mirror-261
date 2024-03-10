@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wallstreet
+Version: 0.4.0
+Summary: Stock and Option tools
+License: MIT
+Author: Mike Dallas
+Author-email: mcdallas@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.31,<3.0)
+Requires-Dist: scipy (>=1.12,<2.0)
+Requires-Dist: yfinance (>=0.2.37,<0.3.0)
