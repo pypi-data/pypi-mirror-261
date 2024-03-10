@@ -1,0 +1,6 @@
+README.md
+main.py
+gpt35.egg-info/PKG-INFO
+gpt35.egg-info/SOURCES.txt
+gpt35.egg-info/dependency_links.txt
+gpt35.egg-info/top_level.txt
