@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+httpcat_t1.egg-info/PKG-INFO
+httpcat_t1.egg-info/SOURCES.txt
+httpcat_t1.egg-info/dependency_links.txt
+httpcat_t1.egg-info/requires.txt
+httpcat_t1.egg-info/top_level.txt
