@@ -1,0 +1,2 @@
+[console_scripts]
+commitai = commitai.cli:main
