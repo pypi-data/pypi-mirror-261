@@ -1,0 +1,5 @@
+[console_scripts]
+ask = askchat.ask:main
+askchat = askchat.askchat:main
+chatenv = askchat.chatenv:cli
+
