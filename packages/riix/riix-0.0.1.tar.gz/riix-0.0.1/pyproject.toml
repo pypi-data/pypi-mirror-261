@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riix"
+version = "0.0.1"
+description = "vectorized implementations of online rating systems"
+readme = "README.md"
+authors = [
+    {name="Clayton Thorrez", email="claytonthorrez@gmail.com"},
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "pdoc"
+]
+
+[tool.ruff]
+line-length = 120
+ignore-init-module-imports = true
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
