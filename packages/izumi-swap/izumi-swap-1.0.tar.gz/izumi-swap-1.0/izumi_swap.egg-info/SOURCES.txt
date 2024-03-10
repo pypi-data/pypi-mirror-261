@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+izumi_swap.egg-info/PKG-INFO
+izumi_swap.egg-info/SOURCES.txt
+izumi_swap.egg-info/dependency_links.txt
+izumi_swap.egg-info/requires.txt
+izumi_swap.egg-info/top_level.txt
