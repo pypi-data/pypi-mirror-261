@@ -1,0 +1,76 @@
+# TechBeamers Code Analyzer
+
+The TechBeamers Code Analyzer is a Python tool for analyzing Python code using PEP 8, Flake8, and MyPy. It generates comprehensive reports on code style, potential issues, and type checking.
+
+## Features
+
+This code analyzer combines the power of the latest and top three code analysis tools. It performs a three-level analysis on the provided file, aiming to identify potential issues within your code.
+
+- PEP 8 analysis for ensuring Python code adheres to the style guide.
+- Flake8 analysis for checking code against coding standards and identifying potential issues.
+- MyPy analysis for performing static type checking and highlighting type-related errors.
+
+## Installation
+
+You can install the TechBeamers Code Analyzer using pip:
+
+```bash
+pip install techbeamers
+```
+
+## Usage
+
+To analyze a Python file, run the following command:
+
+```bash
+techbeamers-analyzer path/to/your/file.py
+```
+The above command will, by default, detect the programming language based on the file extension and provide you with a brief statistics summary of the specified file. To perform code analysis, ensure to provide any or a combination of the command-line options, as shown in the next section.
+
+### Options
+
+- `--report-format`: Format for saving detailed reports, such as html (default) or txt..
+- `--analyze-pep8`: Perform PEP 8 analysis using pycodestyle.
+- `--analyze-flake8`: Perform Flake8 analysis.
+- `--analyze-mypy`: Perform MyPy analysis.
+- `--disable-all`: Disable all analyses.
+- `--help`: Display available options.
+
+### Examples
+
+```bash
+# Analyze a Python file for PEP8 and generate an HTML report
+techbeamers-analyzer path/to/your/file.py --analyze-pep8 --report-format html
+
+# Analyze a Python file using Flake8 and generate a text report
+techbeamers-analyzer path/to/your/file.py --analyze-flake8 --report-format txt
+
+# Analyze a Python file using mypy and generate default html report
+techbeamers-analyzer path/to/your/file.py --analyze-mypy
+
+# Analyze a Python file with both PEP8 and Flake8 but without mypy
+techbeamers-analyzer path/to/your/file.py --analyze-pep8 --analyze-flake8
+
+# Run all three analysis on your Python file
+techbeamers-analyzer path/to/your/file.py --analyze-pep8 --analyze-flake8 --analyze-mypy
+```
+
+## Reports
+
+Detailed reports are generated in both HTML and TXT formats, providing insights into code quality and potential improvements. The tool saves the reports in the same folder as the target file specified for analysis.
+
+## Contributions
+
+Contributions are welcome! Feel free to open issues, submit pull requests, or provide feedback.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.txt).
+
+## About TechBeamers
+
+TechBeamers is a platform providing tutorials, guides, and tools for developers. Visit [techbeamers.com](https://techbeamers.com) for more information.
+
+## Contact
+
+For inquiries, please contact us at [magarwal@techbeamers.com](mailto:magarwal@techbeamers.com).
