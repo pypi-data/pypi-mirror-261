@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: impyrial-dub
+Version: 0.1.1
+Summary: A package for converting imperial lengths and weights.
+Author: ahmet yasin tat
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
