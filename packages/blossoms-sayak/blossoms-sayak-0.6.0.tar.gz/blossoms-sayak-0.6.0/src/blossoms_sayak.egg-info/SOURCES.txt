@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/blossoms_sayak.egg-info/PKG-INFO
+src/blossoms_sayak.egg-info/SOURCES.txt
+src/blossoms_sayak.egg-info/dependency_links.txt
+src/blossoms_sayak.egg-info/top_level.txt
