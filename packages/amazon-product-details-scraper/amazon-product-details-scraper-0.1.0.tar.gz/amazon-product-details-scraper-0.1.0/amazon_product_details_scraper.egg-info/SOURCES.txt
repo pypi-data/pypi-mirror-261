@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+amazon_product_details_scraper.egg-info/PKG-INFO
+amazon_product_details_scraper.egg-info/SOURCES.txt
+amazon_product_details_scraper.egg-info/dependency_links.txt
+amazon_product_details_scraper.egg-info/entry_points.txt
+amazon_product_details_scraper.egg-info/requires.txt
+amazon_product_details_scraper.egg-info/top_level.txt
+src/__init__.py
+src/config.py
+src/scraper.py
+src/utils.py
