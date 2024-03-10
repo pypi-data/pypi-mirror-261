@@ -1,0 +1,8 @@
+xsdata[cli]>=24.3
+
+[test]
+codecov
+lxml
+pre-commit
+pytest
+pytest-cov

@@ -1,0 +1,2 @@
+[xsdata.plugins.cli]
+xsdata_plantuml = xsdata_plantuml.hook
