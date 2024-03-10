@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+cally/__init__.py
+cally/cli.py
+cally.egg-info/PKG-INFO
+cally.egg-info/SOURCES.txt
+cally.egg-info/dependency_links.txt
+cally.egg-info/entry_points.txt
+cally.egg-info/requires.txt
+cally.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+click
+
+[development]
+black
+isort
+mypy
+ruff
+types-PyYAML
