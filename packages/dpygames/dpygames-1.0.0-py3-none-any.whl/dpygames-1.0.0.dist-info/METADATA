@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: dpygames
+Version: 1.0.0
+Requires-Dist: discord >=2.3.2
+
