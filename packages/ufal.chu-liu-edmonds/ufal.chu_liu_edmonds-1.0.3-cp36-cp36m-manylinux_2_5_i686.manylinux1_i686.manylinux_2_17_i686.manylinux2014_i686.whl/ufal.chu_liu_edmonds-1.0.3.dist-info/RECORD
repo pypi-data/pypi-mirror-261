@@ -1,0 +1,8 @@
+ufal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ufal/chu_liu_edmonds/__init__.py,sha256=Pg04njwCYq0aaV3hf6BjAvofcijaOin52kY0faG66gs,32
+ufal/chu_liu_edmonds/_chu_liu_edmonds.cpython-36m-i386-linux-gnu.so,sha256=T3eoC71U93slkDx5onzZYR9Cx_lprl60nwDqmGGTX6o,245636
+ufal.chu_liu_edmonds-1.0.3.dist-info/RECORD,,
+ufal.chu_liu_edmonds-1.0.3.dist-info/WHEEL,sha256=fi4cVfpey3xcdlS41G0BGLav86L8eWRKj9oEclxTRG0,213
+ufal.chu_liu_edmonds-1.0.3.dist-info/METADATA,sha256=odoZF5igjoDy5tgXleOh5KldPOZ3XKtncfJGaHomGCI,1827
+ufal.chu_liu_edmonds-1.0.3.dist-info/top_level.txt,sha256=GsZv5R3Wk08xmNJ09BWsp_VwhvJGSJVWD5KZ1DzgktM,5
+ufal.chu_liu_edmonds-1.0.3.dist-info/LICENSE,sha256=1i8GWDCqNznMAxFWuWkIBcey6BG0oXjItKzYcl1WHJQ,35142
