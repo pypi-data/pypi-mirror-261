@@ -1,0 +1,14 @@
+lexwolf/__init__.py,sha256=B0At3YJLIINsAP7k8q7V45Bjyw9fUJ4wYge4dg81y3E,6584
+lexwolf/bitBoard.py,sha256=-3RNodBPREYgeDkUo2jgR325cgEwH1bvoo96RWrlGuQ,2714
+lexwolf/core.py,sha256=1yXMIRCvsntx9iaw7oLYsNAwBFXMttd_2HKHnNWwZEE,2993
+lexwolf/genetic.py,sha256=I9aBo8fN4bx1OyRGOj7i2DLW1qYE_j0qk3nqluRCrjw,15853
+lexwolf/interfpsql.py,sha256=V9Jtb97ZeOBoQX6iMJE5z2fq0t73sFoGcI_cRN3oRcg,459
+lexwolf/minmax.py,sha256=b2tSZJj-KkUqUN5rsxipRYJI_UvpT1ZR2o27eBV5620,7902
+lexwolf/structEl.py,sha256=XaZ2jWEcAamOGBG4mwdr9qBG0QILenMui-XPnpvSK2E,2881
+lexwolf/tests.py,sha256=ifQj-S94oaTjZ9WUGt-qUKv3saEKWKvr4vCwRRWtjqU,3497
+lexwolf/weights.py,sha256=digQBs7u51lmaRKtuXNgCp_ZH_sGkJ1Er7uPQMvcMiw,1086
+lexwolf-0.1.1.dist-info/LICENSE,sha256=-ddlcphqPH8CzIb3hXUKfL74WsZwq4rSxPkLmPyoMlI,1098
+lexwolf-0.1.1.dist-info/METADATA,sha256=wdh_iPIiFjqL12XFzqNa4J256dafOfBBAjoSlO8LyCo,785
+lexwolf-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+lexwolf-0.1.1.dist-info/top_level.txt,sha256=fFle0nzjPZO4gAJgyTllSGPyUnV7e3pcFtd5dKYjGMM,8
+lexwolf-0.1.1.dist-info/RECORD,,

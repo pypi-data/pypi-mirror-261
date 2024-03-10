@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lexwolf
+Version: 0.1.1
+Summary: A simulation of the RiSC-16 (Ridiculously Simple Computer - 16 bit) processor.
+Home-page: 
+Author: Alexandre Le Mercier
+Author-email: alexandre.le.mercier@ulb.be
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chess
+
+# lexwolf2
