@@ -1,0 +1,17 @@
+# Forward Declarations
+- mantis_lib
+- mantis_exe
+
+- mantis_lib:
+  - src:
+    - 'MANTIS-EPS/src/mantis.c'
+    - 'MANTIS-EPS/src/root.c'
+    - 'MANTIS-EPS/src/util.c'
+  - inc:
+    - 'MANTIS-EPS/inc/**/*.h'
+
+- mantis_exe:
+  - src:
+    - 'MANTIS-EPS/src/main.c'
+  - dep:
+    - mantis_lib
