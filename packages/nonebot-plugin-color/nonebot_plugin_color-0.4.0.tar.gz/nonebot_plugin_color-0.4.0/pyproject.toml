@@ -1,0 +1,52 @@
+[project]
+name = "nonebot-plugin-color"
+dynamic = []
+description = "A specified color image generator for Nonebot2"
+authors = [
+    { name = "monsterxcn", email = "monsterxcn@gmail.com" },
+    { name = "student_2333", email = "lgc2333@126.com" },
+]
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "nonebot2>=2.2.0",
+    "nonebot-plugin-alconna>=0.40.0rc1",
+    "pil-utils>=0.1.8",
+]
+readme = "README.md"
+keywords = [
+    "nonebot",
+    "nonebot2",
+    "color",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+version = "0.4.0"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/monsterxcn/nonebot-plugin-color"
+documentation = "https://github.com/monsterxcn/nonebot-plugin-color#readme"
+"Bug Tracker" = "https://github.com/monsterxcn/nonebot-plugin-color/issues"
+
+[project.optional-dependencies]
+pyd2 = [
+    "pydantic-extra-types>=2.6.0",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "nonebot_plugin_color/__init__.py"
+
+[tool.pdm.build]
+includes = []
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
