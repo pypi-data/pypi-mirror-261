@@ -1,0 +1,9 @@
+README.md
+hi_tea.py
+setup.py
+teaxyzzz18.egg-info/PKG-INFO
+teaxyzzz18.egg-info/SOURCES.txt
+teaxyzzz18.egg-info/dependency_links.txt
+teaxyzzz18.egg-info/entry_points.txt
+teaxyzzz18.egg-info/requires.txt
+teaxyzzz18.egg-info/top_level.txt
