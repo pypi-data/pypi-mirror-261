@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: snk-cli
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/unknown/snk-cli#readme
+Project-URL: Issues, https://github.com/unknown/snk-cli/issues
+Project-URL: Source, https://github.com/unknown/snk-cli
+Author-email: Wytamma Wirth <wytamma.wirth@me.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: art~=5.9
+Requires-Dist: datrie>=0.8.2
+Requires-Dist: gitpython~=3.1
+Requires-Dist: makefun~=1.15
+Requires-Dist: pulp<2.8
+Requires-Dist: snakemake<9,>=7
+Requires-Dist: typer[all]~=0.9.0
+Description-Content-Type: text/markdown
+
+# snk-cli
