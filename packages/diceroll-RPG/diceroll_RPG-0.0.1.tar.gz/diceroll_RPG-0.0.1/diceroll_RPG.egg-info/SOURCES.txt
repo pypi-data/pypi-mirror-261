@@ -1,0 +1,8 @@
+README.md
+setup.py
+diceroll_RPG/__init__.py
+diceroll_RPG/rolling.py
+diceroll_RPG.egg-info/PKG-INFO
+diceroll_RPG.egg-info/SOURCES.txt
+diceroll_RPG.egg-info/dependency_links.txt
+diceroll_RPG.egg-info/top_level.txt
