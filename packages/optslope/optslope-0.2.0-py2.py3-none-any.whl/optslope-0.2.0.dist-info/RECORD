@@ -1,0 +1,11 @@
+optslope/__init__.py,sha256=BrE2GqOdLVq2z6ql2sK2TgOVGl2Sdhgbk99DAe8qECA,1387
+optslope/models.py,sha256=tJDFaMx7qL1Txw3fZZN3gp0yvR_PpGteVmoig7mdKtI,10109
+optslope/plotting.py,sha256=oMfM8_wVBmKG8any1OQ3tQ6-Ozkvq8tAP8amfWHjLNk,5042
+optslope/slope.py,sha256=iKo5lDYfZVyXTCpjvujZ1JvrvLq_xroq1VaRr2OdNYw,4665
+optslope/util.py,sha256=6yzHrUCLqO6TfnKTY9EodlBcqwNulU7ZAyKTrI-zVb8,7926
+optslope-0.2.0.dist-info/LICENSE,sha256=wbmfQNflyxy8trlKJ5hQ62z4u_zJ3rEFNh4wYVnDFJQ,1076
+optslope-0.2.0.dist-info/METADATA,sha256=a9Kpu-FG2SnG-q2t3VSFP9eOlh99D8p3yEhnsgSopcM,4395
+optslope-0.2.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+optslope-0.2.0.dist-info/top_level.txt,sha256=P8lVxsjCWCIltzY-DKGhnFAqPsH5eNAvk5TUxwjMIHc,9
+optslope-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+optslope-0.2.0.dist-info/RECORD,,
