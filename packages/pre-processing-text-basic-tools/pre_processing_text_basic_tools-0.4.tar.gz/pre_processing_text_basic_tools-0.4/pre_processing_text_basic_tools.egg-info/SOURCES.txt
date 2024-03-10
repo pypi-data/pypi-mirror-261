@@ -1,0 +1,9 @@
+README.md
+setup.py
+pre_processing_text_basic_tools/__init__.py
+pre_processing_text_basic_tools/main.py
+pre_processing_text_basic_tools.egg-info/PKG-INFO
+pre_processing_text_basic_tools.egg-info/SOURCES.txt
+pre_processing_text_basic_tools.egg-info/dependency_links.txt
+pre_processing_text_basic_tools.egg-info/requires.txt
+pre_processing_text_basic_tools.egg-info/top_level.txt
