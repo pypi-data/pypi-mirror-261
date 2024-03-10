@@ -1,0 +1,31 @@
+[project]
+name = "nonebot-plugin-rimofun"
+dynamic = []
+description = "Use RimoChan's stuff to do some interesting things"
+authors = [
+    { name = "student_2333", email = "lgc2333@126.com" },
+]
+dependencies = [
+    "nonebot2>=2.2.0",
+    "nonebot-plugin-alconna>=0.38.2",
+    "pypinyin>=0.48.0",
+    "yinglish>=1.0.1",
+    "unvcode>=1.0.0",
+]
+requires-python = ">=3.9,<4.0"
+readme = "README.md"
+version = "0.0.0"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/lgc-NB2Dev/nonebot-plugin-rimofun"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
