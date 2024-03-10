@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Whatsapp_business_api_Dipo_Cyborg
+Version: 0.0.2
+Summary: A currently minimalistic wrapper for Facebooks whatsapp business Api
+Project-URL: Homepage, https://github.com/Olamidipupo-favour/whatsapp-business-api
+Project-URL: Issues, https://github.com/Olamidipupo-favour/whatsapp-business-api/issues
+Author-email: Agboola Olamidipupo Favour <agbooladipo624@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# whatsapp-business-api
+Whatsapp business official API
