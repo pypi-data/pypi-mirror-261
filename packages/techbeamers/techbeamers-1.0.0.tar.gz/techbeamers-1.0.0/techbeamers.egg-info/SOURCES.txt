@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+techbeamers/__init__.py
+techbeamers/analyzer.py
+techbeamers/code_analyzer.py
+techbeamers.egg-info/PKG-INFO
+techbeamers.egg-info/SOURCES.txt
+techbeamers.egg-info/dependency_links.txt
+techbeamers.egg-info/entry_points.txt
+techbeamers.egg-info/requires.txt
+techbeamers.egg-info/top_level.txt
