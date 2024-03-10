@@ -1,0 +1,15 @@
+README.md
+setup.py
+check_swear/__init__.py
+check_swear.egg-info/PKG-INFO
+check_swear.egg-info/SOURCES.txt
+check_swear.egg-info/dependency_links.txt
+check_swear.egg-info/requires.txt
+check_swear.egg-info/top_level.txt
+check_swear/data/__init__.py
+check_swear/model_prep/__init__.py
+check_swear/model_prep/tokenizer.py
+check_swear/model_prep/words_prep.py
+check_swear/swear_core/__init__.py
+check_swear/swear_core/core.py
+check_swear/swear_core/utils.py
