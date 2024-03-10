@@ -1,0 +1,2 @@
+[console_scripts]
+hpscancli = hpscancli.main:main

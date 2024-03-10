@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+hpscancli/__init__.py
+hpscancli/main.py
+hpscancli/schema.py
+hpscancli.egg-info/PKG-INFO
+hpscancli.egg-info/SOURCES.txt
+hpscancli.egg-info/dependency_links.txt
+hpscancli.egg-info/entry_points.txt
+hpscancli.egg-info/requires.txt
+hpscancli.egg-info/top_level.txt
