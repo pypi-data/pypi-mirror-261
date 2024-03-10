@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+py_lief.egg-info/PKG-INFO
+py_lief.egg-info/SOURCES.txt
+py_lief.egg-info/dependency_links.txt
+py_lief.egg-info/requires.txt
+py_lief.egg-info/top_level.txt
+tests/__init__.py
+tests/test_simple.py
