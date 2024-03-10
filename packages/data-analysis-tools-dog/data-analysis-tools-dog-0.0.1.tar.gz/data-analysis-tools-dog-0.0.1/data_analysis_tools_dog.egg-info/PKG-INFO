@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: data-analysis-tools-dog
+Version: 0.0.1
+Summary: A text util package
+Home-page: https://github.com/a731062834/data-analysis-tools-dog
+Author: Alpha
+Author-email: mailwb3@gmail.com
+Project-URL: Source, https://github.com/a731062834/data-analysis-tools-dog
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.24.0
+Requires-Dist: jieba>=0.42.1
+Requires-Dist: setuptools>=42
+Requires-Dist: data-analysis-tools-fdx>=0.0.1
+Requires-Dist: data-analysis-tools-jms-diy>=0.0.1
+Requires-Dist: data-analysis-tools-alpha>=0.0.1
+Requires-Dist: data-analysis-tools-bet>=0.0.1
+Requires-Dist: data-analysis-tools-cat>=0.0.1
+
+# data-analysis-tools-dog
+
+使用结巴分词，实现对文本的处理。
