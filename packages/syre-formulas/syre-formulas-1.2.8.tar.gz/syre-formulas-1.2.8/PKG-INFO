@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: syre-formulas
+Version: 1.2.8
+Summary: Parse and compile Excel formulas and workbooks in python code.
+Home-page: https://github.com/bicarlsen/formulas
+Download-URL: https://github.com/bicarlsen/formulas/tarball/v1.2.8
+Author: Brian Carlsen
+Author-email: carlsen.bri@gmail.com
+License: EUPL 1.1+
+Project-URL: Documentation, http://formulas.readthedocs.io
+Project-URL: Issue tracker, https://github.com/bicarlsen/formulas/issues
+Project-URL: Donate, https://donorbox.org/formulas
+Keywords: python,utility,library,excel,formulas,processing,calculation,dependencies,resolution,scientific,engineering,dispatch,compiling
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: regex
+Requires-Dist: schedula>=1.4.1
+Requires-Dist: numpy>=1.15
+Requires-Dist: python-dateutil
+Requires-Dist: numpy-financial
+Provides-Extra: excel
+Requires-Dist: openpyxl; extra == "excel"
+Requires-Dist: dictdiffer; extra == "excel"
+Provides-Extra: plot
+Requires-Dist: graphviz; extra == "plot"
+Requires-Dist: regex; extra == "plot"
+Requires-Dist: flask; extra == "plot"
+Requires-Dist: Pygments; extra == "plot"
+Requires-Dist: jinja2; extra == "plot"
+Requires-Dist: docutils; extra == "plot"
+Provides-Extra: all
+Requires-Dist: Pygments; extra == "all"
+Requires-Dist: dictdiffer; extra == "all"
+Requires-Dist: docutils; extra == "all"
+Requires-Dist: flask; extra == "all"
+Requires-Dist: graphviz; extra == "all"
+Requires-Dist: jinja2; extra == "all"
+Requires-Dist: openpyxl; extra == "all"
+Requires-Dist: regex; extra == "all"
+Provides-Extra: dev
+Requires-Dist: Pygments; extra == "dev"
+Requires-Dist: dictdiffer; extra == "dev"
+Requires-Dist: docutils; extra == "dev"
+Requires-Dist: flask; extra == "dev"
+Requires-Dist: graphviz; extra == "dev"
+Requires-Dist: jinja2; extra == "dev"
+Requires-Dist: openpyxl; extra == "dev"
+Requires-Dist: regex; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: sphinx>=7.2; extra == "dev"
+Requires-Dist: gitchangelog; extra == "dev"
+Requires-Dist: mako; extra == "dev"
+Requires-Dist: sphinx_rtd_theme; extra == "dev"
+Requires-Dist: setuptools>=36.0.1; extra == "dev"
+Requires-Dist: sphinxcontrib-restbuilder; extra == "dev"
+Requires-Dist: coveralls; extra == "dev"
+Requires-Dist: ddt; extra == "dev"
+Requires-Dist: twine; extra == "dev"
