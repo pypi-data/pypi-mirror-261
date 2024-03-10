@@ -1,0 +1,10 @@
+nonebot_plugin_fuckyou-0.2.0.post1.dist-info/METADATA,sha256=pTjiTLCYMea7mkbiuk1CA8TVyqRuMTaku061GbSm4y8,5431
+nonebot_plugin_fuckyou-0.2.0.post1.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+nonebot_plugin_fuckyou-0.2.0.post1.dist-info/licenses/LICENSE,sha256=FgRk_OWZ2NhWR9HRhUC9NhF2knljmKer-ew0H1pbhSQ,1069
+nonebot_plugin_fuckyou/__init__.py,sha256=2ADs8RrZaZUF-S8zSfsSoxpoBZz3YU5Qdkaddvqs-nQ,482
+nonebot_plugin_fuckyou/__main__.py,sha256=Wmp97A1MtSdpZdIJ-CB3ZZUjyph0pDwjH6irXsycEjA,1885
+nonebot_plugin_fuckyou/config.py,sha256=OaV0zUDnKPcX7aE7ZPOCEJi2n9jEe0aOn1plL7YoC2Q,414
+nonebot_plugin_fuckyou/const.py,sha256=TuQ5VppyMERStX4R2_gaspAmkTH9nCUKbEoXuNlsp6U,625
+nonebot_plugin_fuckyou/resource/builtin_gentle.json,sha256=d3_ZaE9VdHL23P0Cn7RhwEkT-krm4V5_ZyzL_zrNh8Q,51907
+nonebot_plugin_fuckyou/resource/builtin_violent.json,sha256=SI3F5eGdN7Pt3f18DP6RLmO-mdV-A06nQBGldVyWTLI,165954
+nonebot_plugin_fuckyou-0.2.0.post1.dist-info/RECORD,,
