@@ -1,0 +1,8 @@
+kafka_schema_registry_admin/__init__.py,sha256=vUHM1pnMbv3o3LYhef5FAYQBysIEb3wN1V9ng_ySM94,331
+kafka_schema_registry_admin/client_wrapper/__init__.py,sha256=ANjNnP5KxgVw7GIgcNfIr6SMmIO6IksNOFm1iaahF7s,2482
+kafka_schema_registry_admin/client_wrapper/errors.py,sha256=xjQpxTa148JOom71HFId13_0ghZ_QGZQKx3W-M-hYUY,4224
+kafka_schema_registry_admin/kafka_schema_registry_admin.py,sha256=_kf5H-gmt39tY4OgayHigy-PecsVSqEc54E0dF_Op7I,11387
+kafka_schema_registry_admin-0.3.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+kafka_schema_registry_admin-0.3.0.dist-info/METADATA,sha256=vuYn1jN9FBhVVjbxhbo-2UMQkZXpGrwePizNMfRyt8g,1518
+kafka_schema_registry_admin-0.3.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+kafka_schema_registry_admin-0.3.0.dist-info/RECORD,,
