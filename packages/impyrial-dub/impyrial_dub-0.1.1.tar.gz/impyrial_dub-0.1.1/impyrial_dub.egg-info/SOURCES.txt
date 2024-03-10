@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+impyrial_dub.egg-info/PKG-INFO
+impyrial_dub.egg-info/SOURCES.txt
+impyrial_dub.egg-info/dependency_links.txt
+impyrial_dub.egg-info/requires.txt
+impyrial_dub.egg-info/top_level.txt
