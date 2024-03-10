@@ -1,0 +1,10 @@
+md_dead_link_check/__main__.py,sha256=Ts4VKEsBn7Kh-DpVtXDYGPgCfIAWYrF2pQHj07xhXhQ,2269
+md_dead_link_check/config.py,sha256=udZzkDVMWFly_08GK-GHP7ZYpWL1g0xek9akpi-y9PA,1464
+md_dead_link_check/helpers.py,sha256=IDEAa6zwJWFonekveNsWp35f1HkMqXu_y1m2OERN9Xk,2484
+md_dead_link_check/link_checker.py,sha256=ztlDnHl5Sg4UQ-t9SDARJ0hDkrgxHIoRpcG2rQHlwNU,6456
+md_dead_link_check/preprocess.py,sha256=E1AU3Ok-49p_EYltLuAcIAPG-BlT_1w5GA-aJzHLupk,4344
+md_dead_link_check-0.5.dist-info/METADATA,sha256=w3_dj1GxzmawSl4LzQtlHEka6KNcpGDh5S3WWBjMKLw,6782
+md_dead_link_check-0.5.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+md_dead_link_check-0.5.dist-info/entry_points.txt,sha256=LFg1viCmFRyLjeobyJRqE7VQqZMIyNMSVM75uV2grDM,72
+md_dead_link_check-0.5.dist-info/licenses/LICENSE,sha256=JuQQ5cI3S-BNq_NxcQzhzXR6FdPGt-DT4yTPLqnhZ7Y,11351
+md_dead_link_check-0.5.dist-info/RECORD,,
