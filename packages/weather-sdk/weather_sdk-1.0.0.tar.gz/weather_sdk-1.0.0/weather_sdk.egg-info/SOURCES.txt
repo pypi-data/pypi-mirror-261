@@ -1,0 +1,6 @@
+README.md
+setup.py
+weather_sdk.egg-info/PKG-INFO
+weather_sdk.egg-info/SOURCES.txt
+weather_sdk.egg-info/dependency_links.txt
+weather_sdk.egg-info/top_level.txt
