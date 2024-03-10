@@ -1,0 +1,8 @@
+patch_conv/__init__.py,sha256=m91zWSI0wbmy_AA6cgE-VzZ1XRfWAJM2cdZdPS_ToDc,65
+patch_conv/__version__.py,sha256=t5gmHGIE8L0On_e0KbUtfEPYJ-G8Zh39ZEJ_GzFK2LA,27
+patch_conv/module.py,sha256=aIWWCmOSX3CHRBsAhZzbWwoJ5dv_G0Dy-KH4a0_zbqc,1705
+patch_conv/utils.py,sha256=Ow_9jWvxckMyAk4MNiOWplA7Q-f8JUdU4EWhane_aXQ,839
+patch_conv-0.0.0b0.dist-info/METADATA,sha256=zmpo7H1_B8JfWe8w37E-7luyc8RiqUX8zY-8brr7F_o,3402
+patch_conv-0.0.0b0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+patch_conv-0.0.0b0.dist-info/top_level.txt,sha256=RlfKh8HQz1RlXNeDKeIyX1MP9uM9OkwM3jbhx2Z8Tq0,11
+patch_conv-0.0.0b0.dist-info/RECORD,,
