@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+rc-pyrosetta/__init__.py
+rc_pyrosetta.egg-info/PKG-INFO
+rc_pyrosetta.egg-info/SOURCES.txt
+rc_pyrosetta.egg-info/dependency_links.txt
+rc_pyrosetta.egg-info/not-zip-safe
+rc_pyrosetta.egg-info/top_level.txt
