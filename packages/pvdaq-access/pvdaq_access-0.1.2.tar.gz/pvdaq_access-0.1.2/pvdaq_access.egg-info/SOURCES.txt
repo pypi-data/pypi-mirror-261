@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+pvdaq_access/__init__.py
+pvdaq_access/_version.py
+pvdaq_access/main.py
+pvdaq_access.egg-info/PKG-INFO
+pvdaq_access.egg-info/SOURCES.txt
+pvdaq_access.egg-info/dependency_links.txt
+pvdaq_access.egg-info/requires.txt
+pvdaq_access.egg-info/top_level.txt
