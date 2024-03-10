@@ -1,0 +1,6 @@
+pyproject.toml
+src/hunch/__init__.py
+src/hunch.egg-info/PKG-INFO
+src/hunch.egg-info/SOURCES.txt
+src/hunch.egg-info/dependency_links.txt
+src/hunch.egg-info/top_level.txt
