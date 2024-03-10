@@ -1,0 +1,13 @@
+co2_france/__init__.py,sha256=JPFv565B9_o_a4LSG9aSoIq5cvH09_X5gX2DW6mOZkE,137
+co2_france/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+co2_france/cli/cli.py,sha256=DNHmHgo5VTufvv9S9GmiU7i_O0DOvQc47njsXZ6-Z4A,3289
+co2_france/const.py,sha256=Wayn2Y5zoD3Btoe91WQXsT8DzEYg-YwRUgZdPCIvVAU,1185
+co2_france/data/coa_categories.csv,sha256=XujZ4OI_-OFPWIXGb8QvcTvMBX_74Vk7MBtEDRkgj_E,254
+co2_france/data/coa_condition.csv,sha256=OKFO0uNIa-ziRdCuEcNYh1fJvJtoEt1sF257bH-f9-Q,392
+co2_france/data/mapping_coa_carbon.csv,sha256=lDvdzXGjHMziBsWxScnmKZBNCQXEqbHAt4LyFuFnFEM,5921
+co2_france/data/readme.md,sha256=r132WzLYsKSDUERdDJTT88O0IZTMwzLbUuLxxKX1C1Q,415
+co2_france/formatter.py,sha256=JpJAC7jTL_YGIzBg-IjPIsy3dedOtsnxGcXX0ZMqeHU,8121
+co2_france/france.py,sha256=Cxp1UfCS3S0MUG32y_AH6SH9cJliXyyvQlNQVGvROtk,3727
+co2_france-0.4.0.dist-info/METADATA,sha256=6r2NXSUsDtf8Q1UaxAnau8BfW0FwfBsEDargewNbLTw,569
+co2_france-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+co2_france-0.4.0.dist-info/RECORD,,
