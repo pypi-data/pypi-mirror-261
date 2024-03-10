@@ -1,0 +1,2 @@
+[console_scripts]
+checksum_checker = checksum_checker:checksum_checker_gui
