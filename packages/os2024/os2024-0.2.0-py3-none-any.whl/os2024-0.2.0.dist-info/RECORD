@@ -1,0 +1,10 @@
+os2024/__cli__.py,sha256=6RITjiZCugGrSXs8yBOhsl2STkSAdqVbZY3fnYeWncU,1712
+os2024/__init__.py,sha256=Hqd22D5EO-FfidX-IgktP3jsgPOjzxWB4ncv0TlsA6g,338
+os2024/_version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+os2024/conf/about/os2024.yaml,sha256=X8HNKqEkmgrfmKOX0FIMWm3hrwJuvdsl8bYVcMOfI2I,172
+os2024/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+os2024-0.2.0.dist-info/LICENSE,sha256=nl8bPGELnC2lwxO_gdV3p9Gs7Ghr2wOE7e-m3w-QzZQ,18656
+os2024-0.2.0.dist-info/METADATA,sha256=Sb4shXubNc4pYl1HYXRySvS2Gdfd6N5FLX8rMY0oaZs,3816
+os2024-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+os2024-0.2.0.dist-info/entry_points.txt,sha256=z5XUkPFfbuqxsxkRm8cb2LrQ04rU3_JZzPk_erwgSwg,46
+os2024-0.2.0.dist-info/RECORD,,
