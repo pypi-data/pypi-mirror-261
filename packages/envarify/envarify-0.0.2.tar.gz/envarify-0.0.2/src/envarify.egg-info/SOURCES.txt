@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/envarify/__init__.py
+src/envarify/cast.py
+src/envarify/envarify.py
+src/envarify/errors.py
+src/envarify/version.py
+src/envarify.egg-info/PKG-INFO
+src/envarify.egg-info/SOURCES.txt
+src/envarify.egg-info/dependency_links.txt
+src/envarify.egg-info/requires.txt
+src/envarify.egg-info/top_level.txt
+tests/test_envarify.py
