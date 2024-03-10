@@ -1,0 +1,54 @@
+#. extracted from 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-09 23:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.12.2\n"
+
+#: .remove_short_silences.name
+msgid "Remove Short Silences"
+msgstr ""
+
+#: .remove_short_silences.description
+msgid "Fill short rests"
+msgstr ""
+
+#: .remove_short_silences.process[0].title
+msgid "Max length to be processed (exclusive)"
+msgstr ""
+
+#: .remove_short_silences.process[0].choices[0].text
+msgid "Zero length note"
+msgstr ""
+
+#: .remove_short_silences.process[0].choices[1].text
+msgid "1/8 note"
+msgstr ""
+
+#: .remove_short_silences.process[0].choices[2].text
+msgid "1/16 note"
+msgstr ""
+
+#: .remove_short_silences.process[0].choices[3].text
+msgid "1/32 note"
+msgstr ""
+
+#: .remove_short_silences.process[0].choices[4].text
+msgid "1/64 note"
+msgstr ""
+
+#: .remove_short_silences.process[0].choices[5].text
+msgid "1/128 note"
+msgstr ""
+
+#: .remove_short_silences.process[0].description
+msgid "Extend note to fill the short silences between it and its next note"
+msgstr ""

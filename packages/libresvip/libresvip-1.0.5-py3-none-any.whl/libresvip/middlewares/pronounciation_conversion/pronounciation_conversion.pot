@@ -1,0 +1,50 @@
+#. extracted from 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-09 23:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.12.2\n"
+
+#: .pronounciation_conversion.name
+msgid "Pronounciation Conversion"
+msgstr ""
+
+#: .pronounciation_conversion.description
+msgid "For Chinese and Japanese Lyrics"
+msgstr ""
+
+#: .pronounciation_conversion.process[0].title
+msgid "Pronounciation conversion mode"
+msgstr ""
+
+#: .pronounciation_conversion.process[0].choices[0].text
+msgid "None"
+msgstr ""
+
+#: .pronounciation_conversion.process[0].choices[1].text
+msgid "Hanzi to Pinyin"
+msgstr ""
+
+#: .pronounciation_conversion.process[0].choices[2].text
+msgid "To Romaji"
+msgstr ""
+
+#: .pronounciation_conversion.process[0].choices[3].text
+msgid "To Hiragana"
+msgstr ""
+
+#: .pronounciation_conversion.process[0].choices[4].text
+msgid "To Katakana"
+msgstr ""
+
+#: .pronounciation_conversion.process[0].description
+msgid "Convert lyrics to the specified pronounciation format"
+msgstr ""

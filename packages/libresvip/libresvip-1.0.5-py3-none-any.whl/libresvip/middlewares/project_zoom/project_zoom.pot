@@ -1,0 +1,69 @@
+#. extracted from 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-09 23:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.12.2\n"
+
+#: .project_zoom.name
+msgid "Project Zoom"
+msgstr ""
+
+#: .project_zoom.description
+msgid "Zoom in/out project"
+msgstr ""
+
+#: .project_zoom.process[0].title
+msgid "Zoom factor"
+msgstr ""
+
+#: .project_zoom.process[0].choices[0].text
+msgid "None"
+msgstr ""
+
+#: .project_zoom.process[0].choices[1].text
+msgid "2"
+msgstr ""
+
+#: .project_zoom.process[0].choices[2].text
+msgid "1/2"
+msgstr ""
+
+#: .project_zoom.process[0].choices[3].text
+msgid "5/3"
+msgstr ""
+
+#: .project_zoom.process[0].choices[4].text
+msgid "3/2"
+msgstr ""
+
+#: .project_zoom.process[0].choices[5].text
+msgid "6/5"
+msgstr ""
+
+#: .project_zoom.process[0].choices[6].text
+msgid "4/5"
+msgstr ""
+
+#: .project_zoom.process[0].choices[7].text
+msgid "3/5"
+msgstr ""
+
+#: .project_zoom.process[0].choices[8].text
+msgid "3/4"
+msgstr ""
+
+#: .project_zoom.process[0].description
+msgid ""
+"Change Bpm and notes in parallel so that the actual singing speed is kept. "
+"For example, with factor 2, 60 bpm becomes 120 bpm and all notes become "
+"twice the length"
+msgstr ""
