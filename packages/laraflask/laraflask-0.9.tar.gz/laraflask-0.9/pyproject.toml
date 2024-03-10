@@ -1,0 +1,30 @@
+[build-system]
+# Minimum required build system information
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Optional metadata about the project
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203, W503"
