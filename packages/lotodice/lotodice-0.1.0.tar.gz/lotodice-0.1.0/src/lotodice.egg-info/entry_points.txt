@@ -1,0 +1,2 @@
+[console_scripts]
+lotodice = lotodice.__main__:main
