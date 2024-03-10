@@ -1,0 +1,13 @@
+README.md
+setup.py
+create_pypi_cli/__init__.py
+create_pypi_cli/main.py
+create_pypi_cli.egg-info/PKG-INFO
+create_pypi_cli.egg-info/SOURCES.txt
+create_pypi_cli.egg-info/dependency_links.txt
+create_pypi_cli.egg-info/entry_points.txt
+create_pypi_cli.egg-info/requires.txt
+create_pypi_cli.egg-info/top_level.txt
+create_pypi_cli/templates/README.md
+create_pypi_cli/templates/__init__.py
+create_pypi_cli/templates/requirements.txt
