@@ -1,0 +1,9 @@
+ezkernel/__init__.py,sha256=Xnl-zbfvtFdLCdwY5ELu6k010xsYAeLLcCX4pgdVWh4,41
+ezkernel/__main__.py,sha256=y_gHXseSU989iljdByeQs64sZWopzP61ItbBo3u6rDs,46
+ezkernel/cli.py,sha256=tSLBvcGhnI4ZVpIxinoXo_3cYmJSuLk-310dy1M59iA,1506
+ezkernel/kernel_manager.py,sha256=6UbAz3wDKwDMoYWudWxbeeYe1nhR8i3ttPy2fecKGQM,1809
+ezkernel-0.1.0.dist-info/LICENSE,sha256=SisGljIS8o7AcEazYJ2F97O_1WnceF6_jgTyeoHekOw,1070
+ezkernel-0.1.0.dist-info/METADATA,sha256=6SBGBuOUI1aDbOCVM_E7hra8kHcfjKqVLXV6ejKk_70,1967
+ezkernel-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ezkernel-0.1.0.dist-info/entry_points.txt,sha256=_i6PWSIc7_VIoM0TXUyNy2yMLgAWv1oKlPgShULsJXw,45
+ezkernel-0.1.0.dist-info/RECORD,,
