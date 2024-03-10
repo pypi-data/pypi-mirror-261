@@ -1,0 +1,12 @@
+main.py,sha256=DOrUvG9_OWW7-GdnEEmG4lJsf69OaPUMDxYg70gCN-Q,2770
+create_pypi_cli-0.1.12.data/data/.gitignore,sha256=MJDqSkbofEfHlur0e7QUTZktjBiZ5WV6RLnSmWV_LXM,240
+create_pypi_cli-0.1.12.data/data/.isort.cfg,sha256=R0ImPvSZUGXRPXxsU3wOtsL9YqQVzxDgDgnIbXL6eh8,177
+create_pypi_cli-0.1.12.data/data/.pre-commit-config.yaml,sha256=8Aryt7w0fuAkPQ99_fEM0Hnea8DSFzb4Jh2kyZTRvec,798
+create_pypi_cli-0.1.12.data/data/README.md,sha256=fFgW682nMRRDzBdW3aIHLOe83PatqqsfOUIKEQxy3jM,2604
+create_pypi_cli-0.1.12.data/data/requirements.txt,sha256=anD6Um8jlyxosrl5nSib0L8--ro0-IXgUiuHVpROuyw,23
+create_pypi_cli-0.1.12.data/data/.github/workflows/main.yml,sha256=AHfm32BvD7JMSk1t69TAQMKJoYzZmDqCOR73yE5tzzk,2670
+create_pypi_cli-0.1.12.dist-info/METADATA,sha256=6BbO9Yc_cQUTUPZVuKmAH7CtiGDam65ROOK4h8wyPs8,3320
+create_pypi_cli-0.1.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+create_pypi_cli-0.1.12.dist-info/entry_points.txt,sha256=NgUE7HseRy3Q5x22QEMts6BE6ifC2KOaz-DRMeDHoco,47
+create_pypi_cli-0.1.12.dist-info/top_level.txt,sha256=ZAMgPdWghn6xTRBO6Kc3ML1y3ZrZLnjZlqbboKXc_AE,5
+create_pypi_cli-0.1.12.dist-info/RECORD,,
