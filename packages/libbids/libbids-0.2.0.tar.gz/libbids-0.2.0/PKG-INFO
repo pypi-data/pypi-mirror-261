@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: libbids
+Version: 0.2.0
+Summary: Library for generating data using the Brain Imaging Data Structure
+Author-email: Kevin Davis <kevin.davis@miami.edu>
+Requires-Dist: pandas
+Requires-Dist: pybids
+Requires-Dist: pyedflib

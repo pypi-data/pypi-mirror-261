@@ -1,0 +1,103 @@
+# This is a basic workflow to help you get started with Actions
+
+name: build-and-test
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ develop ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  # workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    name: Prep, Build, and Test
+    # The type of runner that the job will run on
+    runs-on: ${{matrix.os}}
+  
+    # A strategy creates a build matrix for your jobs
+    strategy:      
+      # Set of different configurations of the virtual environment
+      matrix:
+        os:
+          - ubuntu-latest
+          # - windows-latest
+          #- macos-latest
+
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: "3.10"
+          auto-activate-base: true
+          activate-environment: test
+
+      # Binary Dependencies
+      - name: Common Dependencies
+        run: |
+          python3 -m pip install -r requirements.txt
+      - name: Windows Dependencies
+        if: runner.os == 'Windows'
+        run: |
+          conda install -y -c conda-forge qt6-main
+          conda install -y jsoncpp
+      - name: MacOS Dependencies
+        if: runner.os == 'macOS'
+        run: |
+          chmod +x ./scripts/osx/install-dependencies.sh
+          ./scripts/osx/install-dependencies.sh
+      - name: Linux Dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo chmod +x ./scripts/linux/install-dependencies.sh
+          sudo ./scripts/linux/install-dependencies.sh
+
+      # Python Build & Install
+      - name: Python Build and Install
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install --verbose .
+
+      - name: Windows Install
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          cp _skbuild/**/cmake-install/libbids/clibbids* ./libbids/
+          cp _skbuild/**/cmake-build/jsoncpp-prefix/src/json-install/bin/jsoncpp* ./libbids/
+          ls ./libbids/
+        
+      - name: nix install
+        if: runner.os != 'Windows'
+        run: |
+          cp _skbuild/**/cmake-install/libbids/clibbids* ./libbids/
+      # - name: Windows Build
+      # if: runner.os == 'Windows'
+      # run: ./scripts/windows/build.bat
+      #- name: Nix Build
+      # if: runner.os != 'Windows'
+      # run: |
+      # chmod +x ./scripts/osx/build.sh
+      # ./scripts/osx/build.sh
+      
+      # Test
+      - name: Python Test
+        run: |
+          python3 -m pytest ./tests
+      #- name: Windows Test
+      # if: runner.os == 'Windows'
+      # run: ./build/tests/Release/helloTest.exe
+      #- name: Nix Test
+      # if: runner.os != 'Windows'
+      # run: ./build/tests/helloTest
