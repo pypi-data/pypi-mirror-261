@@ -1,0 +1,6 @@
+class GitError(Exception):
+    ...
+
+
+class GitCloneError(GitError):
+    ...
