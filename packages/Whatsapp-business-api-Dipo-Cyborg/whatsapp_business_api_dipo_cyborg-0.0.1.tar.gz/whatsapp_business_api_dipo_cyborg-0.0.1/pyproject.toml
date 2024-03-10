@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "Whatsapp_business_api_Dipo_Cyborg"
+version = "0.0.1"
+authors = [
+  { name="Agboola Olamidipupo Favour", email="agbooladipo624@gmail.com" },
+]
+description = "A currently minimalistic wrapper for Facebooks whatsapp business Api"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Olamidipupo-favour/whatsapp-business-api"
+Issues = "https://github.com/Olamidipupo-favour/whatsapp-business-api/issues"
