@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: impyrial-dub
+Version: 0.1.0
+Summary: A package for converting imperial lengths and weights.
+Author: ahmet yasin tat
+License-File: LICENSE
