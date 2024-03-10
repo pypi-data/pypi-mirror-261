@@ -1,0 +1,13 @@
+interpn-0.2.0.dist-info/METADATA,sha256=-8-bvnZW76micMaUrmBjSNYysGX8_usVz0VAaQa6REc,3904
+interpn-0.2.0.dist-info/WHEEL,sha256=ghwFGx42r3P5MdLaH7S85e4s_372OOmfuw86yvkiSfU,91
+interpn-0.2.0.dist-info/license_files/LICENSE-APACHE,sha256=vnG2Zpa4ndnPKQhtz4GzjlNyndoyC6HGzYQxqZiloiA,566
+interpn-0.2.0.dist-info/license_files/LICENSE-MIT,sha256=mf-F-coGAubJOGNtI2tVkuXNlOn2vNyYPkl0Rnt9BqM,1080
+interpn/multicubic_regular.py,sha256=N3-MriCntUX14Ss2PhIEDBSRKBYEZJO5CkWPboZZgmI,8311
+interpn/multilinear_rectilinear.py,sha256=-bqX60U7UKgwFJSjaBFTgfBSkPCz4Q9_19OyZxdlo4o,7082
+interpn/multilinear_regular.py,sha256=jOsmLAingzmzFh6m5PduST9me6__gjIwCo2ODtCaiOM,7414
+interpn/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+interpn/raw.py,sha256=PD347MR8fiqMZEhWD0tG8MuIBy0H6haR3QgMOpTXU3E,886
+interpn/serialization.py,sha256=COnpGVuxstxmKkSMQTvFQ58q1TKYYdMttJKzg9iErOk,2236
+interpn/__init__.py,sha256=CVxxoq0fKC6jtjgdKcrylyAQA5-fBjr9ng-LXd5_usw,549
+interpn/_interpn.cp310-win32.pyd,sha256=Vq7tkTcO9o_6VsVWNO_IKg-1SdP6DZdq-TfXt6Y8sNc,285696
+interpn-0.2.0.dist-info/RECORD,,
