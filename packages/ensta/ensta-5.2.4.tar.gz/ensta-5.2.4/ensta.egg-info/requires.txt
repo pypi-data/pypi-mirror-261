@@ -1,0 +1,7 @@
+requests
+moviepy
+pillow
+cryptography
+pyotp
+ntplib
+pyquery
