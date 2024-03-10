@@ -1,0 +1,9 @@
+pathdantic/__init__.py,sha256=QqcYeAV1R4akATxt4AazIYI4JBYNhLEQGgNXltv_a4o,77
+pathdantic/base.py,sha256=1g4vFkNXUJczCjfOjsOj-9gZW_IdyVUnzFnqs83Jvqc,343
+pathdantic/folder.py,sha256=cx8xuAl3WAzB-7rek6Eq_RDuZD7uhA7qlpkQHO-dNvM,973
+pathdantic/root.py,sha256=ceOd0mpkV4Pja6QpV6qm-x8MDD9bc5a1-dmMxIp0TIk,947
+pathdantic-0.0.1.dist-info/LICENSE,sha256=iHcNH4HWsDuIADzyzBbsJgrAaAUmUq5b7pJR39NzdRk,1075
+pathdantic-0.0.1.dist-info/METADATA,sha256=lgkOQ-uxs7XW50_MXStDD7OYl7voTtt4t8qL1Q4BIUQ,446
+pathdantic-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pathdantic-0.0.1.dist-info/top_level.txt,sha256=VO2gLi9yMxE_vw7PzJH9LECNuroV5Z_ejEsGbBBMCTo,11
+pathdantic-0.0.1.dist-info/RECORD,,
