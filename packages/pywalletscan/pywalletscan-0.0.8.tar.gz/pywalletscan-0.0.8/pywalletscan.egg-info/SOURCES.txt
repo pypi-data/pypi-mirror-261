@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pywalletscan/__init__.py
+pywalletscan/api.py
+pywalletscan.egg-info/PKG-INFO
+pywalletscan.egg-info/SOURCES.txt
+pywalletscan.egg-info/dependency_links.txt
+pywalletscan.egg-info/top_level.txt
