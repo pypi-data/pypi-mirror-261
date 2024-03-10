@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: mrilabs
+Version: 0.1.0
+Summary: Software Framework for Task Automation and Scheduling
+License: MIT
+Author: dennis
+Author-email: denngohis@gmail.com
+Requires-Python: >=3.10,<=3.11.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyQt6 (>=6.6.1,<7.0.0)
+Requires-Dist: PyQt6-Charts (>=6.6.0,<7.0.0)
+Requires-Dist: PyVISA (>=1.14.1,<2.0.0)
+Requires-Dist: PyVISA-py (>=0.7.1,<0.8.0)
+Requires-Dist: apscheduler (>=3.10.4,<4.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: colorlog (>=6.8.2,<7.0.0)
+Requires-Dist: filelock (>=3.13.1,<4.0.0)
+Requires-Dist: numpy (>=1.26.3,<2.0.0)
+Requires-Dist: pydantic (>=2.6.3,<3.0.0)
+Requires-Dist: pyqtdarktheme (>=2.1.0,<3.0.0)
+Requires-Dist: pyqtgraph (>=0.13.3,<0.14.0)
+Requires-Dist: python-dotenv[cli] (>=1.0.1,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: yapf (>=0.40.2,<0.41.0)
+Description-Content-Type: text/markdown
+
+# mrilabs
+
+## Dependencies
+
+To setup the environment for env variables used in the app
+
+```bash
+python etc/env.py
+```
+
+To setup dependencies
+```
+poetry install --no-root
+poetry shell
+python -m main --hardware-mock
+```
+
+## Running MRILabs
+
+Running the app
+```
+poetry run python -m main
+```
+
+Running the app for hardware-mock
+```
+poetry run python -m main --hardware-mock
+```
+
+
+The generated .env file will look as such:
+```
+WORKINGDIR='C:/source/mrilabs'
+CONFIG='C:/source/mrilabs/etc'
+DATA='C:/source/mrilabs/data'
+PYTHONPATH='C:\source\mrilabs\frontend\src;C:\source\mrilabs\src'
+ASSETS='C:/source/mrilabs/frontend/assets'
+LOGS='C:/source/mrilabs/logs'
+```
