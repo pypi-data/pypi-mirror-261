@@ -1,0 +1,2 @@
+[console_scripts]
+add-numbers = addnumbersapp.app:main
