@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: ovos-audio
+Version: 0.0.2a38
+Summary: ovos-core audio daemon client
+Home-page: https://github.com/OpenVoiceOS/ovos-audio
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+Requires-Dist: ovos-utils >=0.0.38,~=0.0
+Requires-Dist: ovos-bus-client >=0.0.8,~=0.0
+Requires-Dist: ovos-config >=0.0.13a7,~=0.0
+Requires-Dist: ovos-plugin-manager >=0.0.25,~=0.0
+Provides-Extra: extras
+Requires-Dist: ovos-tts-plugin-server ; extra == 'extras'
+
+# ovos-audio
+
+The "mouth" of the OVOS assistant!
+
+Handles TTS generation and sounds playback
+
+## Install
+
+`pip install ovos-audio[extras]` to install this package and the default
+plugins.
+
+Without `extras`, you will also need to manually install,
+and possibly configure TTS and Audio Backend modules as described below.
+
+# Configuration
+
+under mycroft.conf
+
+```javascript
+{
+
+  // Text to Speech parameters
+  // Override: REMOTE
+  "tts": {
+    "pulse_duck": false,
+    "module": "ovos-tts-plugin-mimic3-server",
+    "fallback_module": "ovos-tts-plugin-mimic",
+    "ovos-tts-plugin-mimic": {
+        "voice": "ap"
+    },
+    "ovos-tts-plugin-mimic3-server": {
+        "voice": "en_UK/apope_low"
+    }
+  },
+
+  // File locations of sounds to play for system events
+  "sounds": {
+    "start_listening": "snd/start_listening.wav",
+    "end_listening": "snd/end_listening.wav",
+    "acknowledge": "snd/acknowledge.mp3",
+    "error": "snd/error.mp3"
+  },
+
+  // Mechanism used to play WAV audio files
+  // Override: SYSTEM
+  "play_wav_cmdline": "paplay %1 --stream-name=mycroft-voice",
+
+  // Mechanism used to play MP3 audio files
+  // Override: SYSTEM
+  "play_mp3_cmdline": "mpg123 %1",
+
+  // Mechanism used to play OGG audio files
+  // Override: SYSTEM
+  "play_ogg_cmdline": "ogg123 -q %1"
+}
+```
+
