@@ -1,0 +1,13 @@
+version: v1
+name: "DinOCR"
+description: "A GUI Agent which uses Grounding Dino and OCR"
+image: "us-central1-docker.pkg.dev/agentsea-dev/guisurfer/dinocr:latest"
+supported_runtimes:
+  - "gke"
+env_opts:
+  - name: "OPENAI_API_KEY",
+    description: "OpenAI API Key"
+    required: True
+    secret: True
+owner_id: "patrickbarkerco@gmail.com"
+public: True
