@@ -1,0 +1,9 @@
+boardwalk
+devstuff
+dist
+docs
+language_videos
+mediainfos
+tests
+upsies
+venv
