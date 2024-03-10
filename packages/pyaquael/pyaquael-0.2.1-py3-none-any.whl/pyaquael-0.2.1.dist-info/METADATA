@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyaquael
+Version: 0.2.1
+Summary: A python library for the Aquael Leddy link unofficial API
+Home-page: https://github.com/choffah/pyaquael
+Author: Christopher Haglund
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: docopt
+
+# pyaquael
+A python library for the Aquael Leddy link unofficial API
+
+## Usage
+See [example.py](example.py) for examples on using library through import.
+
+This library can also be used from the command line:
+
+```
+Usage:
+  aquael poweron IPADDRESS RBW
+  aquael poweroff IPADDRESS
+  aquael (-h | --help)
+  aquael --version
+```
