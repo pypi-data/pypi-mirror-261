@@ -1,0 +1,5 @@
+build/
+dist/
+src/grobidmonkey.egg-info/
+src/grobidmonkey/__pycache__/
+tests/__pycache__/
