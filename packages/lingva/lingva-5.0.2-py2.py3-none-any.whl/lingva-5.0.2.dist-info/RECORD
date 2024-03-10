@@ -1,0 +1,15 @@
+lingva/__init__.py,sha256=Udbex_7cNEYWMliVY8nfoKP4WZztlBUBj1bywSi-gLw,49
+lingva/extract.py,sha256=I9JNzL6Nc5ykpknwnyZuqlnfbtWoJiK2G7MPSZ7xviA,13333
+lingva/polint.py,sha256=V-YkRuznlYkC-Lx8sC4BQuxrCTGdvhpdcLGJpLDWmgk,1944
+lingva/extractors/__init__.py,sha256=kgDClqJvPlmwfSFRXApv8SA_ZWYsNRUNfCGmlpmOZTM,4877
+lingva/extractors/babel.py,sha256=z593zjKWw4nG0m7YmKnL3nzVqkYWLvJ_tl_KwLPcKTY,2408
+lingva/extractors/compat.py,sha256=Do5T0Q4c2ORQJoYz2xaiskjvAVYdPQr7P_Xsh6rSCDM,610
+lingva/extractors/python.py,sha256=JC7uz9uPqXmJoB-52KqM9yDvpqRY_AiacSJAOf7h4FM,14562
+lingva/extractors/xml.py,sha256=EvvxU0hUp7aV345hs7gIePqhoT0tXaj0jYVIdiRKuQ4,16675
+lingva/extractors/zcml.py,sha256=y-06-ffRqxljiLNTaXHiEA-Ncp3JsKeEUL8VIt4hU2w,2072
+lingva-5.0.2.dist-info/LICENSE,sha256=KePAvLc_PhTU0KFMjOnBxauyBJ75B43wRnKo9siLIzk,1546
+lingva-5.0.2.dist-info/METADATA,sha256=1q94Sy9q7mpqZvH7qzs7TaJvKqSaCv-7esRcicpCV-0,14774
+lingva-5.0.2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+lingva-5.0.2.dist-info/entry_points.txt,sha256=KvZkWHz5UKcLyqugjmZDVPOD67_m6Hg73rwopsdFM1s,337
+lingva-5.0.2.dist-info/top_level.txt,sha256=tZ2vUdViNN-Qwa8EPgTIyL0mZAjXWiEAawQaFTzHihA,7
+lingva-5.0.2.dist-info/RECORD,,
