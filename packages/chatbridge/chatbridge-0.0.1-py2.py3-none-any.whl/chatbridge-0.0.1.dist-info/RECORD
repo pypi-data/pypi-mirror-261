@@ -1,0 +1,10 @@
+chatbridge/__init__.py,sha256=5R2iQ0t3vzVUatbtP1z2YV_uILKuoFbadr47lkOpb0U,122
+chatbridge/chatbridge.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+chatbridge/cli.py,sha256=a_F2V1raJZ1x0akhqJdPZM8qq5gMX6TJbZNgDdpR2Rg,408
+chatbridge-0.0.1.dist-info/AUTHORS.rst,sha256=0W7PNjaDChxMupFYGcDrK8KaDAoqeBl155cT9oXSAvI,150
+chatbridge-0.0.1.dist-info/LICENSE,sha256=CkB69apcMFeJLrmucDVzuZCBnmbgltvEwG7vfBzXcCY,1066
+chatbridge-0.0.1.dist-info/METADATA,sha256=gq8HnYCOWDWg_tOmMrG2N7lNC3pzTltpMAbaiTtkG2k,917
+chatbridge-0.0.1.dist-info/WHEEL,sha256=unfA4MOaH0icIyIA5oH6E2sn2Hq5zKtLlHsWapZGwes,110
+chatbridge-0.0.1.dist-info/entry_points.txt,sha256=_6qyOVfjOBxAESmfXbOXIoBv9x-EVlCbpjn4osEBoLk,51
+chatbridge-0.0.1.dist-info/top_level.txt,sha256=udKe7KYmj_ECTz1udR1yf5fnPWdzsq0MI5Eb0_O5-sw,11
+chatbridge-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+chatbridge = chatbridge.cli:main

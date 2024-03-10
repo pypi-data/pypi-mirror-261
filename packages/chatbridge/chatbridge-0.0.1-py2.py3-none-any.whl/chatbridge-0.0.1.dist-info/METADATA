@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: chatbridge
+Version: 0.0.1
+Summary: ChatBridge: A unified gateway for conversational AI integration.
+Home-page: https://github.com/rexwzh/chatbridge
+Author: RexWang
+Author-email: 1073853456@qq.com
+License: MIT license
+Keywords: chatbridge
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click (>=7.0)
+
+# ChatBridge
+ChatBridge: A unified gateway for conversational AI integration.
+
+
+=======
+History
+=======
+
+0.0.1 (2024-03-10)
+------------------
+
+* First release on PyPI.
