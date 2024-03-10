@@ -1,0 +1,7 @@
+WaterMoleculeClassifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+WaterMoleculeClassifier/predictor.py,sha256=JNAreEDWJ4yDz9uZDsY_FvHnE29KPoXLWe-cOHYTEFA,495
+WaterMoleculeClassifier/models/rf_trained_model.joblib,sha256=zJL2R0IHyoW_xnX6Fl81r8ghsylrcGR3mEFFEr_CYmA,26360
+WaterMoleculeClassifier-1.0.dist-info/METADATA,sha256=2gSfyrDXbOuyDEcdhhM5hI5dNwJVABBw3BG8G0jiszg,218
+WaterMoleculeClassifier-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+WaterMoleculeClassifier-1.0.dist-info/top_level.txt,sha256=hj4rNPGm10F9YrcIQEkv7fzk1teFMO49j5sK80n5tAc,24
+WaterMoleculeClassifier-1.0.dist-info/RECORD,,
