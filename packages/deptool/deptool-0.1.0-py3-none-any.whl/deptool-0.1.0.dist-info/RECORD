@@ -1,0 +1,10 @@
+deptool/__init__.py,sha256=JcIgvMXZ9MKIY_saHXycjLarzxpAenluJYcIvwKMx2U,560
+deptool/__main__.py,sha256=AqGHSjtkwENRL3C8oCY_mBOybFnKr_1AweZaciovBPQ,595
+deptool/cmd_install.py,sha256=s_zSXIz_LkHofhFKnIYTD_UwtGpBodwu5WUE4vQr6DU,2721
+deptool/cmd_registries.py,sha256=t-SEQuT8TFtpfWNcS262WVdmpAdG2iMUEMcLixedvog,3303
+deptool-0.1.0.dist-info/LICENSE.md,sha256=-mX-LHqu2A4HPDAzh5IsISifqAF6cknjXNF7rqutbIk,1072
+deptool-0.1.0.dist-info/METADATA,sha256=q3qcmwJ5xqqDdM2Z6gvWni2dr-_mZyfX0OlvtkXCeWM,1571
+deptool-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+deptool-0.1.0.dist-info/entry_points.txt,sha256=rmsKGA3HgtAfY7sipShKqlktVreuJrSJeNfJVBIEAa4,50
+deptool-0.1.0.dist-info/top_level.txt,sha256=ZbmvwLc9KmOa3sysm2ClRpEzC5I4X3HAE_DROFOTvMU,8
+deptool-0.1.0.dist-info/RECORD,,
