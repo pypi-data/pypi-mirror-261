@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: chatforward
+Version: 0.0.1
+Summary: ChatForward: A FastAPI-based tool for seamless integration and forwarding of chat service APIs.
+Home-page: https://github.com/rexwzh/chatforward
+Author: Rex Wang
+Author-email: 1073853456@qq.com
+License: MIT license
+Keywords: chatforward
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+# ChatForward
+ChatForward: A FastAPI-based tool for seamless integration and forwarding of chat service APIs.
+
+
+=======
+History
+=======
+
+0.0.1 (2024-03-10)
+------------------
+
+* First release on PyPI.
