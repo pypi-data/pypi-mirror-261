@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rainz
+Version: 0.1.0
+Summary: 
+Author: Somraj Saha
+Author-email: 31373860+Jarmos-san@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Experimental Project
+

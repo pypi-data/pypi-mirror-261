@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rainz"
+version = "0.1.0"
+description = ""
+authors = ["Somraj Saha <31373860+Jarmos-san@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.linting.dependencies]
+mypy = "^1.9.0"
+black = "^24.2.0"
+ruff = "^0.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
