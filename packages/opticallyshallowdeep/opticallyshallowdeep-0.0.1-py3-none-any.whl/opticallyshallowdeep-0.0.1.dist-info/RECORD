@@ -1,0 +1,10 @@
+opticallyshallowdeep/__init__.py,sha256=YVp1aHxw2NipAZcqII8eJ1wi8fpL6UnGMEqfD7E1J6w,41
+opticallyshallowdeep/make_multiband_image.py,sha256=YtF77vhSoSAiFrYZbHaemObQNJjPu_H2ktSKdyupnhk,2343
+opticallyshallowdeep/run.py,sha256=M5bF4rdqdht1H1HOh7A0JXAESVP3bb5w1eLresaFq4A,837
+opticallyshallowdeep/models/SR.h5,sha256=0JYx4FnBdedI0P2nM84w1BiqyygKl8g8dFU7ZItb1VY,212192
+opticallyshallowdeep/models/TOA.h5,sha256=dJ8J4GLXZng6pJGGfPrWo_E2jwVl2XE1sqQvhkJZkvk,137376
+opticallyshallowdeep-0.0.1.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+opticallyshallowdeep-0.0.1.dist-info/METADATA,sha256=dRTUQaP5SxjX1wR9heDfhVH48JasQySDlJjCfroX0jI,1095
+opticallyshallowdeep-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+opticallyshallowdeep-0.0.1.dist-info/top_level.txt,sha256=QGZtL8_SKijLHwOLSpMeicvAiAvG1XiU9I3mxkfXMgs,21
+opticallyshallowdeep-0.0.1.dist-info/RECORD,,
