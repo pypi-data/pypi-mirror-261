@@ -1,0 +1,7 @@
+lxml
+gembox
+pathlib
+aiofiles
+playwright
+beautifulsoup4
+fake-useragent
