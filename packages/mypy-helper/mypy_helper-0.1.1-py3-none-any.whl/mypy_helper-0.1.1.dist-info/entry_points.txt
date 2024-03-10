@@ -1,0 +1,3 @@
+[console_scripts]
+mypy-helper=mypy_helper.__main__:mypy_helper
+

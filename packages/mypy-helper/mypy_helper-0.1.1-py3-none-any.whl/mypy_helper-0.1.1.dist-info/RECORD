@@ -1,0 +1,10 @@
+mypy_helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_helper/__main__.py,sha256=yxx36asTWElcGDT5D3Lq2dIKS5PQ57OjS2V41JnooPI,776
+mypy_helper/fix_ignore_without_code.py,sha256=C1CJBGEEfMVaA-ZUpin7UXiWoowvXnCerJmAb7KE0MI,1835
+mypy_helper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_helper/pytest_fixture_type_gen.py,sha256=Blu-eWSUswWuD3GkCOfj7JNDK-1N4a-ZYGq7XtfICaQ,2756
+mypy_helper-0.1.1.dist-info/LICENSE,sha256=TFqG0-WKElmq0uSjw0f_XYoY8A0EnKfem8xD1-l34X4,1091
+mypy_helper-0.1.1.dist-info/METADATA,sha256=TkmiBOsq8WDudONgzePAIdBilMWZBjdq-9wxZCR9BBs,2332
+mypy_helper-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mypy_helper-0.1.1.dist-info/entry_points.txt,sha256=RnCrg6RV0R-E3YwaKH_VvSBmFYTGwDQKuA7DLddU5BA,64
+mypy_helper-0.1.1.dist-info/RECORD,,
