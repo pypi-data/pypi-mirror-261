@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: bitmoe
+Version: 0.0.2
+Summary: BitMoE - Pytorch
+Home-page: https://github.com/kyegomez/BitMoE
+License: MIT
+Keywords: artificial intelligence,deep learning,optimizers,Prompt Engineering
+Author: Kye Gomez
+Author-email: kye@apac.ai
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: einops
+Requires-Dist: swarms
+Requires-Dist: torch
+Requires-Dist: zetascale
+Project-URL: Documentation, https://github.com/kyegomez/BitMoE
+Project-URL: Repository, https://github.com/kyegomez/BitMoE
+Description-Content-Type: text/markdown
+
+[![Multi-Modality](agorabanner.png)](https://discord.gg/qUtxnK2NMf)
+
+# BitMoE
+1 bit Mixture of Experts utilizing BitNet ++ Mixture of Experts. Also will add distribution amongst GPUs.
+
+## install
+`$ pip3 install bitmoe`
+
+## usage
+```python
+import torch
+from bitmoe.main import BitMoE
+
+# Set the parameters
+dim = 10  # Dimension of the input
+hidden_dim = 20  # Dimension of the hidden layer
+output_dim = 30  # Dimension of the output
+num_experts = 5  # Number of experts in the BitMoE model
+
+# Create the model
+model = BitMoE(dim, hidden_dim, output_dim, num_experts)
+
+# Create random inputs
+batch_size = 32  # Number of samples in a batch
+sequence_length = 100  # Length of the input sequence
+x = torch.randn(batch_size, sequence_length, dim)  # Random input tensor
+
+# Forward pass
+output = model(x)  # Perform forward pass using the model
+
+# Print the output shape
+print(output)  # Print the output tensor
+print(output.shape)  # Print the shape of the output tensor
+```
+
+
+# License
+MIT
+
+
+# Todo
+
+- [ ] Implement better gating mechanisms
+- [ ] Implement better routing algorithm
+- [ ] Implement better BitFeedForward
+- [ ] Implement 
