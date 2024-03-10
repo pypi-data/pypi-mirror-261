@@ -1,0 +1,9 @@
+README.md
+main.py
+setup.py
+create_pypi_cli.egg-info/PKG-INFO
+create_pypi_cli.egg-info/SOURCES.txt
+create_pypi_cli.egg-info/dependency_links.txt
+create_pypi_cli.egg-info/entry_points.txt
+create_pypi_cli.egg-info/requires.txt
+create_pypi_cli.egg-info/top_level.txt
