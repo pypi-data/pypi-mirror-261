@@ -1,0 +1,14 @@
+sen2vec/__init__.py,sha256=cw5q5A2UP9ATtrT4MdnGImzo5e0LmJent2qAxL6TvjA,208
+sen2vec/sen2vec.py,sha256=3BqUAm7gikrKvL62-PzbGoQ_FWYJv1t9TNkemrOV8Z8,12005
+sen2vec/models/__init__.py,sha256=9v9UtjgCfExxOHEH_pH3Q8RRjjXZ43YxfHKG4-cY6oc,421
+sen2vec/models/tokenization.py,sha256=NWyD421gKB_jLQSV5CRLYPrbRjAsrowQgQutHcL90sk,12838
+sen2vec/sampled/__init__.py,sha256=J6DyIjtdPtIa33Awn83yc7x5X3NPprjqKXUDe7WR5rU,128
+sen2vec/sampled/downloader.py,sha256=v8bcuZmRyoGOpXwYnqQErrmUUlA_Pn9dJNkq0IWU46E,4070
+sen2vec/util/__init__.py,sha256=R1-SZk-f1NnNHSQQ5mt34Eyeq0-3sWby7SZeJkJRnpM,124
+sen2vec/util/tools.py,sha256=qPxcYq0M23IxWUmvOveiASg_z2_iLhDse6YQQ6ZpnJw,5442
+sen2vec/util/utils.py,sha256=bJiXxZNQJMLD-SKLAvcPhE2ZJGiY6e5JHQLmhM2_T9Y,3432
+sen2vec-1.83.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+sen2vec-1.83.dist-info/METADATA,sha256=UtjMdh_LjC1sndYaMEqemF5N6fro5cT2Hkl4Sifkxrw,1449
+sen2vec-1.83.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sen2vec-1.83.dist-info/top_level.txt,sha256=3TJCHAxujJf8M8gpT72y2V_LNzzAkdYfhjFy6gHCGgs,8
+sen2vec-1.83.dist-info/RECORD,,
