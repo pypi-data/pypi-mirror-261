@@ -1,0 +1,8 @@
+nltk
+stop_words
+hdbscan
+top2vec
+top2vec[sentence_encoders]
+tmplot
+gensim
+pyLDAvis
