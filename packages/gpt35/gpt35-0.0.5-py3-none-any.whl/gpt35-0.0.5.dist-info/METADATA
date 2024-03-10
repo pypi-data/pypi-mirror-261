@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gpt35
+Version: 0.0.5
+Summary: chatgpt - 3.5
+Home-page: 
+Author: SoulCodingYanhun
+Author-email: souls2906@gmail.com
+Maintainer: SoulCodingYanhun
+Maintainer-email: souls2906@gmail.com
+License: Apache License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7.1
+Description-Content-Type: text/markdown
+
