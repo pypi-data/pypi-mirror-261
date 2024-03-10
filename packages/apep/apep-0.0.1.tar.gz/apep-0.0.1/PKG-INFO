@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: apep
+Version: 0.0.1
+Summary: Apep is
+Author-email: James Calo <jamesafcalo@gmail.com>
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy
+
+Apep
+====
+
+Apep is a

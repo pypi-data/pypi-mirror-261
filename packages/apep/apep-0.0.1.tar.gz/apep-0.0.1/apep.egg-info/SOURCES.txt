@@ -1,0 +1,8 @@
+README.rst
+pyproject.toml
+apep/__init__.py
+apep.egg-info/PKG-INFO
+apep.egg-info/SOURCES.txt
+apep.egg-info/dependency_links.txt
+apep.egg-info/requires.txt
+apep.egg-info/top_level.txt
