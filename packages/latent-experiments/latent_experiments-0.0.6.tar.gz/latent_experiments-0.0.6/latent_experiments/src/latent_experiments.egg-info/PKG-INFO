@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: latent_experiments
+Version: 0.0.6
+Summary: A package for running and plotting latent experiments.
+Author: Amirhossein Nakhaei
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# latent_experiments
+Repository for latent experiments python package
