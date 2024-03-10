@@ -1,0 +1,34 @@
+[project]
+name = "nonebot-plugin-riffusion"
+dynamic = []
+description = "Let AI riff a song for you."
+authors = [
+    { name = "student_2333", email = "lgc2333@126.com" },
+]
+dependencies = [
+    "nonebot2>=2.2.0",
+    "nonebot-plugin-alconna>=0.40.0rc1",
+    "httpx>=0.24",
+]
+requires-python = ">=3.9,<4.0"
+readme = "README.md"
+version = "0.2.1"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/lgc-NB2Dev/nonebot-plugin-riffusion"
+
+[tool.pdm.build]
+includes = []
+
+[tool.pdm.version]
+source = "file"
+path = "nonebot_plugin_riffusion/__init__.py"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
