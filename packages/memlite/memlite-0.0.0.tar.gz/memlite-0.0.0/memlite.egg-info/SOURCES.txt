@@ -1,0 +1,9 @@
+README.md
+requirements.txt
+setup.cfg
+setup.py
+memlite/__init__.py
+memlite.egg-info/PKG-INFO
+memlite.egg-info/SOURCES.txt
+memlite.egg-info/dependency_links.txt
+memlite.egg-info/top_level.txt

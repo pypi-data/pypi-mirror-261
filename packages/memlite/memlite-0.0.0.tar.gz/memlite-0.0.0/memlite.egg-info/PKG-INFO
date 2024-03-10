@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: memlite
+Version: 0.0.0
+Summary: Memlite is a vector storage library for embedded applications.
+Home-page: https://github.com/shellc/
+Author: shellc
+Author-email: shenggong.wang@gmail.com
+License: MIT
+Keywords: AI,Automation,LLM,RPA
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Memlite
+
+Memlite is a vector storage library for embedded applications.
