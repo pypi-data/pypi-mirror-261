@@ -1,0 +1,4 @@
+[console_scripts]
+ctd=gitcy.cli.ctd_:main
+gundo=gitcy.cli.gundo_:main
+
