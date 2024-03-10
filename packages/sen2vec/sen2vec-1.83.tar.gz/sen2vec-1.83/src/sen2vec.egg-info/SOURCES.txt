@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/sen2vec/__init__.py
+src/sen2vec/sen2vec.py
+src/sen2vec.egg-info/PKG-INFO
+src/sen2vec.egg-info/SOURCES.txt
+src/sen2vec.egg-info/dependency_links.txt
+src/sen2vec.egg-info/top_level.txt
+src/sen2vec/models/__init__.py
+src/sen2vec/models/tokenization.py
+src/sen2vec/sampled/__init__.py
+src/sen2vec/sampled/downloader.py
+src/sen2vec/util/__init__.py
+src/sen2vec/util/tools.py
+src/sen2vec/util/utils.py
