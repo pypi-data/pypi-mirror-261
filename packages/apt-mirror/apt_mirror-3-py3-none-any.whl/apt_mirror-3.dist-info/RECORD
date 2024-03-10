@@ -1,0 +1,13 @@
+apt_mirror/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apt_mirror/apt_mirror.py,sha256=jFcZmp3ZKgfST_ZGffn-rIxo_Z1IsF6AIJUJD2mN9fI,21131
+apt_mirror/config.py,sha256=5Sfo5T4PSySb-TtAuS1JvznQ3Ud71jPt8BZRkS8q2Dc,17782
+apt_mirror/download.py,sha256=dMh7CuYFo3kVC_Oz86v64VcnWSXhD1hJY-rx4op9C4k,31232
+apt_mirror/logs.py,sha256=UKZqg1lnmTGKFMMm-y_65_sDxosEZd7zWNdBoy6uQw8,2488
+apt_mirror/repository.py,sha256=S1FE6BMPy-GzKi83EYkuNVTZBEi0dr4-rn6ODiYZ-kw,24907
+apt_mirror/version.py,sha256=bZqHMn3oubQ43LBXNXHHn1rfONpUZ_qKTT-_bJSeI3c,163
+apt_mirror-3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+apt_mirror-3.dist-info/METADATA,sha256=JEqX9tZk72-XT4bBcvaDss2eWUq6kZOPf0YX81kMeaA,44879
+apt_mirror-3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+apt_mirror-3.dist-info/entry_points.txt,sha256=9ci9hlCi8ZTKanBvvFsfHlhZCkmOmbBzNdIPleRCMT0,58
+apt_mirror-3.dist-info/top_level.txt,sha256=M2BDRhrG58_l3CQFsjJqSWL8roVD5dOYkjfRVY01w80,11
+apt_mirror-3.dist-info/RECORD,,
