@@ -1,0 +1,3 @@
+[console_scripts]
+darksorter=darksorter.__main__:entrypoint
+
