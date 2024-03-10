@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: karaoke-lyrics-processor
+Version: 0.1.0
+Summary: Process song lyrics to prepare them for karaoke video production, e.g. by splitting long lines
+Home-page: https://github.com/karaokenerds/karaoke-lyrics-processor
+License: MIT
+Author: Andrew Beveridge
+Author-email: andrew@beveridge.uk
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyperclip (>=1.8)
+Project-URL: Documentation, https://github.com/karaokenerds/karaoke-lyrics-processor/blob/main/README.md
+Project-URL: Repository, https://github.com/karaokenerds/karaoke-lyrics-processor
+Description-Content-Type: text/markdown
+
+# karaoke-lyrics-processor
+Process song lyrics to prepare them for karaoke video production, e.g. by splitting long lines
+
