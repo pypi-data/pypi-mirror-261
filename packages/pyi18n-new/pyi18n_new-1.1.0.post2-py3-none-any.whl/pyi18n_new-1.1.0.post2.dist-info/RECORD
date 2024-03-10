@@ -1,0 +1,11 @@
+pyi18n_new/__init__.py,sha256=ke2HFhdlk8Yvxgib6lgjo3e6FPlb1ycywD3BCuy7hAo,71
+pyi18n_new/i18n.py,sha256=N-GvNgnsSKnIMXq-Vtp39oNebxeo7RTqPdBP0iHGJCQ,1491
+pyi18n_new/lib/base_class.py,sha256=UA5AWMHFeO7-jdtz6JzhvTaRzUmtwsA-GNu3YoGp2Gk,122
+pyi18n_new/lib/prettyword.py,sha256=7H3HxQrVTq2RWGqzvn0RwHqIvB3R6cnjMp61QbK2BOM,476
+pyi18n_new/models/locale.py,sha256=3HovaNT-APgUR2OcO6nsQUQq0UQp6zz7g55kz0NcpUg,856
+pyi18n_new/models/section.py,sha256=aUqz56CEcM9b3P5awxpPxmusOm_k-lldmik4bNZ_PVA,1038
+pyi18n_new/models/value.py,sha256=rf1KhWFKlkRmdWXB1BHwHrFqidxsWpI-3ypD-BMAj_c,1349
+pyi18n_new-1.1.0.post2.dist-info/LICENSE,sha256=UpNppwILUzJAjdtGyPiT-pMqLTlBb9yjGXiaYnceZeQ,1072
+pyi18n_new-1.1.0.post2.dist-info/METADATA,sha256=OJ-BrnH8T395qZYtCnMspkGpxNruGB50hMHrUWxiqvE,572
+pyi18n_new-1.1.0.post2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pyi18n_new-1.1.0.post2.dist-info/RECORD,,
