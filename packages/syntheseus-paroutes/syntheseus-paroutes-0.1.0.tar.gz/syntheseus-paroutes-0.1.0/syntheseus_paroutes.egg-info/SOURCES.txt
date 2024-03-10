@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+syntheseus_paroutes/__init__.py
+syntheseus_paroutes/files.py
+syntheseus_paroutes/inventory.py
+syntheseus_paroutes/model.py
+syntheseus_paroutes/targets.py
+syntheseus_paroutes.egg-info/PKG-INFO
+syntheseus_paroutes.egg-info/SOURCES.txt
+syntheseus_paroutes.egg-info/dependency_links.txt
+syntheseus_paroutes.egg-info/requires.txt
+syntheseus_paroutes.egg-info/top_level.txt
+tests/test_inventory.py
+tests/test_models.py
+tests/test_targets.py

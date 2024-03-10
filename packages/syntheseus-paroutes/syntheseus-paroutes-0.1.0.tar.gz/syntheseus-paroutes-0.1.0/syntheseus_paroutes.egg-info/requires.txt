@@ -1,0 +1,4 @@
+syntheseus
+pandas
+rdkit
+keras
