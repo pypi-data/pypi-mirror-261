@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+tabulate
+scikit-learn
+ipython
+pybind11
