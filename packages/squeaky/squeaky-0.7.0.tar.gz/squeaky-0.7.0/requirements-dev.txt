@@ -1,0 +1,6 @@
+scour
+nbformat
+pre-commit
+black
+tox
+pyfakefs
