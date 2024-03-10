@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: weclimb_correlation_module
+Version: 0.1.0
+Summary: A module for climate data correlation analysis
+Home-page: https://github.com/shiv3679/weclimb_modules
+Author: Shiv Shankar Singh
+Author-email: shivshankarsingh.py@gmail.com
+License: GPL-3.0
+Project-URL: Bug Tracker, https://github.com/shiv3679/weclimb_modules/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: xarray >=0.16.2
+Requires-Dist: pandas >=1.1.5
+Requires-Dist: matplotlib >=3.3.4
+Requires-Dist: seaborn >=0.11.1
+Requires-Dist: numpy >=1.19.5
+
+# WeClim Correlations Module
+
+The ClimateDataAnalysis module is a comprehensive tool designed for analyzing climate data. It supports loading, preprocessing, aggregating, and analyzing climate datasets, making it easier to identify correlations within climate variables.
+
+## Features
+
+- **Flexible Data Loading**: Load climate datasets specified by the user.
+- **Preprocessing**: Ensure datasets have a 'time' dimension and minimal missing data.
+- **Data Aggregation**: Aggregate data over specified time frequencies.
+- **Correlation Analysis**: Generate and visualize correlation matrices.
+- **Insight Extraction**: Identify the highest and lowest correlations among variables.
+
+## Installation
+
+To install the ClimateDataAnalysis module:
+
+```bash
+git clone https://github.com/shiv3679/weclimb_modules.git
+cd weclimb_modules/correlation_module
+pip install .
+ ```
+
+Ensure you have `pip` and `git` installed  in your environment.
+
+## Quick Start
+
+The following code snippet demonstrates how to use this module.
+
+```python
+from weclimb_correlation_module import ClimateDataAnalysis
+
+# Define datasets information
+datasets_info = [
+    {'path': 'path/to/your/dataset1.nc', 'variables': ['var1', 'var2'], 'levels': [100, 500, 850]},
+    {'path': 'path/to/your/dataset2.nc', 'variables': ['var1', 'var2'], 'levels': None},
+    # Add additional datasets as needed
+]
+
+analysis = ClimateDataAnalysis(datasets_info)
+analysis.load_and_process_datasets()  # Load and preprocess datasets
+analysis.aggregate_over_time(freq='A')  # Aggregate data annually
+analysis.create_dataframe_from_aggregated_data()  # Create DataFrame for analysis
+analysis.plot_correlation_matrix()  # Visualize correlation matrix
+extreme_correlations = analysis.get_extreme_correlations()  # Extract extreme correlations
+
+
+# Optionally, unload datasets to free up memory
+analysis.unload_datasets()
+```
+
+## Method Overview
+
+- **`load_and_process_datasets()`** : Loads datasets based on datasets_info provided during initialization. Each dataset is checked to ensure it has a 'time' dimension and does not exceed the allowed threshold for missing data.
+
+- **`pre_process(dataset)`** : Checks if the provided dataset has a 'time' dimension and minimal missing data. This method ensures that only valid datasets are processed further.
+
+- **`aggregate_over_time(freq)`** : Aggregates data over time for all specified variables and levels in all loaded datasets. The frequency of aggregation (freq) can be specified as 'M' for monthly, 'A' for annual, etc.
+
+- **`create_dataframe_from_aggregated_data()`** : Converts the aggregated data into a pandas DataFrame. This DataFrame is then used for further analysis, such as correlation analysis.
+
+- **`plot_correlation_matrix()`** : Generates and plots a correlation matrix using seaborn. This visualization helps in identifying potential relationships between different climate variables.
+
+- **`get_correlation_matrix()`** : Retrieves the correlation matrix of the aggregated data. This method is useful for programmatically accessing correlation values.
+
+- **`get_extreme_correlations()`** : Identifies and returns the highest and lowest correlation pairs from the correlation matrix. This method helps in pinpointing significant correlations that warrant further investigation.
+
+- **`unload_datasets()`** : Clears loaded datasets from memory. This method is useful for freeing up resources after analysis is complete.
+
+## Contributing 
+We welcome contributions to the Correlations module. Feel free to fork the repository, make improvements, and submit pull requests.
+
+## License
+This project is licensed under the GPL-3.0 License
