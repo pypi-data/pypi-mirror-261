@@ -1,0 +1,37 @@
+[project]
+name = "cliclops"
+version = "0.0.1"
+description = "Small and simple command line arguments utilities"
+requires-python = ">=3.11"
+authors = [{name = "Casey Walker"}]
+readme = {file = "readme"}
+license = {file = "license"}
+keywords = ["cli", "command line arguments", "arguments parser"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Repository = "https://nest.pijul.com/kcmw3e/cliclops-py"
+
+[tool.poetry]
+name = "cliclops"
+version = "0.0.1"
+description = "Small and simple command line arguments utilities"
+authors = ["Casey Walker"]
+license = "MIT"
+readme = "readme"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
