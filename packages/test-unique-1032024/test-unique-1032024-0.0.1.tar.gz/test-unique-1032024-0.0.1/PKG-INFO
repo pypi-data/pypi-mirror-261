@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: test-unique-1032024
+Version: 0.0.1
+Summary: This is test project to know about package publishing in PyPi
+Project-URL: homepage, https://www.github.com/Pranavkumar-T-S/py-package-test
+Description-Content-Type: text/markdown
