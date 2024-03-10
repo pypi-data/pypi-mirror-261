@@ -1,0 +1,8 @@
+fastapi_skywalking_middleware/__init__.py,sha256=hV540pR2oYrBTsaCVoLGe30Ws7qYHR0G6TpO1TZWSMA,156
+fastapi_skywalking_middleware/_version.py,sha256=xiCPaAsChUtGiS337GnHM4p6s3BQGLqhq_x3xk5IZfE,51
+fastapi_skywalking_middleware/middleware/__init__.py,sha256=DJwjIsnnR-WzdXkEI6iIfk_vjPrM1iihLIFMKIAcgwU,2830
+fastapi_skywalking_middleware-0.2.0.dist-info/LICENSE,sha256=9x4J2bEgmXsamZK9tAG6aemAayZ4_lO1yp_SmkMJaok,1063
+fastapi_skywalking_middleware-0.2.0.dist-info/METADATA,sha256=BnyLXL876XRp2PNM7VnKNKYKYjP1hHStKkWoe_qS0a0,1024
+fastapi_skywalking_middleware-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fastapi_skywalking_middleware-0.2.0.dist-info/top_level.txt,sha256=15bH2g9vzfSogJiSVSiZo6j49Y-EDh_9_JyhmlT8C2c,30
+fastapi_skywalking_middleware-0.2.0.dist-info/RECORD,,
