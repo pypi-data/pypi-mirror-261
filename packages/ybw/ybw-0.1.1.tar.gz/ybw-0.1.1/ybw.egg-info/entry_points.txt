@@ -1,0 +1,2 @@
+[console_scripts]
+ybw = ybw.index:main
