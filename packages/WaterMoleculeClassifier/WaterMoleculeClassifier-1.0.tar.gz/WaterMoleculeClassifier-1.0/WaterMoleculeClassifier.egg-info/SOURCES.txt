@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+WaterMoleculeClassifier/__init__.py
+WaterMoleculeClassifier/predictor.py
+WaterMoleculeClassifier.egg-info/PKG-INFO
+WaterMoleculeClassifier.egg-info/SOURCES.txt
+WaterMoleculeClassifier.egg-info/dependency_links.txt
+WaterMoleculeClassifier.egg-info/requires.txt
+WaterMoleculeClassifier.egg-info/top_level.txt
+WaterMoleculeClassifier/models/rf_trained_model.joblib
