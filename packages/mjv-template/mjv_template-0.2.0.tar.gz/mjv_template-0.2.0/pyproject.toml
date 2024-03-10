@@ -1,0 +1,42 @@
+[tool.poetry]
+authors = ["Michael Vogelsong <4020875+mjvogelsong@users.noreply.github.com>"]
+description = "A template for python projects."
+license = "MIT"
+name = "mjv-template"
+readme = "README.md"
+version = "0.2.0"
+
+[tool.poetry.dependencies]
+pydantic = "^2.6.3"
+python = "^3.11"
+
+[tool.poetry.group.lint.dependencies]
+mypy = "^1.9.0"
+ruff = "^0.3.2"
+toml-sort = "^0.23.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+# Apply the following linter rules (https://docs.astral.sh/ruff/rules/).
+select = [
+    "E", # pycodestyle errors https://docs.astral.sh/ruff/rules/#error-e
+    "F", # pyflakes https://docs.astral.sh/ruff/rules/#pyflakes-f
+    "I", # isort https://docs.astral.sh/ruff/rules/#isort-i
+    "N", # pep8-naming https://docs.astral.sh/ruff/rules/#pep8-naming-n
+    "PL", # pylint https://docs.astral.sh/ruff/rules/#pylint-pl
+    "UP", # pyupgrade https://docs.astral.sh/ruff/rules/#pyupgrade-up
+    "W", # pycodestyle warnings https://docs.astral.sh/ruff/rules/#warning-w
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
