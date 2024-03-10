@@ -1,0 +1,3 @@
+[console_scripts]
+wilt = wilt.cli:main
+
