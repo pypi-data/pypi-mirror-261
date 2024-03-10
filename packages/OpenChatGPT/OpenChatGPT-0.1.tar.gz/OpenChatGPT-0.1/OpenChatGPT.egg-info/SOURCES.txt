@@ -1,0 +1,8 @@
+README.md
+setup.py
+OpenChatGPT.egg-info/PKG-INFO
+OpenChatGPT.egg-info/SOURCES.txt
+OpenChatGPT.egg-info/dependency_links.txt
+OpenChatGPT.egg-info/requires.txt
+OpenChatGPT.egg-info/top_level.txt
+openai_chat_integration/__init__.py
