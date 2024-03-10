@@ -1,0 +1,12 @@
+xarray
+dask-sql
+
+[dev]
+xarray_sql[test]
+pyink
+py-spy
+
+[test]
+pytest
+xarray[io]
+gcsfs
