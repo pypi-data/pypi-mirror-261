@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: piped.py
+Version: 0.1.0
+Summary: API wrapper for Piped written in Python.
+Author: vex12853
+Author-email: vex12853 <admin@vex12853.net>
+License: MIT
+Project-URL: Homepage, https://github.com/vex12853-sub/piped.py
+Project-URL: Issues, https://github.com/vex12853-sub/piped.py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENCE
+
+piped.py
+==========
+
+API wrapper for Piped written in Python.
+
+
