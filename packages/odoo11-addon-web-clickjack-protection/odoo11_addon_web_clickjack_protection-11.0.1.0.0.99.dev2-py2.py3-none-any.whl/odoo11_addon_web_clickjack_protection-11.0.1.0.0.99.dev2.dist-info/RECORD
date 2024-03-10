@@ -1,0 +1,13 @@
+odoo/addons/web_clickjack_protection/README.rst,sha256=n8xrQdIv6NnvBkh2RumkK1W45vq9zUlD-LbihBCW9kc,3460
+odoo/addons/web_clickjack_protection/__init__.py,sha256=IUtXWldCKEpz1MBVayb8uNJ-Mcgxs08j_vWhx_N0txY,130
+odoo/addons/web_clickjack_protection/__manifest__.py,sha256=mLQLcGnvY91RawstgRK7_a2kZ2B1endVEeoN_b3bOlc,557
+odoo/addons/web_clickjack_protection/i18n/web_clickjack_protection.pot,sha256=N54JHX-XC2BQOfdHJah2y4SvlTwG7A9vY8R52uQgoMU,344
+odoo/addons/web_clickjack_protection/readme/CONTRIBUTORS.rst,sha256=1E5xHqVzmDta8r0xo9VqmdNea5hc8bO9NolnS3ayQ1k,79
+odoo/addons/web_clickjack_protection/readme/DESCRIPTION.rst,sha256=aoShKIY4X4tpdRal7VaQp1brnIiPR-fdXZYWp9dGMBY,694
+odoo/addons/web_clickjack_protection/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_clickjack_protection/static/description/index.html,sha256=zm6KspgaBAfosqX74Eo6hROFL1yvy53s1QVJoZYcEwk,12831
+odoo/addons/web_clickjack_protection/views/web_assets.xml,sha256=Y4SElFbTHVC7hTx1bY9eLUHM2MYLoqMwSpBu6pFm5TE,944
+odoo11_addon_web_clickjack_protection-11.0.1.0.0.99.dev2.dist-info/METADATA,sha256=DTgXRraR4Vn2k_vYwvGxlb7FIZbjX_sQIbpZqNS8PCc,4085
+odoo11_addon_web_clickjack_protection-11.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+odoo11_addon_web_clickjack_protection-11.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo11_addon_web_clickjack_protection-11.0.1.0.0.99.dev2.dist-info/RECORD,,
