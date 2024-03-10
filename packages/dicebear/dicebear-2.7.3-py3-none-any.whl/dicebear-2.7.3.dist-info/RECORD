@@ -1,0 +1,12 @@
+dicebear/__init__.py,sha256=DiK8CkUHyCF0GMeEktLw1TAnoFeSw3YvAywy8XPBw6c,1255
+dicebear/avatar.py,sha256=FrpJV2wTg62gEFzDGtG48Cpot1Ep5B2zCoNmkKN8jms,17174
+dicebear/errors.py,sha256=kwuxQSvtfU3V_e4tWLp04t_s_ueO2aGe7jvgmUoe5dA,3987
+dicebear/models.py,sha256=hK-mB5VxigZXFivyRpm5uFlBhvJhHiuehbOtRpn6oA8,19860
+dicebear/utility.py,sha256=MPFtWzwRSSyfaA5wZXRyiEoyHjwEOPj2BK1OYZA69eQ,4455
+tests/__init__.py,sha256=8IauGmzdCduzjORHkC6Y8C0IYWvsdDcoQ7KVhFziGnM,23
+tests/test_main.py,sha256=cqiKcsv6ozfskrDLWGHj9m9xESGUzV3daN5lFRbbRHk,5534
+dicebear-2.7.3.dist-info/LICENSE,sha256=8GCyFEMpEp0tKAMMbhsjgx7vW4ZqSW-cBcV5pYXwMgE,1095
+dicebear-2.7.3.dist-info/METADATA,sha256=0PAOAlPvl3TnaNIbCLjF9j0_GQi8L-XrT2xRseVxIeg,11126
+dicebear-2.7.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dicebear-2.7.3.dist-info/top_level.txt,sha256=5fuyboe7qCHeDHF4fe6tJTYArukgCf3shZnNkMXVgHc,15
+dicebear-2.7.3.dist-info/RECORD,,
