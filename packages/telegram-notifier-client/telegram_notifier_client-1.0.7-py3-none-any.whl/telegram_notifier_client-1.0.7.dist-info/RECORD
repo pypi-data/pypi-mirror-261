@@ -1,0 +1,6 @@
+notifier_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notifier_client/web_app_notifier_client.py,sha256=mvlJw0bHRO2FVZoQj3p6N8hFkP2b8oKxGByGVlzZ6dA,18957
+telegram_notifier_client-1.0.7.dist-info/METADATA,sha256=Z73yYvZfaqGTbm0rcVkQUOt9a1qmxdY__kDwCdsVFiw,822
+telegram_notifier_client-1.0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+telegram_notifier_client-1.0.7.dist-info/top_level.txt,sha256=xrWntdt0VEBUhg0vkGjtpq1CmfJU-rhSS5T1QVV6lbE,16
+telegram_notifier_client-1.0.7.dist-info/RECORD,,
