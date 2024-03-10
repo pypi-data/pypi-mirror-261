@@ -1,0 +1,94 @@
+[project]
+name = "optslope"
+description = "OptSlope - A tool for metabolic engineering, based on the OptSlope algorithm"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT License"}
+authors = [
+  {name = "Elad Noor", email = "elad.noor@weizmann.ac.il"},
+  {name = "Moritz E. Beber", email = "midnighter@posteo.net"}
+]
+keywords = [
+    "strain design",
+    "gene knockout",
+    "optimization",
+    "constraint-based"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dynamic = ["version"]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy ~= 1.26",
+    "scipy ~= 1.12",
+    "matplotlib ~= 3.8",
+    "pandas ~= 2.2",
+    "optlang ~= 1.8",
+    "cobra ~= 0.29",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+development = [
+    "black",
+    "isort",
+    "flake8",
+    "safety",
+    "tox",
+    "twine"
+]
+deployment = [
+    "click",
+    "click-log",
+    "python-dateutil",
+    "requests",
+]
+
+[project.urls]
+repository = "https://gitlab.com/elad.noor/optslope/"
+documentation = "https://gitlab.com/elad.noor/optslope/README.md"
+
+[build-system]
+requires = [ "setuptools>=41", "wheel", "setuptools-git-versioning<2", ]
+build-backend = "setuptools.build_meta"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.setuptools]
+zip-safe = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[tool.black]
+exclude = '''
+(
+    __init__.py
+)
+'''
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+ignore = ["F401"]
