@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cally
+Version: 0.1.0a1
+Summary: A config as infrastructure foundation for your Internal Developer Platform
+Author-email: Leon Wright <techman83@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Provides-Extra: development
+Requires-Dist: black ; extra == 'development'
+Requires-Dist: isort ; extra == 'development'
+Requires-Dist: mypy ; extra == 'development'
+Requires-Dist: ruff ; extra == 'development'
+Requires-Dist: types-PyYAML ; extra == 'development'
+
+# Cally
+A config as infrastructure foundation for your Internal Developer Platform
