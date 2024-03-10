@@ -1,0 +1,3 @@
+[console_scripts]
+create-pypi-cli = create_pypi_cli.main:main
+
