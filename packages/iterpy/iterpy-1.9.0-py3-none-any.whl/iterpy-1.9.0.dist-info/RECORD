@@ -1,0 +1,13 @@
+iterpy/__init__.py,sha256=eD45yMU_OD0EcS30vjT58VLhxdv2pr3-L9SPS-Sl-Ik,76
+iterpy/_generate_pyi.py,sha256=QiTe_0mq0kiuMmqyAbG7gbjkqUH5wTGkgzQO4cpD2Js,1315
+iterpy/arr.py,sha256=Va_XRKm_KvNOfLTzOp9jLxmtIYtbSBIKnp6XRaPd9p0,7001
+iterpy/iter.py,sha256=c7KkEz7ztFQSSBpdSHnqr6bfixcwFiXPsfw6TNAzKBI,6913
+iterpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iterpy/test_arr.py,sha256=pxcYNgTqV3usejoScyTgEnNRnfZCKw5b2XtVgh_dObE,5400
+iterpy/test_iter.py,sha256=H3Gsr3OTKYg_O8Rt74j7LO4n8RRgjE5uiu7h2d8jF54,5413
+iterpy/test_main.py,sha256=JRfh4Gsr-FlW-j648He5uiK-cZS7LlfFHDu5JADNgXY,26
+iterpy-1.9.0.dist-info/LICENSE,sha256=grzrjEwtVjh0XtzjtaRIBxAqNLLn60yzKBWtS9xpfVY,1164
+iterpy-1.9.0.dist-info/METADATA,sha256=ZeKNwBrYVXoWLw5yPORIGXkoLXtnNChzb7evccuuaHs,6385
+iterpy-1.9.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+iterpy-1.9.0.dist-info/top_level.txt,sha256=erew-PaRSLHvYd_cpuzTDOTsSt4ItBHhPmsRiR_3tfs,7
+iterpy-1.9.0.dist-info/RECORD,,
