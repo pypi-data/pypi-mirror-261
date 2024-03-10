@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: OpenChatGPT
+Version: 0.11
+Summary: A Python package for integrating with the internal OpenAI Chat API.
+Author: Amir Agassi
+Author-email: amiragassi04@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: uuid
+
