@@ -1,0 +1,4 @@
+torch>2.2
+llama-recipes
+fastcore
+bitsandbytes>=0.43.0
