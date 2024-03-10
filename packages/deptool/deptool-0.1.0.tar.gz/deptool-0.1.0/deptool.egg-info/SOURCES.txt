@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+deptool/__init__.py
+deptool/__main__.py
+deptool/cmd_install.py
+deptool/cmd_registries.py
+deptool.egg-info/PKG-INFO
+deptool.egg-info/SOURCES.txt
+deptool.egg-info/dependency_links.txt
+deptool.egg-info/entry_points.txt
+deptool.egg-info/requires.txt
+deptool.egg-info/top_level.txt
