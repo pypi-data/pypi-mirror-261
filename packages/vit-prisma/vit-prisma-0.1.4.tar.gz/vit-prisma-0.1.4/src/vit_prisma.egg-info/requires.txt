@@ -1,0 +1,11 @@
+pytest>=6.0
+torch
+numpy
+jaxtyping
+einops
+fancy_einsum
+plotly==5.19.0
+timm
+transformers
+scikit-learn
+datasets
