@@ -1,0 +1,17 @@
+_sherpa_ncnn.cp310-win_amd64.pyd,sha256=yfR_8HHpaOX7fU6lLGxEcTISOAZS6dU0w1bNe6bNYQk,205312
+kaldi-native-fbank-core.dll,sha256=7Vy64mozITmtRPjYUU3w0uKHUMp3WnlTMhltskJwkUw,101376
+kaldi-native-fbank-core.lib,sha256=Vr78gwRsGZIzczxJZ0KbSKm9Gng_XVWnfYbf4njSPrY,94416
+ncnn.dll,sha256=nHL4q6kJwXEkRbQsJuOlLt1oxtV50g60MUJqRVY54m8,4336128
+ncnn.lib,sha256=5kqyt4WV4_7azqnccBnfROb3IB-ZPyL6UWHTY2ymadQ,564932
+sherpa-ncnn-core.dll,sha256=ffJnnR7lPNDe9VWiUAYDl03-_zNizsgizS2QuyCm0us,347136
+sherpa-ncnn-core.lib,sha256=RY2XlkStcn3S4QKRSa9n4kNBmzuT75KwjCZzERw1XYk,501672
+sherpa_ncnn/__init__.py,sha256=zpmbqpzYHTw9Xx4l1R7AzojFITvB2WpIa5Da3BoHt_E,102
+sherpa_ncnn/recognizer.py,sha256=w0L_sL45emprm14I24HT4NH_RpFFsIeIORhdOjpoHH0,9506
+sherpa_ncnn/sherpa-ncnn.pc,sha256=gdFQrkk1UzUKp7E3AVbAui3ctYt1SsCDwrx5nAiqNqY,436
+sherpa_ncnn/lib/sherpa-ncnn-c-api.dll,sha256=8eAX1MTLRCrSUQ9oEzVfw4Kwg3HwRzzTJQAbmhjNyjo,22528
+sherpa_ncnn/lib/sherpa-ncnn-c-api.lib,sha256=Q92zQ5OwmFHU72zx0LfUp_a8qjZXxhhdvOK_MkXX638,14252
+sherpa_ncnn-2.1.10.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+sherpa_ncnn-2.1.10.dist-info/METADATA,sha256=ZJeT53UGoZhbiqVfR5wmYUZK7VjISkpnZq3aP-ZJ1ng,2195
+sherpa_ncnn-2.1.10.dist-info/WHEEL,sha256=5JPYeYl5ZdvdSkrGS4u21mmpPzpFx42qrXOSIgWf4pg,102
+sherpa_ncnn-2.1.10.dist-info/top_level.txt,sha256=xGw9g1ZO9t1l8G8iCSjTUtS032IrUa-CG6HG6D3vVWQ,25
+sherpa_ncnn-2.1.10.dist-info/RECORD,,
