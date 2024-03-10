@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+hydroclassification/__init__.py
+hydroclassification/test.py
+hydroclassification/neuralnetworks/__init__.py
+hydroclassification/neuralnetworks/dinet.py
+hygeoclas.egg-info/PKG-INFO
+hygeoclas.egg-info/SOURCES.txt
+hygeoclas.egg-info/dependency_links.txt
+hygeoclas.egg-info/requires.txt
+hygeoclas.egg-info/top_level.txt
