@@ -1,0 +1,10 @@
+chatforward/__init__.py,sha256=YjGQsON4xldxRrXNYWORo3X1cdRAHraHflsbXVl1jPE,124
+chatforward/chatforward.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+chatforward/cli.py,sha256=cnkeUApEb0mCSwu-MGRT4BTG4rZi-GCEL_muxYAf4Ak,411
+chatforward-0.0.1.dist-info/AUTHORS.rst,sha256=Pq7I3JQVYT-JUb4j6j6vK3RTTpCyGGCm76hATr7Si5s,151
+chatforward-0.0.1.dist-info/LICENSE,sha256=BLVpxh0hH1t-TjhzWWiskpNxCqIeaH3-6wW9dWLxHoE,1067
+chatforward-0.0.1.dist-info/METADATA,sha256=oSywVssZ1IsHB6qigS5gLghNTlmpBX2CDScTCoQHm6I,984
+chatforward-0.0.1.dist-info/WHEEL,sha256=unfA4MOaH0icIyIA5oH6E2sn2Hq5zKtLlHsWapZGwes,110
+chatforward-0.0.1.dist-info/entry_points.txt,sha256=xNZBuAfHpPHXYl1Dl66OYYL4tQwjvJhx5A4pfCnkJsM,53
+chatforward-0.0.1.dist-info/top_level.txt,sha256=koYP181dCQibEMtWaf2GNmJlPP4YS-ArHTbvGy7QnIU,12
+chatforward-0.0.1.dist-info/RECORD,,
