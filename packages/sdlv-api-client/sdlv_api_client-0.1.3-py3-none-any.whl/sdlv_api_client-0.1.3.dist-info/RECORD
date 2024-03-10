@@ -1,0 +1,10 @@
+api_client/__init__.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+api_client/client.py,sha256=kyPr5RjhiJ_XZKnaU7ZdSkRZoZPlf8uJ9LGHlSoz8VI,3160
+api_client/utils/__init__.py,sha256=-O-6IPMKF_YWfz90pOMgz33UwnqGJWD5H47n8ylPrGU,58
+api_client/utils/logging.py,sha256=RElIalimK9lqWFTAxrB3zYkQ7RwkxmOeAmkpWzxvp50,830
+api_client/utils/parse.py,sha256=8LDBdAfJiBqjgDobAS139V2uiyZlSFZYvRc4FdwOWhA,1185
+sdlv_api_client-0.1.3.dist-info/LICENCE,sha256=Pp0Qqg5D-l1FnB9hgOXEyt9YcchizEJFseqwB_C3ZKc,1055
+sdlv_api_client-0.1.3.dist-info/METADATA,sha256=a4m_PUycfkq1kelvyzxg69uWEGwlBgBnRbag3-7TxRw,1087
+sdlv_api_client-0.1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sdlv_api_client-0.1.3.dist-info/top_level.txt,sha256=GsLgalg1P44VSvxhZqo60dGb8EptZ9n0ybK6R_qQ8pU,11
+sdlv_api_client-0.1.3.dist-info/RECORD,,
