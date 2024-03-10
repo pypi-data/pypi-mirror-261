@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/multi_bible_search/__init__.py
+src/multi_bible_search/bible_index.json.pbz2
+src/multi_bible_search/bible_search.py
+src/multi_bible_search/translate.py
+src/multi_bible_search.egg-info/PKG-INFO
+src/multi_bible_search.egg-info/SOURCES.txt
+src/multi_bible_search.egg-info/dependency_links.txt
+src/multi_bible_search.egg-info/requires.txt
+src/multi_bible_search.egg-info/top_level.txt
+tests/test_perf.py
+tests/test_search.py
