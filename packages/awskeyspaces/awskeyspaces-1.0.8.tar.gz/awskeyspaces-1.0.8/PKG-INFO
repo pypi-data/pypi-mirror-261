@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: awskeyspaces
+Version: 1.0.8
+Summary: A simple package to connect into AWS KEYSPACES (cassandra)
+Home-page: https://bitbucket.com/labunix/keyspaces.git
+Download-URL: https://bitbucket.com/labunix/awskeyspaces/get/master.tar.gz
+Author: Julio Quierati
+Author-email: Julio Quierati <quierati@labunix.dev>
+Project-URL: Homepage, https://bitbucket.org/labunix/awskeyspaces
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PYTHON AWS KEYSPACES CONNECTOR
+    AWS KEYSPACES Connector Package
+
+- [source](https://bitbucket.org/labunix/awskeyspaces.git)
+
+
+### Tech Core 
+   What do i need to know before using this code?
+
+- [Python 3.8](https://docs.python.org/3/whatsnew/3.8.html)
+- [Cassandra](https://cassandra.apache.org/doc/latest/)
+- [cassandra-driver](https://github.com/datastax/python-driver)
+- [AWS Keyspaces](https://aws.amazon.com/pt/keyspaces/)
+
+
+
+### TLS always on 9142
+	Port    Authentication Mechanism
+	9142    TLS client authentication, with certificates
+
+* required aws cert
+```sh
+curl https://www.amazontrust.com/repository/AmazonRootCA1.pem -O
+```
+
+### Cassandra Driver Performance
+* Linux Like
+```sh
+sudo apt install libev-dev
+sudo yum install libev-devel
+apk add libev-dev
+```
+
+* MacOS
+```sh
+brew install libev
+```
+Compiled is better :)
+
+```sh
+pip install cassandra-driver==3.29.0 --no-binary=cassandra-driver
+```
+
+### Env Vars
+	Load env vars for your cluster connection
+```sh
+REGION=us-east-1
+CLUSTER_KSP=my_keyspace
+CLUSTER_HOST="cassandra.${REGION}.amazonaws.com"
+CLUSTER_PORT=9142
+CLUSTER_USER="****************"
+CLUSTER_PASS="****************"
+
+export CLUSTER_KSP CLUSTER_HOST CLUSTER_USER CLUSTER_PASS CLUSTER_REGION
+```
+
+###  How to install
+* Load virtual env
+```sh
+python3.8 -m venv venv
+. venv/bin/activate
+```
+
+* Install package
+```sh
+pip install -r requirements.txt
+# or
+make init
+# or
+python setup.py install
+```
+* Why Not?
+```	sh
+pip install -e git+https://bitbucket.org/labunix/awskeyspaces.git@master#egg=awskeyspaces
+```
+
+### Connected?
+
+```
+from awskeyspaces.connection import connect
+
+@connect
+def dbsetup():
+    pass
+
+```
+
+### Contribution
+
+- quierati@labunix.dev
+
+### twine upload package
+```
+python3 -m pip install --upgrade build
+python3 -m build
+
+python3 -m pip install --user --upgrade twine
+python3 -m twine upload dist/*
+```

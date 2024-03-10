@@ -1,0 +1,4 @@
+Cython==3.0.9
+lz4==4.3.3
+cassandra-driver==3.29.0
+cassandra-sigv4==4.0.2
