@@ -1,0 +1,11 @@
+pypura/__init__.py,sha256=WKNO1DwkivPfv1iLla4r_feH2fJkjY8kjPpXZOzG-C8,252
+pypura/const.py,sha256=p_djjk5hY813eaqcIWD9r2AF9S-FOw2oEdLc-9OfGxc,414
+pypura/exceptions.py,sha256=W_RFuYYliMj-cjo7MBgBAaGhgLt2GRmqT0URTtV-GdU,200
+pypura/fragrances.json,sha256=M3Q3kBAx6281e94--fReRZguqw4hqp3dA_GiSR3olnE,78096
+pypura/pura.py,sha256=tN1VxZ5wwi_rGcJNdrZwnAk4xi6fUAE3-mS2NH2QYmI,7550
+pypura/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypura/utils.py,sha256=6uqeAfLIJLTfQT80AiqIwisI1ByYojzwjNFRZoGEE54,803
+pypura-0.1.19.dist-info/LICENSE,sha256=4mJcDke7rXOroxY5ivxDtZCvjHW6pkrz8CjJ6bPSY5s,1071
+pypura-0.1.19.dist-info/METADATA,sha256=t0GA_kPDMGINEQKy-EfiSPjc6LgVQS4NlcHJxjrfeys,1956
+pypura-0.1.19.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pypura-0.1.19.dist-info/RECORD,,
