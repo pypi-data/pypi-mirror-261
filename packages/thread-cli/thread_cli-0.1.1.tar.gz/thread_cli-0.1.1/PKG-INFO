@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: thread-cli
+Version: 0.1.1
+Summary: Threading module extension's CLI
+Home-page: https://github.com/python-thread/thread-cli
+License: BSD-3-Clause
+Keywords: thread,threading,cli,cli-extension
+Author: Alex
+Author-email: contact@ngjx.org
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: thread (>=1.0.0,<2.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Project-URL: Bug Tracker, https://github.com/python-thread/thread-cli/issues
+Project-URL: Changelog, https://github.com/python-thread/thread-cli/releases
+Project-URL: Documentation, https://thread.ngjx.org
+Project-URL: Repository, https://github.com/python-thread/thread-cli
+Description-Content-Type: text/markdown
+
+# thread-cli
+The source code for threadCLI
+
