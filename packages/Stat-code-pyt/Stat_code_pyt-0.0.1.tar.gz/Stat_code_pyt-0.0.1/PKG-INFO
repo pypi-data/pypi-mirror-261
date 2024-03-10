@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Stat_code_pyt
+Version: 0.0.1
+Summary: Get status codes
+Author: Zulte
+Author-email: <pochtagar@gmail.com>
+Keywords: python,status,http,https
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+Simply project that you can use to test reaction of the software for different status code.

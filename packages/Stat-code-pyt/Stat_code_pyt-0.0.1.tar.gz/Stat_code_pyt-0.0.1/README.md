@@ -1,0 +1,1 @@
+Simply project that you can use to test reaction of the software for different status code.
