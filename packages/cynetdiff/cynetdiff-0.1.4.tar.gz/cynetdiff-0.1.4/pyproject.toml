@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "cynetdiff"
+version = "0.1.4"
+description = "A fast network diffusion library"
+authors = ["Eliot W. Robson <eliot.robson24@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "cynetdiff", from = "src" }]
+# TODO try removing the line below and see what happens, may not be needed.
+include = [{ path = "src/cynetdiff/*.so", format = "wheel" }]
+
+#TODO version classifiers may not be needed.
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Intended Audience :: Science/Research",
+]
+
+[project.urls]
+homepage = "https://github.com/eliotwrobson/CyNetDiff"
+tracker = "https://github.com/eliotwrobson/CyNetDiff/issues"
+# TODO add these later
+#gitter = "https://gitter/area"
+#documentation = "https://readthedocs.org"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[tool.poetry.group.benchmark.dependencies]
+python = ">=3.10"
+ndlib = "^5.1.1"
+networkx = "^3.2.1"
+pandas = ">=2.0.0"
+tqdm = "^4.66.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.2"
+mypy = "^1.7.1"
+types-setuptools = "^69.0.0.0"
+networkx = "^3.2.1"
+ruff = "^0.3.0"
+pandas-stubs = "^2.2.0.240218"
+types-tqdm = "^4.66.0.20240106"
+cython = "^3.0.9"
+
+
+# NOTE to enable Cython generation during development, add "cython" to the
+# build dependencies before doing "poetry install".
+[build-system]
+requires = ["poetry-core", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+script = "build_package.py"
+generate-setup-file = false
+
+[tool.flake8]
+count = true
+statistics = true
+# Black compatibility
+max-line-length = 88
+
+[tool.mypy]
+python_version = "3.10"
+
+[[tool.mypy.overrides]]
+module = ["networkx.*", "Cython.*", "ndlib.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = "tests"
