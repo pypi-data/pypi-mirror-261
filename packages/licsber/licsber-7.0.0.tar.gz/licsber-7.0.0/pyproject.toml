@@ -1,0 +1,23 @@
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[project]
+name = 'licsber'
+authors = [
+    { name = 'licsber', email = 'admin@licsber.site' },
+]
+license = { text = 'License :: OSI Approved :: GNU Affero General Public License v3' }
+
+dependencies = [
+    'requests',
+    'pymongo',
+    'boto3',
+]
+
+dynamic = ['version']
+[tool.hatch.version]
+path = 'licsber/__init__.py'
+
+[project.urls]
+Homepage = 'https://licsber.site'
