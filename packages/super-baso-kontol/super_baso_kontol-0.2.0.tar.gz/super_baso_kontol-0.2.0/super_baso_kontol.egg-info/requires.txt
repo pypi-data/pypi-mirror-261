@@ -1,0 +1,7 @@
+rich
+requests
+prompt-toolkit
+baso_kontol
+
+[excel]
+openpyxl
