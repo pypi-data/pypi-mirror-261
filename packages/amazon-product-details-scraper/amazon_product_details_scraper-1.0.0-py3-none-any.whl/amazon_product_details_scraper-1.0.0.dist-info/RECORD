@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/config.py,sha256=MdvDoToxRUY83nQ7KW-TjBEW9fOIbvbDyTyAedPdGn8,163
+src/scraper.py,sha256=x4ykuu6zdGHFMR-tgjkmLzmsKSbXT1S4Pda8uWetTDc,6272
+src/utils.py,sha256=H_UItsA7i6ZglOtCvU-z06dRJPvgG8VM72zH1xVtJNg,3051
+amazon_product_details_scraper-1.0.0.dist-info/LICENSE,sha256=ewr-k87FBE4vJ1BAHEjQ1UvWWJCHkifaDO16w1oMggE,1071
+amazon_product_details_scraper-1.0.0.dist-info/METADATA,sha256=jYXOU4rBM9_h5dfHdlWmLvzRsEuzDDD6BweKw-xVHY0,3986
+amazon_product_details_scraper-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+amazon_product_details_scraper-1.0.0.dist-info/entry_points.txt,sha256=LODNBdjciKsKTOuRvS7Cwa0T_CK7y2VM-zrlGLLYmJA,52
+amazon_product_details_scraper-1.0.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+amazon_product_details_scraper-1.0.0.dist-info/RECORD,,
