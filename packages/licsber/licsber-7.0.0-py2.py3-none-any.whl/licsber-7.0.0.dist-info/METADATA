@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: licsber
+Version: 7.0.0
+Project-URL: Homepage, https://licsber.site
+Author-email: licsber <admin@licsber.site>
+License: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Dist: boto3
+Requires-Dist: pymongo
+Requires-Dist: requests
