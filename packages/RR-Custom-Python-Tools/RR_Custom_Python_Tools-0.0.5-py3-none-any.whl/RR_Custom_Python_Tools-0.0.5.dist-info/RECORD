@@ -1,0 +1,10 @@
+date_manager/__init__.py,sha256=D0eK4n5vl53MCBs1M3WwJUniLxwdmBAkY9FKNMMNqEo,64
+date_manager/date_manager.py,sha256=oZUatlEMBwZ7U0rmjOdCTEx86K9kR83JjxFRtdP8plk,1580
+date_manager/test_date_manager.py,sha256=vkeY0btZlXaZNkkaYMFD1ZAmmKjHZFfiVwLGiKGgW40,2614
+log_manager/__init__.py,sha256=afdxdBev8Q_ADJ-o9hhNYNQkQMxPXaoEdxjvJTjlWXk,61
+log_manager/log_manager.py,sha256=uJyXr8TmNYwA2qKt160u--XpTW3j63LHuRSPCrvWNlM,2305
+RR_Custom_Python_Tools-0.0.5.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+RR_Custom_Python_Tools-0.0.5.dist-info/METADATA,sha256=jV-VhVnJpF5pggFIpMS_M0G8R5js3ornDLa0E8kZ4dE,1630
+RR_Custom_Python_Tools-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+RR_Custom_Python_Tools-0.0.5.dist-info/top_level.txt,sha256=_xBCy7QNImAgwGrHNGN54fyIdqndagjJ8LSxAy_F-v0,25
+RR_Custom_Python_Tools-0.0.5.dist-info/RECORD,,
