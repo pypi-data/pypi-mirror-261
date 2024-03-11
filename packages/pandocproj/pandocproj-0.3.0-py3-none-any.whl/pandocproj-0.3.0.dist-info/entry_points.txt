@@ -1,0 +1,3 @@
+[console_scripts]
+pproj=pandocproj.__main__:main
+
