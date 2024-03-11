@@ -1,0 +1,11 @@
+kiwisolver==1.4.5
+matplotlib==3.8.3
+numpy==1.26.4
+openai==1.13.3
+packaging==23.2
+pandas==2.2.1
+pillow==10.2.0
+plotly==5.19.0
+sklearn
+urllib3==2.2.1
+utils==1.0.2
