@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: TmLogSearch
+Version: 0.1.6
+Requires-Dist: Flask
+Requires-Dist: paramiko
+Requires-Dist: flask-cors
+
