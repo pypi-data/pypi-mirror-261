@@ -1,0 +1,2 @@
+[console_scripts]
+bul = bul_cli:cli
