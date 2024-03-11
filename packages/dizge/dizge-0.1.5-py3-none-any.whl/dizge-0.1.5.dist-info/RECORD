@@ -1,0 +1,12 @@
+dizge/__init__.py,sha256=BxdUyIEOhWtaS3DHSGcZfIMPsYjrFMFDzRJeh3q_PVU,144
+dizge/analyzer.py,sha256=aTfAVXlUk2xbuAqDhXVSc-CJf1vMnlqtAtJE2Y6yFeA,2062
+dizge/competence/__init__.py,sha256=He71y6bZE4UmRJxFmrdFnnVDOzMY8qFROCJ9B0pTO6Q,48
+dizge/competence/lexicon.py,sha256=BDH2-twTTMk_UbZj5YCPXiRP5TrihTaJjvzbo3lvL9s,644
+dizge/competence/phonology.py,sha256=DlAxWpL2r2vWjoomz-hEkcfWo3DHMVC_NinTxnssKiU,20963
+dizge/tools/__init__.py,sha256=o85pvIhSWDyW4CAgIE6slhG1cT17_powyjzp2GNjrVs,25
+dizge/tools/phonology.py,sha256=FrzWgNlS3PnAfBxoS3qPr_GU8iYu7ALhJENi7kHwkUQ,21403
+dizge-0.1.5.dist-info/LICENSE,sha256=ollrGALofvxAmCnrfETobJ3_r90GHbUpf5U8YYbECuw,1111
+dizge-0.1.5.dist-info/METADATA,sha256=uQzIhx5HYH6ZWx5V-aPyxIqekZmwv6eevs5Zl6Bq4xU,10550
+dizge-0.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dizge-0.1.5.dist-info/top_level.txt,sha256=iBCxXVM173q55G4QIh3v8LNGcmzDl1t_E1uKyQKc_z8,6
+dizge-0.1.5.dist-info/RECORD,,
