@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: teaxyzz
+Version: 0.0.2
+Summary: A simple package for https://app.tea.xyz/. Example tea-xyz1 - https://github.com/madest92/tea-xyz1 and tea-xyz2 - https://github.com/madest92/tea-xyz2
+Home-page: https://github.com/madest92/teaxyz
+Author: User
+Author-email: example@mail.com
+Project-URL: Homepage, https://github.com/madest92/teaxyz
+Project-URL: Source, https://github.com/madest92/teaxyz
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: tea-xyz1
+Requires-Dist: tea-xyz2
+Requires-Dist: teaxyz
+Requires-Dist: teaxyzzz
+Requires-Dist: teaxyzzzz
+Requires-Dist: teaxyzzzzz
+Requires-Dist: teaxyzzzzzz
