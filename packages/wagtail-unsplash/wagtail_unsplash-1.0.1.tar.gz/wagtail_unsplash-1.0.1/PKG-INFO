@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: wagtail-unsplash
+Version: 1.0.1
+Summary: Use unsplash.com images in your Wagtail site
+License: MIT
+Author: Cameron Lamb
+Author-email: jafacakes2011@hotmail.co.uk
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-unsplash (>=1.2.5,<2.0.0)
+Requires-Dist: queryish (>=0.2,<0.3)
+Requires-Dist: wagtail (>5.2,<6.1)
+Description-Content-Type: text/markdown
+
+# [Wagtail Unsplash](https://pypi.org/project/wagtail-unsplash/)  [![PyPI](https://img.shields.io/pypi/v/wagtail-unsplash.svg)](https://pypi.org/project/wagtail-unsplash/)
+
+![Screenshot showing wagtail-unsplash search results](https://i.imgur.com/Va0kCys.png)
+
+Search for Unsplash images and upload to the Wagtail image library.
+
+This package uses the [python-unsplash](https://github.com/yakupadakli/python-unsplash) API wrapper:
+
+## Setup
+
+Install using pip:
+
+```sh
+pip install wagtail-unsplash
+```
+
+After installing the package, add `wagtail_unsplash` to installed apps in your settings file:
+
+```python
+# settings.py
+
+INSTALLED_APPS = [
+    ...
+    'wagtail_unsplash',
+    ...
+]
+```
+
+and add the API credentials:
+
+```python
+# settings.py
+WAGTAIL_UNSPLASH = {
+    "CLIENT_ID": "",
+    "CLIENT_SECRET": ""
+}
+```
+
+You can get the needed information by creating an application at https://unsplash.com/developers
+
