@@ -1,0 +1,6 @@
+README.md
+setup.py
+house_epita_dsp_prices.egg-info/PKG-INFO
+house_epita_dsp_prices.egg-info/SOURCES.txt
+house_epita_dsp_prices.egg-info/dependency_links.txt
+house_epita_dsp_prices.egg-info/top_level.txt
