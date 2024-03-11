@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dajngo-models-typescript-types
+Version: 0.1.1
+Summary: A package to create your Typescript types/models from your Django models.
+Home-page: https://github.com/Horou/djangorestframework-deepserializer
+Author: Horou and Enzo_frnt
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django
+
+# Django-Model-to-TypeScript
