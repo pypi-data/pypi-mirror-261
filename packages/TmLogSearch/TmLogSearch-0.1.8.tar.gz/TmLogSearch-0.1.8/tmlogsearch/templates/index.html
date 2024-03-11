@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TM Log Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+        label, input[type="text"], input[type="password"], button, textarea {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+        input[type="text"], input[type="password"], textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .message {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1>TM Log Search</h1>
+    <label for="str_to_search">String to Search:</label>
+    <input type="text" id="str_to_search" placeholder="Enter String to Search">
+    
+    <label for="start_time">Start Time:</label>
+    <input type="text" id="start_time" placeholder="Start Time (e.g., 08/Mar/2024:08:40)">
+    
+    <label for="end_time">End Time:</label>
+    <input type="text" id="end_time" placeholder="End Time (e.g., 08/Mar/2024:08:42)">
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter Username" autocomplete="username">
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter Password" autocomplete="current-password">
+
+    <div class="button-container">
+        <button id="connectionBtn" disabled>Connection</button>
+        <button id="searchBtn" disabled>Search Logs</button>
+        <button id="disconnectBtn" disabled>Disconnect</button>        
+    </div>
+     <div class="message" id="searchMessage"></div>
+    <textarea id="searchResults" readonly></textarea>
+    
+   
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const connectionBtn = document.getElementById('connectionBtn');
+        const disconnectBtn = document.getElementById('disconnectBtn');
+        const searchBtn = document.getElementById('searchBtn');
+        const searchMessage = document.getElementById('searchMessage');
+        const searchResults = document.getElementById('searchResults');
+
+        // Enable buttons after DOM is loaded
+        connectionBtn.disabled = false;
+        disconnectBtn.disabled = false;
+        searchBtn.disabled = false;
+
+        connectionBtn.addEventListener('click', function() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            searchMessage.textContent = 'Please wait... Establishing SSH connection.';
+            connectionBtn.disabled = true;
+
+            let formData = new FormData();
+            formData.append('username', username);
+            formData.append('password', password);
+
+    fetch('http://127.0.0.1:5000/establish_ssh_connection', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            return response.json().then(data => {
+                throw new Error(data.error || 'Failed to establish SSH connection');
+            });
+        }
+    })
+        .then(data => {
+            searchMessage.textContent = 'SSH connection established successfully.';
+        })
+        .catch(error => {
+            searchMessage.textContent = 'SSH Connection failed: ' + (error.message || 'An unknown error occurred.');
+            if (error.response && error.response.json) {
+                error.response.json().then(data => {
+                    if (data.error) {
+                        searchMessage.textContent += " " + data.error;
+                    }
+                });
+            }
+        })
+        .finally(() => {
+            connectionBtn.disabled = false;
+        });
+    });
+        disconnectBtn.addEventListener('click', function() {
+            searchMessage.textContent = 'Please wait... Closing SSH connection.';
+            disconnectBtn.disabled = true;
+
+            fetch('http://127.0.0.1:5000/close_ssh_connection', {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                searchMessage.textContent = 'SSH connection closed successfully.';
+            })
+            .catch(error => {
+                searchMessage.textContent = 'An error occurred: ' + error.message;
+            })
+            .finally(() => {
+                disconnectBtn.disabled = false;
+            });
+        });
+
+        searchBtn.addEventListener('click', function() {
+            const strToSearch = document.getElementById('str_to_search').value;
+            const startTime = document.getElementById('start_time').value;
+            const endTime = document.getElementById('end_time').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            searchMessage.textContent = 'Please wait... Your search is in progress.';
+            searchBtn.disabled = true;
+
+            let formData = new FormData();
+            formData.append('username', username);
+            formData.append('password', password);
+
+            fetch(`http://127.0.0.1:5000/tm_log_search?str_to_search=${encodeURIComponent(strToSearch)}&start_time=${encodeURIComponent(startTime)}&end_time=${encodeURIComponent(endTime)}`, {
+                method: 'POST',
+            })
+            .then(response => response.json())
+            .then(data => {
+                searchMessage.textContent = 'Search completed.';
+                searchResults.value = data.Result || data.error || 'No Results Found';
+            })
+            .catch(error => {
+                searchMessage.textContent = 'An error occurred: ' + error.message;
+            })
+            .finally(() => {
+                searchBtn.disabled = false;
+            });
+        });
+    });
+</script>
+</body>
+</html>
