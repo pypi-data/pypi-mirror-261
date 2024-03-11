@@ -1,0 +1,10 @@
+ews_core_config/__init__.py,sha256=5rzOLBGIMjeKQYfaaUnN_5Z3M8ZvdABPer1DqOyciCY,96
+ews_core_config/config.py,sha256=6jB8U76bIIRfzBRN3lgVh0mGd1A4-r-Ful1qXlv9DME,5871
+ews_core_config/version.py,sha256=al2xvDug96DAFLj-p6I0BgJQjSyfma5eRKlPPxL2-mg,2587
+ews_core_config/cli/entry.py,sha256=8hGjPCnuz_a-t4Fiefq8xW4dFPEu0YSQoM8I_acQAMk,3030
+ews_core_config-20240311.1.dist-info/LICENSE,sha256=EsEsEJM7Tudfgqfg65xUqIRZSkqtdrJzyZDfFlvZTKo,1071
+ews_core_config-20240311.1.dist-info/METADATA,sha256=PcaaKnj3Ipg6nQS6muW04GHtOO2_BTbPZQjDZUB-Vhg,4826
+ews_core_config-20240311.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ews_core_config-20240311.1.dist-info/entry_points.txt,sha256=BAHCriQGZyZSihe2s21v2NewQ61MTk4JUgK6ozzksDE,61
+ews_core_config-20240311.1.dist-info/top_level.txt,sha256=CKynaUkuVfUWCsY-4VNKiXJXPxsEvexF9ByGcubEiWc,16
+ews_core_config-20240311.1.dist-info/RECORD,,
