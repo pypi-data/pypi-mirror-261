@@ -1,0 +1,7 @@
+fastapi_auth_tortoise_models/__init__.py,sha256=INQSCQagaEt70DIJIBFam_ESCYzURH29Y_A70WMRFMs,301
+fastapi_auth_tortoise_models/models.py,sha256=cRV8WjwRYqUc5R9SZCglcAxN3PjRgUyKIOEBrYYUy6U,3672
+fastapi_auth_tortoise_models/repositories.py,sha256=ulGcXvqc4rTBQmOpK6w9cx3apHtTl6h6pxKWnXWkR3w,2077
+fastapi_auth_tortoise_models-0.0.3.dist-info/METADATA,sha256=r2pue82jdDGqcbXyxfwk5bwXhPtuuxNKJw7jNmWwlLs,575
+fastapi_auth_tortoise_models-0.0.3.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+fastapi_auth_tortoise_models-0.0.3.dist-info/licenses/LICENSE,sha256=PiqrVEIeO253s33bcxIUJDSuPblFu05K0wcoTuj-2Nk,1065
+fastapi_auth_tortoise_models-0.0.3.dist-info/RECORD,,
