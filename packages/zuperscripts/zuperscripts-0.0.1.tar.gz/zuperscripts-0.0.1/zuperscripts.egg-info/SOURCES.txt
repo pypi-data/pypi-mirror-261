@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+zuperscripts/TransactionERC.py
+zuperscripts/TransactionNEAR.py
+zuperscripts/__init__.py
+zuperscripts/main.py
+zuperscripts.egg-info/PKG-INFO
+zuperscripts.egg-info/SOURCES.txt
+zuperscripts.egg-info/dependency_links.txt
+zuperscripts.egg-info/requires.txt
+zuperscripts.egg-info/top_level.txt
