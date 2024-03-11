@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vnpy_ccxt/__init__.py
+vnpy_ccxt.egg-info/PKG-INFO
+vnpy_ccxt.egg-info/SOURCES.txt
+vnpy_ccxt.egg-info/dependency_links.txt
+vnpy_ccxt.egg-info/not-zip-safe
+vnpy_ccxt.egg-info/top_level.txt

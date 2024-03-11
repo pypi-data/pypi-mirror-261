@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vnpy-ccxt
+Version: 0.0.1
+Author: VeighNa Global
+Author-email: veighna@hotmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/veighna-global/vnpy_ccxt
+Keywords: quant,quantitative,investment,trading,algotrading,crypto,btc
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+License-File: LICENSE
