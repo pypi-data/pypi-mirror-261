@@ -1,0 +1,10 @@
+tubelearns/__init__.py,sha256=0kFXeF7e45MvLt0cWCrD04FmScHGFThFOFJK3_N6wAc,80
+tubelearns/install_models.py,sha256=Me9W7e1czpD3fipaWI-g7U2SLWbgtui47mYAq2dMELc,105
+tubelearns/sourcing.py,sha256=6sFu7NFDFlzr9jdPKxbdAvTlixwehvOE-qxR3rlv7ts,9525
+tubelearns/tokenizers.py,sha256=tvYin1X6XVu4OIgdrj7J7v4lGCc6qw0bwbbDNjSszwA,5585
+tubelearns-2.1.0.dist-info/LICENSE,sha256=nVjoAOihsqFGIxcf13atg2GYH6o-OftHmpkIazoA5ZQ,1071
+tubelearns-2.1.0.dist-info/METADATA,sha256=NI3v-XTbIk-XpbFZiV78L7k0mVXQG7N6XHB_7rEA7CY,3612
+tubelearns-2.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tubelearns-2.1.0.dist-info/entry_points.txt,sha256=UgtVR0pFelfNjqSgTksZ4V30shotf8Q_6ZFyKHUYubc,67
+tubelearns-2.1.0.dist-info/top_level.txt,sha256=l222eXxi0QhTbJSN259wV4zJ0rxy1Bs_Idn93tESMoA,11
+tubelearns-2.1.0.dist-info/RECORD,,
