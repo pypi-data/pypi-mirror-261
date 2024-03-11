@@ -1,0 +1,25 @@
+openai
+bs4
+selenium
+numpy
+tiktoken>=0.3.3
+requests
+colorama
+duckduckgo_search>=2.9.4
+google-api-python-client
+webdriver_manager
+simpleeval
+python-dotenv
+pypdf
+
+[:sys_platform != "win32"]
+bitsandbytes[hf]
+
+[:sys_platform == "win32"]
+bitsandbytes-windows[hf]
+
+[hf]
+transformers
+sentence_transformers
+accelerate
+torch
