@@ -1,0 +1,6 @@
+python_lancelot-0.8.10.dist-info/METADATA,sha256=vKKlbkSsEtsQtnualGQ7T1hm6STzCAjWQpEYhPaXi24,1621
+python_lancelot-0.8.10.dist-info/WHEEL,sha256=S0rB2hDy1vo9ABZi7A01rQ8AAoGmft-elqksCH-s-Bw,95
+python_lancelot-0.8.10.dist-info/license_files/LICENSE.txt,sha256=r8ITulvkflA7NBADr4iaroceghiTL9_1Xvd48ud8yqw,11551
+lancelot/__init__.py,sha256=7KzbZBRHAyn3R-h8wj7qgYaI-L8coB6ANKZCi3xsOf8,115
+lancelot/lancelot.cp310-win_amd64.pyd,sha256=eIL51cjyA2rMApUkTvmWbjzv7K8bBYY2Gg8VypX2J6g,2626048
+python_lancelot-0.8.10.dist-info/RECORD,,
