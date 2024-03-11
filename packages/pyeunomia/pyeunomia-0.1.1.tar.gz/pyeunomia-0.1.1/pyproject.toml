@@ -1,0 +1,27 @@
+[project]
+name = "pyeunomia"
+version = "0.1.1"
+description = "A standard dataset in the OMOP (Observational Medical Outcomes Partnership) Common Data Model (CDM) for testing and demonstration purposes"
+keywords = [
+    "OMOP CDM",
+    "OHDSI",
+]
+authors = [
+    { name = "Miguel-Angel Sicilia", email = "msicilia@gmail.com" },
+]
+dependencies = [
+    "duckdb>=0.10.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
