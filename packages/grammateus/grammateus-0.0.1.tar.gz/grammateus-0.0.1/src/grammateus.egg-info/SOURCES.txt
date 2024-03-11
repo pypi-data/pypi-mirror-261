@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/grammateus/__init__.py
+src/grammateus.egg-info/PKG-INFO
+src/grammateus.egg-info/SOURCES.txt
+src/grammateus.egg-info/dependency_links.txt
+src/grammateus.egg-info/top_level.txt
