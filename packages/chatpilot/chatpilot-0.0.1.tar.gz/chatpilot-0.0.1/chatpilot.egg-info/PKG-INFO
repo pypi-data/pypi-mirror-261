@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: chatpilot
+Version: 0.0.1
+Summary: Chat Agent toolkit.
+Home-page: https://github.com/shibing624/chatpilot
+Author: XuMing
+Author-email: xuming624@qq.com
+License: Apache License 2.0
+Keywords: llm,agent
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ChatPilot
+Chat Pilot.
+
+

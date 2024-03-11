@@ -1,0 +1,6 @@
+jieba
+loguru
+datasets
+tqdm
+scikit-learn
+pandas
