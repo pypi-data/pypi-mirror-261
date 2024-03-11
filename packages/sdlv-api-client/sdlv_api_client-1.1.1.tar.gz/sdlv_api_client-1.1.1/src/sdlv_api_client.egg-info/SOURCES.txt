@@ -1,0 +1,16 @@
+LICENCE
+README.md
+pyproject.toml
+src/api_client/__init__.py
+src/api_client/_base.py
+src/api_client/async_client.py
+src/api_client/py.typed
+src/api_client/sync_client.py
+src/api_client/utils/__init__.py
+src/api_client/utils/logs.py
+src/api_client/utils/parse.py
+src/sdlv_api_client.egg-info/PKG-INFO
+src/sdlv_api_client.egg-info/SOURCES.txt
+src/sdlv_api_client.egg-info/dependency_links.txt
+src/sdlv_api_client.egg-info/requires.txt
+src/sdlv_api_client.egg-info/top_level.txt
