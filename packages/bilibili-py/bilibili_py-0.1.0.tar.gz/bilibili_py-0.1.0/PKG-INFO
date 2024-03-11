@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bilibili-py
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/cntvc/bilibili.py
+License: MIT
+Keywords: bilibili,bilibili-api,bilibili-py
+Author: cntvc
+Author-email: cntvc@outlook.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/cntvc/bilibili.py
+Description-Content-Type: text/markdown
+
+

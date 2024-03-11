@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "bilibili-py"
+version = "0.1.0"
+description = ""
+authors = ["cntvc <cntvc@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "bilibili"}]
+repository = "https://github.com/cntvc/bilibili.py"
+keywords = ["bilibili", "bilibili-api", "bilibili-py"]
+classifiers=[
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Chinese (Simplified)",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.2"
+black = "^24.2.0"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+line_length = 100
+profile = "black"
+
+
+[tool.black]
+line-length = 100
