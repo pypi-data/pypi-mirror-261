@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: toolsos
+Version: 0.1
+Summary: OS tools
+Author-email: OS <d.schmitz@amsterdam.nl>
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Provides-Extra: all
+Requires-Dist: keyring; extra == "all"
+Requires-Dist: plotly; extra == "all"
+Requires-Dist: openpyxl; extra == "all"
+Requires-Dist: sqlalchemy; extra == "all"
+Requires-Dist: pyyaml; extra == "all"
+Requires-Dist: requests; extra == "all"
+
+# Tools Onderzoek & Statistiek
+
+This repository contains the tools used by the data scientist/researchers working at Onderzoek & Statistiek
+
+## Installation instructions
+
+The package can be installed using:
+    - pip
+      - Use pip install toolsos[all]
+    - conda.
+      - Use pip install toolsos. The user has to download the dependencies themselves
+
+## Building the package
+
+Instructions on building a package can be found [here](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+
+- py -m pip install --upgrade build
+- py -m build
+
+## Uploading the package to PyPi
