@@ -1,0 +1,12 @@
+basic/TsallisMath.py,sha256=91X4fEOMI-nATvqazW0oamS6MEalxgz9UFy0SAYe1JA,2735
+basic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basic/qMath.py,sha256=l7IKh8TNc4NDrQQI46mgaJFmt_9dQPzapzdXzLGRj0g,517
+machine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+statistics/TsallisStatistics.py,sha256=iUSjwRRgolmCru_rRS6fdIQkybJsl_qXf5WXysvTfFY,3459
+statistics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+statistics/qStatistics.py,sha256=mwrhUnq3Wm8A0i81P2dHqmx_yZNxa0qJUNMYvzJi1VQ,2721
+Tsallis_package-0.1.1.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+Tsallis_package-0.1.1.dist-info/METADATA,sha256=27e-M7Ja6xw62n7-ybvi08ZEj64zO_B-6hW-7RzCIR4,840
+Tsallis_package-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+Tsallis_package-0.1.1.dist-info/top_level.txt,sha256=AFvVMIWaFS047h1KZl8CPj31GjT08alHn3GWN4pcpyM,25
+Tsallis_package-0.1.1.dist-info/RECORD,,
