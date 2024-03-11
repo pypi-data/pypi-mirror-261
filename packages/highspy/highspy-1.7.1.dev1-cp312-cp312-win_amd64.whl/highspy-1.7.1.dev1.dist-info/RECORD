@@ -1,0 +1,9 @@
+highspy/__init__.py,sha256=vz7gHC9lBjf7IBYzS7sHLDEf-ZCtNQiE9lMrhUD5t0I,4702
+highspy/_core.cp312-win_amd64.pyd,sha256=PUSDgL7pEIOKA7NxQnWvlwljwLvOYwjCAkgxtFguGY4,4481024
+highspy/highs.py,sha256=WJXGCtSQ_T5ZEEKaQ827aeUW9vVYwCUuN0R54kC5V9w,14207
+highspy-1.7.1.dev1.dist-info/METADATA,sha256=Gp9C6NI6fmIaP55xr83m9sJAbYvxn0wOGKfm7jTVXXQ,6472
+highspy-1.7.1.dev1.dist-info/WHEEL,sha256=I4fjUu5CKXtMlETsB-F4Q7DROW-oHB8rNWT-iDmQHok,105
+highspy-1.7.1.dev1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+highspy-1.7.1.dev1.dist-info/licenses/LICENSE.txt,sha256=BLbdcGfqzh-cF-k9havwwup6x1fFDZfuHlK2Vv5QsV0,1083
+highspy-1.7.1.dev1.dist-info/licenses/AUTHORS,sha256=Dk_3o2OsHxDbtDH9S7dlx6Tlz8_vGMvqT7DozpCs2Zk,92
+highspy-1.7.1.dev1.dist-info/RECORD,,
