@@ -1,0 +1,13 @@
+finalsa/dynamo/dao/__init__.py,sha256=xVChxnfZ_cdY2TA7f99cRv5UIjpwxV-jUsokm9rs0bI,99
+finalsa/dynamo/dao/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finalsa/dynamo/dao/content/__init__.py,sha256=Ypk1wx45LgJikP_vrKXYuPbHYaLQC-ZQcu2O4UXGWXE,30
+finalsa/dynamo/dao/content/base.py,sha256=dM9Qb0uBOR1QZf3XFdhsA-yzPHp6W0MIFblG5o_7iCI,1217
+finalsa/dynamo/dao/content/base_dao.py,sha256=YTjgBRMBjFpxtyGT6zKWp4tiASLIzD2Pwo6GujfjgRA,1515
+finalsa/dynamo/dao/content/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finalsa_dynamo_dao-0.0.5.data/data/LICENSE.md,sha256=_lu-V-f2tGID1BS2V_W6D2XWppBsylFF1J2KEpfIXN0,1084
+finalsa_dynamo_dao-0.0.5.dist-info/LICENSE.md,sha256=_lu-V-f2tGID1BS2V_W6D2XWppBsylFF1J2KEpfIXN0,1084
+finalsa_dynamo_dao-0.0.5.dist-info/METADATA,sha256=yr1WA4ABL6xLZj38VAqwh0mgayiBfP-6NKi5FSxsE1M,1502
+finalsa_dynamo_dao-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+finalsa_dynamo_dao-0.0.5.dist-info/top_level.txt,sha256=WTFdGgI6FPnJRuatBiNYKKd_6A-hgGQUrVSX8gcSECM,46
+finalsa_dynamo_dao-0.0.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+finalsa_dynamo_dao-0.0.5.dist-info/RECORD,,
