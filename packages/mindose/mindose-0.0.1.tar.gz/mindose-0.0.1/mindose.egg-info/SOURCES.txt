@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+mindose/__init__.py
+mindose/_modidx.py
+mindose/core.py
+mindose.egg-info/PKG-INFO
+mindose.egg-info/SOURCES.txt
+mindose.egg-info/dependency_links.txt
+mindose.egg-info/entry_points.txt
+mindose.egg-info/not-zip-safe
+mindose.egg-info/requires.txt
+mindose.egg-info/top_level.txt

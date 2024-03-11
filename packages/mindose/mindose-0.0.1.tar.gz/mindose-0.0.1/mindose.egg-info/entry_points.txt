@@ -1,0 +1,2 @@
+[nbdev]
+mindose = mindose._modidx:d
