@@ -1,0 +1,6 @@
+scipy
+networkx
+numpy
+dgl
+torch
+pytest
