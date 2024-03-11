@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yubikey-unlock-session
+Version: 0.3.0
+Summary: Unlock Gnome Session using a yubikey, disable screensaver while plugged in.
+License: GPL-3.0
+Author: Dick Marinus
+Author-email: dick@mrns.nl
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyGObject (>=3.38.0,<4.0.0)
+Requires-Dist: dbus-python (>=1.3,<2.0)
+Requires-Dist: pyotp (>=2.4.1,<3.0.0)
+Requires-Dist: usb-plug-notification (>=0.1.0,<0.2.0)
+Requires-Dist: yubikey-manager-lib (>=0.2.0,<0.3.0)
