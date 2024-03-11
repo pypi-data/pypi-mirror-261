@@ -1,0 +1,8 @@
+setup.py
+mefulu.egg-info/PKG-INFO
+mefulu.egg-info/SOURCES.txt
+mefulu.egg-info/dependency_links.txt
+mefulu.egg-info/top_level.txt
+test_package_mefulu/__init__.py
+test_package_mefulu/module1.py
+test_package_mefulu/module2.py
