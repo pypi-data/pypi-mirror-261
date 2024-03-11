@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+portfolio_optimize/__init__.py
+portfolio_optimize/optimizer.py
+portfolio_optimize.egg-info/PKG-INFO
+portfolio_optimize.egg-info/SOURCES.txt
+portfolio_optimize.egg-info/dependency_links.txt
+portfolio_optimize.egg-info/requires.txt
+portfolio_optimize.egg-info/top_level.txt
