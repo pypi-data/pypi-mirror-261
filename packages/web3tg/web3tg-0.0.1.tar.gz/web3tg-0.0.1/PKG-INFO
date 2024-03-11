@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: web3tg
+Version: 0.0.1
+Summary: Private bot for interacting with socials and profiles from web3db
+Home-page: https://github.com/timertimertimer/web3tg
+Author: timer
+Author-email: timerkhan2002@gmail.com
+Project-URL: GitHub, https://github.com/timertimertimer/web3tg
+Project-URL: Source, https://github.com/timertimertimer/web3tg
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Dist: g4f
+Requires-Dist: capmonstercloudclient
+Requires-Dist: web3db
+Requires-Dist: aiogram
+Requires-Dist: aiofiles
+Requires-Dist: aioimaplib
+Requires-Dist: tweepy-self
+Requires-Dist: better_proxy
+Requires-Dist: aiohttp_proxy
+Requires-Dist: python-dotenv
+Requires-Dist: loguru
