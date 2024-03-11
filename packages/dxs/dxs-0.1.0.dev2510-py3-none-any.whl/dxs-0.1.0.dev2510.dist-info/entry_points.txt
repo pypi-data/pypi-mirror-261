@@ -1,0 +1,3 @@
+[console_scripts]
+dxs = dxs.main:app
+
