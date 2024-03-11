@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: willowDb
+Version: 0.1.2
+Summary: A document database as a python module
+Home-page: https://github.com/monkeytravel/willowDb
+Download-URL: https://github.com/monkeytravel/willowDb/archive/refs/tags/v0.1.tar.gz
+Author: Cameron Perrier
+Author-email: dev@thegalacticgroup.com
+License: MIT
+Project-URL: Source, https://github.com/monkeytravel/willowDb
+Keywords: db,documentDb,nosql
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE.txt
