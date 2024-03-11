@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: MMLToolbox
+Version: 1.0.2
+Home-page: https://www.tugraz.at/institute/igte/home/
+Author: IGTE
+Author-email: andreas.gschwentner@tugraz.at
+Keywords: parameter,identification,measurements,optimization
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# MMLToolbox : 
+
+This package is a collection of usefule classes in order to help
+use the diffrent devices of the MML-laboratory 
+
+## pxi: 
+
+This library helps controling a NI PXI-system 
+to perform measurements as well as output 
+electrical test signals.
+Additionally it provides classes that help generating 
+needed output signals, process the measured data
+as well as storing the data
+
+## coord:
+Those classes enable the user to control the 
+precission measuring tabel available at the lab.
+
+
+
+
