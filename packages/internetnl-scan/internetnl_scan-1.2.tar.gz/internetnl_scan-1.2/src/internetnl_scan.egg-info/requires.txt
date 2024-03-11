@@ -1,0 +1,27 @@
+keyring
+pandas
+pytest
+requests-kerberos-proxy
+tabulate
+tldextract
+tqdm
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+importlib_metadata
+keyring
+pandas
+pytest
+pytest-cov
+requests-kerberos-proxy
+sphinx
+tabulate
+tldextract
+tqdm
+black
+
+[testing]
+pytest
+pytest-cov
