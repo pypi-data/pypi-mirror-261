@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.py
+.github/workflows/python-publish.yml
+merci/__init__.py
+merci/_version.py
+merci/evaluate.py
+merci.egg-info/PKG-INFO
+merci.egg-info/SOURCES.txt
+merci.egg-info/dependency_links.txt
+merci.egg-info/top_level.txt
