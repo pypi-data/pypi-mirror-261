@@ -1,0 +1,11 @@
+highspy/highs.py,sha256=UbsT67ycYJj9w_FKB8NNZLWB-hYn0kctvV9XuvCLSok,13757
+highspy/__init__.py,sha256=T7iXg6b7SU-Xgvwu3z-6IsJUDaTCv92E0kCFffRRNt4,4513
+highspy/_core.cpython-310-x86_64-linux-gnu.so,sha256=QIKHJ-wbOTnJ-uN5MHXVVvSz-vRB9rUMtlcOSxubhs0,5336585
+highspy.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+highspy.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+highspy-1.7.1.dev1.dist-info/RECORD,,
+highspy-1.7.1.dev1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+highspy-1.7.1.dev1.dist-info/WHEEL,sha256=sWInson31lTXwQxYyDYeFVtYtarD2JKhjRT7amnOf48,116
+highspy-1.7.1.dev1.dist-info/METADATA,sha256=Gp9C6NI6fmIaP55xr83m9sJAbYvxn0wOGKfm7jTVXXQ,6472
+highspy-1.7.1.dev1.dist-info/licenses/LICENSE.txt,sha256=ELOdunt3MRdfBwU5i220MgtkrdG9Ltn57FtRKp7xvZU,1062
+highspy-1.7.1.dev1.dist-info/licenses/AUTHORS,sha256=FsZ2uj0GyU6ZGGzuRVLNM3I4SVpse9aiusthpnuUtkg,85
