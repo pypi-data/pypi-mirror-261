@@ -1,0 +1,299 @@
+.container {
+  position: relative;
+  padding: 0 !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.pianoroll-svg-wrapper {
+  position: relative;
+  border: 3px solid black;
+  padding: 0px !important;
+  background-color: #f0f0f0;
+}
+
+.pianoroll-svg {
+  aspect-ratio: 2.39/1;
+}
+
+.note-rectangle {
+  transition: width 1.3s ease-in-out, height 1.3s ease-in-out,
+    x 1.3s ease-in-out, y 1.3s ease-in-out, fill 1.3s ease-in-out;
+}
+
+.note-rectangle.active {
+  transition-property: width, height, x, y;
+  transition-duration: 0.1s; /* Faster transition when activated */
+}
+
+midi-player::part(control-panel) {
+  background: #f0f0f0;
+  color: black;
+  border-radius: 8px;
+}
+
+.pianoroll-link {
+  display: flex;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 20px; /* Initial width */
+  height: 20px; /* Initial height */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transform-origin: top right;
+  user-select: none;
+}
+
+.pianoroll-link:hover {
+  transform: scale(1.2); /* Grow by 20% on hover */
+}
+
+.controls-wrapper {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  bottom: 0;
+  z-index: 100;
+  /* pointer-events: none; */
+  opacity: 0;
+  padding: 0 4px;
+}
+
+.pianoroll-controls-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pianoroll-controls-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0.25rem;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: transparent;
+  overflow: hidden;
+  pointer-events: all;
+}
+
+#fullscreen-button:hover svg {
+  animation: pulse 0.3s ease-in-out;
+}
+
+#mute-button {
+  padding: 0.5rem;
+}
+
+.control-panel {
+  height: 60px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  background-size: 85% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+[dir="rtl"] input[type="range"] {
+  background: #ffffff;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  background-size: 15% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 2px 0 #505050;
+}
+
+input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 2px 0 #505050;
+}
+
+input[type="range"]::-ms-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 2px 0 #505050;
+}
+
+/* Input Track */
+input[type="range"]::-webkit-slider-runnable-track {
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type="range"]::-moz-range-track {
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type="range"]::-ms-track {
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.slider-wrapper {
+  width: 0;
+  transition: all 200ms;
+  visibility: hidden;
+  height: 40px;
+}
+
+#mute-button:hover + .slider-wrapper {
+  margin-right: 4px;
+  width: 64px;
+  visibility: visible;
+}
+
+.slider-wrapper:hover {
+  margin-right: 4px;
+  width: 64px;
+  visibility: visible;
+}
+
+.theater-mode {
+  width: 100%;
+}
+
+.theater-mode > .row:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.fullscreen-mode {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.fullscreen-mode > .row:first-child {
+  height: 100%;
+}
+
+.fullscreen-mode #my-svg {
+  height: 100%;
+  position: absolute;
+}
+
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  max-height: 100px;
+  min-height: 60px;
+  z-index: 10;
+  width: 100%;
+  pointer-events: none;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(128, 128, 128, 0.4) 50%,
+    rgba(64, 64, 64, 0.8) 100%
+  );
+  opacity: 0;
+  animation-duration: 0.1s;
+  animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.hidden {
+  display: none;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
