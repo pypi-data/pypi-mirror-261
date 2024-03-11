@@ -1,0 +1,10 @@
+.DS_Store,sha256=367rPLIixUhrMTedVRaajihPBQuovcORZSP0UZzgB7w,6148
+AppleAPI/__init__.py,sha256=-eCbzPBcQSyT5ueL8PRJScY6e_JQaSXzzr6lZPKHQzE,109
+AppleAPI/apple_api_agent.py,sha256=0XiwDX2sRO6JbLwDrvW3lB2TjN3rL3LG0zhFDUmOPjk,36623
+AppleAPI/appstore.py,sha256=AlTTQjBLonFIfwMHNM0NB8bVgcxr28CqECX8HxLhXck,14079
+AppleAPI/models.py,sha256=FbUg51e9eneUVaybNlueswawZvrfGjfVfK40rJz3Tkg,14348
+AppleAPI-1.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+AppleAPI-1.0.3.dist-info/METADATA,sha256=MpXUSQyrpXtlsOgNOQq_QDA3INQWg3MiErlbFNMCr5w,1003
+AppleAPI-1.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+AppleAPI-1.0.3.dist-info/top_level.txt,sha256=R7BFTCuvtE1VcPMy7_g5kA6ExYJgEwafI4Khe2k9dE4,9
+AppleAPI-1.0.3.dist-info/RECORD,,

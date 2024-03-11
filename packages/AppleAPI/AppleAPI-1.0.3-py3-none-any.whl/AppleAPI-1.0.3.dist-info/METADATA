@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: AppleAPI
+Version: 1.0.3
+Summary: App Store Connect API
+Home-page: https://github.com/yingguqing/AppleAPI
+Author: 影孤清
+Author-email: yingguqing@163.com
+License: UNKNOWN
+Keywords: ios apple appstore app store connect api appstoreconnectapi
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyJWT (~=2.0)
+Requires-Dist: pyOpenSSL (~=24.0.0)
+Requires-Dist: requests (~=2.20)
+
+# AppleAPI
+基于appstore connect api封装功能。
+代码是基于[OKAppleAPI](https://github.com/shede333/OKAppleAPI)原码。只是在原代码基础上，新增了部分接口，封装了些自用功能。
+
