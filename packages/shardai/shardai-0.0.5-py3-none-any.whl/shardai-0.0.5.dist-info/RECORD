@@ -1,0 +1,12 @@
+shardai/__init__.py,sha256=DxYCKGGgaAH31mlXv7gWDmhTj8aPV4naXSg3-5SweMQ,81
+shardai/chat.py,sha256=QA75Y7xbYB0TZsuzKHjoOQN-aLGB70d0FkO8f2sZ_Ms,3950
+shardai/client.py,sha256=ndDJfYOEZIYsLzt-qSzUfTXSMa1XBe6kO2irRts5fZc,1052
+shardai/exceptions.py,sha256=qalAQP_25ANcNfYQaToGVTo00GXL9XCrs8fJzz5S6Jk,365
+shardai/image.py,sha256=q0V3boL91MV-z8-FJInnE_p_JFQEO_kVnkuI5VYSYsY,14247
+shardai/moderation.py,sha256=Drj9lKQxaa6StLWAAAWbqwhmKx70AxLeZqg8Vr-J4DM,3639
+shardai/objects.py,sha256=zqD4oi4-YJtXfxkiDSS8yX0pXQPll4kh8vqw2ZnOPAE,8243
+shardai/tts.py,sha256=TxTcD45ODMWDd0wrlo-579E3k9QnaiLfjDHbQTwmguA,6543
+shardai-0.0.5.dist-info/METADATA,sha256=Jeni-3WTZ-7gO-D4SCJI1ctj-WEe9y4sOfK3BByaf2w,1777
+shardai-0.0.5.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+shardai-0.0.5.dist-info/licenses/LICENSE,sha256=7Wmk_ZIpXfNPiOutWcLCl3uCCeMatbY21N-dj0kIgxc,1063
+shardai-0.0.5.dist-info/RECORD,,
