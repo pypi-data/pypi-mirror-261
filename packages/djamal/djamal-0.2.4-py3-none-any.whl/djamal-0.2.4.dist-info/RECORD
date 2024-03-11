@@ -1,0 +1,17 @@
+djamal/LICENSE,sha256=9c5mjW93Z0ayjjhLK5ZzB8gWE0yOMWuZgU6dOF4Nz0Y,1068
+djamal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djamal/djamal.png,sha256=6BhdWdR9HTQ1VFzt0YoqA6b-9IHzI9WMeXaEYKG0wKs,669579
+djamal/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djamal/management/commands/__init__.py,sha256=5EVeMqrrFtyTgD8iBqOL8zpoZnKJxBSUVDVB47TKlEo,28
+djamal/management/commands/apps.py,sha256=9JZmRNTCQhOvJKA3SHYDM7wI6mbrV_l1MjWWslNkzws,157
+djamal/management/commands/djamal.py,sha256=ABuHIKG4vodhd4yPdcjnD01RxP7cq1MgC74YEXKLiWc,18818
+djamal/management/commands/forms.py,sha256=LHqZhIbH3dBoa3gWc2EX0oXg3KqrbMlxdkSf53DGVz4,1788
+djamal/management/commands/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djamal/management/commands/templates/admin.py,sha256=iMb_iWPzd6llxCHkSDJT-dQ4wsSpba2VMg4bpi2mYU0,5004
+djamal/management/commands/templates/edit_deploy_yaml.py,sha256=sUIEpopK94eiBiXUGFAeFKd1p2jwhVDqjIhaKrjGXgw,2411
+djamal/management/commands/urls.py,sha256=djqW-49xmIUef2om85XfwH_9cxS9zIyl-_yLxUEfN_o,329
+djamal/management/commands/views.py,sha256=r-EbJPmuie30GpwGczp6mcQl7rU0KTlxUolivOsV2kM,5718
+djamal-0.2.4.dist-info/METADATA,sha256=COj0C_HDTXHQESU01GT9HLm6e9oWM745XsyHJMcBTG8,6045
+djamal-0.2.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+djamal-0.2.4.dist-info/entry_points.txt,sha256=KkwN6X7sbEHjlkdxg2gaxTnjJ27XATBdWob5z_UcP1M,68
+djamal-0.2.4.dist-info/RECORD,,
