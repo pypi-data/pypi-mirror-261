@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: multigit
+Version: 0.11.6
+Summary: Manages git repos within git repos.
+Project-URL: Documentation, https://jmnavarrol.github.io/python-multigit/
+Project-URL: Source, https://github.com/jmnavarrol/python-multigit
+Project-URL: Bug Tracker, https://github.com/jmnavarrol/python-multigit/issues
+Author-email: "Jesús M. Navarro" <jesusmnavarrolopez@gmail.com>
+License: GPL-3.0
+License-File: LICENSE
+Keywords: Python,git-utilities
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.7
+Requires-Dist: cerberus
+Requires-Dist: colorama
+Requires-Dist: gitpython
+Requires-Dist: pyyaml
+Provides-Extra: development
+Requires-Dist: build; extra == 'development'
+Requires-Dist: sphinx; extra == 'development'
+Requires-Dist: sphinx-rtd-theme; extra == 'development'
+Requires-Dist: sphinxcontrib-programoutput; extra == 'development'
+Requires-Dist: twine; extra == 'development'
+Description-Content-Type: text/markdown
+
+# Python Multigit<a name="top"></a>
+
+This package offers a simple way of managing *"workspaces"* integrating multiple git repos starting from a top one, and without the need of difficult *"arcanes"* like *git submodules*, *git-subtree*, etc.: you only need to declare your intended layout in a YAML file, and let this script (**multigit**) do its job.
+
+Read the [full documentation on GitHub](https://github.com/jmnavarrol/python-multigit#readme).
+
+See also the [simplest-git-subrepos README](https://github.com/jmnavarrol/simplest-git-subrepos#readme) for a long-wired rationale.
