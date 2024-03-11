@@ -1,0 +1,7 @@
+[console_scripts]
+make-regression-testing-utils = regression_testing_utils.make_shell_scripts_and_aliases:main
+regression-testing-compare = regression_testing_utils.compare_files:main
+regression-testing-compare-csv = regression_testing_utils.compare_csv_files:main
+regression-testing-compare-tsv = regression_testing_utils.compare_tsv_files:main
+regression-testing-config-checker = regression_testing_utils.config_checker:main
+regression-testing-runner = regression_testing_utils.runner:main
