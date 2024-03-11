@@ -1,0 +1,14 @@
+[build-system]
+build-backend = 'mesonpy'
+requires = ['meson-python']
+
+[project]
+name = 'gsmethods'
+version = '0.0.1'
+description = 'gsmethods is a python package that provides tools for creating and analysing group sequential statistical tests.'
+readme = 'README.rst'
+requires-python = '>=3.8'
+license = {file = 'LICENSE'}
+authors = [
+  {name = 'Julian Aronowitz', email = 'julian.aronowitz@gmail.com'},
+]
