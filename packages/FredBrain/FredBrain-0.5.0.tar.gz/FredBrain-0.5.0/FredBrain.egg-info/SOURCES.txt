@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+FredBrain/FredBrain.py
+FredBrain/MySQLBrain.py
+FredBrain/example.py
+FredBrain/sql_example.py
+FredBrain.egg-info/PKG-INFO
+FredBrain.egg-info/SOURCES.txt
+FredBrain.egg-info/dependency_links.txt
+FredBrain.egg-info/requires.txt
+FredBrain.egg-info/top_level.txt
