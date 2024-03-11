@@ -1,0 +1,8 @@
+redpanda/__init__.py,sha256=hpV4wkRqTTcdPYHVgA3lD1BPEN2c4ybMn1l4Luw-2sE,175
+redpanda/dialects.py,sha256=3zrmWv_O0M20ldDR2ygWwVNDBQAPLeS6-V5br6UwTfY,2645
+redpanda/example.py,sha256=Cs8vpKsQB0NbfdGrDPK2J9I192YHBudTvpQEK6loWfQ,1522
+redpanda/orm.py,sha256=IH_GpRLuTPfeSFaNLpHoY43b0mHmDPjUK_c12GC-8I8,2872
+redpanda-0.6.0.dist-info/LICENSE,sha256=X-uUqnRJ4hnJRnma2JkQEoHu7fi-054jJuY2e-RjmO0,1087
+redpanda-0.6.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+redpanda-0.6.0.dist-info/METADATA,sha256=AbsoGaoZJHQLwJMnGQYu9fMwhQBTxJ5VJqDOrzfoo6M,3009
+redpanda-0.6.0.dist-info/RECORD,,
