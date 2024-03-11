@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+django_client_manager/__init__.py
+django_client_manager/django_client.py
+django_client_manager.egg-info/PKG-INFO
+django_client_manager.egg-info/SOURCES.txt
+django_client_manager.egg-info/dependency_links.txt
+django_client_manager.egg-info/requires.txt
+django_client_manager.egg-info/top_level.txt
