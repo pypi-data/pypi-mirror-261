@@ -1,0 +1,5 @@
+-c dev-requirements.txt
+
+# Documentation engine
+Sphinx
+sphinx-rtd-theme
