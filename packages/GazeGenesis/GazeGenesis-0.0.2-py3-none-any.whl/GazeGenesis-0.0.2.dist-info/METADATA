@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: GazeGenesis
+Version: 0.0.2
+Summary: A package including Computer Vision Pytorch projects.
+Author-email: Sina Moghimi <sinamoghimi73@gmail.com>
+Project-URL: Homepage, https://github.com/sinamoghimi73/GazeGenesis
+Project-URL: Issues, https://github.com/sinamoghimi73/GazeGenesis/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: PyYAML
+Requires-Dist: rich
+Requires-Dist: numpy
+Requires-Dist: scipy
+
