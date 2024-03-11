@@ -1,0 +1,5 @@
+setup.py
+test_package_kosareva_ea.egg-info/PKG-INFO
+test_package_kosareva_ea.egg-info/SOURCES.txt
+test_package_kosareva_ea.egg-info/dependency_links.txt
+test_package_kosareva_ea.egg-info/top_level.txt
