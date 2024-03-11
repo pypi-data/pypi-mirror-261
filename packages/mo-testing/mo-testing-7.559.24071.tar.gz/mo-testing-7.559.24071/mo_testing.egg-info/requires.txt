@@ -1,0 +1,8 @@
+mo-collections==5.556.24070
+mo-dots==9.549.24062
+mo-future==7.546.24057
+mo-logs==8.556.24070
+mo-math==7.552.24062
+mo-threads==6.556.24070
+
+[tests]
