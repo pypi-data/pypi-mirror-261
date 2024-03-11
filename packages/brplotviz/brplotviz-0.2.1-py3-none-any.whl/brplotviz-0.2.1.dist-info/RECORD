@@ -1,0 +1,11 @@
+brplotviz/__init__.py,sha256=qpebjeGqT6DaVMrSLZSLoOacirJh119xkvar6oe5vHo,181
+brplotviz/plot.py,sha256=ZlWs2iD4dETxZ8wszk9-QU2KWTSsfSixOpaHij8LMZ4,20912
+brplotviz/styleselect.py,sha256=wIHPLzznc4j-C3WdzPXU3GPgLZPvoPyURAx3x0btWR0,1573
+brplotviz/table/__init__.py,sha256=dxdEFRzVpbJlvaxBQGhWRLbfqHTY28Mxx2TlBTd10es,21951
+brplotviz/table/engines.py,sha256=6sFhX71pNxnMN6pP5HdKDGd5eXNfyEF9OVZr0w0QHx4,7392
+brplotviz/table/rules.py,sha256=ZQk1PHx2B2bjY3_LYkcGo4dwumok7I35eBu6psHlyFk,1226
+brplotviz-0.2.1.dist-info/LICENSE,sha256=uQNR6-GutGgZpBRbUPpu_7KReDvUfcv9W7cghHHaIWk,35081
+brplotviz-0.2.1.dist-info/METADATA,sha256=VTyIrbo0NI0PMsp3ZS3Nu-5Nn8cGYz3n9kHdUQYdIaM,44894
+brplotviz-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+brplotviz-0.2.1.dist-info/top_level.txt,sha256=61XUQf2Y2FwM_yePmI0SLQFOIW4swNr-__UYzmlKxtY,10
+brplotviz-0.2.1.dist-info/RECORD,,
