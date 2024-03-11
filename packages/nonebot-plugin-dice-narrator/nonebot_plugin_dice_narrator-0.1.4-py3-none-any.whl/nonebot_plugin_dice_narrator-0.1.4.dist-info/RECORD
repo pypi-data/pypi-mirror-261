@@ -1,0 +1,11 @@
+nonebot_plugin_dice_narrator/__init__.py,sha256=1qPUn45tBLd-Pn8SE6-kFL_NI8RkTqLWvAdYcw4hJQo,493
+nonebot_plugin_dice_narrator/config.py,sha256=OGiBXFZ5xbqqtByRqzXfHQBCPxvJKRljoQHQZEYaoVo,629
+nonebot_plugin_dice_narrator/matchers.py,sha256=S_JYiGHu_A5IvPHtHKAwmN2z4g-RupHyu-rJuJX_Moc,1232
+nonebot_plugin_dice_narrator/narrator.py,sha256=RbJcUWEkcHSqFDe4WCePBwtpXPfn9L12FGWhfbtPdS4,3388
+nonebot_plugin_dice_narrator/utils/common.py,sha256=sMXICOWidGfXWuGQSBctiUxVhQgsZL1aBYC1xtbAf-s,289
+nonebot_plugin_dice_narrator/utils/message_parse.py,sha256=eVUZNt1XfSEmitB68hsc0beOmTh2eobnGHXAB-zx2IQ,2034
+nonebot_plugin_dice_narrator/utils/openai_funcs.py,sha256=HVhvuXoTM0YO5T6g2ly-3kXXWhSlm-z2-UGQ899kLdQ,2365
+nonebot_plugin_dice_narrator-0.1.4.dist-info/METADATA,sha256=FZfeGrrFi99Qkgs2BgcSc-vcJpwP9kBLZx-n3xK22wM,3032
+nonebot_plugin_dice_narrator-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nonebot_plugin_dice_narrator-0.1.4.dist-info/entry_points.txt,sha256=R45JbUNesLRtBUxwjWWRKB565Kcey9KvGBXqDZrQolA,50
+nonebot_plugin_dice_narrator-0.1.4.dist-info/RECORD,,
