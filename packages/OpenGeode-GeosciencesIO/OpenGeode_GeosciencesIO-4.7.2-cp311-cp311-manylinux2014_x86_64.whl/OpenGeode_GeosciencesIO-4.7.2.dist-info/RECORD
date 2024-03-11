@@ -1,0 +1,11 @@
+opengeode_geosciencesio/__init__.py,sha256=DSoLODlacRD8WacWjVxCeKzsPTuIlOPcCO9eXa0H43k,87
+opengeode_geosciencesio/mesh.py,sha256=XPMz1vyG9H4cWlSreVMIVXCf6lCMJaZzobvz1MTs8ZY,1231
+opengeode_geosciencesio/model.py,sha256=Zbwvl-7bFwsoYV3-LF1Pal3LlnzikfJhv2LHVVOwgYI,1262
+opengeode_geosciencesio/lib64/libOpenGeode-GeosciencesIO_mesh.so,sha256=7nqGjbUhzWJ43vGQDvUyAmT5aiSOvK8VLa71TbV2zuc,232664
+opengeode_geosciencesio/lib64/libOpenGeode-GeosciencesIO_model.so,sha256=I88O46iNBnAduv7jjBf6zyQzhktDQibExI9LnKG69uk,744984
+opengeode_geosciencesio/lib64/opengeode_geosciencesio_py_mesh.cpython-311-x86_64-linux-gnu.so,sha256=kuSw8hCmP0UDL6kgq2Dkori2ftXAYsmziOWVdlDZ7NI,122264
+opengeode_geosciencesio/lib64/opengeode_geosciencesio_py_model.cpython-311-x86_64-linux-gnu.so,sha256=0290PhVgJrFTUO-DfQieI0pPpDwGQ8BaJkwcKJBA9Q4,146880
+OpenGeode_GeosciencesIO-4.7.2.dist-info/METADATA,sha256=0nIHGeS2SZlYMZBtzBsSU82yYzIZzs5G_DIAZgddroo,3270
+OpenGeode_GeosciencesIO-4.7.2.dist-info/WHEEL,sha256=dgGe3EPlZzeOJPBCf5t0jHQ3l675dwbDcMJ9_8DKXrg,105
+OpenGeode_GeosciencesIO-4.7.2.dist-info/top_level.txt,sha256=PitPPl6JTchA3_fMFrNtchDNB9Ip8YkRyhMiQmuJWe4,24
+OpenGeode_GeosciencesIO-4.7.2.dist-info/RECORD,,
