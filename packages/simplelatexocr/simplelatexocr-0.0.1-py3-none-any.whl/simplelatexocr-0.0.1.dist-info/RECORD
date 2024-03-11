@@ -1,0 +1,15 @@
+simplelatexocr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplelatexocr/get_lastest_model.py,sha256=wWSYqb8h93BqpVfYCSE3AMCZdywrrfu_jKGdZ6HUW00,2028
+simplelatexocr/main.py,sha256=_pjxl2oO7wQAiMxwAwfr9RRdEqA1ZtQ-M7WfinrsAnc,465
+simplelatexocr/models.py,sha256=AdmKS-7jOV5TlUb9YB2MG8OepB7E6wdLYm7B91SENvY,5006
+simplelatexocr/utils.py,sha256=vz1DjOogiX9MXm68ikNz1E4AH6zNtbcqWM2qy4v3Fz8,11599
+simplelatexocr/utils_load.py,sha256=3wQla_VtJYnl8GTgFExmR8fb1pI0AskY2o4w2fPzdl0,6771
+simplelatexocr/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplelatexocr/api/app.py,sha256=AStpiCp0Q5fWzSzywmI9AYFtq-dvKpkgbnV2MpbYSEs,1530
+simplelatexocr/api/run.py,sha256=DBXpqdVFWyNeoTv7e3DkFwokjNG0HkHlHn50rWOqOxE,566
+simplelatexocr/api/streamlit.py,sha256=YVaDZDWWdPq24fU9LWeELsvfnYf2NikMlzwRgsrlFCw,1534
+simplelatexocr-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+simplelatexocr-0.0.1.dist-info/METADATA,sha256=WDTMTsjnjIflfxhjQRWhp0NjyQiDToopOs6SMOf_DOI,1722
+simplelatexocr-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+simplelatexocr-0.0.1.dist-info/top_level.txt,sha256=sI-thCLIY161u6aWpMjD13OSCmxEYHCO4K02WeDGFV4,15
+simplelatexocr-0.0.1.dist-info/RECORD,,
