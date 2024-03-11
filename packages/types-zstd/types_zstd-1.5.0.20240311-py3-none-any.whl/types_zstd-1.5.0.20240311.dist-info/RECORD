@@ -1,0 +1,6 @@
+zstd-stubs/METADATA.toml,sha256=LeCWiTrDCZ_WyMc490XKI8YQm8ZMKTYP8tYuQiWQpqA,93
+zstd-stubs/__init__.pyi,sha256=lq0xvIVSMrHbLu0y1or9PZsYM6yWmLYFk1jFYnoD9lE,760
+types_zstd-1.5.0.20240311.dist-info/METADATA,sha256=iRerLm3Gq5pkT2oEZkFCJY8_g2zOAcMoeltFfQa19j0,1550
+types_zstd-1.5.0.20240311.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+types_zstd-1.5.0.20240311.dist-info/top_level.txt,sha256=TcNDAWsvPt5ZIh66gJzdvRfZFwOMNjZD8U5Qe9gJOBc,11
+types_zstd-1.5.0.20240311.dist-info/RECORD,,
