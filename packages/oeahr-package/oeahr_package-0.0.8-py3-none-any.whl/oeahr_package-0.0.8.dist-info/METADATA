@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: oeahr-package
+Version: 0.0.8
+Summary: This is my tools package
+Requires-Dist: promptflow
+Requires-Dist: promptflow-tools
+
