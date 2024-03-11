@@ -1,0 +1,8 @@
+setup.py
+test_package_smirnova_ea/__init__.py
+test_package_smirnova_ea/one.py
+test_package_smirnova_ea/two.py
+test_package_smirnova_ea.egg-info/PKG-INFO
+test_package_smirnova_ea.egg-info/SOURCES.txt
+test_package_smirnova_ea.egg-info/dependency_links.txt
+test_package_smirnova_ea.egg-info/top_level.txt
