@@ -1,0 +1,15 @@
+syre/__about__.py,sha256=3dRHtsp5nmwA-YqbJXc02Ja0ru2mu-CrILDKHEf8NM4,133
+syre/__init__.py,sha256=jHn_ppbredqCMdQ_d1gdJJjz5LMxx5lByVR04AX29Ug,304
+syre/common.py,sha256=PUamKPIQ9jUj_MpzejZYJ9EBtRwo_gLo3zpqvPeIpc0,222
+syre/database.py,sha256=3_FHvdRodG1MDA-vkfdXclYOSLQtwp3kB9WsGj0fMi8,13118
+syre/filter.py,sha256=RTjCdmiIj2iEosyjR9x6Awx9bM_G8rTyrMG58AYbiGI,4295
+syre/resources.py,sha256=uPR9rP2dMhVPiKVr2zgUfA99K7OkjKfVyYOnr5n5v5U,8478
+syre/types.py,sha256=l0Dd98usEbqcfyT7L7hB3-loSAXvKEsAMgMwqYLzmjs,306
+syre/bin/syre-local-database-aarch64-apple-darwin,sha256=-RJoECsSLm2c5mOWSPBF8-ekLZNgqZxCquerzdjYbwI,6700849
+syre/bin/syre-local-database-x86_64-apple-darwin,sha256=jilE9yQIsCSA_yqU_IosFRuWl7jX--UYOlEsu4EvO0s,6941840
+syre/bin/syre-local-database-x86_64-pc-windows-msvc.exe,sha256=sEkB3YENGjWPlhkP8FF0Q8GYPLU4iNOhIkx4mTRaSpc,5423104
+syre-0.10.2.dist-info/METADATA,sha256=Y0ZlaB1pjRiw-2cC4_va3dfyO94gVmUuizbBl7wFEkg,1136
+syre-0.10.2.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+syre-0.10.2.dist-info/licenses/LICENSE-APACHE,sha256=7dM9rCrkDKWM2D3mK-vlnHkzVwPcSIR8JtujbdRY9-k,11343
+syre-0.10.2.dist-info/licenses/LICENSE-MIT,sha256=E4sg10tX4siR-RQQ8a8sJn3AdxZ7MjJjOJAX-6XUugQ,1071
+syre-0.10.2.dist-info/RECORD,,
