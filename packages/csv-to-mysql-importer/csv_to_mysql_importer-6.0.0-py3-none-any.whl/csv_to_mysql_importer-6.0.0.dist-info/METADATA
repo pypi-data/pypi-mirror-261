@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: csv_to_mysql_importer
+Version: 6.0.0
+Summary: A package for importing CSV files into a MySQL database
+Author: Md Arfaan Baig
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: mysql-connector-python
+
