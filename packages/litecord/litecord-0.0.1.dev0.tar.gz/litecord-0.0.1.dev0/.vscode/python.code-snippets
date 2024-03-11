@@ -1,0 +1,34 @@
+{
+  "python": {
+    "isFileTemplate": true,
+    "scope": "python",
+
+    "prefix": "pyheader",
+
+    "body": [
+      "# region [Header]",
+      "",
+      "\"\"\"",
+      "",
+      "Litecord",
+      "~~~~~~~~~~",
+      "",
+      "A lightweight, easy-to-use implementation of the Discord Interactions API.",
+      "",
+      ":copyright: (c) 2024-present monospacedmagic",
+      ":license: ISC, see LICENSE for more details.",
+      "\"\"\"",
+      "",
+      "# endregion [Header]",
+      "",
+      "# region [Imports]",
+      "",
+      "from __future__ import annotations",
+      "",
+      "# endregion [Imports]",
+      ""
+    ],
+
+    "description": "python template"
+  }
+}

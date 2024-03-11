@@ -1,0 +1,70 @@
+{
+  "files.watcherExclude": {
+    "**/__pypackages__/**": true,
+    "**/.venv*/**": true,
+    "**/venv*/**": true
+  },
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnSave": true,
+    "editor.wordBasedSuggestions": "off",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit",
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.defaultInterpreterPath": "./.venv/bin/python",
+  "python.autoComplete.extraPaths": [
+    "__pypackages__/3.8/lib",
+    "__pypackages__/3.9/lib",
+    "__pypackages__/3.10/lib",
+    "__pypackages__/3.11/lib",
+    "__pypackages__/3.12/lib"
+  ],
+  "python.analysis.extraPaths": [
+    "__pypackages__/3.8/lib",
+    "__pypackages__/3.9/lib",
+    "__pypackages__/3.10/lib",
+    "__pypackages__/3.11/lib",
+    "__pypackages__/3.12/lib"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "mypy-type-checker.reportingScope": "workspace",
+  "python.testing.pytestArgs": ["tests"],
+  "python.analysis.autoImportCompletions": true,
+  "yaml.schemas": {
+    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+  },
+  "yaml.customTags": [
+    "!ENV scalar",
+    "!ENV sequence",
+    "!relative scalar",
+    "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
+    "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
+    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+  ],
+  "auto-snippets.snippets": [
+    {
+      "language": "python",
+      "snippet": "python"
+    }
+  ],
+  "maptz.regionfolder": {
+    "[python]": {
+      "foldDefinitions": [
+        {
+          "foldStartRegex": "# region \\[Header\\]",
+          "foldEndRegex": "# endregion \\[Header\\]",
+          "isFoldedByDefault": true
+        },
+        {
+          "foldStartRegex": "# region \\[Imports\\]",
+          "foldEndRegex": "# endregion \\[Imports\\]",
+          "isFoldedByDefault": true
+        }
+      ]
+    }
+  }
+}

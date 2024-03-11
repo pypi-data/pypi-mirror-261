@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "usernamehw.errorlens",
+    "ms-python.isort",
+    "ms-python.python",
+    "ms-python.mypy-type-checker",
+    "charliermarsh.ruff",
+    "andreasxp.auto-snippets",
+    "maptz.regionfolder"
+  ]
+}
