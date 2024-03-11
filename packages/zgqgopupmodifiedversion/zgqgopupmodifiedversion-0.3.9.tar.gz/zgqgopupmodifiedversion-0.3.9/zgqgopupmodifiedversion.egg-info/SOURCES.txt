@@ -1,0 +1,7 @@
+README.md
+setup.py
+zgqgopupmodifiedversion.egg-info/PKG-INFO
+zgqgopupmodifiedversion.egg-info/SOURCES.txt
+zgqgopupmodifiedversion.egg-info/dependency_links.txt
+zgqgopupmodifiedversion.egg-info/requires.txt
+zgqgopupmodifiedversion.egg-info/top_level.txt
