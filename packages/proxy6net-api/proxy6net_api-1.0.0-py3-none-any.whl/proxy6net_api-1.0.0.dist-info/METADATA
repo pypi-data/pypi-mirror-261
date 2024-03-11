@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: proxy6net-api
+Version: 1.0.0
+Summary: Proxy6 API wrapper
+Author-email: Nikita Bulavinov <jktujgxtu@gmail.com>
+License: MIT License
+        
+        Copyright (c) [year] [fullname]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/jktujg/proxy6net-api
+Project-URL: Bug Tracker, https://github.com/jktujg/proxy6net-api/issues
+Keywords: api,wrapper,proxy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic ==2.6.3
+Requires-Dist: Requests ==2.31.0
+
+# Proxy6 API wrapper
+Unofficial API wrapper for [proxy6.net](https://proxy6.net/) using pydantic
+
+
+## Installation
+```commandline
+pip install proxy6net-api
+```
+## Basic usage
+Get your API token [here](https://proxy6.net/user/developers)
+### Create API wrapper instance
+
+```python
+from proxy6net_api import Proxy6API
+
+api = Proxy6API(auth_token='your_token')
+```
+
+### Get balance
+```python
+balance = api.get_balance()
+f'{balance.balance=}, {balance.currency=}'
+
+# balance.balance = 518.20, balance.currency='RUB'
+```
+### Buy proxies
+```python
+purchase = api.buy_proxies(count=3, days=5, country_code='ru', ipv='IPV6', protocol='http')
+len(purchase.proxies)
+
+# 3
+```
+### Use proxy
+```python
+import requests
+
+proxy = api.get_proxies(state='active')[0]
+response = requests.get('https://api64.ipify.org?format=json', proxies={'http': str(proxy), 'https': proxy.url})
+
+assert response.json()['ip'] == proxy.ip
+```
+## Other methods
+```python
+help(Proxy6API)
+```
+## Error handling
+```python
+from proxy6net_api import Proxy6Exception
+
+try:
+    proxies = Proxy6API(auth_token='invalid token').get_proxies()
+except Proxy6Exception as err:
+    print(f'Error description: {err.description}. Error code: {err.code}')
+    
+    # Error description: Authorization error, wrong key. Error code: 100
+```
