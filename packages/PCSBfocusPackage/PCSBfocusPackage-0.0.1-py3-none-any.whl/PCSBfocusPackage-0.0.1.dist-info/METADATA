@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PCSBfocusPackage
+Version: 0.0.1
+Summary: A python package for PCSB Focus student web application
+Home-page: UNKNOWN
+Author: Aidan Bruner
+Author-email: Aidanbruner789@gmail.com
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+
+A python package made to get data from the PCSB Focus student web application
+
