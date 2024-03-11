@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+EMPLOID.egg-info/PKG-INFO
+EMPLOID.egg-info/SOURCES.txt
+EMPLOID.egg-info/dependency_links.txt
+EMPLOID.egg-info/top_level.txt
+emploid/__init__.py
+emploid/constants.py
+emploid/emploid.py
+emploid/record.py
+emploid/tools.py
