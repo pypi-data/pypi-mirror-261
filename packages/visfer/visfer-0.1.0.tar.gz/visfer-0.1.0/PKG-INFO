@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: visfer
+Version: 0.1.0
+Summary: 
+Author: LinXueyuanStdio
+Author-email: 23211526+LinXueyuanStdio@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+

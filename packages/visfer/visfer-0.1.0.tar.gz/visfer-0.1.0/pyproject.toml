@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "visfer"
+version = "0.1.0"
+description = ""
+authors = ["LinXueyuanStdio <23211526+LinXueyuanStdio@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+visfer = "visfer.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
