@@ -1,0 +1,6 @@
+requests
+contextvars
+websocket-client
+websockets>=10
+python-socketio<5.0,>=4.0
+python-engineio<4.0,>=3.0
