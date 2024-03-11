@@ -1,0 +1,25 @@
+[project]
+name = "utils_convert_LionHp192"
+version = "1.1.1"
+description = "utils for convert usually use"
+authors = [
+  { name="LionHp192", email="idontgotit@gmail.com" },
+]
+readme = "README.md"
+keywords = ["utils-convert"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.2"
+dependencies = [
+    "pytz",
+    "toml",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/idontgotit/utils/"
+
+

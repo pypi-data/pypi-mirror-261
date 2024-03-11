@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: utils_convert_LionHp192
+Version: 1.1.1
+Summary: utils for convert usually use
+Author-email: LionHp192 <idontgotit@gmail.com>
+Project-URL: Homepage, https://github.com/idontgotit/utils/
+Keywords: utils-convert
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# utils convert
+
+
+
+## Why?
+
+ultis for convert normal use case
