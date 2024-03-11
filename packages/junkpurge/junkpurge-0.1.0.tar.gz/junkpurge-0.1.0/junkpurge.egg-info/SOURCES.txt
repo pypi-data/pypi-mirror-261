@@ -1,0 +1,8 @@
+README.md
+setup.py
+junkpurge/__init__.py
+junkpurge.egg-info/PKG-INFO
+junkpurge.egg-info/SOURCES.txt
+junkpurge.egg-info/dependency_links.txt
+junkpurge.egg-info/entry_points.txt
+junkpurge.egg-info/top_level.txt
