@@ -1,0 +1,13 @@
+numpy>=1.21.5
+opencv-contrib-python<=4.7.0.72,>=4.5.4.60
+opencv-python<=4.7.0.72,>=4.5.4.60
+scikit-image<=0.21.0,>=0.19.2
+scikit-learn<=1.2.2,>=1.0.2
+
+[dev]
+
+[jrs]
+triangle>=20200424
+
+[test]
+parameterized>=0.8.1
