@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: layered-window
+Version: 0.9.1
+Summary: Layered Window with True Transparency for Windows
+Home-page: https://github.com/szabolcsdombi/layered-window/
+Author: Szabolcs Dombi
+Author-email: szabolcs@szabolcsdombi.com
+License: MIT
+Project-URL: Source, https://github.com/szabolcsdombi/layered-window/
+Platform: windows
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# layered-window
