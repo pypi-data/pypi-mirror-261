@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+django_toolbelt.egg-info/PKG-INFO
+django_toolbelt.egg-info/SOURCES.txt
+django_toolbelt.egg-info/dependency_links.txt
+django_toolbelt.egg-info/requires.txt
+django_toolbelt.egg-info/top_level.txt
+tests/__init__.py
+tests/test_simple.py
