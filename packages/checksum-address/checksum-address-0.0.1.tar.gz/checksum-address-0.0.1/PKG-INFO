@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: checksum-address
+Version: 0.0.1
+Keywords: ethereum,web3
+Requires-Dist: eth_utils
