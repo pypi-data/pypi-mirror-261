@@ -1,0 +1,3 @@
+recursive-include src/ *.hpp *.cpp
+graft eigen/Eigen/
+include eigen/README.md eigen/COPYING*
