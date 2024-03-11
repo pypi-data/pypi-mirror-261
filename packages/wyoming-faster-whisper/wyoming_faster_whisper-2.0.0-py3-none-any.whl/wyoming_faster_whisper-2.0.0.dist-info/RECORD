@@ -1,0 +1,16 @@
+wyoming_faster_whisper/VERSION,sha256=wo_MpTY3vIjhJK8XJd8Ty5jGne3v1i-zzb4c22t2BiQ,6
+wyoming_faster_whisper/__init__.py,sha256=LQGl2Gk2fVj1VBhrOCf0cQ92uLBiPO2njh18lVKAaWc,221
+wyoming_faster_whisper/__main__.py,sha256=oxFKZz4D9VWU87qyFuN-dlVa40OjHEQQ4KEh4ODPdhQ,4264
+wyoming_faster_whisper/const.py,sha256=04sCdtJ2QGuF1BQGkOuQW10og61PgH3fCnPhaYu-YoU,1015
+wyoming_faster_whisper/download.py,sha256=x5uiZQpuw0CfzU-RMbvSsoO3gA0CiCZNw7GjL7USX1E,4593
+wyoming_faster_whisper/file_hash.py,sha256=HMuwrgEIg-bCOXHG0wE3vtjrqGD7QaA_UNfvBMXeUcY,1107
+wyoming_faster_whisper/handler.py,sha256=a8Ajg2kAy7zgEmIERqO8hJ6aOt6adQU_rpJiHCf8exY,2914
+wyoming_faster_whisper/faster_whisper/__init__.py,sha256=rrqzC6cY9P-fH0hPMUmktXFxTjTso8wk7RKANgmzOak,37
+wyoming_faster_whisper/faster_whisper/feature_extractor.py,sha256=pq0eDtxj_S8VBJpbl2w69LYpcian2r_T0ZAYRqSyLHU,5809
+wyoming_faster_whisper/faster_whisper/transcribe.py,sha256=apk1mfBK_pNSR3dTi9BP3R4U45BWpbPJ5UKpZ7GvHUk,12038
+wyoming_faster_whisper-2.0.0.dist-info/LICENSE.md,sha256=E3RtUJ105V6iJl--8gS7fNv4SoMVsCB-mIMmy1Q4cCg,1071
+wyoming_faster_whisper-2.0.0.dist-info/METADATA,sha256=132zDEc716NJkS2W107HjRvjiM7NZYFBPeejr4UBYn4,811
+wyoming_faster_whisper-2.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+wyoming_faster_whisper-2.0.0.dist-info/entry_points.txt,sha256=NsXaFOShqVl_rM-c2S1bVMkNdH-PREF7WjvyULUR_vM,79
+wyoming_faster_whisper-2.0.0.dist-info/top_level.txt,sha256=fZcv3ialUAldu5wwuNFdZbyWmVY-wLgTnqyqt4kUpxs,23
+wyoming_faster_whisper-2.0.0.dist-info/RECORD,,
