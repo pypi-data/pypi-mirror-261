@@ -1,0 +1,76 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "brapy"
+version = "0.0.1"
+description = "Python client to acess brapi.dev"
+authors = [
+    "Vinealius <lucas_vinicius10@live.com>"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.27.0"
+alembic = "^1.13.1"
+SQLAlchemy = "^2.0.27"
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^9.1.1"
+
+[tool.semantic_release]
+assets = []
+commit_message = "release: automatic changelog and versioning"
+commit_parser = "angular"
+build_command = "pip install poetry && poetry build"
+logging_use_named_masks = false
+major_on_zero = true
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]
+tag_format = "{version}"
+
+[tool.semantic_release.branches.main]
+match = "(main)"
+prerelease_token = "rc"
+prerelease = false
+
+[tool.semantic_release.changelog]
+template_dir = "templates"
+changelog_file = "CHANGELOG.md"
+exclude_commit_patterns = []
+
+[tool.semantic_release.changelog.environment]
+block_start_string = "{%"
+block_end_string = "%}"
+variable_start_string = "{{"
+variable_end_string = "}}"
+comment_start_string = "{#"
+comment_end_string = "#}"
+trim_blocks = true
+lstrip_blocks = true
+newline_sequence = "\n"
+keep_trailing_newline = true
+extensions = ["jinja2.ext.i18n"]
+autoescape = true
+
+[tool.semantic_release.commit_author]
+env = "GIT_COMMIT_AUTHOR"
+default = "semantic-release <semantic-release>"
+
+[tool.semantic_release.commit_parser_options]
+allowed_tags = ["build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test", "init"]
+minor_tags = ["feat"]
+patch_tags = ["fix", "perf"]
+default_bump_level = 0
+
+[tool.semantic_release.remote]
+name = "origin"
+type = "github"
+ignore_token_for_push = false
+
+[tool.semantic_release.publish]
+dist_glob_patterns = ["dist/*"]
+upload_to_vcs_release = true
