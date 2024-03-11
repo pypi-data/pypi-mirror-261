@@ -1,0 +1,72 @@
+---
+# Acceptable values for file_format are csv or tsv
+file_format: tsv
+
+# The line number that the header starts on
+header_line_number: 1
+
+# The line number that the records start on
+records_start_line_number: 2
+
+# The maximum number of columns
+max_column_count:
+
+# If the following is True, then the evaluator software will ignore
+# the columns listed in the "ignore_columns_str".
+ignore_columns: false
+
+# The following will list the columns to be ignored by the evaluator
+# software.  Note: if the evaluator software should ignore columns
+# specified in this list, then the "ignore_columns" boolean above
+# should be set to true.
+ignore_columns_str: null
+
+workflow:
+  # If running in test mode, the actual commands will not be executed.
+  test_mode: false
+  stages:
+    # Each workflow stage is optional.
+    # The stage_name and commands are all required.
+    # The desc (description) is optional.
+    - stage_name: initialization
+      desc: "Perform necessary initialization"
+      commands:
+        # The command is required.
+        - command: "echo 'Installing necessary software'"
+          # The desc is optional.
+          desc: "Install necessary software"
+        - command: "echo 'Installing necessary dependencies'"
+          desc: "Install necessary dependencies"
+        - command: "echo 'Installing necessary libraries'"
+          desc: "Install necessary libraries"
+    - stage_name: execution
+      desc: "Run the software being tested/evaluated"
+      commands:
+        - command: "bash /home/sundaram/projects/regression-testing-utils/examples/mock_computational_analysis.sh"
+          desc: "Run the executable"
+    - stage_name: evaluation
+      desc: "Evaluate the results of the software being tested/evaluated"
+      commands:
+        # command: "bash example/compare_csv_files.sh --outdir /tmp/%TIMESTAMP%/"
+        - command: "mkdir -p /tmp/test-regression-testing-utils/outdir/%TIMESTAMP%/"
+          desc: "Create the output instance directory"
+        - command: "cp /home/sundaram/projects/regression-testing-utils/examples/example_actual.tsv /tmp/test-regression-testing-utils/outdir/%TIMESTAMP%/actual.tsv"
+          desc: "Copy the example actual tab-delimited file"
+        - evaluator:
+          args:
+            file1: /tmp/test-regression-testing-utils/outdir/%TIMESTAMP%/actual.tsv
+            file2: /home/sundaram/projects/regression-testing-utils/examples/example_expected.tsv
+            file_format: tsv
+            outfile: /tmp/test-regression-testing-utils/outdir/%TIMESTAMP%/comparison_report.txt
+    - stage_name: conclusion
+      desc: "Perform post-processing clean-up etc."
+      commands:
+        - command: "echo 'Done'"
+          desc: "Conclude the regression testing workflow"
+# If the following is set to true,
+# the software will use the Rich Table
+# API for displaying which stage is
+# being executed.
+# If set to false, will use a simple
+# banner to display the same information.
+use_rich_table: true
