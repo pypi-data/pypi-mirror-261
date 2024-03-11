@@ -1,0 +1,10 @@
+fastapi[all]==0.110.0
+motor
+pymongo
+mongomock-motor
+aiomcache
+bcrypt
+ipython
+uvicorn
+deprecation
+jinja2
