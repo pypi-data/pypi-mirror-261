@@ -1,0 +1,11 @@
+docx2txt
+fpdf2
+pypdfium2>=4.28.0
+orjson
+appdirs
+darkdetect
+lxml
+pikepdf
+Pillow
+PyQt6
+PyQt6-WebEngine
