@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/grammateus/__init__.py
+src/grammateus/anthropic_record.py
+src/grammateus/openai_record.py
+src/grammateus.egg-info/PKG-INFO
+src/grammateus.egg-info/SOURCES.txt
+src/grammateus.egg-info/dependency_links.txt
+src/grammateus.egg-info/requires.txt
+src/grammateus.egg-info/top_level.txt
