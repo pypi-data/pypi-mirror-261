@@ -1,0 +1,9 @@
+gptel/__init__.py,sha256=2YRE6roJgUHKM69oKy7UJUbLr90v9TSyDVNIiDiS8S8,300
+gptel/base.py,sha256=HO2HnK3Rrieh9wGm9YqJAQT299jtXt01vak0HTHuH5c,1392
+gptel/bot.py,sha256=VFY1f8hiwEUZqBDIhTfs_uJpVWTBQUNX1e2RN0r-NTY,2652
+gptel/services.py,sha256=nPTMQ-O-iGTNQkEauCq927HLd7FVWU9ppSCWYXbaDZY,479
+gptel/telegram_client.py,sha256=8xgpLif_AqAYVJ1omusQ0ItesP7Ai_21y5t8TGq5ePs,4878
+gptel/utils.py,sha256=VdjKRbKBEx6O7sKVj5l2R4hyR2_TIHol3PKS-oS3S14,251
+gptel-0.2.0.dist-info/METADATA,sha256=hUC800bfYLRlmwWVLYOzYMx99N1At5jHt9mxZdXwCKM,2366
+gptel-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gptel-0.2.0.dist-info/RECORD,,
