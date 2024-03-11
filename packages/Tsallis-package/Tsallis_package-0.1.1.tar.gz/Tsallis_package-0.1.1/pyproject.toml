@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69.0","numpy>=1.26.4"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Tsallis_package"
+version = "0.1.1"
+authors = [
+  { name="Hermes A. V. Urquijo", email="hvurquijo@duck.com" },
+]
+description = "A package for all mathematics and physics concerning Tsallis statistics"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Operating System :: Microsoft :: Windows',
+]
+
+[project.urls]
+Homepage = "https://github.com/havurquijo/Tsallis_package"
+Issues = "https://github.com/havurquijo/Tsallis_package/Issues"
