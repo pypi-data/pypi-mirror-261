@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "activationFunctionVisualizer"  # Replace with your package's actual name
+version = "0.1.0"
+authors = [
+  { name="Akshat", email="akshatkot@gmail.com" }
+]
+description = "A package to visualize activation functions"
+requires-python = ">=3.8"  # Specify minimum Python version
+dependencies = [
+  "numpy",
+  "matplotlib"
+]
+
+

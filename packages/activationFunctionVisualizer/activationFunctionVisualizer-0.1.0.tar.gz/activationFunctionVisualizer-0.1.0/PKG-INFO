@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: activationFunctionVisualizer
+Version: 0.1.0
+Summary: A package to visualize activation functions
+Author-email: Akshat <akshatkot@gmail.com>
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: matplotlib

@@ -1,0 +1,8 @@
+pyproject.toml
+activation-function/__init__.py
+activation-function/index.py
+activationFunctionVisualizer.egg-info/PKG-INFO
+activationFunctionVisualizer.egg-info/SOURCES.txt
+activationFunctionVisualizer.egg-info/dependency_links.txt
+activationFunctionVisualizer.egg-info/requires.txt
+activationFunctionVisualizer.egg-info/top_level.txt
