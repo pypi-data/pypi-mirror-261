@@ -1,0 +1,3 @@
+[console_scripts]
+visfer=visfer.main:app
+
