@@ -1,0 +1,81 @@
+direction: down
+
+Start: {
+    Ird: libray -i encrypted.iso -d game.ird
+    Manual: libray -i encrypted.iso -d supplied_key
+    Automatic: libray -i encrypted.iso
+    Info: libray -i game.iso --info
+}
+
+End: {
+    Dead: { shape: circle }
+    Success?: { shape: circle }
+}
+
+
+PrintInfo: Print info about .iso
+
+Start.Info -> PrintInfo
+
+Process: decrypt or re-encrypt
+
+VerifyIrd: Verify \n title ID { shape: diamond }
+
+Key: "" {
+
+    NoVerify: No verification, \n use given key
+    IrdKey: Use .ird key
+    UseBundled: Use bundled key
+    UseSelected: Use selected key
+
+}
+
+
+Start.Manual -> Key.NoVerify -> Process -> End.Success?
+
+
+Start.Ird -> VerifyIrd
+VerifyIrd -> End.Dead: Wrong ID
+VerifyIrd -> Key.IrdKey: Same ID in .ird and .iso
+Key.IrdKey -> Process
+
+Bundled: "" {
+
+    CheckIrd: Check for \n bundled .ird { shape: diamond }
+    CheckKeys: Check for \n bundled key { shape: diamond }
+    Size: Size { shape: diamond }
+    SCN: Size \n Country \n Name { shape: diamond }
+    Choose: Let user \n Choose { shape: diamond }
+
+    CheckKeys -> Size
+    Size -> SCN: Multiple keys
+    SCN -> Choose: Multiple keys
+
+
+}
+
+Net: "" {
+    Search: Search for .ird online with title ID
+    Jonny: jonnysp { shape: diamond }
+    Aldos: aldostools { shape: diamond }
+}
+
+Bundled.Size -> Key.UseBundled: Single key
+Bundled.SCN -> Key.UseBundled: Single key
+Bundled.Choose -> Key.UseSelected
+Bundled.SCN -> Net.Search: No keys
+Key.UseSelected -> Process
+Key.UseBundled -> Process
+Bundled.Choose -> Net.Search: Not opted in \n None selected
+
+Start.Automatic -> Bundled.CheckIrd
+Bundled.CheckIrd -> Key.IrdKey: Title ID Match
+Bundled.CheckIrd -> Bundled.CheckKeys: No keys / No match
+Bundled.CheckKeys -> Net.Search: No keys
+Net.Search -> Net.Jonny
+Net.Jonny -> Net.Aldos: no .ird / \n is down
+Net.Aldos -> End.Dead: no .ird
+Net.Jonny -> Key.IrdKey: .ird found
+Net.Aldos -> Key.IrdKey: .ird found
+
+
