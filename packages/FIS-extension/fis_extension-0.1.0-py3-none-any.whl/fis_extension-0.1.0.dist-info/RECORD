@@ -1,0 +1,16 @@
+FIS_extension/__init__.py,sha256=5ZdX7Z56jGco27G6lHPlhhN39SFif1d0EV6RtcszUpY,584
+FIS_extension/_version.py,sha256=ac3tgjoOzsODOlacRPCwz99LbZv0NK7ZYAaBWulFo7E,171
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/build_log.json,sha256=sR83O3NEzD1MKyKe74RRioFidc_uIyRrvQKFknqCvpA,22301
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/package.json,sha256=HlhQzBehR3XYJaSHFcWmSetb-PtiTrVYU-n76pZix-c,5748
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/static/lib_index_js.c1b9e2d8410195807bff.js,sha256=hlDzNOl_xXfm4FuGqJKDQ0KwhronQ6L8T3t0RGX-Hts,7213
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/static/lib_index_js.c1b9e2d8410195807bff.js.map,sha256=YYsJXue_PvwMb5itiw8y1twWGJ9KrMhCbT8YXvLZmf4,7748
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/static/remoteEntry.c2719c4cf4d8d15acfa3.js,sha256=S-r4s8Y6gEvw429vTZLCU2Se1Mo2SAjOFbQ7zKo0RcE,27784
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/static/remoteEntry.c2719c4cf4d8d15acfa3.js.map,sha256=-OsFFbmzHPgW78qIR545cN7cmEginP9gDXrxUuDhHwM,26462
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/static/style.js,sha256=Lww0De21UBuNhXReFJFkA60ja-5XgcH5kMgqu9Oa1PE,156
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/static/style_index_js.7e5d64c264b2f949a2a2.js,sha256=urIGC1b_8EzrekWBxr-ETnbzZf2LGXQRCKKXEbT9H78,19343
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/static/style_index_js.7e5d64c264b2f949a2a2.js.map,sha256=-RQFT5MzWc1RawGRFqIB95ipkZOZrD90Vwf4oDAduDA,14714
+fis_extension-0.1.0.data/data/share/jupyter/labextensions/FIS_extension/install.json,sha256=4gPaTBbiXtTwfD11EoPwHHkTapNSsTjN3JyVWHbBQyc,187
+fis_extension-0.1.0.dist-info/METADATA,sha256=6DYGJ57SGMKY8a-cTRH5eS-DOIbNa4q4Uz1BGLDjCHw,5948
+fis_extension-0.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+fis_extension-0.1.0.dist-info/licenses/LICENSE,sha256=wFoOw8yzmIwVZq6x3ZPPSoNoJS5D9qGhTv2RPYtQFq8,1519
+fis_extension-0.1.0.dist-info/RECORD,,
