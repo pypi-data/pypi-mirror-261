@@ -1,0 +1,4 @@
+testcontainers
+Django
+psycopg2-binary
+sqlalchemy
