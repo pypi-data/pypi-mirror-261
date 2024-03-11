@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling", "sshkeyboard", "RPi.GPIO", "numpy", "multiprocess", "adafruit-circuitpython-motorkit"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stepper_motors_juanmf1"
+# I'll use the convention that even numbers are "stable" releases. Odd numbers need more testing.
+version = "0.0.20"
+authors = [
+  { name="Juan Manuel Fernandez", email="juanmf@gmail.com" },
+]
+description = "A stepper motor manager package. With customizable acceleration strategies."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stepper_motors_juanmf1"]
+
+[project.urls]
+Homepage = "https://github.com/juanmf/StepperMotors"
+Issues = "https://github.com/juanmf/StepperMotors/issues"
