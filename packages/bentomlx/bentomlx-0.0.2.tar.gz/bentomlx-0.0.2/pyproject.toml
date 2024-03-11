@@ -1,0 +1,88 @@
+[project]
+name = "bentomlx"
+version = "0.0.2"
+description = ""
+authors = [
+    { name = "kimsoungryoul", email = "kimsoungryoul@gmail.com" },
+]
+package-dir = "src"
+includes = [
+    "bentomlx/",
+]
+dependencies = [
+    "bentoml>=1.1.10",
+    "pydantic-settings>=1.10.0",
+    "async-lru>=2.0.4",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.optional-dependencies]
+ipex = [
+    "torch<=1.13.1",
+    "intel-extension-for-pytorch>=1.13.1",
+]
+aerospike = [
+    "aerospike>=11.0.0",
+]
+redis = [
+    "redis[hiredis]>=4.6.0",
+]
+
+[tool.pdm.dev-dependencies]
+all = [
+    "bentomlx[ipex,aerospike,redis,unittest,docs]",
+]
+unittest = [
+    "pytest>=7.4.3",
+]
+docs = [
+    "sphinx>=5",
+    "myst-parser",
+    "sphinx-click>=3.0.2",
+    "furo",
+    "sphinx-inline-tabs",
+    "sphinxext-opengraph",
+    "sphinxcontrib-fulltoc",
+    "sphinxcontrib-spelling",
+    "sphinx-copybutton",
+    "sphinx-issues",
+    "sphinx-design",
+    "pyenchant",
+    "Jinja2>=3.1",
+    "sphinx-autobuild",
+    "sphinx-hoverxref",
+]
+
+[tool.pdm.resolution]
+respect-source-order = true
+
+[[tool.pdm.source]]
+name = "intel-python"
+url = "https://pypi.anaconda.org/intel/simple/"
+include_packages = [
+    "numpy",
+]
+
+[[tool.pdm.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+include_packages = [
+    "torch",
+]
+
+[[tool.pdm.source]]
+name = "intel-pytorch-extension"
+url = "https://pytorch-extension.intel.com/release-whl/stable/cpu/us/"
+include_packages = [
+    "intel-extension-for-pytorch",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
