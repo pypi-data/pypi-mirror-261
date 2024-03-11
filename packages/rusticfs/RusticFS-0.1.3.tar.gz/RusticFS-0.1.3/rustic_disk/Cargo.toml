@@ -1,0 +1,51 @@
+[package]
+name = "rustic_disk"
+version = "0.1.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+anyhow = "1.0.79"
+bincode = "1.3.3"
+serde = { version = "1.0.196", features = ["derive"] }
+serde_derive = "1.0.196"
+thiserror = "1.0.56"
+log = "0.4.20"
+env_logger = "0.11.1"
+pyo3-helper-macros = { version = "0.0.6", optional = true, features = ["multiple_pymethod"] }
+pyo3 = { version = "0.20.0", optional = true }
+logger_macro = { path = "../logger_macro" }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2.90"
+wasm-bindgen-futures = "0.4.40"
+wasm-bindgen-test = "0.3.40"
+web-sys = { version = "0.3.67", features = [
+    "Document",
+    "Window",
+    "Directory",
+    "File",
+    "IdbDatabase",
+    "IdbFileRequest",
+    "IdbFileHandle",
+    "IdbMutableFile",
+    "IdbOpenDbRequest",
+    "IdbDatabase",
+    "IdbTransaction",
+    "IdbTransactionMode",
+    "IdbObjectStore",
+    "IdbRequest",
+    "PromiseNativeHandler",
+    "IdbVersionChangeEvent",
+    "IdbFactory"
+] }
+serde-wasm-bindgen = "0.6.5"
+
+[features]
+default = []
+debug = []
+py-bindings = ["dep:pyo3", "dep:pyo3-helper-macros", "pyo3/extension-module", "pyo3/multiple-pymethods"]
