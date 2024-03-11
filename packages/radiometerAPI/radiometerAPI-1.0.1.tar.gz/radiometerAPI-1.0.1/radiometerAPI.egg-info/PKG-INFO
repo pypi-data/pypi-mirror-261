@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: radiometerAPI
+Version: 1.0.1
+Summary: API for radiometer
+Home-page: http://www.example.com/
+Author: aburgart02
+Author-email: 
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/aburgart02/radiometer-api
+Project-URL: Source Code, https://github.com/aburgart02/radiometer-api
+Project-URL: Bug Tracker, https://github.com/aburgart02/radiometer-api
+Keywords: radiometer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# radiometer-service
+
