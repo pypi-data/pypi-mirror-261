@@ -1,0 +1,3 @@
+[console_scripts]
+cucon=cucon.main:cli
+
