@@ -1,0 +1,6 @@
+num2words
+pytube
+regex
+requests
+spacy
+youtube-transcript-api
