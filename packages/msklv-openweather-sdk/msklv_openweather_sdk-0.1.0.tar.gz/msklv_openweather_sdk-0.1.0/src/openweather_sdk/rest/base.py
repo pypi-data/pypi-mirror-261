@@ -1,0 +1,54 @@
+import json
+from urllib.parse import urlencode
+
+import requests
+
+from openweather_sdk.globals import _BAD_RESPONSE_CODES, _DOMAIN
+from openweather_sdk.exceptions import BadResponseError, InvalidLocationError, UnexpectedError
+
+
+def _create_params(query_params):
+    params = json.dumps(query_params)
+    return urlencode(eval(params))
+
+
+def _create_path(*segments):
+    path = "/".join(segments)
+    return f"{_DOMAIN}{path}"
+
+
+def _build_full_path(path_data):
+    path = path_data["path"]
+    params = _create_params(path_data["query_params"])
+    return f"{path}?{params}"
+
+
+class _APIRequest:
+    """Base class to API requests."""
+
+    def __init__(self, path):
+        self.path = path
+
+    def _get(self):
+        try:
+            response = requests.get(self.path)
+            response.raise_for_status()
+            return response
+        except requests.HTTPError as e:
+            raise BadResponseError(response.status_code, json.loads(response.content)["message"])
+        except requests.Timeout as e:
+            raise
+        except requests.ConnectionError as e:
+            raise
+        except requests.RequestException as e:
+            raise
+        except Exception as e:
+            raise UnexpectedError(e)
+        
+    def _get_data(self):
+        response = self._get()
+        return json.loads(response.content)
+
+    def _health_check(self):
+        response = self._get()
+        return response.status_code
