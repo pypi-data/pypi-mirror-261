@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: bluos
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Louis Christ
+Author-email: mail@louischrist.de
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.3,<4.0.0)
+Requires-Dist: xmltodict (>=0.13.0,<0.14.0)
+Description-Content-Type: text/markdown
+
+# BluOS Client
+
+This is a Python library for interfacing with BlueOS devices. 
+It uses the 
+[BlueOS API](https://bluesound-deutschland.de/wp-content/uploads/2022/01/Custom-Integration-API-v1.0_March-2021.pdf) 
+to control and query the status of BlueOS devices.
+Authentication is not required.
+
+```python
+from blueos import BluOSDevice
+
+async def main():
+    async with BluOSDevice("<host>") as device:
+        status = await device.status()
+        print(status)
+```
+
+## Installation
+
+```bash
+pip install blueos
+```
+
+
+
