@@ -1,0 +1,11 @@
+name: cellcanvas
+display_name: cellcanvas
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Annotation", "Segmentation"]
+contributions:
+  commands:
+  widgets:
+    - command: cellcanvas.make_qwidget
+      display_name: Example QWidget
