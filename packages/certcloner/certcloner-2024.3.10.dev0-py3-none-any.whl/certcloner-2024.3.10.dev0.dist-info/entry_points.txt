@@ -1,0 +1,2 @@
+[console_scripts]
+certcloner = certcloner.main:main
