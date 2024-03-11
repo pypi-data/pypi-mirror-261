@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PCSBFocus/__init__.py
+PCSBFocus/focus.py
+PCSBfocusPackage.egg-info/PKG-INFO
+PCSBfocusPackage.egg-info/SOURCES.txt
+PCSBfocusPackage.egg-info/dependency_links.txt
+PCSBfocusPackage.egg-info/requires.txt
+PCSBfocusPackage.egg-info/top_level.txt
