@@ -1,0 +1,14 @@
+name: surforama
+display_name: Surforama
+# use 'hidden' to remove plugin from napari hub search results
+visibility: hidden
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Annotation", "Visualization"]
+contributions:
+  commands:
+    - id: surforama.make_widget
+      python_name: surforama:QtSurforama
+      title: Make Surforama
+  widgets:
+    - command: surforama.make_widget
+      display_name: Surforama
