@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: SQLike
+Version: 1.0.0
+Summary: SQLite3 mais en un peu plus simple et modulaire
+Author-email: Nicolas Strekowski <pleasedonotcontactme@nononono.com>
+Project-URL: Homepage, https://github.com/JESAISaps/SQLike
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+
