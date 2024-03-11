@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: populate-synapse-nb
+Version: 1.48
+Summary: A package to populate Azure Synapse Analytics Notebooks (json format) with code from Python source files.
+Home-page: https://github.com/pretoriusdre/populate-synapse-nb
+Author: Andre Pretorius
+Author-email: pretorius.dre+github@gmail.com
+License-File: LICENSE
+Requires-Dist: pathlib
+
