@@ -1,0 +1,8 @@
+mock-stubs/METADATA.toml,sha256=rk3NwcEQNf5XQ7wezZfLvOUrcvufPP-ArL5oUGcctF0,80
+mock-stubs/__init__.pyi,sha256=QSo1GUOuaK7-dTnoihxR1y_SwGCuhFjUCFE3S7-EcHs,401
+mock-stubs/backports.pyi,sha256=0YISOGn7mta9X60-FHUPrFWM1IeOjVKy_86LCLaP-e4,135
+mock-stubs/mock.pyi,sha256=eQcf5QK_EaYyWq5q7-2YdR3DBdyCh3dztUz6jG375oU,13481
+types_mock-5.1.0.20240311.dist-info/METADATA,sha256=xy6QePk5tZZ1xEwdc8SmcBVPGkongYJ08uDBsHK_Etg,1537
+types_mock-5.1.0.20240311.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+types_mock-5.1.0.20240311.dist-info/top_level.txt,sha256=J11EkREdk7ZyOSjfUl8IG0GDCMowXg0p1H31IOF3KEs,11
+types_mock-5.1.0.20240311.dist-info/RECORD,,
