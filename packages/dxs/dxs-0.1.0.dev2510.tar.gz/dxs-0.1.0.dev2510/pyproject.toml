@@ -1,0 +1,62 @@
+[project]
+name = "dxs"
+version = "0.1.0.dev2510"
+description = "Cli tool to create a project structure."
+authors = [
+    { name = "Daxexs", email = "Daxexsdev@gmail.com" },
+]
+dependencies = [
+    "typer[all]",
+    "toml",
+    "twine",
+    "build",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+keywords = [
+    "dxs",
+    "cli",
+    "dxs cli",
+]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.license]
+text = "apache-2.0"
+
+[project.urls]
+Homepage = "https://github.com/Daxexs"
+Repository = "https://github.com/Daxexs/dxs"
+Documentation = "https://github.com/Daxexs/dxs/blob/main/README.md"
+Changelog = "https://github.com/Daxexs/dxs/blob/main/README.md"
+
+[project.scripts]
+dxs = "dxs.main:app"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+excludes = [
+    "./**/.git",
+]
+package-dir = "src"
+includes = [
+    "src/dxs",
+]
+source-includes = [
+    "LICENSE",
+    "README.md",
+]

@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: dxs
+Version: 0.1.0.dev2510
+Summary: Cli tool to create a project structure.
+Keywords: dxs cli dxs cli
+Author-Email: Daxexs <Daxexsdev@gmail.com>
+License: apache-2.0
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Homepage, https://github.com/Daxexs
+Project-URL: Repository, https://github.com/Daxexs/dxs
+Project-URL: Documentation, https://github.com/Daxexs/dxs/blob/main/README.md
+Project-URL: Changelog, https://github.com/Daxexs/dxs/blob/main/README.md
+Requires-Python: >=3.8
+Requires-Dist: typer[all]
+Requires-Dist: toml
+Requires-Dist: twine
+Requires-Dist: build
+Description-Content-Type: text/markdown
+
+[![github](https://img.shields.io/badge/my_profile-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Daxexs)[![pypi](https://img.shields.io/badge/Pypi-0A66C2?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/dxs)
+
+[![Downloads](https://static.pepy.tech/badge/dxs)](https://pepy.tech/project/dxs) [![image](https://img.shields.io/pypi/pyversions/dxs.svg)](https://pypi.python.org/pypi/dxs) [![image](https://img.shields.io/pypi/v/dxs.svg)](https://pypi.python.org/pypi/dxs) [![image](https://img.shields.io/pypi/l/dxs.svg)](https://pypi.python.org/pypi/dxs)
+
+<div align="center">
+    <img src="https://github.com/Daxexs/dxs/blob/main/media/logo.png?raw=true" alt="logo" width="200">
+</div>
+
+
+# 🔥qa
+`dxs` is a client that takes care of creating the structure of a python project, it also supports packaging for pypi.org.
+
+## 💻Installation:
+
+```bash
+  pip install dxs
+```
+
+## 💻Update:
+```bash
+  pip install dxs --upgrade
+```
+
+## 🔎 init:
+> **To initialize the creation of a project structure.**
+```bash
+  dxs init
+```
+## 🔎 version:
+> **To know the version.**
+```bash
+  dxs version
+```
