@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+willowDb/__init__.py
+willowDb/main.py
+willowDb.egg-info/PKG-INFO
+willowDb.egg-info/SOURCES.txt
+willowDb.egg-info/dependency_links.txt
+willowDb.egg-info/top_level.txt
