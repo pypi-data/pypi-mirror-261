@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/danoan/toml_dataclass.py
+src/toml_dataclass.egg-info/PKG-INFO
+src/toml_dataclass.egg-info/SOURCES.txt
+src/toml_dataclass.egg-info/dependency_links.txt
+src/toml_dataclass.egg-info/requires.txt
+src/toml_dataclass.egg-info/top_level.txt
+test/test_toml_dataclass.py
