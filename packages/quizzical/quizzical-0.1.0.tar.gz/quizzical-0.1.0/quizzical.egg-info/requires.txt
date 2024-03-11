@@ -1,0 +1,5 @@
+textual>=0.52.1
+textual-countdown
+humanize>=4.8.0
+xdg-base-dirs>=6.0.0
+httpx
