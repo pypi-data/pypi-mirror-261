@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yany"
+version = "0.2.6"
+description = "星火人设定制工具"
+authors = [{ name = "MJ", email = "tywf91@gmail.com" }]
+license = { text = "MIT" }
+dependencies = [
+  "openai~=1.13.3",
+  "python-dotenv~=1.0.0",
+  "pandas~=2.2.0",
+  "openpyxl~=3.1.0",
+]
+readme = "README.md"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+homepage = "https://github.com/mjason/yany.git"
+documentation = "https://github.com/mjason/yany.git"
+source = "https://github.com/mjason/yany.git"
+tracker = "https://github.com/mjason/yany.git"
+
+[project.scripts]
+yany = "yany:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=6.0", "flake8>=3.8"]
+
+[tool.setuptools.package-data]
+yany = ["templates/*"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["yany.cmds", "yany", "yany.templates"]
+include-package-data = true

@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: yany
+Version: 0.2.6
+Summary: 星火人设定制工具
+Author-email: MJ <tywf91@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/mjason/yany.git
+Project-URL: documentation, https://github.com/mjason/yany.git
+Project-URL: source, https://github.com/mjason/yany.git
+Project-URL: tracker, https://github.com/mjason/yany.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai~=1.13.3
+Requires-Dist: python-dotenv~=1.0.0
+Requires-Dist: pandas~=2.2.0
+Requires-Dist: openpyxl~=3.1.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: flake8>=3.8; extra == "dev"
+
+# 星火人设工具 —— 代码优化版
+
+自我认知工具链是一个基于讯飞星火开源13B大模型做的场景训练方案，iflytekspark-13B模型已深度优化人设的数据适应，能在1000条数据上达到模型自身通用人设的覆盖及变更。
+
+[官方地址](https://gitee.com/iflytekopensource/iFlytekSpark-13B/blob/master/self-awareness/README.md)
+
+本工具作为我的修改版主要有以下增强：
+- 代码优化，很多代码不合理的地方进行了修改
+- 性能增强，调用大模型使用了异步 io
+- 引入了 dotenv 来处理环境变量问题
+- 惯例优于配置，处理了命令行体验问题
+- 作为独立的 pip 包来发放而不是作为代码仓进行发放
+
+还没有做的：
+- 目前没有兼容星火官方 websocket api，我使用了一个代理用来处理，保持和 OpenAI 的兼容性（主要是不想造轮子，后续有可能推动转换项目开源和为了更好处理异步 io
+- 本工具最终目标是给星火开放平台的 train 平台做人设工具数据生成，推荐采用开放平台的 lora 来进行设定改进
+
+python 版本要求 3.10 以上
+
+## 使用说明
+
+1. 安装 `pip install yany`
+2. 初始化项目 `yany init`
+3. prompt 生成 `yany g p`
+4. dataset 生成 `yany g qa`
+
+注意，一定要修改项目目录的 .env 文件，填入自己的 key
+
+一般来说一个项目需要进入你要的文件夹，然后执行 2、3、4 步。训练有问题请联系讯飞云平台，如果你是用开源的讯飞模型那么请自行解决。
+
+---
+### 开源协议
+
+MIT
