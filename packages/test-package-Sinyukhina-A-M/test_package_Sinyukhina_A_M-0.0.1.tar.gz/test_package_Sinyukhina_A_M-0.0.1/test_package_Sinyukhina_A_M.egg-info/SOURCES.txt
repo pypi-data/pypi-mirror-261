@@ -1,0 +1,8 @@
+setup.py
+test_package_Sinyukhina_A_M/__init__.py
+test_package_Sinyukhina_A_M/module1.py
+test_package_Sinyukhina_A_M/module2.py
+test_package_Sinyukhina_A_M.egg-info/PKG-INFO
+test_package_Sinyukhina_A_M.egg-info/SOURCES.txt
+test_package_Sinyukhina_A_M.egg-info/dependency_links.txt
+test_package_Sinyukhina_A_M.egg-info/top_level.txt
