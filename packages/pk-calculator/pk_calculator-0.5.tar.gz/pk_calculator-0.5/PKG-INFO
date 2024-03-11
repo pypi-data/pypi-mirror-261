@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: pk_calculator
+Version: 0.5
+Requires-Dist: setuptools>=45
