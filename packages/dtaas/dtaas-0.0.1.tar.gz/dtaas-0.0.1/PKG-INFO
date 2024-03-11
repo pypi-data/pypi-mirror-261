@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dtaas
+Version: 0.0.1
+Summary: CLI for Digial Twin as a Service
+Author: prasadtalasila
+Author-email: prasad.talasila@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# DTaaS CLI
+
+CLI for Digital Twin as a Service [DTaaS](https://github.com/into-cps-association/DTaaS)
+

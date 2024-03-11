@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dtaas"
+version = "0.0.1"
+description = "CLI for Digial Twin as a Service"
+authors = ["prasadtalasila <prasad.talasila@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dtaas", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
