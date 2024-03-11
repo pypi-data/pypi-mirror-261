@@ -1,0 +1,12 @@
+logseg/__init__.py,sha256=sjcXEOtrQzkaeXfnnm4EXvZlHBD9tq7UjvUqlCsuDi0,127
+logseg/globals.py,sha256=Wwdvc7VIGqdDQcRPLUkpLzUyKREFa4_9Tbl8_N1WVVA,164
+logseg/log_setup.py,sha256=6qEN_1XV5p-NzmDYiC9Q5mreoIBq9eKpoKZEKYOKv78,12854
+logseg/project_metadata.py,sha256=z7h0cQOJrwv4bbxbzXW24HECE1T7gvh56IBOWsP0mIU,332
+logseg/utils.py,sha256=SFogU78eBuoxQUIwumB0_gFkrnPtjl0AIu1AJJRenEU,1017
+logseg/configurations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logseg/configurations/config.py,sha256=ig7W2h59knwCK1-B-iX0Ueq_q6Ts0NWrUtqlQGE5vZU,1972
+logseg-0.1.13.dist-info/LICENSE,sha256=-lrD8eT8SZSqqc8uG2nnUSUVcuRxigGwcLzFPV6zeIQ,1071
+logseg-0.1.13.dist-info/METADATA,sha256=G3vdf059ZT5CwqSbIGLRvSnDr43p8nUbhEuCvKHDbEI,904
+logseg-0.1.13.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+logseg-0.1.13.dist-info/top_level.txt,sha256=JhLWwXFjXrXKt1KhtS_EpMqrqfkLZxEL6KAFUIhwS-w,7
+logseg-0.1.13.dist-info/RECORD,,
