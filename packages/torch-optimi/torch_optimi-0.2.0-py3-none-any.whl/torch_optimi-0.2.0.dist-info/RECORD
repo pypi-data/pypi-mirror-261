@@ -1,0 +1,17 @@
+optimi/__init__.py,sha256=pBssah6mrePNfJvONO2IrGk7tqjt6HrS1vAHSzfrenc,424
+optimi/adam.py,sha256=rFXRvlu5bhQm_itq2YB-Uc43rAgPtM5GlIyOewYmp5k,15254
+optimi/adamw.py,sha256=Lxg1xpj1HZDRLRK7yE2cNvrlnOOuV__NXRQm_yzD3hE,4995
+optimi/adan.py,sha256=Ixa3k5fPjoZIb3_ZlUsISgdXyEgFAZfTwyZ1MbYfS_0,18768
+optimi/gradientrelease.py,sha256=I8IRpgrfWireBA6RzQLI-9avirv1Kbcipr8wROVOmwc,2521
+optimi/lion.py,sha256=mQY1ICOe9KhUp7ByhSQBV6tuYVsFLbQ1u4Yr8B-BvE4,12619
+optimi/optimizer.py,sha256=D4SuZGgesyG4GyfI5mvI9-Z89e_sh_kDtN0T5LZRBhA,4344
+optimi/radam.py,sha256=a3Y-3M-389g8uRpxUXL-GOF-1O24zHcaYKPebFiPfRY,16275
+optimi/ranger.py,sha256=N_FuXgOJyE4BXCvccHmUuaEFPJfQ6TGhhBvfW3BIu2A,19211
+optimi/sgd.py,sha256=kIX3lD3TKdg47FX7FURQtyCsH7kLRAYQ3Wn6DMrqfGI,14056
+optimi/stableadamw.py,sha256=ExexQo5AfMEeRj9kt9DZlAO8udSMAQz-nNbqKA2wkbY,16450
+optimi/utils.py,sha256=2aVMpOyIEIhJViJeS4oYQpIwCBEuVnBhbpTQMUXV-wg,518
+torch_optimi-0.2.0.dist-info/LICENSE,sha256=hug7PztWiv8oTRSx0Tfb9KZ84EVmwyuovk30M9D5_-o,1072
+torch_optimi-0.2.0.dist-info/METADATA,sha256=lgknn0drGwNJ4IVP6hk__WPtWko2VJMLGpZ3k6qJLXM,9372
+torch_optimi-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+torch_optimi-0.2.0.dist-info/top_level.txt,sha256=SUBsJ2H2YALE9aSSUGJLHK1NMIuUut_9fnUR7POxp0w,7
+torch_optimi-0.2.0.dist-info/RECORD,,
