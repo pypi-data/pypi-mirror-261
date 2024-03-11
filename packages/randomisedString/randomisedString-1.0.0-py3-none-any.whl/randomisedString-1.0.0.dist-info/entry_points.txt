@@ -1,0 +1,2 @@
+[console_scripts]
+pooledMySQL = randomisedString.randomisedString.__main__:main
