@@ -1,0 +1,5 @@
+setup.py
+new_papka.egg-info/PKG-INFO
+new_papka.egg-info/SOURCES.txt
+new_papka.egg-info/dependency_links.txt
+new_papka.egg-info/top_level.txt
