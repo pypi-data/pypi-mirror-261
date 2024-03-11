@@ -1,0 +1,10 @@
+booklet/__init__.py,sha256=lWC8UQkHLoMYE7lumPEYjktcXiKP58n7ZGyvG4HUioE,205
+booklet/main.py,sha256=ZMrvz1aptlTEyvyDJzMqboovrwsYQMI-O7xOwPSassQ,21527
+booklet/serializers.py,sha256=eTjN7Ss_st8wpiBs-ihsCiPjngjUU-MHJA15nRIiy8w,7244
+booklet/utils.py,sha256=HibRRfsyhhpbiQYaRxn0GupeZhkJnZlWThjgwfleD5k,14851
+booklet/tests/__init__.py,sha256=38pdDhEZk2RiT5kga2DPbhTYeDHdsCXNaEr7HH1-k20,208
+booklet/tests/test_booklet.py,sha256=S9oD53EjGUn3xcI8yBTyjqYc0KhRjAp_EUgWr1YqW7I,3416
+booklet-0.1.10.dist-info/METADATA,sha256=UOvp1pO6QZSNVeN8LtPwLiU8CW56B0SR_Zotjp_FgnI,7234
+booklet-0.1.10.dist-info/WHEEL,sha256=ccEkY-EGGllEs7ySpwBlD8G4u70wR77CNej8Q6tzIqA,105
+booklet-0.1.10.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+booklet-0.1.10.dist-info/RECORD,,
