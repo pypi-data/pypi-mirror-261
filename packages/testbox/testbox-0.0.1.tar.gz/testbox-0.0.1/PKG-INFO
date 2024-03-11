@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: testbox
+Version: 0.0.1
+Summary: Test/TAS framework for DOSBox
+Home-page: https://github.com/excitoon/testbox
+Author: Vladimir Chebotarev
+Author-email: vladimir.chebotarev@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/excitoon/testbox/blob/master/README.md
+Project-URL: Source, https://github.com/excitoon/testbox
+Project-URL: Tracker, https://github.com/excitoon/testbox/issues
+Keywords: dosbox,test,tas
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# TestBox
+
+Test/TAS framework for DOSBox.
+
+```
+docker-compose -f docker-compose.example.yml run test
+```
+
+Tested on Ubuntu 20.10.
+
+## Example
+
+As test application I used "demo" version of Soko-Ban by Spectrum HoloByte. Please notice that test application is only included as an example. It is unplayable after level 2.
+
+Test scenario includes full walkthrough of level 1.
+
+![Test application](example/video.gif)
