@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sqliteworks
+Version: 0.1.0
+Summary: SQLite3 Utilities and Data Structures For Python
+Home-page: https://github.com/cope-systems/sqliteworks
+Download-URL: https://github.com/cope-systems/sqliteworks/archive/v0.1.0.tar.gz
+Author: Robert Cope
+Author-email: robert@copesystems.com
+License: MPL 2.0
+Keywords: sqlite,sqlite3,key value store,kv store,job queue,work queue,sqlite utilities
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+License-File: LICENSE
+
+# sqliteworks
+Tooling and Common Components for Sqlite3 with Python

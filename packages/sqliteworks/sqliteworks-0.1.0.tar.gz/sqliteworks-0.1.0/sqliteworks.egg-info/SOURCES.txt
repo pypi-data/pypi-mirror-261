@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sqliteworks.py
+sqliteworks.egg-info/PKG-INFO
+sqliteworks.egg-info/SOURCES.txt
+sqliteworks.egg-info/dependency_links.txt
+sqliteworks.egg-info/top_level.txt
