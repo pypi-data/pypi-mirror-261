@@ -1,0 +1,13 @@
+MapCoords/__init__.py,sha256=Ula4BMNWcMewPKMsUfN9F1DzShPhkPDM_NxidYpa3gw,284
+MapCoords/coord_transform.py,sha256=MP62BHJGNrsGi-x1bJ3qc5v3mLzTTIy1AI6yqQkcn9U,16331
+MapCoords/dis_compute.py,sha256=qEYriC3UZnBhJBYhHFahMpWJcw4-8nnRTvpsXgl85GY,11933
+MapCoords/rings.py,sha256=XCCOM_uujGfigHyL1hQ47G30ADo6tYCsHRW8JKA7TEM,7846
+MapCoords/city_rings/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+MapCoords/crawl_city_ring_coords/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+MapCoords/data_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MapCoords/html_templates/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+MapCoords-0.1.8.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MapCoords-0.1.8.dist-info/METADATA,sha256=gT2vIFGZLO1z8kgOQmHfZf6n18IQJs-6MCOxzY8j01s,1298
+MapCoords-0.1.8.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+MapCoords-0.1.8.dist-info/top_level.txt,sha256=bcv28FJXnQwdKGhC6OkikvAvlHidFemd8RKb_DPGNyk,10
+MapCoords-0.1.8.dist-info/RECORD,,
