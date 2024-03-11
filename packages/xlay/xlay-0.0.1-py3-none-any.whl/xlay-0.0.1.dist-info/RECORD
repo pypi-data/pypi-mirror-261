@@ -1,0 +1,10 @@
+xlay/__init__.py,sha256=QUDRP_dThlhYoPU1-nWkhkmySgDXqn2TB3efDVi2WV0,1230
+xlay/assembly.py,sha256=kKMp24smwpsEvMMlSoBg5kulVhEDmx35FJP_SXIdIf8,2258
+xlay/canvas.py,sha256=4e-v608ye4okSGCpSP3lLcjRJkBCAIPvhAZv1SD8gQ4,4879
+xlay/layout.py,sha256=HF_u0hK3edFnESKGMvbS8nW9tiWnE2KpDwONE5lEjAY,6460
+xlay/pose.py,sha256=uWBGXi1BKBE3bhpbZI6_Mn6TTmG3EXOvTA0v5w73x2Q,8892
+xlay/primitives.py,sha256=L7Ttw74lZ6pjITzmZ3I1cFuY0koOFwWPq0wh1LsO-ec,12827
+xlay-0.0.1.dist-info/METADATA,sha256=bS-LeKJM828H3OJE-7yUlXaLURMiVZ3dF1c6J9MDG7w,344
+xlay-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+xlay-0.0.1.dist-info/top_level.txt,sha256=VPjDffA_-GQslxPAjTEjfsrtJNO1mPR0HWRtO3wtWdA,5
+xlay-0.0.1.dist-info/RECORD,,

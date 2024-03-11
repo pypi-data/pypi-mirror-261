@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xlay
+Version: 0.0.1
+Summary: Library for 3D layout management
+Author-email: Riccardo De Maria <riccardodemaria@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/rdemaria/xlay
+Project-URL: repository, https://github.com/rdemaria/xlay
+Keywords: geometry
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
