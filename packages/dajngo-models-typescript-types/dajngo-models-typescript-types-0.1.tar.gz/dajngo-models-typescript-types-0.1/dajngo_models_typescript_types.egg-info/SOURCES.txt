@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+dajngo_models_typescript_types.egg-info/PKG-INFO
+dajngo_models_typescript_types.egg-info/SOURCES.txt
+dajngo_models_typescript_types.egg-info/dependency_links.txt
+dajngo_models_typescript_types.egg-info/requires.txt
+dajngo_models_typescript_types.egg-info/top_level.txt
+django_model_to_typescript_types/__init__.py
+django_model_to_typescript_types/apps.py
+django_model_to_typescript_types/modeltotypescriptconverter.py
+django_model_to_typescript_types/migrations/__init__.py
