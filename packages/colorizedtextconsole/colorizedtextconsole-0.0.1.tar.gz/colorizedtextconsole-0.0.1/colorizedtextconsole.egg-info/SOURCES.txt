@@ -1,0 +1,8 @@
+README.md
+setup.py
+colorizedtextconsole/__init__.py
+colorizedtextconsole/consolecolor.py
+colorizedtextconsole.egg-info/PKG-INFO
+colorizedtextconsole.egg-info/SOURCES.txt
+colorizedtextconsole.egg-info/dependency_links.txt
+colorizedtextconsole.egg-info/top_level.txt
