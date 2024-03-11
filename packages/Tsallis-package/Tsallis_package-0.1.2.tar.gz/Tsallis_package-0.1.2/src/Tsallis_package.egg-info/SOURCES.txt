@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/Tsallis_module/basic/TsallisMath.py
+src/Tsallis_module/basic/__init__.py
+src/Tsallis_module/basic/qMath.py
+src/Tsallis_module/machine/__init__.py
+src/Tsallis_module/statistics/TsallisStatistics.py
+src/Tsallis_module/statistics/__init__.py
+src/Tsallis_module/statistics/qStatistics.py
+src/Tsallis_package.egg-info/PKG-INFO
+src/Tsallis_package.egg-info/SOURCES.txt
+src/Tsallis_package.egg-info/dependency_links.txt
+src/Tsallis_package.egg-info/top_level.txt
