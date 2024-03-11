@@ -1,0 +1,15 @@
+zorg/__init__.py,sha256=TOfNZBBV1v2KVbFbzjirZExh-P9AJUUd9xy7i8GnSn8,134
+zorg/__main__.py,sha256=ElhNYTgkINqApWbNYD1mX4ndlqp1Zwg61YWXQ779QXw,277
+zorg/common.py,sha256=pq2wU90MzL7HxsjqtbVfmKkKirFmnW5ylUxqnIwZ5jU,679
+zorg/config.py,sha256=niPa9nLoiP9SfWzmb_KtZPgVTX742e6ZIqvTLPy_xiM,6110
+zorg/file_groups.py,sha256=LH9qITUC8LjNkFLPFbPr7WFJF5jbv3awmhqTCS3V9bE,1890
+zorg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zorg/runners.py,sha256=KceQN2kIKVe32n1dwTp-xH8W2sBnEaNpIL6L0Ofi1Jk,6899
+zorg/types.py,sha256=iURj5jhWpHjTn8Oq4kxbJDy7RDtjLmPFPqvOYdxXAYI,277
+zorg/grammar/zorg_file/ZorgFile.g4,sha256=WbHXe5aaDuMttJTg102d2lz64cU-yGsDIGXiBQw1PmQ,686
+zorg/grammar/zorg_file/__init__.py,sha256=2JmsuhGexeC_qgFY1Of2pJPwyJq6H3CfyomvHhuer8U,184
+zettel_org-0.3.0.dist-info/METADATA,sha256=5lySioOxXV4m_Uurj03_7rHxLUNAZegwSG32JTdl2gc,9756
+zettel_org-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+zettel_org-0.3.0.dist-info/entry_points.txt,sha256=8dQEYFq8OpCCuwOm_wYdjcdSirxWlZZjnwEdu3Cs6CY,44
+zettel_org-0.3.0.dist-info/top_level.txt,sha256=bwxkqdjGY4fUTl8dxaEhTYpWbPfLnKfM5HXLiPcWeNA,5
+zettel_org-0.3.0.dist-info/RECORD,,
