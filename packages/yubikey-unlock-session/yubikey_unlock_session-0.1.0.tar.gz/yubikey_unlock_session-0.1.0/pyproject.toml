@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "yubikey-unlock-session"
+version = "0.1.0"
+description = "Unlock Gnome Session using a yubikey, disable screensaver while plugged in."
+authors = ["Dick Marinus <dick@mrns.nl>"]
+license = "GPL-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyotp = "^2.4.1"
+dbus-python = "^1.3"
+PyGObject = "^3.38.0"
+usb-plug-notification = "^0.1.0"
+yubikey-manager-lib = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+yubikey-unlock-session = "yubikey_unlock_session:main"
