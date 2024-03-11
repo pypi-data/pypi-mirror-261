@@ -1,0 +1,5 @@
+old_stuff
+.vscode
+__pycache__
+.coverage
+htmlcov
