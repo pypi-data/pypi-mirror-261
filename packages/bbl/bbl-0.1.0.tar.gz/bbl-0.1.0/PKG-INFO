@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bbl
+Version: 0.1.0
+Summary: Base bricks library
+Author: Mayorov Evgeny
+Author-email: motormen@gmail.com
+Requires-Python: >=3.7.2,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (==2.5.3)
+Requires-Dist: pylint (>=2.17.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+Base bricks library
+
