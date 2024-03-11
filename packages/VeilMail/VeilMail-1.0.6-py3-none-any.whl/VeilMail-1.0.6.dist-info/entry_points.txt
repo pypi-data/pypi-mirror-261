@@ -1,0 +1,2 @@
+[console_scripts]
+veilmail = veilmail.main:main
