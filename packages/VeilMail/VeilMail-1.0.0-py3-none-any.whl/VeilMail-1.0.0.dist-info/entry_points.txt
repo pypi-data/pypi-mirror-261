@@ -1,0 +1,2 @@
+[console_scripts]
+flashmail = flashmail:main
