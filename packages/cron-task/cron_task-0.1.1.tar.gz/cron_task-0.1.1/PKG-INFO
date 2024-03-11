@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: cron-task
+Version: 0.1.1
+Summary: Script runner based on interval
+Home-page: https://github.com/nsiregar/runner
+License: MIT
+Author: Ngalim Siregar
+Author-email: ngalim.siregar@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/nsiregar/runner
+Description-Content-Type: text/markdown
+
+# cron-task
+
+Simple task runner for pythonista
+
+
+## Usage
+
+```python
+from cron_task import Executor
+
+def task():
+    print('some task')
+
+worker = Executor()
+worker.every(1).seconds.execute(task)
+
+# Start task runner
+worker.start()
+
+# Stop task runner
+worker.stop()
+
+# Manually run executor
+while True:
+    worker.run_scheduled()
+```
+
