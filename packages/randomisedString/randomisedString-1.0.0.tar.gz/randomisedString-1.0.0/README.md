@@ -1,0 +1,1 @@
+A simple program to generate random strings, both alpha, numeric and alphanumeric

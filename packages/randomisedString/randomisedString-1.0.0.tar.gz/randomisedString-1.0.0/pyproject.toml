@@ -1,0 +1,32 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "randomisedString"
+version = "1.0.0"
+description = "A simple program to generate random strings, both alpha, numeric and alphanumeric"
+readme = "README.md"
+authors = [{ name = "Bhindi", email = "bhaskarpanja93@gmail.com" }]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+requires-python = ">=3.6"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/BhaskarPanja93/OpenSource"
+
+[project.scripts]
+pooledMySQL = "randomisedString.randomisedString.__main__:main"
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+

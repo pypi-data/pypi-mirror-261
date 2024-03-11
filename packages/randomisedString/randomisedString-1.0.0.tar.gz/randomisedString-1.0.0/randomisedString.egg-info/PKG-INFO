@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: randomisedString
+Version: 1.0.0
+Summary: A simple program to generate random strings, both alpha, numeric and alphanumeric
+Author-email: Bhindi <bhaskarpanja93@gmail.com>
+Project-URL: Homepage, https://github.com/BhaskarPanja93/OpenSource
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+A simple program to generate random strings, both alpha, numeric and alphanumeric
