@@ -1,0 +1,2 @@
+[console_scripts]
+django2ts = django_model_to_typescript_types:main
