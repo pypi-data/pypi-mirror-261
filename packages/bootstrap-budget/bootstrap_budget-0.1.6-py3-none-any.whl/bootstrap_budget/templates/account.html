@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+{% block view_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+{% endblock %}
+
+
+{% block nav_items %}
+    {{ add_dashboard_nav() }}
+    {{ add_budgets_nav() }}
+    {{ add_budget_items_nav() }}
+    {{ add_accounts_nav(active=True) }}
+    {{ add_transactions_nav() }}
+    {{ add_user_nav() }}
+{% endblock %}
+
+
+{% block modals %}
+    {{ add_edit_profile_modal() }}
+{% endblock %}
+
+
+{% block main_content %}
+<div class="container my-4">
+    <button type="button" class="btn btn-primary">+ Add New Account</button>
+</div>
+
+{% for account in accounts %}
+<div class="container my-4">
+    <a href="#">
+        <div class="p-5 bg-body-tertiary border rounded-3">
+            <h1 class="text-body-emphasis">{{ account.name }}</h1>
+            <p>{{ account.description }}</p>
+        </div>
+    </a>
+</div>
+{% endfor %}
+{% endblock %}
