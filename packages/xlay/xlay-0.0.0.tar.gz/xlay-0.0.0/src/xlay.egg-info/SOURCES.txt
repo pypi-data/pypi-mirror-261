@@ -1,0 +1,12 @@
+pyproject.toml
+src/xlay/__init__.py
+src/xlay/assembly.py
+src/xlay/canvas.py
+src/xlay/layout.py
+src/xlay/pose.py
+src/xlay/primitives.py
+src/xlay.egg-info/PKG-INFO
+src/xlay.egg-info/SOURCES.txt
+src/xlay.egg-info/dependency_links.txt
+src/xlay.egg-info/requires.txt
+src/xlay.egg-info/top_level.txt
