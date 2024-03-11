@@ -1,0 +1,14 @@
+license.s.HTML
+pyproject.toml
+readme.md
+structures/modules/duets/__init__.py
+structures/modules/duets/status_1.py
+structures/modules/duets.egg-info/PKG-INFO
+structures/modules/duets.egg-info/SOURCES.txt
+structures/modules/duets.egg-info/dependency_links.txt
+structures/modules/duets.egg-info/requires.txt
+structures/modules/duets.egg-info/top_level.txt
+structures/modules/duets/_clique/__init__.py
+structures/modules/duets/_clique/group/__init__.py
+structures/modules/duets/_licenses/gpl-3.0-standalone.html
+structures/modules/duets/_status/status.proc.py
