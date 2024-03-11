@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+simple_weather_api_by_ys.egg-info/PKG-INFO
+simple_weather_api_by_ys.egg-info/SOURCES.txt
+simple_weather_api_by_ys.egg-info/dependency_links.txt
+simple_weather_api_by_ys.egg-info/requires.txt
+simple_weather_api_by_ys.egg-info/top_level.txt
