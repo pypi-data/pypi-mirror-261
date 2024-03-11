@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: wanmedia
+Version: 0.2.2
+Summary: Social Media  Analysis 
+Requires-Dist: nltk
+Requires-Dist: stop_words
+Requires-Dist: hdbscan
+Requires-Dist: top2vec
+Requires-Dist: top2vec[sentence_encoders]
+Requires-Dist: tmplot
+Requires-Dist: gensim
+Requires-Dist: pyLDAvis
