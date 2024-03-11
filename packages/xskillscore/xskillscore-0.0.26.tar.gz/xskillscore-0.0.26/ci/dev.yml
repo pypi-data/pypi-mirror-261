@@ -1,0 +1,39 @@
+name: xskillscore-dev
+channels:
+  - conda-forge
+dependencies:
+  - python >= 3.9,<3.12
+  # Documentation
+  - matplotlib-base
+  - nbsphinx
+  - nbstripout
+  - sphinx
+  - sphinx_rtd_theme
+  - sphinx-autosummary-accessors
+  - sphinxcontrib-napoleon
+  # IDE
+  - jupyterlab
+  # Numerics
+  - bottleneck
+  - cftime
+  - dask-core
+  - numba>=0.52
+  - numpy
+  - properscoring
+  - scikit-learn
+  - scipy
+  - statsmodels
+  - xarray>=0.16.1
+  - xhistogram>=0.3.0
+  # Package Management
+  - asv
+  - build
+  - coveralls
+  - doc8
+  - pre-commit
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - pytest-sugar
+  - mypy
+  - ruff
