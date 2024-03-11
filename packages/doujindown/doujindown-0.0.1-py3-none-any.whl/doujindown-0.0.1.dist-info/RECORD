@@ -1,0 +1,14 @@
+doujindown/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doujindown/app.py,sha256=tadh29xaAcQBsLdCjGOZrCLf3qpfzzaDrKLVULd-hVg,5945
+doujindown/read_serialized.py,sha256=5jtxTRX1C985a2Mw46EF6oRjddyLIr5MaAjTln8_bNA,1362
+doujindown/requirements.txt,sha256=dqB-czfZwGQY4IvxmyFrQ2X8JK8IOVB0Vdk1b62g48c,143
+doujindown/text_cleaning.py,sha256=pwv7I0fEYmOna8uua9CxbLZRwb-msuNXuKd5g8DPtUg,814
+doujindown/conf/doujindown.txt,sha256=wM7o84VfkZQHEukcXhmFwEvnjyKal8kfkjmZZq2vFYY,2547
+doujindown/conf/mirrors.json,sha256=hSwypxufyQHjtBknu7ibqBQ2RKR7DZCB0IeR2jiW_J0,201
+doujindown/conf/settings.yml,sha256=A661XS65Y-1H4-xdtlLiJaWA30HjKRf_vW8t2x7vk3U,130
+doujindown/conf/working.csv,sha256=IKfXVZyqUnY4ALPjMX5p2j-S3L8sm265D8LjrWXIlew,54
+doujindown-0.0.1.dist-info/METADATA,sha256=Zq-dHpzkFrVaXkkhbqRfA0mcG69s5tKYS0o4B26UL5I,3220
+doujindown-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+doujindown-0.0.1.dist-info/entry_points.txt,sha256=WhXQSP9VJPUoBGRmG4Xr7aL5sBcWOZeTlURs9KMF4Io,50
+doujindown-0.0.1.dist-info/top_level.txt,sha256=AlY1RnBWhOuSnRKxD5WdIRLDwzqP486ALTLF5ESoJXc,11
+doujindown-0.0.1.dist-info/RECORD,,
