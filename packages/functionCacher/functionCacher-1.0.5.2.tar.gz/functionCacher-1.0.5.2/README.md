@@ -1,0 +1,84 @@
+# Function Cacher
+
+[![Documentation Status](https://readthedocs.org/projects/function-cacher/badge/?version=latest)](https://function-cacher.readthedocs.io/en/latest/?badge=latest) 
+[![Test Status](https://gitlab.com/philipp.friese/function-cacher/badges/main/pipeline.svg)](https://gitlab.com/philipp.friese/function-cacher/badges/main/pipeline.svg)
+
+## Overview
+
+The Function Cacher project provides a way to cache the result of a (e.g. computation or IO-heavy) function to a location on the filesystem, ideally a [tmpfs](https://www.kernel.org/doc/html/latest/filesystems/tmpfs.html).
+
+In comparison to Python’s integrated `functools.cache`, this approach provides caching outside of a programs lifetime. The (originally) intended use-case is caching results of long-running database queries during rapid-prototyping (& rapidly crashing) data analysis scripts.
+
+Please refer to https://function-cacher.readthedocs.io for documentation, more examples, and further details.
+
+Tested on Python 3.10 and upwards.
+
+## Installation
+
+Use `pip` to install this package:
+
+`pip install functionCacher`
+
+The package is located here: https://pypi.org/project/functionCacher/
+
+## Basic Usage
+
+```python
+from functionCacher.Cacher import Cacher
+cacher_instance = Cacher()
+
+@cacher_instance.cache
+def myfunc(*args):
+	print(f"myfunc is getting called with {args}")
+	return args
+
+print(myfunc(1,2,3)) # cache miss; prints "myfunc is getting..."
+print(myfunc(1,2,3)) # cache hit ; prints nothing
+print(myfunc(2,3,4)) # cache miss; prints "myfunc is getting..."
+
+print(f"Cache path is: {cacher_instance.cachePath}")
+```
+
+Output:
+
+```commandline
+% python3 basic_example.py
+myfunc is getting called with (1, 2, 3)
+(1, 2, 3)
+(1, 2, 3)
+myfunc is getting called with (2, 3, 4)
+(2, 3, 4)
+Cache path is: /path/to/cachedir
+```
+
+## Features
+
+- cache function results to disk
+- `pickle`s objects for storage
+- cache compression (LZMA, ZSTD)
+- HMAC-verification of cache file (do not forget to set a proper `hmac_key` during Cacher initialisation!)
+- cache decorator
+- automatic cache ID generation, based on
+	- function parameter
+	- function name
+	- function source code
+
+## Notes & Caveats
+
+1) Caches are on the filesystem. For maximum performance, you might want to consider a RAM-backed FS like a ramdisk or [tmpfs](https://www.kernel.org/doc/html/latest/filesystems/tmpfs.html).
+
+2) FunctionCacher assumes pure functions without side-effects. It can only discern two cache-entries via the function parameters!
+
+3) Python `pickle` might mess with your cached function results. Works well in most cases, though.
+
+## Related Projects
+
+While this project has been developed largely in a vacuum (sorry! Didn't know better), several related projects approach result caching in Python in similar or identical ways:
+
+- `cache_to_disk` by sarenehan (https://github.com/sarenehan/cache_to_disk)
+- Shelved Cache by mhelf (https://pypi.org/project/shelved-cache)
+- `asynccache` by hexhep (https://github.com/hephex/asyncache)
+
+# Licence
+
+MIT Licence
