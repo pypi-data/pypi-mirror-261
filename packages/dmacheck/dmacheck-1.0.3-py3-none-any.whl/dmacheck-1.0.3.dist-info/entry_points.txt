@@ -1,0 +1,3 @@
+[console_scripts]
+dmacheck = package.main:main
+
