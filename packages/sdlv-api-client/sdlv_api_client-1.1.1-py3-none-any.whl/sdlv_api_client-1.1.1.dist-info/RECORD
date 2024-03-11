@@ -1,0 +1,13 @@
+api_client/__init__.py,sha256=6xDnlSZqwBiSL_0ETkxpW65vPGEJKPvNR402_gUa4bA,171
+api_client/_base.py,sha256=rAR3cs3X2ziOacL9-_I7GsuExe7DJQTenwHRN41otLI,4852
+api_client/async_client.py,sha256=v28O9MvBGrUahCT2eaQtOyS0rRhajIjKZx2Fb8w7HhA,2260
+api_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_client/sync_client.py,sha256=-M7wwItoJlyBLwxhGWCG6bGXruJs6eIXlUpO272NrVY,2166
+api_client/utils/__init__.py,sha256=SIhpftyxtGizMMniilGnSxlCPtOzlcxwizSdCDHyk0Y,217
+api_client/utils/logs.py,sha256=TSehIptDogboP2U3E1rwQj42fTf3dk0Yp696OJ9wRGs,2177
+api_client/utils/parse.py,sha256=8LDBdAfJiBqjgDobAS139V2uiyZlSFZYvRc4FdwOWhA,1185
+sdlv_api_client-1.1.1.dist-info/LICENCE,sha256=wocYuukOz1DwF_p8g4gRDuf0PBzvSIc8Zi6yDuTz7nw,1061
+sdlv_api_client-1.1.1.dist-info/METADATA,sha256=TSujsoBU6GdAVi3j5sKwtlusCnHgESSV3UurL3F-FvY,5493
+sdlv_api_client-1.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sdlv_api_client-1.1.1.dist-info/top_level.txt,sha256=GsLgalg1P44VSvxhZqo60dGb8EptZ9n0ybK6R_qQ8pU,11
+sdlv_api_client-1.1.1.dist-info/RECORD,,
