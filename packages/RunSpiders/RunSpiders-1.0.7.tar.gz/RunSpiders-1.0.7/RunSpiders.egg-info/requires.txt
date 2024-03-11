@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+jinja2
+pycryptodome
+gevent
+tqdm
+selenium
+js2py
+prettytable
