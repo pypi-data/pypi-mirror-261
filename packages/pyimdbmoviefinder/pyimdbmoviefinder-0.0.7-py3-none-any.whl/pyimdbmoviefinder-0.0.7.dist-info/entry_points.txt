@@ -1,0 +1,2 @@
+[console_scripts]
+pyimdbmoviefinder = pyimdbmoviefinder.clisearch:cli
