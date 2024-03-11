@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+xskillscore/__init__.py
+xskillscore.egg-info/PKG-INFO
+xskillscore.egg-info/SOURCES.txt
+xskillscore.egg-info/dependency_links.txt
+xskillscore.egg-info/requires.txt
+xskillscore.egg-info/top_level.txt
