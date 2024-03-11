@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+black = "*"
+flit = "*"
+ipdb = "*"
+ipython = "*"
+pytest = "*"
+pytest-cov = "*"
+randomwords = "*"
+
+[packages]
+pandas = "*"
+sqlalchemy = "*"
+
+[requires]
+python_version = "3"
