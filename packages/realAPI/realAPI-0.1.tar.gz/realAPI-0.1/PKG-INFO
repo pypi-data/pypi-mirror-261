@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: realAPI
+Version: 0.1
+Summary: Python Wrapper For realAPI
+Home-page: https://github.com/imuniq/realAPI
+Author: imuniq
+Author-email: im.uniq.dev@gmail.com
+License: MIT
+Keywords: real-API,Decoder,realapi
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# realAPI
+
+A python wrapper for realAPI
+
+## Installation
+Let's get started. 
+
+```bash
+pip install realAPI
+```
