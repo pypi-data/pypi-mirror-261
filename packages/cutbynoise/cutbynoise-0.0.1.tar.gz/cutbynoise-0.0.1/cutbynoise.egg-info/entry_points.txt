@@ -1,0 +1,2 @@
+[console_scripts]
+cutbynoise = cutbynoise:main
