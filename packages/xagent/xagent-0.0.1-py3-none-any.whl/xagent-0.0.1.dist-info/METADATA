@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xagent
+Version: 0.0.1
+Summary: xagent
+Home-page: https://github.com/jerrychen1990/XAgents
+Author: Chen Hao
+Author-email: jerrychen1990@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: python-snippets
+Requires-Dist: agit
+Requires-Dist: PyPDF2 ==3.0.1
+Requires-Dist: fastapi ==0.108.0
+Requires-Dist: python-multipart ==0.0.6
+Requires-Dist: uvicorn ==0.25.0
+
+xagent
