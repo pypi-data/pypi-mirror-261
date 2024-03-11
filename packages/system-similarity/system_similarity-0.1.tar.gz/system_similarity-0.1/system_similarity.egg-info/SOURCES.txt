@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+system_similarity/__init__.py
+system_similarity/article_recommender.py
+system_similarity/embeddings_utils.py
+system_similarity.egg-info/PKG-INFO
+system_similarity.egg-info/SOURCES.txt
+system_similarity.egg-info/dependency_links.txt
+system_similarity.egg-info/requires.txt
+system_similarity.egg-info/top_level.txt
