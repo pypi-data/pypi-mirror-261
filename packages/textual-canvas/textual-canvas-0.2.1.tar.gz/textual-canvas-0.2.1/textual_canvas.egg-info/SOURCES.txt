@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+textual_canvas/__init__.py
+textual_canvas/__main__.py
+textual_canvas/canvas.py
+textual_canvas/py.typed
+textual_canvas.egg-info/PKG-INFO
+textual_canvas.egg-info/SOURCES.txt
+textual_canvas.egg-info/dependency_links.txt
+textual_canvas.egg-info/requires.txt
+textual_canvas.egg-info/top_level.txt
