@@ -1,0 +1,5 @@
+[console_scripts]
+waldur_slurm_agent=waldur_slurm.main:main
+waldur_slurm_diagnostics=waldur_slurm.common_utils:diagnostics
+waldur_slurm_load_components=waldur_slurm.common_utils:create_offering_components
+
