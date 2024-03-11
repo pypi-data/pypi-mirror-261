@@ -1,0 +1,3 @@
+[console_scripts]
+cognito_clean=cognito_clean.cognito_cleaner:main_handler
+
