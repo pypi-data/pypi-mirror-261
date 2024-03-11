@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/minsnap_trajectories/__init__.py
+src/minsnap_trajectories/minimum_snap.py
+src/minsnap_trajectories/minimum_snap.pyi
+src/minsnap_trajectories.egg-info/PKG-INFO
+src/minsnap_trajectories.egg-info/SOURCES.txt
+src/minsnap_trajectories.egg-info/dependency_links.txt
+src/minsnap_trajectories.egg-info/requires.txt
+src/minsnap_trajectories.egg-info/top_level.txt
+tests/test_minsnap.py
