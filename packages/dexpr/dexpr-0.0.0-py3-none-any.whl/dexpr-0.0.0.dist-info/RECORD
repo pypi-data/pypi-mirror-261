@@ -1,0 +1,11 @@
+dexpr/__init__.py,sha256=As3ZLwNqc7-2-AAQk-YVZBBwhs3EHLsMwzf4HGXV0fs,138
+dexpr/calendar.py,sha256=d_7uIahoi-yBF7epSua1LGWH9yt65hR1R_Lb3Ln_1VM,3974
+dexpr/dataclassex.py,sha256=OcQQz0K4oNS_EvN7cmGT5V-OZ68afYVXhEdgdw089iU,2223
+dexpr/dgen.py,sha256=cgT1L2wmfRJFsaSgO0ffY7zdx_4MqGllQ3H1oPx09nA,23025
+dexpr/magic.py,sha256=AaTf_wwqXamtYQmLVfR-UI1NslialidcTS0upGQnooI,25318
+dexpr/tenor.py,sha256=X_t0dVdOLAOPWG8-QAaan_wcIeTff9gTEstf8ihTeSo,3009
+dexpr-0.0.0.dist-info/LICENSE,sha256=1YWjQkzFZtQYTHoGtdKnueNaxbcd_G2RaYduZC-Npxw,1063
+dexpr-0.0.0.dist-info/METADATA,sha256=eDhs_Cfqpwath1ssuWHGRQj1a822cyaDfsS6v8-5YpI,3427
+dexpr-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dexpr-0.0.0.dist-info/top_level.txt,sha256=aUbjnDYb7pp9n0fErn25piI_SCm6gR_txjpKAr_IHZM,6
+dexpr-0.0.0.dist-info/RECORD,,
