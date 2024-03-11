@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+keywads/__init__.py
+keywads/keyword_analyzer.py
+keywads/source_file_transformer.py
+keywads.egg-info/PKG-INFO
+keywads.egg-info/SOURCES.txt
+keywads.egg-info/dependency_links.txt
+keywads.egg-info/requires.txt
+keywads.egg-info/top_level.txt
