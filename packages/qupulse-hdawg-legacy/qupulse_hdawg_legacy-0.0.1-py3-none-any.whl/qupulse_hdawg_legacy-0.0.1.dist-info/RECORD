@@ -1,0 +1,8 @@
+qupulse_hdawg_legacy/__about__.py,sha256=H94LD3l1lpYh2P3UcuMBWICVaViG4YgipozwBcqLN2k,143
+qupulse_hdawg_legacy/__init__.py,sha256=y2jQaCI_T16vSbXxIN4jcpreG02032TCXGH8l666wA0,120
+qupulse_hdawg_legacy/seqc.py,sha256=tqqRZmFeExkL0ht58FREkVFELG-BaPf5857b6pvToOA,63937
+qupulse_hdawg_legacy/zihdawg.py,sha256=DEVn_f_-D0CxyImG7-fVjaBUlan3KaJTsyfQ7Ex9fjw,52451
+qupulse_hdawg_legacy-0.0.1.dist-info/METADATA,sha256=VUznTWmqFglCpDczhReAYqFj8HdnwknIprd9As-ILsE,1861
+qupulse_hdawg_legacy-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+qupulse_hdawg_legacy-0.0.1.dist-info/licenses/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+qupulse_hdawg_legacy-0.0.1.dist-info/RECORD,,
