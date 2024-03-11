@@ -1,0 +1,2 @@
+[console_scripts]
+junkpurge = junkpurge.clean_build_dirs:main
