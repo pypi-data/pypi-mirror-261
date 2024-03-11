@@ -1,0 +1,4 @@
+GitPython
+PyYAML
+rtoml
+tsfpga>= 12.3.1
