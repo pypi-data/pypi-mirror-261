@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: deepxube
+Version: 0.1.0
+Summary: Solving classical planning problems in an explainable manner with deep learning, reinforcement learning, heuristic search, and logic
+Home-page: https://github.com/forestagostinelli/DeepXube/
+Author: Forest Agostinelli
+Author-email: foresta@cse.sc.edu
+License: MIT
+License-File: LICENSE
