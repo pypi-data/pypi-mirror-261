@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: smdb_web_server
+Version: 0.1.0
+Summary: A really basic, not so safe web server.
+Home-page: https://github.com/NightKey/smdb-server
+Author: Janthó Dávid
+Author-email: davidjantho@gmail.com
+Project-URL: Bug Tracker, https://github.com/NightKey/smdb-server/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Freeware
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SMDB Web Server
+An easy to use, not secured web server, because I don't like the other options, and I like to create my own solutions most of the time.
