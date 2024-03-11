@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+latent_experiments/src/latent_experiments.py
+latent_experiments/src/latent_experiments.egg-info/PKG-INFO
+latent_experiments/src/latent_experiments.egg-info/SOURCES.txt
+latent_experiments/src/latent_experiments.egg-info/dependency_links.txt
+latent_experiments/src/latent_experiments.egg-info/top_level.txt

@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: latent_experiments
+Version: 0.0.7
+Summary: A package for running and plotting latent experiments.
+Author: Amirhossein Nakhaei
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# latent_experiments
+
+Python package for running experiments on latent spaces of neural networks
+
+## Installation
+
+```bash
+pip install latent-experiments
+```
+
+## Usage
+
+```python
+import latent_experiments as le
+
+
+# Run experiments on a simple dataset
+outcome_diff_df = run_latent_experiments(
+    data,
+    columns_to_match=columns_to_match,
+    outcome_var=outcome_var,
+    match_threshold=0.8,
+)
+```
