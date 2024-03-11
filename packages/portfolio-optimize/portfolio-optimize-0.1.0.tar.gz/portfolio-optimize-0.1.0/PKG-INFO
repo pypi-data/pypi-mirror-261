@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: portfolio-optimize
+Version: 0.1.0
+Summary: Optimize stock portfolios using mean-variance optimization and other strategies.
+Home-page: https://github.com/yourusername/portfolio-optimize
+Author: Manu Jayawardana
+Author-email: manujajayawardanais@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: yfinance
+Requires-Dist: matplotlib
+Requires-Dist: PyPortfolioOpt
+
+# Portfolio Optimize
+
+A simple Python package for optimizing investment portfolios using historical return data from Yahoo Finance. Users can easily determine the optimal portfolio allocation among a given set of tickers based on the mean-variance optimization method or other algorithms.
+
+## Features
+
+- Easy-to-use interface for defining a portfolio of tickers.
+- Supports customization of the data window (in years) for historical data analysis.
+- Allows choosing between mean-variance optimization and other optimization algorithms.
+- Includes functionality to plot the efficient frontier for the selected portfolio.
+
+## Installation
+
+```
+pip install portfolio-optimize
+```
+
+## Usage
+
+### Portfolio Optimization
+
+```python
+from portfolio_optimize import portfolio_optimize
+
+# Optimize portfolio
+optimal_weights = portfolio_optimize(tickers=["MSFT", "AAPL", "GOOG"], window=5, optimization="MV")
+
+print(optimal_weights)
+```
+
+### Plotting the Efficient Frontier
+
+```python
+from portfolio_optimize import portfolio_optimize
+
+# Plot the efficient frontier for a set of tickers
+portfolio_optimize.graph(tickers=["MSFT", "AAPL", "GOOG"], window=5)
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
