@@ -1,0 +1,5 @@
+click
+GraphQL-core-next
+watchdog
+requests
+aiohttp
