@@ -1,0 +1,7 @@
+LICENSE
+SQLike.py
+pyproject.toml
+SQLike.egg-info/PKG-INFO
+SQLike.egg-info/SOURCES.txt
+SQLike.egg-info/dependency_links.txt
+SQLike.egg-info/top_level.txt

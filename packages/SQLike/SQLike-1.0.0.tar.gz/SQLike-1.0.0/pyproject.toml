@@ -1,0 +1,17 @@
+[project]
+name = "SQLike"
+version = "1.0.0"
+authors = [
+  { name="Nicolas Strekowski", email="pleasedonotcontactme@nononono.com" },
+]
+description = "SQLite3 mais en un peu plus simple et modulaire"
+readme = ""
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/JESAISaps/SQLike"
