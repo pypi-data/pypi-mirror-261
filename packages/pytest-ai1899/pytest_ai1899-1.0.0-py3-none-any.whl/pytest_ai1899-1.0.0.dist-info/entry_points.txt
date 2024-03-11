@@ -1,0 +1,2 @@
+[pytest11]
+dependency = pytest_ai1899.plugin
