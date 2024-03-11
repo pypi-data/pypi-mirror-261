@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: flask-redis-caching
+Version: 1.0
+Author: Maksymilian Sawicz
+Requires-Dist: flask-redis
+
