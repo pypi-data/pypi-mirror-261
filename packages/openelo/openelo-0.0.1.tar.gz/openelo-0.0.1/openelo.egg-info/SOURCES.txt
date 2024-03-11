@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+openelo.egg-info/PKG-INFO
+openelo.egg-info/SOURCES.txt
+openelo.egg-info/dependency_links.txt
+openelo.egg-info/requires.txt
+openelo.egg-info/top_level.txt
