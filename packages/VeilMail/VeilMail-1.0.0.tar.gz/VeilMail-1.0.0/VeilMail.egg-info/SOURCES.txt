@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+veilmail.py
+VeilMail.egg-info/PKG-INFO
+VeilMail.egg-info/SOURCES.txt
+VeilMail.egg-info/dependency_links.txt
+VeilMail.egg-info/entry_points.txt
+VeilMail.egg-info/requires.txt
+VeilMail.egg-info/top_level.txt
