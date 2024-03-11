@@ -1,0 +1,13 @@
+drifter/DriftAstrom.py,sha256=_iVlBjLd2mO1jdbv2yt3dER8HngF28Rq8beIH1DLeFU,18568
+drifter/DriftClassify.py,sha256=njjcrDU_LWle9-z4yqNMv9sk9tcQmbYIirLm-8VKC30,376
+drifter/DriftExtract.py,sha256=AsuD8xdjRhJl4fgwUar5dKKyG0lTyaBdtr50ePASR_g,7811
+drifter/DriftReposition.py,sha256=nBYw7BDljpPiRnqML8F3J77cBEHByu-tUQ62k_jGMpo,367
+drifter/DriftSkysub.py,sha256=KoeNgMopnDSfUqNNu0KeqT4W-CHpM_ZQUxFYYsXjM-c,8797
+drifter/GenerateCatalogue.py,sha256=V8UICZMwnEzVfDTrOOe8oV-HjVvVt_TxLINzj7mpEOU,26272
+drifter/Utils.py,sha256=lWPI6An_ebW1a9ihI05Qz5KYOX20XSj_IszpUJ-sIzo,7506
+drifter/Xmatch_TAP.py,sha256=5BnH6Es6TUvPZEwt5vFZP29WWr9ZzZFb_61n_s7V3FY,108
+pydriftn-0.1.0.dist-info/LICENSE,sha256=IR1xQ0G57eEze4x7eKykK2h_M71Cb-sfvwfWYWpL0NU,1066
+pydriftn-0.1.0.dist-info/METADATA,sha256=Rsb_rePmQqUMvMY5qGAz6aTAkoS4X9faJ0GcmJP9dDo,4554
+pydriftn-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pydriftn-0.1.0.dist-info/top_level.txt,sha256=EQTokbnAbxnlGCobexi-rpbSE3DBnKx4je55q1RBvrc,8
+pydriftn-0.1.0.dist-info/RECORD,,
