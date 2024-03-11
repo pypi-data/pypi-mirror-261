@@ -1,0 +1,15 @@
+grepbible/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grepbible/bible_manager.py,sha256=Yp4YJfBtZs_dlnZzeFY8UtnAswXo_l5tLOI3I0tiAfc,10397
+grepbible/cli.py,sha256=RS7q2pza7Nr10PGc8xgdrzQUJ2UFGQUMzfHRhm9Rmt0,1867
+grepbible/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grepbible/static/acronyms.txt,sha256=3cMoYvx8ewfrs_cc7wg7GRCv8AHMJPEOH4biGcHiPdY,232
+grepbible/static/ch2num.py,sha256=m8cpUqn20dEY52P6YASGxrseTuH21E9_lxcHuXgXigk,2847
+grepbible/static/full_names.txt,sha256=WiDjZKZI5VM9f0Wke673jUIVmIqVFtIYhuApTzdf4IU,1443
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_gbib.py,sha256=1GZNxb3muRQqBuqmVzfrTLvioGCwmIkHQozyoidWLV0,1821
+grepbible-0.2.3.dist-info/LICENSE.txt,sha256=_O9EmF3RHzbao8qmyNaYZtIVXfRjrTKKGU8ez6NS7Co,1070
+grepbible-0.2.3.dist-info/METADATA,sha256=0kUdeivSgGseCo4PckeQxChmCO_ikMIdbbZY1pzkOBE,6682
+grepbible-0.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+grepbible-0.2.3.dist-info/entry_points.txt,sha256=ypUFpkblK_b8g0KTW0NTqIXt3vF2O_obpIYF10GjOyM,44
+grepbible-0.2.3.dist-info/top_level.txt,sha256=iHlHMTO0-1A_pp0Xg_kVjGvANkgkuXZWfh9r6JAI6xI,16
+grepbible-0.2.3.dist-info/RECORD,,
