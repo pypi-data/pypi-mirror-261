@@ -1,0 +1,15 @@
+colorclade/__init__.py,sha256=3zgALSzca0wzMtdLXAtGgx_FdFkzOWvBWZC8MgadNt0,514
+colorclade/_biopython_color_tree.py,sha256=iN1rm4_72_YdriIfUUwsb6KIZzuWpsNKJVmQc93QvBY,680
+colorclade/_biopython_draw_colorclade_tree.py,sha256=yuVRqXHm2DDx4O-RTj-puhPMMobEOfKVDkg-DIvYrkw,4169
+colorclade/_biopython_pare_tree.py,sha256=6x9Okpxtk9s6GKqhSq-cq0q6vceVh7H39hQIqg6k4Jo,969
+colorclade/_biopython_sort_tree.py,sha256=VNR4aZGnzjGXWyFvO0bzyx90sJB6BDBkQRZ6afrgUdo,465
+colorclade/_draw_colorclade_tree.py,sha256=HG-2zxChB2T5TbwTzKQLe2QzZ_FmbIYp0XQ-YJc8pG4,2008
+colorclade/_hash_name.py,sha256=LPIWq6PXs7WjF3Fl9--nHduna_nkUpNvd_EUtWpGuEE,119
+colorclade/_matplotlib_drop_overlapping_labels.py,sha256=2Oei9aUVgeOVdrUJU4_1lkgxZUdz7BNQsrU_aaJ3FOA,554
+colorclade/_val_to_color_hls.py,sha256=FvfLd73uFhLNfBpere7P9M4JNUNvF4iKZ7qt_tM3jQc,1166
+colorclade/_val_to_color_muted.py,sha256=5t5hpuRNdRaDT9OA8Eo3G6GUBV7eGNo_aHS1mYpbYpM,1224
+colorclade-0.2.0.dist-info/LICENSE,sha256=poo0TdjzwCrtm9SoWnJzbKxrLeRg_iCDOYyqop-0qxU,1069
+colorclade-0.2.0.dist-info/METADATA,sha256=mQZ0Amz7ZozM9wDgZyrgcFCUzEnd6qO_nTd9dq42dpA,3637
+colorclade-0.2.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+colorclade-0.2.0.dist-info/top_level.txt,sha256=2Nu2hecFD9W92LhMFiYFKNkPW9LRUmf_QR6xqYkjt2Q,11
+colorclade-0.2.0.dist-info/RECORD,,
