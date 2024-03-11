@@ -1,0 +1,16 @@
+pycrust/CRUST.py,sha256=twcMr55GcuFiGOJ8VqT7z69kvoV-DlxcECCjwvft4ok,23871
+pycrust/Simulation.py,sha256=em6VPygDW4_BonxiIscSOiFywvLrEMfednJEA3GDOLc,19012
+pycrust/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycrust/model.py,sha256=OfFmJFyiE_rDFbl-hJT6iI9PtqQdBnlhnNGzNVCrocg,9090
+pycrust/rigid.py,sha256=nQgETUPzP5QUJfBXnqP8onLPLqqRJ4aPiqJXm4TVnMo,3549
+pycrust/shape.py,sha256=Lrf7tch0n-xLyeeo7dfDe5oJvU5DitjcdoQ8NoG3LDs,7934
+pycrust/stereopy.py,sha256=I9A36ih5kWQgKe1j-_NAkeDxIt18-BQYy9aKKYT8UBo,35848
+pycrust/util.py,sha256=SL7TbVoanjdTWw1K-cfv6G7AiBXxJocWLCL7HXYAqxM,3495
+pycrust/gtf/AmexT_v47-AmexG_v6.0-DD.gene.gtf,sha256=rOIztdUdWnLwdeH4rTVTsFWaAE6xmoNaLUfvxHPVB0M,10647400
+pycrust/gtf/gencode.v44.basic.annotation.gene.gtf,sha256=ZuRzG1WUg0dlFbBInBnga4DYVkyKSq-oIck0dlrs5eI,11511594
+pycrust/gtf/gencode.vM34.annotation.gene.gtf,sha256=56VfFDkw5FVYZH5X5q00nj4q0kpuHtXho4yuAHhcyEc,10634109
+pycrust/gtf/mice_genes.gtf,sha256=-hcI5zea-IEveVjdFXiK00pcollsYTuYBLDx_xvxIsU,5275667
+pycrust-1.0.0.dist-info/METADATA,sha256=TDpgTX3Nhr5VhvTmGceAUxPJEXXtiwkhbKPdSLTjljY,2165
+pycrust-1.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+pycrust-1.0.0.dist-info/licenses/LICENSE,sha256=le9wE4j9KZ-u9o5_VAnUdWRXGy-t_bNUWQPKxlfMoJ4,1089
+pycrust-1.0.0.dist-info/RECORD,,
