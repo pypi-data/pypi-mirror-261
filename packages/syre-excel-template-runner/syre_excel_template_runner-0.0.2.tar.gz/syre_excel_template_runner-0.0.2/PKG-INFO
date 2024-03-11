@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: syre-excel-template-runner
+Version: 0.0.2
+Summary: Excel template runner for Syre.
+Project-URL: Documentation, https://github.com/syre-data/excel-template-runner#readme
+Project-URL: Issues, https://github.com/syre-data/excel-template-runner/issues
+Project-URL: Source, https://github.com/syre-data/excel-template-runner
+Author-email: Brian Carlsen <carlsen.bri@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: syre
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: syre
+Requires-Dist: syre-formulas
+Description-Content-Type: text/markdown
+
+# syre_excel_template_runner
+
+[![PyPI - Version](https://img.shields.io/pypi/v/syre-excel-template-runner.svg)](https://pypi.org/project/syre-excel-template-runner)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/syre-excel-template-runner.svg)](https://pypi.org/project/syre-excel-template-runner)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install syre-excel-template-runner
+```
+
+## About
+Syre's Excel template runner allows [Syre](https://syre.ai) to use Excel workbooks as analysis templates for automation.
+See [our tutorials](https://syre.ai/start/excel-templates) for more info.
+
+## License
+
+`syre-excel-template-runner` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
