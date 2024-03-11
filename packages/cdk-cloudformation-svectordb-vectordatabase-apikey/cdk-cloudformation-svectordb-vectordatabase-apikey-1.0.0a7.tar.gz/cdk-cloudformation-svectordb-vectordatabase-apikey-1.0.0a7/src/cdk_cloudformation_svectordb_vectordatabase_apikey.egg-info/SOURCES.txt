@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk_cloudformation_svectordb_vectordatabase_apikey/__init__.py
+src/cdk_cloudformation_svectordb_vectordatabase_apikey/py.typed
+src/cdk_cloudformation_svectordb_vectordatabase_apikey.egg-info/PKG-INFO
+src/cdk_cloudformation_svectordb_vectordatabase_apikey.egg-info/SOURCES.txt
+src/cdk_cloudformation_svectordb_vectordatabase_apikey.egg-info/dependency_links.txt
+src/cdk_cloudformation_svectordb_vectordatabase_apikey.egg-info/requires.txt
+src/cdk_cloudformation_svectordb_vectordatabase_apikey.egg-info/top_level.txt
+src/cdk_cloudformation_svectordb_vectordatabase_apikey/_jsii/__init__.py
+src/cdk_cloudformation_svectordb_vectordatabase_apikey/_jsii/svectordb-vectordatabase-apikey@1.0.0-alpha.7.jsii.tgz
