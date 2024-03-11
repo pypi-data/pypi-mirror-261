@@ -1,0 +1,11 @@
+multigit/__init__.py,sha256=2fqTayGI-e46xQKTVPufVPZAxQ-sEad5d6RlmRVOJew,2053
+multigit/__main__.py,sha256=hN0R2Xb3xzIF9TXMtAtjjs7VoKkTp08CtyTCsjSuEa4,81
+multigit/gitrepo.py,sha256=__f_heLSp_U2i-OwH4tOKhQC7GicB7q9Egx0_RjY1nc,7599
+multigit/subrepofile.py,sha256=6NbgIU_X11yO7dJBU5-6bfuVUL9hA0MZLNsvjACsE4U,4069
+multigit/subrepos.py,sha256=yaf-uLpiYx7xjPTnkqucntpTj0Hw-PLU8triHSwWUPg,6562
+multigit/subrepos_schema.yaml,sha256=8EKO7RGwdtGVJgQj3F_Egz3Q9QC7Ui7cgEMTWrpXhow,894
+multigit-0.11.6.dist-info/METADATA,sha256=uWIeMGpRllzDxKQ00_TUCSU2i_kTJr4xqR_4BMyn8kI,1797
+multigit-0.11.6.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+multigit-0.11.6.dist-info/entry_points.txt,sha256=rWI7tPRF08seKTH6Tj0arQY9NB5DfXLHQ1LN68kpSjk,43
+multigit-0.11.6.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+multigit-0.11.6.dist-info/RECORD,,
