@@ -1,0 +1,6 @@
+include pdf_tools_sdk_python/include/*.h
+recursive-include pdf_tools_sdk_python/lib/linux-x64 *.so
+recursive-include pdf_tools_sdk_python/lib/osx-arm64 *.dylib
+recursive-include pdf_tools_sdk_python/lib/osx-x64 *.dylib
+recursive-include pdf_tools_sdk_python/lib/win-x64 *.dll
+recursive-include pdf_tools_sdk_python/lib/win-x86 *.dll
