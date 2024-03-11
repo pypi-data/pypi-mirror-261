@@ -1,0 +1,3 @@
+[console_scripts]
+population-restore=population_restorator.__main__:main
+
