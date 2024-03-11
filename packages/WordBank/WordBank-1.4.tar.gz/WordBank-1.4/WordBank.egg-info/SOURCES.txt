@@ -1,0 +1,8 @@
+setup.py
+WordBank/__init__.py
+WordBank/main.py
+WordBank.egg-info/PKG-INFO
+WordBank.egg-info/SOURCES.txt
+WordBank.egg-info/dependency_links.txt
+WordBank.egg-info/requires.txt
+WordBank.egg-info/top_level.txt
