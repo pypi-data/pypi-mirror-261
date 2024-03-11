@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: cellcanvas
+Version: 0.0.1
+Summary: A tool for painting in cellular architecture
+Home-page: https://github.com/cellcanvas/cellcanvas
+Author: Kyle Harrington
+Author-email: czii@kyleharrington.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/cellcanvas/cellcanvas/issues
+Project-URL: Documentation, https://github.com/cellcanvas/cellcanvas#README.md
+Project-URL: Source Code, https://github.com/cellcanvas/cellcanvas
+Project-URL: User Support, https://github.com/cellcanvas/cellcanvas/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: napari
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy <2.0.0
+Requires-Dist: magicgui >=0.8.1
+Requires-Dist: mrcfile
+Requires-Dist: qtpy >=2.4.1
+Requires-Dist: scikit-image >=0.22.0
+Requires-Dist: toolz >=0.12.0
+Requires-Dist: scikit-learn >=1.3.2
+Requires-Dist: pyclesperanto-prototype
+Requires-Dist: pymeshfix
+Requires-Dist: psygnal >=0.9.5
+Requires-Dist: superqt >=0.6.1
+Requires-Dist: surforama
+Requires-Dist: starfile
+Requires-Dist: zarr >=2.16.1
+Requires-Dist: xgboost >=2
+Requires-Dist: matplotlib >=3.8.2
+Provides-Extra: dev
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-qt ; extra == 'dev'
+Requires-Dist: napari ; extra == 'dev'
+Requires-Dist: pyqt5 ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: tox ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pytest-qt ; extra == 'testing'
+Requires-Dist: napari ; extra == 'testing'
+Requires-Dist: pyqt5 ; extra == 'testing'
+
+# cellcanvas
+A tool to support painting in cellular architecture
+
+![cellcanvas_screenshot](cover.png)
