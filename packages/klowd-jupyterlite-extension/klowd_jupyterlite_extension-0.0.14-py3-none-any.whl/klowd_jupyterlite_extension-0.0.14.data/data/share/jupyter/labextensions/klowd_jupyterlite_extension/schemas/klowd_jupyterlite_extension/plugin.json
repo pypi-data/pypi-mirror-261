@@ -1,0 +1,22 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "klowd_jupyterlite_extension",
+  "description": "klowd_jupyterlite_extension settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false,
+  "jupyter.lab.menus": {
+    "context": [
+      {
+        "command": "klowd_jupyterlite_extension:klowd-share-link",
+        "selector": ".jp-DirListing-item[data-isdir]",
+        "rank": 17.1
+      },
+      {
+        "command": "filebrowser:download",
+        "selector": ".jp-DirListing-item[data-isdir=\"false\"]",
+        "rank": 9
+      }
+    ]
+  }
+}
