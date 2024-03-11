@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: chemical_eq_balancer
+Version: 0.2
+Summary: a package to balance simple chemical equations
+Home-page: https://github.com/amirhossein2831/Chim_Eq_Balancer
+Author: AmirHossein
+Author-email: amirmemool12@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# Balance a chemical equation

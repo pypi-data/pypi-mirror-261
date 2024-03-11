@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+chem_balancer/__init__.py
+chem_balancer/balancer.py
+chemical_eq_balancer.egg-info/PKG-INFO
+chemical_eq_balancer.egg-info/SOURCES.txt
+chemical_eq_balancer.egg-info/dependency_links.txt
+chemical_eq_balancer.egg-info/requires.txt
+chemical_eq_balancer.egg-info/top_level.txt
