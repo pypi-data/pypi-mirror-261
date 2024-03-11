@@ -1,0 +1,8 @@
+numba
+scipy
+scikit-learn
+tomaster
+antakia-core
+
+[:python_version >= "3.11"]
+importlib-metadata
