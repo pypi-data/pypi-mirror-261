@@ -1,0 +1,43 @@
+Metadata-Version: 1.2
+Name: MapCoords
+Version: 0.1.8
+Summary: A Python library about map coordinates
+Home-page: https://github.com/Ijustwantyouhappy/MapCoords
+Author: Ijustwantyouhappy
+Author-email: 
+License: MIT
+Project-URL: GitHub, https://github.com/Ijustwantyouhappy/MapCoords
+Project-URL: Source, https://github.com/Ijustwantyouhappy/MapCoords
+Description: MapCoords
+        ==========
+        
+        |Python3|
+        
+        MapCoords is an open source api for map coordinates.
+        
+        It provides three modules:
+        
+        - coord_transform: transform coordinates among common coordinate systems
+        - dis_compute: compute distance between coordinates
+        - rings: crawl, manage, and display ring coords
+        
+        
+        **Installation**
+        
+        .. code:: bash
+        
+            pip install MapCoords
+        
+        
+        
+        
+        
+        .. |Python3| image:: https://img.shields.io/badge/python-3.x-red.svg
+Keywords: map coordinates
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
