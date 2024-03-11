@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+megagpt/__init__.py
+megagpt/freegpt.py
+megagpt.egg-info/PKG-INFO
+megagpt.egg-info/SOURCES.txt
+megagpt.egg-info/dependency_links.txt
+megagpt.egg-info/requires.txt
+megagpt.egg-info/top_level.txt

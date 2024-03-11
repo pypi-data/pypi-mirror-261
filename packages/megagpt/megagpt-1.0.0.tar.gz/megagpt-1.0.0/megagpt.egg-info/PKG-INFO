@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: megagpt
+Version: 1.0.0
+Summary: Unofficial blackbox api library for python
+Home-page: https://github.com/DogCompanyInc/megagpt
+Author: dogie
+Author-email: pavelt1234567890@gmail.com
+Project-URL: GitHub, https://github.com/DogCompanyInc
+Keywords: megagpt mega api chatGPT GPT dogie
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# megagpt
+ An unofficial api to work with original chatgpt on python
+ 
+ Example code:
+ ```
+ import megagpt
+ prompt = input('Please input prompt: ')
+ megagpt.freegpt(prompt)
+ ```
+
+ installing library:
+ ```
+ pip install megagpt
+ ```
