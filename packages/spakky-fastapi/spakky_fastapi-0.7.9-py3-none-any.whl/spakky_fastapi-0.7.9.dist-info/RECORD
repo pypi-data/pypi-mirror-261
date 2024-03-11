@@ -1,0 +1,9 @@
+spakky_fastapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_fastapi/error.py,sha256=fAJuCZPxARY0SBhG9b-xsa2nvfXD7P49jZG1BzhRs3I,99
+spakky_fastapi/jwt_auth.py,sha256=5WjaYqMvMdym-ctgtsTqNIVyVGoV7TP1Jfo-Qn9H2DI,2882
+spakky_fastapi/post_processor.py,sha256=Vog0vGuSbYlcOuLbiYcooh5izIoNPLolbOkwilCUp9g,2861
+spakky_fastapi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spakky_fastapi/routing.py,sha256=3OhnnDIzaDeNhuIMWpPG17--98ti6LsgdfENsWr332g,19181
+spakky_fastapi-0.7.9.dist-info/METADATA,sha256=X8UtQRoq5aUeJDxorTM0Z58sShgq-6V5P-6uwhnknEE,1660
+spakky_fastapi-0.7.9.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+spakky_fastapi-0.7.9.dist-info/RECORD,,
