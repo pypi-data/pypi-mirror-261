@@ -1,0 +1,6 @@
+include pdf-tools-sdk/include/*.h
+recursive-include pdf-tools-sdk/lib/linux-x64 *.so
+recursive-include pdf-tools-sdk/lib/osx-arm64 *.dylib
+recursive-include pdf-tools-sdk/lib/osx-x64 *.dylib
+recursive-include pdf-tools-sdk/lib/win-x64 *.dll
+recursive-include pdf-tools-sdk/lib/win-x86 *.dll
