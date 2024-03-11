@@ -1,0 +1,6 @@
+umap-learn
+loess
+tasklogger
+random2
+scipy
+numpy>=1.23.3
