@@ -1,0 +1,8 @@
+setup.py
+mygeo/__init__.py
+mygeo/circle.py
+mygeo/rectangle.py
+mygeo.egg-info/PKG-INFO
+mygeo.egg-info/SOURCES.txt
+mygeo.egg-info/dependency_links.txt
+mygeo.egg-info/top_level.txt
