@@ -1,0 +1,10 @@
+{
+    "sites": {
+        "hitomi.la": "hitomila_scraper",
+        "ww7.manganelo.tv": "manganelo_scraper"
+    },
+
+    "mirrors": {
+        "chapmanganato.com": "ww7.manganelo.tv/manga"
+    }
+}
