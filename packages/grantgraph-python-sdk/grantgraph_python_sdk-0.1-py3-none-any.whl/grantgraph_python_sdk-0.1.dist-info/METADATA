@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: grantgraph-python-sdk
+Version: 0.1
+Summary: A simple example package
+Home-page: UNKNOWN
+Author: Your Name
+Author-email: jon.montag@grantgraph.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+A simple example package with a greet function.
+
+
