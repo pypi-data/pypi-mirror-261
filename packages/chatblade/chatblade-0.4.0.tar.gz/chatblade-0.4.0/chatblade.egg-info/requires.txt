@@ -1,0 +1,5 @@
+openai~=1.13.3
+tiktoken~=0.6.0
+rich~=13.7.1
+PyYAML~=6.0.1
+platformdirs~=4.2.0
