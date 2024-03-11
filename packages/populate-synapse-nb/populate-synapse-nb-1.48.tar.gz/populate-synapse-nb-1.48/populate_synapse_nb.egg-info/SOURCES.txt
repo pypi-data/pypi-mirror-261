@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+populate_synapse_nb/__init__.py
+populate_synapse_nb/test_notebook.py
+populate_synapse_nb.egg-info/PKG-INFO
+populate_synapse_nb.egg-info/SOURCES.txt
+populate_synapse_nb.egg-info/dependency_links.txt
+populate_synapse_nb.egg-info/requires.txt
+populate_synapse_nb.egg-info/top_level.txt
