@@ -1,0 +1,11 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/first/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/first/example.py,sha256=qVAF2o8K6lhfvHvNEKNidsHtSSFidBHN8M8bH5e9LWk,2389
+examples/models.py,sha256=cqPVt-IBAJBf4hQEcxfbkoCTizo0p5h6UmTRCtNU92Y,1702
+sqla_filter-0.1.3.dist-info/METADATA,sha256=B6Jq4FZHC8wZGZ9LVob333mb98_joO3PCq67gb_llKk,4583
+sqla_filter-0.1.3.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+sqla_filter/__init__.py,sha256=jqPvw5ERbkeVgALv8Hdmd1oUajHRiCDFf3Wmsx_W8_U,232
+sqla_filter/base.py,sha256=47GjM0grCFkKNa5Kp2lCN5Ytwi4sMVhjQPLgteHo150,2318
+sqla_filter/filter_.py,sha256=vcc_lNDlUWYe1okbFxARZhr7DOZ0MIe4vEvZBJjp1i8,1138
+sqla_filter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqla_filter-0.1.3.dist-info/RECORD,,
