@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: brapy
+Version: 0.0.1
+Summary: Python client to acess brapi.dev
+Author: Vinealius
+Author-email: lucas_vinicius10@live.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: SQLAlchemy (>=2.0.27,<3.0.0)
+Requires-Dist: alembic (>=1.13.1,<2.0.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Description-Content-Type: text/markdown
+
+# Brapy
+
+Brapy is python client to acess brapi.dev.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install brapy
+```
+
+## Usage
+
+```python
+from brapy import Client
+
+# returns a Client with 'ticker' selected
+api = Client().select('ticker')
+
+# returns prices of the 'ticker' selected
+prices = api.prices()
+
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
