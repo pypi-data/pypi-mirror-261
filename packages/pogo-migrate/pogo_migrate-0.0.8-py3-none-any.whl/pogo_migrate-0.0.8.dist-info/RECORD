@@ -1,0 +1,15 @@
+pogo_migrate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pogo_migrate/cli.py,sha256=Yf7PYzKIQj62XQwrKbAhH9VSyfspgUQEu0jmW5losDk,17409
+pogo_migrate/config.py,sha256=tLaE7LzW7rUpYWHKMAXsKVNUxtZinbN91-MvBMism2M,1705
+pogo_migrate/exceptions.py,sha256=wCBQ6ucQWjTQzx2I2ZG3-zx2RoTYfil2QhsNsv6AINg,90
+pogo_migrate/migrate.py,sha256=sbJHUwAU3o6Nti3WntlpX30Wrcjd62zKYxQ2JTkr0Ds,1887
+pogo_migrate/migration.py,sha256=3eJU6Vt7FQX1VJxpwQW_VAwfYwEUKAkERHVZQW5IuPs,5251
+pogo_migrate/sql.py,sha256=ayjwyTlnRATmePJN5ZxGsNMDm0yQrZCwu1QmpqCfTPY,2499
+pogo_migrate/testing.py,sha256=MwxQmilgk3_9_TStnr1rde8NKTy1Ncmgcxaww-QaBPo,586
+pogo_migrate/topologicalsort.py,sha256=36cm6NjTSewZIMv2z12OhGEMuOFUQ8_hfCGBexAA1gY,2987
+pogo_migrate/util.py,sha256=vRfr5e3yiHeZcJ-F0PPZS0loAunbLt7aU_eqLMwM3qE,1461
+pogo_migrate/yoyo.py,sha256=U9hx5nAt347ycMFQ8buWDOJ2xx5avra8DvqRj6vq-LI,1568
+pogo_migrate-0.0.8.dist-info/METADATA,sha256=2alWNm3BxBRulU-XiLZnwKgwzajVK1nG5BuYV5Xxckw,2216
+pogo_migrate-0.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pogo_migrate-0.0.8.dist-info/entry_points.txt,sha256=z4ISKUFL8gIL5oC915l7VC-8mhodyQQKPP-I6BgzdwA,45
+pogo_migrate-0.0.8.dist-info/RECORD,,
