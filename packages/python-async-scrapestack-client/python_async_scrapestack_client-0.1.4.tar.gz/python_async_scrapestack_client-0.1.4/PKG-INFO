@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: python-async-scrapestack-client
+Version: 0.1.4
+Summary: An asynchronous client for web scraping using scrapestack.
+Home-page: https://github.com/harttraveller/pasc
+Author: Hart Traveller
+Author-email: ruling_fiction.0b@icloud.com
+Maintainer: Hart Traveller
+Maintainer-email: ruling_fiction.0b@icloud.com
+Requires-Python: >3.9.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.8.6,<4.0.0)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: pydantic (>=2.4.2,<3.0.0)
+Project-URL: Repository, https://github.com/harttraveller/pasc
+Description-Content-Type: text/markdown
+
+# pasc (python-async-scrapestack-client)
+
+Asynchronous client for [scrapestack](https://scrapestack.com/). *If you need to use this but are confused by the docs, then submit an issue and I will create formal docs. Right now this functions as a dependency for personal projects.*
+
+## Installation
+
+Install with pip:
+
+```sh
+pip install python-async-scrapestack-client
+```
+
+## Links
+
+- [PyPi](https://pypi.org/project/python-async-scrapestack-client/)
+
+
+
