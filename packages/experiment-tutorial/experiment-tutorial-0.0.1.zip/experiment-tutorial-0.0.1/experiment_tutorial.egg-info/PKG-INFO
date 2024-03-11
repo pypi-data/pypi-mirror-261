@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: experiment-tutorial
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://dagshub.com/acnaweb/experiment-tutorial.git
+Author: AcNaWeb
+Author-email: ac@marketmining.com.br
+License: UNKNOWN
+Platform: any
+Description-Content-Type: text/markdown
+Provides-Extra: interactive
+
+# Experiment Tutorial
+
+Tutorial for experiment
+https://dagshub.com/docs/experiment_tutorial/
+
+
+### Dataset
+
+```sh
+cd data
+wget https://dagshub-public.s3.us-east-2.amazonaws.com/tutorials/stackexchange/CrossValidated-Questions-Nov-2020.csv
+```
+
+
+## References
+
+- https://dagshub.com/docs/experiment_tutorial/
+
