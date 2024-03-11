@@ -1,0 +1,15 @@
+import_01/Q1_and_or.py,sha256=wAOTmQsKZ9JP_kY_ftNPgzklTeBAinS9BLCZsxIKfyo,1210
+import_01/Q2_xor_andnot.py,sha256=suR78ZjzQYV8RczqqT7bkBekvUUfC0F5e3Lk42emuYw,1349
+import_01/Q3_hebbian_net.py,sha256=2LlL4C80qiifqjQMJUXxKGsLHk7gJqK0AfQaVBsEU6k,2251
+import_01/Q4_discrete_hopfield_net.py,sha256=sihi34R_cpk8W8eOHzysFtb2ezsMyUcth_za-4Zy7Ck,1526
+import_01/Q5_Kohonen_self_organizing_maps.py,sha256=gsDhi7zPuFVZI1rGBp3jDNRJUk5rvJsIWZsgElIlAYU,2590
+import_01/Q6_perceptron.py,sha256=RNjCUz5vc3jDwbw0CmtpuJwvEzjohNdHp2OV65ftqwk,1756
+import_01/Q7_lvq.py,sha256=gkffWoOheqi61-ksC0Q3GZic789HJIEj2yIN_YaxYOQ,2240
+import_01/Q8_bipolar_sigmoid.py,sha256=Nup69z4YnpP9gTSriOZVqnCx9_in7GUi1gkWgAV0A8I,4461
+import_01/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+import_01/main.py,sha256=erea9Jy980HovNHe4EulknQOI2iouQAULRv5IxYaF1s,186
+import_01-1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+import_01-1.1.dist-info/METADATA,sha256=HAXIIyTLsQE9QHDvHlW4ZaJCZrBTnYOqL3JI4Wcq4n8,1886
+import_01-1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+import_01-1.1.dist-info/top_level.txt,sha256=dgCQS17hYKC2Pp_QQFsRB3JSxHhXgNFZE6oGA6KksK8,10
+import_01-1.1.dist-info/RECORD,,
