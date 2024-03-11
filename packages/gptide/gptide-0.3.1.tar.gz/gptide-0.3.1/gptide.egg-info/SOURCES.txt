@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+gptide/__init__.py
+gptide/cov.py
+gptide/gp.py
+gptide/gpdask.py
+gptide/gpscipy.py
+gptide/gptoeplitz.py
+gptide/mcmc.py
+gptide/mle.py
+gptide/stats.py
+gptide.egg-info/PKG-INFO
+gptide.egg-info/SOURCES.txt
+gptide.egg-info/dependency_links.txt
+gptide.egg-info/requires.txt
+gptide.egg-info/top_level.txt
