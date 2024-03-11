@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: spam_classifier_library
+Version: 0.1.8
+Summary: A library for spam classification
+Home-page: https://github.com/CodeNeuralist/SpamLib
+Author: Кирилл
+Author-email: totoshkus@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# Spam Classifier Library
+
+Это библиотека для классификации спама с использованием машинного обучения.
+
+## Введение
+
+Эта библиотека предоставляет модель для определения спама в текстовых данных. Она использует различные методы машинного обучения для обучения на текстовых данных, чтобы определить, является ли сообщение спамом или нет.
+
+**Важно:** Эта модель все еще находится в ранней стадии разработки и не распознает все виды спама. Разработчики работают над улучшением точности и расширением функциональности.
+
+## Установка
+
+Вы можете установить библиотеку с помощью pip:
+
+```bash
+pip install spam-classifier-library
+```
+
+Пример использования: 
+```bash
+from TotoSpam.utils import load_model, load_vectorizer, classify_sentence
+
+# Загрузка предварительно обученной модели и векторизатора
+model = load_model(11730, 32, 1)
+vectorizer = load_vectorizer()
+
+# Пример нового предложения, которое нуж.но классифицировать
+new_sentence = ""
+
+# Классификация предложения
+result = classify_sentence(new_sentence, model, vectorizer)
+print(result)
