@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+pdf_tools_sdk_test/__init__.py
+pdf_tools_sdk_test/py_ctypes.py
+pdf_tools_sdk_test/streams.py
+pdf_tools_sdk_test/utils.py
+pdf_tools_sdk_test.egg-info/PKG-INFO
+pdf_tools_sdk_test.egg-info/SOURCES.txt
+pdf_tools_sdk_test.egg-info/dependency_links.txt
+pdf_tools_sdk_test.egg-info/not-zip-safe
+pdf_tools_sdk_test.egg-info/top_level.txt
+pdf_tools_sdk_test/lib/linux-x64/libPdfToolsSdk.so
+pdf_tools_sdk_test/lib/osx-arm64/libPdfToolsSdk.dylib
+pdf_tools_sdk_test/lib/osx-x64/libPdfToolsSdk.dylib
+pdf_tools_sdk_test/lib/win-x64/PdfToolsSdk.dll
+pdf_tools_sdk_test/lib/win-x86/PdfToolsSdk.dll
