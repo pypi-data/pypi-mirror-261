@@ -1,0 +1,8 @@
+ms_auth/__init__.py,sha256=b6V73i1fNtCUshLPB8bvBl190Pg-6VL5_JMrn4dQimM,24
+ms_auth/auth.py,sha256=Mm6BW1jcOcnHKKCECqkeJeGOvOBzzPPY_tb5qHWZzPE,3162
+ms_auth/ms_auth.so,sha256=bsjRjGf5O5ELJXT99gFOT0I9UrHvLYRZwopeFuzvgGA,5660176
+ms_auth-1.1.5.dist-info/LICENSE,sha256=TfPDBt3ar0uv_f9cqCDMZ5rIzW3CY8anRRd4PkL6ejs,34522
+ms_auth-1.1.5.dist-info/METADATA,sha256=BVonEIidRCfxijIbSH16nsXp3FMBYyNr4ML8KSLQGuM,326
+ms_auth-1.1.5.dist-info/WHEEL,sha256=gUQgUDKwt9gc1pi1uCyv0_ReJtJQX-qQbKBvG5EYWKc,112
+ms_auth-1.1.5.dist-info/top_level.txt,sha256=2aipku23PPn07Tq3CCgSutFgDHMhRomyr-zfNaAq4Rs,8
+ms_auth-1.1.5.dist-info/RECORD,,
