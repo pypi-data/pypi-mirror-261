@@ -1,0 +1,27 @@
+[project]
+name = "autogen_google_search"
+version = "0.0.1"
+authors = [
+  { name = "auserwn", email = "auserwn@yeah.net" },
+]
+dependencies = [
+    "pyautogen>=0.2.14",
+    "requests>=2.31.0",
+    "pyautogen>=0.2.14",
+    "langchain>=0.1.9",
+    "langchain_community>=0.0.24",
+    "langchain_openai>=0.0.8",
+    "langchain_core>=0.1.27"
+]
+description = "A tool that integrates the autogen with Google Searcher."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=65.5.0"]
+build-backend = "setuptools.build_meta"
