@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aws-secrets-wrapper
+Version: 0.1.0
+Summary: Wrap and share AWS secrets in a secure way
+Author: Mathew Moon
+Author-email: me@mathewmoon.net
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.56,<2.0.0)
+Requires-Dist: fernet (>=1.0.1,<2.0.0)
+Requires-Dist: yatc (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Wrap and unwrap AWS secrets, similar to Vault
+
