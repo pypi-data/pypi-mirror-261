@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "template-rmldist"
+version = "0.2.0"
+description = "This is the best Python package ever created!"
+authors = ["Jackson Rico <jacksonrico@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
