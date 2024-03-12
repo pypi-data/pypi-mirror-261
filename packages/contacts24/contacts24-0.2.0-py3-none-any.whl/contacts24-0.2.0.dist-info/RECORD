@@ -1,0 +1,13 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/__main__.py,sha256=mAiIZrbp9YnAgPBbwBqba4UyYa4_3_kyuQLzI9yvuK8,66
+app/birthdays.py,sha256=y6t4GL26ul08wldIWNlM0soFV_mgOoJrNmZSNo2-lfY,185
+app/cli.py,sha256=cbLjWOEE9jSuPQSlLpocvlhvJkXny93KJxLVHJQL35s,46
+app/config.py,sha256=pL470ONpTZiAbeH1nImPS9xAvxHYdQDLnIaCp1mdzyI,83
+app/contacts.py,sha256=_8_f9ovAZaoQwiDmuJjOtaQvaws5nNxYAHBBIOuAWJk,308
+app/db.py,sha256=9q9O39ai93eY5BNiUpQV3hxy1UNupo87v7SKvFPxtwM,760
+app/errors.py,sha256=7BEwYDrjxI-L_N3lEBJx3ciK8bTX0fEy-OBzEn_Bz8s,34
+app/model.py,sha256=7aXS7xppQK9lAdF2fSrcqyXR4Y4fHR6QkpU6IQWHwtw,319
+app/notes.py,sha256=fwj7WbRIk7dmcy1TB9jGVsAkpjqNdoSvI8uxwt4i5b8,116
+contacts24-0.2.0.dist-info/METADATA,sha256=gnK6bKMIFdJjseJoPFYwYZLAxf04qfcjiaQ5mAMXko0,800
+contacts24-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+contacts24-0.2.0.dist-info/RECORD,,
