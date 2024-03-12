@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: akello-cli
+Version: 0.0.3
+Summary: CLI for akello.io
+Project-URL: Homepage, https://akello.io
+Project-URL: Issues, https://github.com/akello-io/akello/issues
+Author-email: Vijay Selvaraj <vijay@akellohealth.com>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: click
+Description-Content-Type: text/markdown
+
+
+CLI is a wrapper around `akello server` and any management scripts for local development (e.g., build, deploy, etc.)
