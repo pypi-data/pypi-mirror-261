@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+string_session/__init__.py
+string_session/__main__.py
+string_session.egg-info/PKG-INFO
+string_session.egg-info/SOURCES.txt
+string_session.egg-info/dependency_links.txt
+string_session.egg-info/entry_points.txt
+string_session.egg-info/not-zip-safe
+string_session.egg-info/requires.txt
+string_session.egg-info/top_level.txt

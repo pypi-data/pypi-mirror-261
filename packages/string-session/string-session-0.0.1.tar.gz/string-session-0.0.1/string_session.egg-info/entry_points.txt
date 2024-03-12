@@ -1,0 +1,2 @@
+[console_scripts]
+string-session = string_session.__main__:main
