@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: json-canvas
+Version: 0.1.0
+Summary: A simple package to work with JSON Canvas
+Home-page: https://chat.openai.com/c/77b2ece5-970c-489f-8d5e-d0ae0601e0b0
+Author: Ethan Zedler Houston
+Author-email: ethan.houston@gmail.com
+License: MIT
+Requires-Dist: dataclasses
