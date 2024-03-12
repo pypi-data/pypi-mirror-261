@@ -1,0 +1,4 @@
+pydantic>=2.6.3
+pydantic_yaml>=1.2.1
+pyyaml
+typed-argument-parser
