@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: checkout-python-sdk
+Version: 0.2.0
+Summary: A Python package to simplify an integration to the Tingg Checkout API
+Author: Muracia Ndungu
+Author-email: muracia.ndungu@cellulant.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pycryptodome
