@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+ftopsis_class/__init__.py
+ftopsis_class/main.py
+ftopsis_class.egg-info/PKG-INFO
+ftopsis_class.egg-info/SOURCES.txt
+ftopsis_class.egg-info/dependency_links.txt
+ftopsis_class.egg-info/requires.txt
+ftopsis_class.egg-info/top_level.txt
