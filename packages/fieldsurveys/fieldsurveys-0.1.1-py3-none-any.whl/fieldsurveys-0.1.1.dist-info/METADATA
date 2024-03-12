@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: fieldsurveys
+Version: 0.1.1
+Home-page: https://github.com/karangattu/fieldsurveys
+Author: Karan Gathani
+Author-email: karan.gathani+fieldsurveysapp@posit.co
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 ==4.12.3
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: cryptography ==42.0.5
+Requires-Dist: faicons ==0.2.2
+Requires-Dist: geopy ==2.4.1
+Requires-Dist: google-api-python-client ==2.120.0
+Requires-Dist: google-auth-httplib2 ==0.2.0
+Requires-Dist: google-auth-oauthlib ==1.2.0
+Requires-Dist: google-auth ==2.28.1
+Requires-Dist: gspread-dataframe ==3.3.1
+Requires-Dist: gspread ==6.0.2
+Requires-Dist: htmltools ==0.5.1
+Requires-Dist: pandas ==2.2.1
+Requires-Dist: plotly ==5.19.0
+Requires-Dist: pytz ==2024.1
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: questionary ==2.0.1
+Requires-Dist: requests ==2.31.0
+Requires-Dist: rsconnect-python ==1.22.0
+Requires-Dist: shiny ==0.7.1
+Requires-Dist: shinyswatch ==0.4.2
+Requires-Dist: timezonefinder ==6.4.1
+Requires-Dist: us ==3.1.1
+Requires-Dist: Wikipedia-API ==0.6.0
+Provides-Extra: tests
+Requires-Dist: playwright ==1.41.2 ; extra == 'tests'
+Requires-Dist: pytest ==8.0.2 ; extra == 'tests'
+Requires-Dist: pytest-mock ==3.12.0 ; extra == 'tests'
+Requires-Dist: pytest-playwright ==0.4.4 ; extra == 'tests'
+
+# Field surveys App
+
+We developed an interactive web application to facilitate multi-taxon field sampling and data collection using the Shiny for Python platform. This app allows researchers, citizen scientists, students, and others to easily design and conduct standardized surveys for organisms such as arthropods, birds, and plants.
+
+# Installation
+```bash
+pip install fieldsurveys
+```
+
+# Prerequisites
+- Python 3.9 or higher (Install python from [here](https://www.python.org/downloads/))
+- tkinter (will be included with your python installation)
+- survey.yaml file (create a unique one for your use over [here](https://nafcillincat.shinyapps.io/survey_config_generator/))
+- Data CSV files (Your csv files should have species, genus and common names for each entry)
+- keyfile.json (see instructions below for downloading this)
+
+# keyfile.json
+
+To download the keyfile.json for your Google Cloud account as a first-time user, follow these steps:
+1. Go to the Google Cloud Console (https://console.cloud.google.com/).
+1. If you don't have a Google Cloud project, create a new one by clicking on the "Select a project" dropdown at the top of the console and then clicking "New Project".
+1. Once you have a project, navigate to the "APIs & Services" section from the sidebar menu or search for it in the top search bar.
+1. Click on "Credentials" in the left-hand menu.
+1. Click on "Create Credentials" and then select "Service Account" from the dropdown menu.
+1. In the "Service Account" screen, provide a name for your service account and a description (optional).
+1. Under the "Grant this service account access to project" section, choose the appropriate role(s) for your service account. For example, if you want to access Google Drive, you can select the "Editor" role.
+1. Click on "Create Key" to create a new key for your service account.
+1. In the "Create Private Key" window, select the "JSON" key type.
+1. Click "Create" to generate and download the keyfile.json file to your local machine.
+   
+**Note:** *Keep this **keyfile.json** file secure, as it contains sensitive information that can be used to access your Google Cloud resources. You'll need this file to authenticate and authorize your applications when making API calls to Google Cloud services.*
+
+
+
+# Usage
+
+
+To instantiate the app, run the following command in your terminal:
+
+```bash
+fieldsurveys
+```
+
+Follow the instructions on the screen to select your survey_config.yaml, data CSV files, and keyfile.json. It will then ask you for the directory where you want to store the app. Once you have provided all the necessary information, the app will be created in the specified directory.
+
+
+# Demo
+If you want to play around with the app before setting up one for your case, feel free to go over to this [link](https://nafcillincat.shinyapps.io/demo_app) and explore the app and the features it offers.
