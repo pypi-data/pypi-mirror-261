@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+stock_chat.egg-info/PKG-INFO
+stock_chat.egg-info/SOURCES.txt
+stock_chat.egg-info/dependency_links.txt
+stock_chat.egg-info/requires.txt
+stock_chat.egg-info/top_level.txt

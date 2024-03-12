@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: stock-chat
+Version: 1.1.0
+Summary: agent for stock with gptchat
+Home-page: https://github.com/xshanzhu2024/stock-chat
+Author: xshanzhu2024
+Author-email: xshanzhu2024@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+agent for stock with gptchat。you can search stock trends .
