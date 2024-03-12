@@ -1,0 +1,16 @@
+README.md
+setup.py
+httpcat/__init__.py
+httpcat/compat.py
+httpcat/config.py
+httpcat/main.py
+httpcat/utils.py
+httpcat/services/__init__.py
+httpcat/services/storage/__init__.py
+httpcat/services/storage/uploader.py
+myhttpcatlab.egg-info/PKG-INFO
+myhttpcatlab.egg-info/SOURCES.txt
+myhttpcatlab.egg-info/dependency_links.txt
+myhttpcatlab.egg-info/entry_points.txt
+myhttpcatlab.egg-info/requires.txt
+myhttpcatlab.egg-info/top_level.txt
