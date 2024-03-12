@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: chocolatechip
+Version: 0.1.0
+Summary: maltlab helper
+Home-page: https://github.com/jpfleischer/chocolatechip
+License: MIT
+Keywords: maltlab,university of florida
+Author: Jacques Fleischer
+Author-email: jacquespfleischer@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Education
+Requires-Dist: cloudmesh-common (>=5.0.60,<6.0.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: setuptools (>=69.1.0,<70.0.0)
+Requires-Dist: wheel (>=0.42.0,<0.43.0)
+Project-URL: Documentation, https://github.com/jpfleischer/chocolatechip/blob/main/README.md
+Project-URL: Repository, https://github.com/jpfleischer/chocolatechip.git
+Description-Content-Type: text/markdown
+
+# chocolatechip
+
+
+```
+      _____________,-.___     _
+     |____        { {]_]_]   [_]
+     |___ `-----.__\ \_]_]_    . `
+     |   `-----.____} }]_]_]_   ,
+     |_____________/ {_]_]_]_] , `
+                   `-'
+```
+
+This python package makes computing at the MALTLab easier
+
+## Installation
+
+sign on to any lab machine and do the following:
+
+```
+# ls ~/ENV3
+# does it not exist? then do:
+# python3.12 -m venv ~/ENV3
+# if not already activated,
+source ~/ENV3/bin/activate
+pip install chocolatechip
+```
+
+ASCII ART BY Hayley Jane Wakenshaw
+
