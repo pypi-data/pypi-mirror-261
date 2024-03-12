@@ -1,0 +1,3 @@
+[console_scripts]
+scivision-catalog-json-schema = scivision.catalog.gen_json_schema:entry_point
+scivision-check-datasets = scivision.catalog.check_datasets:entry_point
