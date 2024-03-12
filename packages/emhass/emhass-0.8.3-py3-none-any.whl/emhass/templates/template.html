@@ -1,0 +1,6 @@
+<link rel="stylesheet" type="text/css" href="{{ basename }}/static/style.css">
+{% for plot in injection_dict %} <!-- diagrams/tables elements will be added here -->
+<div class="table_div">
+    {{injection_dict[plot]}}
+</div>
+{% endfor %}
