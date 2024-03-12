@@ -1,0 +1,8 @@
+pycdfpp.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+pycdfpp.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+pycdfpp/__init__.py,sha256=2rE9-og7w3g0j3uDnponW-MvZqs7C7App-quwRUAxQY,22214
+pycdfpp/_pycdfpp.cpython-38-x86_64-linux-gnu.so,sha256=1m54tH9vtKPKDF-3cVcp5g_3s73KPxJOnWeszyxnTdk,3284001
+pycdfpp-0.6.3.dist-info/COPYING,sha256=lHW9u_sm8zeOEm-nwxvhJjAgDBpCX1snkv924rXxyvI,1549
+pycdfpp-0.6.3.dist-info/RECORD,,
+pycdfpp-0.6.3.dist-info/METADATA,sha256=HLMTZzljjgKBEDxNa3Qh2WOUcVnFpcTvCZhll9F0u9c,10524
+pycdfpp-0.6.3.dist-info/WHEEL,sha256=XQia8yuHtX0p1VMpWFi6Vh8DEOQyBX8215K8nlooo0o,96
