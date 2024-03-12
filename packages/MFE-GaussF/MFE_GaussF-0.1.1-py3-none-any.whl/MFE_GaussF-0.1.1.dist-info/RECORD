@@ -1,0 +1,13 @@
+MFEGaussF/MFE_GaussF_esti.py,sha256=4-pfD6e1f47YUmywlJhS5-FN6ccolGqhAV9vgESdfP4,9495
+MFEGaussF/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MFEGaussF/kmer_counting_loop.py,sha256=eGsgH_4rwtrRwLa_7RpKloAuTuULocS8a4-C88yMIDE,4059
+MFEGaussF/kmer_frequency_distribution_mini_shared.py,sha256=ZROO56GWMSmMlE5BCTihddCn-z89tm2BTDJcOHvufvY,4398
+MFEGaussF/merge_normalize_isoform_count_v1.py,sha256=FZxxTUuwVjd_3a8NWHIgZiWuYWsW9DcQy_6tiYPrpLY,4018
+MFEGaussF/merge_normalized_isoform_count_TPM.py,sha256=mQsEhKm4QoJnFdFTvfSDGTEfW_pYrsBuC9FdBijGcwA,5829
+MFEGaussF/pipeline_abundance_GaussF_esti_loop.py,sha256=5638YQZJYs9WVS84HtFDdmmxUsPwalVAOUfeUmiOcS8,9029
+MFE_GaussF-0.1.1.dist-info/LICENSE,sha256=-GHA_bsMFo3giTPT2v2i_cPz-b5NzEVaP_s378te9-4,1090
+MFE_GaussF-0.1.1.dist-info/METADATA,sha256=wkKKV_WjCATp2LsxDzsHLxZsppO4ys6GqJ7HveqraV8,22620
+MFE_GaussF-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+MFE_GaussF-0.1.1.dist-info/entry_points.txt,sha256=K6phK2Q_mXJPqf8UAXZIMLLvVeXU2VZKzhXogQa9yWo,485
+MFE_GaussF-0.1.1.dist-info/top_level.txt,sha256=DgFXlCOxTAes9XFj0b7Gkod2qjIA9GHvZ5ttpSiheSw,10
+MFE_GaussF-0.1.1.dist-info/RECORD,,
