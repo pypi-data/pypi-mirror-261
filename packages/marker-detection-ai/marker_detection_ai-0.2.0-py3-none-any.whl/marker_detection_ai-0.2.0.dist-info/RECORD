@@ -1,0 +1,7 @@
+marker_detection_ai/__init__.py,sha256=tkgFsJ36dyq1qIWfryRXdoRdwbPf47rTyePzXmBEFtk,32
+marker_detection_ai/best_yolov8m.pt,sha256=8fRm_T9KTV5_eyCTVvlem5mytdhkmTfCJ-BrhvcKtzs,52035649
+marker_detection_ai/main.py,sha256=ulR0A6UpVaJSjc4J7gDG29q-Q_lqgMweblBs_n3FqYk,364
+marker_detection_ai-0.2.0.dist-info/METADATA,sha256=IS0CarmAu9IuaW8RmV0Z3vG8gz8ydqe6kkJRi_95cFs,249
+marker_detection_ai-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+marker_detection_ai-0.2.0.dist-info/top_level.txt,sha256=QkK2w8rscfgHhAP_OtezhmSRuAD_mPXiUXjgTUxix7o,20
+marker_detection_ai-0.2.0.dist-info/RECORD,,
