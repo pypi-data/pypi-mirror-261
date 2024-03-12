@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: justsimplestdb
+Version: 1.0.1
+Summary: Simplified DataBase Management System using raw python, can also read ".txt" files into database like format
+Home-page: https://github.com/M1ch5lsk1/JustSimplestDB/tree/main
+Author: Jakub Aleksander Michalski
+Author-email: jakub.michalski.aleksander@gmail.com
+License: MIT
+
