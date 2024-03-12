@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+{% load static %}
+{% load helpers %}
+{% load plugins %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ object }}</title>
+    <link rel="stylesheet" href="{% static 'nautobot_plugin_w_rrm/css/circuitrfds.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{% static 'nautobot_plugin_w_rrm/images/logo.png' %}" alt="">
+            <h1 class="title">LINK CONFIGURATION DATASHEET <br> (Under Development) </h1>
+            <strong></strong>
+        </div>
+        <div class="highlight_section">
+
+            <div class="top">
+                <div class="item">
+                    <div class="col-1 strong">
+                        LINK ID:
+                    </div>
+                    <div class="col-1">
+                        {{ object.human_id }}
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="col-1 strong">
+                        EXPORTED:
+                    </div>
+                    <div class="col-1">
+                        {{ now }}
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="col-1 strong">
+                        IMPLEMENT BEFORE:
+                    </div>
+                    <div class="col-1">
+                        {{ future_date }}
+                    </div>
+                </div>
+
+                <div class="item">
+
+                    <div class="legend">
+                        Request new RFDS after this date
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="row">
+                    <div class="col">
+                        <div class="item">
+                            <div class="col-1 strong">
+                                SITE 1:
+                            </div>
+                            <div class="col-1">
+                                {{ object.circuit.termination_a.site.name }}
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-1 strong">
+                                SITE 2:
+                            </div>
+                            <div class="col-1">
+                                {{ object.circuit.termination_z.site.name }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <div class="item">
+                            <div class="col-1 strong">
+                                UNITS:
+                            </div>
+                            <div class="col-1">
+                                CHANGEME
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-1 strong">
+                                UNITS:
+                            </div>
+                            <div class="col-1">
+                                CHANGEME
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_container">
+                    <table class="two">
+                        <thead>
+                            <tr>
+                                <th>LINK</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>DISTANCE (M)</td>
+                                <td>CHANGEME</td>
+                            </tr>
+                            <tr>
+                                <td>OEM</td>
+                                <td>CHANGEME</td>
+                            </tr>
+                            <tr>
+                                <td>BAND (GHz) / Bandwidth (MHz)</td>
+                                <td>CHANGEME</td>
+                            </tr>
+                            <tr>
+                                <td>CAPACITY (Gb)</td>
+                                <td>{{ object.capacity | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>UNAVAILABILITY (MIN)</td>
+                                <td>CHANGEME</td>
+                            </tr>
+                            <tr>
+                                <td>ATPC/ACM CONFIGURATION</td>
+                                <td>CHANGEME</td>
+                            </tr>
+                            <tr>
+                                <td>FCC REFERENCE / STATUS</td>
+                                <td>{{ object.fcc_status | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>LINK NOTE</td>
+                                <td>{{ object.description | placeholder }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table_container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SITE</th>
+                                <th>1</th>
+                                <th>2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NAME</td>
+                                <td>{{ object.circuit.termination_a.site.name }}</td>
+                                <td>{{ object.circuit.termination_z.site.name }}</td>
+                            </tr>
+                            <tr>
+                                <td>UUID</td>
+                                <td>{{ object.circuit.termination_a.site.id }}</td>
+                                <td>{{ object.circuit.termination_z.site.id }}</td>
+                            </tr>
+                            <tr>
+                                <td>ADDRESS</td>
+                                <td>{{ object.circuit.termination_a.site.physical_address | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.site.physical_address | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>CITY, STATE ZIP</td>
+                                <td>CHANGEME</td>
+                                <td>CHANGEME</td>
+                            </tr>
+                            <tr>
+                                <td>LATITUDE</td>
+                                <td>{{ object.circuit.termination_a.site.latitude | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.site.latitude | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>LONGITUDE</td>
+                                <td>{{ object.circuit.termination_a.site.longitude | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.site.longitude | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>BUILDING GROUND HEIGHT ( M / FT AMSL)</td>
+                                <td>{{ object.circuit.termination_a.site.building_height | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.site.building_height | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>BUILDING HEIGHT (M / FT)</td>
+                                <td>CHANGEME</td>
+                                <td>CHANGEME</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table_container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>MAST</th>
+                                <th>1</th>
+                                <th>2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MAST ID</td>
+                                <td>{{ object.circuit.termination_a.location.location_attributes.human_id | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.location.location_attributes.human_id | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>LATITUDE</td>
+                                <td>{{ object.circuit.termination_a.location.location_attributes.latitude | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.location.location_attributes.latitude | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>LONGITUDE</td>
+                                <td>{{ object.circuit.termination_a.location.location_attributes.longitude | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.location.location_attributes.longitude | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>MAST NAME / NOTE</td>
+                                <td>{{ object.circuit.termination_a.location.name | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.location.name | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>MAST HEIGHT ABOVE SEA LEVEL (M / FT)</td>
+                                <td>{{ object.circuit.termination_a.location.location_attributes.building_height | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.location.location_attributes.building_height | placeholder }}</td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table_container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>RADIO</th>
+                                <th>1</th>
+                                <th>2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RADIO ID</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.human_id | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.human_id | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>RADIO NOTE</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.description | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.description | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>RADIO CENTERLINE (AGL)</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.centerline_height | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.centerline_height | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>Azimuth (Fixed)</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>Azimuth (Direct)</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>M-TILT (Fixed)</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>M-TILT (Direct)</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>RADIO PN</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>RADIO NAME</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.name | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.name | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>ANTENNA</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.azimuth | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>TX HIGH/LOW</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.tx_high_low | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.tx_high_low | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>TX FREQ 1 MHz</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.tx_freq_1 | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.tx_freq_1 | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>TX POLARIZATION 1</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.tx_polarization_1 | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.tx_polarization_1 | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>XPIC</td>
+                                <td>CHANGEME</td>
+                                <td>CHANGEME</td>
+                            </tr>
+                            <tr>
+                                <td>TX FREQ 2</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.tx_freq_2 | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.tx_freq_2 | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>TX POWER (dBm)</td>
+                                <td>{{ object.circuit.termination_a.connected_endpoint.device.radio_attributes.tx_power | placeholder }}</td>
+                                <td>{{ object.circuit.termination_z.connected_endpoint.device.radio_attributes.tx_power | placeholder }}</td>
+                            </tr>
+                            <tr>
+                                <td>PREDICTED RX POWER (dBm)</td>
+                                <td>CHANGEME</td>
+                                <td>CHANGEME</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+[tool.poetry]
+name = "nautobot-plugin-w-rrm"
+version = "v1.1.0"
+description = "Wireless Radio Resource Manager"
+authors = ["Hugo Tinoco <hugo@dev-knot.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/netg-co/nautobot-plugin-w-rrm"
+repository = "https://github.com/netg-co/nautobot-plugin-w-rrm"
+keywords = ["nautobot", "nautobot-plugin", "rrm", "wireless", "radio", "rf"]
+include = [
+    "LICENSE",
+    "README.md",
+]
+packages = [
+    { include = "nautobot_plugin_w_rrm" },
+]
+
+[tool.poetry.dependencies]
+nautobot = "^2.0.0"
+python = ">=3.8,<3.12"
+packaging = "<=23.1"
+xhtml2pdf = "^0.2.11"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+isort = "*"
+bandit = "*"
+black = "*"
+coverage = "*"
+django-debug-toolbar = "*"
+invoke = "*"
+ipython = "*"
+mkdocs = "*"
+yamllint = "*"
+pre-commit = "*"
+Markdown = "*"
+toml = "^0.10.2"
+pylint-nautobot = "*"
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | migrations
+  )/
+  | settings.py     # This is where you define files that should not be stylized by black
+                     # the root of the project
+)
+'''
+
+[tool.ruff]
+# Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
+select = [
+    # Pyflakes
+    "F",
+    # Pycodestyle
+    "E",
+    "W",
+    # isort
+    "I001",
+    # Pylint
+    "PL",
+    # Flake8-Django
+    "DJ",
+    # Pylint
+    "PL",
+]
+ignore = ["PLR0913", "DJ001"]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["A", "B", "D", "E", "F"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "migrations",
+    "development/nautobot_config.py"
+]
+per-file-ignores = {}
+
+# Same as Black.
+line-length = 120
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+target-version = "py38"
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.pylint.master]
+load-plugins="pylint_django"
+ignore=".venv"
+
+[tool.pylint.basic]
+no-docstring-rgx="^(_|test_|Meta$)"
+
+[tool.pylint.messages_control]
+disable = """,
+    line-too-long,
+    too-many-instance-attributes,
+    duplicate-code,
+    too-many-ancestors
+    """
+
+[tool.pylint.miscellaneous]
+notes = """,
+    FIXME,
+    XXX,
+    """
+
+[tool.pydocstyle]
+convention = "google"
+inherit = false
+match = "(?!__init__).*\\.py"
+match-dir = "(?!tests|migrations|development)[^\\.].*"
+add_ignore = "D212"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+addopts = "-vv --doctest-modules"

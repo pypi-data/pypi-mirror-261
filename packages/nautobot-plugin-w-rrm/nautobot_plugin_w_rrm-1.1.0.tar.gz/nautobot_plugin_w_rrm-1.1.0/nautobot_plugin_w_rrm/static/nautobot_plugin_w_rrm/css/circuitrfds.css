@@ -1,0 +1,87 @@
+@page {
+    size: letter portrait;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container {
+    width: 100rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  }
+  .container .header {
+    position: relative;
+  }
+  .container .header .logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .container .highlight_section .top, .container .highlight_section .bottom {
+    margin-top: 2em;
+  }
+  .container .highlight_section .top .item, .container .highlight_section .bottom .item {
+    display: flex;
+    width: 20em;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px 0;
+  }
+  .container .highlight_section .top .item .legend, .container .highlight_section .bottom .item .legend {
+    position: absolute;
+    right: 75px;
+    transform: translateX(100%);
+  }
+  .container .highlight_section .top .item.gap, .container .highlight_section .bottom .item.gap {
+    margin-top: 5em;
+  }
+  .container .highlight_section .bottom {
+    margin-top: 3em;
+  }
+
+  .row {
+    display: flex;
+  }
+  .row .col {
+    width: 50%;
+  }
+
+  .strong {
+    font-weight: 900;
+  }
+
+  .table_container {
+    margin-top: 1em;
+  }
+  .table_container table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+  }
+  .table_container table td, .table_container table th {
+    padding: 10px 5px;
+    width: 25%;
+  }
+  .table_container table td {
+    border: 1px solid #aaa;
+  }
+  .table_container table.two td, .table_container table.two th {
+    width: 50%;
+  }
+  .table_container table tbody tr {
+    background-color: #eee;
+  }
+  .table_container table tbody tr td:first-of-type {
+    font-weight: 900;
+    width: 50%;
+  }/*# sourceMappingURL=circuitrfds.css.map */

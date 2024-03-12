@@ -1,0 +1,200 @@
+
+{% extends 'base.html' %}
+{% load buttons %}
+{% load static %}
+{% load custom_links %}
+{% load helpers %}
+{% load plugins %}
+
+{% block title %}{{ object }}{% endblock %}
+
+{% block header %}
+<div class="row noprint">
+	<div class="col-sm-8 col-md-9">
+		<ol class="breadcrumb">
+			<li><a href="{% url 'plugins:nautobot_plugin_w_rrm:radioattributes_list' %}">RadioAttributes</a></li>
+			<li>{{ object }}</li>
+		</ol>
+	</div>
+	<div class="col-sm-4 col-md-3">
+		<form action="{% url 'plugins:nautobot_plugin_w_rrm:radioattributes_list' %}"
+			method="get">
+			<div class="input-group">
+				<input type="text" name="q" class="form-control" />
+				<span class="input-group-btn">
+					<button type="submit" class="btn btn-primary">
+						<span class="mdi mdi-magnify" aria-hidden="true"></span>
+					</button>
+				</span>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="pull-right noprint">
+	{% if perms.w_rrm.change_radioattributes %}
+	<a href="{% url 'plugins:nautobot_plugin_w_rrm:radioattributes_edit' pk=object.pk %}"
+		class="btn btn-warning">
+		<span class="mdi mdi-pencil" aria-hidden="true"></span> Edit
+	</a>
+	{% endif %}
+	{% if perms.w_rrm.delete_radioattributes %}
+	<a href="{% url 'plugins:nautobot_plugin_w_rrm:radioattributes_delete' pk=object.pk %}"
+		class="btn btn-danger">
+		<span class="mdi mdi-trash-can-outline" aria-hidden="true"></span> Delete
+	</a>
+	{% endif %}
+</div>
+<h1>{{ object }}</h1>
+{% include 'inc/created_updated.html' with obj=object %}
+<div class="pull-right noprint">
+	{% custom_links object %}
+</div>
+<ul class="nav nav-tabs">
+	<li role="presentation" {% if not active_tab %} class="active" {% endif %}>
+		<a href="{{ object.get_absolute_url }}">RadioAttributes</a>
+	</li>
+	{% if perms.extras.view_objectchange %}
+	<li role="presentation" {% if active_tab == 'changelog' %} class="active" {% endif %}>
+		<a href="{% url 'plugins:nautobot_plugin_w_rrm:radioattributes_changelog' pk=object.pk %}">Change Log</a>
+	</li>
+	{% endif %}
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+	<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<strong>Radio Attributes</strong>
+			</div>
+			<table class="table table-hover panel-body attr-table">
+				<tr>
+					<td>Human Readable ID</td>
+					<td>
+						{{ object.human_id|placeholder }}
+					</td>
+				</tr>
+				<tr>
+						<td>Status</td>
+						<td>
+								{% if object.status  %}
+									{{ object.status|hyperlinked_object }}
+								{% else %}
+									{{ object.status|placeholder }}
+								{% endif %}
+						</td>
+				</tr>
+				<tr>
+					<td>Radio Type</td>
+					<td>
+						{{ object.radio_type|placeholder }}
+					</td>
+				</tr>
+				<tr>
+					<td>Failover</td>
+					<td>
+						{{ object.failover|placeholder }}
+					</td>
+				</tr>
+				<tr>
+					<td>Azimuth</td>
+					<td>
+						{{ object.azimuth|placeholder }}
+					</td>
+				</tr>
+				<tr>
+					<td>Capacity</td>
+					<td>
+						{{ object.capacity|placeholder }}
+					</td>
+				</tr>
+				<tr>
+					<td>Is Duplex</td>
+					<td>
+						{{ object.is_duplex|placeholder }}
+					</td>
+				</tr>
+				<tr>
+					<td>Tilt</td>
+					<td>
+						{{ object.tilt|placeholder }}
+					</td>
+				</tr>
+				<tr>
+					<td>Centerline Height</td>
+					<td>
+						{{ object.centerline_height|placeholder }}
+					</td>
+				</tr>
+				<tr>
+					<td>Channel Size</td>
+					<td>
+						{{ object.channel_size|placeholder }}
+					</td>
+				</tr>
+
+				<tr>
+					<td>Height</td>
+					<td>
+						{{ object.height|placeholder }}
+					</td>
+				</tr>
+			</table>
+		</div>
+		{% include 'inc/custom_fields_panel.html' %}
+		{% include 'inc/relationships_panel.html' %}
+		{% plugin_left_page object %}
+	</div>
+    <div class="col-md-6">  <!-- New column for the coordinates table -->
+				<div class="panel panel-default">
+            <div class="panel-heading">
+                <strong>TX Information</strong>
+            </div>
+            <table class="table table-hover panel-body attr-table">
+						<tr>
+							<td>TX High Low</td>
+							<td>
+								{{ object.tx_high_low|placeholder }}
+							</td>
+						</tr>
+						<tr>
+							<td>TX Power</td>
+							<td>
+								{{ object.tx_power|placeholder }}
+							</td>
+						</tr>
+						<tr>
+							<td>TX Freq 1</td>
+							<td>
+								{{ object.tx_freq_1|placeholder }}
+							</td>
+						</tr>
+						<tr>
+							<td>TX Polarization 1</td>
+							<td>
+								{{ object.tx_polarization_1|placeholder }}
+							</td>
+						</tr>
+						<tr>
+							<td>TX Freq 2</td>
+							<td>
+								{{ object.tx_freq_2|placeholder }}
+							</td>
+						</tr>
+						<tr>
+							<td>TX Polarization 2</td>
+							<td>
+								{{ object.tx_polarization_2|placeholder }}
+							</td>
+						</tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        {% plugin_full_width_page object %}
+    </div>
+</div>
+{% endblock %}
