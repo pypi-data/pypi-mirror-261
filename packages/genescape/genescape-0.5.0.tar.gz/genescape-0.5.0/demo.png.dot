@@ -1,0 +1,58 @@
+digraph genescape {
+"GO:0036094" [fillcolor="#90EE90", label="GO:0036094
+small molecule
+binding", shape=box, style=filled];
+"GO:0005515" [fillcolor="#90EE90", label="GO:0005515
+protein binding", shape=box, style=filled];
+"GO:0003824" [fillcolor="#90EE90", label="GO:0003824
+catalytic activity", shape=box, style=filled];
+"GO:0030246" [fillcolor="#90EE90", label="GO:0030246
+carbohydrate binding", shape=box, style=filled];
+"GO:0003674" [fillcolor="#FFFFFF", label="GO:0003674
+molecular_function", shape=box, style=filled];
+"GO:0046872" [fillcolor="#90EE90", label="GO:0046872
+metal ion binding", shape=box, style=filled];
+"GO:0043167" [fillcolor="#90EE90", label="GO:0043167
+ion binding", shape=box, style=filled];
+"GO:0005537" [fillcolor="#ADD8E6", label="GO:0005537
+mannose binding", shape=box, style=filled];
+"GO:0140375" [fillcolor="#90EE90", label="GO:0140375
+immune receptor
+activity", shape=box, style=filled];
+"GO:0043169" [fillcolor="#FFFFFF", label="GO:0043169
+cation binding", shape=box, style=filled];
+"GO:0038023" [fillcolor="#FFFFFF", label="GO:0038023
+signaling receptor
+activity", shape=box, style=filled];
+"GO:0016787" [fillcolor="#90EE90", label="GO:0016787
+hydrolase activity", shape=box, style=filled];
+"GO:0005488" [fillcolor="#90EE90", label="GO:0005488
+binding", shape=box, style=filled];
+"GO:0060089" [fillcolor="#FFFFFF", label="GO:0060089
+molecular transducer
+activity", shape=box, style=filled];
+"GO:0016788" [fillcolor="#90EE90", label="GO:0016788
+hydrolase activity,
+acting on ester
+bonds", shape=box, style=filled];
+"GO:0048029" [fillcolor="#90EE90", label="GO:0048029
+monosaccharide
+binding", shape=box, style=filled];
+"GO:0036094" -> "GO:0048029";
+"GO:0003824" -> "GO:0016787";
+"GO:0030246" -> "GO:0048029";
+"GO:0003674" -> "GO:0003824";
+"GO:0003674" -> "GO:0005488";
+"GO:0003674" -> "GO:0060089";
+"GO:0043167" -> "GO:0043169";
+"GO:0043169" -> "GO:0046872";
+"GO:0038023" -> "GO:0140375";
+"GO:0016787" -> "GO:0016788";
+"GO:0005488" -> "GO:0005515";
+"GO:0005488" -> "GO:0030246";
+"GO:0005488" -> "GO:0036094";
+"GO:0005488" -> "GO:0043167";
+"GO:0060089" -> "GO:0038023";
+"GO:0048029" -> "GO:0005537";
+graph [dpi=121.18343195266273, size="16.9,6.0"];
+}
