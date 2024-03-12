@@ -1,0 +1,16 @@
+requests
+pandas
+web3
+eth-brownie
+pytezos
+cryptography
+pycryptodome
+bit
+etherscan-python
+ccxt
+ganache-cli
+py-solc-x
+web3data-py
+python-binance
+aiohttp
+websockets
