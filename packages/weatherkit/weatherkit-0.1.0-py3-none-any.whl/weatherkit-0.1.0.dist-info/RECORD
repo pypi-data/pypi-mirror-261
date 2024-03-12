@@ -1,0 +1,10 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weatherkit/__init__.py,sha256=6DQNCQ0tYnseubEMw8zsFbv_dZ6rJAk9wiIQl615frs,105
+weatherkit/current_weather.py,sha256=AeXg163Kz5v_-qQvuBQ1xig6zMrKhpek1PJoHNVcG5g,4627
+weatherkit/daily_weather.py,sha256=Axc_7beKIMx8ow23ImkYzr3F9VyzJucQvWUZBko-Bcs,3469
+weatherkit-0.1.0.dist-info/AUTHORS.md,sha256=A4fw-2c34yJt9ScOp8d_vncTLteRTuX9rcH0MsO5_Vk,140
+weatherkit-0.1.0.dist-info/LICENSE,sha256=Hc-mzvvXbNJSaspZBtrv9VQq5YLOWQvruyYRYn0Srjo,1082
+weatherkit-0.1.0.dist-info/METADATA,sha256=9JmgxRr7jnqq14K1VwBCj9y7In1uUgwSv5NHVYHWopg,680
+weatherkit-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+weatherkit-0.1.0.dist-info/top_level.txt,sha256=GlzYW8JeqzJMU4VZyza000CBJuHonA0XmpEb2RT1U8I,16
+weatherkit-0.1.0.dist-info/RECORD,,
