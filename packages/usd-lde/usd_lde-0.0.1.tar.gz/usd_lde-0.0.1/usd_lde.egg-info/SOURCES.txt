@@ -1,0 +1,8 @@
+setup.py
+usd_lde/__init__.py
+usd_lde/one.py
+usd_lde/two.py
+usd_lde.egg-info/PKG-INFO
+usd_lde.egg-info/SOURCES.txt
+usd_lde.egg-info/dependency_links.txt
+usd_lde.egg-info/top_level.txt
