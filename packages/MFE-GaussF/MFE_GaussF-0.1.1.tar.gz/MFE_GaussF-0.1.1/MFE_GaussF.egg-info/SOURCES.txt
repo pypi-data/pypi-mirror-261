@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+MFEGaussF/MFE_GaussF_esti.py
+MFEGaussF/__init__.py
+MFEGaussF/kmer_counting_loop.py
+MFEGaussF/kmer_frequency_distribution_mini_shared.py
+MFEGaussF/merge_normalize_isoform_count_v1.py
+MFEGaussF/merge_normalized_isoform_count_TPM.py
+MFEGaussF/pipeline_abundance_GaussF_esti_loop.py
+MFE_GaussF.egg-info/PKG-INFO
+MFE_GaussF.egg-info/SOURCES.txt
+MFE_GaussF.egg-info/dependency_links.txt
+MFE_GaussF.egg-info/entry_points.txt
+MFE_GaussF.egg-info/top_level.txt
