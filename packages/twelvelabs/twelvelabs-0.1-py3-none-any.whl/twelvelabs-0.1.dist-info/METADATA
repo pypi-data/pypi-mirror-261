@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: twelvelabs
+Version: 0.1
+Summary: SDK for Twelve Labs API
+Home-page: UNKNOWN
+Author: Twelve Labs
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pydantic (==2.4.2)
+Requires-Dist: httpx (==0.25.2)
+
+UNKNOWN
+
