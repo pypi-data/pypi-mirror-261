@@ -1,0 +1,11 @@
+tingg_checkout/__init__.py,sha256=Kvp7VHS_q1kCjrr6l_wRQk8en1pTByz9ZRwlbf_XNsE,30
+tingg_checkout/checkout.py,sha256=FclPTet45_m98aNnkrOCnu1WN31ZRJ-Trx5040s1DVg,1609
+tingg_checkout/constants.py,sha256=88iVlCbJgfPeoGVQe_iUbk1MHbbOFLsEwZ8yCtDS1F0,6487
+tingg_checkout/encryption.py,sha256=2TQOXRd6FAo3miSb2h8bjrvQhGnU40CTWWPN8laMnGQ,734
+tingg_checkout/express.py,sha256=9XUTc-H4-gB5dbMbDvP7SVGYoiLKq0Wzx-Xut5GpmTY,4530
+tingg_checkout/validation.py,sha256=WcAi0a96iRnmriTxIVoe-lu0WfZHTY1fd6VVanaUA-I,6165
+checkout_python_sdk-0.2.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+checkout_python_sdk-0.2.0.dist-info/METADATA,sha256=nXu3_PSboBt70a-FoArJF9qjSF-TFTQ5WXIV7W7069U,472
+checkout_python_sdk-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+checkout_python_sdk-0.2.0.dist-info/top_level.txt,sha256=dOAnO1Kd-dsektbwBgmd6IpSsuGWBDBQQFDpZNpKNd4,15
+checkout_python_sdk-0.2.0.dist-info/RECORD,,
