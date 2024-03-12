@@ -1,0 +1,3 @@
+[console_scripts]
+rivet-browse=rivet_browse.__init__:main
+
