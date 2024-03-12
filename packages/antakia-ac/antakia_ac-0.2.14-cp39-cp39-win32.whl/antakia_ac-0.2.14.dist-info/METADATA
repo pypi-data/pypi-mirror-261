@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: antakia-ac
+Version: 0.2.14
+Description-Content-Type: text/markdown
+Requires-Dist: numba
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: tomaster
+Requires-Dist: antakia-core
+Requires-Dist: importlib-metadata ; python_version >= "3.10"
+
+Auto-clustering algorithms for AntakIA
+To protect our intellectual property, this package is obfuscated
