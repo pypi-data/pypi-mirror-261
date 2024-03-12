@@ -1,0 +1,12 @@
+pdf_tools_sdk_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_tools_sdk_test/py_ctypes.py,sha256=LRjihVx_iXvErbMv6mb8aSH3insyX2uu4Mg-ibfn158,195802
+pdf_tools_sdk_test/streams.py,sha256=SYh8KEJDuuCqdzVqXV8yNWAVqQlfWGAMjFzW5BeJOEw,3339
+pdf_tools_sdk_test/utils.py,sha256=Z3uyXep8aPUPxk3SjkpVU-cwSiUBnFe88CD_Vo-yjiE,1491
+pdf_tools_sdk_test/lib/osx-arm64/libPdfToolsSdk.dylib,sha256=aOoF1ZzJAAO8EzdWT3gsd0TB-MqlGhPxu2ucxfd3SKI,22451728
+pdf_tools_sdk_test/lib/osx-x64/libPdfToolsSdk.dylib,sha256=-aZH1QtEAvE60Cf9c0YWMqVo9MHxuhHpX-tnTWUFzg4,23465104
+pdf_tools_sdk_test/lib/win-x64/PdfToolsSdk.dll,sha256=Xpxivq7nEllPXnOs1FSGv0w0TbcTVz0NZX-t2_y9Qfo,25342176
+pdf_tools_sdk_test/lib/win-x86/PdfToolsSdk.dll,sha256=TwsQ8V_fHVQp8fGj6AJNcDDW6b-5UdbfnvOSjKOQxJw,22370528
+pdf_tools_sdk_test-0.0.9990.dist-info/METADATA,sha256=Nvk0cmsGoBDMWsB1SN626cv5yFedJh65XsQooFH5hJI,112
+pdf_tools_sdk_test-0.0.9990.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pdf_tools_sdk_test-0.0.9990.dist-info/top_level.txt,sha256=cFXR7yX3colheD8C3_OdZ4qXt-i1h4gaFKm69er0IMY,19
+pdf_tools_sdk_test-0.0.9990.dist-info/RECORD,,
