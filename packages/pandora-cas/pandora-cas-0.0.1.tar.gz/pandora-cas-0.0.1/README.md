@@ -1,0 +1,3 @@
+# Pandora Car Alarm System _unofficial_ clientside API
+
+[![PyPI package](https://img.shields.io/badge/pip%20install-pandora--cas-brightgreen)](https://pypi.org/project/pandora-cas/) [![version number](https://img.shields.io/pypi/v/pandora-cas?color=green&label=version)](https://github.com/alryaz/python-pandora-cas/releases) [![Actions Status](https://github.com/alryaz/python-pandora-cas/workflows/Test/badge.svg)](https://github.com/alryaz/python-pandora-cas/actions) [![License](https://img.shields.io/github/license/alryaz/python-pandora-cas)](https://github.com/alryaz/python-pandora-cas/blob/main/LICENSE)
