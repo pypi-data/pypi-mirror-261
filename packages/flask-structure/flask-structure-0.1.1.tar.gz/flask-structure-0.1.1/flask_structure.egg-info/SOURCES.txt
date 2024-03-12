@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+flask_structure.egg-info/PKG-INFO
+flask_structure.egg-info/SOURCES.txt
+flask_structure.egg-info/dependency_links.txt
+flask_structure.egg-info/entry_points.txt
+flask_structure.egg-info/requires.txt
+flask_structure.egg-info/top_level.txt
+flask_structure_handler/__init__.py
+flask_structure_handler/__main__.py
+flask_structure_handler/flask-api-structure.zip
