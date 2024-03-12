@@ -1,0 +1,10 @@
+happyrobot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+happyrobot/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+happyrobot/models/call.py,sha256=ctQpGrP3R9uRGhAaPN8yvR7qPo9YVMRdn-nuPnw3rgk,299
+happyrobot/models/event.py,sha256=NS8ii9V_oZNdjDyGJ11kT-f3W4-eSSXJOoIw78riP9Y,548
+happyrobot/models/message.py,sha256=TcpIVk5mXFAxKOR7xHXH2ZTTvwQoFI9vW6O_EqGVv1A,597
+happyrobot-0.2.0.dist-info/LICENSE,sha256=0HPaPOKslhaCtt9jivzZHBQeZuP_LFYla-QBO0sN7YY,1299
+happyrobot-0.2.0.dist-info/METADATA,sha256=xmrhOx0UjIMcCB4YUz7SXPCqZ-c189hzmDV18vZ1TXk,751
+happyrobot-0.2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+happyrobot-0.2.0.dist-info/top_level.txt,sha256=s6aafkwB2IgM2_yRDXgpD-yaBanM2xZBmGpCrFsNfe0,11
+happyrobot-0.2.0.dist-info/RECORD,,
