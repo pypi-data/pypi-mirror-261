@@ -1,0 +1,16 @@
+FIS_labextension/__init__.py,sha256=4HZWV9JQq16i_ISb_Y1EwZjijXF6WJeN89Rw2hBI2q8,590
+FIS_labextension/_version.py,sha256=ac3tgjoOzsODOlacRPCwz99LbZv0NK7ZYAaBWulFo7E,171
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/build_log.json,sha256=LP3U-vFbOaIjEFVuCKXkN1tBGfLh2Ponbb7BSS9H2mg,22343
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/package.json,sha256=U7tXSdZYrwLbP45Ay6lpngvJGFW8QTfcEG76afXOvy0,5804
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/static/lib_index_js.e7d8ec9f1176dd3c3964.js,sha256=oqfPQHJUn4GvBamo5XLTR3-ltaeXG8Kn1TIcIYTPCow,7662
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/static/lib_index_js.e7d8ec9f1176dd3c3964.js.map,sha256=GYnhRKg9W832NZ_siibHP4woB6iVS-RwB-jmB9cE3b8,8133
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/static/remoteEntry.3e3f5691172d67792481.js,sha256=4ckna3AJ3h269lB1l9JHEWy8_oBqsOl-Xcg_InRa5KQ,27811
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/static/remoteEntry.3e3f5691172d67792481.js.map,sha256=rBzVdZfqmuVU7J0UhTWi7_I5WX2BkyG_5nSRO5ECk6U,26537
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/static/style.js,sha256=jZuT-NnX0xrf5QswHbXDNlHCqWMUsQAZm2U4Uz2HuQM,159
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/static/style_index_js.3aa613ec3d95a15885c0.js,sha256=5EyQWmVdI_vlejHFIr5pXH6GD4RhTNqWSPmqzBO1LoI,19349
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/static/style_index_js.3aa613ec3d95a15885c0.js.map,sha256=y3p-DCNYVtkMhGbBUBFbaesTxGXo6XaKjufzkqtyJpQ,14747
+fis_labextension-0.1.0.data/data/share/jupyter/labextensions/FIS_labextension/install.json,sha256=sDa7wpF8qpCOy5N-1ihdf8uSqQ2MI4ndZalpVBTwjaY,193
+fis_labextension-0.1.0.dist-info/METADATA,sha256=H2nAQlJIa1Xax3QIvzgwSlLibCk7TUtzj-pKz0E--5I,5981
+fis_labextension-0.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+fis_labextension-0.1.0.dist-info/licenses/LICENSE,sha256=wFoOw8yzmIwVZq6x3ZPPSoNoJS5D9qGhTv2RPYtQFq8,1519
+fis_labextension-0.1.0.dist-info/RECORD,,
