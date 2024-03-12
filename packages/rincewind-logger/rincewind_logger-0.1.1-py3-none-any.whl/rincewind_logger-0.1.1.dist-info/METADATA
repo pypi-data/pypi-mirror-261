@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: rincewind-logger
+Version: 0.1.1
+Summary: A module to handle in a standard way for all my cli python scripts.
+License: MIT
+Author: James Ainslie
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# rincewind-clilogger
+
+## Overview
+
+This module provides functionality for logging to files from command line scripts, with log rotation and retention policies.
+
+It exposes two key functions:
+
+- `setup_logging()` - Configures logging to a file with rotation and retention settings
+- `log_info()` - Logs an informational message
+- `log_error()` - Logs an error message
+
+## Usage 
+
+### Setup Logging
+
+Call `setup_logging()` at the start of your script to configure logging:
+
+```python
+from rincewind_clilogger import setup_logging
+
+setup_logging('script.log', max_days=7, max_size_mb=10)
+```
+
+This will log messages to `script.log`, keeping up to 7 days of logs, with each log file capped at 10MB before rotating.
+
+### Logging Messages 
+
+Use `log_info()` and `log_error()` to log messages:
+
+```python 
+from rincewind_clilogger import log_info, log_error
+
+log_info('Script started')
+# ...
+log_error('Error occurred')
+```
+
+The `setup_logging()` call configures both functions to log to the same file.
+
+## API Reference
+
+### setup_logging
+
+```python
+def setup_logging(log_file_path: str, max_days: int, max_size_mb: int, verbose: bool = False) -> NoReturn
+```
+
+Configures logging to a file with log rotation and retention settings.
+
+**Parameters:**
+
+- `log_file_path` - Path to the log file
+- `max_days` - Maximum days to retain logs
+- `max_size_mb` - Maximum size of log file before rotating 
+- `verbose` - Whether to also log to stdout
+
+**Returns:** None
+
+### log_info
+
+```python 
+def log_info(message: str) -> NoReturn
+```
+
+Logs an informational message. 
+
+**Parameters:**
+
+- `message` - The message to log
+
+**Returns:** None
+
+### log_error
+
+```python
+def log_error(message: str) -> NoReturn
+``` 
+
+Logs an error message.
+
+**Parameters:**
+
+- `message` - The message to log
+
+**Returns:** None
+
+
