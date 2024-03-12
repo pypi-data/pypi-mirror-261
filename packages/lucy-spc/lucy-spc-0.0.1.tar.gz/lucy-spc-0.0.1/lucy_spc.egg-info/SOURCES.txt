@@ -1,0 +1,10 @@
+CHANGELOG.md
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+lucy_spc/__init__.py
+lucy_spc.egg-info/PKG-INFO
+lucy_spc.egg-info/SOURCES.txt
+lucy_spc.egg-info/dependency_links.txt
+lucy_spc.egg-info/top_level.txt
