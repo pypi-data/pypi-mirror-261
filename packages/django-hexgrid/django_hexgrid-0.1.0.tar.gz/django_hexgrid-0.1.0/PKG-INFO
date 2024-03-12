@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-hexgrid
+Version: 0.1.0
+Summary: A Django implementation of hexagonal grids.
+Home-page: https://github.com/vtbassmatt/django-hexgrid
+License: MIT
+Keywords: grid,hexagon,django
+Author: Matt Cooper
+Author-email: vtbassmatt@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: django (>=5.0,<6.0)
+Project-URL: Repository, https://github.com/vtbassmatt/django-hexgrid
+Description-Content-Type: text/markdown
+
+# Hex Grid
+
+A Django implementation of a hexagonal grid system.
+
+Inspired by https://www.redblobgames.com/grids/hexagons/.
+
+This app implements flat-top hexes using the cube (q,r,s) system.
+
+```
+ +s   -r
+   \ /
+-q -*- +q
+   / \
+ +r   -s
+```
+
