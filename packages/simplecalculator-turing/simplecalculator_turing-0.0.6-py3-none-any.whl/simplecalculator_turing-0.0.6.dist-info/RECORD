@@ -1,0 +1,10 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/simplecalculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/simplecalculator/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/simplecalculator/src/calculator.py,sha256=pcLV7eDbR2otZFWPUeR9bDDxrFuedaP_2vPtyw9Cjgw,5787
+simplecalculator_turing-0.0.6.dist-info/LICENSE.TXT,sha256=9228zB1-zJryyJdCHyDLEkgaHRvaZiwnYH47GaEEK1A,760
+simplecalculator_turing-0.0.6.dist-info/METADATA,sha256=IZIx2pQvMdRPU1SfNyiHUxeHPChZWuT9J-4PtQcjlEA,2682
+simplecalculator_turing-0.0.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+simplecalculator_turing-0.0.6.dist-info/entry_points.txt,sha256=q4kOWt15C7srZCehMb00M0Ku6cqr6yzysNDO5lsOCe8,78
+simplecalculator_turing-0.0.6.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+simplecalculator_turing-0.0.6.dist-info/RECORD,,
