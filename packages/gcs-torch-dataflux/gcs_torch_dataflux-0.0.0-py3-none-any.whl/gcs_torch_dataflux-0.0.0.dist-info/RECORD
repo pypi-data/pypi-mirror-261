@@ -1,0 +1,12 @@
+dataflux_core/__init__.py,sha256=RM6tdG9NZ2nz-ijUko3nFFr0EwdhEcXgegHyfW8IgYk,606
+dataflux_core/download.py,sha256=EN-TsApsYCuyZs6hbEkoZDJ7mVLvsKIrrqbVKnIp2ro,9037
+dataflux_core/fast_list.py,sha256=OnjuBIKOzP4NWUdiBD--MjkBjVH10HBHRporFWWzwE8,23107
+dataflux_core/range_splitter.py,sha256=o-QbGja0flm6xk41MGrMsRrmKOXxV60q7cBmdapUGPU,8825
+dataflux_pytorch/__init__.py,sha256=K2saE3vSc-2qAe_oEBX02nXB6rrnnHCzNJ1bA9ay0PQ,613
+dataflux_pytorch/dataflux_checkpoint.py,sha256=dkz7uNfGPMF4qrs9jfuZRk-Agp0LC5YLjciBlEe9N3w,2400
+dataflux_pytorch/dataflux_mapstyle_dataset.py,sha256=qv6JBlEnaL7LEQfhTOYcpJZswXXmiuiNtB5z8W6OVIc,6231
+gcs_torch_dataflux-0.0.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+gcs_torch_dataflux-0.0.0.dist-info/METADATA,sha256=xT9u_V5P1zJSIZSznJ_xP635eHD66JiFRdL5y7PfrLw,10879
+gcs_torch_dataflux-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gcs_torch_dataflux-0.0.0.dist-info/top_level.txt,sha256=yL8OxfEOP1nr4HQ5mIrUyawMGf0LBFpGl9sp3CCMfjo,31
+gcs_torch_dataflux-0.0.0.dist-info/RECORD,,
