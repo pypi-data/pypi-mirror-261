@@ -1,0 +1,35 @@
+name: Publish to PyPI
+
+on:
+  push:
+    branches:
+      - ci
+    tags:
+      - "*"
+
+jobs:
+  call-workflow:
+    uses: ./.github/workflows/test.yaml
+
+  pypi-publish:
+    name: Upload release to PyPI
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/numword-georgia/
+    permissions:
+      id-token: write # IMPORTANT: this permission is mandatory for trusted publishing
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+
+      - name: Install pypa/setuptools
+        run: |
+          python3 -m pip install --user hatch
+          hatch build
+
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
