@@ -1,0 +1,2 @@
+gmail-api-auth>=0.1.2
+gmail-label-manager>=0.1.2
