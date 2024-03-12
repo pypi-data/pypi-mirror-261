@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: autogen_google_search
+Version: 0.0.5
+Summary: A tool that integrates the autogen with Google Searcher.
+Author-email: auserwn <auserwn@yeah.net>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyautogen>=0.2.14
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pyautogen>=0.2.14
+Requires-Dist: langchain>=0.1.9
+Requires-Dist: langchain_community>=0.0.24
+Requires-Dist: langchain_openai>=0.0.8
+Requires-Dist: langchain_core>=0.1.27
+
+A tool that integrates the autogen with Google Searcher.
+
+
+
+Using AutoGen to achieve multi-agent integration with Google Search, it can serve as a function in the Tools for other agents to use, enabling seamless integration with LangChain.
+
+
+
+Create a file named OAI_CONFIG_LIST in the current directory with the following content format:
+```
+[
+    {
+        "model": "gpt-3.5-turbo",
+        "api_key": "sk-xxxx"
+    },
+    {
+        "model": "gpt-4",
+        "api_key": "sk-xxxx",
+        "base_url": "xxxx"
+    }
+]
+```
