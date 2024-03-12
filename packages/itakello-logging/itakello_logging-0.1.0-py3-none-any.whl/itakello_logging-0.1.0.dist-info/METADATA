@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: itakello_logging
+Version: 0.1.0
+Summary: A custom logging library by Itakello
+Home-page: https://github.com/Itakello/itakello_logging
+Author: Itakello
+Author-email: maxste000@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Example
+
+```python
+import logging
+
+from src import ItakelloLogging
+
+ItakelloLogging(debug=False)
+logging.debug("This is a debug message")
+logging.info("This is an info message")
+logging.warning("This is a warning message")
+logging.error("This is an error message")
+logging.critical("This is a critical message")
+
+```

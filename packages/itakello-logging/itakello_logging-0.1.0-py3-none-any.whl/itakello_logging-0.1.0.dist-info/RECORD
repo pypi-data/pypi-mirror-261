@@ -1,0 +1,10 @@
+itakello_logging/__init__.py,sha256=NDF65EcGlyf7sr3TMP0KEcQ_9MkqYZ3xet--zBtSCzA,35
+itakello_logging/core.py,sha256=bzomIfRGgGE5nneDt4z0mBmqOrMeG09D0frS4mRSmYA,2149
+itakello_logging/utils/__init__.py,sha256=BcZ4RWAiqrLF2wyuvrxKlVGKJnsLJ5ZAsf1KgKNh-oI,88
+itakello_logging/utils/console_formatter.py,sha256=bNg3wnYmP--Zf7HPKkHJximUsgrmmSoE2M9uFEsnEeQ,615
+itakello_logging/utils/debug_filter.py,sha256=E6kYmMG0p4MvcQs_DFhAHdaZqWCE35mxqVBZW6lAtMQ,131
+itakello_logging-0.1.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+itakello_logging-0.1.0.dist-info/METADATA,sha256=ePK_berNpSPedh2vxNHDt-mpncThACrshkGgLg7-jk0,794
+itakello_logging-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+itakello_logging-0.1.0.dist-info/top_level.txt,sha256=3QCbjGI8dQXQKsXggVJB5_TN9mwt-huqY6iIdWSKRKs,17
+itakello_logging-0.1.0.dist-info/RECORD,,
