@@ -1,0 +1,33 @@
+import unittest
+from typing import Any, Literal
+
+from expedantic.config_base import ConfigBase, Field
+
+
+class TestInnerConfig(ConfigBase):
+    a: int = -1
+    b: float = -2.0
+
+
+class TestConfig(ConfigBase):
+    a: int = 1
+    b: float = 2.0
+    c: str = "3.0"
+    d: list[float] = Field(default_factory=lambda: [1.0, 2.0, 3.0])
+    e: TestInnerConfig = TestInnerConfig()
+    f: Any = "asdf"
+    g: Literal["A", "B", "C"]
+    h: list[int]
+    file: str
+
+
+# class TestSaveLoad(unittest.TestCase):
+# def test_save(self):
+# TestConfig.model_dump()
+
+
+if __name__ == "__main__":
+    # t = TestConfig()
+    # tapified = TestConfig.tapify()
+    c = TestConfig.parse_args()
+    TestConfig.generate_schema("test_schema.json")
