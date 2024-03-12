@@ -1,0 +1,17 @@
+numpy
+tensorflow
+opencv-python
+spams-bin
+scikit-image
+scipy
+torch
+torchvision
+dominate
+visdom
+pillow
+visdom
+imageio
+tqdm
+lmdb
+staintools
+fitter
