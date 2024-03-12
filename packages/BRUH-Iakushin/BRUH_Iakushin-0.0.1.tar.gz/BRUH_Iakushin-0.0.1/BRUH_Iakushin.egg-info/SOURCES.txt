@@ -1,0 +1,8 @@
+setup.py
+BRUH_Iakushin/1.py
+BRUH_Iakushin/2.py
+BRUH_Iakushin/__init__.py
+BRUH_Iakushin.egg-info/PKG-INFO
+BRUH_Iakushin.egg-info/SOURCES.txt
+BRUH_Iakushin.egg-info/dependency_links.txt
+BRUH_Iakushin.egg-info/top_level.txt
