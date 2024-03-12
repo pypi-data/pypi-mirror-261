@@ -1,0 +1,8 @@
+referencing_loaders/__init__.py,sha256=SzGAdHRdjMKIDBC6xSmS3ahje8tYt-4H5k7cNMw0lVo,2424
+referencing_loaders/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+referencing_loaders/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+referencing_loaders/tests/test_loaders.py,sha256=bUWFj8pWsGBTS0wZjJDIZ0S_eWVBEjHiPeAzpQ-6Qe0,4359
+referencing_loaders-2024.5.1.dist-info/METADATA,sha256=thNJRTtyXEckEZQsMxurPBIUKL0VlH5XCN2JnETkStU,2301
+referencing_loaders-2024.5.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+referencing_loaders-2024.5.1.dist-info/licenses/COPYING,sha256=MU5Okb47qpPA-0vMyeTpfNZD64ObBlr5IXgsIXX-mQk,1057
+referencing_loaders-2024.5.1.dist-info/RECORD,,
