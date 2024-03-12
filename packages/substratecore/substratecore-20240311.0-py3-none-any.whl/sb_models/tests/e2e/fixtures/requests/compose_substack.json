@@ -1,0 +1,72 @@
+{
+  "dag": {
+    "nodes": [
+      {
+        "id": "summary",
+        "class": "ModelNode",
+        "args": {
+          "input_prompts": ["12345", "56789", "abcde", "qwerty", "foobar"],
+          "temperature": 0,
+          "max_tokens": 1250,
+          "frequency_penalty": 0.1,
+          "presence_penalty": 1.1,
+          "repetition_penalty": 1,
+          "top_p": 0.9
+        },
+        "_to_adapters": [],
+        "extra_args": {
+          "model": "mistral-7b-instruct",
+          "variant_args": null
+        },
+        "_should_output_globally": true
+      },
+      {
+        "id": "embed",
+        "class": "ModelNode",
+        "args": {
+          "provider_ids": [
+            "140385319",
+            "140385324",
+            "140385325",
+            "140385330",
+            "140385331"
+          ],
+          "texts": ["12345", "56789", "abcde", "qwerty", "foobar"],
+          "embed_metadata_keys": ["title"],
+          "split": false,
+          "store_info": {
+            "collection": "post_embeddings",
+            "full_metadata": [
+              {
+                "publication_id": 665335,
+                "title": "\ud83d\udcf0\ud83d\udcb5 Newsletter CIESC"
+              },
+              {
+                "publication_id": 942590,
+                "title": "<redacted_string>"
+              },
+              {
+                "publication_id": 2109700,
+                "title": "<redacted_string>"
+              },
+              {
+                "publication_id": 1897730,
+                "title": "<redacted_string>"
+              },
+              {
+                "publication_id": 2194717,
+                "title": "<redacted_string>"
+              }
+            ]
+          }
+        },
+        "extra_args": {
+          "model": "jina-base-v2"
+        },
+        "_should_output_globally": true
+      }
+    ],
+    "edges": [],
+    "initial_args": {}
+  }
+}
