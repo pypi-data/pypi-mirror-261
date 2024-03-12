@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: image-processing-toolkit
+Version: 0.1.0
+Summary: 
+Author: Ankush Patel
+Author-email: ap@ankushp.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.8.3,<4.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: opencv-python (>=4.9.0.80,<5.0.0.0)
+Description-Content-Type: text/markdown
+
+# Image Processing Toolkit
+
