@@ -1,0 +1,3 @@
+[console_scripts]
+grim=mytec.bin.cli:main
+
