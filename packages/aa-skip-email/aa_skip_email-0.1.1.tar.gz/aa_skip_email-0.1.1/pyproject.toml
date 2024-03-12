@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aa-skip-email"
+version = "0.1.1"
+description = "Allows you to skip entering your email after registering via EVE SSO"
+authors = ["Boris Talovikov <boris@talovikov.ru>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://gitlab.com/zima-corp/aa-skip-email"
+packages = [{include = "aa_skip_email"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+allianceauth = ">=3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
