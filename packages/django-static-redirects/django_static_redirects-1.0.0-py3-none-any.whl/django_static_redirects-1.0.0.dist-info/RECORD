@@ -1,0 +1,10 @@
+static_redirects/__init__.py,sha256=mdPcQ19z91dy3nE3cYpe1l3rS6H7fkHWER_ikSF67Bg,114
+static_redirects/apps.py,sha256=PdQ3W7LdcWQgvNO0OAapbyFzQI1Dn3A3nBRXRK5DBPo,190
+static_redirects/checks.py,sha256=JQ7Q_l9jMyftf_tnQ7jC75QxxbZPNPsQpnEsQh8CH0Q,700
+static_redirects/middleware.py,sha256=9-1WPFqGwhNVU_-NmbLu-3yCsE7hOHOiG14gCsy8a-w,2006
+static_redirects/signal_handlers.py,sha256=DvNJTcpx-BJI6XqKJKY-AV50HSQANqFF5aM_8bfMfvU,321
+static_redirects/utils.py,sha256=ewaKM4Kjy55P9rIPUfxso4em8qlvVT7NsGoL6C-3mWo,3276
+django_static_redirects-1.0.0.dist-info/LICENSE,sha256=EMUhrOLP340eqykJkYryThdAFjT75h0CudF3VHF0H5I,1075
+django_static_redirects-1.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+django_static_redirects-1.0.0.dist-info/METADATA,sha256=I4j35O1Ix4iykNkE5iBMYjoTOA6jSuoOptExOMrxhMM,3608
+django_static_redirects-1.0.0.dist-info/RECORD,,
