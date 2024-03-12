@@ -1,0 +1,12 @@
+stim-1.13.dev1710203367.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+stim-1.13.dev1710203367.dist-info/RECORD,,
+stim-1.13.dev1710203367.dist-info/METADATA,sha256=H5z7UC_ZEsHXz2571A8vtk4GCHXW7pLRs7j42CDh4iw,4180
+stim-1.13.dev1710203367.dist-info/WHEEL,sha256=L0ABBnxO_xKRR_wTzM7WWWX8RRfdKRK-fZ5a3ZEhDqQ,148
+stim-1.13.dev1710203367.dist-info/top_level.txt,sha256=_h6lQZBgzVLumwrXyf13DY71YT6dUkd4SY-ZRjcljFQ,5
+stim-1.13.dev1710203367.dist-info/entry_points.txt,sha256=nKrnVit2TO7zlOC9PzFDbziXiGroRejQTIeqeJ2VS6Q,51
+stim/_main_argv.py,sha256=8gHM50pjV8l_X1okiK0V7GCxy_UHPhWUbFc_d7_5wPQ,134
+stim/_stim_sse2.cpython-38-x86_64-linux-gnu.so,sha256=ZWQZ3lAZuDrsTzOrlDQ9ikllXvPCJ_2gpt35pSTT0bU,5807432
+stim/__init__.pyi,sha256=PvSFwyYy3u2ZFvzBD6u45CtRtZUKhIgLxBER0s6zHoA,400115
+stim/_stim_polyfill.cpython-38-x86_64-linux-gnu.so,sha256=AFr-uRbCd2JvZgBlwPgqi_v-juYocGOfdAea82DOblA,5807448
+stim/__init__.py,sha256=62bT7zWxAc_GkO5H5ElztgZorBTY2Nlc8dU8bpeEVRE,2387
+stim/_detect_machine_architecture.cpython-38-x86_64-linux-gnu.so,sha256=0UIIVhpG44HivV5AXQqkqKA7hMcnEzkWuIVRZRVvU8U,236920
