@@ -1,0 +1,5 @@
+setup.py
+erunda_fss.egg-info/PKG-INFO
+erunda_fss.egg-info/SOURCES.txt
+erunda_fss.egg-info/dependency_links.txt
+erunda_fss.egg-info/top_level.txt
