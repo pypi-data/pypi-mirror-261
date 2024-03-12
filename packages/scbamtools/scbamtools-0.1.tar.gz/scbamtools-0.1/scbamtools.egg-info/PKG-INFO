@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scbamtools
+Version: 0.1
+Summary: "High performance Cython + Python tools to process BAM files with tags as they arise in single-cell sequencing"
+Home-page: https://github.com/marvin-jens/mrfifo
+Author: Marvin Jens
+Author-email: marvin.jens@charite.de
+License: MIT
+Project-URL: Bug Tracker, https://github.com/marvin-jens/mrfifo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mrfifo
+
+# scbamtools
+High performance Cython + Python tools to process BAM files with tags as they arise in single-cell sequencing
