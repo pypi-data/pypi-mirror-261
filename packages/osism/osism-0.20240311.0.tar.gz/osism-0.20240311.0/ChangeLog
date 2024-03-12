@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20240311.0
+-------------
+
+* Prepare manage of clusterapi & octavia images (#811)
