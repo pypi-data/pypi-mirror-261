@@ -1,0 +1,8 @@
+setup.py
+pythonpractgurovns/__init__.py
+pythonpractgurovns/funcone.py
+pythonpractgurovns/functwo.py
+pythonpractgurovns.egg-info/PKG-INFO
+pythonpractgurovns.egg-info/SOURCES.txt
+pythonpractgurovns.egg-info/dependency_links.txt
+pythonpractgurovns.egg-info/top_level.txt
