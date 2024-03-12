@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: tcx_extract
+Version: 0.1.2
+Summary: A speed-optimized tcx data extractor.
+Author-email: Alhan Keser <hello@alhan.co>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ziglang
+
+# TCX Extractor
+
+A speed-optimized data extractor for .tcx (Garmin) files.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Support](#support)
+
+## Installation
+Can be installed using: 
+
+```bash
+pip install tcx-extract
+```
+
+Then run this once to build the Zig executable:
+```python
+import tcx_extract as tcx
+tcx.build_zig()
+```
+
+## Usage
+```python
+import tcx_extract as tcx
+print(tcx.extract("example.tcx", "Time"))
+```
+
+## Support
+Please [create an issue](https://github.com/alhankeser/tcx-extract/issues/new) if you're having an issue or have questions. 
