@@ -1,0 +1,7 @@
+README.md
+setup.py
+gpucloud.egg-info/PKG-INFO
+gpucloud.egg-info/SOURCES.txt
+gpucloud.egg-info/dependency_links.txt
+gpucloud.egg-info/requires.txt
+gpucloud.egg-info/top_level.txt
