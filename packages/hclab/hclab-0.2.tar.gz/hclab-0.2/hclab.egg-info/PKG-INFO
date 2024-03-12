@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hclab
+Version: 0.2
+Summary: hclab
+Home-page: https://github.com/gejuanz/hclab
+Download-URL: https://github.com/gejuanz/hclab
+Author: gejuanz
+Author-email: gejuanz@outlook.com
+License: MIT
+Project-URL: Source, https://github.com/gejuanz/hclab
+Keywords: hclab
+License-File: LICENSE.txt
+Requires-Dist: httpcat-sdk
+Requires-Dist: myhttpcat
+Requires-Dist: myhcat
+Requires-Dist: httpcatlab
