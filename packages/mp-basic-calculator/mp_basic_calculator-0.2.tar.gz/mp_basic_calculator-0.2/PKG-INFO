@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mp_basic_calculator
+Version: 0.2
+License-File: LICENSE.txt
+
+# Basic calculator for Turing College project
+
+Simple calculator, which was created as project.
+Calculator has addition, subtraction, multiply, divide and take nth root from number.
+
+## Usage
+
+```pip install basic_calculator```
