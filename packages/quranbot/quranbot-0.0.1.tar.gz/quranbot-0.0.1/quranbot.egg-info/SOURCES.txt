@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+quranbot/__init__.py
+quranbot.egg-info/PKG-INFO
+quranbot.egg-info/SOURCES.txt
+quranbot.egg-info/dependency_links.txt
+quranbot.egg-info/requires.txt
+quranbot.egg-info/top_level.txt
