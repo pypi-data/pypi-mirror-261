@@ -1,0 +1,179 @@
+CHANGES
+=======
+
+1.5.1
+-----
+
+* Update ChangeLog
+* Document mypy plugin code and add OMNICONF\_MYPY\_DEBUG option
+* Take value of default parameter into account for mypy plugin
+* Avoid installing test dependencies twice
+* Add instructions to README on how to setup dev environment
+* Update all dependencies
+* Replace pip/pip-tools with uv where possile, rebuild requirements
+* Add Renovate config
+
+1.5.0
+-----
+
+* Update ChangeLog
+* Remove references to flake8
+* Add Gitlab CI coverage regex and update badges
+* Use Python 3.8 syntax for Type
+* Add experimental mypy plugin for improved type annotations
+* Add typing information
+* Enable mypy and fix initial errors
+* Ignore Sphinx config reformat commit in git blame
+* Include Sphinx config in Ruff checks
+* Fix readthedocs generation
+* Add readthedocs config
+* Ignore reformat commit in git blame
+* Reformat all files with ruff
+* Replace flake8, black and isort with ruff
+* Remove Python 2.7 specific bits
+* Remove Vault backend
+* Update supported Python versions
+* Replace nose with pytest
+* Modernize project, prepare for Gitlab CI
+* Fix formatting of changelog in README
+
+1.4.0
+-----
+
+* Update ChangeLog
+* Announce dropping of Python 3.4 and Jython support
+* Remove support for Jython
+* Attempt to fix Jython tests
+* Add TOML to documentation
+* Python 3.4 support has ended
+* Add TOML backend
+
+1.3.1
+-----
+
+* Update ChangeLog
+* Update README
+* Fix Flake8 error
+* Add Python 3.8 to test suite
+* Avoid collections deprecation warning when using abc classes
+
+1.3.0
+-----
+
+* Update ChangeLog and AUTHORS
+* Update README
+* Use yaml full\_load\_all
+* Add string\_bool and string\_or\_false
+* Add enum type
+* Add SeparatorSequence
+* Add documentation about the type system
+* Fix Flake8 errors
+* Install older version of tox to work around Jython issue
+* Switch to Jython at the last moment
+* Force pyenv shims as first in PATH
+* Install Jython using pyenv
+* Update testable versions of PyPy
+* Use Ubuntu Xenial test runners
+* Dropped support for Python 3.3 and 3.4
+* Pin version of hvac to test with and use new signature
+
+1.2.1
+-----
+
+* Update Changelog
+* Only set values from ArgparseBackend if they are not None
+
+1.2.0
+-----
+
+* Add AUTHORS and ChangeLog
+* Update Travis Jython to version 2.7.1
+* Add Travis PyPy3.5 version 5.8.0
+* Update Travis PyPy to version 5.7.1
+* Test all arguments
+* Clarify ArgparseBackend.get\_values documentation
+* Fix test naming consistency
+* Upgrade setuptools in a separate step on Travis
+* Don't error when bin directory already exists
+* Remove obsolete code paths and update tests
+* Reimplement Argparse config loading to load all Settings in one pass
+* Refactor Setting value loading to allow backend to load all Settings at once
+* Add test to reproduce argparse flag parsing bug
+* Move metadata and requirements to setup.cfg, and enable pbr
+* Avoid double if statement
+* Override PATH after installing tox, but before running tests
+* Specify specific version of PyPy to test
+* Restructure Travis CI YAML file to use normal python stages
+* Fix Jython tests by pinning an older version of requests
+
+1.1.1
+-----
+
+* Bump version
+* Add Python 3.6 to supported Python list
+* Add Python 3.6 to envlist and Travis
+* Enable rednose output
+* Remove useless dependency on coverage
+* Avoid requests 2.12 on Jython
+* Enable rednose colouring for test result output
+* Remove redundant call to wget
+* Fix new stricter flake8 errors
+* Install all Python versions explicitely
+* Use curl to download Vault
+* Switch to Trusty image
+* Fix README links and add check to tox
+
+1.1.0
+-----
+
+* Update README.rst
+* Bump version
+* Enhance ValueErrors thrown by Backends with the key that is currently being handled
+* Cover missing lines
+* Provide documentation for usage functionality
+* Add help\_requested, version\_requested and show\_usage
+* Add convenience method to quickly check for a single flag
+* Do not automatically add -h/--help flags in ArgparseBackend.get\_value
+* Shorten metavar name to improve readability
+* Use refactored Argparse.add\_argument method
+* Support CLI flags
+* Disable confusing output from argparse
+* Handle CLI arguments with an unexpected missing argument
+* Refactor argparse tests to use Setting objects directly
+* Refactor new Vault backend's get\_value method
+* Update tests
+* Mark SkipTest as no cover
+* Handle unavailability of vault gracefully during tests
+* Remove client.is\_authenticated assertion from setUp
+* Documentation for the new behaviour
+* Fix flake8 errors
+* Support multiple documents in yaml file
+* Actually read file contents
+* Make list of supported backends dynamic
+* Don't cover StringIO import error case and Manager stopping on error
+* Lower shields max cache age to 15 minutes
+* Fix mistakes in examples
+
+1.0.1
+-----
+
+* Ignore PyPi build directories
+* Fix description
+* Bump version
+* Add Python implementation batch to README
+* Convert README to ReST format
+* Only generate universal wheel packages
+
+1.0
+---
+
+* Bump version
+* Also add major Python versions to classifier list
+* Add license and contribution information to README
+* Update README with badges and documentation link
+* Add coveralls support
+* Add Travis CI config
+* Add extra documentation on prefixes
+* Set theme to default
+* Add requirements.txt for ReadTheDocs
+* Initial commit

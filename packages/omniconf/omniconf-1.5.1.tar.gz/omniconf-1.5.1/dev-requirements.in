@@ -1,0 +1,32 @@
+# Dependency management
+uv
+wheel
+
+# Code style and typing
+ruff
+mypy
+
+# Build tools
+pre-commit<3.6.0
+
+# Extra dependencies
+configobj  # ConfigObj backend
+PyYAML     # YAML backend
+toml       # TOML backend
+
+# Test tools
+tox
+pytest
+pytest-ruff
+pytest-cov
+pytest-mypy
+
+# Typing stubs and hints for mypy
+types-PyYAML
+types-setuptools
+types-toml
+
+###
+## Do not forget to sync the relevant dependencies to .pre-commit-config.yaml !
+## Specifically ruff, mypy and pytest dependencies.
+###

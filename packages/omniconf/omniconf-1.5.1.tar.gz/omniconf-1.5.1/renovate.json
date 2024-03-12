@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "matchBaseBranches": [
+        "develop",
+        "master"
+      ],
+      "enabled": false
+    }
+  ],
+  "pip_requirements": {
+    "enabled": false
+  },
+  "pip-compile": {
+    "fileMatch": [
+      "^dev-requirements\\.in$",
+      "^docs-requirements\\.in$"
+    ]
+  },
+  "constraints": {
+    "python": "==3.11"
+  },
+  "pre-commit": {
+    "enabled": true
+  }
+}

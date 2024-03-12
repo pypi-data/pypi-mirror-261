@@ -1,0 +1,76 @@
+attrs==23.2.0
+    # via pytest-mypy
+cachetools==5.3.3
+    # via tox
+cfgv==3.4.0
+    # via pre-commit
+chardet==5.2.0
+    # via tox
+colorama==0.4.6
+    # via tox
+configobj==5.0.8
+coverage==7.4.3
+    # via pytest-cov
+distlib==0.3.8
+    # via virtualenv
+filelock==3.13.1
+    # via
+    #   pytest-mypy
+    #   tox
+    #   virtualenv
+identify==2.5.35
+    # via pre-commit
+iniconfig==2.0.0
+    # via pytest
+mypy==1.9.0
+    # via pytest-mypy
+mypy-extensions==1.0.0
+    # via mypy
+nodeenv==1.8.0
+    # via pre-commit
+packaging==24.0
+    # via
+    #   pyproject-api
+    #   pytest
+    #   tox
+platformdirs==4.2.0
+    # via
+    #   tox
+    #   virtualenv
+pluggy==1.4.0
+    # via
+    #   pytest
+    #   tox
+pre-commit==3.5.0
+pyproject-api==1.6.1
+    # via tox
+pytest==8.1.1
+    # via
+    #   pytest-cov
+    #   pytest-mypy
+    #   pytest-ruff
+pytest-cov==4.1.0
+pytest-mypy==0.10.3
+pytest-ruff==0.3.1
+pyyaml==6.0.1
+    # via pre-commit
+ruff==0.3.2
+    # via pytest-ruff
+six==1.16.0
+    # via configobj
+toml==0.10.2
+tox==4.14.1
+types-pyyaml==6.0.12.12
+types-setuptools==69.1.0.20240310
+types-toml==0.10.8.20240310
+typing-extensions==4.10.0
+    # via mypy
+uv==0.1.17
+virtualenv==20.25.1
+    # via
+    #   pre-commit
+    #   tox
+wheel==0.42.0
+
+# The following packages were excluded from the output:
+# setuptools

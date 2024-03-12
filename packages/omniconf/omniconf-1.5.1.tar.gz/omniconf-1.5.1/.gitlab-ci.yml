@@ -1,0 +1,55 @@
+before_script:
+  - pip install --upgrade uv
+  - uv pip install --system -U pip setuptools
+  - uv pip install --system -r dev-requirements.txt
+
+.pytest_steps: &pytest_steps
+  stage: test
+  script:
+    - tox --sitepackages
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    reports:
+      junit: cover/junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: cover/cobertura.xml
+
+py38:
+  image: python:3.8
+  <<: *pytest_steps
+
+py39:
+  image: python:3.9
+  <<: *pytest_steps
+
+py310:
+  image: python:3.10
+  <<: *pytest_steps
+
+py311:
+  image: python:3.11
+  <<: *pytest_steps
+
+py312:
+  image: python:3.12
+  <<: *pytest_steps
+
+pypy39:
+  image: pypy:3.9
+  <<: *pytest_steps
+
+pypy310:
+  image: pypy:3.10
+  <<: *pytest_steps
+
+pypi-upload:
+  image: python:3.11
+  stage: deploy
+  rules:
+    - if: "$CI_COMMIT_TAG && $PYPI_REPOSITORY"
+      when: on_success
+  script:
+    - uv pip install --system -U twine wheel
+    - python setup.py sdist bdist_wheel
+    - twine upload --non-interactive --repository-url "$PYPI_REPOSITORY" -u "$PYPI_UPLOAD_USER" -p "$PYPI_UPLOAD_PASSWORD" dist/*
