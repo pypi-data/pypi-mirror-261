@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+eros/__init__.py
+eros/client.py
+eros/models.py
+eros_api.egg-info/PKG-INFO
+eros_api.egg-info/SOURCES.txt
+eros_api.egg-info/dependency_links.txt
+eros_api.egg-info/requires.txt
+eros_api.egg-info/top_level.txt
