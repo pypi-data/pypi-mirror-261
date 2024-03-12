@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pineapple-store-connect
+Version: 0.1.0
+Summary: Defines a python API to simplify connecting in App Store Connect.
+Home-page: UNKNOWN
+Author: Carlos Santoro
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+This Python SDK simplifies the process of connecting to the App Store Connect API for reporting purposes. It provides a streamlined interface for downloading sales and subscription reports, eliminating the need for manual HTTP logic and API parameter handling. With this SDK, you can focus on your data, not the details of API interaction.
+
