@@ -1,0 +1,110 @@
+[project]
+name = "n1-ipam"
+version = "0.2.2"
+description = "N1 IPAM"
+authors = [
+    { name = "Kalle M. Aagaard", email = "km@conscia.com" },
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "conscia-infoblox-sdk>=0.3.0",
+    "conscia-tasklog>=0.1.4",
+    "conscia-secretvalue>=0.1.196",
+    "tabulate>=0.9.0",
+    "pyyaml>=6.0.1",
+]
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+n1-ipam = "n1.ipam.__main__:main"
+
+[project.optional-dependencies]
+cli = [
+    "tabulate>=0.9.0",
+    "click>=8.1.7",
+    "click-option-group>=0.5.6",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.pdm.build]
+includes = [
+    "n1",
+]
+
+[[tool.pdm.source]]
+url = "https://pkgs.dev.azure.com/ConsciaDevelopers/cust-n1/_packaging/n1/pypi/simple/"
+verify_ssl = true
+name = "pypi"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.2",
+    "pytest-cov>=4.1.0",
+    "pytest-asyncio>=0.21.1",
+    "coverage>=7.3.1",
+]
+dev = [
+    "black>=23.9.1",
+    "ruff>=0.0.291",
+    "mypy>=1.5.1",
+    "bump2version>=1.0.1",
+    "unasync>=0.5.0",
+    "types-tabulate>=0.9.0.3",
+    "types-PyYaml>=6.0.12.12",
+]
+azure = [
+    "pytest-azurepipelines>=1.0.4",
+    "setuptools>=68.2.2",
+]
+
+[tool.pdm.scripts]
+unasync = "./scripts/unasync_files.py"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.black]
+line-length = 120
+
+[tool.pyright]
+include = [
+    "n1/ipam",
+    "tests",
+    "examples",
+]
+
+[tool.pytest.ini_options]
+addopts = "-v --cov=n1.ipam --cov-report=term-missing --cov-report=xml"
+testpaths = [
+    "tests",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning:pytest_nunit",
+]
+
+[tool.mypy]
+python_version = "3.12"
+packages = "n1.ipam"
+mypy_path = "typings"
+explicit_package_bases = true
+check_untyped_defs = true
+disable_error_code = "name-defined,type-arg,valid-type,attr-defined,misc"
+
+[tool.coverage.report]
+exclude_also = [
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
