@@ -1,0 +1,45 @@
+# Brainly API Client
+
+[![PyPI](https://img.shields.io/pypi/v/brainly-api.svg)](https://pypi.python.org/pypi/brainly-api)
+
+The ultimate Python library to access the **[Brainly REST API](https://brainly.com/api/28)** and **[Brainly GraphQL API](https://brainly.com/graphql/us)**
+
+All Brainly markets supported. Async by default.
+
+## Install
+
+```bash
+pip install brainly-api
+```
+
+## Usage
+
+```python
+from brainly_api import BrainlyAPI
+
+api = BrainlyAPI(
+    token="XXXXXX", # token long
+    market="dd",
+    legacy_api_host="http://ru.data.api.z-dn.net",
+    graphql_api_host="https://graphql.z-dn.net"
+)
+
+# ...
+
+user = await api.get_user(34)
+print(user)
+```
+
+## Notes
+
+This is not an official API wrapper affiliated with Brainly.
+
+The Brainly API is undocumented, so this library only contains well-known publicly accessible API endpoints.
+
+### I'm getting blocked by Brainly
+
+Brainly is blocking automated requests.
+
+This library uses plain HTTP requests with no anti-blocking strategy, so if you're trying to access publicly known Brainly hosts (e.g., https://brainly.com/api/28), you may be getting blocked.
+
+If you want unblocked access to Brainly APIs, please [contact me](https://t.me/vlaex)
