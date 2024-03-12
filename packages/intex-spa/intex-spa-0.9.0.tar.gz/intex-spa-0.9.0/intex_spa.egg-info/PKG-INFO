@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: intex-spa
+Version: 0.9.0
+Summary: intex-spa is now aio-intex-spa
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: aio-intex-spa
+
+# intex-spa is now aio-intex-spa
+
+This package has been renamed. Use `pip install aio-intex-spa` instead.
+
+New package: https://pypi.org/project/aio-intex-spa/
