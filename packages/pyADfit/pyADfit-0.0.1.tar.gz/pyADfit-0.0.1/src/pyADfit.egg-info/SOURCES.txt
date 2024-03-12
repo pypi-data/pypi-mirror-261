@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyADfit/__init__.py
+src/pyADfit/disc_fit.py
+src/pyADfit/disc_launch.py
+src/pyADfit/disc_model.py
+src/pyADfit.egg-info/PKG-INFO
+src/pyADfit.egg-info/SOURCES.txt
+src/pyADfit.egg-info/dependency_links.txt
+src/pyADfit.egg-info/requires.txt
+src/pyADfit.egg-info/top_level.txt
