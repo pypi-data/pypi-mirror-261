@@ -1,0 +1,9 @@
+scipy
+
+[test]
+pytest
+pytest-cov
+pytest-forked
+pytest-timeout
+nbformat
+nbconvert
