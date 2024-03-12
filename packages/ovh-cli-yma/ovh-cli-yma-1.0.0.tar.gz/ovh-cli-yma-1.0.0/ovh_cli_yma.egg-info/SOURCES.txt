@@ -1,0 +1,14 @@
+LICENSE
+LICENSE.txt
+README.rst
+pyproject.toml
+ovh_cli/__init__.py
+ovh_cli/account.py
+ovh_cli/ovh_cli.py
+ovh_cli/zone_manager.py
+ovh_cli_yma.egg-info/PKG-INFO
+ovh_cli_yma.egg-info/SOURCES.txt
+ovh_cli_yma.egg-info/dependency_links.txt
+ovh_cli_yma.egg-info/entry_points.txt
+ovh_cli_yma.egg-info/requires.txt
+ovh_cli_yma.egg-info/top_level.txt
