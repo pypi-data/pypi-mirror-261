@@ -1,0 +1,2 @@
+[console_scripts]
+flask-structure = flask_structure_handler.__main__:cli
