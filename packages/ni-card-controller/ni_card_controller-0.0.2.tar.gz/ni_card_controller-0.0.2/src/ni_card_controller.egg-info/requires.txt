@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+redis
+pydantic
+nidaqmx
+
+[dev]
+check-manifest
