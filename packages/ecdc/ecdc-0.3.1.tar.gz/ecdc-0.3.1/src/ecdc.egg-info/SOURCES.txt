@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/ecdc/__init__.py
+src/ecdc/__main__.py
+src/ecdc.egg-info/PKG-INFO
+src/ecdc.egg-info/SOURCES.txt
+src/ecdc.egg-info/dependency_links.txt
+src/ecdc.egg-info/requires.txt
+src/ecdc.egg-info/top_level.txt
