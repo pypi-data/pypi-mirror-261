@@ -1,0 +1,5 @@
+setup.py
+shek.egg-info/PKG-INFO
+shek.egg-info/SOURCES.txt
+shek.egg-info/dependency_links.txt
+shek.egg-info/top_level.txt
