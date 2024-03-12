@@ -1,0 +1,10 @@
+pyproject.toml
+setup.cfg
+src/marker_detection_ai/__init__.py
+src/marker_detection_ai/best_yolov8m.pt
+src/marker_detection_ai/main.py
+src/marker_detection_ai.egg-info/PKG-INFO
+src/marker_detection_ai.egg-info/SOURCES.txt
+src/marker_detection_ai.egg-info/dependency_links.txt
+src/marker_detection_ai.egg-info/requires.txt
+src/marker_detection_ai.egg-info/top_level.txt
