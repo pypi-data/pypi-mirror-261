@@ -1,0 +1,12 @@
+logs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/detection.py,sha256=RsgXpcQ0oA27nvDgnQ0Cxv9WY-6QKOzWaiLzuSG4ktc,3371
+src/version.py,sha256=Xc4-zQ9StiftkW_HxxwLtZBbl7ZF8s36K78I5lHIt_4,14
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_data_file.py,sha256=wpdX89NxxX5kKC4GYy0xW8ZgAtprlrES29YBGavQwkA,667
+tests/test_regex.py,sha256=u9iSAzBfftN8moKHOscYFWS1sDu5_O3YEvJyn_qLcak,653
+tests/test_regex_file.py,sha256=PZjDYOq-V6xKj07cidaiMpt-srlA8Yu4OJawSkL14j4,748
+packageSensitiveInfo-0.0.0.dist-info/METADATA,sha256=mNRcBcym3h-hGo22T30Jh86XnlPVgc9mQbiXz6zDMJA,515
+packageSensitiveInfo-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+packageSensitiveInfo-0.0.0.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+packageSensitiveInfo-0.0.0.dist-info/RECORD,,
