@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Andreani-QA-Sikuli
+Version: 0.0.3
+Summary: Framework Sikuli para ejecución de casos automatizados por captura de imagen
+Home-page: UNKNOWN
+Author: AndreaniTesting
+Author-email: user_appglatest@andreani.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pyperclip3
+Requires-Dist: lackey
+Requires-Dist: easyocr
+Requires-Dist: pynput
+
+UNKNOWN
+
