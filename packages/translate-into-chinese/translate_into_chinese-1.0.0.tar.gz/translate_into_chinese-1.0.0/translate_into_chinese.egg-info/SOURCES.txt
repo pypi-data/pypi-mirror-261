@@ -1,0 +1,8 @@
+setup.py
+translate_into_chinese/__init__.py
+translate_into_chinese/translate_into_chinese.py
+translate_into_chinese.egg-info/PKG-INFO
+translate_into_chinese.egg-info/SOURCES.txt
+translate_into_chinese.egg-info/dependency_links.txt
+translate_into_chinese.egg-info/requires.txt
+translate_into_chinese.egg-info/top_level.txt
