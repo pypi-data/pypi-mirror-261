@@ -1,0 +1,9 @@
+LICENSE
+README.md
+flask_recaptcha.py
+setup.py
+EasyFlaskRecaptcha.egg-info/PKG-INFO
+EasyFlaskRecaptcha.egg-info/SOURCES.txt
+EasyFlaskRecaptcha.egg-info/dependency_links.txt
+EasyFlaskRecaptcha.egg-info/requires.txt
+EasyFlaskRecaptcha.egg-info/top_level.txt
