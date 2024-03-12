@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+parallel_simulations/__init__.py
+parallel_simulations/models.py
+parallel_simulations/parallel_simulations.py
+parallel_simulations/utils.py
+parallel_simulations.egg-info/PKG-INFO
+parallel_simulations.egg-info/SOURCES.txt
+parallel_simulations.egg-info/dependency_links.txt
+parallel_simulations.egg-info/requires.txt
+parallel_simulations.egg-info/top_level.txt

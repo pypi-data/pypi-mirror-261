@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: parallel_simulations
+Version: 0.0.1
+Summary: Helper class to orchestrate in parallel Monte Carlo simulations for an arbitrary number of models, with low-level parameter granularity.
+Home-page: https://github.com/vladimirrotariu/parallel-monte-carlo-simulations
+Author: Vladimir Rotariu
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: apache_beam
+Requires-Dist: numpy
+Requires-Dist: pydantic
