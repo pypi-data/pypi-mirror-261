@@ -1,0 +1,5 @@
+snakemake_executor_plugin_lsf/__init__.py,sha256=SPxJDO5pNSgoscAEJbSQYhP16EVyF1z8k-kqOtNKuIE,26023
+snakemake_executor_plugin_lsf-0.2.1.dist-info/LICENSE,sha256=YVc4xTLWMqGfFL36120k7rzXtsT6e4RkJsh68VVn12s,1076
+snakemake_executor_plugin_lsf-0.2.1.dist-info/METADATA,sha256=v9e-nLrvk3jLF-OCtL5Zu8-Vchr43I3_G7wOy2ZiBGg,5650
+snakemake_executor_plugin_lsf-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+snakemake_executor_plugin_lsf-0.2.1.dist-info/RECORD,,
