@@ -1,0 +1,12 @@
+simple_latex_ocr/__init__.py,sha256=lZMZVnXtBwxrxo_Z1xu_H1cr1va2d7ZEzVbDrtHBPfE,63
+simple_latex_ocr/get_lastest_model.py,sha256=RSczgZPT-CWKpLMuBnoH0zRr3HiwDFqoIBzTteaEvTw,2151
+simple_latex_ocr/main.py,sha256=3oaXIW9B4JEHkkrtb9Q9FGAZnvUJRy9b-UuYhlpvUDE,866
+simple_latex_ocr/models.py,sha256=hQEdd4DySwm6lpkYyTcmraf7Z6zRFnTIy_HHu5tMn7U,5155
+simple_latex_ocr/utils.py,sha256=DIodHZz0oyHt3iI_6_0pIlbKTbRLOH63Pn2tUgDVFhk,11623
+simple_latex_ocr/utils_load.py,sha256=3wQla_VtJYnl8GTgFExmR8fb1pI0AskY2o4w2fPzdl0,6771
+simple_latex_ocr-0.0.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+simple_latex_ocr-0.0.2.dist-info/METADATA,sha256=EfA918OHpUZfIB-aQETWcm6q9N-nFjL0jD1-KbmtTJc,2263
+simple_latex_ocr-0.0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+simple_latex_ocr-0.0.2.dist-info/entry_points.txt,sha256=MXm6n5YIEyB9HleTtuLtOtwA_pC73Kc_zRiYavljfTY,64
+simple_latex_ocr-0.0.2.dist-info/top_level.txt,sha256=3hbGrUQMm3Uk9DoXCHPsroCbWk9wpC1awmnqUUN_Tl0,17
+simple_latex_ocr-0.0.2.dist-info/RECORD,,
