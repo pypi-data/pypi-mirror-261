@@ -1,0 +1,1 @@
+from .retailterms import get_retail_entities
