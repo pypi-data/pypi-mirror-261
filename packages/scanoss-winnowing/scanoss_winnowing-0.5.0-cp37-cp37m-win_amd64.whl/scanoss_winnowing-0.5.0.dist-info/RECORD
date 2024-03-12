@@ -1,0 +1,11 @@
+_hpsm.cp37-win_amd64.pyd,sha256=jruxBn5P7wMwGz-9K4uV-zN0zKoozrzShl0ITw2HI1Q,12800
+_winnowing.cp37-win_amd64.pyd,sha256=QluSO2JRnEH5iIaMQxPdQWAt2Dq87WPNrdUA4DoFboI,12288
+scanoss_winnowing/__init__.py,sha256=kYZknObRvCCYkDkULNfz3SP5_PhP1nYJWDmsuSL9ikA,1187
+scanoss_winnowing/_hpsm.c,sha256=SqpSjDjS7zMYnpvp2O_l0QvXrGxQrQtWLqQH39F4ENM,5878
+scanoss_winnowing/_winnowing.c,sha256=w8cx_uGEbO8PNArNta9pRdvqWLOwkdpz4Ji0_CUXNGw,6280
+scanoss_winnowing/winnowing.py,sha256=pmUQ1L5BGV3bwzNbdyq-Kgd1QrgvL8y7MBfjbIPBOv0,21415
+scanoss_winnowing-0.5.0.dist-info/LICENSE,sha256=d90i0N9bRZYxkJcvWkNxmh2TwXQT8LAH4YYqlfrbXh4,1094
+scanoss_winnowing-0.5.0.dist-info/METADATA,sha256=23l3Z6hj8tUPTfix3h8JaZxhfrFhAY_pfrbVn41Y8Jc,2117
+scanoss_winnowing-0.5.0.dist-info/WHEEL,sha256=slqBGdqRnxanDn00BSYHhryEsWH_8CUurgRUvoMtK_Y,101
+scanoss_winnowing-0.5.0.dist-info/top_level.txt,sha256=YcsWTy2_alsm4OSQZAKh04bcWvX3TVyNYvCV4DHyVxY,35
+scanoss_winnowing-0.5.0.dist-info/RECORD,,
