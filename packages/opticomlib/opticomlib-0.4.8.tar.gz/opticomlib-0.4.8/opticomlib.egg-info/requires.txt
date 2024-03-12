@@ -1,0 +1,10 @@
+scipy
+numpy
+matplotlib
+scikit-learn
+tqdm
+pympler
+sphinx
+renku-sphinx-theme
+ghp-import
+pyvisa
