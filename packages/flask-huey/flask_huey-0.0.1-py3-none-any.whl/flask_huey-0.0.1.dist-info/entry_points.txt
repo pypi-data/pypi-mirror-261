@@ -1,0 +1,3 @@
+[console_scripts]
+flask-huey=flask_huey.cli:cli
+

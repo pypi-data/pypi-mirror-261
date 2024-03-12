@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: flask-huey
+Version: 0.0.1
+Summary: A Flask extension that runs the huey_consumer.
+Author-email: David Carmichael <david@uilix.com>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Natural Language :: English
+Requires-Dist: huey
+Requires-Dist: flask
+Requires-Dist: click
+Project-URL: Documentation, https://cheesecake87.github.io/flask-huey/
+Project-URL: Source, https://github.com/CheeseCake87/flask-huey
+
+This project is an attempt to create a Flask extension that is able to run the huey_consumer.
+
+Do not install this package, it is not ready for use.
