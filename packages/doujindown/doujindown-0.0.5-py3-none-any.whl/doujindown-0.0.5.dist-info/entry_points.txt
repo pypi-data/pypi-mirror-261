@@ -1,0 +1,2 @@
+[console_scripts]
+doujindown = doujindown.app:app
