@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: django-prose-editor
+Version: 0.1.0
+Summary: Prose editor for the Django admin based on ProseMirror
+Project-URL: Homepage, https://github.com/matthiask/django-prose-editor/
+Author-email: Matthias Kestenholz <mk@feinheit.ch>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.11
+Requires-Dist: django>=4.2
+Provides-Extra: tests
+Requires-Dist: coverage; extra == 'tests'
+Description-Content-Type: text/x-rst
+
+===================
+django-prose-editor
+===================
+
+Prose editor for the Django admin based on ProseMirror
+
+
+Cookie control
+==============
+
+Some jurisidictions require the the users' consent before adding analytics
+scripts and tracking cookies. While it may be best to not use any analytics and
+tracking at all this may not be possible or even desirable in all
+circumstances.
+
+Many solutions exist for adding a consent banner to the website. Some of those
+banners require loading JavaScript and other assets from external servers. This
+raises some questions because loading those scripts may also be seen as
+tracking already. It is certainly safer to implement a cookie control panel
+locally. It would be boring to start from scratch on each site.
+
+This guide explains how to use `feincms3-cookiecontrol <https://github.com/feinheit/feincms3-cookiecontrol/>`__.
+
+Installation
+~~~~~~~~~~~~
+
+Install the package:
+
+.. code-block:: shell
+
+    venv/bin/pip install django-prose-editor
+
+Add ``django_prose_editor`` to ``INSTALLED_APPS``:
+
+.. code-block:: python
+
+    INSTALLED_APPS = [
+        # ...
+        "django_prose_editor",
+    ]
+
+Replace ``models.TextField`` with ``ProseEditorField`` where appropriate:
+
+.. code-block:: python
+
+    from django_prose_editor.fields import ProseEditorField
+
+    class Project(models.Model):
+        description = ProseEditorField()
+
+Note! No migrations will be generated when switching from and to
+``models.TextField``. That's by design. Those migrations are mostly annoying.
+
+
+Customization
+~~~~~~~~~~~~~
+
+It's not possible (yet), sorry.
