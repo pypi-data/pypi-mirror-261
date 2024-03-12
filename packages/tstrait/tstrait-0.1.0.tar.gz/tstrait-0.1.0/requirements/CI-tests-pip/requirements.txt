@@ -1,0 +1,8 @@
+msprime
+numba
+numpy
+pandas
+tskit>=0.5.5
+pytest
+pytest-cov
+pytest-xdist
