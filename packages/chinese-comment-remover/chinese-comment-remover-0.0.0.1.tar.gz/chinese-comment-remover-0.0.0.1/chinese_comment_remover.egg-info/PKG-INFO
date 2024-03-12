@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: chinese-comment-remover
+Version: 0.0.0.1
+Summary: A tool to remove comments [with Chinese] characters from Python files.
+Author: steveflyer
+Author-email: steveflyer7@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: black
+
+# Chinese Comment Remover
+
+A simple tool to remove all comments [with chinese character] from a source code file or a directory.
+
+## Installation
+```bash
+pip install chinese-comment-remover
+```
+
+## Usage
+```bash
+# Remove Chinese comment in a file
+remove-comment <file> -c
+
+# Remove Chinese comment in a directory
+remove-comment <directory> -c -r
+
+# Remove All comments in a file
+remove-comment <file>
+
+# Remove All comments in a directory
+remove-comment <directory> -r
+```

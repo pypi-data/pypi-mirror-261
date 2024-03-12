@@ -1,0 +1,12 @@
+README.md
+setup.py
+chinese_comment_remover/__init__.py
+chinese_comment_remover/remove.py
+chinese_comment_remover.egg-info/PKG-INFO
+chinese_comment_remover.egg-info/SOURCES.txt
+chinese_comment_remover.egg-info/dependency_links.txt
+chinese_comment_remover.egg-info/entry_points.txt
+chinese_comment_remover.egg-info/requires.txt
+chinese_comment_remover.egg-info/top_level.txt
+scripts/__init__.py
+scripts/remove_comment.py

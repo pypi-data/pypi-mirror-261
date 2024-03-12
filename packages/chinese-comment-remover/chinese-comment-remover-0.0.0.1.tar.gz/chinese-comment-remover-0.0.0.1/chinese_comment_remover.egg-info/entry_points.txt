@@ -1,0 +1,2 @@
+[console_scripts]
+remove-comment = scripts.remove_comment:main
