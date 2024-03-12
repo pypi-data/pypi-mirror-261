@@ -1,0 +1,13 @@
+pipefunc/__init__.py,sha256=6NSP84NE8ITI3bNI61z_hmZrtvrdqD4hRDZHA7GcOC8,574
+pipefunc/_cache.py,sha256=MLPKsp4aan3N9BUtw97lHb1M2msJif-UVgo1-8qudvo,9181
+pipefunc/_perf.py,sha256=FMZC2ZJGSBnHlaFB_r71J6C2Usnh2ojLT1S_4kxvlxs,4764
+pipefunc/_pipefunc.py,sha256=a_xARhdyXwel6SmQuCgy-OTc7hK7I8BQ34wHUyHbVnw,58438
+pipefunc/_plotting.py,sha256=_YEdvbEU9SMoIEF7dTnMu2-CzqJvs6a_mvzAHcvnp6w,4698
+pipefunc/_sweep.py,sha256=4kp06Kii_9b9dyKxecGEekf2zO6x94ICMCJ726vx2OM,24591
+pipefunc/_version.py,sha256=lS26WYyzlzFleYAeUWqrSchXTfEH5Ze1hsI0ppY8YX0,148
+pipefunc-0.4.0.dist-info/AUTHORS.md,sha256=62ixut3uxaZcgRmoTdYwoN-_MtXLdEfM5ZOthhBT_wc,113
+pipefunc-0.4.0.dist-info/LICENSE,sha256=FIu1oQpGHdOwvpL_33f0lGehX7GDxBteS3S-tYCfv1M,1060
+pipefunc-0.4.0.dist-info/METADATA,sha256=ngPeKoLXb3pp_9IMZ8C9aC7JQac51BMakW_d9AD7QPI,10682
+pipefunc-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pipefunc-0.4.0.dist-info/top_level.txt,sha256=9ANYZZLpTxm3XygdhlfYB7R2ZOHg1hfBqFzFEZ6e6sA,9
+pipefunc-0.4.0.dist-info/RECORD,,
