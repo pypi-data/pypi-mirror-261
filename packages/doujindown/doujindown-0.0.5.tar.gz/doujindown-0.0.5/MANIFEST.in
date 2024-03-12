@@ -1,0 +1,3 @@
+include doujindown/requirements.txt
+recursive-include doujindown/conf *
+recursive-include doujindown/scrapers *

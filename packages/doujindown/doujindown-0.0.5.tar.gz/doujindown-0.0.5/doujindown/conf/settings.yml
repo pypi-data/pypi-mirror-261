@@ -1,0 +1,11 @@
+rate_lim: 2
+sites:
+
+  nhentai.net:
+    username: ''
+    password: ''
+
+  hitomi.la: 
+    username: ''
+    password: ''
+
