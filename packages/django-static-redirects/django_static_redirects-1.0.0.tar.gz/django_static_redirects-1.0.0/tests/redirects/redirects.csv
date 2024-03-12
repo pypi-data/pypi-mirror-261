@@ -1,0 +1,4 @@
+/foo,/bar
+/foo?bar=baz,/barbaz
+/foo-permanent,/bar,true
+https://example.com/foobar,/barfoo
