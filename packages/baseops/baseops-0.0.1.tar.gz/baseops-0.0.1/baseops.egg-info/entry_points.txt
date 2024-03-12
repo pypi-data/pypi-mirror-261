@@ -1,0 +1,2 @@
+[console_scripts]
+count-nulls = baseops.qtnulls:count_nulls
