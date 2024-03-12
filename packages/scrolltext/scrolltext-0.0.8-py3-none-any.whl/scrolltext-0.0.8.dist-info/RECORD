@@ -1,0 +1,13 @@
+scrolltext/__init__.py,sha256=qKzHcneGMfmlNB8vu17lUDbECw2OQg5ad6CyLyXqejY,155
+scrolltext/cli.py,sha256=O4x580KDyH5__fv8Pfw3KjyTLyEiRhEOJRvN9uB7w84,1667
+scrolltext/config.py,sha256=EAyW1a_sn9Iz9EDUbRW4EN5pjJz7Gl_UqoiSobEaqeI,3764
+scrolltext/cursestext.py,sha256=AwdFzc6yiYSeXmnsTAcjFvkFtq8SjtolsvkYGVhoocY,2757
+scrolltext/getchtimeout.py,sha256=Jk24w8mW6j9heyU8N4VskVOHV70gJn6pRBejYNC5l9o,1237
+scrolltext/linescroller.py,sha256=C0x9rrIR9kuS1uoMWGtQ9_0jswY1Tu0SnxT9MHw9WaI,1997
+scrolltext/utils.py,sha256=L9uWE7bVLj6BZYcOmKzKc6E6kdQijfrg9wkpJ0KB4bw,7568
+scrolltext-0.0.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+scrolltext-0.0.8.dist-info/METADATA,sha256=AX-Kkkp7179I5SOA_EBQeot9VwIfE3q-qTis689UEyc,3098
+scrolltext-0.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+scrolltext-0.0.8.dist-info/entry_points.txt,sha256=ycAEGyonEVB6oaIuPZQMVpF1ct-ZyruG5x-6YKveszI,51
+scrolltext-0.0.8.dist-info/top_level.txt,sha256=2MCJUQI7q0oYIXjvKJEUSo336TwfMczhKQycJM9dASI,11
+scrolltext-0.0.8.dist-info/RECORD,,
