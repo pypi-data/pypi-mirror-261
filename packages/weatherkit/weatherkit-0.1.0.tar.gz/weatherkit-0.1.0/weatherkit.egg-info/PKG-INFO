@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: weatherkit
+Version: 0.1.0
+Summary: python package to get weather details of any city in the world. without any API key.
+Author: Suvan Banerjee
+Author-email: <banerjeesuvan@gmail.com>
+Keywords: python,weather,weatherkit,weather details,weather of any city,openweatherapi
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+
+
+# pyweather
