@@ -1,0 +1,20 @@
+[tool.isort]
+profile = "black"
+
+[tool.poetry]
+name = "hydromill"
+version = "0.1a0"
+description = "Building event-driven applications the easy way in Python. This project is a direct port of https://github.com/ThreeDotsLabs/watermill."
+license = "MIT"
+authors = ["Marek Czudowski <marek.czudowski@pm.me>"]
+readme = "README.md"
+repository = "https://github.com/mczudowski/hydromill"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: hydromill
+Version: 0.1a0
+Summary: Building event-driven applications the easy way in Python. This project is a direct port of https://github.com/ThreeDotsLabs/watermill.
+Home-page: https://github.com/mczudowski/hydromill
+License: MIT
+Author: Marek Czudowski
+Author-email: marek.czudowski@pm.me
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic
+Project-URL: Repository, https://github.com/mczudowski/hydromill
+Description-Content-Type: text/markdown
+
+# Hydromill
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+
+## Pub/Subs
+
+Supported Pub/Subs:
+
+- AMQP Pub/Sub [(`hydromill-amqp`)](https://github.com/mczudowski/hydromill-amqp)
+
+## References
+
+[Watermill](https://github.com/ThreeDotsLabs/watermill)
+
+## License
+
+[MIT License](./LICENSE)
+
