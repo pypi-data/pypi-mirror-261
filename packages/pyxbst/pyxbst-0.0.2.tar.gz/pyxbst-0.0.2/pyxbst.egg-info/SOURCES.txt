@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pyxbst/__init__.py
+pyxbst.egg-info/PKG-INFO
+pyxbst.egg-info/SOURCES.txt
+pyxbst.egg-info/dependency_links.txt
+pyxbst.egg-info/top_level.txt
