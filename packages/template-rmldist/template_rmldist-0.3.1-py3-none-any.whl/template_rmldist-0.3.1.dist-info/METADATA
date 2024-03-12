@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: template-rmldist
+Version: 0.3.1
+Summary: This is the best Python package ever created!
+Author: Jackson Rico
+Author-email: jacksonrico@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Description-Content-Type: text/markdown
+
+# My first package
+
+This is a fantastic package for Python.
+
+it say *both* hello and goodbye.
+
+## into the package folder
+
+```zsh
+poetry build
+
+export PYPI_USERNAME=__token__
+export PYPI_PASSWORD=pypi-Ag....
+poetry publish --build --username $PYPI_USERNAME --password $PYPI_PASSWORD
+```
