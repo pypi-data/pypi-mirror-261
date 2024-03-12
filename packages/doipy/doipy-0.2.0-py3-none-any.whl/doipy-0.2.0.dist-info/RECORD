@@ -1,0 +1,11 @@
+doipy/__init__.py,sha256=deW4k1LfEFMKxSZFz4JJpDWnPpAAG8Q93AOOdOg-AoU,125
+doipy/__main__.py,sha256=l2tgax7RNoCQJSlg3J2D5ydZukQXYl6MntIZwsxX5bg,34
+doipy/actions.py,sha256=gB_pJnynMIFkW2_W_5UofqglrYiS7hXpQ2ZTtz-2Mv0,6118
+doipy/config.py,sha256=67yu40hqe6Vgd_9aSujrCH2981Y6tw87WWlgp2w-8io,259
+doipy/fdo_config.py,sha256=k_qZOfv2lqiyBgjaxBjIQKLzoDRO5Ak0pj4uaGQyYs8,86
+doipy/main.py,sha256=IFw404H1V5ATJC6i1ANATJIgBHa_1Z16AGMi67Uz55E,2398
+doipy/socket_utils.py,sha256=vxIQ52kyr9CaCXFAP06hCkv7UHTLCaZKWm4UTa-_20o,1276
+doipy-0.2.0.dist-info/METADATA,sha256=Mp6hMBoZGugbeM3640TOBDQNfmF3DgiYNdJZexdwJMc,2431
+doipy-0.2.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+doipy-0.2.0.dist-info/entry_points.txt,sha256=1aSsp_SY-t5R2y1j2hn4nCcLi0JP_QbWIIDKw5dPRzg,40
+doipy-0.2.0.dist-info/RECORD,,
