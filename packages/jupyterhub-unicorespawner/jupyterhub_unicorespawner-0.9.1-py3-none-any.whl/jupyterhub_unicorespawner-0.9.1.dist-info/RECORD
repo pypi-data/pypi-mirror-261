@@ -1,0 +1,8 @@
+unicorespawner/__init__.py,sha256=QPuWcGIxc7ieD8nTh3iAeWemIYrTAA6SL7Q2tR2GlWo,130
+unicorespawner/_version.py,sha256=xwhM22nOwbJYAkxmjKbG38a-06Qadut8f6W3YdbXBFE,154
+unicorespawner/api_notifications.py,sha256=5AhHI22JlnJWpwoQMsEsfFzNFpz_s0taDU65zcsCpMQ,4673
+unicorespawner/spawner.py,sha256=0q-l97o4OLKpPG6pG4BcTHPfQhTx9Kx6y1WPwct7nM8,24819
+jupyterhub_unicorespawner-0.9.1.dist-info/METADATA,sha256=9F1n1jljPmNGP7McVuP4Jgl3OokpzEQDzwA-wQEFMZA,2544
+jupyterhub_unicorespawner-0.9.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+jupyterhub_unicorespawner-0.9.1.dist-info/licenses/LICENSE,sha256=dk2Yc1sUc5TLag7h0BsSuhEKOfhznVUW3pD6Ssg4pVA,1517
+jupyterhub_unicorespawner-0.9.1.dist-info/RECORD,,
