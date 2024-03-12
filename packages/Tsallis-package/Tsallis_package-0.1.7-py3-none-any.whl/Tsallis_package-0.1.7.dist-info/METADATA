@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: Tsallis_package
+Version: 0.1.7
+Summary: A package for all mathematics and physics concerning Tsallis statistics
+Author-email: "Hermes A. V. Urquijo" <hvurquijo@duck.com>
+Project-URL: Homepage, https://github.com/havurquijo/Tsallis_package
+Project-URL: Issues, https://github.com/havurquijo/Tsallis_package/Issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Information about the Tsallis tool package 
+
+## About
+
+## Installation
+In both OS you must be shure the **python3.12** is installed:<br/>
+### Windows
+Verify your version:<br/>
+`py –version`
+
+Install your version through the official website [https://www.python.org/downloads/](https://www.python.org/downloads/), and search for a version equal or over **3.12**.
+
+After that you should be fine installing with the pip comando:<br/>
+`pip install Tsallis-package`
+
+Use the version option for install an specific option:<br/>
+`pip install Tsallis-package==0.1.1` for installing the version **0.1.1**
+
+### Linux
+Verify your version:<br/>
+`python3 –version`
+
+Install from the commando line:<br/>
+```
+sudo apt-get update
+sudo apt-get install python3.12
+python3 –version
+```
+
+## Functions and classes
+Inside a python enviroment import the functions from the module **Tsallis_module**, for example:<br/>
+```
+from Tsallis_module.basic.qMath import qMath as qM
+from Tsallis_module.basic.TsallisMaths import TsallisMaths as TM
+```
+The basic structure of the module is: <br/>
+
+├───basic<br/>
+│___│___qMath.py<br/>
+│___│___TsallisMath.py<br/>
+│<br/>
+└───statistics<br/>
+____│___qStatistics.py<br/>
+____│___TsallisStatistics.py<br/>
+
+The modules can be accessed using **.** as usual in [python importing](https://docs.python.org/3/reference/import.html).
+
+### Functions
+`qexp(x=0.0, q=1.0, type=1) -> float64`<br/>
+This functions calculates the q-exponential value of **x**:<br/>
+&emsp;_x_ is a float64 value or list.<br/>
+&emsp;_q_ is a float64 which is the Tsallis deformation parameter.<br/>
+&emsp;_type_ is the Tsallis distribution type. For now only takes integer values 1 or 2.<br/><br/>
+
+`qlog(x=1.0, q=1.0, type=1) -> float64`<br/>
+This functions calculates the q-logarithm value of **x**:<br/>
+&emsp;_x_ is a float64 value or list.<br/>
+&emsp;_q_ is a float64 which is the Tsallis deformation parameter.<br/>
+&emsp;_type_ is the Tsallis distribution type. For now only takes integer values 1 or 2.<br/><br/>
+
+`qX(x=0.0, q=1.0, type=1) -> float64`<br/>
+This functions calculates the q-deformed value of **x** following the Kaniadakis mathematical tools:<br/>
+&emsp;_x_ is a float64 value or list.<br/>
+&emsp;_q_ is a float64 which is the Tsallis deformation parameter.<br/>
+&emsp;_type_ is the Tsallis distribution type. For now only takes integer values 1 or 2.<br/><br/>
+
+After that you should be fine installing with the pip comando:
+`pip install Tsallis-package`
+
+Use the version option for installing an specific option:
+`pip install Tsallis-package==0.1.1` for installing the version **0.1.1**
+
+
+
+
+
+You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
