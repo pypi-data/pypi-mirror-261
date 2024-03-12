@@ -1,0 +1,9 @@
+README.md
+setup.py
+pixegami/__init__.py
+pixegami/main.py
+pixegami.egg-info/PKG-INFO
+pixegami.egg-info/SOURCES.txt
+pixegami.egg-info/dependency_links.txt
+pixegami.egg-info/requires.txt
+pixegami.egg-info/top_level.txt
