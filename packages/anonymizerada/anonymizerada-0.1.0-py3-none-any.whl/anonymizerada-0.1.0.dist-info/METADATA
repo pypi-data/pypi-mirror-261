@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: anonymizerada
+Version: 0.1.0
+Summary: 
+Author: aurelien.davodet
+Author-email: aurelien.davodet@soprasterianext.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: anonymeter (>=1.0.0,<2.0.0)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: sdv (>=1.10.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# anonymizer
+
+
