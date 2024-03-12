@@ -1,0 +1,4867 @@
+openapi: 3.0.1
+info:
+  title: Seller API Content
+  version: '2.18'
+  description: 'Queries limits: <dd>Maximum of 100 requests per minute to all Content
+    methods are allowed.</dd> <br> Public API for Content is designed for server-to-server
+    data synchronization between Wildberries and Suppliers. <br> You download data
+    from Wildberries to your computing resources for further operating it. <br> <code>It
+    is not allowed to use the Content API as an external database. If you exceed the
+    requests limits, access to the API will be restricted.</code> <br> <br> <br>
+
+    '
+security:
+  - HeaderApiKey: []
+x-tagGroups:
+  - name: Content
+    tags:
+      - Upload
+      - View
+      - Configurator
+      - Media files
+      - Tags
+      - Trash
+tags:
+  - name: Upload
+    description: Create and edit a card.
+  - name: View
+    description: Getting information about created product cards, nomenclatures and
+      sizes.
+  - name: Configurator
+  - name: Media files
+  - name: Tags
+    description: Service for operating with the tags of product cards. Tags are designed
+      to quickly find a product card in your user panel.
+  - name: Trash
+components:
+  securitySchemes:
+    HeaderApiKey:
+      type: apiKey
+      name: Authorization
+      in: header
+  examples:
+    TokenMissing:
+      description: The token is missing
+      value: 'proxy: unauthorized'
+    TokenInvalid:
+      description: Token invalid
+      value: 'proxy: invalid token'
+    TokenNotFound:
+      description: Token deleted
+      value: 'proxy: not found'
+    creatingOneCard:
+      description: ''
+      value:
+        - subjectID: 105
+          variants:
+            - vendorCode: АртикулПродавца
+              title: Наименование товара
+              description: Описание товара
+              brand: Бренд
+              dimensions:
+                length: 55
+                width: 40
+                height: 15
+              characteristics:
+                - id: 12
+                  value:
+                    - Turkish flag
+                - id: 25471
+                  value: 1200
+                - id: 14177449
+                  value:
+                    - red
+              sizes:
+                - techSize: S
+                  wbSize: '42'
+                  price: 5000
+                  skus:
+                    - '88005553535'
+    creatingMergedCards:
+      description: ''
+      value:
+        - subjectID: 3091
+          variants:
+            - vendorCode: АртикулПродавца11
+              title: Наименование товара 1
+              description: Описание товара 1
+              brand: Бренд
+              dimensions:
+                length: 55
+                width: 40
+                height: 15
+              characteristics:
+                - id: 12
+                  value:
+                    - Turkish flag
+                - id: 25471
+                  value: 1200
+                - id: 14177449
+                  value:
+                    - red
+              sizes:
+                - skus:
+                    - '111111111133111'
+            - vendorCode: АртикулПродавца22
+              title: Наименование товара 2
+              description: Описание товара 2
+              brand: БрендДругой
+              dimensions:
+                length: 55
+                width: 40
+                height: 15
+              characteristics:
+                - id: 12
+                  value:
+                    - Turkish flag
+                - id: 25471
+                  value: 1200
+                - id: 14177449
+                  value:
+                    - red
+              sizes:
+                - skus:
+                    - '111111111441111'
+    creatingGroupOfIndividualCards:
+      description: ''
+      value:
+        - subjectID: 3091
+          variants:
+            - vendorCode: АртикулПродавца1
+              title: Наименование товара 1
+              description: Описание товара 1
+              brand: Бренд
+              dimensions:
+                length: 55
+                width: 40
+                height: 15
+              characteristics:
+                - id: 12
+                  value:
+                    - Turkish flag
+                - id: 25471
+                  value: 1200
+                - id: 14177449
+                  value:
+                    - red
+              sizes:
+                - skus:
+                    - '1111111111111'
+        - subjectID: 105
+          variants:
+            - vendorCode: Артикул продавца 2
+              title: Наименование товара 2
+              description: Описание товара 2
+              brand: Бренд
+              dimensions:
+                length: 55
+                width: 40
+                height: 15
+              characteristics:
+                - id: 12
+                  value:
+                    - Turkish flag
+                - id: 25471
+                  value: 1200
+                - id: 14177449
+                  value:
+                    - red
+              sizes:
+                - techSize: S
+                  wbSize: '42'
+                  price: 5000
+                  skus:
+                    - '2222222222222'
+    responseIncorrectBeginDate:
+      description: Incorrect start date
+      value:
+        error: Incorrect start date
+    responseIncorrectEndDate:
+      description: Incorrect end date
+      value:
+        error: Incorrect end date
+    responseExceededLimit:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Maximum 30 cards
+        additionalErrors:
+          error: Maximum 30 cards
+    responseCombining:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: You can not merge products with different subcategories
+        additionalErrors:
+          error: You can not merge products with different subcategories
+    responseIncorrectRequestFormat:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Incorrect request
+        additionalErrors:
+          error: Incorrect request
+    responseNonExistentNmId:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: nmID not found
+        additionalErrors:
+          error: nmID not found
+    responseNonExistentImt:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: imt not found
+        additionalErrors:
+          error: imt not found
+    responseDuplicateRequests:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Duplicate requests
+        additionalErrors:
+          error: Duplicate requests
+    responseAllCardsInSameGroup:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: All cards are in the same group
+        additionalErrors:
+          error: All cards are in the same group
+    responseCardCreate1:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: string
+        additionalErrors:
+          string: string
+    InvalidRequestFormatContent:
+      description: Incorrect request
+      value:
+        data: null
+        error: true
+        errorText: Incorrect request
+        additionalErrors: {}
+    CardCreatedWithoutVendorCode:
+      description: Seller's article is required
+      value:
+        data: null
+        error: true
+        errorText: vendorCode is required
+        additionalErrors: {}
+    CardsVendorCodeUsedInOtherCards:
+      description: Seller's article used in another card
+      value:
+        data: null
+        error: true
+        errorText: Seller's article used in another card
+        additionalErrors: {}
+    ThisCategoryDoesNotExist:
+      description: Subcategory not found
+      value:
+        data: null
+        error: true
+        errorText: Subcategory not found
+        additionalErrors:
+          id: '342342'
+    responseBodyContentError400:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Текст ошибки
+        additionalErrors:
+          MoveNmsToTrash: Bad request
+    responseOK200:
+      description: ''
+      value:
+        data: null
+        error: false
+        errorText: ''
+        additionalErrors: null
+    responseBody400LenName:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Недопустимое значение наименования тега
+        additionalErrors:
+          description: Cлишком длинное название тега. Разрешено не более 15 символов
+    responseBodyLimitTag:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Исчерпан лимит на создание тегов
+        additionalErrors: null
+    responseBodyNameNotExist:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Тег с таким именем уже существует
+        additionalErrors: null
+    responseNotFound200:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Неправильный запрос
+        additionalErrors:
+          description: Такого тега не существует у продавца
+    responseNotFound200Del:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Такого тега не существует
+        additionalErrors:
+          tagID: '1234'
+    IncorrectRequest4:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Неправильный запрос
+        additionalErrors:
+          description: Указаны несуществующие теги
+    responseBodyTagNotExist:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Такого тега не существует
+        additionalErrors:
+          tagID: '1234'
+    responseBodyError500:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Внутренняя ошибка.
+        additionalErrors: null
+  schemas:
+    responseBodyContentError400:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Additional errors
+          type: object
+          properties:
+            MoveNmsToTrash:
+              type: string
+      example:
+        data: null
+        error: true
+        errorText: Error text
+        additionalErrors:
+          MoveNmsToTrash: Bad request
+    responseBodyContentError403:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Additional errors
+          type: string
+      example:
+        data: null
+        error: true
+        errorText: Access denied
+        additionalErrors: Access denied
+    creatingCard:
+      type: array
+      items:
+        type: array
+        items:
+          type: object
+          properties:
+            characteristics:
+              description: Array of characteristics individual for each category
+              type: array
+              items:
+                type: object
+            vendorCode:
+              description: Seller's article
+              type: string
+            sizes:
+              description: Array of sizes for the nomenclature (if product has no
+                sizes, send this array without `wbSize` and `techSize` but with `price`
+                and `skus`)
+              type: array
+              items:
+                type: object
+                properties:
+                  techSize:
+                    description: Product size (for example, S, M, L, XL, 42, 42-43)
+                    type: string
+                  wbSize:
+                    description: Russian product size
+                    type: string
+                  price:
+                    description: Price, ₽
+                    type: integer
+                  skus:
+                    description: Array of barcodes, string ID’s of product sizes (can
+                      be generated using API, find out more in <a href ="./#tag/View/paths/~1content~1v1~1cards~1cursor~1list/post">View</a>
+                      section).
+                    type: array
+                    items:
+                      type: string
+    requestMoveNmsImtConn:
+      type: object
+      required:
+        - targetIMT
+        - nmIDs
+      properties:
+        targetIMT:
+          description: Seller's existing `imtID`, in which nomenclatures have to be
+            merged
+          type: integer
+          example: 123
+        nmIDs:
+          description: '`nmID` to be merged, maximum 30
+
+            '
+          type: array
+          items:
+            type: integer
+          example:
+            - 837459235
+            - 828572090
+    requestMoveNmsImtDisconn:
+      type: object
+      required:
+        - nmIDs
+      properties:
+        nmIDs:
+          description: '`nmID` to be separated, maximum 30)"
+
+            '
+          type: array
+          items:
+            type: integer
+          example:
+            - 837459235
+            - 828572090
+    responseCardCreate:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+          example: null
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Any additional errors
+          oneOf:
+            - type: object
+              properties:
+                string:
+                  type: string
+            - type: string
+    responseContentError1:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+          example: null
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Any additional errors
+          type: object
+          properties:
+            error:
+              type: string
+    responseIncorrectDate:
+      type: object
+      properties:
+        error:
+          type: string
+    responseContentError4:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Additional errors
+          type: object
+          properties:
+            description:
+              type: string
+    responseContentError5:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Additional errors
+          type: object
+          properties:
+            tagID:
+              type: string
+    responseContentError6:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Additional errors
+          type: string
+          nullable: true
+      example:
+        data: null
+        error: false
+        errorText: ''
+        additionalErrors: null
+    NmReportDetailRequest:
+      type: object
+      required:
+        - page
+        - period
+      properties:
+        brandNames:
+          type: array
+          description: Brand name
+          items:
+            type: string
+            example: Some
+        objectIDs:
+          type: array
+          description: Item Identifier
+          items:
+            type: integer
+            format: int32
+            example: 358
+        tagIDs:
+          type: array
+          description: Numeric tag identifier
+          items:
+            type: integer
+            format: int32
+            example: 123
+        nmIDs:
+          type: array
+          description: WB article
+          items:
+            type: integer
+            format: int32
+            example: 1234567
+        timezone:
+          type: string
+          description: 'Timezone.<br> If not specified, the default is Europe/Moscow.
+
+            '
+          example: Europe/Moscow
+        period:
+          type: object
+          description: Period
+          properties:
+            begin:
+              description: Start of the Period
+              type: string
+              format: time-date
+              example: 2023-06-01 20:05:32
+            end:
+              description: End of the Period
+              type: string
+              format: time-date
+              example: 2023-06-26 20:05:32
+        orderBy:
+          description: 'Sorting Parameters. If not specified, the default is "openCard"
+            with descending order. <dl> <dt>All sorting options <code>field</code>:</dt>
+            <dd><code>openCard</code> — by card opening (transition to the product
+            page)</dd> <dd><code>addToCart</code> — by additions to the cart</dd>
+            <dd><code>orders</code> — by the number of orders</dd> <dd><code>avgRubPrice</code>
+            — by average price in rubles</dd> <dd><code>ordersSumRub</code> — by the
+            total order amount in rubles</dd> <dd><code>stockMpQty</code> — by the
+            quantity of marketplace stock (pieces)</dd> <dd><code>stockWbQty</code>
+            — by the quantity of warehouse stock (pieces)</dd> <dd><code>cancelSumRub</code>
+            — by the sum of returns in rubles</dd> <dd><code>cancelCount</code> —
+            by the number of returns</dd> <dd><code>buyoutCount</code> — by the number
+            of buyouts</dd> <dd><code>buyoutSumRub</code> — by the total buyout amount
+            in rubles</dd> </dl>
+
+            '
+          type: object
+          properties:
+            field:
+              description: Sort type
+              type: string
+              example: ordersSumRub
+            mode:
+              description: '`asc` - ascending, `desc` - descending
+
+                '
+              type: string
+              example: asc
+        page:
+          description: Page
+          type: integer
+          format: int32
+          example: 1
+    NmReportGroupedRequest:
+      type: object
+      required:
+        - page
+        - period
+      properties:
+        objectIDs:
+          type: array
+          description: Item Identifier
+          items:
+            type: integer
+            format: int32
+            example: 358
+        brandNames:
+          description: Brand name
+          type: array
+          items:
+            type: string
+            example: Some
+        tagIDs:
+          description: Numeric tag identifier
+          type: array
+          items:
+            type: integer
+            format: int32
+            example: 123
+        timezone:
+          description: 'Timezone.<br> If not specified, the default is Europe/Moscow.
+
+            '
+          type: string
+          example: Europe/Moscow
+        period:
+          description: Period
+          type: object
+          properties:
+            begin:
+              description: Start of the Period
+              type: string
+              example: 2023-10-04 20:05:32
+            end:
+              description: End of the Period
+              type: string
+              example: 2024-03-01 20:05:32
+        orderBy:
+          description: 'Sorting Parameters. If not specified, the default is "openCard"
+            with descending order. <dl> <dt>All sorting options <code>field</code>:</dt>
+            <dd><code>openCard</code> — by card opening (transition to the product
+            page)</dd> <dd><code>addToCart</code> — by additions to the cart</dd>
+            <dd><code>orders</code> — by the number of orders</dd> <dd><code>avgRubPrice</code>
+            — by average price in rubles</dd> <dd><code>ordersSumRub</code> — by the
+            total order amount in rubles</dd> <dd><code>stockMpQty</code> — by the
+            quantity of marketplace stock (pieces)</dd> <dd><code>stockWbQty</code>
+            — by the quantity of warehouse stock (pieces)</dd> </dl>
+
+            '
+          type: object
+          properties:
+            field:
+              description: Sort type
+              type: string
+              example: ordersSumRub
+            mode:
+              description: '`asc` - ascending, `desc` - descending
+
+                '
+              type: string
+              example: asc
+        page:
+          description: Page
+          type: integer
+          format: int32
+          example: 1
+    NmReportDetailHistoryRequest:
+      type: object
+      required:
+        - nmIDs
+        - period
+      properties:
+        nmIDs:
+          description: WB article (max. 20)
+          type: array
+          items:
+            type: integer
+            format: int32
+            example: 1234567
+        period:
+          description: Period
+          type: object
+          properties:
+            begin:
+              description: Start of the period
+              type: string
+              format: date
+              example: 2023-06-20
+            end:
+              description: End of the Period
+              type: string
+              format: date
+              example: 2023-06-22
+        timezone:
+          type: string
+          description: 'Timezone.<br> If not specified, the default is Europe/Moscow.
+
+            '
+          example: Europe/Moscow
+        aggregationLevel:
+          description: 'Aggregation Type. If not specified, the default is aggregation
+            by days. <br> Available aggregation levels: `day`, `week`, `month`.
+
+            '
+          type: string
+          example: day
+    NmReportGroupedHistoryRequest:
+      type: object
+      required:
+        - period
+      properties:
+        objectIDs:
+          description: Item Identifier
+          type: array
+          items:
+            type: integer
+            format: int32
+            example: 358
+        brandNames:
+          description: Brand name
+          type: array
+          items:
+            type: string
+            example: Some
+        tagIDs:
+          description: Numeric tag identifier
+          type: array
+          items:
+            type: integer
+            format: int32
+            example: 123
+        period:
+          description: Period
+          type: object
+          properties:
+            begin:
+              description: Start of the Period
+              type: string
+              format: date
+              example: 2023-06-21
+            end:
+              description: End of the Period
+              type: string
+              format: date
+              example: 2023-06-23
+        timezone:
+          description: 'Timezone.<br> If not specified, the default is Europe/Moscow.
+
+            '
+          type: string
+          example: Europe/Moscow
+        aggregationLevel:
+          description: 'Aggregation Type. If not specified, the default is aggregation
+            by days. <br> Available aggregation levels: `day`, `week`, `month`.
+
+            '
+          type: string
+          example: day
+    NmReportDetailResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            page:
+              description: Page
+              type: integer
+              format: int32
+              example: 1
+            isNextPage:
+              description: Is there a next page (false - no, true - yes)?
+              type: boolean
+            cards:
+              type: array
+              items:
+                type: object
+                properties:
+                  nmID:
+                    description: WB article
+                    type: integer
+                    format: int32
+                    example: 1234567
+                  vendorCode:
+                    description: Seller's SKU
+                    type: string
+                    example: supplierVendor
+                  brandName:
+                    description: Brand Name
+                    type: string
+                    example: Some
+                  tags:
+                    description: Tags
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          description: Numeric tag identifier
+                          type: integer
+                          format: int32
+                          example: 123
+                        name:
+                          description: Tag name
+                          type: string
+                          example: Sale
+                  object:
+                    description: Item
+                    type: object
+                    properties:
+                      id:
+                        description: Item Identifier
+                        type: integer
+                        format: int32
+                        example: 447
+                      name:
+                        description: Item Name
+                        type: string
+                        example: Hair Conditioners
+                      statistics:
+                        description: Statistics
+                        type: object
+                        properties:
+                          selectedPeriod:
+                            description: Requested period
+                            type: object
+                            properties:
+                              begin:
+                                description: Start of the Period
+                                type: string
+                                example: 2023-06-01 20:05:32
+                              end:
+                                description: End of the Period
+                                type: string
+                                example: 2024-03-01 20:05:32
+                              openCardCount:
+                                description: Number of visits to the product page
+                                type: integer
+                                format: int32
+                                example: 0
+                              addToCartCount:
+                                description: Added to cart, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              ordersCount:
+                                description: Ordered items, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              ordersSumRub:
+                                description: Ordered amount in rubles
+                                type: integer
+                                format: int32
+                                example: 0
+                              buyoutsCount:
+                                description: Items bought, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              buyoutsSumRub:
+                                description: Bought amount in rubles
+                                type: integer
+                                format: int32
+                                example: 0
+                              cancelCount:
+                                description: Cancelled items, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              cancelSumRub:
+                                description: Cancelled amount in rubles
+                                type: integer
+                                format: int32
+                                example: 0
+                              avgPriceRub:
+                                description: Average price in rubles
+                                type: integer
+                                format: int32
+                                example: 0
+                              avgOrdersCountPerDay:
+                                description: Average daily order quantity, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              conversions:
+                                description: Conversions
+                                type: object
+                                properties:
+                                  addToCartPercent:
+                                    description: Conversion to Cart, % (The percentage
+                                      of visitors who, after opening the product card,
+                                      added the item to the cart)
+                                    type: integer
+                                    format: int32
+                                    example: 0
+                                  cartToOrderPercent:
+                                    description: Conversion to Order, % (The percentage
+                                      of visitors who, after adding an item to the
+                                      cart, completed the purchase)
+                                    type: integer
+                                    format: int32
+                                    example: 0
+                                  buyoutsPercent:
+                                    description: Buyout Percentage, % (The percentage
+                                      of visitors who ordered a product and successfully
+                                      completed the purchase. Excludes items still
+                                      in transit to the buyer.)
+                                    type: integer
+                                    format: int32
+                                    example: 0
+                      previousPeriod:
+                        description: Statistics for the previous 30 days
+                        type: object
+                        properties:
+                          begin:
+                            type: string
+                            description: Start of the period
+                            example: 2023-05-07 20:05:31
+                          end:
+                            type: string
+                            description: End of the period
+                            example: 2023-06-01 20:05:31
+                          openCardCount:
+                            description: Number of product card views
+                            type: integer
+                            format: int32
+                            example: 0
+                          addToCartCount:
+                            description: Added to cart, count
+                            type: integer
+                            format: int32
+                            example: 0
+                          ordersCount:
+                            description: Number of items ordered
+                            type: integer
+                            format: int32
+                            example: 1
+                          ordersSumRub:
+                            description: Total order amount in rubles
+                            type: integer
+                            format: int32
+                            example: 1262
+                          buyoutsCount:
+                            description: Number of items bought
+                            type: integer
+                            format: int32
+                            example: 1
+                          buyoutsSumRub:
+                            description: Total buyout amount in rubles
+                            type: integer
+                            format: int32
+                            example: 1262
+                          cancelCount:
+                            description: Number of items canceled
+                            type: integer
+                            format: int32
+                            example: 0
+                          cancelSumRub:
+                            description: Total canceled amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgPriceRub:
+                            description: Average price in rubles
+                            type: integer
+                            format: int32
+                            example: 1262
+                          avgOrdersCountPerDay:
+                            description: Average daily order count
+                            type: number
+                            example: 0.04
+                          conversions:
+                            description: Conversions
+                            type: object
+                            properties:
+                              addToCartPercent:
+                                description: Conversion to Cart, % (Percentage of
+                                  visitors who, after opening the product card, added
+                                  the item to the cart)
+                                type: integer
+                                format: int32
+                                example: 0
+                              cartToOrderPercent:
+                                description: Conversion to Order, % (Percentage of
+                                  visitors who, after adding an item to the cart,
+                                  completed the purchase)
+                                type: integer
+                                format: int32
+                                example: 0
+                              buyoutsPercent:
+                                description: Buyout Percentage, % (Percentage of visitors
+                                  who ordered a product and successfully completed
+                                  the purchase. Excludes items still in transit to
+                                  the buyer.)
+                                type: integer
+                                format: int32
+                                example: 100
+                      periodComparison:
+                        description: Comparison of two periods in percentages
+                        type: object
+                        properties:
+                          openCardDynamics:
+                            description: Dynamics of product card views
+                            type: integer
+                            format: int32
+                            example: 0
+                          addToCartDynamics:
+                            description: Dynamics of additions to the cart
+                            type: integer
+                            format: int32
+                            example: 0
+                          ordersCountDynamics:
+                            description: Dynamics of order count
+                            type: integer
+                            format: int32
+                            example: -100
+                          ordersSumRubDynamics:
+                            description: Dynamics of order sum in rubles
+                            type: integer
+                            format: int32
+                            example: -100
+                          buyoutsCountDynamics:
+                            description: Dynamics of buyouts count
+                            type: integer
+                            format: int32
+                            example: -100
+                          buyoutsSumRubDynamics:
+                            description: Dynamics of buyout sum in rubles
+                            type: integer
+                            format: int32
+                            example: -100
+                          cancelCountDynamics:
+                            description: Dynamics of canceled items count
+                            type: integer
+                            format: int32
+                            example: 0
+                          cancelSumRubDynamics:
+                            description: Dynamics of canceled items sum in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgOrdersCountPerDayDynamics:
+                            type: integer
+                            format: int32
+                            example: 0
+                            description: Dynamics of average daily order count
+                          avgPriceRubDynamics:
+                            type: integer
+                            format: int32
+                            example: -100
+                            description: Dynamics of average price for products. Discounts
+                              for promotions and WB discounts are considered.
+                          conversions:
+                            description: Conversions
+                            type: object
+                            properties:
+                              addToCartPercent:
+                                description: Conversion to Cart, % (Percentage of
+                                  visitors who, after opening the product card, added
+                                  the item to the cart)
+                                type: integer
+                                format: int32
+                                example: 0
+                              cartToOrderPercent:
+                                description: Conversion to Order, % (Percentage of
+                                  visitors who, after adding an item to the cart,
+                                  completed the purchase)
+                                type: integer
+                                format: int32
+                                example: 0
+                              buyoutsPercent:
+                                description: Buyout Percentage, % (Percentage of visitors
+                                  who ordered a product and successfully completed
+                                  the purchase. Excludes items still in transit to
+                                  the buyer.)
+                                type: integer
+                                format: int32
+                                example: -100
+                  stocks:
+                    description: Inventory
+                    type: object
+                    properties:
+                      stocksMp:
+                        description: MP Inventory, units (Total quantity of inventory
+                          at the seller's warehouse)
+                        type: integer
+                        format: int32
+                        example: 0
+                      stocksWb:
+                        description: Wildberries Warehouse Inventory (Total quantity
+                          of inventory at Wildberries warehouses)
+                        type: integer
+                        format: int32
+                        example: 0
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          description: Error description
+          type: string
+          example: ''
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+    NmReportGroupedResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            page:
+              description: Page
+              type: integer
+              format: int32
+              example: 1
+            isNextPage:
+              description: Is there a next page (false - no, true - yes)?
+              type: boolean
+            groups:
+              type: array
+              items:
+                type: object
+                properties:
+                  brandName:
+                    description: Brand name
+                    type: string
+                    example: Some
+                  tags:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          description: Numeric tag identifier
+                          type: integer
+                          format: int32
+                          example: 123
+                        name:
+                          description: Tag name
+                          type: string
+                          example: Sale
+                  object:
+                    type: object
+                    description: Item
+                    properties:
+                      id:
+                        description: Item Identifier
+                        type: integer
+                        format: int32
+                        example: 1668
+                      name:
+                        type: string
+                        example: Hair Waxes
+                        description: Item Name
+                  statistics:
+                    type: object
+                    properties:
+                      selectedPeriod:
+                        description: Requested period
+                        type: object
+                        properties:
+                          begin:
+                            description: Start of the Period
+                            type: string
+                            example: 2023-10-04 20:05:32
+                          end:
+                            description: End of the Period
+                            type: string
+                            example: 2024-03-01 20:05:32
+                          openCardCount:
+                            description: Number of clicks on product cards
+                            type: integer
+                            format: int32
+                            example: 0
+                          addToCartCount:
+                            description: Added to cart, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          ordersCount:
+                            description: Number of ordered items, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          ordersSumRub:
+                            description: Ordered amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          buyoutsCount:
+                            description: Number of purchased items, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          buyoutsSumRub:
+                            description: Purchase amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          cancelCount:
+                            description: Number of canceled items, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          cancelSumRub:
+                            description: Canceled amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgPriceRub:
+                            description: Average price in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgOrdersCountPerDay:
+                            description: Average number of orders per day, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          conversions:
+                            description: Conversions
+                            type: object
+                            properties:
+                              addToCartPercent:
+                                type: integer
+                                format: int32
+                                example: 0
+                                description: Conversion to cart, % (What percentage
+                                  of visitors, who opened the product card, added
+                                  the product to the cart)
+                              cartToOrderPercent:
+                                type: integer
+                                format: int32
+                                example: 0
+                                description: Conversion to order, % (What percentage
+                                  of visitors, who added the product to the cart,
+                                  placed an order)
+                              buyoutsPercent:
+                                type: integer
+                                format: int32
+                                example: 0
+                                description: Buyout percentage, % (What percentage
+                                  of visitors, who ordered the product, actually purchased
+                                  it. Excluding products still being delivered to
+                                  the buyer)
+                      previousPeriod:
+                        description: Statistics for the previous 30 days
+                        type: object
+                        properties:
+                          begin:
+                            description: Start of the Period
+                            type: string
+                            example: 2023-11-04 20:05:31
+                          end:
+                            description: End of the Period
+                            type: string
+                            example: 2024-03-01 20:05:31
+                          openCardCount:
+                            description: Number of clicks on product cards
+                            type: integer
+                            format: int32
+                            example: 466
+                          addToCartCount:
+                            description: Added to cart, pieces
+                            type: integer
+                            format: int32
+                            example: 72
+                          ordersCount:
+                            description: Number of ordered items, pieces
+                            type: integer
+                            format: int32
+                            example: 84
+                          ordersSumRub:
+                            description: Ordered amount in rubles
+                            type: number
+                            example: 127060.42
+                          buyoutsCount:
+                            description: Number of purchased items, pieces
+                            type: integer
+                            format: int32
+                            example: 69
+                          buyoutsSumRub:
+                            description: Purchase amount in rubles
+                            type: number
+                            example: 104898.42
+                          cancelCount:
+                            description: Number of canceled items, pieces
+                            type: integer
+                            format: int32
+                            example: 13
+                          cancelSumRub:
+                            description: Canceled amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgPriceRub:
+                            description: Average price in rubles
+                            type: number
+                            example: 1562.65
+                          avgOrdersCountPerDay:
+                            description: Average number of orders per day, pieces
+                            type: number
+                            example: 0.72
+                          conversions:
+                            description: Conversions
+                            type: object
+                            properties:
+                              addToCartPercent:
+                                type: number
+                                example: 15.5
+                                description: Conversion to cart, % (What percentage
+                                  of visitors, who opened the product card, added
+                                  the product to the cart)
+                              cartToOrderPercent:
+                                type: number
+                                example: 116.7
+                                description: Conversion to order, % (What percentage
+                                  of visitors, who added the product to the cart,
+                                  placed an order)
+                              buyoutsPercent:
+                                description: Buyout percentage, % (What percentage
+                                  of visitors, who ordered the product, actually purchased
+                                  it. Excluding products still being delivered to
+                                  the buyer)
+                                type: number
+                                example: 84.1
+                  periodComparison:
+                    description: Comparison of two periods, in percentages
+                    type: object
+                    properties:
+                      openCardDynamics:
+                        description: Dynamics of clicks on product cards
+                        type: integer
+                        format: int32
+                        example: -100
+                      addToCartDynamics:
+                        description: Dynamics of additions to cart
+                        type: integer
+                        format: int32
+                        example: -100
+                      ordersCountDynamics:
+                        description: Dynamics of order quantity
+                        type: integer
+                        format: int32
+                        example: -100
+                      ordersSumRubDynamics:
+                        description: Dynamics of order amounts in rubles
+                        type: integer
+                        format: int32
+                        example: -100
+                      buyoutsCountDynamics:
+                        description: Dynamics of buyouts, pieces
+                        type: integer
+                        format: int32
+                        example: -100
+                      buyoutsSumRubDynamics:
+                        description: Dynamics of buyout amounts in rubles
+                        type: integer
+                        format: int32
+                        example: -100
+                      cancelCountDynamics:
+                        description: Dynamics of canceled items, pieces
+                        type: integer
+                        format: int32
+                        example: 0
+                      cancelSumRubDynamics:
+                        description: Dynamics of canceled amounts in rubles
+                        type: integer
+                        format: int32
+                        example: 0
+                      avgOrdersCountPerDayDynamics:
+                        type: integer
+                        format: int32
+                        example: 0
+                        description: Dynamics of the average number of orders per
+                          day
+                      avgPriceRubDynamics:
+                        type: integer
+                        format: int32
+                        example: -100
+                        description: 'Dynamics of the average price of products. Discounts
+                          for promotions and WB discounts are taken into account.
+
+                          '
+                      conversions:
+                        description: Conversions
+                        type: object
+                        properties:
+                          addToCartPercent:
+                            description: Conversion to cart, % (What percentage of
+                              visitors, who opened the product card, added the product
+                              to the cart)
+                            type: integer
+                            format: int32
+                            example: -100
+                          cartToOrderPercent:
+                            description: Conversion to order, % (What percentage of
+                              visitors, who added the product to the cart, placed
+                              an order)
+                            type: integer
+                            format: int32
+                            example: -100
+                          buyoutsPercent:
+                            description: Buyout percentage, % (What percentage of
+                              visitors, who ordered the product, actually purchased
+                              it. Excluding products still being delivered to the
+                              buyer)
+                            type: integer
+                            format: int32
+                            example: -100
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          description: Error description
+          type: string
+          example: ''
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+    NmReportDetailHistoryResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              nmID:
+                type: integer
+                format: int32
+                example: 1234567
+                description: WB article
+              imtName:
+                type: string
+                example: Product Name
+                description: Product Name
+              vendorCode:
+                type: string
+                example: supplierVendor
+                description: Vendor SKU
+              history:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    dt:
+                      type: string
+                      format: date
+                      example: 2023-06-20
+                      description: Date
+                    openCardCount:
+                      type: integer
+                      format: int32
+                      example: 26
+                      description: Number of clicks on the product card
+                    addToCartCount:
+                      type: integer
+                      format: int32
+                      example: 1
+                      description: Added to cart, pieces
+                    ordersCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of ordered items, pieces
+                    ordersSumRub:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Ordered amount in rubles
+                    buyoutsCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of purchased items, pieces
+                    buyoutsSumRub:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Purchase amount in rubles
+                    buyoutPercent:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Buyout percentage, % (What percentage of visitors,
+                        who ordered the product, actually purchased it. Excluding
+                        products still being delivered to the buyer)
+                    addToCartConversion:
+                      type: number
+                      example: 3.8
+                      description: Conversion to cart, % (What percentage of visitors,
+                        who opened the product card, added the product to the cart)
+                    cartToOrderConversion:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Conversion to order, % (What percentage of visitors,
+                        who added the product to the cart, placed an order)
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          description: Error description
+          type: string
+          example: ''
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+    NmReportGroupedHistoryResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              object:
+                description: Item
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    format: int32
+                    example: 358
+                    description: Item Identifier
+                  name:
+                    type: string
+                    example: Shampoos
+                    description: Item Name
+              brandName:
+                type: string
+                example: Some
+                description: Brand name
+              tag:
+                description: Tag
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    format: int32
+                    example: 123
+                    description: Numeric tag identifier
+                  name:
+                    type: string
+                    example: Sale
+                    description: Tag name
+              history:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    dt:
+                      type: string
+                      format: date
+                      example: 2023-06-21
+                    openCardCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of clicks on the product card
+                    addToCartCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Added to cart, pieces
+                    ordersCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of ordered items, pieces
+                    ordersSumRub:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Ordered amount in rubles
+                    buyoutsCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of purchased items, pieces
+                    buyoutsSumRub:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Purchase amount in rubles
+                    buyoutPercent:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Buyout percentage, % (What percentage of visitors,
+                        who ordered the product, actually purchased it. Excluding
+                        products still being delivered to the buyer)
+                    addToCartConversion:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Conversion to cart, % (What percentage of visitors,
+                        who opened the product card, added the product to the cart)
+                    cartToOrderConversion:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Conversion to order, % (What percentage of visitors,
+                        who added the product to the cart, placed an order)
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          description: Error description
+          type: string
+          example: ''
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+    responseError:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+          example: null
+        error:
+          description: Error flag
+          type: boolean
+          example: true
+        errorText:
+          description: Error description
+          type: string
+          example: Error Text
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+paths:
+  /content/v2/cards/upload:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Upload a card
+      description: "Creating a card is asynchronous, after sending the request is\
+        \ put in a queue for processing.\n\n\nA product card is valid if at least\
+        \ one nomenclature has been created successfully.\n\n\n**Important**. If there\
+        \ were errors during queue processing, the nomenclature is considered invalid.\
+        \   \n\n\nHow to create a card:\n  1. Get parent categories using <a href\
+        \ =\"./#tag/Configurator/paths/~1content~1v1~1object~1parent~1all/get\">Parent\
+        \ categories</a> method.\n  2. Choose the category and get all subcategories\
+        \ using <a href =\"./#tag/Configurator/paths/~1content~1v1~1object~1all/get\"\
+        >Product categories list</a>.\n  3. Choose the subcategory and get all available\
+        \ characteristics using <a href =\"./#tag/Configurator/paths/~1content~1v1~1object~1characteristics~1list~1filter/get\"\
+        >characteristics methods</a>. Use values from <a href =\"./#tag/Configurator\"\
+        >Configurator</a> to get values of color, gender, country of origin, season\
+        \ and HS code.\n  4. Send the request. If the response is Success (200) but\
+        \ the card was not created, check errors using <a href =\"./#tag/View/paths/~1content~1v1~1cards~1error~1list/get\"\
+        >List of failed nomenclature with errors</a> method.\n  \n\nWith one request\
+        \ you can create maximum 100 cards (`imtID`) and 30 nomenclatures (`nmID`)\
+        \ in each card.\n"
+      tags:
+        - Upload
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                required:
+                  - subjectID
+                  - variants
+                properties:
+                  subjectID:
+                    type: integer
+                    description: subcategory ID
+                  variants:
+                    description: Product variants, maximum 30 in one card.
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - vendorCode
+                      properties:
+                        brand:
+                          type: string
+                          description: Brand
+                        title:
+                          type: string
+                          description: Product title
+                        description:
+                          type: string
+                          description: Product description
+                        vendorCode:
+                          type: string
+                          description: Seller's article
+                        dimensions:
+                          description: "Dimensions of packed product, cm.\n<br> \n\
+                            In case of empty `dimensions`, they are generated automatically\
+                            \ with zero values.\n"
+                          type: object
+                          properties:
+                            length:
+                              type: integer
+                              description: Length
+                            width:
+                              type: integer
+                              description: Width
+                            height:
+                              type: integer
+                              description: Height
+                        sizes:
+                          type: array
+                          description: "Product sizes. <br> \nIf the product has sizes\
+                            \ but you send empty parameter, it is generated automatically\
+                            \ with values: `techSize` = \"A\", `wbSize` = \"1\" and\
+                            \ some random barcode.\n"
+                          items:
+                            type: object
+                            properties:
+                              techSize:
+                                type: string
+                                description: Product size (for example, L or 45)
+                              wbSize:
+                                type: string
+                                description: Russian size
+                              price:
+                                type: integer
+                                description: Price, ₽
+                              skus:
+                                type: array
+                                items:
+                                  type: string
+                                description: Barcode. In case of empty `skus`, the
+                                  barcode is generated automatically.
+                        characteristics:
+                          type: array
+                          description: Product characteristics
+                          items:
+                            type: object
+                            required:
+                              - id
+                              - value
+                            properties:
+                              id:
+                                type: integer
+                                description: Characteristic ID
+                              value:
+                                description: Characteristic value
+            examples:
+              creatingOneCard:
+                $ref: '#/components/examples/creatingOneCard'
+              creatingMergedCards:
+                $ref: '#/components/examples/creatingMergedCards'
+              creatingGroupOfIndividualCards:
+                $ref: '#/components/examples/creatingGroupOfIndividualCards'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseCardCreate'
+              example:
+                data: null
+                error: false
+                errorText: ''
+                additionalErrors: {}
+        400:
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/responseBodyContentError400-2'
+                  - $ref: '#/components/schemas/responseBodyContentError400-3'
+              examples:
+                InvalidRequestFormatContent:
+                  $ref: '#/components/examples/InvalidRequestFormatContent'
+                CardCreatedWithoutVendorCode:
+                  $ref: '#/components/examples/CardCreatedWithoutVendorCode'
+                CardsVendorCodeUsedInOtherCards:
+                  $ref: '#/components/examples/CardsVendorCodeUsedInOtherCards'
+                ThisCategoryDoesNotExist:
+                  $ref: '#/components/examples/ThisCategoryDoesNotExist'
+  /content/v2/cards/update:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Upload
+      summary: Update a card
+      description: 'Edits product cards. If you need some product data, get it using
+        <a href="./#tag/View/paths/~1content~1v1~1cards~1cursor~1list/post">Nomenclature
+        list method</a>.
+
+
+        You can not edit or delete barcodes but you can add new ones. You have not
+        to send `photos`, `video` and `tags` and can not edit them.
+
+
+        If this method response is Success (200) but product card was not updated,
+        check errors using <a href="./#tag/View/paths/~1content~1v1~1cards~1error~1list/get">List
+        of failed nomenclature with errors</a> method. Correct the request and try
+        again.
+
+
+        With one request you can edit maximum 100 nomenclatures (`nmID`).
+
+        '
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                required:
+                  - nmID
+                  - vendorCode
+                  - sizes
+                properties:
+                  nmID:
+                    description: WB article
+                    type: integer
+                    required: true
+                  vendorCode:
+                    description: Supplier's article
+                    type: string
+                    required: true
+                  brand:
+                    type: string
+                    description: Brand
+                  title:
+                    type: string
+                    description: Product title
+                  description:
+                    type: string
+                    description: Product description
+                  dimensions:
+                    description: 'Product dimensions, cm
+
+                      '
+                    type: object
+                    properties:
+                      length:
+                        type: integer
+                        description: Length
+                      width:
+                        type: integer
+                        description: Width
+                      height:
+                        type: integer
+                        description: Height
+                  characteristics:
+                    description: Product characteristics
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          description: Characteristic ID
+                        value:
+                          description: Characteristic value
+                  sizes:
+                    type: array
+                    required: true
+                    description: "Product sizes. <br> If product has no sizes, send\
+                      \ only barcodes.                          \n"
+                    items:
+                      type: object
+                      required:
+                        - chrtID
+                        - skus
+                      properties:
+                        chrtID:
+                          type: integer
+                          description: Wildberries article of this size. Required
+                            for existing sizes. If you add new size, do not send this
+                            ID.
+                        techSize:
+                          type: string
+                          description: Size (for example, XL, S, 45)
+                        wbSize:
+                          type: string
+                          description: Russian size
+                        skus:
+                          type: array
+                          items:
+                            type: string
+                          description: Barcode
+            example:
+              - nmID: 11111111
+                vendorCode: wbiz72wmro
+                brand: ''
+                title: Свитер женский оверсайз с горлом
+                description: '12345'
+                dimensions:
+                  length: 0
+                  width: 0
+                  height: 0
+                characteristics:
+                  - id: 14177450
+                    name: Состав
+                    value:
+                      - хлопок 50% акрил 50%
+                  - id: 50
+                    name: Декоративные элементы
+                    value:
+                      - свободный крой
+                sizes:
+                  - chrtID: 12345678
+                    techSize: ONE SIZE
+                    wbSize: 78-90
+                    skus:
+                      - '123487653460134'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseCardCreate'
+              example:
+                data: null
+                error: false
+                errorText: ''
+                additionalErrors: {}
+        400:
+          description: Incorrect request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized user
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/cards/upload/add:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Adding nomenclature to the card
+      description: 'Adds new nomenclature to the product card.
+
+        <br>Adding nomenclature is asynchronous, after sending the request is put
+        in a queue for processing.
+
+        <br><b>Important.</b> If the adding request passed but the nomenclature was
+        not created, check errors using <a href ="./#tag/View/paths/~1content~1v1~1cards~1error~1list/get">List
+        of failed nomenclature with errors</a> method. If the nomenclature is listed
+        there, you should correct the reported errors in the adding nomenclature request
+        and resend it.
+
+        '
+      tags:
+        - Upload
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                imtID:
+                  type: integer
+                  description: '`imtID` of the card
+
+                    '
+                cardsToAdd:
+                  description: Nomenclature
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - vendorCode
+                    properties:
+                      brand:
+                        type: string
+                        description: Brand
+                      vendorCode:
+                        type: string
+                        description: Seller's article
+                      title:
+                        type: string
+                        description: Product title
+                      description:
+                        type: string
+                        description: Product description
+                      dimensions:
+                        description: "Dimensions of packed product, cm.\n<br> \nIn\
+                          \ case of empty `dimensions`, they are generated automatically\
+                          \ with zero values.\n"
+                        type: object
+                        properties:
+                          length:
+                            type: integer
+                            description: Length
+                          width:
+                            type: integer
+                            description: Width
+                          height:
+                            type: integer
+                            description: Height
+                      characteristics:
+                        description: Product characteristics
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              description: Characteristic ID
+                            value:
+                              description: Characteristic value
+                      sizes:
+                        type: array
+                        description: "Product sizes. <br> \nIf the product has sizes\
+                          \ but you send empty parameter, it is generated automatically\
+                          \ with values: `techSize` = \"A\", `wbSize` = \"1\" and\
+                          \ some random barcode.\n"
+                        items:
+                          type: object
+                          properties:
+                            techSize:
+                              type: string
+                              description: Product size (for example, L or 45)
+                            wbSize:
+                              type: string
+                              description: Russian size
+                            price:
+                              type: integer
+                              description: Product price
+                            skus:
+                              type: array
+                              items:
+                                type: string
+                              description: Barcode. In case of empty `skus`, the barcode
+                                is generated automatically.
+            example:
+              imtID: 987654321
+              cardsToAdd:
+                - vendorCode: myVariant1
+                  title: Product title
+                  description: Описание товара
+                  brand: Бренд
+                  dimensions:
+                    length: 55
+                    width: 40
+                    height: 15
+                  characteristics:
+                    - id: 12
+                      value:
+                        - Russian flag
+                    - id: 25471
+                      value: 1300
+                    - id: 14177449
+                      value:
+                        - blue
+                  sizes:
+                    - skus:
+                        - '12345678'
+                - vendorCode: myVariant2
+                  title: Product title
+                  description: Описание товаров
+                  brand: Бренд
+                  dimensions:
+                    length: 55
+                    width: 40
+                    height: 15
+                  characteristics:
+                    - id: 12
+                      value:
+                        - Russian flag
+                    - id: 25471
+                      value: 1300
+                    - id: 14177449
+                      value:
+                        - blue
+                  sizes:
+                    - skus:
+                        - '222222222222'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseCardCreate'
+              example:
+                data: null
+                error: false
+                errorText: ''
+                additionalErrors: {}
+        400:
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/responseBodyContentError400-2'
+                  - $ref: '#/components/schemas/responseBodyContentError400-3'
+              examples:
+                InvalidRequestFormatContent:
+                  $ref: '#/components/examples/InvalidRequestFormatContent'
+                CardCreatedWithoutVendorCode:
+                  $ref: '#/components/examples/CardCreatedWithoutVendorCode'
+                CardsVendorCodeUsedInOtherCards:
+                  $ref: '#/components/examples/CardsVendorCodeUsedInOtherCards'
+                ThisCategoryDoesNotExist:
+                  $ref: '#/components/examples/ThisCategoryDoesNotExist'
+  /content/v2/cards/moveNm:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      tags:
+        - Upload
+      summary: Merging or separating of nomenclatures
+      description: 'Merges nomenclatures (`nmID`) in same product card (`imtID`) or
+        separate them.<br>
+
+
+        To merge nomenclatures, the request with a list of nomenclatures has to be
+        sent with the `targetIMT` parameter specified in the body of the request.
+
+        In this case, all nomenclatures will be merged under the `imtID` specified
+        in the `targetIMT`.<br>
+
+        <br>
+
+        To separate the nomenclature from the product card, it is necessary to pass
+        this nomenclature without the `targetIMT` parameter in the request body.<br>
+
+        This creates a new `imtID` for the transferred nomenclature.<br>
+
+        If several nomenclatures are passed in the <b>separating</b> request, they
+        will all be automatically <b>merged</b> under one new `imtID`.<br>
+
+        To assign a unique `imtID` to each nomenclature, it is necessary to send one
+        nomenclature per query.
+
+        For nomenclatures that are not transferred in the request, no changes will
+        be made.<br>
+
+        <br>
+
+        <b>Important.</b> It is possible to merge nomenclatures containing only the
+        same items.<br>
+
+        <b>Important.</b> One product card (inside one `imtID`) cannot contain more
+        than 30 nomenclatures (`nmID`).
+
+        '
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - $ref: '#/components/schemas/requestMoveNmsImtConn'
+                - $ref: '#/components/schemas/requestMoveNmsImtDisconn'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseCardCreate'
+              example:
+                data: null
+                error: false
+                errorText: ''
+                additionalErrors: {}
+        400:
+          description: Invalid request format
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/responseContentError1'
+                  - $ref: '#/components/schemas/responseCardCreate'
+                  - $ref: '#/components/schemas/responseIncorrectDate'
+              examples:
+                responseExceededLimit:
+                  $ref: '#/components/examples/responseExceededLimit'
+                responseCombining:
+                  $ref: '#/components/examples/responseCombining'
+                responseIncorrectRequestFormat:
+                  $ref: '#/components/examples/responseIncorrectRequestFormat'
+                responseNonExistentNmId:
+                  $ref: '#/components/examples/responseNonExistentNmId'
+                responseNonExistentImt:
+                  $ref: '#/components/examples/responseNonExistentImt'
+                responseCardCreate1:
+                  $ref: '#/components/examples/responseCardCreate1'
+                responseDuplicateRequests:
+                  $ref: '#/components/examples/responseDuplicateRequests'
+                responseAllCardsInSameGroup:
+                  $ref: '#/components/examples/responseAllCardsInSameGroup'
+                responseIncorrectBeginDate:
+                  $ref: '#/components/examples/responseIncorrectBeginDate'
+                responseIncorrectEndDate:
+                  $ref: '#/components/examples/responseIncorrectEndDate'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseCardCreate'
+        500:
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseCardCreate'
+  /content/v2/barcodes:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Generation of barcodes
+      description: Generates array of unique barcodes to create size of nomenclature
+        in product card.
+      tags:
+        - Upload
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                count:
+                  description: Number of barcodes to be generated, maximum 5,000
+                  type: integer
+                  example: 100
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    description: An array of generated barcodes
+                    type: array
+                    items:
+                      type: string
+                      example: '5032781145187'
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description.
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Any additional errors
+                    type: string
+                    example: ''
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/get/cards/list:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Nomenclature list
+      description: "Method provides list of created nomenclatures with different filters,\
+        \ pagination and sorting. <br> <br> **Important**. Nomenclatures in the trash,\
+        \ will not issue in the response of method.<br> You can get such nomenclatures\
+        \ using by method \"List of nomenclatures that are in the trash\"<br> <br>How\
+        \ to work with `cursor/list`: <br> To get full list of nomenclatures, <b>if\
+        \ their number exceed 1000</b>, user need to use pagination.\n  <ol>\n   \
+        \ <li>Make first request (all listed params are required):\n      <pre style=\"\
+        background-color: rgb(38 50 56 / 5%); color: #e53935\">\n        {\n     \
+        \     \"sort\": {\n              \"cursor\": {\n                  \"limit\"\
+        : 1000\n              },\n              \"filter\": {\n                  \"\
+        withPhoto\": -1\n              }\n          }\n        }</pre>\n      <br>In\
+        \ addition you can add `\"textSearch\"` and sort.\n      <pre style=\"background-color:\
+        \ rgb(38 50 56 / 5%); color: #e53935\">\n        \"sort\": {\n          \"\
+        sortColumn\": \"\",\n          \"ascending\": false\n        }</pre>\n   \
+        \ </li>\n    <li>From last part of response list, copy 2 strings from `cursor`\
+        \ field response:\n      <ul>\n        <li>`\"updatedAt\": \"***\",`</li>\n\
+        \        <li>`\"nmID\": ***,`</li>\n      </ul>\n    <li>Paste copied strings\
+        \ in new request. </li>\n    <li>Repeat <b>2</b> and <b>3</b>, until `total`\
+        \ will be less than `limit` in response.\n      <br>This will means that you\
+        \ got all cards.\n  </ol>\n"
+      tags:
+        - View
+      parameters:
+        - name: locale
+          in: query
+          schema:
+            type: string
+            example: ru
+          description: "Language of `name`, `value` and `object` (ru, en, zh)    \
+            \ \n"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                settings:
+                  type: object
+                  description: Settings
+                  properties:
+                    sort:
+                      description: Sort by
+                      type: object
+                      properties:
+                        ascending:
+                          type: boolean
+                          description: '`updatedAt`: true — ascending, false — descending
+
+                            '
+                    filter:
+                      description: Filters
+                      type: object
+                      properties:
+                        withPhoto:
+                          type: integer
+                          description: "Photo:\n  * `0` — only cards without photos\n\
+                            \  * `1` — only cards with photos\n  * `-1` — all cards\n"
+                        textSearch:
+                          type: string
+                          description: Seller's article, Wildberries article or barcode
+                            search
+                        tagIDs:
+                          type: array
+                          description: Tags ID search
+                          items:
+                            type: integer
+                        allowedCategoriesOnly:
+                          description: 'Category: true — permitted, false — forbidden
+
+                            '
+                          type: boolean
+                        objectIDs:
+                          type: array
+                          description: Subcategory ID search
+                          items:
+                            type: integer
+                        brands:
+                          type: array
+                          description: Brand search
+                          items:
+                            type: string
+                        imtID:
+                          description: '`imtID` search
+
+                            '
+                          type: integer
+                    cursor:
+                      description: 'Cursor
+
+                        '
+                      type: object
+                      properties:
+                        limit:
+                          type: integer
+                          description: Number of cards in response
+            example:
+              settings:
+                sort:
+                  ascending: false
+                filter:
+                  textSearch: ''
+                  allowedCategoriesOnly: true
+                  tagIDs: []
+                  objectIDs: []
+                  brands: []
+                  imtID: 0
+                  withPhoto: -1
+                cursor:
+                  updatedAt: ''
+                  nmID: 0
+                  limit: 11
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  cards:
+                    description: Product cards
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        cards:
+                          type: array
+                          description: Product cards
+                          items:
+                            type: object
+                            properties:
+                              nmID:
+                                type: integer
+                                description: Wildberries article
+                              imtID:
+                                type: integer
+                                description: Product card ID
+                              subjectID:
+                                type: integer
+                                description: Subcategory ID
+                              vendorCode:
+                                type: string
+                                description: Seller's article
+                              subjectName:
+                                type: string
+                                description: Subcategory name
+                              brand:
+                                type: string
+                                description: Brand
+                              title:
+                                type: string
+                                description: Product title
+                              photos:
+                                type: array
+                                description: Photos
+                                items:
+                                  type: object
+                                  properties:
+                                    516x288:
+                                      description: Not available
+                                      type: string
+                                    big:
+                                      description: Link to photo 1200 х 900 pixels
+                                      type: string
+                                    small:
+                                      description: Not available
+                                      type: string
+                              video:
+                                type: string
+                                description: Link to video
+                              dimensions:
+                                description: Packed product dimensions, cm
+                                type: object
+                                properties:
+                                  length:
+                                    type: integer
+                                    description: Length
+                                  width:
+                                    type: integer
+                                    description: Width
+                                  height:
+                                    type: integer
+                                    description: Height
+                              characteristics:
+                                type: array
+                                description: Characteristics
+                                items:
+                                  type: object
+                                  properties:
+                                    id:
+                                      type: integer
+                                      description: Characteristic ID
+                                    name:
+                                      type: string
+                                      description: Characteristic name
+                                    value:
+                                      description: Characteristic value
+                              sizes:
+                                type: array
+                                description: Product sizes
+                                items:
+                                  type: object
+                                  properties:
+                                    chrtID:
+                                      type: integer
+                                      description: Size ID
+                                    techSize:
+                                      type: string
+                                      description: Size (for example, S or 42)
+                                    wbSize:
+                                      type: string
+                                      description: Russian size
+                                    skus:
+                                      type: array
+                                      description: Barcode
+                                      items:
+                                        type: string
+                                        example: 12345Ejf5
+                              tags:
+                                description: Tags
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    id:
+                                      type: integer
+                                      description: Tag ID
+                                    name:
+                                      type: string
+                                      description: Tag name
+                                    color:
+                                      type: string
+                                      description: "Color:\n\n  * `D1CFD7` - grey\n\
+                                        \  * `FEE0E0` - red\n  * `ECDAFF` - purple\n\
+                                        \  * `E4EAFF` - blue\n  * `DEF1DD` - green\n\
+                                        \  * `FFECC7` - yellow\n        \n"
+                              createdAt:
+                                type: string
+                                description: Creation date
+                              updatedAt:
+                                type: string
+                                description: Update date
+                        cursor:
+                          type: object
+                          description: Pagination
+                          properties:
+                            updatedAt:
+                              type: string
+                              description: Date for next card page
+                            nmID:
+                              type: integer
+                              description: Wildberries article for next card page
+                            total:
+                              type: integer
+                              description: Number of cards
+                    example:
+                      cards:
+                        - nmID: 12345678
+                          imtID: 123654789
+                          subjectID: 7771
+                          subjectName: AKF системы
+                          vendorCode: wb7f6mumjr1
+                          brand: ''
+                          title: ''
+                          description: ''
+                          dimensions:
+                            length: 0
+                            width: 0
+                            height: 0
+                          characteristics:
+                            - id: 14177449
+                              name: Цвет
+                              value:
+                                - dark red
+                          sizes:
+                            - chrtID: 316399238
+                              techSize: '0'
+                              skus:
+                                - '987456321654'
+                          tags:
+                            - id: 592569
+                              name: Popular
+                              color: D1CFD7
+                          createdAt: '2023-12-06T11:17:00.96577Z'
+                          updatedAt: '2023-12-06T11:17:00.96577Z'
+                      cursor:
+                        updatedAt: '2023-12-06T11:17:00.96577Z'
+                        nmID: 123654123
+                        total: 1
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /content/v2/cards/error/list:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: List of failed nomenclature with errors
+      description: 'Method allows to get list of nomenclature''s and list of errors
+        happened during creation of product card. <br>`Warning`: to delete nomenclature
+        from failed you need to repeat request with corrected errors of creation product
+        card.
+
+        '
+      tags:
+        - View
+      parameters:
+        - name: locale
+          in: query
+          schema:
+            type: string
+            example: en
+            description: Language of multi-lang parameters
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        object:
+                          description: Category for which the product card was created
+                            with the given nomenclature
+                          type: string
+                          example: Блузки
+                        objectID:
+                          type: integer
+                          description: Product ID
+                          example: 1234
+                        vendorCode:
+                          description: Supplier's article
+                          type: string
+                          example: '6000000001'
+                        updateAt:
+                          description: The date and time of creating product card
+                            with specified nomenclature request
+                          type: string
+                          example: '2022-06-15T14:37:13Z'
+                        errors:
+                          description: 'List of errors due to which the request to
+                            create a product card with a given nomenclature is not
+                            processed
+
+                            '
+                          type: array
+                          items:
+                            type: string
+                            example: Поля Рос. размер, Размер обязательны для заполнения
+                  error:
+                    description: Error flag.
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description.
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Any additional errors.
+                    type: string
+                    nullable: true
+                    example: null
+        400:
+          description: Incorrect request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/cards/limits:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Limits for the product cards
+      description: 'The method allows to get separately free and paid vendor limits
+        for creating product cards.<br> To calculate the number of cards that can
+        be created, use the formula: (freeLimits + paidLimits) - Number of cards created.<br>
+        All cards that can be obtained using the "Nomenclature list" and "List of
+        nomenclatures that are in the trash" methods are considered created.
+
+        '
+      tags:
+        - View
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      freeLimits:
+                        description: Amount of free limits
+                        type: integer
+                      paidLimits:
+                        description: Amount of paid limits
+                        type: integer
+                  error:
+                    description: Error flag
+                    type: boolean
+                  errorText:
+                    description: Error description
+                    type: string
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    nullable: true
+              example:
+                data:
+                  freeLimits: 1500
+                  paidLimits: 10
+                error: false
+                errorText: ''
+                additionalErrors: null
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/object/parent/all:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Parent categories list
+      description: Method provides list of all parent categories of products.
+      tags:
+        - Configurator
+      parameters:
+        - name: locale
+          in: query
+          description: Product name language (ru, en, zh)
+          schema:
+            type: string
+            example: en
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          description: Category name
+                          type: string
+                          example: Электроника
+                        id:
+                          type: integer
+                          description: Parent category ID
+                          example: 479
+                        isVisible:
+                          description: Visibility on the site
+                          type: boolean
+                          example: true
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/object/all:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Product category list
+      description: 'Using this method, you can get a list of product categories by
+        a text filter (category name). <br> <br> To get a list of all categories,
+        you need to specify “top” parameter bigger than available quantity of categories
+        (eg `top=8000`) <br> <br> As of `03/27/2023`, there are `7440` categories
+        in the list. The number of available categories may change.
+
+        '
+      tags:
+        - Configurator
+      parameters:
+        - name: name
+          in: query
+          schema:
+            type: string
+            example: Socks
+            description: Search by product name (any supported language)
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            example: 1000
+            description: Number of search results, maximum 1,000
+        - name: locale
+          in: query
+          schema:
+            type: string
+            example: en
+            description: Response language (ru, en, zh)
+        - name: offset
+          in: query
+          schema:
+            type: integer
+            example: 5000
+            description: How many results to skip
+        - name: parentID
+          in: query
+          schema:
+            type: integer
+            example: 1000
+            description: Parent category ID
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    description: Categories and subcategories
+                    items:
+                      type: object
+                      properties:
+                        subjectID:
+                          type: integer
+                          description: Subcategory ID
+                        parentID:
+                          type: integer
+                          description: Category ID
+                        subjectName:
+                          type: string
+                          description: Subcategory name
+                        parentName:
+                          type: string
+                          description: Category name
+                        isVisible:
+                          type: boolean
+                          description: Visibility
+                  error:
+                    type: boolean
+                    description: Error flag
+                  errorText:
+                    type: string
+                    description: Error text
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+              example:
+                data:
+                  - subjectID: 2560
+                    parentID: 479
+                    subjectName: 3D очки
+                    parentName: Электроника
+                    isVisible: true
+                  - subjectID: 1152
+                    parentID: 858
+                    subjectName: 3D-принтеры
+                    parentName: Оргтехника
+                    isVisible: true
+                error: false
+                errorText: ''
+                additionalErrors: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/object/charcs/{subjectId}:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Subcategory
+      description: "Returns subcategory characteristics to create product card \n"
+      tags:
+        - Configurator
+      parameters:
+        - name: subjectId
+          in: path
+          required: true
+          description: Subcategory ID
+          schema:
+            type: integer
+            example: 105
+        - name: locale
+          in: query
+          description: Language of `subjectName` and `name` (ru, en, zh)
+          schema:
+            type: string
+            example: en
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    items:
+                      type: object
+                      properties:
+                        subjectName:
+                          description: Subcategory name
+                          type: string
+                          example: Носки
+                        name:
+                          description: Characteristic name
+                          type: string
+                          example: Глубина упаковки
+                        required:
+                          description: Characteristic required
+                          type: boolean
+                          example: false
+                        unitName:
+                          description: Unit (sm, gr and others)
+                          type: string
+                          example: см
+                        maxCount:
+                          description: 'Max count of values that can be assigned to
+                            this characteristic. <br>zero means no limit.
+
+                            '
+                          type: integer
+                          example: 0
+                        popular:
+                          description: The characteristic is popular with users
+                          type: boolean
+                          example: false
+                        charcType:
+                          description: Characteristic type (1 and 0 - string or list
+                            of strings; 4 - number or list of numbers
+                          type: integer
+                          example: 4
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/directory/colors:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Color
+      description: Provides values of color characteristic.
+      tags:
+        - Configurator
+      parameters:
+        - name: locale
+          in: query
+          description: "Language of `subjectName` and `name` (ru, en, zh) \n"
+          schema:
+            type: string
+            example: en
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          description: Color name
+                          type: string
+                          example: персиковый крайола
+                        parentName:
+                          description: Parent color name
+                          type: string
+                          example: оранжевый
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/directory/kinds:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Gender
+      description: Provides values of sex characteristic.
+      tags:
+        - Configurator
+      parameters:
+        - name: locale
+          in: query
+          description: "Language of `subjectName` and `name` (ru, en, zh) \n"
+          schema:
+            type: string
+            example: en
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    description: List of values for sex characteristic.
+                    type: array
+                    items:
+                      type: string
+                      example: Мужской
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/directory/countries:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Country of origin
+      description: Provides value of characteristic country of origin.
+      tags:
+        - Configurator
+      parameters:
+        - name: locale
+          in: query
+          description: "Language of `subjectName` and `name` (ru, en, zh) \n"
+          schema:
+            type: string
+            example: en
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          description: Value of characteristic country of origin
+                          type: string
+                          example: Афганистан
+                        fullName:
+                          description: Full country name
+                          type: string
+                          example: Исламский Эмират Афганистан
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/directory/seasons:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Season
+      description: Provide values of season characteristic.
+      tags:
+        - Configurator
+      parameters:
+        - name: locale
+          in: query
+          description: "Language of `subjectName` and `name` (ru, en, zh) \n"
+          schema:
+            type: string
+            example: en
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    description: Array of values for season characteristic.
+                    type: array
+                    items:
+                      type: string
+                      example: демисезон
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v1/directory/tnved:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: HS code
+      description: Method provides list of HS codes by category name and filter by
+        HS code.
+      tags:
+        - Configurator
+      parameters:
+        - name: objectName
+          in: query
+          description: Search by category name
+          schema:
+            type: string
+            example: Блузки
+        - name: tnvedsLike
+          in: query
+          description: Search by HS code. <b>This parameter only works in conjunction
+            with the objectName parameter.</b>
+          schema:
+            type: string
+            example: '4203100001'
+        - name: locale
+          in: query
+          description: "Language of `subjectName` and `name` (ru, en, zh) \n"
+          schema:
+            type: string
+            example: en
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    items:
+                      type: object
+                      properties:
+                        subjectName:
+                          description: Category name
+                          type: string
+                          example: Блузки
+                        tnvedName:
+                          description: HS code
+                          type: string
+                          example: '4203100001'
+                        description:
+                          description: Code HS description
+                          type: string
+                          example: Предметы одежды из натуральной кожи
+                        isKiz:
+                          description: HS code for products subject to mandatory labeling
+                            (by QR tag)
+                          type: boolean
+                          example: true
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v3/media/save:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Edit media files
+      description: "Edits product (nomenclature) media files.\n\n**Attention**. New\
+        \ media files (`data`) replace old ones (`mediaFiles`). To add new files,\
+        \ set links both to new and old files.\n\n\nRequirements to images:\n\n\n\
+        \  * maximum images for each product (nomenclature) — 30,\n  * minimal resolution\
+        \ – 700 × 900 pixels,\n  * minimal quality — 65%,\n  * formats — JPG, PNG,\
+        \ BMP, GIF, WebP.\n\n\nRequirements video:\n\n\n  * maximum video for each\
+        \ product (nomenclature),\n  * maximum size — 50 MB;\n  * formats — MOV, MP4.\n\
+        \n\nIf one or several images do not meet the requirements, no images will\
+        \ be uploaded even if you have the success response (200).\n"
+      tags:
+        - Media files
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nmID:
+                  description: Wildberries article
+                  type: string
+                  example: '213864079'
+                data:
+                  description: Links to images in the order that they are on the card
+                  type: array
+                  items:
+                    type: string
+                    example: https://basket-stage-02.wb.ru/vol669/part66964/66964260/images/big/2.jpg
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                    example: null
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /content/v3/media/file:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Add media files
+      description: "Adds one media file for the product (nomenclature).\n\nRequirements\
+        \ to images:\n\n\n  * maximum images for each product (nomenclature) — 30,\n\
+        \  * minimal resolution – 700 × 900 pixels,\n  * minimal quality — 65%,\n\
+        \  * formats — JPG, PNG, BMP, GIF, WebP.\n\n\nRequirements video:\n\n\n  *\
+        \ maximum video for each product (nomenclature),\n  * maximum size — 50 MB;\n\
+        \  * formats — MOV, MP4.\n"
+      tags:
+        - Media files
+      parameters:
+        - name: X-Nm-Id
+          in: header
+          description: Wildberries article
+          schema:
+            type: string
+            example: '213864079'
+          required: true
+        - name: X-Photo-Number
+          in: header
+          description: 'Number of media file, starting from `1`. To add the video
+            set `1`.
+
+
+            To add the image to the uploaded ones, set file the number more then number
+            of uploaded files.
+
+            '
+          schema:
+            type: integer
+            example: 2
+          required: true
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                uploadfile:
+                  type: string
+                  format: binary
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                    example: null
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /content/v2/media/save:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      deprecated: true
+      security:
+        - HeaderApiKey: []
+      summary: Changing the media content of the product card
+      description: 'The method allows you to change the order of images or delete
+        media files with nomenclature in product card, as well as upload images to
+        the nomenclature from third-party resources by URL. <br>The current images
+        will be replaced by those transferred in the data array. <br> <br>Media files
+        requirements: <br>`Photo`: minimum resolution - 700x900. <br>The maximum allowable
+        number of images in the product card is 30. <br>Acceptable image formats are
+        jpg and png. <br>The minimum image quality level is 65%. <br>  <br>If at least
+        one image in the request does not meet the requirements for media files, then
+        even with the 200 response code no image will be loaded into the product card.<br>  <br>`IMPORTANT:`
+        The contents of the `data` array completely replace the contents of the `mediaFiles`
+        array in the product card. <br>In case of addition of photos to the already
+        existing ones in the product card, it is necessary to transfer all links to
+        the photos and videos already contained in the product card together with
+        the new ones in the request. Otherwise, only the transferred photos will remain
+        in the card.
+
+        '
+      tags:
+        - Media files
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                vendorCode:
+                  description: Supplier's article
+                  type: string
+                  example: '6000000001'
+                data:
+                  description: Links to images are presented in the order in which
+                    we want to see them in the product card.
+                  type: array
+                  items:
+                    type: string
+                    example: https://basket-stage-02.wb.ru/vol669/part66964/66964260/images/big/2.jpg
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                    example: null
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /content/v2/media/file:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      deprecated: true
+      security:
+        - HeaderApiKey: []
+      summary: Adding media content to the product card
+      description: 'The method allows you to upload and add one media file per request,
+        to the nomenclature in the product card.
+
+        <br>Media files requirements: <br>`Photo`: minimum resolution - 700x900. <br>The
+        maximum allowable number of images in the product card is 30. <br>Acceptable
+        image formats are jpg and png. <br>The minimum image quality level is 65%.
+        <br>`Video`: maximum size 50 mb. MOV, MP4 formats. <br>The maximum allowable
+        number of videos in the product card is 1.
+
+        '
+      tags:
+        - Media files
+      parameters:
+        - name: X-Vendor-Code
+          in: header
+          description: Supplier's article
+          schema:
+            type: string
+            example: '6000000001'
+          required: true
+        - name: X-Photo-Number
+          in: header
+          description: 'The number of the media file to download. <b>Begins from 1</b>.<br>
+            When uploading a video, always set the value to 1. <br>To add an image
+            to those already uploaded to the nomenclature, the number of the media
+            file must be greater than the number of media files uploaded to the nomenclature..
+
+            '
+          schema:
+            type: integer
+            example: 2
+          required: true
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                uploadfile:
+                  type: string
+                  format: binary
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                    example: null
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /content/v2/tags:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Tags list
+      description: The method allows to get a list of existing seller's tags.
+      tags:
+        - Tags
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    properties:
+                      id:
+                        description: Numeric tag identifier
+                        type: integer
+                      color:
+                        description: Tag color
+                        type: string
+                      name:
+                        description: Tag name
+                        type: string
+                  error:
+                    description: Error flag
+                    type: boolean
+                    example: false
+                  errorText:
+                    description: Error description
+                    type: string
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    type: string
+                    example: ''
+              example:
+                data:
+                  - id: 1
+                    color: D1CFD7
+                    name: Sale
+                error: false
+                errorText: ''
+                additionalErrors: ''
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/tag:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Creating a tag
+      description: 'The method allows you to create a tag.<br> It is possible to create
+        15 tags.<br> The maximum length of a tag is 15 characters.
+
+        '
+      tags:
+        - Tags
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                color:
+                  description: 'Tag color. <dl> <dt>Available colors:</dt> <dd><code>D1CFD7</code>
+                    - grey</dd> <dd><code>FEE0E0</code> - red</dd> <dd><code>ECDAFF</code>
+                    - purple</dd> <dd><code>E4EAFF</code> - blue</dd> <dd><code>DEF1DD</code>
+                    - green</dd> <dd><code>FFECC7</code> - yellow</dd> </dl>
+
+                    '
+                  type: string
+                  example: D1CFD7
+                name:
+                  description: Tag name
+                  type: string
+                  example: Sale
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseContentError6'
+              examples:
+                responseOK200:
+                  $ref: '#/components/examples/responseOK200'
+        400:
+          description: Invalid request form
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/responseBodyContentError400'
+                  - $ref: '#/components/schemas/responseContentError4'
+                  - $ref: '#/components/schemas/responseContentError6'
+              examples:
+                responseBodyContentError400:
+                  $ref: '#/components/examples/responseBodyContentError400'
+                responseBody400LenName:
+                  $ref: '#/components/examples/responseBody400LenName'
+                responseBodyLimitTag:
+                  $ref: '#/components/examples/responseBodyLimitTag'
+                responseBodyNameNotExist:
+                  $ref: '#/components/examples/responseBodyNameNotExist'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/tag/{id}:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    patch:
+      security:
+        - HeaderApiKey: []
+      summary: Updating the tag
+      description: The method allows to change the information about the tag (name
+        and color).
+      tags:
+        - Tags
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: integer
+            example: 1
+          description: Numeric tag identifier
+          required: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                color:
+                  description: Tag color
+                  type: string
+                  example: D1CFD7
+                name:
+                  description: Tag name
+                  type: string
+                  example: Sale
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/responseContentError6'
+                  - $ref: '#/components/schemas/responseContentError4'
+              examples:
+                responseOK200:
+                  $ref: '#/components/examples/responseOK200'
+                responseNotFound200:
+                  $ref: '#/components/examples/responseNotFound200'
+        400:
+          description: Invalid request form
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/responseBodyContentError400'
+                  - $ref: '#/components/schemas/responseContentError4'
+              examples:
+                responseBodyContentError400:
+                  $ref: '#/components/examples/responseBodyContentError400'
+                responseBody400LenName:
+                  $ref: '#/components/examples/responseBody400LenName'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+    delete:
+      security:
+        - HeaderApiKey: []
+      summary: Removing the tag
+      description: The method allows to remove the tag.
+      tags:
+        - Tags
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: integer
+            example: 1
+          description: Numeric tag identifier
+          required: true
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/responseContentError6'
+                  - $ref: '#/components/schemas/responseContentError5'
+              examples:
+                responseOK200:
+                  $ref: '#/components/examples/responseOK200'
+                responseNotFound200Del:
+                  $ref: '#/components/examples/responseNotFound200Del'
+        400:
+          description: Invalid request form
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/responseBodyContentError400'
+                  - $ref: '#/components/schemas/responseContentError5'
+              examples:
+                responseBodyContentError400:
+                  $ref: '#/components/examples/responseBodyContentError400'
+                responseBodyTagNotExist:
+                  $ref: '#/components/examples/responseBodyTagNotExist'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/tag/nomenclature/link:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Tag management in the product card
+      description: 'The method allows to add tags to the product card and remove tags
+        from the product card.<br> When removing a tag from a product card, the tag
+        itself is not removed.<br> It is possible to add 15 tags to a product card.
+
+        '
+      tags:
+        - Tags
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nmID:
+                  description: WB article
+                  type: integer
+                tagsIDs:
+                  description: 'An array of numeric tag IDs.<br>   When removing a
+                    tag from a product card, the tag itself is not removed.<br> To
+                    add tags to existing ones in the product card, you need to specify
+                    in the request the new tags and the tags that are already exist
+                    in the product card.
+
+                    '
+                  type: array
+                  items:
+                    type: integer
+                    description: Numeric tag identifier
+            example:
+              nmID: 179891389
+              tagsIDs:
+                - 123456
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseContentError6'
+              examples:
+                responseOK200:
+                  $ref: '#/components/examples/responseOK200'
+        400:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseContentError4'
+              examples:
+                IncorrectRequest4:
+                  $ref: '#/components/examples/IncorrectRequest4'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+        500:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseContentError6'
+              examples:
+                responseBodyError500:
+                  $ref: '#/components/examples/responseBodyError500'
+  /content/v2/cards/delete/trash:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Delete nomenclature
+      description: 'Moves the nomenclature into trash for 30 days. After 30 days this
+        nomenclature will be deleted
+
+        '
+      tags:
+        - Trash
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                properties:
+                  nmIDs:
+                    description: Wildberries articles to detete, maximum 1,000
+                    type: array
+                    items:
+                      type: integer
+            example:
+              nmIDs:
+                - 987654321
+                - 123456789
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                  error:
+                    description: Error flag
+                    type: boolean
+                  errorText:
+                    description: Error text
+                    type: string
+                  additionalErrors:
+                    description: Additional errors
+                    type: object
+              example:
+                data: null
+                error: false
+                errorText: ''
+                additionalErrors: {}
+        400:
+          description: Incorrect request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: User not authorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/cards/recover:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Recover from trash
+      description: 'Returns the nomenclature from trash. Method keeps `imtID` for
+        this nomenclature
+
+        '
+      tags:
+        - Корзина
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                properties:
+                  nmIDs:
+                    description: Wildberries articles, maximum 1,000
+                    type: string
+            example:
+              nmIDs:
+                - 123456789, 987654321
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                  error:
+                    description: Error flag
+                    type: boolean
+                  errorText:
+                    description: Error text
+                    type: string
+                  additionalErrors:
+                    description: Additional errors
+                    type: object
+              example:
+                data: null
+                error: false
+                errorText: ''
+                additionalErrors: {}
+        400:
+          description: Incorrect request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: User not authorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v2/get/cards/trash:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Nomenclatures in trash
+      description: 'Returns nomenclatures in the trash
+
+        '
+      tags:
+        - Trash
+      parameters:
+        - name: locale
+          in: query
+          schema:
+            type: string
+            enum:
+              - ru
+              - en
+              - zh
+          description: 'Language of `name`, `value` and `object` parameters
+
+            '
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                settings:
+                  type: object
+                  description: Settings
+                  properties:
+                    sort:
+                      description: Sort by
+                      type: object
+                      properties:
+                        ascending:
+                          type: boolean
+                          description: '`trashedAt`: true — ascending, false — descending
+
+                            '
+                    cursor:
+                      description: Cursor
+                      type: object
+                      properties:
+                        limit:
+                          type: integer
+                          description: Number of cards in response
+                    filter:
+                      description: Filters
+                      type: object
+                      properties:
+                        textSearch:
+                          type: string
+                          description: Seller's article, Wildberries article or barcode
+                            to search
+            example:
+              settings:
+                sort:
+                  ascending: false
+                filter:
+                  textSearch: ''
+                cursor:
+                  limit: 11
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      cards:
+                        description: The list of requested product cards
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            nmID:
+                              description: WB article
+                              type: integer
+                            objectID:
+                              description: Product ID
+                              type: integer
+                            vendorCode:
+                              description: Supplier's article
+                              type: string
+                            object:
+                              description: The category for which the product card
+                                was created with this nomenclature
+                              type: string
+                            brand:
+                              description: Brand
+                              type: string
+                            updateAt:
+                              description: The date of update
+                              type: string
+                            colors:
+                              description: Nomenclature color
+                              type: array
+                              items:
+                                type: string
+                            mediaFiles:
+                              description: 'Media files of the nomenclature. <br>A
+                                photo whose URL ends with <b>1.jpg</b> is the main
+                                one in the product card.
+
+                                '
+                              type: array
+                              items:
+                                type: string
+                            sizes:
+                              description: 'Array of sizes for the nomenclature (for
+                                dimensionless goods you still need to pass this array
+                                with one element and zero size, but with price and
+                                barcode)
+
+                                '
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  skus:
+                                    description: Array of barcodes, string ID’s of
+                                      product sizes (can be generated via API, see
+                                      "Viewer")
+                                    type: array
+                                    items:
+                                      type: string
+                                  techSize:
+                                    description: Product size (eg S, M, L, XL, 42,
+                                      42-43)
+                                    type: string
+                                  wbSize:
+                                    description: Russian product size
+                                    type: string
+                                  price:
+                                    description: Price
+                                    type: integer
+                      cursor:
+                        type: object
+                        properties:
+                          offset:
+                            description: Offset from the first product card
+                            type: integer
+                          limit:
+                            description: The quantity of requested product cards
+                            type: integer
+                  error:
+                    description: Error flag
+                    type: boolean
+                  errorText:
+                    description: Error description
+                    type: string
+                  additionalErrors:
+                    type: string
+                    description: Additional errors
+              example:
+                data:
+                  cards:
+                    - nmID: 12213123
+                      objectID: 1234
+                      vendorCode: vendorCodeOne
+                      object: Шляпа
+                      brand: TestBrandOne
+                      updatedAt: '2022-04-19T15:21:10Z'
+                      colors:
+                        - красный
+                      mediaFiles:
+                        - mediaFileLink1
+                        - mediaFileLink2
+                      sizes:
+                        - skus:
+                            - barcode001
+                          techSize: '42'
+                          wbSize: '42'
+                          price: 2000
+                  cursor:
+                    offset: 0
+                    limit: 50
+                error: false
+                errorText: ''
+                additionalErrors: ''
+        400:
+          description: Invalid request form
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseBodyContentError403'
+  /content/v1/analytics/nm-report/detail:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+      - url: https://suppliers-api.wb.ru
+    post:
+      tags:
+        - Analytics
+      summary: Retrieving product card (PC) statistics for a selected period, based
+        on nmID/items/brands/tags.
+      description: 'Retrieving statistics for product cards (PC) for a selected period,
+        based on nmID/items/brands/tags.<br> The fields `brandNames`, `objectIDs`,
+        `tagIDs`, `nmIDs` can be empty, in which case statistics for all product cards
+        from the seller are included in the response.<br> When multiple fields are
+        selected, the response includes data for cards that have all the selected
+        fields. Pagination is supported.
+
+        '
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NmReportDetailRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NmReportDetailResponse'
+        '400':
+          description: Invalid Request Format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '403':
+          description: Access Denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+  /content/v1/analytics/nm-report/grouped:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+      - url: https://suppliers-api.wb.ru
+    post:
+      tags:
+        - Analytics
+      summary: Retrieving product card statistics for a period, grouped by items,
+        brands, and tags
+      description: 'Retrieving statistics for product cards for a period, grouped
+        by items, brands, and tags.<br> The fields `brandNames`, `objectIDs`, `tagIDs`
+        can be left empty, in which case grouping is done for all product cards from
+        the seller.
+
+        '
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NmReportGroupedRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NmReportGroupedResponse'
+        '400':
+          description: Invalid Request Format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '403':
+          description: Access Denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+  /content/v1/analytics/nm-report/detail/history:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+      - url: https://suppliers-api.wb.ru
+    post:
+      tags:
+        - Analytics
+      summary: Retrieving product card statistics by days/weeks/months for selected
+        nmID(s)
+      description: 'Retrieving product card statistics by days/weeks/months for selected
+        `nmID`(s).
+
+        '
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NmReportDetailHistoryRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NmReportDetailHistoryResponse'
+        '400':
+          description: Invalid Request Format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '403':
+          description: Access Denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+  /content/v1/analytics/nm-report/grouped/history:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+      - url: https://suppliers-api.wb.ru
+    post:
+      tags:
+        - Analytics
+      summary: Retrieving product card statistics by days/weeks/months for a period,
+        grouped by items, brands, and tags
+      description: 'Retrieving product card statistics by days/weeks/months for a
+        period, grouped by items, brands, and tags.<br> The fields `brandNames`, `objectIDs`,
+        `tagIDs` can be left empty, in which case grouping is done for all seller''s
+        product cards.<br> In the request, the product, brand, and tag count should
+        not exceed 16.
+
+        '
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NmReportGroupedHistoryRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NmReportGroupedHistoryResponse'
+        '400':
+          description: Invalid Request Format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '403':
+          description: Access Denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
