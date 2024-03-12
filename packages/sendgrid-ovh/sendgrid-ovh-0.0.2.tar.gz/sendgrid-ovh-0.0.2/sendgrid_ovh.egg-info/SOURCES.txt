@@ -1,0 +1,9 @@
+setup.py
+sendgrid_ovh/__init__.py
+sendgrid_ovh/__main__.py
+sendgrid_ovh/__version__.py
+sendgrid_ovh.egg-info/PKG-INFO
+sendgrid_ovh.egg-info/SOURCES.txt
+sendgrid_ovh.egg-info/dependency_links.txt
+sendgrid_ovh.egg-info/entry_points.txt
+sendgrid_ovh.egg-info/top_level.txt
