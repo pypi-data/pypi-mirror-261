@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: jsw-scrapy
+Version: 1.0.15
+Summary: Jsw for scrapy.
+Home-page: https://js.work
+Author: feizheng
+Author-email: 1290657123@qq.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: oss2 (>=2.16.0,<3.0.0)
+Project-URL: Repository, https://github.com/aric-pypi/jsw-scrapy
+Description-Content-Type: text/markdown
+
+# jsw-scrapy
+> Jsw for scrapy.
+
+## installation
+- https://pypi.org/project/jsw-scrapy/
+```shell
+pip install jsw-scrapy -U
+```
+
+## usage
+```python
+from jsw_scrapy.spiders.base_spider import BaseSpider
+from jsw_scrapy.pipelines.base_pipeline import BasePipeline
+```
+
