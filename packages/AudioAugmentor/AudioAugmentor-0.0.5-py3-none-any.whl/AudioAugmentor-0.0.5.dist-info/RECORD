@@ -1,0 +1,11 @@
+AudioAugmentor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AudioAugmentor/core.py,sha256=aPyyAOkzykj-f_z36rdluOnzx4dw7uoyOmC6Adfffds,33130
+AudioAugmentor/rir_setup.py,sha256=X6Vzr8p55Aurzrm6cgfRDQnHWromZAoA7zUL1aUkCbQ,16203
+AudioAugmentor/sox_parser.py,sha256=GYIMSEn61jhD1NolLlx0ejDr4ZBQ7mngDC4cVgxZVPI,4792
+AudioAugmentor/torchaudio_transf_wrapper.py,sha256=ajhLLEBMe6JwP6HVtQCQrxlSXT2z10WEnvSfyU9blMU,3587
+AudioAugmentor/transf_gen.py,sha256=LLNATtAHL9JJnINwj0VfZH-pkddOQlpFRCJexprRj_U,14978
+AudioAugmentor-0.0.5.dist-info/LICENSE,sha256=9tlEXq-CLGyo0NII30ffrS0Jy6jqMSOub08RuCXul8k,1076
+AudioAugmentor-0.0.5.dist-info/METADATA,sha256=38ZiKHvYvBM4iM9bvtxhCWnChreyxkH1rhtSFcAPYpg,34552
+AudioAugmentor-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+AudioAugmentor-0.0.5.dist-info/top_level.txt,sha256=EtkluZVLgILO2FuXYwhVwmT7k5HK01fETyqsu4xuHqs,15
+AudioAugmentor-0.0.5.dist-info/RECORD,,
