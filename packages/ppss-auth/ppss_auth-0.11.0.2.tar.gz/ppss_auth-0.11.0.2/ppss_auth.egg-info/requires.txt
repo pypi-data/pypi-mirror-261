@@ -1,0 +1,7 @@
+alembic
+cryptography
+pyotp
+pyramid_beaker
+pyramid_jinja2
+pyramid_mako
+qrcode
