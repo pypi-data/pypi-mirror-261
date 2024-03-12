@@ -1,0 +1,9 @@
+README.md
+hello.py
+setup.py
+helloyijuy.egg-info/PKG-INFO
+helloyijuy.egg-info/SOURCES.txt
+helloyijuy.egg-info/dependency_links.txt
+helloyijuy.egg-info/entry_points.txt
+helloyijuy.egg-info/requires.txt
+helloyijuy.egg-info/top_level.txt
