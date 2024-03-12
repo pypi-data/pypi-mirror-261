@@ -1,0 +1,1582 @@
+openapi: 3.0.1
+info:
+  title: Seller API Prices
+  description: 'Methods to set prices and discounts. Maximum 10 requests per 6 seconds
+    for all methods in total.
+
+    '
+security:
+  - HeaderApiKey: []
+x-tagGroups:
+  - name: Prices and discounts
+    tags:
+      - Price and discount settings
+      - Upload states
+      - Product lists
+  - name: Deprecated methods
+    tags:
+      - Prices
+      - Discounts
+tags:
+  - name: Price and discount settings
+    description: Check edit statuses with [Upload states](./#tag/Upload-states) methods.
+      Methods may have Success (200) response but some products data may be not edited
+      (for example, because of incorrect price or discount)
+  - name: Discounts
+  - name: Prices
+  - name: Upload states
+    description: "When you update price or discounts, some product data may be not\
+      \ updated (for example, if ypu set incorrect price or discount). Check this\
+      \ with [Processed upload state](./#tag/Upload-states/paths/~1api~1v2~1history~1tasks/get).\n\
+      <br/><br/>\nUpload status:\n<br/><br/>\n  * `3` — processed, no errors in products,\
+      \ prices and discounts were updated\n  * `4` — canceled\n  * `5` — processed,\
+      \ but some product have errors. For other products prices and discounts were\
+      \ updated. You can get errors with [Processed upload details](#tag/Upload-states/paths/~1api~1v2~1history~1goods~1task/get)\
+      \ method\n  * `6` — processed, but all product have errors. You can get them\
+      \ with [Processed upload details](#tag/Upload-states/paths/~1api~1v2~1history~1goods~1task/get)\
+      \ method\n<br/><br/>\nIf you set prices and discounts [in seller's account,\
+      \ with promo calendar](https://seller.wildberries.ru/dp-promo-calendar), the\
+      \ upload is processing. Prices and discounts will be updated to promo start.\n\
+      <br/><br/>\nThis upload has status `1`, and you can get upload state and details\
+      \ with [Unprocessed upload details](./#tag/#tag/Upload-states/paths/~1api~1v2~1buffer~1goods~1task/get)\
+      \ and [Unprocessed upload state](#tag/Upload-states/paths/~1api~1v2~1buffer~1tasks/get)\
+      \ methods.\n<br/><br/>\n<blockquote class=\"spoiler\">\n  <p class=\"descr\"\
+      >There is no upload status <code>2</code>.</p>\n</blockquote>\n"
+components:
+  securitySchemes:
+    HeaderApiKey:
+      type: apiKey
+      name: Authorization
+      in: header
+  schemas:
+    ResponseError:
+      type: object
+      properties:
+        errors:
+          type: string
+        error_code:
+          type: integer
+    Successful:
+      type: object
+      properties:
+        uploadId:
+          description: Upload ID
+          type: string
+    TaskAlreadyExistsError:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            id:
+              description: Upload ID
+              type: integer
+            alreadyExists:
+              description: 'Upload duplication: `true` — upload already exists
+
+                '
+              type: boolean
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error text
+          type: string
+    TaskCreated:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            id:
+              type: integer
+              description: Upload ID
+            alreadyExists:
+              type: boolean
+              description: 'Upload duplication: `true` — upload already exists
+
+                '
+              example: false
+        error:
+          description: Error flag
+          type: boolean
+          example: false
+        errorText:
+          description: Error text
+          type: string
+          example: ''
+    CancelGoods:
+      type: array
+      items:
+        $ref: '#/components/schemas/CancelGood'
+    CancelGood:
+      type: object
+      properties:
+        nmID:
+          type: integer
+          example: 1
+          description: Wildberries article
+    Goods:
+      type: array
+      description: Products, prices and discounts. Maximum 1,000 products. Both price
+        and discount can not be empty
+      items:
+        $ref: '#/components/schemas/Good'
+    Good:
+      type: object
+      required:
+        - nmID
+      properties:
+        nmID:
+          type: integer
+          example: 123
+          description: Wildberries article
+          required: true
+        price:
+          type: integer
+          example: 999
+          description: 'Price. You can get the currency with [Get products](./#tag/Product-lists/paths/~1api~1v2~1list~1goods~1filter/get)
+            method, field `currencyIsoCode4217`
+
+            '
+        discount:
+          type: integer
+          example: 30
+          description: Discount, %
+    SizeGoodsBody:
+      description: Sizes and prices. Maximum 1,000 sizes
+      type: array
+      items:
+        $ref: '#/components/schemas/SizeGoodReq'
+    SizeGoodReq:
+      type: object
+      required:
+        - nmID
+        - sizeID
+        - price
+      properties:
+        nmID:
+          type: integer
+          example: 123
+          description: Wildberries article
+        sizeID:
+          type: integer
+          example: 98989887
+          description: Size ID. You can get the ID with [Get products](./#tag/Product-lists/paths/~1api~1v2~1list~1goods~1filter/get)
+            method, field `sizeID`. In content methods this is `chrtID` field
+        price:
+          type: integer
+          example: 999
+          description: Price. You can get the currency with [Get products](./#tag/Product-lists/paths/~1api~1v2~1list~1goods~1filter/get)
+            method, field `currencyIsoCode4217`
+    GoodsList:
+      type: object
+      description: Product sizws
+      properties:
+        nmID:
+          type: integer
+          description: Wildberries article
+          example: 98486
+        vendorCode:
+          type: string
+          description: Seller's article
+          example: '07326060'
+        sizes:
+          type: array
+          description: Size
+          items:
+            type: object
+            properties:
+              sizeID:
+                type: integer
+                description: Size ID. In content methods this is `chrtID` field
+                format: int64
+                example: 3123515574
+              price:
+                type: integer
+                description: Price
+                example: 500
+              discountedPrice:
+                type: integer
+                description: Price with discount
+                example: 350
+              techSizeName:
+                description: Product size
+                type: string
+                example: 42
+        currencyIsoCode4217:
+          type: string
+          description: Currency, according to ISO 4217
+          example: RUB
+        discount:
+          type: integer
+          description: Discount, %
+          example: 30
+        editableSizePrice:
+          description: 'Setting of size prices: `true` — available, `false` — unavailable.
+            Depends on product category
+
+            '
+          type: boolean
+          example: true
+    SizeGood:
+      type: object
+      description: Информация о размере
+      properties:
+        nmID:
+          type: integer
+          example: 123
+          description: Wildberries article
+        sizeID:
+          description: Size ID. You can get this ID with [Get products](./#tag/Product-lists/paths/~1api~1v2~1list~1goods~1filter/get)
+            method, field `sizeID`. In content methods this is `chrtID` field
+          type: integer
+          example: 98989887
+        vendorCode:
+          type: string
+          example: '34552332'
+          description: Seller's article
+        price:
+          type: integer
+          example: 25000
+          description: Price
+        currencyIsoCode4217:
+          type: string
+          description: Currency, according to ISO 4217
+          example: RUB
+        discountedPrice:
+          type: integer
+          example: 14250
+          description: Price with discount
+        discount:
+          description: Discount, %
+          type: integer
+          example: 43
+        techSizeName:
+          description: Size
+          type: string
+          example: 42
+        editableSizePrice:
+          description: 'Setting of size prices: `true` — available, `false` — unavailable.
+            Depends on product category
+
+            '
+          type: boolean
+          example: true
+    GoodBufferHistory:
+      type: object
+      properties:
+        nmID:
+          type: integer
+          example: 544833232
+          description: Wildberries article
+        vendorCode:
+          type: string
+          example: '34552332'
+          description: Seller's article
+        sizeID:
+          type: integer
+          example: 54483342
+          description: Size ID. In content methods this is `chrtID` field
+        techSizeName:
+          type: string
+          example: XXL
+          description: Size
+        price:
+          type: integer
+          example: 1500
+          description: Price
+        currencyIsoCode4217:
+          type: string
+          example: RUB
+          description: Currency, according to ISO 4217
+        discount:
+          type: integer
+          example: 25
+          description: Discount, %
+        status:
+          $ref: '#/components/schemas/GoodStatusBuffer'
+        errorText:
+          type: string
+          example: null
+          description: Error text
+    GoodHistory:
+      type: object
+      properties:
+        nmID:
+          type: integer
+          example: 544833232
+          description: Wildberries article
+        vendorCode:
+          type: string
+          example: '34552332'
+          description: Seller's article
+        sizeID:
+          type: integer
+          example: 54483342
+          description: Size ID. In content methods this is `chrtID` field
+        techSizeName:
+          type: string
+          example: 42
+          description: Size
+        price:
+          type: integer
+          example: 1500
+          description: Price
+        currencyIsoCode4217:
+          type: string
+          example: RUB
+          description: Currency, according to ISO 4217
+        discount:
+          type: integer
+          example: 25
+          description: Discount, %
+        status:
+          $ref: '#/components/schemas/GoodStatus'
+        errorText:
+          type: string
+          example: ''
+          description: Error text
+    SupplierTaskMetadata:
+      properties:
+        uploadID:
+          type: integer
+          example: 395643565
+          description: Upload ID
+        status:
+          $ref: '#/components/schemas/TaskStatus'
+        uploadDate:
+          $ref: '#/components/schemas/Date'
+        activationDate:
+          $ref: '#/components/schemas/Date1'
+        overAllGoodsNumber:
+          description: Total number of products
+          type: integer
+        successGoodsNumber:
+          description: Number products without errors
+          type: integer
+    SupplierTaskMetadataBuffer:
+      properties:
+        uploadID:
+          type: integer
+          example: 395643565
+          description: Upload ID
+        status:
+          $ref: '#/components/schemas/TaskStatusBuffer'
+        uploadDate:
+          $ref: '#/components/schemas/Date'
+        activationDate:
+          $ref: '#/components/schemas/Date1'
+        overAllGoodsNumber:
+          description: Total number of products
+          type: integer
+          example: 100
+        successGoodsNumber:
+          description: Number products without errors (`0` because the upload is processing)
+          type: integer
+          example: 0
+    EditableSizePrice:
+      type: boolean
+      description: 'Setting of size prices: `true` — available, `false` — unavailable
+
+        '
+      example: true
+    Date:
+      type: string
+      example: '2022-08-21T22:00:13+02:00'
+      format: date
+      pattern: YYYY-MM-DDTHH:MM:SSZ
+      description: Date and time of the upload creation
+    Date1:
+      type: string
+      example: '2022-08-21T22:00:13+02:00'
+      format: date
+      pattern: YYYY-MM-DDTHH:MM:SSZ
+      description: Date and time when the upload processing was started
+    TaskStatus:
+      description: "Upload status: \n  * `3` — processed, no errors in products, prices\
+        \ and discounts were updated\n  * `4` — canceled\n  * `5` — processed, but\
+        \ some product have errors. For other products prices and discounts were updated.\
+        \ You can get errors with [Processed upload details](./#tag/Upload-states/paths/~1api~1v2~1history~1goods~1task/get)\
+        \ method\n  * `6` — processed, but all product have errors. You can get them\
+        \ with [Processed upload details](./#tag/Upload-states/paths/~1api~1v2~1history~1goods~1task/get)\
+        \ method\n"
+      type: integer
+      example: 3
+    TaskStatusBuffer:
+      description: 'Upload status: `1` — processing
+
+        '
+      type: integer
+      example: 1
+    GoodStatus:
+      description: "Product status: \n  * `2` — no errors, price and/or discount were\
+        \ updated\n  * `3` — product has errors, data were not updated\n"
+      type: integer
+      example: 1
+    GoodStatusBuffer:
+      description: 'Product status: `1` — processing
+
+        '
+      type: integer
+      example: 1
+    User:
+      properties:
+        firstName:
+          type: string
+          example: Name
+        secondName:
+          type: string
+          example: Surname
+        id:
+          type: integer
+          example: 123
+          description: User ID
+        isOwner:
+          type: boolean
+          example: false
+          description: 'User is the account owner: `true` or `false`
+
+            '
+        phone:
+          type: string
+          example: '71111111100000'
+          description: User phone number
+  examples:
+    TokenMissing:
+      description: The token is missing
+      value: 'proxy: unauthorized'
+    TokenInvalid:
+      description: Token invalid
+      value: 'proxy: invalid token'
+    TokenNotFound:
+      description: Token deleted
+      value: 'proxy: not found'
+    InvalidCurrency:
+      description: Incorrect currency
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Invalid currency
+    InvalidQueryParams:
+      description: Incorrect request parameters
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Invalid query params
+    GoodsNumberLimitExceeded:
+      description: Too many products
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Goods number limit exceeded
+    TaskAlreadyExists:
+      description: 'Upload already exists
+
+        '
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: '1'
+    DuplicatedNmIdInTask:
+      description: Duplicated `nmid` in the request
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Duplicated nm_id in task
+    NoGoodsForProcess:
+      description: No price or discount changes
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: No goods for process
+    FailedToParseData:
+      description: Data can not be processed, check the request
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Failed to parse data
+    PriceHasDecimalPlaces:
+      description: Price has decimal value, but it should be integer
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Price has decimal places
+    WrongPriceValue:
+      description: Incorrect price
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Wrong price value
+    WrongDiscountValue:
+      description: Incorrect discount
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Wrong discount value
+    WrongNmValue:
+      description: Incorrect `nmID`
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Wrong nm value
+    BothDiscountAndPriceAreNotSet:
+      description: Both price and discount are not set
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Both discount and price are not set
+    PriceNotSet:
+      description: Price is not set
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Both discount and price are not set
+    EmptyData:
+      description: No data
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Empty data
+    InvalidActivationDate:
+      description: Incorrect date or time when the upload processing was started
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Invalid activation date
+    NoValidGoodsInTask:
+      description: No products or sizes (for example, they were deleted)
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: No valid goods in task
+    DuplicatedSizeIdInTask:
+      description: Duplicated `sizeID` in the request
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Duplicated size_id in task
+    NoValidDiscountsToCancel:
+      description: No discounts to cancel
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: No valid discounts to cancel
+    SortError:
+      description: You should choose sorting by price or by discount, not both values
+      value:
+        data:
+          type: object
+          nullable: true
+        error: true
+        errorText: Can sort only by price or discount at the same time
+  parameters:
+    quantity:
+      in: query
+      name: quantity
+      description: '`1` — product with stock > 0, `0` — product with any stock
+
+        '
+      schema:
+        type: integer
+        enum:
+          - 0
+          - 1
+    uploadID:
+      in: query
+      name: uploadID
+      description: Upload ID
+      required: true
+      schema:
+        type: integer
+        example: 146
+    limit:
+      in: query
+      name: limit
+      description: 'Number of elements per page (pagination). Maximum 1,000 elements
+
+        '
+      schema:
+        type: integer
+        format: uint
+        example: 10
+      required: true
+    offset:
+      in: query
+      name: offset
+      description: Number of elements to skip
+      schema:
+        type: integer
+        format: uint
+        example: 0
+    nmID:
+      in: query
+      name: nmID
+      description: Wildberries article
+      schema:
+        type: integer
+        example: 1
+      required: true
+    filterNmID:
+      in: query
+      description: 'Wildberries article to search
+
+        '
+      name: filterNmID
+      schema:
+        type: integer
+      example: 44589768676
+    sortPrice:
+      in: query
+      description: Sorting by price
+      name: sortPrice
+      schema:
+        type: boolean
+      example: true
+    sortPriceValue:
+      in: query
+      description: Sorting order (`1` - ascending, `0` - descending)
+      name: sortPriceValue
+      schema:
+        type: integer
+      example: 0
+    sortDiscount:
+      in: query
+      description: Sorting by discount
+      name: sortDiscount
+      schema:
+        type: boolean
+      example: true
+    sortDiscountValue:
+      in: query
+      description: Sorting order (`1` - descending, `0` - ascending)
+      name: sortDiscountValue
+      schema:
+        type: integer
+      example: 1
+    activateFrom:
+      description: Activation date in format `YYYY-MM-DD` or `YYYY-MM-DD HH:MM:SS`.
+        If not provided, discount will take effect immediately.
+      in: query
+      name: activateFrom
+      schema:
+        type: string
+  responses:
+    ResponseGoodsLists:
+      description: Products
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  listGoods:
+                    description: Product data
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/GoodsList'
+    ResponseGoodBuffer:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  uploadID:
+                    type: integer
+                    description: Upload ID
+                    example: 323
+                  bufferGoods:
+                    type: array
+                    description: Data of products in the upload
+                    items:
+                      $ref: '#/components/schemas/GoodHistory'
+              error:
+                type: boolean
+                description: Error flag
+                example: false
+              errorText:
+                type: string
+                description: Error text
+                example: ''
+    ResponseGoodHistories:
+      description: Data of products in the upload
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  uploadID:
+                    type: integer
+                    description: Upload ID
+                    example: 3235236546
+                  historyGoods:
+                    type: array
+                    description: Data of products in the upload
+                    items:
+                      $ref: '#/components/schemas/GoodHistory'
+    ResponseGoodBufferHistories:
+      description: Data of products in the upload
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  uploadID:
+                    type: integer
+                    description: Upload ID
+                    example: 3235236546
+                  bufferGoods:
+                    type: array
+                    description: Data of products in the upload
+                    items:
+                      $ref: '#/components/schemas/GoodBufferHistory'
+              error:
+                type: boolean
+                description: Error flag
+                example: false
+              errorText:
+                type: string
+                description: Error text
+                example: ''
+    ResponseTaskHistory:
+      description: Upload state
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/components/schemas/SupplierTaskMetadata'
+              error:
+                type: boolean
+                description: Error flag
+                example: false
+              errorText:
+                description: Error text
+                type: string
+                example: ''
+    ResponseTaskBuffer:
+      description: Upload state
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/components/schemas/SupplierTaskMetadataBuffer'
+              error:
+                type: boolean
+                description: Error flag
+                example: false
+              errorText:
+                type: string
+                description: Error text
+                example: ''
+    ResponseSizeLists:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  listGoods:
+                    description: Product sizes
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/SizeGood'
+              error:
+                description: Error flag
+                type: boolean
+                example: true
+              errorText:
+                description: Error text
+                type: string
+    SuccessTaskResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/TaskCreated'
+    Responses401:
+      description: ''
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ResponseError'
+          examples:
+            AuthorizationError:
+              description: Authorization error
+              value:
+                data:
+                  type: object
+                  nullable: true
+                error: true
+                errorText: Authorization error
+            UnknownMethod:
+              description: Unknown method
+              value:
+                data:
+                  type: object
+                  nullable: true
+                error: true
+                errorText: Unknown method
+            AccessDenied:
+              description: Access denied
+              value:
+                data:
+                  type: object
+                  nullable: true
+                error: true
+                errorText: Access denied
+    Responses500:
+      description: Internal service error
+    ExceededLimitRequests429:
+      description: Too many requests
+    Responses208:
+      description: ''
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/TaskAlreadyExistsError'
+          examples:
+            TaskAlreadyExists:
+              description: 'Upload already exists
+
+                '
+              value:
+                data:
+                  id: 1111111
+                  alreadyExists: true
+                error: false
+                errorText: Task already exists
+    ErrorResponse:
+      description: Unknown error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                nullable: true
+              error:
+                type: boolean
+              errorText:
+                type: string
+                example: Unknown error
+    ErrorInternalResponse:
+      description: Unknown error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                nullable: true
+              error:
+                type: boolean
+              errorText:
+                type: string
+                example: Internal server error
+    ErrorUnknownUser:
+      description: Authorization errorv
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                nullable: true
+              error:
+                type: boolean
+                example: true
+              errorText:
+                type: string
+                example: Unknown user
+    ErrorFailedParseData:
+      description: ata can not be processed, check the request
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                nullable: true
+              error:
+                type: boolean
+                example: true
+              errorText:
+                type: string
+                example: Failed to parse data
+    ErrorWrongParameters:
+      description: Incorrect request
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                nullable: true
+              error:
+                type: boolean
+                example: true
+              errorText:
+                type: string
+                example: Invalid query params
+  requestBodies:
+    SupplierTaskRequest:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/components/schemas/Goods'
+    CancelTaskDiscountRequest:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/components/schemas/CancelGoods'
+    SupplierTaskRequestSize:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/components/schemas/SizeGoodsBody'
+    NomenclatureArray:
+      description: Перечень номенклатур
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                discount:
+                  type: integer
+                  description: Размер скидки
+                  example: 15
+                nm:
+                  type: integer
+                  description: Артикул WB
+                  example: 1234567
+      required: true
+    NomenclatureArray2:
+      description: Перечень номенклатур
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                promoCode:
+                  type: integer
+                  description: Промокод
+                  example: 15
+                nm:
+                  type: integer
+                  description: Артикул WB
+                  example: 1234567
+      required: true
+paths:
+  /public/api/v1/updateDiscounts:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      description: 'Update discounts for nomenclatures. Max 1000 nomenclatures can
+        be uploaded with one request.<br> If specifying `activateFrom` is greater
+        than the current date, you get an error like `{"errors": [ "Invalid activation
+        date"], "error_code": 1}`, it means that your account has been transferred
+        to the <b>NEW Price and Discount</b> system, and this option is no longer
+        available.<br> Send a request specifying the present date.
+
+        '
+      tags:
+        - Discounts
+      parameters:
+        - $ref: '#/components/parameters/activateFrom'
+      requestBody:
+        $ref: '#/components/requestBodies/NomenclatureArray'
+      responses:
+        200:
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+        400:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+              examples:
+                InvalidActivationDate:
+                  description: Invalid activation date
+                  value:
+                    error:
+                      - Invalid activation date
+                    error_code: 1
+                NoGoodsForProcess:
+                  description: All the transferred discounts are already installed
+                  value:
+                    error:
+                      - No goods for process
+                    error_code: 1
+                WrongNmValue:
+                  description: Invalid nmID value
+                  value:
+                    error:
+                      - Wrong discount value
+                    error_code: 1
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /public/api/v1/revokeDiscounts:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Discounts
+      description: Revoking discounts for nomenclatures. For first request the response
+        will be empty. Any subsequent attempt to revoke a discount will result in
+        JSON with id from the first request.
+      summary: Revoking discounts for nomenclatures
+      requestBody:
+        required: true
+        description: Nomenclatures list for discounts revoke
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: integer
+              example:
+                - 12345678
+                - 81234567
+      responses:
+        200:
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: object
+                properties:
+                  uploadId:
+                    type: integer
+                    description: Request id for discount revoke
+                  alreadyExists:
+                    type: boolean
+                    description: True if discount has already been revoked
+        400:
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                NoValidDiscountsToCancel:
+                  $ref: '#/components/examples/NoValidDiscountsToCancel'
+                FailedToParseData:
+                  $ref: '#/components/examples/FailedToParseData'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /api/v2/upload/task:
+    servers:
+      - url: https://discounts-prices-api.wb.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Price and discount settings
+      summary: Set price and discounts
+      description: 'Sets product prices and discounts
+
+        '
+      requestBody:
+        $ref: '#/components/requestBodies/SupplierTaskRequest'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessTaskResponse'
+        208:
+          $ref: '#/components/responses/Responses208'
+        400:
+          description: Incorrect request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+              examples:
+                GoodsNumberLimitExceeded:
+                  $ref: '#/components/examples/GoodsNumberLimitExceeded'
+                DuplicatedNmIdInTask:
+                  $ref: '#/components/examples/DuplicatedNmIdInTask'
+                NoGoodsForProcess:
+                  $ref: '#/components/examples/NoGoodsForProcess'
+                FailedToParseData:
+                  $ref: '#/components/examples/FailedToParseData'
+                PriceHasDecimalPlaces:
+                  $ref: '#/components/examples/PriceHasDecimalPlaces'
+                WrongPriceValue:
+                  $ref: '#/components/examples/WrongPriceValue'
+                WrongNmValue:
+                  $ref: '#/components/examples/WrongNmValue'
+                BothDiscountAndPriceAreNotSet:
+                  $ref: '#/components/examples/PriceNotSet'
+                EmptyData:
+                  $ref: '#/components/examples/EmptyData'
+                NoValidGoodsInTask:
+                  $ref: '#/components/examples/NoValidGoodsInTask'
+        401:
+          $ref: '#/components/responses/Responses401'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests429'
+        500:
+          $ref: '#/components/responses/Responses500'
+  /api/v2/upload/task/size:
+    servers:
+      - url: https://discounts-prices-api.wb.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Price and discount settings
+      summary: Sets size prices
+      description: "Set different prices for different sizes. Only for products from\
+        \ categories where size price setting is available. For these products `editableSizePrice:\
+        \ true` in [Get product sizes](./#tag/Product-lists/paths/~1api~1v2~1list~1goods~1size~1nm/get)\
+        \ response.    \n"
+      requestBody:
+        $ref: '#/components/requestBodies/SupplierTaskRequestSize'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessTaskResponse'
+        208:
+          $ref: '#/components/responses/Responses208'
+        400:
+          description: Incorrect request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+              examples:
+                GoodsNumberLimitExceeded:
+                  $ref: '#/components/examples/GoodsNumberLimitExceeded'
+                DuplicatedNmIdInTask:
+                  $ref: '#/components/examples/DuplicatedNmIdInTask'
+                NoGoodsForProcess:
+                  $ref: '#/components/examples/NoGoodsForProcess'
+                FailedToParseData:
+                  $ref: '#/components/examples/FailedToParseData'
+                PriceHasDecimalPlaces:
+                  $ref: '#/components/examples/PriceHasDecimalPlaces'
+                WrongPriceValue:
+                  $ref: '#/components/examples/WrongPriceValue'
+                WrongNmValue:
+                  $ref: '#/components/examples/WrongNmValue'
+                BothDiscountAndPriceAreNotSet:
+                  $ref: '#/components/examples/BothDiscountAndPriceAreNotSet'
+                EmptyData:
+                  $ref: '#/components/examples/EmptyData'
+                NoValidGoodsInTask:
+                  $ref: '#/components/examples/NoValidGoodsInTask'
+        401:
+          $ref: '#/components/responses/Responses401'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests429'
+        500:
+          $ref: '#/components/responses/Responses500'
+  /public/api/v1/info:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      deprecated: true
+      security:
+        - HeaderApiKey: []
+      description: Get information by nomenclature on prices and discounts. If no
+        filters provided, all goods will be returned.
+      summary: Information on prices and discounts.
+      tags:
+        - Prices
+      parameters:
+        - $ref: '#/components/parameters/quantity'
+      responses:
+        200:
+          description: Information on prices
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nmId:
+                    type: integer
+                    description: WB article
+                    example: 1234567
+                  price:
+                    type: number
+                    description: Price
+                    example: 1000
+                  discount:
+                    type: integer
+                    description: Discount
+                    example: 10
+                  promoCode:
+                    type: number
+                    description: Promo code
+                    example: 5
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /public/api/v1/prices:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      deprecated: true
+      security:
+        - HeaderApiKey: []
+      summary: Upload prices
+      description: Upload prices. Max 1000 nomenclatures can be uploaded with one
+        request.
+      tags:
+        - Prices
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                properties:
+                  nmId:
+                    type: integer
+                    description: WB article
+                    example: 1234567
+                  price:
+                    type: number
+                    description: Prices (in rubles, without pennies)
+                    example: 1000
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/Successful'
+              examples:
+                Successful:
+                  description: Prices has been successfully uploaded
+                  value:
+                    uploadId: 612455
+        400:
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/ResponseError'
+              examples:
+                NoGoodsForProcess:
+                  description: All transferred prices/discounts have already been
+                    set
+                  value:
+                    error:
+                      - No goods for process
+                    error_code: 1
+                InvalidQueryParams:
+                  $ref: '#/components/examples/InvalidQueryParams'
+                GoodsNumberLimitExceeded:
+                  $ref: '#/components/examples/GoodsNumberLimitExceeded'
+                DuplicatedNmIdInTask:
+                  $ref: '#/components/examples/DuplicatedNmIdInTask'
+                FailedToParseData:
+                  $ref: '#/components/examples/FailedToParseData'
+                PriceHasDecimalPlaces:
+                  $ref: '#/components/examples/PriceHasDecimalPlaces'
+                WrongPriceValue:
+                  $ref: '#/components/examples/WrongPriceValue'
+                WrongNmValue:
+                  $ref: '#/components/examples/WrongNmValue'
+                EmptyData:
+                  $ref: '#/components/examples/EmptyData'
+                NoValidGoodsInTask:
+                  $ref: '#/components/examples/NoValidGoodsInTask'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /api/v2/list/goods/filter:
+    servers:
+      - url: https://discounts-prices-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Product lists
+      summary: Get products
+      description: Returns product data by its article. To get data for all products,
+        do not set the article
+      parameters:
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/offset'
+        - $ref: '#/components/parameters/filterNmID'
+      responses:
+        200:
+          $ref: '#/components/responses/ResponseGoodsLists'
+        400:
+          description: Incorrect request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+              examples:
+                SortError:
+                  $ref: '#/components/examples/SortError'
+                InvalidQueryParams:
+                  $ref: '#/components/examples/InvalidQueryParams'
+        401:
+          $ref: '#/components/responses/Responses401'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests429'
+        500:
+          $ref: '#/components/responses/Responses500'
+  /api/v2/list/goods/size/nm:
+    servers:
+      - url: https://discounts-prices-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Product lists
+      summary: Get product sizes
+      description: "Returns sizes data for the product. Only for products from categories\
+        \ where size price setting is available. For these products `editableSizePrice:\
+        \ true` in [Get product sizes](./#tag/Product-lists/paths/~1api~1v2~1list~1goods~1size~1nm/get)\
+        \ response. \n"
+      parameters:
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/offset'
+        - $ref: '#/components/parameters/nmID'
+      responses:
+        200:
+          $ref: '#/components/responses/ResponseSizeLists'
+        400:
+          description: Incorrect request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+              examples:
+                InvalidQueryParams:
+                  $ref: '#/components/examples/InvalidQueryParams'
+        401:
+          $ref: '#/components/responses/Responses401'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests429'
+        500:
+          $ref: '#/components/responses/Responses500'
+  /api/v2/history/tasks:
+    servers:
+      - url: https://discounts-prices-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Upload states
+      summary: Processed upload state
+      description: Returns the processed upload data
+      parameters:
+        - $ref: '#/components/parameters/uploadID'
+      responses:
+        '200':
+          $ref: '#/components/responses/ResponseTaskHistory'
+        '400':
+          $ref: '#/components/responses/ErrorWrongParameters'
+        '401':
+          $ref: '#/components/responses/ErrorUnknownUser'
+        4XX:
+          $ref: '#/components/responses/ErrorResponse'
+        5XX:
+          $ref: '#/components/responses/ErrorInternalResponse'
+  /api/v2/history/goods/task:
+    servers:
+      - url: https://discounts-prices-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Upload states
+      summary: Processed upload details
+      description: Returns products in processed upload including product errors
+      parameters:
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/offset'
+        - $ref: '#/components/parameters/uploadID'
+      responses:
+        '200':
+          $ref: '#/components/responses/ResponseGoodHistories'
+        '400':
+          $ref: '#/components/responses/ErrorWrongParameters'
+        '401':
+          $ref: '#/components/responses/ErrorUnknownUser'
+        4XX:
+          $ref: '#/components/responses/ErrorResponse'
+        5XX:
+          $ref: '#/components/responses/ErrorInternalResponse'
+  /api/v2/buffer/tasks:
+    servers:
+      - url: https://discounts-prices-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Upload states
+      summary: Unprocessed upload state
+      description: Returns the processing upload data
+      parameters:
+        - $ref: '#/components/parameters/uploadID'
+      responses:
+        '200':
+          $ref: '#/components/responses/ResponseTaskBuffer'
+        '400':
+          $ref: '#/components/responses/ErrorWrongParameters'
+        '401':
+          $ref: '#/components/responses/ErrorUnknownUser'
+        4XX:
+          $ref: '#/components/responses/ErrorResponse'
+        5XX:
+          $ref: '#/components/responses/ErrorInternalResponse'
+  /api/v2/buffer/goods/task:
+    servers:
+      - url: https://discounts-prices-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Upload states
+      summary: Unprocessed upload details
+      description: Returns products in processing upload including product errors
+      parameters:
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/offset'
+        - $ref: '#/components/parameters/uploadID'
+      responses:
+        '200':
+          $ref: '#/components/responses/ResponseGoodBufferHistories'
+        '400':
+          $ref: '#/components/responses/ErrorWrongParameters'
+        '401':
+          $ref: '#/components/responses/ErrorUnknownUser'
+        4XX:
+          $ref: '#/components/responses/ErrorResponse'
+        5XX:
+          $ref: '#/components/responses/ErrorInternalResponse'

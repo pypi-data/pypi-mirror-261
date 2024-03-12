@@ -1,0 +1,2068 @@
+openapi: 3.0.1
+info:
+  title: Seller API Analytics
+  version: '2.18'
+  description: '**The service provides a public API for obtaining analytical data.**
+
+
+    Analytical data in the source is stored for the past year. When selecting a start
+    date earlier than a year ago, an error will be returned, so the maximum number
+    of days in aggregations is 365.
+
+
+    Also, in the data where information about the previous period is provided:
+
+    1. In `previousPeriod`, the data is for the same period as in `selectedPeriod`.
+
+    2. If the start date of `previousPeriod` is earlier than a year ago from the current
+    date, it will be adjusted as follows:
+
+
+    `previousPeriod.start = current date - 365 days.`
+
+
+    #### Time Zones
+
+
+    IANA format, the current list can be viewed [here](https://nodatime.org/TimeZones).
+
+    <br>
+
+    <br>
+
+    <br>
+
+    '
+security:
+  - HeaderApiKey: []
+x-tagGroups:
+  - name: Seller's Analytics
+    tags:
+      - Sales funnel
+  - name: Reports
+    tags:
+      - Products with mandatory labeling
+      - Paid storage
+      - Deductions
+tags:
+  - name: Sales funnel
+  - name: Products with mandatory labeling
+  - name: Paid storage
+    description: "To get the report:\n\n  1. [Generate the report](./#tag/Paid-storage/paths/~1api~1v1~1delayed-gen~1paid_storage/get).\n\
+      \  2. Check if the report is generated with [Check the status](./#tag/Paid-storage/paths/~1api~1v1~1%7Btask_type%7D~1tasks~1%7Btask_id%7D~1status/get)\
+      \ method. Generated report is available during 2 hours.\n  3. [Get the report](./#tag/Paid-storage/paths/~1api~1v1~1%7Btask_type%7D~1tasks~1%7Btask_id%7D~1download/get).\n"
+components:
+  securitySchemes:
+    HeaderApiKey:
+      type: apiKey
+      name: Authorization
+      in: header
+  examples:
+    TokenMissing:
+      description: The token is missing
+      value: 'proxy: unauthorized'
+    TokenInvalid:
+      description: Token invalid
+      value: 'proxy: invalid token'
+    TokenNotFound:
+      description: Token deleted
+      value: 'proxy: not found'
+    CreateResponseData:
+      value:
+        data:
+          taskId: 219eaecf-e532-4bd8-9f15-8036ec1b042d
+    GetTasksResponseData:
+      value:
+        data:
+          id: cad56ec5-91ec-43a2-b5e8-efcf244cf309
+          status: done
+    ErrorResponseTasksCreate:
+      value:
+        errors:
+          - string
+  schemas:
+    ErrorResponse:
+      type: object
+      required:
+        - errors
+      properties:
+        errors:
+          type: array
+          items:
+            type: string
+    responseBodyContentError400:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Additional errors
+          type: object
+          properties:
+            MoveNmsToTrash:
+              type: string
+      example:
+        data: null
+        error: true
+        errorText: Error text
+        additionalErrors:
+          MoveNmsToTrash: Bad request
+    responseBodyContentError403:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Additional errors
+          type: string
+      example:
+        data: null
+        error: true
+        errorText: Access denied
+        additionalErrors: Access denied
+    NmReportDetailRequest:
+      type: object
+      required:
+        - page
+        - period
+      properties:
+        brandNames:
+          type: array
+          description: Brand name
+          items:
+            type: string
+            example: Some
+        objectIDs:
+          type: array
+          description: Item Identifier
+          items:
+            type: integer
+            format: int32
+            example: 358
+        tagIDs:
+          type: array
+          description: Numeric tag identifier
+          items:
+            type: integer
+            format: int32
+            example: 123
+        nmIDs:
+          type: array
+          description: WB article
+          items:
+            type: integer
+            format: int32
+            example: 1234567
+        timezone:
+          type: string
+          description: 'Timezone.<br> If not specified, the default is Europe/Moscow.
+
+            '
+          example: Europe/Moscow
+        period:
+          type: object
+          description: Period
+          properties:
+            begin:
+              description: Start of the Period
+              type: string
+              format: time-date
+              example: 2023-06-01 20:05:32
+            end:
+              description: End of the Period
+              type: string
+              format: time-date
+              example: 2024-03-01 20:05:32
+        orderBy:
+          description: 'Sorting Parameters. If not specified, the default is "openCard"
+            with descending order. <dl> <dt>All sorting options <code>field</code>:</dt>
+            <dd><code>openCard</code> — by card opening (transition to the product
+            page)</dd> <dd><code>addToCart</code> — by additions to the cart</dd>
+            <dd><code>orders</code> — by the number of orders</dd> <dd><code>avgRubPrice</code>
+            — by average price in rubles</dd> <dd><code>ordersSumRub</code> — by the
+            total order amount in rubles</dd> <dd><code>stockMpQty</code> — by the
+            quantity of marketplace stock (pieces)</dd> <dd><code>stockWbQty</code>
+            — by the quantity of warehouse stock (pieces)</dd> <dd><code>cancelSumRub</code>
+            — by the sum of returns in rubles</dd> <dd><code>cancelCount</code> —
+            by the number of returns</dd> <dd><code>buyoutCount</code> — by the number
+            of buyouts</dd> <dd><code>buyoutSumRub</code> — by the total buyout amount
+            in rubles</dd> </dl>
+
+            '
+          type: object
+          properties:
+            field:
+              description: Sort type
+              type: string
+              example: ordersSumRub
+            mode:
+              description: '`asc` - ascending, `desc` - descending
+
+                '
+              type: string
+              example: asc
+        page:
+          description: Page
+          type: integer
+          format: int32
+          example: 1
+    NmReportGroupedRequest:
+      type: object
+      required:
+        - page
+        - period
+      properties:
+        objectIDs:
+          type: array
+          description: Item Identifier
+          items:
+            type: integer
+            format: int32
+            example: 358
+        brandNames:
+          description: Brand name
+          type: array
+          items:
+            type: string
+            example: Some
+        tagIDs:
+          description: Numeric tag identifier
+          type: array
+          items:
+            type: integer
+            format: int32
+            example: 123
+        timezone:
+          description: 'Timezone.<br> If not specified, the default is Europe/Moscow.
+
+            '
+          type: string
+          example: Europe/Moscow
+        period:
+          description: Period
+          type: object
+          properties:
+            begin:
+              description: Start of the Period
+              type: string
+              example: 2023-10-04 20:05:32
+            end:
+              description: End of the Period
+              type: string
+              example: 2024-03-01 20:05:32
+        orderBy:
+          description: 'Sorting Parameters. If not specified, the default is "openCard"
+            with descending order. <dl> <dt>All sorting options <code>field</code>:</dt>
+            <dd><code>openCard</code> — by card opening (transition to the product
+            page)</dd> <dd><code>addToCart</code> — by additions to the cart</dd>
+            <dd><code>orders</code> — by the number of orders</dd> <dd><code>avgRubPrice</code>
+            — by average price in rubles</dd> <dd><code>ordersSumRub</code> — by the
+            total order amount in rubles</dd> <dd><code>stockMpQty</code> — by the
+            quantity of marketplace stock (pieces)</dd> <dd><code>stockWbQty</code>
+            — by the quantity of warehouse stock (pieces)</dd> </dl>
+
+            '
+          type: object
+          properties:
+            field:
+              description: Sort type
+              type: string
+              example: ordersSumRub
+            mode:
+              description: '`asc` - ascending, `desc` - descending
+
+                '
+              type: string
+              example: asc
+        page:
+          description: Page
+          type: integer
+          format: int32
+          example: 1
+    NmReportDetailHistoryRequest:
+      type: object
+      required:
+        - nmIDs
+        - period
+      properties:
+        nmIDs:
+          description: WB article (max. 20)
+          type: array
+          items:
+            type: integer
+            format: int32
+            example: 1234567
+        period:
+          description: Period
+          type: object
+          properties:
+            begin:
+              description: Start of the period
+              type: string
+              format: date
+              example: 2023-06-20
+            end:
+              description: End of the Period
+              type: string
+              format: date
+              example: 2023-06-22
+        timezone:
+          type: string
+          description: 'Timezone.<br> If not specified, the default is Europe/Moscow.
+
+            '
+          example: Europe/Moscow
+        aggregationLevel:
+          description: 'Aggregation Type. If not specified, the default is aggregation
+            by days. <br> Available aggregation levels: `day`, `week`, `month`.
+
+            '
+          type: string
+          example: day
+    NmReportGroupedHistoryRequest:
+      type: object
+      required:
+        - period
+      properties:
+        objectIDs:
+          description: Item Identifier
+          type: array
+          items:
+            type: integer
+            format: int32
+            example: 358
+        brandNames:
+          description: Brand name
+          type: array
+          items:
+            type: string
+            example: Some
+        tagIDs:
+          description: Numeric tag identifier
+          type: array
+          items:
+            type: integer
+            format: int32
+            example: 123
+        period:
+          description: Period
+          type: object
+          properties:
+            begin:
+              description: Start of the Period
+              type: string
+              format: date
+              example: 2023-06-21
+            end:
+              description: End of the Period
+              type: string
+              format: date
+              example: 2023-06-23
+        timezone:
+          description: 'Timezone.<br> If not specified, the default is Europe/Moscow.
+
+            '
+          type: string
+          example: Europe/Moscow
+        aggregationLevel:
+          description: 'Aggregation Type. If not specified, the default is aggregation
+            by days. <br> Available aggregation levels: `day`, `week`, `month`.
+
+            '
+          type: string
+          example: day
+    NmReportDetailResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            page:
+              description: Page
+              type: integer
+              format: int32
+              example: 1
+            isNextPage:
+              description: Is there a next page (false - no, true - yes)?
+              type: boolean
+            cards:
+              type: array
+              items:
+                type: object
+                properties:
+                  nmID:
+                    description: WB article
+                    type: integer
+                    format: int32
+                    example: 1234567
+                  vendorCode:
+                    description: Seller's SKU
+                    type: string
+                    example: supplierVendor
+                  brandName:
+                    description: Brand Name
+                    type: string
+                    example: Some
+                  tags:
+                    description: Tags
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          description: Numeric tag identifier
+                          type: integer
+                          format: int32
+                          example: 123
+                        name:
+                          description: Tag name
+                          type: string
+                          example: Sale
+                  object:
+                    description: Item
+                    type: object
+                    properties:
+                      id:
+                        description: Item Identifier
+                        type: integer
+                        format: int32
+                        example: 447
+                      name:
+                        description: Item Name
+                        type: string
+                        example: Hair Conditioners
+                      statistics:
+                        description: Statistics
+                        type: object
+                        properties:
+                          selectedPeriod:
+                            description: Requested period
+                            type: object
+                            properties:
+                              begin:
+                                description: Start of the Period
+                                type: string
+                                example: 2023-06-01 20:05:32
+                              end:
+                                description: End of the Period
+                                type: string
+                                example: 2024-03-01 20:05:32
+                              openCardCount:
+                                description: Number of visits to the product page
+                                type: integer
+                                format: int32
+                                example: 0
+                              addToCartCount:
+                                description: Added to cart, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              ordersCount:
+                                description: Ordered items, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              ordersSumRub:
+                                description: Ordered amount in rubles
+                                type: integer
+                                format: int32
+                                example: 0
+                              buyoutsCount:
+                                description: Items bought, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              buyoutsSumRub:
+                                description: Bought amount in rubles
+                                type: integer
+                                format: int32
+                                example: 0
+                              cancelCount:
+                                description: Cancelled items, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              cancelSumRub:
+                                description: Cancelled amount in rubles
+                                type: integer
+                                format: int32
+                                example: 0
+                              avgPriceRub:
+                                description: Average price in rubles
+                                type: integer
+                                format: int32
+                                example: 0
+                              avgOrdersCountPerDay:
+                                description: Average daily order quantity, quantity
+                                type: integer
+                                format: int32
+                                example: 0
+                              conversions:
+                                description: Conversions
+                                type: object
+                                properties:
+                                  addToCartPercent:
+                                    description: Conversion to Cart, % (The percentage
+                                      of visitors who, after opening the product card,
+                                      added the item to the cart)
+                                    type: integer
+                                    format: int32
+                                    example: 0
+                                  cartToOrderPercent:
+                                    description: Conversion to Order, % (The percentage
+                                      of visitors who, after adding an item to the
+                                      cart, completed the purchase)
+                                    type: integer
+                                    format: int32
+                                    example: 0
+                                  buyoutsPercent:
+                                    description: Buyout Percentage, % (The percentage
+                                      of visitors who ordered a product and successfully
+                                      completed the purchase. Excludes items still
+                                      in transit to the buyer.)
+                                    type: integer
+                                    format: int32
+                                    example: 0
+                      previousPeriod:
+                        description: Statistics for the previous 30 days
+                        type: object
+                        properties:
+                          begin:
+                            type: string
+                            description: Start of the period
+                            example: 2023-05-07 20:05:31
+                          end:
+                            type: string
+                            description: End of the period
+                            example: 2023-06-01 20:05:31
+                          openCardCount:
+                            description: Number of product card views
+                            type: integer
+                            format: int32
+                            example: 0
+                          addToCartCount:
+                            description: Added to cart, count
+                            type: integer
+                            format: int32
+                            example: 0
+                          ordersCount:
+                            description: Number of items ordered
+                            type: integer
+                            format: int32
+                            example: 1
+                          ordersSumRub:
+                            description: Total order amount in rubles
+                            type: integer
+                            format: int32
+                            example: 1262
+                          buyoutsCount:
+                            description: Number of items bought
+                            type: integer
+                            format: int32
+                            example: 1
+                          buyoutsSumRub:
+                            description: Total buyout amount in rubles
+                            type: integer
+                            format: int32
+                            example: 1262
+                          cancelCount:
+                            description: Number of items canceled
+                            type: integer
+                            format: int32
+                            example: 0
+                          cancelSumRub:
+                            description: Total canceled amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgPriceRub:
+                            description: Average price in rubles
+                            type: integer
+                            format: int32
+                            example: 1262
+                          avgOrdersCountPerDay:
+                            description: Average daily order count
+                            type: number
+                            example: 0.04
+                          conversions:
+                            description: Conversions
+                            type: object
+                            properties:
+                              addToCartPercent:
+                                description: Conversion to Cart, % (Percentage of
+                                  visitors who, after opening the product card, added
+                                  the item to the cart)
+                                type: integer
+                                format: int32
+                                example: 0
+                              cartToOrderPercent:
+                                description: Conversion to Order, % (Percentage of
+                                  visitors who, after adding an item to the cart,
+                                  completed the purchase)
+                                type: integer
+                                format: int32
+                                example: 0
+                              buyoutsPercent:
+                                description: Buyout Percentage, % (Percentage of visitors
+                                  who ordered a product and successfully completed
+                                  the purchase. Excludes items still in transit to
+                                  the buyer.)
+                                type: integer
+                                format: int32
+                                example: 100
+                      periodComparison:
+                        description: Comparison of two periods in percentages
+                        type: object
+                        properties:
+                          openCardDynamics:
+                            description: Dynamics of product card views
+                            type: integer
+                            format: int32
+                            example: 0
+                          addToCartDynamics:
+                            description: Dynamics of additions to the cart
+                            type: integer
+                            format: int32
+                            example: 0
+                          ordersCountDynamics:
+                            description: Dynamics of order count
+                            type: integer
+                            format: int32
+                            example: -100
+                          ordersSumRubDynamics:
+                            description: Dynamics of order sum in rubles
+                            type: integer
+                            format: int32
+                            example: -100
+                          buyoutsCountDynamics:
+                            description: Dynamics of buyouts count
+                            type: integer
+                            format: int32
+                            example: -100
+                          buyoutsSumRubDynamics:
+                            description: Dynamics of buyout sum in rubles
+                            type: integer
+                            format: int32
+                            example: -100
+                          cancelCountDynamics:
+                            description: Dynamics of canceled items count
+                            type: integer
+                            format: int32
+                            example: 0
+                          cancelSumRubDynamics:
+                            description: Dynamics of canceled items sum in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgOrdersCountPerDayDynamics:
+                            type: integer
+                            format: int32
+                            example: 0
+                            description: Dynamics of average daily order count
+                          avgPriceRubDynamics:
+                            type: integer
+                            format: int32
+                            example: -100
+                            description: Dynamics of average price for products. Discounts
+                              for promotions and WB discounts are considered.
+                          conversions:
+                            description: Conversions
+                            type: object
+                            properties:
+                              addToCartPercent:
+                                description: Conversion to Cart, % (Percentage of
+                                  visitors who, after opening the product card, added
+                                  the item to the cart)
+                                type: integer
+                                format: int32
+                                example: 0
+                              cartToOrderPercent:
+                                description: Conversion to Order, % (Percentage of
+                                  visitors who, after adding an item to the cart,
+                                  completed the purchase)
+                                type: integer
+                                format: int32
+                                example: 0
+                              buyoutsPercent:
+                                description: Buyout Percentage, % (Percentage of visitors
+                                  who ordered a product and successfully completed
+                                  the purchase. Excludes items still in transit to
+                                  the buyer.)
+                                type: integer
+                                format: int32
+                                example: -100
+                  stocks:
+                    description: Inventory
+                    type: object
+                    properties:
+                      stocksMp:
+                        description: MP Inventory, units (Total quantity of inventory
+                          at the seller's warehouse)
+                        type: integer
+                        format: int32
+                        example: 0
+                      stocksWb:
+                        description: Wildberries Warehouse Inventory (Total quantity
+                          of inventory at Wildberries warehouses)
+                        type: integer
+                        format: int32
+                        example: 0
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          description: Error description
+          type: string
+          example: ''
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+    NmReportGroupedResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            page:
+              description: Page
+              type: integer
+              format: int32
+              example: 1
+            isNextPage:
+              description: Is there a next page (false - no, true - yes)?
+              type: boolean
+            groups:
+              type: array
+              items:
+                type: object
+                properties:
+                  brandName:
+                    description: Brand name
+                    type: string
+                    example: Some
+                  tags:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          description: Numeric tag identifier
+                          type: integer
+                          format: int32
+                          example: 123
+                        name:
+                          description: Tag name
+                          type: string
+                          example: Sale
+                  object:
+                    type: object
+                    description: Item
+                    properties:
+                      id:
+                        description: Item Identifier
+                        type: integer
+                        format: int32
+                        example: 1668
+                      name:
+                        type: string
+                        example: Hair Waxes
+                        description: Item Name
+                  statistics:
+                    type: object
+                    properties:
+                      selectedPeriod:
+                        description: Requested period
+                        type: object
+                        properties:
+                          begin:
+                            description: Start of the Period
+                            type: string
+                            example: 2023-10-04 20:05:32
+                          end:
+                            description: End of the Period
+                            type: string
+                            example: 2024-03-01 20:05:32
+                          openCardCount:
+                            description: Number of clicks on product cards
+                            type: integer
+                            format: int32
+                            example: 0
+                          addToCartCount:
+                            description: Added to cart, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          ordersCount:
+                            description: Number of ordered items, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          ordersSumRub:
+                            description: Ordered amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          buyoutsCount:
+                            description: Number of purchased items, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          buyoutsSumRub:
+                            description: Purchase amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          cancelCount:
+                            description: Number of canceled items, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          cancelSumRub:
+                            description: Canceled amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgPriceRub:
+                            description: Average price in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgOrdersCountPerDay:
+                            description: Average number of orders per day, pieces
+                            type: integer
+                            format: int32
+                            example: 0
+                          conversions:
+                            description: Conversions
+                            type: object
+                            properties:
+                              addToCartPercent:
+                                type: integer
+                                format: int32
+                                example: 0
+                                description: Conversion to cart, % (What percentage
+                                  of visitors, who opened the product card, added
+                                  the product to the cart)
+                              cartToOrderPercent:
+                                type: integer
+                                format: int32
+                                example: 0
+                                description: Conversion to order, % (What percentage
+                                  of visitors, who added the product to the cart,
+                                  placed an order)
+                              buyoutsPercent:
+                                type: integer
+                                format: int32
+                                example: 0
+                                description: Buyout percentage, % (What percentage
+                                  of visitors, who ordered the product, actually purchased
+                                  it. Excluding products still being delivered to
+                                  the buyer)
+                      previousPeriod:
+                        description: Statistics for the previous 30 days
+                        type: object
+                        properties:
+                          begin:
+                            description: Start of the Period
+                            type: string
+                            example: 2023-11-04 20:05:31
+                          end:
+                            description: End of the Period
+                            type: string
+                            example: 2024-03-01 20:05:31
+                          openCardCount:
+                            description: Number of clicks on product cards
+                            type: integer
+                            format: int32
+                            example: 466
+                          addToCartCount:
+                            description: Added to cart, pieces
+                            type: integer
+                            format: int32
+                            example: 72
+                          ordersCount:
+                            description: Number of ordered items, pieces
+                            type: integer
+                            format: int32
+                            example: 84
+                          ordersSumRub:
+                            description: Ordered amount in rubles
+                            type: number
+                            example: 127060.42
+                          buyoutsCount:
+                            description: Number of purchased items, pieces
+                            type: integer
+                            format: int32
+                            example: 69
+                          buyoutsSumRub:
+                            description: Purchase amount in rubles
+                            type: number
+                            example: 104898.42
+                          cancelCount:
+                            description: Number of canceled items, pieces
+                            type: integer
+                            format: int32
+                            example: 13
+                          cancelSumRub:
+                            description: Canceled amount in rubles
+                            type: integer
+                            format: int32
+                            example: 0
+                          avgPriceRub:
+                            description: Average price in rubles
+                            type: number
+                            example: 1562.65
+                          avgOrdersCountPerDay:
+                            description: Average number of orders per day, pieces
+                            type: number
+                            example: 0.72
+                          conversions:
+                            description: Conversions
+                            type: object
+                            properties:
+                              addToCartPercent:
+                                type: number
+                                example: 15.5
+                                description: Conversion to cart, % (What percentage
+                                  of visitors, who opened the product card, added
+                                  the product to the cart)
+                              cartToOrderPercent:
+                                type: number
+                                example: 116.7
+                                description: Conversion to order, % (What percentage
+                                  of visitors, who added the product to the cart,
+                                  placed an order)
+                              buyoutsPercent:
+                                description: Buyout percentage, % (What percentage
+                                  of visitors, who ordered the product, actually purchased
+                                  it. Excluding products still being delivered to
+                                  the buyer)
+                                type: number
+                                example: 84.1
+                  periodComparison:
+                    description: Comparison of two periods, in percentages
+                    type: object
+                    properties:
+                      openCardDynamics:
+                        description: Dynamics of clicks on product cards
+                        type: integer
+                        format: int32
+                        example: -100
+                      addToCartDynamics:
+                        description: Dynamics of additions to cart
+                        type: integer
+                        format: int32
+                        example: -100
+                      ordersCountDynamics:
+                        description: Dynamics of order quantity
+                        type: integer
+                        format: int32
+                        example: -100
+                      ordersSumRubDynamics:
+                        description: Dynamics of order amounts in rubles
+                        type: integer
+                        format: int32
+                        example: -100
+                      buyoutsCountDynamics:
+                        description: Dynamics of buyouts, pieces
+                        type: integer
+                        format: int32
+                        example: -100
+                      buyoutsSumRubDynamics:
+                        description: Dynamics of buyout amounts in rubles
+                        type: integer
+                        format: int32
+                        example: -100
+                      cancelCountDynamics:
+                        description: Dynamics of canceled items, pieces
+                        type: integer
+                        format: int32
+                        example: 0
+                      cancelSumRubDynamics:
+                        description: Dynamics of canceled amounts in rubles
+                        type: integer
+                        format: int32
+                        example: 0
+                      avgOrdersCountPerDayDynamics:
+                        type: integer
+                        format: int32
+                        example: 0
+                        description: Dynamics of the average number of orders per
+                          day
+                      avgPriceRubDynamics:
+                        type: integer
+                        format: int32
+                        example: -100
+                        description: 'Dynamics of the average price of products. Discounts
+                          for promotions and WB discounts are taken into account.
+
+                          '
+                      conversions:
+                        description: Conversions
+                        type: object
+                        properties:
+                          addToCartPercent:
+                            description: Conversion to cart, % (What percentage of
+                              visitors, who opened the product card, added the product
+                              to the cart)
+                            type: integer
+                            format: int32
+                            example: -100
+                          cartToOrderPercent:
+                            description: Conversion to order, % (What percentage of
+                              visitors, who added the product to the cart, placed
+                              an order)
+                            type: integer
+                            format: int32
+                            example: -100
+                          buyoutsPercent:
+                            description: Buyout percentage, % (What percentage of
+                              visitors, who ordered the product, actually purchased
+                              it. Excluding products still being delivered to the
+                              buyer)
+                            type: integer
+                            format: int32
+                            example: -100
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          description: Error description
+          type: string
+          example: ''
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+    NmReportDetailHistoryResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              nmID:
+                type: integer
+                format: int32
+                example: 1234567
+                description: WB article
+              imtName:
+                type: string
+                example: Product Name
+                description: Product Name
+              vendorCode:
+                type: string
+                example: supplierVendor
+                description: Vendor SKU
+              history:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    dt:
+                      type: string
+                      format: date
+                      example: 2023-06-20
+                      description: Date
+                    openCardCount:
+                      type: integer
+                      format: int32
+                      example: 26
+                      description: Number of clicks on the product card
+                    addToCartCount:
+                      type: integer
+                      format: int32
+                      example: 1
+                      description: Added to cart, pieces
+                    ordersCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of ordered items, pieces
+                    ordersSumRub:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Ordered amount in rubles
+                    buyoutsCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of purchased items, pieces
+                    buyoutsSumRub:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Purchase amount in rubles
+                    buyoutPercent:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Buyout percentage, % (What percentage of visitors,
+                        who ordered the product, actually purchased it. Excluding
+                        products still being delivered to the buyer)
+                    addToCartConversion:
+                      type: number
+                      example: 3.8
+                      description: Conversion to cart, % (What percentage of visitors,
+                        who opened the product card, added the product to the cart)
+                    cartToOrderConversion:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Conversion to order, % (What percentage of visitors,
+                        who added the product to the cart, placed an order)
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          description: Error description
+          type: string
+          example: ''
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+    NmReportGroupedHistoryResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              object:
+                description: Item
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    format: int32
+                    example: 358
+                    description: Item Identifier
+                  name:
+                    type: string
+                    example: Shampoos
+                    description: Item Name
+              brandName:
+                type: string
+                example: Some
+                description: Brand name
+              tag:
+                description: Tag
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    format: int32
+                    example: 123
+                    description: Numeric tag identifier
+                  name:
+                    type: string
+                    example: Sale
+                    description: Tag name
+              history:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    dt:
+                      type: string
+                      format: date
+                      example: 2023-06-21
+                    openCardCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of clicks on the product card
+                    addToCartCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Added to cart, pieces
+                    ordersCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of ordered items, pieces
+                    ordersSumRub:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Ordered amount in rubles
+                    buyoutsCount:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Number of purchased items, pieces
+                    buyoutsSumRub:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Purchase amount in rubles
+                    buyoutPercent:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Buyout percentage, % (What percentage of visitors,
+                        who ordered the product, actually purchased it. Excluding
+                        products still being delivered to the buyer)
+                    addToCartConversion:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Conversion to cart, % (What percentage of visitors,
+                        who opened the product card, added the product to the cart)
+                    cartToOrderConversion:
+                      type: integer
+                      format: int32
+                      example: 0
+                      description: Conversion to order, % (What percentage of visitors,
+                        who added the product to the cart, placed an order)
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          description: Error description
+          type: string
+          example: ''
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+    responseError:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+          example: null
+        error:
+          description: Error flag
+          type: boolean
+          example: true
+        errorText:
+          description: Error description
+          type: string
+          example: Error Text
+        additionalErrors:
+          description: Additional errors
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                description: The structure where the error occurred
+                type: string
+              description:
+                description: Description
+                type: string
+    ExciseReportRequest:
+      type: object
+      properties:
+        countries:
+          type: array
+          description: 'Country code in according with ISO 3166-2. Set the empty parameter
+            to get data without filters by country
+
+            '
+          items:
+            type: string
+            enum:
+              - AM
+              - BY
+              - KG
+              - KZ
+              - RU
+              - UZ
+      example:
+        countries:
+          - AM
+          - RU
+    ExciseReportResponse:
+      type: object
+      properties:
+        response:
+          $ref: '#/components/schemas/models.ExciseReportResponse'
+    models.ExciseReportResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/models.ExciseReportResponseData'
+    models.ExciseReportResponseData:
+      type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+            description: Buyer's country
+            example: Россия
+          price:
+            type: number
+            description: Price including VAT
+            example: 100
+          currency_name_short:
+            type: string
+            description: Currency
+            example: AMD
+          excise_short:
+            type: string
+            description: Labeling code
+            example: 0102900254680370215_Re/=lSbNiGD
+          barcode:
+            type: string
+            description: Barcode
+            example: 2038893425820
+          nm_id:
+            type: integer
+            description: Wildberries article
+            example: 169085355
+          operation_type_id:
+            type: integer
+            description: "Operation type, if exists:\n\n  * `1` — withdraw from circulation\n\
+              \  * `2` — return to sale\n"
+            example: 1
+          fiscal_doc_number:
+            type: integer
+            description: 'Receipt number, if exists
+
+              '
+            example: 12345678
+          fiscal_dt:
+            type: string
+            description: Date in the receipt, if exists, YYYY-MM-DD
+            example: 2024-01-01
+          fiscal_drive_number:
+            type: string
+            description: 'Fiscal storage number, if exists
+
+              '
+          rid:
+            type: integer
+            description: '`Rid`
+
+              '
+            example: 606217433440
+          srid:
+            type: string
+            description: '`Srid`
+
+              '
+            example: 7513432034713632943.1.0
+    ResponsePaidStorage:
+      type: array
+      items:
+        type: object
+        properties:
+          date:
+            type: string
+            description: Date
+          logWarehouseCoef:
+            type: integer
+            description: Logistics and storage coefficient
+          officeId:
+            type: integer
+            description: Warehouse ID
+          warehouse:
+            type: string
+            description: Warehouse name
+          warehouseCoef:
+            type: number
+            description: Warehouse coefficient
+          giId:
+            type: integer
+            description: Shipment ID
+          chrtId:
+            type: integer
+            description: Size ID
+          size:
+            type: string
+            description: Size (`techSize` in product card)
+          barcode:
+            type: string
+            description: Barcode
+          subject:
+            type: string
+            description: Subject (subcategory)
+          brand:
+            type: string
+            description: Brand
+          vendorCode:
+            type: string
+            description: Seller's article
+          nmId:
+            type: integer
+            description: Wildberries article
+          volume:
+            type: number
+            description: Product volume
+          calcType:
+            type: string
+            description: Calculation type
+          warehousePrice:
+            type: number
+            description: Storage price
+          barcodesCount:
+            type: integer
+            description: Chargeable  product units in the warehouse, in the last 24
+              hours
+          palletPlaceCode:
+            type: integer
+            description: Pallet place code
+          palletCount:
+            type: number
+            description: Количество палет
+      example:
+        - date: '2023-10-01'
+          'logWarehouseCoef ': 0
+          officeId: 507
+          warehouse: Коледино
+          warehouseCoef: 1.7
+          giId: 123456
+          chrt_id: 1234567
+          size: '0'
+          barcode: ''
+          subject: Маски одноразовые
+          brand: My Cool Brand
+          vendorCode: '123456'
+          nmId: 1234567
+          volume: 12
+          calcType: 'короба: без габаритов'
+          warehousePrice: 7.65
+          barcodesCount: 1
+          palletPlaceCode: 0
+          palletCount: 0
+    GetTasksRequest:
+      type: object
+      properties:
+        ids:
+          type: array
+          description: Tasks ID
+          minItems: 1
+          maxItems: 50
+          items:
+            type: string
+            format: uuid
+    GetTasksResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/GetTasksResponseData'
+    GetTasksResponseData:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Task ID
+        status:
+          type: string
+          description: "Task status:\n  \n  * `new`\n  * `processing`\n  * `done`\
+            \ — report is generated\n  * `purged` — report is deleted\n  * `canceled`\
+            \ — declined\n"
+    CreateTaskRequest:
+      discriminator:
+        propertyName: type
+        mapping:
+          paid_storage: '#/components/schemas/CreateTaskRequestPaidStorage'
+      oneOf:
+        - $ref: '#/components/schemas/CreateTaskRequestPaidStorage'
+    CreateTaskResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/CreateTaskResponseData'
+    CreateTaskResponseData:
+      type: object
+      properties:
+        taskId:
+          type: string
+          description: Task ID
+    GetTasksResponseBytesError:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            tasks:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  last_proc_err:
+                    type: string
+                  status:
+                    type: string
+  parameters:
+    DateFrom:
+      in: query
+      name: dateFrom
+      required: true
+      description: Report period start, YYYY-MM-DD
+      schema:
+        type: string
+    DateTo:
+      in: query
+      name: dateTo
+      required: true
+      description: Report period date, YYYY-MM-DD
+      schema:
+        type: string
+    Date:
+      in: query
+      name: date
+      description: "Date from report period, `YYYY-MM-DD`, for example `2023-12-01`.\
+        \    \nTo get all data from August 2023 do not use this parameter\n"
+      schema:
+        type: string
+  responses:
+    NotFound:
+      description: No user found
+    Unauthorized:
+      description: User is not authorized
+    AccessDenied:
+      description: Access denied
+    InternalServerError:
+      description: Internal error
+    400Response:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            type: string
+            example: Bad 'dateFrom' param
+    200SuccessDownloadedFiles:
+      description: Success
+      content:
+        application/json:
+          schema:
+            oneOf:
+              - $ref: '#/components/schemas/ResponsePaidStorage'
+    400BadRequest:
+      description: Incorrect request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    429TooManyRequests:
+      description: Too many requests
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    500InternalError:
+      description: Internal error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    404EntityNotFound:
+      description: Path not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    SuccessTaskResponse:
+      description: Self-purchase deductions
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              details:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    nmID:
+                      type: integer
+                      description: Wildberries article
+                      example: 123456789
+                    sum:
+                      type: integer
+                      description: Order sum
+                      example: 3540
+                    currency:
+                      type: string
+                      description: Currency
+                      example: RUB
+                    dateFrom:
+                      type: string
+                      description: Report start date
+                      example: 2023-08-23
+                    dateTo:
+                      type: string
+                      description: Report end date
+                      example: 2023-08-29
+paths:
+  /content/v1/analytics/nm-report/detail:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+      - url: https://suppliers-api.wb.ru
+    post:
+      tags:
+        - Sales funnel
+      summary: Retrieving product card (PC) statistics for a selected period, based
+        on nmID/items/brands/tags.
+      description: 'Retrieving statistics for product cards (PC) for a selected period,
+        based on nmID/items/brands/tags.<br> The fields `brandNames`, `objectIDs`,
+        `tagIDs`, `nmIDs` can be empty, in which case statistics for all product cards
+        from the seller are included in the response.<br> When multiple fields are
+        selected, the response includes data for cards that have all the selected
+        fields. Pagination is supported. <br> <b>3 requests per minute are allowed.</b>
+
+        '
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NmReportDetailRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NmReportDetailResponse'
+        '400':
+          description: Invalid Request Format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '403':
+          description: Access Denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+  /content/v1/analytics/nm-report/grouped:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+      - url: https://suppliers-api.wb.ru
+    post:
+      tags:
+        - Sales funnel
+      summary: Retrieving product card statistics for a period, grouped by items,
+        brands, and tags
+      description: 'Retrieving statistics for product cards for a period, grouped
+        by items, brands, and tags.<br> The fields `brandNames`, `objectIDs`, `tagIDs`
+        can be left empty, in which case grouping is done for all product cards from
+        the seller. <br> <b>3 requests per minute are allowed.</b>
+
+        '
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NmReportGroupedRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NmReportGroupedResponse'
+        '400':
+          description: Invalid Request Format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '403':
+          description: Access Denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+  /content/v1/analytics/nm-report/detail/history:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+      - url: https://suppliers-api.wb.ru
+    post:
+      tags:
+        - Sales funnel
+      summary: Retrieving product card statistics by days/weeks/months for selected
+        nmID(s)
+      description: 'Retrieving product card statistics by days/weeks/months for selected
+        `nmID`(s). <br> <b>3 requests per minute are allowed.</b>
+
+        '
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NmReportDetailHistoryRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NmReportDetailHistoryResponse'
+        '400':
+          description: Invalid Request Format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '403':
+          description: Access Denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+  /content/v1/analytics/nm-report/grouped/history:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+      - url: https://suppliers-api.wb.ru
+    post:
+      tags:
+        - Sales funnel
+      summary: Retrieving product card statistics by days/weeks/months for a period,
+        grouped by items, brands, and tags
+      description: 'Retrieving product card statistics by days/weeks/months for a
+        period, grouped by items, brands, and tags.<br> The fields `brandNames`, `objectIDs`,
+        `tagIDs` can be left empty, in which case grouping is done for all seller''s
+        product cards.<br> In the request, the product, brand, and tag count should
+        not exceed 16. <br> <b>3 requests per minute are allowed.</b>
+
+        '
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NmReportGroupedHistoryRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NmReportGroupedHistoryResponse'
+        '400':
+          description: Invalid Request Format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '403':
+          description: Access Denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responseError'
+  /api/v1/analytics/excise-report:
+    servers:
+      - url: https://seller-analytics-api.wildberries.ru
+    post:
+      tags:
+        - Products with mandatory labeling
+      summary: Report on products with mandatory labeling
+      description: 'Returns operations with labelable products. Maximum 10 requests
+        per 5 hours.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/DateFrom'
+        - $ref: '#/components/parameters/DateTo'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExciseReportRequest'
+        required: false
+      responses:
+        200:
+          description: Report
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExciseReportResponse'
+        400:
+          $ref: '#/components/responses/400Response'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v1/paid_storage:
+    servers:
+      - url: https://seller-analytics-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Paid storage
+      summary: Generate the report
+      description: 'Create a task to generate a report. Maximum report period — 8 days.
+
+        Maximum 1 request per minute
+
+        '
+      parameters:
+        - name: dateFrom
+          in: query
+          schema:
+            type: string
+            example: '2022-01-01'
+          description: "Start of the report period, RFC3339 format. Date or date and\
+            \ time, for example:\n\n  * `2019-06-20`\n  * `2019-06-20T23:59:59`\n\
+            \  * `2019-06-20T00:00:00.12345`\n  * `2017-03-25T00:00:00`\n"
+        - name: dateTo
+          in: query
+          schema:
+            type: string
+            example: '2022-01-09'
+          description: "End of the report period, RFC3339 format. Date or date and\
+            \ time, for example:\n\n  * `2019-06-20`\n  * `2019-06-20T23:59:59`\n\
+            \  * `2019-06-20T00:00:00.12345`\n  * `2017-03-25T00:00:00`\n"
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateTaskResponse'
+              examples:
+                CreateResponseData:
+                  $ref: '#/components/examples/CreateResponseData'
+        400:
+          description: Incorrect request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                errors:
+                  - dateTo should be greater dateFrom
+        404:
+          $ref: '#/components/responses/404EntityNotFound'
+        429:
+          description: Too many requests
+        500:
+          $ref: '#/components/responses/500InternalError'
+  /api/v1/paid_storage/tasks/{task_id}/status:
+    servers:
+      - url: https://seller-analytics-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Paid storage
+      summary: Check the status
+      description: Returns the status of task. Maximum 1 request per minute
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema:
+            type: string
+            example: 06e06887-9d9f-491f-b16a-bb1766fcb8d2
+          description: 'Task ID
+
+            '
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetTasksResponse'
+              examples:
+                GetTasksResponseData:
+                  $ref: '#/components/examples/GetTasksResponseData'
+        400:
+          $ref: '#/components/responses/400BadRequest'
+        404:
+          $ref: '#/components/responses/404EntityNotFound'
+        429:
+          description: Too many requests
+        500:
+          $ref: '#/components/responses/500InternalError'
+  /api/v1/paid_storage/tasks/{task_id}/download:
+    servers:
+      - url: https://seller-analytics-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Paid storage
+      summary: Get the report
+      description: Returns the report by task ID. Maximum 1 request per minute
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema:
+            type: string
+            example: 06e06887-9d9f-491f-b16a-bb1766fcb8d2
+          description: 'Task ID
+
+            '
+      responses:
+        200:
+          description: Report
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponsePaidStorage'
+              example:
+                - date: '2023-10-01'
+                  'logWarehouseCoef ': 0
+                  officeId: 507
+                  warehouse: Коледино
+                  warehouseCoef: 1.7
+                  giId: 123456
+                  chrt_id: 1234567
+                  size: '0'
+                  barcode: ''
+                  subject: Маски одноразовые
+                  brand: 1000 Каталог
+                  vendorCode: '567383'
+                  nmId: 1234567
+                  volume: 12
+                  calcType: 'короба: без габаритов'
+                  warehousePrice: 7.65
+                  barcodesCount: 1
+                  palletPlaceCode: 0
+                  palletCount: 0
+        400:
+          $ref: '#/components/responses/400BadRequest'
+        404:
+          $ref: '#/components/responses/404EntityNotFound'
+        429:
+          description: Слишком много запросов
+        500:
+          $ref: '#/components/responses/500InternalError'
+  /api/v1/analytics/antifraud-details:
+    servers:
+      - url: https://seller-analytics-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Deductions
+      summary: Self-purchases
+      description: 'Returns report with self-purchase deductions. The report is generated
+        on Wednesdays at 7:00 UTC+4 and contains weekly data. Also you can get all
+        data starting from August 2023.
+
+        <br/><br/>
+
+        Self-purchase deduction is 30% of product price. Minimum deduction is 100,000 ₽,
+        if total product cost more than 100,000 ₽ for the week.
+
+        <br/><br/>
+
+        Maximum 10 requests per 100 minutes.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Date'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessTaskResponse'
+        400:
+          description: Incorrect request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                errors:
+                  - date year should be greater or equal 2023
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        500:
+          $ref: '#/components/responses/InternalServerError'
