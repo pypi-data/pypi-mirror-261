@@ -1,0 +1,9 @@
+xueqiu_funds/__init__.py,sha256=LLmX-qCatWzfJ-2mC8brWCEmwrTVJOiGJMvtoapeBUA,323
+xueqiu_funds/client.py,sha256=ADQMllLHxua2C1OtW8SK-ul3BqKprVCEQJYO0Zwd1z8,913
+xueqiu_funds/middleware/__init__.py,sha256=AdTsfLj96XXpFq9KtiIzJyA0Zgwql2uG109v0nF1gNU,139
+xueqiu_funds/middleware/fund_detail.py,sha256=7RTk8U1YDIx_Yo8UGZKKjI4UuDGmjO5MQ5Ris8vwEsk,3440
+xueqiu_funds/middleware/fund_intro.py,sha256=71PV6rhjjT5v-LhMbJIVyWSmhS9vsJM3A_X29MgBfPs,993
+xueqiu_funds-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+xueqiu_funds-0.0.1.dist-info/METADATA,sha256=H5ZDhh7bx7fnweeuh1AE-PhCWDahVCk21yiwAin9gf0,1264
+xueqiu_funds-0.0.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+xueqiu_funds-0.0.1.dist-info/RECORD,,
