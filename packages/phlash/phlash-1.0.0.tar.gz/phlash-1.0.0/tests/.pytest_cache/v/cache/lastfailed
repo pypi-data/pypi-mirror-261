@@ -1,0 +1,7 @@
+{
+  "test_mcmc.py::test_sp[0]": true,
+  "test_mcmc.py::test_sp[1]": true,
+  "test_mcmc.py::test_sp[2]": true,
+  "test_mcmc.py::test_functional1": true,
+  "test_mcmc.py::test_elpd_bug": true
+}
