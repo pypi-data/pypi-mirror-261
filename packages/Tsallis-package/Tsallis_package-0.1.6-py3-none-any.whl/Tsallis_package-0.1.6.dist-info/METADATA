@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Tsallis_package
+Version: 0.1.6
+Summary: A package for all mathematics and physics concerning Tsallis statistics
+Author-email: "Hermes A. V. Urquijo" <hvurquijo@duck.com>
+Project-URL: Homepage, https://github.com/havurquijo/Tsallis_package
+Project-URL: Issues, https://github.com/havurquijo/Tsallis_package/Issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Information about the Tsallis tool package 
+
+## About
+
+###
+
+
+## Installation
+
+
+
+
+You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
