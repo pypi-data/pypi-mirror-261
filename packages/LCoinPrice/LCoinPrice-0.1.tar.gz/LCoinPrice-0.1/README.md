@@ -1,0 +1,27 @@
+# CoinPrice
+very low-level library.
+version = 0.1
+
+## Functions
+Code to import lib:
+```Python
+from LCoinPrice import COIN
+```
+Code to initialization:
+```Python
+priceC = COIN("coin", "currency")
+```
+in this code write coin and currency. 
+
+
+Avaible coins: _ton_, _btc_
+
+Avaible currency: _uah_, _rub_, _usdt_
+
+
+Code for get price:
+```Python
+print(priceC.GET())
+```
+
+GET method give you a price.

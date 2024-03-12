@@ -1,0 +1,9 @@
+README.md
+setup.py
+LCoinPrice/CoinPrice.py
+LCoinPrice/__init__.py
+LCoinPrice.egg-info/PKG-INFO
+LCoinPrice.egg-info/SOURCES.txt
+LCoinPrice.egg-info/dependency_links.txt
+LCoinPrice.egg-info/requires.txt
+LCoinPrice.egg-info/top_level.txt
