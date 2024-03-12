@@ -1,0 +1,11 @@
+geordpy/__init__.py,sha256=o2XilSxlaB-2jhQXwE-IEITZILQlzl3Uf0hfw0woUU4,120
+geordpy/_version.py,sha256=Pzm_wGeacN6kvlUFVeNsSBsLYzE2qHGER894q1fJlTo,495
+geordpy/example.py,sha256=PPzI9wbk1ge3u6TN2BXsX7U1whJ79qKooDXflKlkNFM,743
+geordpy/geordpy.py,sha256=U5QemnrKof6xomxBThmCYuEc9-xH65hlWVI6f7Q4h_s,4709
+geordpy/great_circle.py,sha256=43r0-VcdMY2IgwgM_HzhcSrnTP9Gi26TTlzeww7YkYM,1786
+geordpy/rhumb_line.py,sha256=f49tgoC1B9ssVg4L53c761zczJk_avb2EKrw3tH6Ves,2385
+geordpy-3.1.dist-info/LICENSE,sha256=-F6KfMsfqoKYV6GVKOsSQgblZ0Ad6YJ_eKtqfWFqhAw,1068
+geordpy-3.1.dist-info/METADATA,sha256=y132FazKQ7JRbDz5CGObPO7o6FPthU_wrT1CbqVXuw8,3910
+geordpy-3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+geordpy-3.1.dist-info/top_level.txt,sha256=G6oN5marTph-L8xJ-wHsRJb8uvmYXsY47swcdR8CzdY,8
+geordpy-3.1.dist-info/RECORD,,
