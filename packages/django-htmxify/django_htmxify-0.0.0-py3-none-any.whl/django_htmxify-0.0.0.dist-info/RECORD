@@ -1,0 +1,12 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+__version__.py,sha256=f0667J7lmml8du7qHvjvbrh8uDGr9AeUsFnZJI9pwLs,445
+djangoaddicts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoaddicts/htmxify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoaddicts/htmxify/apps.py,sha256=-VsBUuRpxl2uo5TlwJD1GifvZQL8bGCTWvqmELuyYls,161
+djangoaddicts/htmxify/mixins.py,sha256=LMB8NMsLSbhOD78XRGJmM2SMwkuYLqkQc1goKVaDB2k,369
+djangoaddicts/htmxify/views.py,sha256=0mxHIiQIWcH_AzvWUZ9fcPhZCqjt9tw0MxEoqvTe-nw,831
+django_htmxify-0.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_htmxify-0.0.0.dist-info/METADATA,sha256=6Vc2TMZzPHYA_fzSAHpX8XoLQ5vUssJg5L2TA3719Ok,45406
+django_htmxify-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_htmxify-0.0.0.dist-info/top_level.txt,sha256=vOz4desZIaxiZ0xmTpoRCDjJitIUg2PlvgJpaceK6eI,35
+django_htmxify-0.0.0.dist-info/RECORD,,
