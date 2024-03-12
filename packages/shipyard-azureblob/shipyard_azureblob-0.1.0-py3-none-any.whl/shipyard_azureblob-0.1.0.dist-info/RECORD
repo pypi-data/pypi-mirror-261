@@ -1,0 +1,12 @@
+shipyard_azureblob/__init__.py,sha256=nf-zMPY1YghNT6Qmzdi8maxzbtxFFaH6nqhoMSBrZgg,39
+shipyard_azureblob/azureblob.py,sha256=FHhOjw8iX7kwljB6iqDD8TQTAnYp2jdmHtgXF2R32PU,710
+shipyard_azureblob/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shipyard_azureblob/cli/authtest.py,sha256=fnscl2PhT1eg-uFMjx8PR3BUJHiJLGG-InvpHb8VAGM,469
+shipyard_azureblob/cli/download.py,sha256=aIsGSPvX_04gxgPyeC0q2gvEJpK8z-zlSujQPAzt41c,7993
+shipyard_azureblob/cli/exit_codes.py,sha256=Svvke06CvVRxlxJI8zohIvYQvF4JnyRmHqhmZdJm_2E,171
+shipyard_azureblob/cli/move.py,sha256=fWc9DRJeD745P250qnNy-pkfsqOzh-zExsILg3I-oWc,6145
+shipyard_azureblob/cli/remove.py,sha256=S5EWSSxfSn_IK3m9VE8I6_DCHn0xgCoeeE_nt1NW36o,4453
+shipyard_azureblob/cli/upload.py,sha256=cs9mkc6g3YXV0TyGER77tKVxwvJ7NaX9lMeRmkxyluA,7944
+shipyard_azureblob-0.1.0.dist-info/METADATA,sha256=ay6OGeKU7m5fIZZAzqR1xaWBuaaqhbWs1X9v1p-z4ME,653
+shipyard_azureblob-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+shipyard_azureblob-0.1.0.dist-info/RECORD,,
