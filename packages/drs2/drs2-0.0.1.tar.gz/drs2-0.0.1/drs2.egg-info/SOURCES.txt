@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./README.md
+drs2/__init__.py
+drs2/drsdb.py
+drs2.egg-info/PKG-INFO
+drs2.egg-info/SOURCES.txt
+drs2.egg-info/dependency_links.txt
+drs2.egg-info/requires.txt
+drs2.egg-info/top_level.txt
