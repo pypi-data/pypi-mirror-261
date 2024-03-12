@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: tcx_extract
+Version: 0.1.0.1
+License-File: LICENSE
+Requires-Dist: ziglang
