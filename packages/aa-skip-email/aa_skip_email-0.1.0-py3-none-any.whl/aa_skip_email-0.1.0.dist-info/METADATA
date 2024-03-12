@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aa-skip-email
+Version: 0.1.0
+Summary: Allows you to skip entering your email after registering via EVE SSO
+Home-page: https://gitlab.com/zima-corp/aa-skip-email
+License: GPL-3.0-or-later
+Author: Boris Talovikov
+Author-email: boris@talovikov.ru
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: allianceauth (>=3.6)
+Project-URL: Repository, https://gitlab.com/zima-corp/aa-skip-email
+Description-Content-Type: text/markdown
+
+
