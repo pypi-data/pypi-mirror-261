@@ -1,0 +1,10 @@
+README.md
+setup.py
+xxlSearch/__init__.py
+xxlSearch/main.py
+xxlSearch.egg-info/PKG-INFO
+xxlSearch.egg-info/SOURCES.txt
+xxlSearch.egg-info/dependency_links.txt
+xxlSearch.egg-info/entry_points.txt
+xxlSearch.egg-info/requires.txt
+xxlSearch.egg-info/top_level.txt

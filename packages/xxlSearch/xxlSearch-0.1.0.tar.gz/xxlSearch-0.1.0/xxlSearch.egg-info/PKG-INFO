@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: xxlSearch
+Version: 0.1.0
+Summary: Search for words in Excel files
+Home-page: https://github.com/willros/xxlSearch
+Author: William Rosenbaum
+Author-email: william.rosenbaum@gmail.com
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas==2.2.1
+Requires-Dist: openpyxl==3.1.2
+
+# xxlSearch
+
+Search for a word withing all Excel files in a folder. 
+
+## Install
+```console
+$ pip install xxlSearch
+```
+
+## Quick start
+```console
+$ xxlSearch -h
+``` 
