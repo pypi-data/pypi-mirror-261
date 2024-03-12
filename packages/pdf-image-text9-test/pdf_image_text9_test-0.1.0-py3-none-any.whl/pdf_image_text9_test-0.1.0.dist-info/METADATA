@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: pdf-image-text9-test
+Version: 0.1.0
+Summary: A python package to generate text from pdf and images
+License: LICENCE
+Keywords: test,dependencies,documentation
+Author: Devesh Singh
+Author-email: devesh.singh@bain.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: filetype (==1.2.0)
+Requires-Dist: pydantic (==2.6.3)
+Requires-Dist: pymupdf (>=1.22.0,<2.0.0)
+Requires-Dist: requests (==2.31.0)
+Description-Content-Type: text/markdown
+
+# Pdf-Image-Text
+
+Get text inside pdf pages with image transcriptions.
+Powered by fitz and OpenAI.
+
+## Instructions
+
+### 1. Installation
+
+pip install pdf-image-text
+
+A library to get data from standalone images and images present inside pdf.
+
+### 2. Initialize
+
+`pdf_to_text = PdfToText(OPEN_AI_KEY='<>', OPEN_AI_VISION_MODEL='<>')`
+
+Note: The parameters are not required if already present in environment variables.
+
+### 3. Load data
+
+#### From file - 
+##### Pdf2Text: `pdf_to_text.load_data(file_name='<Path to file>')`
+##### Image2Text: `image_to_text.load_data(file_name='<Path to file>')`
+
+#### From file object - 
+
+##### Pdf2Text: `pdf_to_text.load_data(file_bytes_object='<file content>')`
+##### Image2Text: `image_to_text.load_data(file_bytes_object='<file content>')`
+
+
+
+### 3. Get output
+
+##### Pdf2Text: 
+`image_filter = ImageFilter(lower_height=<int>, upper_height=<int>, lower_width=<int>, upper_width=<int>)`
+
+`output = pdf_to_text.get_pdf_content(image_filter=image_filter, page_index=<optional field page index>)`
+
+##### Image2Text: 
+`output = image_to_text.get_image_transcription()`
+
+
+
+
