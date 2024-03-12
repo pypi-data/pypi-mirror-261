@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+chatpilot/__init__.py
+chatpilot/chat_agent.py
+chatpilot/config.py
+chatpilot/rag_fusion.py
+chatpilot/version.py
+chatpilot.egg-info/PKG-INFO
+chatpilot.egg-info/SOURCES.txt
+chatpilot.egg-info/dependency_links.txt
+chatpilot.egg-info/entry_points.txt
+chatpilot.egg-info/not-zip-safe
+chatpilot.egg-info/requires.txt
+chatpilot.egg-info/top_level.txt
