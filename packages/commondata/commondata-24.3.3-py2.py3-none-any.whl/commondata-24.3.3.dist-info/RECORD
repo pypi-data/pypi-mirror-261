@@ -1,0 +1,16 @@
+commondata/__init__.py,sha256=fULsjqOWaD8vMn4nUVGthkONLOOCwRPzXY0AKxXf9iY,140
+commondata/countries.py,sha256=OrO_9KUn6lqxKGYSUnrcWPwqhqsc-6HDlM1VQg7h9Ng,52485
+commondata/utils.py,sha256=HJw9nysZLJOlW0CnrIRZKnXqOGVp5Oj7jxny-zhwvzc,2878
+commondata/demonames/african.py,sha256=ztHUmOhxIO7v8q8uzzlc9RnVPsCQsKeNUDgws0oG4JU,6083
+commondata/demonames/bel.py,sha256=txuA5aRI2PKebWds7Rm9M2oTND-_FUT2JwgRVbGroZ4,20295
+commondata/demonames/est.py,sha256=xduL3Cv5-r7CYWrHJqwIkSYpmSIUkIVQwaMIZVLsjoQ,13549
+commondata/demonames/french.py,sha256=m8ikFwcDsO_RnK3rhDZMY4kqgU-63jeqRfcN2hZKukQ,2116
+commondata/demonames/muslim.py,sha256=NrUY6DiYn0yn_QwP8m-LpiE8uKuDqKwKJz58yKJFM24,21814
+commondata/demonames/russian.py,sha256=HejitTQ3j40NP-MXK5x0w9fJMHq2hXCrfXIt_Syaq-s,38232
+commondata/demonames/streets.py,sha256=tTI-elfYSyA0q01dfz3CE81HXO06HJH6QLfNUc1j8q0,60537
+commondata/demonames/ury.py,sha256=RlhoMSpNXwylMRLOEI_8cK9Jo9aGHHtIZSeHatGCAo0,9901
+commondata/places/estonia.py,sha256=v7ICYkbKO5dnKkr12GdutAjcd_KYwZ9FPpWNGZS3IKg,205963
+commondata-24.3.3.dist-info/METADATA,sha256=GB_1Ews_fVP6pZJkfqIqF5zP9Q7TLipcacfwq9rBxgo,49800
+commondata-24.3.3.dist-info/WHEEL,sha256=ccEkY-EGGllEs7ySpwBlD8G4u70wR77CNej8Q6tzIqA,105
+commondata-24.3.3.dist-info/licenses/COPYING,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+commondata-24.3.3.dist-info/RECORD,,
