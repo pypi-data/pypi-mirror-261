@@ -1,0 +1,14 @@
+contacts24/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+contacts24/__main__.py,sha256=m24vi0XmE0QNRoYg2H7j6FBPo82N4DQMksG9GWE8U-M,41
+contacts24/birthdays.py,sha256=chhE4sW-6B1gZQh0ziU26M_ot0CBq3RSj5wM4ggD0DA,192
+contacts24/cli.py,sha256=cbLjWOEE9jSuPQSlLpocvlhvJkXny93KJxLVHJQL35s,46
+contacts24/config.py,sha256=pL470ONpTZiAbeH1nImPS9xAvxHYdQDLnIaCp1mdzyI,83
+contacts24/contacts.py,sha256=_8_f9ovAZaoQwiDmuJjOtaQvaws5nNxYAHBBIOuAWJk,308
+contacts24/db.py,sha256=QVQqelu-Y5AhqNL-VAcI4LSGpVJcniGpyKQaDA9mIjw,767
+contacts24/errors.py,sha256=7BEwYDrjxI-L_N3lEBJx3ciK8bTX0fEy-OBzEn_Bz8s,34
+contacts24/model.py,sha256=7aXS7xppQK9lAdF2fSrcqyXR4Y4fHR6QkpU6IQWHwtw,319
+contacts24/notes.py,sha256=fwj7WbRIk7dmcy1TB9jGVsAkpjqNdoSvI8uxwt4i5b8,116
+contacts24-0.3.0.dist-info/METADATA,sha256=SfarZU5DqrCy9lsnz-IqEt2BJb8IqbgXB-n6N6pABzI,807
+contacts24-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+contacts24-0.3.0.dist-info/entry_points.txt,sha256=8FJJ32Ty4CbhrihOvirpCjF7QrBTGr2mdQhETGy71tU,46
+contacts24-0.3.0.dist-info/RECORD,,
