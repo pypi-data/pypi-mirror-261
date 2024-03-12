@@ -1,0 +1,9 @@
+geopandas>=0.13
+shapely>=2.0
+pyproj
+GDAL>=3.3
+
+[dev]
+pytest
+pytest-cov
+flake8
