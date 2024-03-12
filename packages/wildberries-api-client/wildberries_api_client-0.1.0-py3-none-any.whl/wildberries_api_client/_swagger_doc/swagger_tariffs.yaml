@@ -1,0 +1,335 @@
+openapi: 3.0.0
+info:
+  title: Tariffs
+  version: 1.0.0
+  description: <p>Logistics and storage tariffs. Only for sellers who supply the products
+    on Wildberries warehouse. You can get the tariffs using any token except the token
+    for test environment.</p>
+servers:
+  - url: https://common-api.wildberries.ru
+security:
+  - HeaderApiKey: []
+x-tagGroups:
+  - name: Tariffs
+    tags:
+      - Warehouse factors
+      - Refund value to seller
+paths:
+  /api/v1/tariffs/box:
+    get:
+      summary: Box tariffs
+      tags:
+        - Warehouse factors
+      description: "<p>Returns the cost:</p> <ul>\n  <li>of delivery from Wildberries\
+        \ warehouse or sorting center to the buyer,</li>\n  <li>of delivery from the\
+        \ buyer to the sorting center,</li>\n  <li>of storage on Wildberries warehouse.</li>\n\
+        </ul> <p>For products that you supply in boxes.</p> <p>Maximum 60 requests\
+        \ per minute.</p>\n"
+      parameters:
+        - $ref: '#/components/parameters/Date'
+      responses:
+        200:
+          description: Box tariffs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TariffsBoxResponse'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v1/tariffs/pallet:
+    get:
+      summary: Pallet tariffs
+      tags:
+        - Warehouse factors
+      description: "<p>Returns the cost:</p> <ul>\n  <li>of delivery from Wildberries\
+        \ warehouse to the buyer,</li>\n  <li>of delivery from the buyer to Wildberries\
+        \ warehouse,</li>\n  <li>of storage on Wildberries warehouse.</li>\n</ul>\
+        \ <p>For products that you supply on pallets.</p> <p>Maximum 60 requests per\
+        \ minute.</p>\n"
+      parameters:
+        - $ref: '#/components/parameters/Date'
+      responses:
+        200:
+          description: Pallet tariffs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TariffsPalletResponse'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v1/tariffs/return:
+    get:
+      summary: Return tariffs
+      tags:
+        - Refund value to seller
+      description: <p>Returns the cost:</p> <ul> <li>of transfer from Wildberries
+        warehouse or sorting center to the seller,</li> <li>of transfer of returned
+        products that were not picked up by seller.</li> </ul> <p>Maximum 60 requests
+        per minute.</p>
+      parameters:
+        - $ref: '#/components/parameters/Date'
+      responses:
+        200:
+          description: Return tariffs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReturnTariffsResponse'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+components:
+  securitySchemes:
+    HeaderApiKey:
+      type: apiKey
+      name: Authorization
+      in: header
+  parameters:
+    Date:
+      in: query
+      name: date
+      required: true
+      description: Date, YYYY-MM-DD
+      schema:
+        type: string
+  schemas:
+    models.TariffsBoxResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/models.WarehousesBoxRates'
+    models.WarehousesBoxRates:
+      type: object
+      properties:
+        dtFromMin:
+          type: string
+          description: Tariff start date
+          example: 2024-01-23
+        dtNextBox:
+          type: string
+          description: Start date of next tariff
+          example: 2024-02-01
+        dtTillMax:
+          type: string
+          description: Tariff next date
+          example: 2024-01-31
+        warehouseList:
+          type: array
+          items:
+            $ref: '#/components/schemas/models.WarehouseBoxRates'
+          nullable: true
+          description: Box tariffs grouped by Wildberries warehouses
+    models.WarehouseBoxRates:
+      type: object
+      properties:
+        boxDeliveryAndStorageExpr:
+          type: string
+          description: Coefficient, %. The delivery and storage cost is multiplied
+            by it. All prices contain final data, with this coefficient
+          example: 20
+        boxDeliveryBase:
+          type: string
+          description: Delivery of 1 liter, ₽
+          example: 200
+        boxDeliveryLiter:
+          type: string
+          description: Delivery of each next liter, ₽
+          example: 50
+        boxStorageBase:
+          type: string
+          description: Storage of 1 liter, ₽
+          example: 200
+        boxStorageLiter:
+          type: string
+          description: Storage of each next liter, ₽
+          example: 50
+        warehouseName:
+          type: string
+          description: Warehouse
+    models.TariffsPalletResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/models.WarehousesPalletRates'
+    models.WarehousesPalletRates:
+      type: object
+      properties:
+        dtFromMin:
+          type: string
+          description: Tariff start date
+          example: 2024-01-23
+        dtNextPallet:
+          type: string
+          description: Start date of next tariff
+          example: 2024-02-01
+        dtTillMax:
+          type: string
+          description: Tariff end date
+          example: 2024-01-31
+        warehouseList:
+          type: array
+          items:
+            $ref: '#/components/schemas/models.WarehousePalletRates'
+          nullable: true
+          description: Pallet tariffs grouped by Wildberries warehouses
+    models.WarehousePalletRates:
+      type: object
+      properties:
+        palletDeliveryExpr:
+          type: string
+          description: Delivery coefficient, %. The delivery cost is multiplied by
+            it. All prices contain final data, with this coefficient
+          example: 20
+        palletDeliveryValueBase:
+          type: string
+          description: Delivery of 1 liter, ₽
+          example: 150
+        palletDeliveryValueLiter:
+          type: string
+          description: Delivery of each next liter, ₽
+          example: 50
+        palletStorageExpr:
+          type: string
+          description: Storage coefficient, %. The storage cost is multiplied by it.
+            All prices contain final data, with this coefficient
+          example: 20
+        palletStorageValueExpr:
+          type: string
+          description: Storage of one pallet, ₽
+          example: 300
+        warehouseName:
+          type: string
+          description: Warehouse
+          example: Коледино
+    models.ReturnTariffsResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/models.WarehousesReturnRates'
+    models.WarehousesReturnRates:
+      type: object
+      properties:
+        dtNextDeliveryDumpKgt:
+          type: string
+          description: Start date of next tariff, for delivery of large-sized products
+          example: 2024-02-01
+        dtNextDeliveryDumpSrg:
+          type: string
+          description: Start date of next tariff, for delivery of unknown products
+          example: 2024-02-01
+        dtNextDeliveryDumpSup:
+          type: string
+          description: Start date of next tariff, for common delivery
+          example: 2024-02-01
+        warehouseList:
+          type: array
+          items:
+            $ref: '#/components/schemas/models.WarehouseReturnRates'
+          nullable: true
+          description: Return tariffs grouped by Wildberries warehouses
+    models.WarehouseReturnRates:
+      type: object
+      properties:
+        deliveryDumpKgtOfficeBase:
+          type: string
+          description: <p>Return to the pick-up point, per 1 liter, ₽. Used  for large-sized
+            products, when:</p> <ul> <li>the seller takes products out from Wildberries
+            warehouse,</li> <li>defective products was found on the warehouse,</li>
+            <li>buyer returns products but we can not sell them again.</li> </ul>
+          example: 150
+        deliveryDumpKgtOfficeLiter:
+          type: string
+          description: Return to the pick-up point, per each next liter, ₽
+          example: 50
+        deliveryDumpKgtReturnExpr:
+          type: string
+          description: Delivery of large-sized and unknown products, to Wildberries
+            warehouse. Per 1 product, ₽. Used when products were not picked up during
+            7 days
+          example: 200
+        deliveryDumpSrgOfficeExpr:
+          type: string
+          description: Return of unknown products to the pick-up point. Per 1 product, ₽
+          example: 200
+        deliveryDumpSrgReturnExpr:
+          type: string
+          description: <p>Transfer of unknown products, that were not picked up by
+            seller, to the Wildberries warehouse. Per 1 product, ₽.</p> <p>Used when
+            products were not picked up during 7 days</p>
+          example: 200
+        deliveryDumpSupCourierBase:
+          type: string
+          description: Return by courier, per 1 liter, ₽. This tariff is not used
+            now
+          example: 150
+        deliveryDumpSupCourierLiter:
+          type: string
+          description: Return by courier, per each next liter, ₽. This tariff is not
+            used now
+          example: 50
+        deliveryDumpSupOfficeBase:
+          type: string
+          description: Common return in pick-up point, per 1 liter, ₽
+          example: 150
+        deliveryDumpSupOfficeLiter:
+          type: string
+          description: Common return in pick-up point, per each next liter, ₽
+          example: 50
+        deliveryDumpSupReturnExpr:
+          type: string
+          description: <p>Common transfer back to Wildberries warehouse. Per 1 product, ₽</p>
+            <p>Used when products were not picked up during 7 days</p>
+          example: 200
+        warehouseName:
+          type: string
+          description: Warehouse
+          example: Коледино
+    TariffsBoxResponse:
+      type: object
+      properties:
+        response:
+          $ref: '#/components/schemas/models.TariffsBoxResponse'
+    TariffsPalletResponse:
+      type: object
+      properties:
+        response:
+          $ref: '#/components/schemas/models.TariffsPalletResponse'
+    ReturnTariffsResponse:
+      type: object
+      properties:
+        response:
+          $ref: '#/components/schemas/models.ReturnTariffsResponse'
+  responses:
+    BadRequest:
+      description: Incorrect request. For example, wrong date format
+    NotFound:
+      description: No user found
+    Unauthorized:
+      description: User is not authorized
+    AccessDenied:
+      description: Access denied
+    InternalServerError:
+      description: Internal error

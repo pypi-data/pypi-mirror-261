@@ -1,0 +1,339 @@
+openapi: 3.0.1
+info:
+  title: Seller API Recommendations
+  version: '2.18'
+security:
+  - HeaderApiKey: []
+x-tagGroups:
+  - name: Recommendations
+    tags:
+      - Recommendations
+tags:
+  - name: Recommendations
+    description: 'Managing the carousel-widget "with this product recommend" in the
+      product card and updating of the carousel by sellers on the sellers portal.
+
+      '
+components:
+  securitySchemes:
+    HeaderApiKey:
+      type: apiKey
+      name: Authorization
+      in: header
+  examples:
+    TokenMissing:
+      description: The token is missing
+      value: 'proxy: unauthorized'
+    TokenInvalid:
+      description: Token invalid
+      value: 'proxy: invalid token'
+    TokenNotFound:
+      description: Token deleted
+      value: 'proxy: not found'
+paths:
+  /api/v1/ins:
+    servers:
+      - url: https://recommend-api.wildberries.ru
+      - url: https://recommend-api.wb.ru
+    post:
+      tags:
+        - Recommendations
+      summary: Adding recommendations
+      description: "This method allows you add recommendations to product. <br> `IMPORTANT!`\
+        \ If the request was successful (response code 200), but the recommendation\
+        \ wasn't added, then you need to check the correctness of the sent values.\
+        \  <br>At the moment, the method doesn't provide validation of parameter values.\
+        \  <br>Please check your details carefully before submitting. <br>Request\
+        \ limitation: 120 requests per minute max. <br> <br>`IMPORTANT:` If you receive\
+        \ a response with code 200 and a body similar to <b>CrutchSapi1356-65c49a25-7f9798142620\
+        \ OK</b>, then at least one of the transmitted nomenclatures does not belong\
+        \ to you or does not exist.        \n"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              description: List of nm products and recommendations for them
+              items:
+                properties:
+                  nm:
+                    description: WB article (`nmId`), to which the recommendation
+                      is added
+                    type: integer
+                  recom:
+                    description: List of WB articles (`nmId`) to add to recommendations
+                    type: array
+                    items:
+                      type: integer
+                      minimum: 1
+                example:
+                  nm: 1376382
+                  recom:
+                    - 123456342
+                    - 789101112
+                    - 9877654321
+                required:
+                  - nm
+                  - recom
+      responses:
+        200:
+          description: Recommendations added successfully
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                type: string
+                example: can't parse data from request
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        500:
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: string
+  /api/v1/del:
+    servers:
+      - url: https://recommend-api.wildberries.ru
+      - url: https://recommend-api.wb.ru
+    post:
+      tags:
+        - Recommendations
+      summary: Deleting recommendations
+      description: 'This method allows you to delete recommendations. <br> `IMPORTANT!`
+        If the request was successful (response code 200), but the recommendation
+        wasn''t deleted, then you need to check the correctness of the sent values.
+        At the moment, the method doesn''t provide validation of parameter values.
+        Please check your details carefully before submitting. <br> <br>`IMPORTANT:`
+        If you receive a response with code 200 and a body similar to <b>CrutchSapi1356-65c49a25-7f9798142620
+        OK</b>, then at least one of the transmitted nomenclatures does not belong
+        to you or does not exist.
+
+        '
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              description: List of nm products and recommendations for them
+              items:
+                type: object
+                properties:
+                  nm:
+                    description: WB article (`nmId`), for which the recommendation
+                      should be deleted
+                    type: integer
+                  recom:
+                    description: List of WB articles (`nmId`), to delete from recommendations
+                    type: array
+                    items:
+                      type: integer
+                      minimum: 1
+                example:
+                  nm: 1376382
+                  recom:
+                    - 123456342
+                    - 789101112
+                    - 9877654321
+                required:
+                  - nm
+                  - recom
+      responses:
+        200:
+          description: OK
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                type: string
+                example: can't parse data from request
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        500:
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: string
+  /api/v1/set:
+    servers:
+      - url: https://recommend-api.wildberries.ru
+      - url: https://recommend-api.wb.ru
+    post:
+      tags:
+        - Recommendations
+      summary: Operating with Recommendations
+      description: 'The method allows to add and remove recommendations.<br> The method
+        works on the principle of overwriting, everything that is specified in recom
+        will be put as a relpacement of what was there before.<br> To delete the recommendations
+        you need to send an empty recom array.<br> <br> `IMPORTANT`: If you receive
+        a response with code 200 and a body similar to <b>CrutchSapi1356-65c49a25-7f9798142620
+        OK</b>, then at least one of the transmitted nomenclatures does not belong
+        to you or does not exist.
+
+        '
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              description: List of nm products and recommendations for them
+              items:
+                properties:
+                  nm:
+                    description: WB article (`nmId`), to which the recommendation
+                      is transferred
+                    type: integer
+                  recom:
+                    description: List of WB articles (`nmId`) that should be sent
+                      to the recommended
+                    type: array
+                    items:
+                      type: integer
+                      minimum: 1
+                example:
+                  nm: 1376382
+                  recom:
+                    - 123456342
+                    - 789101112
+                    - 9877654321
+                required:
+                  - nm
+                  - recom
+      responses:
+        200:
+          description: Successfully
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                type: string
+                example: can't parse data from request
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        500:
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: string
+  /api/v1/list:
+    servers:
+      - url: https://recommend-api.wildberries.ru
+      - url: https://recommend-api.wb.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: List of recommendations
+      description: 'The method allows you to get a list of recommendations for several
+        products. <br> <br> `IMPORTANT`: If you receive a response with code 200 and
+        a message similar to <b>CrutchSapi1356-65c49a25-7f9798142620-UKfmVPyPcik6d
+        OK</b>, then at least one of the transmitted nomenclatures does not belong
+        to you or does not exist.
+
+        '
+      tags:
+        - Recommendations
+      parameters:
+        - name: limit
+          in: header
+          schema:
+            type: integer
+            example: 123
+          description: Limitation the number of recommendations issued
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: integer
+                description: Array with WB articles
+            example:
+              - 111111111
+              - 222222222
+      responses:
+        200:
+          description: Successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        nm:
+                          description: Article WB, which was requested
+                          type: integer
+                        list:
+                          description: List of recomendations
+                          type: array
+                          items:
+                            type: integer
+              example:
+                data:
+                  - nm: 111111111
+                    list:
+                      - 333333333
+                      - 444444444
+                      - 555555555
+                  - nm: 222222222
+                    list:
+                      - 777777777
+                      - 666666666
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'

@@ -1,0 +1,2711 @@
+openapi: 3.0.1
+info:
+  title: Seller API Feedbacks and Questions
+  version: '2.18'
+security:
+  - HeaderApiKey: []
+x-tagGroups:
+  - name: Feedbacks
+    tags:
+      - Feedbacks
+  - name: Questions
+    tags:
+      - Questions
+  - name: Templates for questions and reviews
+    tags:
+      - Templates for questions and reviews
+tags:
+  - name: Templates for questions and reviews
+    description: 'This section contains methods that allow to create, receive, edit
+      and delete question and feedback response templates.<br> <br> `Important!` Responses
+      are not differentiated by status code.<br> For an invalid request, an answer
+      with status code 200 and a description of the error will be returned.
+
+      '
+components:
+  securitySchemes:
+    HeaderApiKey:
+      type: apiKey
+      name: Authorization
+      in: header
+  examples:
+    TokenMissing:
+      description: The token is missing
+      value: 'proxy: unauthorized'
+    TokenInvalid:
+      description: Token invalid
+      value: 'proxy: invalid token'
+    TokenNotFound:
+      description: Token deleted
+      value: 'proxy: not found'
+    FeedbackErr400:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Something went wrong
+        additionalErrors: null
+        requestId: 734c9ea8-39e5-45c9-8cad-f03c13f733e9
+    FeedbackErr403:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Ошибка авторизации
+        additionalErrors: null
+        requestId: 734c9ea8-39e5-45c9-8cad-f03c13f733e9
+    FeedbackErr404:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Не найден отзыв id
+        additionalErrors: null
+        requestId: 734c9ea8-39e5-45c9-8cad-f03c13f733e9
+    CouldNotFixFeedback:
+      description: ''
+      value:
+        data: null
+        error: true
+        errorText: Не удалось исправить отзыв
+        additionalErrors: null
+        requestId: 734c9ea8-39e5-45c9-8cad-f03c13f733e9
+    EmptyAuthHeader:
+      summary: EmptyAuthHeader
+      description: Empty authorization header
+      value: 'Error ae394f96-e258-432d-af13-a53a3d31f8b0: request rejected, unathorized:
+        1; empty Authorization header'
+    TokenScopeNotAllowed:
+      summary: TokenScopeNotAllowed
+      description: The type of token used is not suitable for this method
+      value: 'Error ae394f96-e258-432d-af13-a53a3d31f8b0: request rejected, unathorized:
+        token scope not allowed for this API route'
+    Response200:
+      description: Successfully
+      value:
+        data:
+          templates:
+            - id: id
+              name: name
+              text: text
+        error: false
+        errorText: ''
+        additionalErrors: {}
+    IncorrectTemplateType:
+      description: Invalid template type
+      value:
+        data: null
+        error: true
+        errorText: Неизвестный тип шаблона
+        additionalErrors: null
+    TemplateLimitExceeded:
+      description: Template limit exceeded
+      value:
+        data: null
+        error: true
+        errorText: Превышен лимит шаблонов
+        additionalErrors: null
+    InvalidTemplateNameLen:
+      description: Invalid template name length
+      value:
+        data: null
+        error: true
+        errorText: Допустимая длина названия шаблона от 1 до 100 символов
+        additionalErrors: null
+    InvalidCommentLenTemplate:
+      description: Invalid comment length in the template
+      value:
+        data: null
+        error: true
+        errorText: Допустимая длина комментария в шаблоне от 2 до 1000 символов
+        additionalErrors: null
+    InvalidRequest:
+      description: Invalid request
+      value:
+        data: null
+        error: true
+        errorText: Неверный запрос
+        additionalErrors: null
+    EditTemplateError:
+      description: Couldn't edit template
+      value:
+        data: null
+        error: true
+        errorText: Не удалось отредактировать шаблон
+        additionalErrors: null
+    PostTemplateOK:
+      description: Successfully
+      value:
+        data:
+          id: '1234'
+        error: false
+        errorText: ''
+        additionalErrors: null
+    PatchDelRespOK:
+      description: Successfully
+      value:
+        data: true
+        error: false
+        errorText: ''
+        additionalErrors: null
+    ErrorDeleteBD:
+      description: Error deleting template from database
+      value:
+        data: null
+        error: true
+        errorText: Ошибка удаления шаблона из базы данных
+        additionalErrors: null
+  schemas:
+    responsefeedbackErr:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+        error:
+          description: Error flag
+          type: boolean
+        errorText:
+          description: Error description
+          type: string
+        additionalErrors:
+          description: Additional errors
+          nullable: true
+          type: array
+          items:
+            type: string
+        requestId:
+          description: ''
+          type: string
+    productRating:
+      type: object
+      properties:
+        nmId:
+          type: integer
+          description: WB article
+        imtId:
+          type: integer
+          description: Product card ID
+        valuationsSum:
+          type: integer
+          description: Sum of rates
+        feedbacksCount:
+          type: integer
+          description: Number of feedbacks
+        valuation:
+          type: number
+          description: Average rate
+        productName:
+          type: string
+          nullable: true
+          description: Product name
+        supplierArticle:
+          type: string
+          description: Seller's article
+        brandName:
+          type: string
+          description: Product brand
+    responseFeadback:
+      description: Array of structure of feedbacks
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Feedback ID
+          text:
+            type: string
+            description: Feedback text
+          userName:
+            type: string
+            description: Name of the feedback author
+          matchingSize:
+            type: string
+            description: "<dl> <dt>\n  Compliance of the declared size with the real\
+              \ one.\n  <br>Possible values:\n</dt> <dd>\"\" - for dimensionless goods,</dd>\
+              \ <dd>\"ок\" - matches to the size,</dd> <dd>\"smaller\" - size is smaller,</dd>\
+              \ <dd>\"bigger\" - size is bigger</dd>               </dl>         \
+              \     \n"
+          productValuation:
+            type: integer
+            description: Product rate
+          createdDate:
+            type: string
+            format: date-time
+            description: Date and time the feedback was created
+          state:
+            type: string
+            description: '<dt>Feedback status:</dt> <dd>`none` - unanswered (new)</dd>
+              <dd>`wbRu` - answered</dd>
+
+              '
+          answer:
+            type: object
+            description: Reply structure
+            properties:
+              text:
+                type: string
+                description: Reply text
+              state:
+                type: string
+                description: '<dt>Status:</dt> <dd>`none` - new</dd> <dd>`wbRu` -
+                  displayed on the site</dd> <dd>`reviewRequired` - response being
+                  reviewed</dd> <dd>`rejected` - response rejected</dd>
+
+                  '
+          productDetails:
+            description: Product structure
+            type: object
+            properties:
+              nmId:
+                type: integer
+                description: WB article
+              imtId:
+                type: integer
+                description: Product card ID
+              productName:
+                type: string
+                description: Product name
+              supplierArticle:
+                type: string
+                nullable: true
+                description: Seller's article
+              supplierName:
+                type: string
+                nullable: true
+                description: Seller's name
+              brandName:
+                type: string
+                nullable: true
+                description: Product brand
+              size:
+                type: string
+                description: Product size (`techSize' in the product card)
+          photoLinks:
+            description: Array of structure of images
+            type: array
+            items:
+              type: object
+              properties:
+                fullSize:
+                  type: string
+                  description: Link of full-size images
+                miniSize:
+                  type: string
+                  description: Link of small-size images
+          video:
+            description: Video structure
+            type: object
+            properties:
+              uri:
+                type: string
+                description: Video link
+              thumbnailUri:
+                type: string
+                description: Image link
+          wasViewed:
+            type: boolean
+            description: Presence of feedback viewed
+    ResponseErrorTemplate:
+      type: object
+      properties:
+        data:
+          type: object
+          nullable: true
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          type: string
+          description: Error description
+        additionalErrors:
+          description: Additional errors
+          nullable: true
+          type: array
+          items:
+            type: string
+    Response200:
+      description: ''
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            templates:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: Template ID
+                  name:
+                    type: string
+                    description: Template name
+                  text:
+                    type: string
+                    description: Template text
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          type: string
+          description: Error description
+        additionalErrors:
+          type: object
+          description: Additional errors
+    PostTemplateOK:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            id:
+              description: Template ID
+              type: string
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          type: string
+          description: Error description
+        additionalErrors:
+          description: Additional errors
+          nullable: true
+          type: array
+          items:
+            type: string
+    PatchDelRespOK:
+      type: object
+      properties:
+        data:
+          type: boolean
+          nullable: true
+        error:
+          type: boolean
+          description: Error flag
+        errorText:
+          type: string
+          description: Error description
+        additionalErrors:
+          description: Additional errors
+          nullable: true
+          type: array
+          items:
+            type: string
+paths:
+  /api/v1/questions/count-unanswered:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Unanswered questions
+      description: The method allows you to get the number of unanswered questions
+        for today and for all time.
+      tags:
+        - Questions
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      countUnanswered:
+                        type: integer
+                        description: Number of unanswered questions
+                        example: 24
+                      countUnansweredToday:
+                        type: integer
+                        description: Number of unanswered questions for today
+                        example: 0
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /api/v1/new-feedbacks-questions:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Unseen feedbacks and questions
+      description: The method displays information about the seller's unseen feedbacks
+        and questions.
+      tags:
+        - Questions
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      hasNewQuestions:
+                        type: boolean
+                        description: Existence of unseen questions  (`true` exist,
+                          `false` doesn't exist)
+                        example: true
+                      hasNewFeedbacks:
+                        type: boolean
+                        description: Existence of unseen feedbacks (`true` exist,
+                          `false` doesn't exist)
+                        example: false
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/questions/products/rating:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Products most frequently asked about
+      description: The method allows you to get the products that are often asked
+        about.
+      tags:
+        - Questions
+      parameters:
+        - name: size
+          in: query
+          description: Number of requested products (max. 100)
+          schema:
+            type: integer
+            example: 1
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      products:
+                        description: Array of product structures
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            nmId:
+                              type: integer
+                              description: WB article
+                              example: 21573649
+                            imtId:
+                              type: integer
+                              description: Product card ID
+                              example: 15384080
+                            productName:
+                              type: string
+                              description: Product name
+                              example: Phone case for iPhone 11
+                            brandName:
+                              type: string
+                              description: Product brand
+                              example: Case
+                            questionsCount:
+                              type: string
+                              description: Number of questions
+                              example: 11
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/questions:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Question list
+      description: 'The method allows you to get a list of questions by the specified
+        parameters with pagination and sorting.<br> It is possible to get a maximum
+        of 10,000 questions per query.
+
+        '
+      tags:
+        - Questions
+      parameters:
+        - name: isAnswered
+          in: query
+          description: 'Answered questions (`true`) or unanswered questions(`false`)
+
+            '
+          schema:
+            type: boolean
+          required: true
+        - name: nmId
+          in: query
+          description: WB article
+          schema:
+            type: integer
+        - name: take
+          in: query
+          description: 'Number of requested questions (the maximum possible value
+            for the parameter is 10,000,  and the total amount of `take` and `skip`
+            parameters must not exceed 10,000)
+
+            '
+          schema:
+            type: integer
+          required: true
+        - name: skip
+          in: query
+          description: 'Number of questions to skip (maximum possible value for the
+            parameter is 10,000,  and the total amount of `take` and `skip` parameters
+            must not exceed 10,000)
+
+            '
+          schema:
+            type: integer
+          required: true
+        - name: order
+          in: query
+          description: Sorting questions by date (`dateAsc`/`dateDesc`)
+          schema:
+            type: string
+        - name: dateFrom
+          in: query
+          description: The start date of the period in Unix timestamp format
+          schema:
+            type: integer
+            example: 1688465092
+        - name: dateTo
+          in: query
+          description: The end date of the period in Unix timestamp format
+          schema:
+            type: integer
+            example: 1688465092
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      countUnanswered:
+                        type: integer
+                        description: Number of pending questions
+                      countArchive:
+                        type: integer
+                        description: Number of questions processed
+                      questions:
+                        description: Array of question structures
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: question id
+                            text:
+                              type: string
+                              description: question text
+                            createdDate:
+                              type: string
+                              format: date-time
+                              description: Date and time the question was created
+                            state:
+                              type: string
+                              description: '<dt>Question status:</dt> <dd>`none` -
+                                question rejected by seller (this question doesn''t
+                                appear on the buyer portal)</dd> <dd>`wbRu` - answer
+                                provided, the question is displayed on the buyers
+                                site</dd> <dd>`suppliersPortalSynch` - new question</dd>
+
+                                '
+                            answer:
+                              description: Answer structure
+                              type: object
+                              properties:
+                                text:
+                                  type: string
+                                  description: Answer text
+                                editable:
+                                  type: boolean
+                                  description: Ability to edit answer (`false` - unable,
+                                    `true` - able to)
+                                createDate:
+                                  type: string
+                                  format: date-time
+                                  description: Date and time the answer was created
+                            productDetails:
+                              type: object
+                              description: Product structure
+                              properties:
+                                nmId:
+                                  type: integer
+                                  description: WB article
+                                imtId:
+                                  type: integer
+                                  description: Product card ID
+                                productName:
+                                  type: string
+                                  description: Product name
+                                supplierArticle:
+                                  type: string
+                                  description: Seller's article
+                                supplierName:
+                                  type: string
+                                  description: Seller's name
+                                brandName:
+                                  type: string
+                                  description: Brand name
+                            wasViewed:
+                              type: boolean
+                              description: Check that question was viewed
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+              example:
+                data:
+                  countUnanswered: 24
+                  countArchive: 508
+                  questions:
+                    - id: 2ncBtX4B9I0UHoornoqG
+                      text: Question text
+                      createdDate: '2022-02-01T11:18:08.769513469Z'
+                      state: suppliersPortalSynch
+                      answer: null
+                      productDetails:
+                        imtId: 11157265
+                        nmId: 14917842
+                        productName: Coffee
+                        supplierArticle: '123401'
+                        supplierName: ' ГП Реклама и услуги'
+                        brandName: Nescafe
+                      wasViewed: false
+                      isOverdue: true
+                error: false
+                errorText: ''
+                additionalErrors: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+    patch:
+      security:
+        - HeaderApiKey: []
+      summary: Working with questions
+      description: '<dl> <dt>Depending on the request body, you can:</dt> <dd>View
+        question.</dd> <dd>Reject question.</dd> <dd>Answer question or edit the answer.</dd>
+        </dl> <b>It is possible to edit a response to a question within 2 months (60
+        days), after the response has been submitted and only once.</b>
+
+        '
+      tags:
+        - Questions
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - type: object
+                  required:
+                    - id
+                    - wasViewed
+                  properties:
+                    id:
+                      description: Question ID
+                      type: string
+                      example: n5um6IUBQOOSTxXoo0gV
+                    wasViewed:
+                      description: Viewed (`true`), not viewed (`false`)
+                      type: boolean
+                      example: true
+                - type: object
+                  required:
+                    - id
+                  properties:
+                    id:
+                      type: string
+                      description: question ID
+                      example: n5um6IUBQOOSTxXoo0gV
+                    answer:
+                      type: object
+                      required:
+                        - text
+                      properties:
+                        text:
+                          type: string
+                          description: Answer text
+                          example: answer text
+                    state:
+                      type: string
+                      description: 'Question status (none) - question rejected by
+                        seller (this question doesn''t appear on the buyer portal).<br>
+                        Question status (wbRu) - answer provided, the question is
+                        displayed on the buyers site.
+
+                        '
+            examples:
+              ViewQuestion:
+                description: View question
+                value:
+                  id: n5um6IUBQOOSTxXoo0gV
+                  wasViewed: true
+              RejectQuestion:
+                description: Reject question
+                value:
+                  id: n5um6IUBQOOSTxXoo0gV
+                  answer:
+                    text: текст ответа
+                  state: none
+              AnswerQuestionOrEditAnswer:
+                description: Answer question or edit the answer
+                value:
+                  id: n5um6IUBQOOSTxXoo0gV
+                  answer:
+                    text: текст ответа
+                  state: wbRu
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                  error:
+                    type: boolean
+                    description: Error flag
+                  errorText:
+                    type: string
+                    description: Error description
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+              example:
+                data: null
+                error: false
+                errorText: ''
+                additionalErrors: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+        404:
+          description: Error - Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr404:
+                  $ref: '#/components/examples/FeedbackErr404'
+  /api/v1/questions/report:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Receive questions in XLSX format
+      description: Receive questions in XLSX format.
+      tags:
+        - Questions
+      parameters:
+        - name: isAnswered
+          in: query
+          description: 'Processed questions (`true`) or unprocessed questions (`false`)
+
+            '
+          schema:
+            type: boolean
+            example: false
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      fileName:
+                        type: string
+                        description: File name
+                        example: report.xlsx
+                      file:
+                        type: string
+                        format: binary
+                        description: File
+                        example: UEsDBBQAC ... CAADMdQAAAAA=
+                      contentType:
+                        type: string
+                        description: Content type
+                        example: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/questions/count:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Number of questions
+      description: The method allows to get the number of questions.
+      tags:
+        - Questions
+      parameters:
+        - name: dateFrom
+          in: query
+          description: The start date of the period in Unix timestamp format
+          schema:
+            type: integer
+            example: 1688465092
+        - name: dateTo
+          in: query
+          description: The end date of the period in Unix timestamp format
+          schema:
+            type: integer
+            example: 1688465092
+        - name: isAnswered
+          in: query
+          description: 'Processed questions (`true`) or unprocessed questions (`false`).<br>
+            If a query parameter is not specified, processed feedbacks s will be returned.
+
+            '
+          schema:
+            type: boolean
+            example: false
+      responses:
+        200:
+          description: Успешно
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: integer
+                    description: Number of questions
+                    example: 77
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/question:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru/
+      - url: https://feedbacks-api.wb.ru/
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Get the question using by id
+      description: The method allows you to get a qustion using by it ID. <br>
+      tags:
+        - Questions
+      parameters:
+        - name: id
+          in: query
+          required: true
+          description: question ID
+          schema:
+            type: string
+            example: K40ZY4kBHA74Ev-ch5bd
+      responses:
+        200:
+          description: Successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        description: question ID
+                      text:
+                        type: string
+                        description: Qestion text
+                      createdDate:
+                        type: string
+                        format: date-time
+                        description: Date and time the question was created
+                      state:
+                        type: string
+                        description: '<dt>Question status:</dt> <dd>`none` - on the
+                          buyer portal)</dd> <dd>`wbRu` - answer provided, the question
+                          is displayed on the buyers site</dd> <dd>`suppliersPortalSynch`-
+                          new question</dd> '
+                      answer:
+                        description: Answer structure
+                        type: object
+                        properties:
+                          text:
+                            type: string
+                            description: Answer text
+                          editable:
+                            type: boolean
+                            description: Ability to edit answer (`false` - unable,
+                              `true` - able to)
+                          createDate:
+                            type: string
+                            format: date-time
+                            description: Date and time the answer was created
+                      productDetails:
+                        type: object
+                        description: Product structure
+                        properties:
+                          nmId:
+                            type: integer
+                            description: WB article
+                          imtId:
+                            type: integer
+                            description: Product card ID
+                          productName:
+                            type: string
+                            description: Product name
+                          supplierArticle:
+                            type: string
+                            description: Seller's article
+                          supplierName:
+                            type: string
+                            description: Seller's name
+                          brandName:
+                            type: string
+                            description: Brand name
+                      wasViewed:
+                        type: boolean
+                        description: Check that question was viewed
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /api/v1/feedbacks/count-unanswered:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Unanswered feedbacks
+      description: The method allows you to get the number of unanswered feedbacks
+        for today, for all time and get an estimate of all reviews.
+      tags:
+        - Feedbacks
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      countUnanswered:
+                        type: integer
+                        description: Number of unanswered feedbacks
+                        example: 1
+                      countUnansweredToday:
+                        type: integer
+                        description: Number of unanswered feedbacks for today
+                        example: 0
+                      valuation:
+                        type: string
+                        description: Average rating of all feedbacks
+                        example: '4.7'
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /api/v1/parent-subjects:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Parent categories of products
+      description: The method allows you to get a list of parent categories of products
+        that the seller has.
+      tags:
+        - Feedbacks
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        subjectId:
+                          type: integer
+                          description: Product category ID
+                          example: 1162
+                        subjectName:
+                          type: string
+                          description: Name of product category
+                          example: Building tools
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/feedbacks/products/rating:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Average product rating by parent category
+      description: The method allows you to get the average rating of products for
+        the parent category.
+      tags:
+        - Feedbacks
+      parameters:
+        - name: subjectId
+          in: query
+          required: true
+          description: Product category id
+          schema:
+            type: integer
+            example: 3109
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        valuation:
+                          type: string
+                          description: Average products rating
+                          example: '4.8'
+                        feedbacksCount:
+                          type: integer
+                          description: Number of feedbacks for the requested category
+                          example: 277
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/feedbacks/products/rating/top:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Products with the highest and lowest average ratings by parent category
+      description: The method that allows you to get list of two products with the
+        highest and the lowest average rating by parent category
+      tags:
+        - Feedbacks
+      parameters:
+        - name: subjectId
+          in: query
+          required: true
+          description: Product category id
+          schema:
+            type: integer
+            example: 3109
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        productMaxRating:
+                          $ref: '#/components/schemas/productRating'
+                        productMinRating:
+                          $ref: '#/components/schemas/productRating'
+                  error:
+                    type: boolean
+                    description: Error presence
+                  errorText:
+                    type: string
+                    description: Error description
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+              example:
+                data:
+                  productMaxRating:
+                    nmId: 14917842
+                    imtId: 11157265
+                    subjectId: 5135
+                    valuationsSum: 1260
+                    feedbacksCount: 252
+                    valuation: 5
+                    productName: Coffee
+                    supplierArticle: '123401'
+                    brandName: Nescafe
+                  productMinRating:
+                    nmId: 14917846
+                    imtId: 11157269
+                    subjectId: 5134
+                    valuationsSum: 4
+                    feedbacksCount: 2
+                    valuation: 2
+                    productName: Coffee
+                    supplierArticle: '425501'
+                    brandName: Nescafe
+                error: false
+                errorText: ''
+                additionalErrors: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/feedbacks:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Feedbacks list
+      description: The method allows you to get a list of feedbacks by the specified
+        parameters with pagination and sorting.
+      tags:
+        - Feedbacks
+      parameters:
+        - name: isAnswered
+          in: query
+          required: true
+          description: Answered feedbacks (`true`) or unanswered reviews (`false`)
+          schema:
+            type: boolean
+            example: false
+        - name: nmId
+          in: query
+          description: WB article
+          schema:
+            type: integer
+            example: 5870243
+        - name: take
+          in: query
+          required: true
+          description: Number of feedbacks (max. 5 000)
+          schema:
+            type: integer
+            example: 1
+        - name: skip
+          in: query
+          required: true
+          description: Number of feedbacks for skip (max. 199990)
+          schema:
+            type: integer
+            example: 0
+        - name: order
+          in: query
+          description: Sorting of feedbacks by date (dateAsc/dateDesc)
+          schema:
+            type: string
+            enum:
+              - dateAsc
+              - dateDesc
+        - name: dateFrom
+          in: query
+          description: The start date of the period in Unix timestamp format
+          schema:
+            type: integer
+            example: 1688465092
+        - name: dateTo
+          in: query
+          description: The end date of the period in Unix timestamp format
+          schema:
+            type: integer
+            example: 1688465092
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      countUnanswered:
+                        type: integer
+                        description: Number of unanswered feedbacks
+                      countArchive:
+                        type: integer
+                        description: Number of archived feedback
+                      feedbacks:
+                        $ref: '#/components/schemas/responseFeadback'
+                  error:
+                    type: boolean
+                    description: Error presence
+                  errorText:
+                    type: string
+                    description: Error description
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+              example:
+                data:
+                  countUnanswered: 1
+                  countArchive: 1
+                  feedbacks:
+                    - id: n5um6IUBQOOSTxXoo0gV
+                      imtId: 4702466
+                      nmId: 5870243
+                      subjectId: 390
+                      userName: userName
+                      text: Great product. Thank you
+                      productValuation: 5
+                      createdDate: '2023-01-25T11:18:33Z'
+                      updatedDate: '2023-01-26T11:09:54Z'
+                      answer: null
+                      state: none
+                      productDetails:
+                        imtId: 4702466
+                        nmId: 5870243
+                        productName: Case for phone
+                        supplierArticle: 41058/transparent
+                        supplierName: ГП Реклама и услуги
+                        brandName: 1000 Catalog
+                        size: size
+                      photoLinks:
+                        - fullSize: feedbacks/470/4702466/2dc59933-00b5-4ba5-a11a-96312ef179f1_fs.jpg
+                          miniSize: feedbacks/470/4702466/2dc59933-00b5-4ba5-a11a-96312ef179f1_ms.jpg
+                      video: null
+                      wasViewed: true
+                error: false
+                errorText: ''
+                additionalErrors: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+    patch:
+      security:
+        - HeaderApiKey: []
+      summary: Working with feedback
+      description: '<dl> <dt>Depending on the request body, you can:</dt> <dd>View
+        feedback.</dd> <dd>Reply to feedback or edit the answer.</dd> </dl> <b>It
+        is possible to edit a response to a feedback within 2 months (60 days), after
+        the response has been submitted and only once.
+
+        '
+      tags:
+        - Feedbacks
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - type: object
+                  required:
+                    - id
+                    - wasViewed
+                  properties:
+                    id:
+                      type: string
+                      description: Feedback ID
+                      example: n5um6IUBQOOSTxXoo0gV
+                    wasViewed:
+                      type: boolean
+                      description: Viewed (`true`) or not viewed (`false`)
+                      example: true
+                - type: object
+                  required:
+                    - id
+                    - text
+                  properties:
+                    id:
+                      type: string
+                      description: Feedback ID
+                      example: n5um6IUBQOOSTxXoo0gV
+                    text:
+                      type: string
+                      description: Reply text (max. 1000 characters)
+                      example: reply text
+            examples:
+              ViewFeedback:
+                description: View feedback
+                value:
+                  id: n5um6IUBQOOSTxXoo0gV
+                  wasViewed: true
+              AnswerFeedbackOrEditAnswer:
+                description: Reply to feedback or edit the answer
+                value:
+                  id: n5um6IUBQOOSTxXoo0gV
+                  text: текст ответа
+      responses:
+        200:
+          description: Successfully
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+        404:
+          description: Error - Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr404:
+                  $ref: '#/components/examples/FeedbackErr404'
+        422:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                CouldNotFixFeedback:
+                  $ref: '#/components/examples/CouldNotFixFeedback'
+  /api/v1/feedbacks/report:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Receive feedbacks in XLSX format
+      description: 'The method allows you to get an XLSX file with feedbacks encoded
+        in BASE64. <br>  It is possible to get 5000 reviews per request. <br> At the
+        moment a total of 200 000 recent reviews are available to get.
+
+        '
+      tags:
+        - Feedbacks
+      parameters:
+        - name: isAnswered
+          in: query
+          description: Unanswered(`false`) or in archive(`true`)
+          schema:
+            type: boolean
+            enum:
+              - true
+              - false
+          deprecated: false
+        - name: skip
+          in: query
+          description: Number of feedbacks for skip (max. 20 000)
+          schema:
+            type: integer
+            example: 1
+        - name: dateFrom
+          description: The start date of the period in Unix timestamp format <span
+            class="newM">new</span><br>
+          in: query
+          schema:
+            type: integer
+            example: 1696226971
+        - name: dateTo
+          description: The end date of the period in Unix timestamp format <span class="newM">new</span><br>
+          in: query
+          schema:
+            type: integer
+            example: 1698916171
+        - name: order
+          description: Sorting of feedbacks by date (dateAsc/dateDesc) <span class="newM">new</span><br>
+          in: query
+          schema:
+            type: string
+            example: dateDesc
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      fileName:
+                        type: string
+                        description: File name
+                      file:
+                        type: string
+                        format: binary
+                        description: File
+                      contentType:
+                        type: string
+                        description: Content type
+                  error:
+                    type: boolean
+                    description: Error presence
+                  errorText:
+                    type: string
+                    description: Error description
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+              example:
+                data:
+                  fileName: report.xlsx
+                  file: UEsDBBQA ... ACAADxGgAAAAA=
+                  contentType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                error: false
+                errorText: ''
+                additionalErrors: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/feedbacks/archive:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: List of archived feedbacks
+      description: 'The method allows you to get a list of archived feedbacks. <br>
+        A feedback becomes archived if it''s answered or not answered within 30 days
+        from the date of its publication.
+
+        '
+      tags:
+        - Feedbacks
+      parameters:
+        - name: nmId
+          in: query
+          description: WB article
+          schema:
+            type: integer
+            example: 14917842
+        - name: take
+          in: query
+          required: true
+          description: Number of feedbacks (max. 5 000)
+          schema:
+            type: integer
+            example: 1
+        - name: skip
+          in: query
+          required: true
+          description: Number of feedbacks for skip
+          schema:
+            type: integer
+            example: 0
+        - name: order
+          in: query
+          description: Sorting of feedbacks by date (dateAsc/dateDesc)
+          schema:
+            type: string
+            enum:
+              - dateAsc
+              - dateDesc
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      feedbacks:
+                        $ref: '#/components/schemas/responseFeadback'
+                  error:
+                    type: boolean
+                    description: Error presence
+                  errorText:
+                    type: string
+                    description: Error description
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+              example:
+                data:
+                  feedbacks:
+                    - id: z0fuK3wBIAjWoLmLkJKo
+                      imtId: 11157265
+                      nmId: 14917842
+                      subjectId: 5135
+                      userName: userName
+                      text: Все отлично.Подарил теще. Красивое!
+                      productValuation: 5
+                      createdDate: '2011-11-01T16:41:39+04:00'
+                      updatedDate: '2022-06-21T12:02:42Z'
+                      answer:
+                        text: супер-пупер
+                        state: wbRu
+                        editable: false
+                      state: wbRu
+                      productDetails:
+                        imtId: 11157265
+                        nmId: 14917842
+                        productName: Кофе
+                        supplierArticle: '123401'
+                        supplierName: тест
+                        brandName: Nescafe
+                        size: size
+                      photoLinks:
+                        - fullSize: feedbacks/470/4702466/2dc59933-00b5-4ba5-a11a-96312ef179f1_fs.jpg
+                          miniSize: feedbacks/470/4702466/2dc59933-00b5-4ba5-a11a-96312ef179f1_ms.jpg
+                      video: null
+                      wasViewed: true
+                error: false
+                errorText: ''
+                additionalErrors: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/feedbacks/products/rating/nmid:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Average rate of product by WB article
+      description: The method allows you to get average rate of product by WB article.
+      tags:
+        - Feedbacks
+      parameters:
+        - name: nmId
+          in: query
+          description: WB article
+          schema:
+            type: integer
+            example: 14917842
+          required: true
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      valuation:
+                        type: string
+                        description: Average rate of product
+                        example: '4.3'
+                      feedbacksCount:
+                        type: integer
+                        description: Number of feedbacks on this product
+                        example: 16
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr400:
+                  $ref: '#/components/examples/FeedbackErr400'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/feedbacks/count:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Number of reviews
+      description: The method allows to get the number of reviews.
+      tags:
+        - Feedbacks
+      parameters:
+        - name: dateFrom
+          in: query
+          description: The start date of the period in Unix timestamp format
+          schema:
+            type: integer
+            example: 1688465092
+        - name: dateTo
+          in: query
+          description: The end date of the period in Unix timestamp format
+          schema:
+            type: integer
+            example: 1688465092
+        - name: isAnswered
+          in: query
+          description: 'Processed feedbacks (`true`) or unprocessed feedbacks (`false`).
+            If a query parameter is not specified, processed feedbacks s will be returned.
+
+            '
+          schema:
+            type: boolean
+            example: false
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: integer
+                    description: Number of reviews
+                    example: 724583
+                  error:
+                    type: boolean
+                    description: Error presence
+                    example: false
+                  errorText:
+                    type: string
+                    description: Error description
+                    example: ''
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+                    example: null
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/responsefeedbackErr'
+              examples:
+                FeedbackErr403:
+                  $ref: '#/components/examples/FeedbackErr403'
+  /api/v1/feedback:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Get the feedback using by id
+      description: The method allows you to get a feedback using by it ID.
+      tags:
+        - Feedbacks
+      parameters:
+        - name: id
+          in: query
+          required: true
+          description: Feedback ID
+          schema:
+            type: string
+            example: G4Y6Y5kBAtKOitoBT_lV
+      responses:
+        200:
+          description: Successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        description: Feedback ID
+                      userName:
+                        type: string
+                        description: Name of the feedback author
+                      matchingSize:
+                        type: string
+                        description: "<dl> <dt>\n  Compliance of the declared size\
+                          \ with the real one.\n  <br>Possible values:\n</dt> <dd>\"\
+                          \" - for dimensionless goods,</dd> <dd>\"ок\" - matches\
+                          \ to the size,</dd> <dd>\"smaller\" - size is smaller,</dd>\
+                          \ <dd>\"bigger\" - size is bigger</dd>               </dl>\n"
+                      text:
+                        type: string
+                        description: Feedback text
+                      productValuation:
+                        type: integer
+                        description: Product rate
+                      createdDate:
+                        type: string
+                        format: date-time
+                        description: Date and time the feedback was created
+                      state:
+                        type: string
+                        description: "<dt>Feedback status:</dt>  <dd>`none` - unanswered\
+                          \ (new)</dd> <dd>`wbRu` - answered</dd> \n"
+                      answer:
+                        type: object
+                        description: Reply structure
+                        properties:
+                          text:
+                            type: string
+                            description: Reply text
+                          state:
+                            type: string
+                            description: '<dt>Статус:</dt> <dd>`none` - new</dd>  <dd>`wbRu`
+                              - displayed on the site</dd>  <dd>`reviewRequired` -
+                              response being reviewed</dd> <dd>`rejected` - response
+                              rejected</dd>''
+
+                              '
+                      productDetails:
+                        description: Product structure
+                        type: object
+                        properties:
+                          nmId:
+                            type: integer
+                            description: WB article
+                          imtId:
+                            type: integer
+                            description: Product card ID
+                          productName:
+                            type: string
+                            description: Product name
+                          supplierArticle:
+                            type: string
+                            nullable: true
+                            description: Seller's article
+                          supplierName:
+                            type: string
+                            nullable: true
+                            description: Seller's name
+                          brandName:
+                            type: string
+                            nullable: true
+                            description: Brand name
+                          size:
+                            type: string
+                            description: Product size (`techSize' in the product card)
+                      photoLinks:
+                        description: Array of structure of images
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            fullSize:
+                              type: string
+                              description: Link of full-size images
+                            miniSize:
+                              type: string
+                              description: Link of small-size images
+                      video:
+                        description: Video structure
+                        type: object
+                        properties:
+                          uri:
+                            type: string
+                            description: Video link
+                          thumbnailUri:
+                            type: string
+                            description: Image link
+                      wasViewed:
+                        type: boolean
+                        description: Presence of feedback viewed
+                  error:
+                    type: boolean
+                    description: Error presence
+                  errorText:
+                    type: string
+                    description: Error description
+                  additionalErrors:
+                    description: Additional errors
+                    nullable: true
+                    type: array
+                    items:
+                      type: string
+              example:
+                data:
+                  id: n5um6IUBQOOSTxXoo0gV
+                  imtId: 4702466
+                  nmId: 5870243
+                  subjectId: 390
+                  userName: ИмяПокупателя
+                  text: Хороший кейс. Спасибо
+                  productValuation: 5
+                  createdDate: '2023-01-25T11:18:33Z'
+                  updatedDate: '2023-01-26T11:09:54Z'
+                  answer: null
+                  state: none
+                  productDetails:
+                    imtId: 4702466
+                    nmId: 5870243
+                    productName: Чехол для телефона
+                    supplierArticle: 41058/transparent
+                    supplierName: ГП Реклама и услуги
+                    brandName: 1000 Каталог
+                    size: size
+                  photoLinks:
+                    - fullSize: feedbacks/470/4702466/2dc59933-00b5-4ba5-a11a-96312ef179f1_fs.jpg
+                      miniSize: feedbacks/470/4702466/2dc59933-00b5-4ba5-a11a-96312ef179f1_ms.jpg
+                  video: null
+                  wasViewed: true
+                error: false
+                errorText: ''
+                additionalErrors: null
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                TokenMissing:
+                  $ref: '#/components/examples/TokenMissing'
+                TokenInvalid:
+                  $ref: '#/components/examples/TokenInvalid'
+                TokenNotFound:
+                  $ref: '#/components/examples/TokenNotFound'
+  /api/v1/templates:
+    servers:
+      - url: https://feedbacks-api.wildberries.ru
+      - url: https://feedbacks-api.wb.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      summary: Get response templates
+      description: The method allows to get templates of responses to feedback/questions.
+      tags:
+        - Templates for questions and reviews
+      parameters:
+        - name: templateType
+          in: query
+          schema:
+            type: integer
+            example: 1
+          description: '`1` - templates for feedback<br> `2` - templates for questions
+
+            '
+          required: true
+      responses:
+        200:
+          description: Successfully
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/Response200'
+                  - $ref: '#/components/schemas/ResponseErrorTemplate'
+              examples:
+                Response200:
+                  $ref: '#/components/examples/Response200'
+                IncorrectTemplateType:
+                  $ref: '#/components/examples/IncorrectTemplateType'
+        401:
+          description: Not authorized
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+              examples:
+                EmptyAuthHeader:
+                  $ref: '#/components/examples/EmptyAuthHeader'
+                TokenScopeNotAllowed:
+                  $ref: '#/components/examples/TokenScopeNotAllowed'
+    post:
+      security:
+        - HeaderApiKey: []
+      summary: Create a template
+      description: 'The method allows to create a response template for feedback/question.
+        <br> A total of 20 templates can be created, 10 for feedback and 10 for questions.<br>
+        Any characters are acceptable.
+
+        '
+      tags:
+        - Templates for questions and reviews
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+                - templateType
+                - text
+              properties:
+                name:
+                  type: string
+                  description: Template name (1 to 100 characters)
+                templateType:
+                  type: integer
+                  description: 'Templates type <br> `1` - templates for feedback<br>
+                    `2` - templates for questions
+
+                    '
+                text:
+                  type: string
+                  description: Template text (from 2 to 1000 characters)
+              example:
+                name: name
+                templateType: 1
+                text: text
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/PostTemplateOK'
+                  - $ref: '#/components/schemas/ResponseErrorTemplate'
+              examples:
+                PostTemplateOK:
+                  $ref: '#/components/examples/PostTemplateOK'
+                TemplateLimitExceeded:
+                  $ref: '#/components/examples/TemplateLimitExceeded'
+                InvalidTemplateNameLen:
+                  $ref: '#/components/examples/InvalidTemplateNameLen'
+                InvalidCommentLenTemplate:
+                  $ref: '#/components/examples/InvalidCommentLenTemplate'
+                InvalidRequest:
+                  $ref: '#/components/examples/InvalidRequest'
+        401:
+          description: Not authorized
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+              examples:
+                EmptyAuthHeader:
+                  $ref: '#/components/examples/EmptyAuthHeader'
+                TokenScopeNotAllowed:
+                  $ref: '#/components/examples/TokenScopeNotAllowed'
+    patch:
+      security:
+        - HeaderApiKey: []
+      summary: Edit template
+      description: 'The method allows to edit the template. <br> Any characters are
+        acceptable.
+
+        '
+      tags:
+        - Templates for questions and reviews
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+                - templateID
+                - text
+              properties:
+                name:
+                  type: string
+                  description: Template name (1 to 100 characters)
+                templateID:
+                  type: integer
+                  description: Template ID
+                text:
+                  type: string
+                  description: Template text (from 2 to 1000 characters)
+              example:
+                name: newname
+                templateID: 1234
+                text: newtext
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/PatchDelRespOK'
+                  - $ref: '#/components/schemas/ResponseErrorTemplate'
+              examples:
+                PatchDelRespOK:
+                  $ref: '#/components/examples/PatchDelRespOK'
+                EditTemplateError:
+                  $ref: '#/components/examples/EditTemplateError'
+                InvalidRequest:
+                  $ref: '#/components/examples/InvalidRequest'
+                InvalidTemplateNameLen:
+                  $ref: '#/components/examples/InvalidTemplateNameLen'
+                InvalidCommentLenTemplate:
+                  $ref: '#/components/examples/InvalidCommentLenTemplate'
+        401:
+          description: Not authorized
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+              examples:
+                EmptyAuthHeader:
+                  $ref: '#/components/examples/EmptyAuthHeader'
+                TokenScopeNotAllowed:
+                  $ref: '#/components/examples/TokenScopeNotAllowed'
+    delete:
+      security:
+        - HeaderApiKey: []
+      summary: Delete the template
+      description: 'The method allows to delete the template. <br>
+
+        '
+      tags:
+        - Templates for questions and reviews
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - templateID
+              properties:
+                templateID:
+                  type: integer
+                  description: Template ID (max. 1)
+            example:
+              templateID: 1234
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/PatchDelRespOK'
+                  - $ref: '#/components/schemas/ResponseErrorTemplate'
+              examples:
+                PatchDelRespOK:
+                  $ref: '#/components/examples/PatchDelRespOK'
+                InvalidRequest:
+                  $ref: '#/components/examples/InvalidRequest'
+                ErrorDeleteBD:
+                  $ref: '#/components/examples/ErrorDeleteBD'
+        401:
+          description: Not authorized
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+              examples:
+                EmptyAuthHeader:
+                  $ref: '#/components/examples/EmptyAuthHeader'
+                TokenScopeNotAllowed:
+                  $ref: '#/components/examples/TokenScopeNotAllowed'
