@@ -1,0 +1,11 @@
+ovh_cli/__init__.py,sha256=p4o6JmHHrreBM-H3Ymb9pC-5RyoC-c5-LTjNySG8Rho,29
+ovh_cli/account.py,sha256=TpmCsF6zy1Ij2mQP09J8j8K7JNBbyqU1UWaU7VJSjQ4,1101
+ovh_cli/ovh_cli.py,sha256=vnCVWUpuuWPqZbOKBup8xh1cIFovWk_wU2Xhw-vX2bc,6994
+ovh_cli/zone_manager.py,sha256=ghlhmPY1ONTbeUpHRUj97EJIAuOpAoWsDx8TnG3mWnc,7047
+ovh_cli_yma-1.0.0.dist-info/LICENSE,sha256=SX8eQIrz322G3QApP4uVwVqQ61I32dPswBwHagKvQhQ,1068
+ovh_cli_yma-1.0.0.dist-info/LICENSE.txt,sha256=odOenbmrNGAeH1KGf6wL6yzKfFer3b-EP7wNUhwo-oc,1096
+ovh_cli_yma-1.0.0.dist-info/METADATA,sha256=GJNpbyJZBxvdqyTWw3uerCtkn8plDro_7690pG0HJ7Y,4056
+ovh_cli_yma-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ovh_cli_yma-1.0.0.dist-info/entry_points.txt,sha256=FB_R4969wz-KjwA-2xjWrQkG7hfjZ7LGbnOVy9L1Ukk,44
+ovh_cli_yma-1.0.0.dist-info/top_level.txt,sha256=qy69TMUXZIHXB2UEaafJJDdd4EheA-CtKZU-n64UCeE,8
+ovh_cli_yma-1.0.0.dist-info/RECORD,,
