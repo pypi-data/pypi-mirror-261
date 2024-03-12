@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sqla-connector
+Version: 0.0.1
+Summary: Melhora o acessibilidade ao sqla-connector
+Author: Mariano Tupã
+Author-email: marianotupa@gmail.com
+License: MIT License
+Keywords: sqlalchemy database
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: sqlalchemy
+
+# SQLAConnector
+
+Simplifique sua conexÃ£o com bancos de dados em Python usando SQLAlchemy com o SQLAConnector, uma biblioteca que gerencia sessÃµes e transaÃ§Ãµes automaticamente.
+
+## InstalaÃ§Ã£o
+
+bashCopy code
+
+`pip install sqlaconnector`
+
+## ConfiguraÃ§Ã£o
+
+Defina a string de conexÃ£o no `config.py`.
+
+## Uso
+
+**Gerenciando SessÃµes:**
+
+pythonCopy code
+
+`from sqlaconnector import SQLAConnector  with SQLAConnector() as connector:     # OperaÃ§Ãµes de banco de dados`
+
+**Decorador para ConexÃµes:**
+
+pythonCopy code
+
+`from sqlaconnector import db_connector  @db_connector def sua_funcao(session):     # OperaÃ§Ãµes de banco de dados`

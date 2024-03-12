@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+sqla_connector/__init__.py
+sqla_connector/config.py
+sqla_connector/sqla_connectoy.py
+sqla_connector.egg-info/PKG-INFO
+sqla_connector.egg-info/SOURCES.txt
+sqla_connector.egg-info/dependency_links.txt
+sqla_connector.egg-info/requires.txt
+sqla_connector.egg-info/top_level.txt
