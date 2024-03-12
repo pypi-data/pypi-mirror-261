@@ -1,0 +1,15 @@
+twitchaio/__init__.py,sha256=TqTo3oTv0e110ySxwViAwIiK7BxPlDgzMQcJoqtOGA0,1398
+twitchaio/api.py,sha256=mkX05AfMFNumlNSqvSN5r_dAt0S5H4A13wrufpx83yc,30545
+twitchaio/auth.py,sha256=9r6NoSc2W5rA13LG8xLAiRcngL05m3Tc6UjsBos9FJw,8014
+twitchaio/chat.py,sha256=JCeFouSFs8LwDYEcLbIoOGqQ7JcDeExWxLoBdkL5K8g,8032
+twitchaio/commands.py,sha256=LrPfgIJhnY8PPwNMYquDmHnUAR5A9U4kBTHq3zyP4Ac,8978
+twitchaio/data.py,sha256=v6ClQYZH7825rtQTAPc4h47ViVMGyUk-Qk2QGk6ZjTM,3446
+twitchaio/emotes.py,sha256=jb8enyRpnAjRKq7-Mrtg9WYSUVvtwO2CxKuV0qf3E6Y,4580
+twitchaio/events.py,sha256=dtb8N_WHrzSsjxGPXPSV2ysHekJAKWBQw7X5hLyAzzo,5822
+twitchaio/tags.py,sha256=uNow7TXCRJ4EWi7I2qa_VrwuTia7Z0e3D1ZCihCGT4U,7427
+twitchaio/utils.py,sha256=8by43vM13Mxn5QFCjPNXZm36o8wMK3CeWXf1YEUSVtU,3333
+TwitchAIO-0.5.post0.dist-info/LICENSE,sha256=Vb3YyGWUnlnicsa6Irb3rzR0v6IvvlCCvynPZaCeGIs,1064
+TwitchAIO-0.5.post0.dist-info/METADATA,sha256=MNRygCcqpD92NXYQF1BQPI-cwolwuAgO4OQnT1Eu_6o,1696
+TwitchAIO-0.5.post0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+TwitchAIO-0.5.post0.dist-info/top_level.txt,sha256=yQ_Y7pXvZwFW9ZsWnNRVlxASs8LBltfyXU9cmLu7K-M,10
+TwitchAIO-0.5.post0.dist-info/RECORD,,
