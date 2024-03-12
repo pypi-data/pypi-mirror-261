@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel", "poetry-core>=1.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "GivAPI"
+version = "0.1.0"
+description = "Pulls current data from the GivEnergy API"
+authors = ["https://wilburwilliams.uk"]
+license = { file = "LICENSE" }
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[tool.poetry.metadata]
+description-file = "README.md"  # Specify your README file here
+long_description_content_type = "text/markdown"  # Explicitly set the content type

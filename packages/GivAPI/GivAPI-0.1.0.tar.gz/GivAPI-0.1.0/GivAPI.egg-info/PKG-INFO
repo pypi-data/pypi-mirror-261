@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: GivAPI
+Version: 0.1.0
+Summary: Gets current data from the GivEnergy API
+Home-page: https://github.com/ThisCatLikesCrypto/GivAPI
+Author: Wilbur Williams
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
