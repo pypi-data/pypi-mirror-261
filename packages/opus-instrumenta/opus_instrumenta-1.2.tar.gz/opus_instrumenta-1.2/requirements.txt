@@ -1,0 +1,10 @@
+boto3
+chardet
+GitPython
+requests
+coverage
+build
+twine
+pytest-httpserver
+opus-adstator
+magnum-opus
