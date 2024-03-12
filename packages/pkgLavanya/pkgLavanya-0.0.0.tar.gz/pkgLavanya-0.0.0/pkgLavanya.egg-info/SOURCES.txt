@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+pkgLavanya/__init__.py
+pkgLavanya/config.py
+pkgLavanya/data.txt
+pkgLavanya/detect_info.py
+pkgLavanya/test_detect.py
+pkgLavanya/version.py
+pkgLavanya.egg-info/PKG-INFO
+pkgLavanya.egg-info/SOURCES.txt
+pkgLavanya.egg-info/dependency_links.txt
+pkgLavanya.egg-info/requires.txt
+pkgLavanya.egg-info/top_level.txt
