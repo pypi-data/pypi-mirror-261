@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: proflame_wifi
+Version: 1.0.9
+Summary: Basic client for interacting with Proflame wifi enabled gas fireplaces
+Home-page: https://github.com/Pharrox/proflame-wifi
+Author: Kevin Lucas
+Author-email: dev@kitsune.bi
+Project-URL: Documentation, https://github.com/Pharrox/proflame-wifi
+Project-URL: Bug Reports, https://github.com/Pharrox/proflame-wifi/issues
+Project-URL: Source Code, https://github.com/Pharrox/proflame-wifi
+Project-URL: Funding, https://www.buymeacoffee.com/pharrox
+Keywords: home_automation,smart_home,pypi,package
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websockets>=12.0
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Provides-Extra: test
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+
+# Proflame Wifi Module
+
+[![GitHub Release][releases-shield]][releases]
+[![GitHub Activity][commits-shield]][commits]
+[![License][license-shield]](LICENSE)
+
+![Project Maintenance][maintenance-shield]
+[![BuyMeCoffee][buymecoffeebadge]][buymecoffee]
+
+Client for connecting to and interacting with Proflame fireplaces that have the wifi module installed.
+
+***
+
+[buymecoffee]: https://www.buymeacoffee.com/pharrox
+[buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
+[commits-shield]: https://img.shields.io/github/commit-activity/y/Pharrox/proflame-wifi.svg?style=for-the-badge
+[commits]: https://github.com/Pharrox/proflame-wifi/commits/master
+[license-shield]: https://img.shields.io/github/license/Pharrox/hass-proflame-connect-wifi.svg?style=for-the-badge
+[maintenance-shield]: https://img.shields.io/badge/maintainer-Kevin%20Lucas%20%40Pharrox-blue.svg?style=for-the-badge
+[releases-shield]: https://img.shields.io/github/release/Pharrox/hass-proflame-connect-wifi.svg?style=for-the-badge
+[releases]: https://github.com/Pharrox/hass-proflame-connect-wifi/releases
