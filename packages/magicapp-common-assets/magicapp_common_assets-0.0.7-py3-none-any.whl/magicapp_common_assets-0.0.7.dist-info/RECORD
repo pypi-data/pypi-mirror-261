@@ -1,0 +1,10 @@
+magicapp_common_assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magicapp_common_assets/data_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magicapp_common_assets/data_models/api_dtos.py,sha256=cKoN9xG65BGPfn8WNKSYhQRdhgOPWSEJDrQicG1g0dI,14688
+magicapp_common_assets/data_models/documents.py,sha256=9W6kcD5ijP4NRu-oTZ3J8hf7g108EvnIQ_mvdq0rdC4,4826
+magicapp_common_assets/data_models/vectors.py,sha256=2gczcbwjmNCgBlKErY_hBdwP6a9gd67fPG4eiZsc43c,536
+magicapp_common_assets/dto_to_doc.py,sha256=p0Ad1k_Ge8RcF0_psB3WinfozwY5ZoEG_gQEGzwb3Yk,5143
+magicapp_common_assets-0.0.7.dist-info/LICENSE,sha256=Zfys_lN80TcC0-0tHhBqraBA-AizrWGXcnRvAk-lLt4,1062
+magicapp_common_assets-0.0.7.dist-info/METADATA,sha256=p2R3ieMcDJI2XH2ej19YS56SYsxxujRBUBPLYVK6irQ,731
+magicapp_common_assets-0.0.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+magicapp_common_assets-0.0.7.dist-info/RECORD,,
