@@ -1,0 +1,3265 @@
+openapi: 3.0.1
+info:
+  title: Seller API Marketplace
+  version: '2.18'
+security:
+  - HeaderApiKey: []
+x-tagGroups:
+  - name: Marketplace
+    tags:
+      - Orders
+      - Supplies
+      - Stocks
+      - Warehouses
+      - Passes
+tags:
+  - name: Orders
+    description: "The Marketplace public API is designed to sync data between Wildberries\
+      \ servers and supplier servers. <br>You feed the data to your systems, work\
+      \ with it, and sync with our servers as needed. <br> <br>Limits on requests:\
+      \ <br>Method <b>PATCH</b> `api/v3/supplies/{supplyId}/orders/{orderId}` - 1000\
+      \ requests per minute. <br>Methods <br><b>PUT</b> `/api/v3/orders/{orderId}/meta/uin`\
+      \ <br><b>PUT</b> `/api/v3/orders/{orderId}/meta/imei` <br><b>PUT</b> `/api/v3/orders/{orderId}/meta/gtin`\
+      \ <br><b>PUT</b> `/api/v3/orders/{orderId}/meta/sgtin` <br> - 1000 requests\
+      \ per minute. <br>The other methods are limited to 300 requests per minute.\
+      \ The limit is set for all calls combined. <br>`It is not allowed to use the\
+      \ Marketplace API as an external database.` <br> <br> <br>Common errors: <table>\n\
+      \  <tr>\n    <td>Code</td>\n    <td>Description</td>\n  </tr>\n  <tr>\n    <td>InternalServerError</td>\n\
+      \    <td>Internal server error</td>\n  </tr>\n  <tr>\n    <td>Unauthorized</td>\n\
+      \    <td>The user is not authorized</td>\n  </tr>\n  <tr>\n    <td>AccessDenied</td>\n\
+      \    <td>Access denied</td>\n  </tr>\n  <tr>\n    <td>IncorrectRequestBody</td>\n\
+      \    <td>Incorrect request body</td>\n  </tr>\n  <tr>\n    <td>IncorrectRequest</td>\n\
+      \    <td>Incorrect request parameters</td>\n  </tr>\n  <tr>\n    <td>NotFound</td>\n\
+      \    <td>Not found</td>\n  </tr>\n  <tr>\n    <td>UploadDataLimit</td>\n   \
+      \ <td>Upload limit exceeded</td>\n  </tr>\n  <tr>\n    <td>SubjectDBSRestriction</td>\n\
+      \    <td>The product category cannot be sold with 'Fulfillment By Wildberries'</td>\n\
+      \  </tr>\n  <tr>\n    <td>SubjectFBSRestriction</td>\n    <td>The product category\
+      \ cannot be sold with 'Delivery By Supplier'</td>\n  </tr>\n  <tr>\n    <td>CargoWarehouseRestriction</td>\n\
+      \    <td>The selected warehouse cannot accept cargo products. Please add them\
+      \ to the correct warehouse.</td>\n  </tr>\n  <tr>\n    <td>IncorrectParameter</td>\n\
+      \    <td>Incorrect parameter</td>\n  </tr>\n  <tr>\n    <td>SupplyHasOrders</td>\n\
+      \    <td>Cannot delete the supply. The supply contains orders.</td>\n  </tr>\n\
+      \  <tr>\n    <td>SupplyHasZeroOrders</td>\n    <td>Cannot move the supply to\
+      \ the delivery. The supply does not satisfy the delivery conditions.</td>\n\
+      \  </tr>\n  <tr>\n    <td>SupplyHasEmptyTrbx</td>\n    <td>he supply has empty\
+      \ boxes. Delete them or go back to orders assignment.</td>\n  </tr>\n  <tr>\n\
+      \    <td>FailedToAddSupplyOrder</td>\n    <td>Cannot add the order to the supply.\
+      \ The order does not satisfy the conditions of assignment to the delivery.</td>\n\
+      \  </tr>\n  <tr>\n    <td>StatusChangeNotAllowed</td>\n    <td>Status change\
+      \ to 'completed' or 'canceled by client' is not allowed for the order in 'Delivery\
+      \ By Supplier'.</td>\n  </tr>\n  <tr>\n    <td>StatusMismatch</td>\n    <td>Status\
+      \ change is not allowed for the order.</td>\n  </tr>\n  <tr>\n    <td>SupplyNotClosed</td>\n\
+      \    <td>The supply is not moved to the delivery.</td>\n  </tr>\n  <tr>\n  \
+      \  <td>PassValidationError</td>\n    <td>*reason*</td>\n  </tr>\n  <tr>\n  \
+      \  <td>SupplierBanned</td>\n    <td>Supplier banned: *reason*</td>\n  </tr>\n\
+      \   <tr>\n    <td>FailedToUpdateMeta</td>\n    <td>The assembly job metadata\
+      \ could not be updated. Make sure that the assembly job fulfils all the necessary\
+      \ requirements (the assembly job exists, it is in the status \"In assembly\"\
+      , the metadata is available for the assembly job, see response of method **/api/v3/orders/{orderId}/meta**).</td>\n\
+      \  </tr>\n</table>\n"
+  - name: Stocks
+    description: The Marketplace methods are <b>limited to 300 requests per minute</b>.
+      The limit is set for all calls combined.
+  - name: Warehouses
+    description: The Marketplace methods are <b>limited to 300 requests per minute</b>.
+      The limit is set for all calls combined.
+  - name: Passes
+    description: The Marketplace methods are <b>limited to 300 requests per minute</b>.
+      The limit is set for all calls combined.
+  - name: Supplies
+    description: '<b>Workflow</b>:
+
+      <br>1. Create a new supply using the **POST** method */api/v3/supplies*. The
+      response will include the identifier of the created supply in the format "WB-GI-1234567".
+      <br>2. Add assembly tasks to the current new supply that you will take to the
+      warehouse or pickup points using the **PATCH** method */api/v3/supplies/{supplyId}/orders/{orderId}*.
+      Please note that when adding assembly tasks to the supply, they will be set
+      to the "confirm" status ("In assembly"). <br>Note: Steps 3 - 8 are mandatory
+      for deliveries to pickup points. <br>3. Create a box in the supply using the
+      **POST** method */api/v3/supplies/{supplyId}/trbx*. <br>4. Add orders to the
+      box using the **PATCH** method */api/v3/supplies/{supplyId}/trbx/{trbxId}*.
+      <br>5. The list of boxes with orders can be obtained using the **GET** method
+      */api/v3/supplies/{supplyId}/trbx*. <br>6. Get box stickers using the **POST**
+      method */api/v3/supplies/{supplyId}/trbx/stickers*, print and attach the stickers
+      to the boxes according to the distributed orders inside them. <br>7. You can
+      delete boxes from the supply using the **DELETE** method */api/v3/supplies/{supplyId}/trbx*.
+      Please note that you can only delete boxes from the supply while it is in the
+      assembly stage. <br>8. You can delete orders from the box using the **DELETE**
+      method */api/v3/supplies/{supplyId}/trbx/{trbxId}/orders/{orderId}*. Please
+      note that you can only delete orders from the box while the supply is in the
+      assembly stage. <br>9. After the supply is assembled with the necessary assembly
+      tasks, you must transfer it for delivery using the **PATCH** method */api/v3/supplies/{supplyId}/deliver*.
+      Please note that when transferring assembly tasks for delivery, they will be
+      automatically marked as complete ("In delivery"). <br>10. The list of assembly
+      tasks added to the supply can be obtained using the **GET** method */api/v3/supplies/{supplyId}/orders*.
+      <br>11. You can obtain all supplies available to the seller using the **GET**
+      method */api/v3/supplies*. <br>12. You can get the details of a specific supply
+      using the **GET** method */api/v3/supplies/{supplyId}*. <br>13. You can delete
+      a supply using the **DELETE** method */api/v3/supplies/{supplyId}*, provided
+      that it is active and not associated with any assembly tasks. <br>14. The **PATCH**
+      method */api/v3/supplies/{supplyId}/orders/{orderId}* also allows you to move
+      assembly tasks between active supplies. Please note that you cannot move an
+      assembly task from a closed supply unless it requires re-shipping. <br>15. You
+      can obtain the QR code of the supply using the **GET** method */api/v3/supplies/{supplyId}/barcode*
+      in svg, zpl, or png format. This is only available after the supply has been
+      transferred for delivery.
+
+      '
+components:
+  securitySchemes:
+    HeaderApiKey:
+      type: apiKey
+      name: Authorization
+      in: header
+  parameters:
+    Warehouse:
+      name: warehouseId
+      in: path
+      required: true
+      description: The supplier's warehouse ID
+      schema:
+        type: integer
+        format: int64
+        example: 2
+    Supply:
+      name: supplyId
+      in: path
+      required: true
+      description: Supply ID
+      schema:
+        type: string
+        example: WB-GI-1234567
+    Trbx:
+      name: trbxId
+      in: path
+      required: true
+      description: Box ID
+      schema:
+        type: string
+        example: WB-TRBX-1234567
+    Order:
+      name: orderId
+      in: path
+      required: true
+      description: Order ID
+      schema:
+        type: integer
+        format: int64
+        example: 5632423
+    Pass:
+      name: passId
+      in: path
+      required: true
+      description: Pass ID
+      schema:
+        type: integer
+        format: int64
+        example: 45
+    Next:
+      name: next
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int64
+      description: Pagination parameter. Sets the value from which to retrieve the
+        next batch. It should start at 0 to get the full list of data. For the subsequent
+        requests, you must take the value from the `next` field in the response.
+    Limit:
+      name: limit
+      in: query
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 1000
+      description: Pagination parameter. Sets the limit for the amount of data returned.
+  examples:
+    TokenMissing:
+      description: The token is missing
+      value: 'proxy: unauthorized'
+    TokenInvalid:
+      description: Token invalid
+      value: 'proxy: invalid token'
+    TokenNotFound:
+      description: Token deleted
+      value: 'proxy: not found'
+    IncorrectRequestBody:
+      value:
+        code: IncorrectRequestBody
+        message: Incorrect request body
+    IncorrectRequest:
+      value:
+        code: IncorrectRequest
+        message: Incorrect request parameters
+    IncorrectParameter:
+      value:
+        code: IncorrectParameter
+        message: Incorrect parameter value
+    SupplyHasOrders:
+      value:
+        code: SupplyHasOrders
+        message: Cannot delete the supply. The supply contains orders.
+    SupplyHasZeroOrders:
+      value:
+        code: SupplyHasZeroOrders
+        message: Cannot move the supply to the delivery. The supply does not satisfy
+          the delivery conditions.
+    SupplyNotClosed:
+      value:
+        code: SupplyNotClosed
+        message: The supply is not moved to the delivery.
+    FailedToAddSupplyOrder:
+      value:
+        code: FailedToAddSupplyOrder
+        message: Cannot add the order to the supply. The order does not satisfy the
+          conditions of assignment to the delivery.
+    StatusMismatch:
+      value:
+        code: StatusMismatch
+        message: Status change is not allowed for the order.
+    FailedToUpdateMeta:
+      value:
+        code: FailedToUpdateMeta
+        message: The assembly job metadata could not be updated. Make sure that the
+          assembly job fulfils all the necessary requirements (the assembly job exists,
+          it is in the status "In assembly", the metadata is available for the assembly
+          job, see response of method **/api/v3/orders/{orderId}/meta**)
+    StatusChangeNotAllowed:
+      value:
+        code: StatusChangeNotAllowed
+        message: Status change to 'completed' or 'canceled by client' is not allowed
+          for the order in 'Delivery By Supplier'.
+    PassValidationError:
+      value:
+        code: PassValidationError
+        message: The store name is invalid
+    UploadDataLimit:
+      value:
+        code: UploadDataLimit
+        message: Upload data limit exceeded
+    FailedToAddSupplyTrbx:
+      value:
+        code: FailedToAddSupplyTrbx
+        message: Failed to add a box. Ensure that the delivery meets all necessary
+          requirements.
+  responses:
+    NotFound:
+      description: The resource is not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            code: NotFound
+            message: Не найдено
+    Unauthorized:
+      description: User is not authorized
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            TokenMissing:
+              $ref: '#/components/examples/TokenMissing'
+            TokenInvalid:
+              $ref: '#/components/examples/TokenInvalid'
+            TokenNotFound:
+              $ref: '#/components/examples/TokenNotFound'
+    ExceededLimitRequests:
+      description: Exceeded the limit on requests
+    AccessDenied:
+      description: Access denied
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            code: AccessDenied
+            message: Access denied
+    InternalServerError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            code: InternalServerError
+            message: Internal server error
+  schemas:
+    Error:
+      type: object
+      nullable: false
+      properties:
+        code:
+          type: string
+          description: Error code
+          nullable: false
+        message:
+          type: string
+          description: Error description
+          nullable: false
+        data:
+          type: object
+          description: Additional data for the error
+          nullable: true
+    Next:
+      type: integer
+      format: int64
+      nullable: false
+      description: Pagination parameter. Sets the value from which to retrieve the
+        next batch. It should start at 0 to get the full list of data. For the subsequent
+        requests, you must take the value from the `next` field in the response.
+    Supply:
+      type: object
+      properties:
+        id:
+          type: string
+          nullable: false
+          description: Supply ID
+          example: WB-GI-1234567
+        done:
+          type: boolean
+          nullable: false
+          description: An indication that the supply is closed
+        createdAt:
+          type: string
+          format: date-time
+          nullable: false
+          description: Supply creation date (RFC3339)
+          example: '2022-05-04T07:56:29Z'
+        closedAt:
+          type: string
+          format: date-time
+          nullable: false
+          description: Supply close date (RFC3339)
+          example: '2022-05-04T07:56:29Z'
+        scanDt:
+          type: string
+          nullable: false
+          format: date-time
+          description: Supply scan date (RFC3339)
+          example: '2022-05-04T07:56:29Z'
+        name:
+          type: string
+          nullable: false
+          description: Supply name
+          example: My test supply
+        cargoType:
+          type: integer
+          nullable: false
+          description: '<dl> <dt>Type of cargo in the supply:</dt> <dd>0 - not defined</dd>
+            <dd>1 - normal</dd> <dd>2 - ODC</dd> <dd>3 - CD. Not currently in use.</dd>
+            </dl>
+
+            '
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+    Order:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          nullable: false
+          description: Order ID
+          example: 13833711
+        rid:
+          type: string
+          nullable: false
+          description: Order ID in Wildberries systems. Can be used to identify the
+            same order in the Statistics API.
+          example: f884001e44e511edb8780242ac120002
+        createdAt:
+          type: string
+          format: date-time
+          nullable: false
+          description: Order creation date (RFC3339)
+          example: '2022-05-04T07:56:29Z'
+        warehouseId:
+          type: integer
+          nullable: false
+          description: Supplier's warehouse ID where the order was received.
+          example: 658434
+        supplyId:
+          type: string
+          description: Supply ID. Returns if the order is assigned to a supply.
+        offices:
+          type: array
+          nullable: true
+          description: List of offices where you should deliver the order.
+          items:
+            type: string
+            example: Moscow
+        address:
+          type: object
+          nullable: true
+          description: Detailed customer address for delivery (if applicable). Some
+            of the fields may come empty.
+          properties:
+            fullAddress:
+              description: Delivery address
+              type: string
+              example: Leningradskaya oblast, Vyborg, Kosmonavtov st., 10A, 42
+            province:
+              type: string
+              nullable: false
+              description: Region or republic
+              example: Leningradskaya oblast
+              deprecated: true
+            area:
+              type: string
+              nullable: false
+              description: Area
+              example: Leningradskaya oblast
+              deprecated: true
+            city:
+              type: string
+              nullable: false
+              description: City
+              example: Vyborg
+              deprecated: true
+            street:
+              type: string
+              nullable: false
+              description: Street
+              example: Kosmonavtov
+              deprecated: true
+            home:
+              type: string
+              nullable: false
+              description: House No.
+              example: 10А
+              deprecated: true
+            flat:
+              type: string
+              nullable: false
+              description: Flat
+              example: '42'
+              deprecated: true
+            entrance:
+              type: string
+              nullable: false
+              description: Entrance
+              example: '3'
+              deprecated: true
+            longitude:
+              type: number
+              format: float64
+              nullable: false
+              description: Longitude
+              example: 44.519068
+            latitude:
+              type: number
+              format: float64
+              nullable: false
+              description: Latitude
+              example: 40.20192
+        user:
+          type: object
+          nullable: true
+          description: Customer Information (applicable for 'Delivery By Supplier')
+          properties:
+            fio:
+              type: string
+              nullable: false
+              description: Full name
+            phone:
+              type: string
+              nullable: false
+              description: Phone
+        skus:
+          type: array
+          nullable: false
+          description: Product barcode array
+          items:
+            type: string
+            example:
+              - 6665956397512
+        price:
+          type: integer
+          nullable: false
+          description: The price in the currency of sale including all discounts,
+            multiplied by 100. You can find a currency code in the `currencyCode`
+            field.
+        convertedPrice:
+          type: integer
+          nullable: false
+          description: Price in the currency of sale, including all discounts, converted
+            at the exchange rate at the time of sale into Russian pennies. Provided
+            for informational purposes only.
+        currencyCode:
+          type: integer
+          nullable: false
+          description: Sale currency code (ISO 4217)
+        convertedCurrencyCode:
+          type: integer
+          nullable: false
+          description: Currency code of the supplier country (ISO 4217)
+        orderUid:
+          type: string
+          description: Transaction ID for order grouping. Orders in the same customer's
+            cart will have the same orderUID.
+        deliveryType:
+          type: string
+          nullable: false
+          description: '<dl>
+
+            <dt>Delivery type:</dt>
+
+            <dd>fbs - ''Fulfillment By Wildberries''</dd>
+
+            <dd>dbs - ''Delivery By Supplier''</dd>
+
+            <dd>wbgo - ''Delivery by WB courier''</dd>
+
+            </dl>
+
+            '
+          enum:
+            - dbs
+            - fbs
+            - wbgo
+        nmId:
+          type: integer
+          nullable: false
+          description: WB article.
+        chrtId:
+          type: integer
+          nullable: false
+          description: Product size ID in the Wildberries systems.
+        article:
+          type: string
+          nullable: false
+          description: Supplier's article
+          example: one-ring-7548
+        cargoType:
+          type: integer
+          nullable: false
+          description: '<dl> <dt>Type of cargo in the order:</dt> <dd>1 - normal</dd>
+            <dd>2 - ODC</dd> <dd>3 - CD. Not currently in use.</dd> </dl>
+
+            '
+          enum:
+            - 1
+            - 2
+            - 3
+    OrderNew:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          nullable: false
+          description: Order ID
+          example: 13833711
+        rid:
+          type: string
+          nullable: false
+          description: Order ID in Wildberries systems. Can be used to identify the
+            same order in the Statistics API.
+          example: f884001e44e511edb8780242ac120002
+        createdAt:
+          type: string
+          format: date-time
+          nullable: false
+          description: Order creation date (RFC3339)
+          example: '2022-05-04T07:56:29Z'
+        warehouseId:
+          type: integer
+          nullable: false
+          description: Supplier's warehouse ID where the order was received.
+          example: 658434
+        offices:
+          type: array
+          nullable: true
+          description: List of offices where you should deliver the order.
+          items:
+            type: string
+            example: Moscow
+        address:
+          type: object
+          nullable: true
+          description: Detailed customer address for delivery (if applicable). Some
+            of the fields may come empty.
+          properties:
+            fullAddress:
+              description: Delivery address
+              type: string
+              example: Leningradskaya oblast, Vyborg, Kosmonavtov st., 10A, 42
+            province:
+              type: string
+              nullable: false
+              description: Region or republic
+              example: Leningradskaya oblast
+              deprecated: true
+            area:
+              type: string
+              nullable: false
+              description: Area
+              example: Leningradskaya oblast
+              deprecated: true
+            city:
+              type: string
+              nullable: false
+              description: City
+              example: Vyborg
+              deprecated: true
+            street:
+              type: string
+              nullable: false
+              description: Street
+              example: Kosmonavtov
+              deprecated: true
+            home:
+              type: string
+              nullable: false
+              description: House No.
+              example: 10А
+              deprecated: true
+            flat:
+              type: string
+              nullable: false
+              description: Flat
+              example: '42'
+              deprecated: true
+            entrance:
+              type: string
+              nullable: false
+              description: Entrance
+              example: '3'
+              deprecated: true
+            longitude:
+              type: number
+              format: float64
+              nullable: false
+              description: Longitude
+              example: 44.519068
+            latitude:
+              type: number
+              format: float64
+              nullable: false
+              description: Latitude
+              example: 40.20192
+        requiredMeta:
+          description: "List of metadata that needs to be added to the order.  <br>\
+            \ At the moment, only UIN is required to be added, if it is included in\
+            \ the list.             \n"
+          type: array
+          items:
+            type: string
+          example:
+            - uin
+        user:
+          type: object
+          nullable: true
+          description: Customer Information (applicable for 'Delivery By Supplier')
+          properties:
+            fio:
+              type: string
+              nullable: false
+              description: Full name
+            phone:
+              type: string
+              nullable: false
+              description: Phone
+        skus:
+          type: array
+          nullable: false
+          description: Product barcode array
+          items:
+            type: string
+            example:
+              - 6665956397512
+        price:
+          type: integer
+          nullable: false
+          description: The price in the currency of sale including all discounts,
+            multiplied by 100. You can find a currency code in the `currencyCode`
+            field.
+        convertedPrice:
+          type: integer
+          nullable: false
+          description: Price in the currency of sale, including all discounts, converted
+            at the exchange rate at the time of sale into Russian pennies. Provided
+            for informational purposes only.
+        currencyCode:
+          type: integer
+          nullable: false
+          description: Sale currency code (ISO 4217)
+        convertedCurrencyCode:
+          type: integer
+          nullable: false
+          description: Currency code of the supplier country (ISO 4217)
+        orderUid:
+          type: string
+          description: Transaction ID for order grouping. Orders in the same customer's
+            cart will have the same orderUID.
+        deliveryType:
+          type: string
+          nullable: false
+          description: '<dl>
+
+            <dt>Delivery type:</dt>
+
+            <dd>fbs - ''Fulfillment By Wildberries''</dd>
+
+            <dd>dbs - ''Delivery By Supplier''</dd>
+
+            <dd>wbgo - ''Delivery by WB courier''</dd>
+
+            </dl>
+
+            '
+          enum:
+            - dbs
+            - fbs
+            - wbgo
+        nmId:
+          type: integer
+          nullable: false
+          description: WB article.
+        chrtId:
+          type: integer
+          nullable: false
+          description: Product size ID in the Wildberries systems.
+        article:
+          type: string
+          nullable: false
+          description: Supplier's article
+          example: one-ring-7548
+        cargoType:
+          type: integer
+          nullable: false
+          description: '<dl> <dt>Type of cargo in the order:</dt> <dd>1 - normal</dd>
+            <dd>2 - ODC</dd> <dd>3 - CD. Not currently in use.</dd> </dl>
+
+            '
+          enum:
+            - 1
+            - 2
+            - 3
+    SupplyOrder:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          nullable: false
+          description: Order ID
+          example: 13833711
+        rid:
+          type: string
+          nullable: false
+          description: Order ID in Wildberries systems. Can be used to identify the
+            same order in the Statistics API.
+          example: f884001e44e511edb8780242ac120002
+        createdAt:
+          type: string
+          format: date-time
+          nullable: false
+          description: Order creation date (RFC3339)
+          example: '2022-05-04T07:56:29Z'
+        warehouseId:
+          type: integer
+          nullable: false
+          description: Supplier's warehouse ID where the order was received.
+          example: 658434
+        offices:
+          type: array
+          nullable: true
+          description: List of offices where you should deliver the order.
+          items:
+            type: string
+            example: Moscow
+        user:
+          type: object
+          nullable: true
+          description: Customer Information (applicable for 'Delivery By Supplier')
+          properties:
+            fio:
+              type: string
+              nullable: false
+              description: Full name
+            phone:
+              type: string
+              nullable: false
+              description: Phone
+        skus:
+          type: array
+          nullable: false
+          description: Product barcode array
+          items:
+            type: string
+            example: 6665956397512
+        price:
+          type: integer
+          nullable: false
+          description: The price in the currency of sale including all discounts,
+            multiplied by 100. You can find a currency code in the `currencyCode`
+            field.
+        convertedPrice:
+          type: integer
+          nullable: false
+          description: Price in the currency of sale, including all discounts, converted
+            at the exchange rate at the time of sale into Russian pennies. Provided
+            for informational purposes only.
+        currencyCode:
+          type: integer
+          nullable: false
+          description: Sale currency code (ISO 4217)
+        convertedCurrencyCode:
+          type: integer
+          nullable: false
+          description: Currency code of the supplier country (ISO 4217)
+        orderUid:
+          type: string
+          description: Transaction ID for order grouping. Orders in the same customer's
+            cart will have the same orderUID.
+        nmId:
+          type: integer
+          nullable: false
+          description: WB article.
+        chrtId:
+          type: integer
+          nullable: false
+          description: Product size ID in the Wildberries systems.
+        article:
+          type: string
+          nullable: false
+          description: Supplier's article
+          example: one-ring-7548
+        cargoType:
+          type: integer
+          nullable: false
+          description: '<dl> <dt>Type of cargo in the order:</dt> <dd>1 - normal</dd>
+            <dd>2 - ODC</dd> <dd>3 - CD. Not currently in use.</dd> </dl>
+
+            '
+          enum:
+            - 1
+            - 2
+            - 3
+    SupplyTrbx:
+      type: object
+      properties:
+        id:
+          description: Box ID.
+          type: string
+          example: WB-TRBX-1234567
+        orders:
+          type: array
+          nullable: false
+          description: List of order IDs.
+          items:
+            type: integer
+            example: 1234567
+    TrbxStickers:
+      type: object
+      properties:
+        barcode:
+          type: string
+          minLength: 1
+          description: The encoded value of the sticker.
+          example: $WBMP:1:123:1234567
+        file:
+          type: string
+          format: byte
+          minLength: 1
+          description: Base64 encoded sticker file in the requested format.
+          example: U3dhZ2dlciByb2Nrcw==
+    Office:
+      type: object
+      description: Office details
+      properties:
+        address:
+          type: string
+          nullable: false
+          description: Address
+          example: Kosmonavtov 10А
+        name:
+          type: string
+          nullable: false
+          description: Name
+          example: Koledino
+        city:
+          type: string
+          nullable: false
+          description: City
+          example: Vyborg
+        id:
+          type: integer
+          format: int64
+          nullable: false
+          description: ID
+          example: 15
+        longitude:
+          type: number
+          format: float64
+          nullable: false
+          description: Longitude
+          example: 55.386871
+        latitude:
+          type: number
+          format: float64
+          nullable: false
+          description: Latitude
+          example: 37.588898
+        selected:
+          type: boolean
+          nullable: false
+          description: The flag indicating that the office has already been selected
+            by the supplier
+    Warehouse:
+      type: object
+      description: Supplier's warehouse details
+      properties:
+        name:
+          type: string
+          nullable: false
+          description: Name
+          example: Kosmonavtov 14
+        officeId:
+          type: integer
+          format: int64
+          nullable: false
+          description: Office ID
+          example: 15
+        id:
+          type: integer
+          format: int64
+          nullable: false
+          description: ID
+          example: 1
+    PassOffice:
+      type: object
+      description: Office details, for which a pass is required
+      properties:
+        name:
+          type: string
+          nullable: false
+          description: Name
+          example: Koledino
+        address:
+          type: string
+          nullable: false
+          description: Address
+          example: Kosmonavtov 10А
+        id:
+          type: integer
+          format: int64
+          nullable: false
+          description: ID
+          example: 1
+    Meta:
+      type: object
+      description: Order metadata
+      properties:
+        imei:
+          type: string
+          nullable: true
+          required: false
+          description: IMEI
+          example: 123456789012345
+        uin:
+          type: string
+          nullable: true
+          required: false
+          description: UIN
+          example: 1234567890123456
+        gtin:
+          type: string
+          nullable: true
+          required: false
+          description: GTIN
+          example: 1234567890123
+        sgtin:
+          type: string
+          nullable: true
+          required: false
+          description: Data Matrix code (Chestny ZNAK)
+          example: 1234567890123456
+    Pass:
+      type: object
+      description: Supplier's pass details
+      properties:
+        firstName:
+          type: string
+          nullable: false
+          description: First name
+          example: Alex
+        dateEnd:
+          type: string
+          nullable: false
+          description: Pass expiration date
+          example: 2022-07-31 17:53:13+00:00
+        lastName:
+          type: string
+          nullable: false
+          description: Last name
+          example: Petrov
+        carModel:
+          type: string
+          nullable: false
+          description: Car model
+          example: Lamborghini
+        carNumber:
+          type: string
+          nullable: false
+          description: Car number
+          example: A456BC123
+        officeName:
+          type: string
+          nullable: false
+          description: Office name
+          example: Koledino
+        officeAddress:
+          type: string
+          nullable: false
+          description: Office address
+          example: Kosmonavtov 10А
+        officeId:
+          type: integer
+          format: int64
+          nullable: false
+          description: Office ID
+          example: 15
+        id:
+          type: integer
+          format: int64
+          nullable: false
+          description: ID
+          example: 1
+paths:
+  /api/v3/stocks/{warehouseId}:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    put:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Stocks
+      summary: Update stocks
+      description: 'Updates the supplier''s stocks.<br> `Important!` The names of
+        the query parameters are not validated. If invalid names are sent, the response
+        will be successful(204), but the remaining amounts will not be updated.<br>
+        Check the data carefully before submitting it.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Warehouse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - stocks
+              properties:
+                stocks:
+                  type: array
+                  minItems: 1
+                  maxItems: 1000
+                  description: SKU array
+                  items:
+                    type: object
+                    properties:
+                      sku:
+                        type: string
+                        description: SKU
+                        example: SkuTest123
+                      amount:
+                        type: integer
+                        maximum: 100000
+                        description: Amount
+                        example: 10
+      responses:
+        204:
+          description: Stocks updated
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        409:
+          description: There was an error on stocks update.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Error'
+                example:
+                  - code: SubjectDBSRestriction
+                    message: The product category cannot be sold with 'Fulfillment
+                      By Wildberries'.
+                    data:
+                      - sku: skuTest1
+                        stock: 0
+                  - code: SubjectFBSRestriction
+                    message: The product category cannot be sold with 'Delivery By
+                      Supplier'.
+                    data:
+                      - sku: skuTest2
+                        stock: 1
+                  - code: UploadDataLimit
+                    message: Upload limit exceeded.
+                    data:
+                      - sku: skuTest2
+                        stock: 100001
+                  - code: CargoWarehouseRestriction
+                    message: The selected warehouse cannot accept cargo products.
+                      Please add them to the correct warehouse.
+                    data:
+                      - sku: skuTest3
+                        stock: 10
+                  - code: NotFound
+                    message: Not found.
+                    data:
+                      - sku: skuTest4
+                        stock: 10
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Stocks
+      summary: Delete stocks
+      description: Deletes the supplier's stocks. **Caution! This action is irreversible**.
+        Deleted stock will require re-uploading to continue sales.
+      parameters:
+        - $ref: '#/components/parameters/Warehouse'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                skus:
+                  type: array
+                  nullable: false
+                  minItems: 1
+                  maxItems: 1000
+                  description: SKUs array
+                  items:
+                    type: string
+                    nullable: false
+                    example: SkuTest123
+      responses:
+        204:
+          description: Stocks deleted
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          description: Not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              example:
+                code: NotFound
+                message: Not found
+                data:
+                  - skuTest1
+                  - skuTest2
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Stocks
+      summary: Get stocks
+      description: Returns the supplier's stocks.
+      parameters:
+        - $ref: '#/components/parameters/Warehouse'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              nullable: false
+              minItems: 1
+              maxItems: 1000
+              properties:
+                skus:
+                  type: array
+                  description: SKUs array
+                  items:
+                    type: string
+                    example: SkuTest123
+      responses:
+        200:
+          description: Stocks list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  stocks:
+                    type: array
+                    nullable: false
+                    items:
+                      type: object
+                      properties:
+                        sku:
+                          type: string
+                          nullable: false
+                          description: SKU
+                          example: SkuTest123
+                        amount:
+                          type: integer
+                          nullable: false
+                          description: Amount
+                          example: 10
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders/new:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Get new orders
+      description: 'Returns a list of all new orders.
+
+        '
+      responses:
+        200:
+          description: Orders list
+          content:
+            application/json:
+              schema:
+                type: object
+                nullable: false
+                properties:
+                  orders:
+                    type: array
+                    nullable: false
+                    items:
+                      $ref: '#/components/schemas/OrderNew'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Get orders
+      description: 'This method returns orders information without current status.
+        <br> The order data returned in this method does not change. <br> We recommend
+        using it to get historical data.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Next'
+        - name: dateFrom
+          in: query
+          schema:
+            type: integer
+          description: Period start date in Unix timestamp format. Optional parameter.
+        - name: dateTo
+          in: query
+          schema:
+            type: integer
+          description: Period end date in Unix timestamp format. Optional parameter.
+      responses:
+        200:
+          description: Orders list
+          content:
+            application/json:
+              schema:
+                type: object
+                nullable: false
+                properties:
+                  next:
+                    $ref: '#/components/schemas/Next'
+                  orders:
+                    type: array
+                    nullable: false
+                    items:
+                      $ref: '#/components/schemas/Order'
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders/status:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Get orders statuses
+      description: "Returns the statuses of orders from the request.\n\n**supplierStatus**\
+        \ is a status of an order. Its change is always triggered only by the supplier.<br>\n\
+        Possible values for this field are:\n| Status   | Description            \
+        \   | How to move an order to this status   |\n| -------  | ---------    \
+        \             | --------------------------------------|\n| new      | New\
+        \ order                 |       \n| confirm  | Order on assembly         |\
+        \ Moved automatically when the order is added to the supply **PATCH** */api/v3/supplies/{supplyId}/orders/{orderId}*\n\
+        | complete | Order assembled           | Moved automatically when a supply\
+        \ with this order moved to the delivery **PATCH** */api/v3/supplies/{supplyId}/deliver*\n\
+        | cancel   | Canceled by the supplier  | **PATCH** */api/v3/orders/{orderId}/cancel*\n\
+        \n\n**wbStatus** is a status of an order on the Wildberries side.<br>\nPossible\
+        \ values for this field are:\n- **waiting** - the supplier confirmed the order,\
+        \ and the Wildberries has not received it yet.\n- **sorted** - the Wildberries\
+        \ warehouse sorted the order.\n- **sold** - the order is sold.\n- **canceled**\
+        \ - the supplier canceled the order.\n- **canceled_by_client** - the buyer\
+        \ canceled the order upon receipt.\n- **declined_by_client** - the buyer canceled\
+        \ the order in the first hour <span class=\"newM\">new</span> <br> Cancellation\
+        \ is available to the buyer in the first hour from the moment of order, if\
+        \ the order is not transferred to confirm status.\n- **defect** - cancellation\
+        \ of the order due to a defect.\n- **ready_for_pickup** - the order came at\
+        \ pickup point and waiting the client.\n"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                orders:
+                  type: array
+                  required: true
+                  minItems: 1
+                  maxItems: 1000
+                  description: Order IDs
+                  items:
+                    type: integer
+                    format: int64
+                    example: 5632423
+      responses:
+        200:
+          description: List of order statuses
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  orders:
+                    type: array
+                    nullable: false
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          format: int64
+                          nullable: false
+                          description: Order ID
+                          example: 5632423
+                        supplierStatus:
+                          type: string
+                          nullable: false
+                          description: Order status (set by the supplier)
+                          enum:
+                            - new
+                            - confirm
+                            - complete
+                            - cancel
+                          example: new
+                        wbStatus:
+                          type: string
+                          nullable: false
+                          description: Order status (on the Wildberries side)
+                          enum:
+                            - waiting
+                            - sorted
+                            - sold
+                            - canceled
+                            - canceled_by_client
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders/{orderId}/cancel:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    patch:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Cancel the order
+      description: Moves the order to **cancel** ("Canceled by the supplier") status.
+      parameters:
+        - $ref: '#/components/parameters/Order'
+      responses:
+        204:
+          description: Order canceled.
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        409:
+          description: Status update error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                StatusMismatch:
+                  $ref: '#/components/examples/StatusMismatch'
+                StatusChangeNotAllowed:
+                  $ref: '#/components/examples/StatusChangeNotAllowed'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders/{orderId}/meta/sgtin:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    put:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Add Data Matrix code to the order
+      description: 'The method allows to assign a Data Matrix code (Chestny ZNAK)
+        to an assembly task. The assembly task cannot have more than 24 codes. You
+        can add a code only for orders in the confirmed status. <span class="newM">new</span>  <br>
+        <br> The uploaded Data Matrix Codes can be retrieved using the GET method
+        <b>/api/v3/orders/{orderId}/meta</b> <br> For more information about Data
+        Matrix Codes please check: https://chestnyznak.ru/en/ <br>
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Order'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sgtins:
+                  type: array
+                  description: List of Data Matrix codes.
+                  minItems: 1
+                  maxItems: 24
+                  items:
+                    type: string
+                    description: Label code on the package. From 16 to 135 characters.
+                    example: '1234567890123456'
+      responses:
+        204:
+          description: Request received successfully
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        409:
+          description: There was an error on the Data Matrix code (Chestny ZNAK) add.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders/stickers:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Get orders stickers
+      description: 'Returns a list of stickers according to the requested orders.
+
+        You can request a sticker in `svg`, `zplv` (vertical), `zplh` (horizontal)
+        and `png` formats.
+
+
+        **Method limitations**:
+
+        - You cannot request more than 100 stickers at a time (no more than 100 order
+        IDs in a request).
+
+        - The method returns stickers only for orders that are in assembly (in **confirm**
+        status).
+
+        - Available dimensions:
+
+        <dd>580x400 px, with parameters `width` = 58, `height` = 40</dd>
+
+        <dd>400x300 px, with parameters `width` = 40, `height` = 30</dd>
+
+        '
+      parameters:
+        - name: type
+          in: query
+          required: true
+          description: Sticker format
+          schema:
+            type: string
+            enum:
+              - svg
+              - zplv
+              - zplh
+              - png
+        - name: width
+          in: query
+          required: true
+          description: Sticker width
+          schema:
+            type: integer
+            enum:
+              - 58
+              - 40
+        - name: height
+          in: query
+          required: true
+          description: Sticker height
+          schema:
+            type: integer
+            enum:
+              - 40
+              - 30
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                orders:
+                  type: array
+                  minItems: 1
+                  maxItems: 100
+                  description: Order IDs
+                  items:
+                    type: integer
+                    format: int64
+                    example: 5346346
+      responses:
+        200:
+          description: Sticker list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  stickers:
+                    type: array
+                    nullable: false
+                    items:
+                      type: object
+                      properties:
+                        orderId:
+                          type: integer
+                          format: int64
+                          nullable: false
+                          description: Order ID
+                          example: 5346346
+                        partA:
+                          type: integer
+                          nullable: false
+                          description: The first part of the sticker identifier (for
+                            printing the signature)
+                          example: 231648
+                        partB:
+                          type: integer
+                          nullable: false
+                          description: The second part of the sticker identifier (for
+                            printing the signature)
+                          example: 9753
+                        barcode:
+                          type: string
+                          nullable: false
+                          description: The encoded value of the sticker
+                          example: '!uKEtQZVx'
+                        file:
+                          type: string
+                          format: byte
+                          nullable: false
+                          description: Base64 encoded representation of the sticker
+                            in a requested format
+                          example: PD94bWwgdmVyc2lvbj0iMS4wIj8+CjwhLS0gR2VuZXJhdGVkIGJ5IFNWR28gLS0+Cjxzdmcgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiCiAgICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQwMCIgaGVpZQiIGhlaWdodD0iMTcwIiBzdHlsZT0iZmlsbDpibGFjayIgLz4KPHJlY3QgeD0iMzE4IiB5PSIyMCIgd2lkdGg9IjYiIGhlaWdodD0iMTcwIiBzdHlsZT0iZmlsbDpibGFjayIgLz4KPHJlY3QgeD0iMzI2IiB5PSIyMCIgd2lkdGg9IjIiIGhlaWdodD0iMTcwIiBzdHlsZT0iZmlsbDpibGFjayIgLz4KPHJlY3QgeD0iMzMwIiB5PSIyMCIgd2lkdGg9IjQiIGhlaWdodD0iMTcwIiBzdHlsZT0iZmlsbDpibGFjayIgLz4KPHJlY3QgeD0iMjAiIHk9IjIwMCIgd2lkdGg9IjM1MCIgaGVpZ2h0PSI5MCIgc3R5bGU9ImZpbGw6YmxhY2siIC8+Cjx0ZXh0IHg9IjMwIiB5PSIyNDAiIHN0eWxlPSJmaWxsOndoaXRlO2ZvbnQtc2l6ZTozMHB0O3RleHQtYW5jaG9yOnN0YXJ0IiA+MjMxNjQ4PC90ZXh0Pgo8dGV4dCB4PSIzNTAiIHk9IjI3MCIgc3R5bGU9ImZpbGw6d2hpdGU7Zm9udC1zaXplOjUwcHQ7dGV4dC1hbmNob3I6ZW5kIiA+OTc1MzwvdGV4dD4KPC9zdmc+Cg==
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders/{orderId}/meta:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Get order metadata
+      description: Returns order metadata. Possible metadata is **imei**, **uin**,
+        **gtin**, **sgtin**. <br>The method response returns the metadata available
+        for the assembly job. Empty response means there is no metadata available
+        for the order.
+      parameters:
+        - $ref: '#/components/parameters/Order'
+      responses:
+        200:
+          description: Order metadata
+          content:
+            application/json:
+              schema:
+                type: object
+                nullable: false
+                properties:
+                  meta:
+                    $ref: '#/components/schemas/Meta'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Delete order metadata
+      description: Removes all order metadata values for the passed key. Possible
+        metadata is **imei**, **uin**, **gtin**, **sgtin**.
+      parameters:
+        - $ref: '#/components/parameters/Order'
+        - name: key
+          in: query
+          schema:
+            type: string
+          description: Name of the metadata to remove (**imei**, **uin**, **gtin**)
+      responses:
+        204:
+          description: Deleted
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        409:
+          description: Delete error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders/{orderId}/meta/uin:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    put:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Add UIN (unique identification number) to the order
+      description: Sets the UIN for the order. The order can only have one UIN. You
+        can add the code only for orders in the `confirmed` status.
+      parameters:
+        - $ref: '#/components/parameters/Order'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                uin:
+                  type: string
+                  minLength: 16
+                  maxLength: 16
+                  description: UIN
+                  example: '1234567890123456'
+              required:
+                - uin
+      responses:
+        204:
+          description: Updated
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        409:
+          description: Update error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders/{orderId}/meta/imei:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    put:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Add IMEI to the order
+      description: Sets the IMEI for the order. The order can have only one IMEI.
+        You can add the code only for orders in the `confirmed` status.
+      parameters:
+        - $ref: '#/components/parameters/Order'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                imei:
+                  type: string
+                  minLength: 15
+                  maxLength: 15
+                  description: IMEI
+                  example: '123456789012345'
+              required:
+                - imei
+      responses:
+        204:
+          description: Updated
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        409:
+          description: Update error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/orders/{orderId}/meta/gtin:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    put:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Add GTIN to the order
+      description: Sets the GTIN for the order. The order can only have one GTIN.
+        You can add the code only for orders in the `confirmed` status.
+      parameters:
+        - $ref: '#/components/parameters/Order'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                gtin:
+                  type: string
+                  minLength: 13
+                  maxLength: 13
+                  description: GTIN
+                  example: '1234567890123'
+              required:
+                - gtin
+      responses:
+        204:
+          description: Updated
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        409:
+          description: Update error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/files/orders/external-stickers:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Orders
+      summary: Get a list of links to stickers that are required for cross-bordering
+      description: 'Returns a list of links to stickers that are required for cross-bordering.
+
+
+        **Method limitations**:
+
+        - You cannot request more than 100 stickers at a time (no more than 100 order
+        IDs in a request).
+
+        - The method returns stickers only for orders that are in assembly (in **confirm**
+        status).
+
+        '
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                orders:
+                  type: array
+                  minItems: 1
+                  maxItems: 100
+                  description: Order IDs
+                  items:
+                    type: integer
+                    format: int64
+                    example: 5346346
+      responses:
+        200:
+          description: A list of links to stickers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  stickers:
+                    type: array
+                    nullable: false
+                    items:
+                      type: object
+                      properties:
+                        orderID:
+                          type: integer
+                          format: int64
+                          nullable: false
+                          description: Order ID
+                          example: 5346346
+                        url:
+                          type: string
+                          nullable: false
+                          description: A link to the order sticker
+                          example: http://.../some-sticker
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                IncorrectRequest:
+                  $ref: '#/components/examples/IncorrectRequest'
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Create a new supply
+      description: '**Supplies limitations**:
+
+
+        - Supplies applicable only for orders in the FBS (Fulfillment by Seller) delivery.
+
+        - All orders added to supply automatically transferred from the **new** status
+        to the **confirm** status.
+
+        - Please note that if you will **cancel** (“Cancelled by the seller”) the
+        order, we will automatically remove it from the supply.
+
+        - A supply can only be assembled from assembly jobs (orders) with the same
+        dimensional type (cargoType). A new supply does not have a dimensional attribute.
+        When the first order is added to a supply, the supply acquires the dimensional
+        attribute of that order.
+
+        '
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  minLength: 1
+                  maxLength: 128
+                  description: Supply name
+                  example: Some test supply
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    nullable: false
+                    description: Supply ID
+                    example: WB-GI-1234567
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Get a supplies list
+      description: 'Returns the supply list.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Next'
+      responses:
+        200:
+          description: Supplies list
+          content:
+            application/json:
+              schema:
+                type: object
+                nullable: false
+                properties:
+                  next:
+                    $ref: '#/components/schemas/Next'
+                  supplies:
+                    type: array
+                    nullable: false
+                    items:
+                      $ref: '#/components/schemas/Supply'
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies/{supplyId}/orders/{orderId}:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    patch:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Add the order to the supply
+      description: 'Adds an order to a supply and moves it to **confirm** status.
+        <br> It can also move the order between active supplies. Or from a closed
+        to an active supply, if the order requires reshipment. <br> <br>   `Important!`
+        <br> It is possible to add an assembly job of any dimensioned type to an empty
+        delivery. <br> After adding the first task, the delivery acquires the dimensional
+        type of this task, see the value of the `cargo Type` field in the response
+        of the <b>"Get supply details"</b> method. <br> After that, you can only add
+        tasks to a delivery whose dimension type corresponds to that of the delivery.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+        - $ref: '#/components/parameters/Order'
+      responses:
+        204:
+          description: The order assigned to the supply.
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        409:
+          description: The order does not satisfy the conditions of assignment to
+            the delivery.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                FailedToAddSupplyOrder:
+                  $ref: '#/components/examples/FailedToAddSupplyOrder'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies/{supplyId}:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Get supply details
+      description: 'Returns supply details.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+      responses:
+        200:
+          description: Supply details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Supply'
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Delete the supply
+      description: Deleted the supply if it is active and does not contain any orders.
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+      responses:
+        204:
+          description: Deleted
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        409:
+          description: The supply contains orders
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                SupplyHasOrders:
+                  $ref: '#/components/examples/SupplyHasOrders'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies/{supplyId}/orders:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Get the supply orders
+      description: 'Returns orders assigned to the supply.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+      responses:
+        200:
+          description: Orders list
+          content:
+            application/json:
+              schema:
+                type: object
+                nullable: false
+                properties:
+                  orders:
+                    type: array
+                    nullable: false
+                    items:
+                      $ref: '#/components/schemas/SupplyOrder'
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies/{supplyId}/deliver:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    patch:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Move the supply to the delivery
+      description: 'Closes the delivery and moves all orders to **complete** (“In
+        Delivery”) status.
+
+        You cannot add any orders to the supply after it is closed.
+
+        You can transfer the supply to delivery only if it contains at least one order
+        and no empty boxes.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+      responses:
+        204:
+          description: The supply moved to the delivery
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        409:
+          description: The supply does not satisfy the delivery conditions
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                SupplyHasZeroOrders:
+                  $ref: '#/components/examples/SupplyHasZeroOrders'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies/{supplyId}/barcode:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Get the supply QR code
+      description: 'Returns the QR code in svg, zplv (vertical), zplh (horizontal),
+        png. <br>
+
+        Available only after the supply has been transferred to the delivery.
+
+        Available dimensions:
+
+        <dd>580x400 px
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+        - name: type
+          in: query
+          required: true
+          description: Sticker format
+          schema:
+            type: string
+            enum:
+              - svg
+              - zplv
+              - zplh
+              - png
+      responses:
+        200:
+          description: QR code of the supply
+          content:
+            application/json:
+              schema:
+                type: object
+                nullable: false
+                properties:
+                  barcode:
+                    type: string
+                    nullable: false
+                    description: The encoded value of the sticker (supply id)
+                    example: WB-GI-12345678
+                  file:
+                    type: string
+                    format: byte
+                    nullable: false
+                    description: Base64 encoded sticker file in the requested format.
+                    example: U3dhZ2dlciByb2Nrcw==
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        409:
+          description: The supply is not moved to the delivery
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                SupplyNotClosed:
+                  $ref: '#/components/examples/SupplyNotClosed'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies/{supplyId}/trbx:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Get supply boxes list
+      description: 'Returns supply boxes list with assigned orders.
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+      responses:
+        200:
+          description: Boxes list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  trbxes:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/SupplyTrbx'
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/FailedToAddSupplyTrbx'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Add boxes to the supply
+      description: Adds the required number of boxes to the supply. Available only
+        while the supply is being assembled.
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - amount
+              properties:
+                amount:
+                  type: integer
+                  minimum: 1
+                  maximum: 1000
+                  description: Boxes amount to add to the supply.
+                  example: 4
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  trbxIds:
+                    type: array
+                    description: List of IDs of created boxes.
+                    minimum: 1
+                    items:
+                      type: string
+                      example: WB-TRBX-1234567
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Delete boxes from the supply
+      description: Removes orders from the listed delivery boxes and deletes the boxes.
+        Available only while the supply is being assembled.
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - trbxIds
+              properties:
+                trbxIds:
+                  type: array
+                  description: List of box IDs to delete from the supply.
+                  items:
+                    type: string
+                    example: WB-TRBX-1234567
+      responses:
+        204:
+          description: Deleted
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies/{supplyId}/trbx/{trbxId}:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    patch:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Add orders to the box
+      description: Add orders to the supply box. Available only while the supply is
+        being assembled.
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+        - $ref: '#/components/parameters/Trbx'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - orderIds
+              properties:
+                orderIds:
+                  type: array
+                  description: List of orders to be added to the box.
+                  items:
+                    type: integer
+                    example: 1234567
+      responses:
+        204:
+          description: Added
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies/{supplyId}/trbx/{trbxId}/orders/{orderId}:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    delete:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Delete order from the box
+      description: Deletes order from the supply box. Available only while the supply
+        is being assembled.
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+        - $ref: '#/components/parameters/Trbx'
+        - $ref: '#/components/parameters/Order'
+      responses:
+        204:
+          description: Deleted
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/supplies/{supplyId}/trbx/stickers:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Supplies
+      summary: Get the supply box QR code stickers
+      description: 'Returns QR-code stickers in svg, zplv (vertical), zplh (horizontal),
+        png.<br>
+
+        Available only if there are orders in the box.
+
+        <dt>Stickers dimensions: 580x400 px</dt>
+
+        '
+      parameters:
+        - $ref: '#/components/parameters/Supply'
+        - name: type
+          in: query
+          required: true
+          description: Sticker format
+          schema:
+            type: string
+            enum:
+              - svg
+              - zplv
+              - zplh
+              - png
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - trbxIds
+              properties:
+                trbxIds:
+                  type: array
+                  description: List of supply box IDs for the sticker generation
+                  items:
+                    type: string
+                    example: WB-TRBX-1234567
+      responses:
+        200:
+          description: QR codes of the supply boxes
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  stickers:
+                    type: array
+                    minimum: 1
+                    items:
+                      $ref: '#/components/schemas/TrbxStickers'
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectParameter:
+                  $ref: '#/components/examples/IncorrectParameter'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/offices:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Warehouses
+      summary: Get offices
+      description: Returns a list of all offices to link to supplier warehouse.
+      responses:
+        200:
+          description: Offices list
+          content:
+            application/json:
+              schema:
+                type: array
+                nullable: false
+                description: Offices list
+                items:
+                  $ref: '#/components/schemas/Office'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/warehouses:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Warehouses
+      summary: Get warehouses
+      description: Returns a list of all supplier's warehouses.
+      responses:
+        200:
+          description: Warehouses list
+          content:
+            application/json:
+              schema:
+                type: array
+                nullable: false
+                description: Warehouses list
+                items:
+                  $ref: '#/components/schemas/Warehouse'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Warehouses
+      summary: Create warehouse
+      description: Creates a supplier's warehouse. You cannot link an office that
+        is already in use.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  nullable: false
+                  minLength: 1
+                  maxLength: 200
+                  description: Supplier's warehouse name
+                  example: Koledino 2
+                officeId:
+                  type: integer
+                  nullable: false
+                  min: 1
+                  description: Office ID
+                  example: 15
+              required:
+                - name
+                - officeId
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    nullable: false
+                    description: Warehouse ID
+                    example: 2
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        404:
+          $ref: '#/components/responses/NotFound'
+        409:
+          description: There was an error on the warehouse create.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/warehouses/{warehouseId}:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    put:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Warehouses
+      summary: Update warehouse
+      description: Updates the supplier's warehouse details. Changing the linked office
+        is allowed once per day. You cannot link an office that is already in use.
+      parameters:
+        - $ref: '#/components/parameters/Warehouse'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  nullable: false
+                  minLength: 1
+                  maxLength: 200
+                  description: Supplier's warehouse name
+                  example: Koledino
+                officeId:
+                  type: integer
+                  nullable: false
+                  min: 1
+                  description: Office ID
+                  example: 15
+              required:
+                - name
+                - officeId
+      responses:
+        204:
+          description: Updated
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                WarehouseNameInvalid:
+                  $ref: '#/components/examples/WarehouseNameInvalid'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        409:
+          description: There was an error on the warehouse update.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Warehouses
+      summary: Delete warehouse
+      description: Deletes the supplier's warehouse.
+      parameters:
+        - $ref: '#/components/parameters/Warehouse'
+      responses:
+        204:
+          description: Deleted
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/passes/offices:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Passes
+      summary: Get offices for pass
+      description: Returns a list of offices that require a pass.
+      responses:
+        200:
+          description: Offices list
+          content:
+            application/json:
+              schema:
+                type: array
+                nullable: false
+                description: Offices list
+                items:
+                  $ref: '#/components/schemas/PassOffice'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/passes:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    get:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Passes
+      summary: Get passes
+      description: Returns a list of all supplier's passes.
+      responses:
+        200:
+          description: Passes list
+          content:
+            application/json:
+              schema:
+                type: array
+                nullable: false
+                description: Passes list
+                items:
+                  $ref: '#/components/schemas/Pass'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    post:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Passes
+      summary: Create pass
+      description: 'Creates a supplier pass. <br> The pass is valid for 48 hours from
+        the time of creation. The method is limited to one call per 10 minutes.
+
+        '
+      requestBody:
+        required: true
+        description: The total length of the full name is limited from 6 to 100 characters.
+          The car number can contain only letters and numbers.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                  nullable: false
+                  minLength: 1
+                  description: First name
+                  example: Alex
+                lastName:
+                  type: string
+                  nullable: false
+                  minLength: 1
+                  description: Last name
+                  example: Petrov
+                carModel:
+                  type: string
+                  nullable: false
+                  minLength: 1
+                  maxLength: 100
+                  description: Car model
+                  example: Lamborghini
+                carNumber:
+                  type: string
+                  nullable: false
+                  minLength: 6
+                  maxLength: 9
+                  description: Car number
+                  example: A456BC123
+                officeId:
+                  type: integer
+                  format: int64
+                  min: 1
+                  nullable: false
+                  description: Office ID
+                  example: 15
+              required:
+                - firstName
+                - lastName
+                - carModel
+                - carNumber
+                - officeId
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    nullable: false
+                    description: Pass ID
+                    example: 2
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /api/v3/passes/{passId}:
+    servers:
+      - url: https://suppliers-api.wildberries.ru
+    put:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Passes
+      summary: Update pass
+      description: Updates the supplier's pass details.
+      parameters:
+        - $ref: '#/components/parameters/Pass'
+      requestBody:
+        required: true
+        description: The total length of the full name is limited from 6 to 100 characters.
+          The car number can contain only letters and numbers.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                  nullable: false
+                  minLength: 1
+                  description: First name
+                  example: Alex
+                lastName:
+                  type: string
+                  nullable: false
+                  minLength: 1
+                  description: Last name
+                  example: Petrov
+                carModel:
+                  type: string
+                  nullable: false
+                  minLength: 1
+                  maxLength: 100
+                  description: Car model
+                  example: Lamborghini
+                carNumber:
+                  type: string
+                  nullable: false
+                  minLength: 6
+                  maxLength: 9
+                  description: Car number
+                  example: A456BC123
+                officeId:
+                  type: integer
+                  format: int64
+                  nullable: false
+                  min: 1
+                  description: Office ID
+                  example: 15
+              required:
+                - firstName
+                - lastName
+                - carModel
+                - carNumber
+                - officeId
+      responses:
+        204:
+          description: Updated
+        400:
+          description: The request is incorrect. Please check the documentation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                IncorrectRequestBody:
+                  $ref: '#/components/examples/IncorrectRequestBody'
+                WarehouseNameInvalid:
+                  $ref: '#/components/examples/WarehouseNameInvalid'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      security:
+        - HeaderApiKey: []
+      tags:
+        - Passes
+      summary: Delete the pass
+      description: Deletes the supplier's pass.
+      parameters:
+        - $ref: '#/components/parameters/Pass'
+      responses:
+        204:
+          description: Deleted
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/AccessDenied'
+        404:
+          $ref: '#/components/responses/NotFound'
+        429:
+          $ref: '#/components/responses/ExceededLimitRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
