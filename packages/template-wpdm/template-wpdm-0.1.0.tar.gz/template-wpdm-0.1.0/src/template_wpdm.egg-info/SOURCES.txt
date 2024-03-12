@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/template_wpdm.egg-info/PKG-INFO
+src/template_wpdm.egg-info/SOURCES.txt
+src/template_wpdm.egg-info/dependency_links.txt
+src/template_wpdm.egg-info/requires.txt
+src/template_wpdm.egg-info/top_level.txt
+src/wpdm/__init__.py
+src/wpdm/models.py
+src/wpdm/utils.py
