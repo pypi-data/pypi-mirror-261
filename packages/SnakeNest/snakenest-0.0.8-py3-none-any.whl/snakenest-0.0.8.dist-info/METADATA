@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SnakeNest
+Version: 0.0.8
+Summary: Snake Nest
+Author-email: Roberto Di Rienzo <roberto.dirienzo@codelithic.com>
+Maintainer-email: Roberto Di Rienzo <roberto.dirienzo@codelithic.com>
+License-File: LICENSE.txt
+Keywords: codelithic,injection,spring
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Requires-Dist: pyyaml
+Description-Content-Type: text/markdown
+
+# SnakeNest
+
+coming soon...
