@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: torchaddition
+Version: 0.1.0
+Summary: A simple PyTorch package for additions
+Home-page: UNKNOWN
+Author: Your Name
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: torch
+
+UNKNOWN
+
+
