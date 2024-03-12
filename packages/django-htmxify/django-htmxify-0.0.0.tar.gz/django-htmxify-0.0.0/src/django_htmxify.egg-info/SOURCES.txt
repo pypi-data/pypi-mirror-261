@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/__version__.py
+src/django_htmxify.egg-info/PKG-INFO
+src/django_htmxify.egg-info/SOURCES.txt
+src/django_htmxify.egg-info/dependency_links.txt
+src/django_htmxify.egg-info/requires.txt
+src/django_htmxify.egg-info/top_level.txt
+src/djangoaddicts/__init__.py
+src/djangoaddicts/htmxify/__init__.py
+src/djangoaddicts/htmxify/apps.py
+src/djangoaddicts/htmxify/mixins.py
+src/djangoaddicts/htmxify/views.py
