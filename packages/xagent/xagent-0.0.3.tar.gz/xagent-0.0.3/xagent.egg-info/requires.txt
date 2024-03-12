@@ -1,0 +1,7 @@
+python-snippets
+agit
+PyPDF2==3.0.1
+fastapi==0.108.0
+python-multipart==0.0.6
+uvicorn==0.25.0
+langchain
