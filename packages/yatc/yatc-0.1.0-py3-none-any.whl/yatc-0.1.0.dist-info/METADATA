@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yatc
+Version: 0.1.0
+Summary: Yet another term color library
+Author: Mathew Moon
+Author-email: me@mathewmoon.net
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Yet another term color lib
+
