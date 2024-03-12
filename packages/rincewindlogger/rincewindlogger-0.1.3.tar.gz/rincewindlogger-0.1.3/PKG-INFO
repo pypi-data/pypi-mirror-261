@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: rincewindlogger
+Version: 0.1.3
+Summary: A module to handle in a standard way for all my cli python scripts.
+License: MIT
+Author: James Ainslie
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# RincewindLogger
+
+A flexible logging module designed for Python applications, `RincewindLogger` offers enhanced logging functionalities with support for file rotation based on file size, customizable logging levels, and optional console output. It facilitates easy setup for effective logging management with rotation and retention policies tailored for both development and production environments.
+
+## Features
+
+- **File Size Rotation**: Automatically rotates log files upon reaching a specified size limit to manage logs efficiently.
+- **Customizable Logging Levels**: Enables setting distinct log levels for file and console outputs, granting detailed control over the amount of logged information.
+- **Console Logging Option**: Provides an option to output logs to the console, beneficial during debugging and development phases.
+- **Straightforward Configuration**: Engineered for ease of setup with minimal required configurations, while retaining the flexibility for more advanced logging requirements.
+
+## Installation
+
+`RincewindLogger` is a standalone Python module. Incorporate it directly into your project by adding `rincewind_logger.py` to your project's directory.
+
+## Usage
+
+### Setting Up the Logger
+
+First, import and initialize the `RincewindLogger`, then configure it as per your requirements:
+
+```python
+from rincewind_logger import RincewindLogger
+
+# Initialize the logger
+logger = RincewindLogger()
+
+# Configure the logger
+logger.setup(
+    log_file_path='application.log',
+    max_days=7,
+    max_size_mb=10,
+    log_level=logging.INFO,
+    verbose=True
+)
+
+# Start logging
+logger.log_info("An informational message.")
+logger.log_error("An error message.")
+```
+
+### Configuration Options
+
+- `log_file_path` (str): The path where the log file will be written.
+- `max_days` (int): The maximum number of days to keep the log files.
+- `max_size_mb` (int): The maximum size (in megabytes) a log file can grow to before being rotated.
+- `log_level` (int, optional): Sets the logging level for the file output. Defaults to `logging.INFO`.
+- `verbose` (bool, optional): If set to `True`, logs will also be printed to stdout. Defaults to `False`.
+- `stdout_log_level` (int, optional): Specifies the logging level for stdout output. If not set, it defaults to the value of `log_level`.
+
+### Logging Messages
+
+To log messages, use the `log_info` and `log_error` methods:
+
+- `log_info(message: str)`: Logs an informational message to the log file and, if `verbose` is `True`, to stdout.
+- `log_error(message: str)`: Logs an error message similarly.
+
+### Verifying Logger Configuration
+
+To check if the logger has been configured, you can use the `is_configured` property:
+
+```python
+if logger.is_configured:
+    print("Logger is properly configured.")
+else:
+    print("Logger configuration is pending.")
+```
+
+## Advanced Configuration
+
+The logger setup allows for advanced configurations, including setting up rotation policies based on file size and retention duration. This enables efficient management of log files, ensuring they do not consume excessive disk space over time.
+
+## Contributing
+
+We welcome contributions to the `RincewindLogger` project. If you have suggestions, please feel free to open an issue or submit a pull request.
+
+## License
+
+`RincewindLogger` is made available under the MIT License. See the LICENSE file in the project repository for more information.
