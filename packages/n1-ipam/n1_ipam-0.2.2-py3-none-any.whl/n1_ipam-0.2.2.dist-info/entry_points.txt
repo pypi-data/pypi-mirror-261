@@ -1,0 +1,3 @@
+[console_scripts]
+n1-ipam = n1.ipam.__main__:main
+
