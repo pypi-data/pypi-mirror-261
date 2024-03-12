@@ -1,0 +1,12 @@
+chatushka/__init__.py,sha256=ZrXrHJgyxYIqqZnN938kPIz13aJYWDPUhp4pXw3kHjM,575
+chatushka/__version__.py,sha256=AlmLEfv8QgEydKVzgc15EmtDhamw0TpQbLV2cYrFrl4,26
+chatushka/_chatushka.py,sha256=IZyPI4pnhPLYPuqKEk64RyvKpuMno9lrdHFFgwqUyzk,3230
+chatushka/_constants.py,sha256=-9lQYVmsOZLVlBUNF76ARFWrdClNARyuuVhvBp6IzVQ,51
+chatushka/_errors.py,sha256=lffu-TJuKUXOXYPQT_u5I-Tz2us6R-INKPTEwEnYAQg,290
+chatushka/_logger.py,sha256=JbXymQh564igGYnO5c-kWQV9N3r4rC7Yq7Gt-G7QXEI,63
+chatushka/_matchers.py,sha256=7zIeqdy1fYQBaFlgAb3JJl1FC7PH9CFQomtG0vCQOBA,3940
+chatushka/_models.py,sha256=bYNmIwvbFt7IVMwC3a_rsu8JpJu2cuzBvMfBiqmFDFU,2560
+chatushka/_transport.py,sha256=zP0pEQvZblpsPZwmpg6epE0FSLhER7NYPzzFcsir9Qc,3901
+chatushka-0.11.0rc1.dist-info/METADATA,sha256=ojOqY4RgmkF7khgXUzJHuIfLd7HaB1hU-G8PhVUdAvA,1123
+chatushka-0.11.0rc1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+chatushka-0.11.0rc1.dist-info/RECORD,,
