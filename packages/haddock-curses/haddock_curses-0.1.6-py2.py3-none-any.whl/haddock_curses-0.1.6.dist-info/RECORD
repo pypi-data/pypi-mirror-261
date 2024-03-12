@@ -1,0 +1,9 @@
+haddock/__init__.py,sha256=kt9gIVxaCYUv7oGA5R2Ygs3z6vyR0Gzt_EiHMThSZ_s,26
+haddock/curses_de.txt,sha256=RGxiZUJlf90RopSizzIquTeNGeLZ7ZG6Kuwo4Y6bOWk,2485
+haddock/curses_en.txt,sha256=xSdAXTW9QqfdHnVBtlnhSbNO2bAfehmcpd-VTV25xHw,3179
+haddock/curses_fr.txt,sha256=jhP9UccMYLv07gCo66Cxb8wKTz63TaYITD5EpbALpw8,7065
+haddock/haddock.py,sha256=bpE_VxiYx1tApVtywSpVhWZqMrSS0P0eZ_0nqYEtFvM,467
+haddock_curses-0.1.6.dist-info/LICENSE,sha256=YT1mlhkpeI0xXj2N_H2DpFdmd7o2d0mVoBMu2Vf-m-I,1079
+haddock_curses-0.1.6.dist-info/METADATA,sha256=3ypHZvW8txdsC7ERPxSdzrG-JM-AisrdxpW60zKtlJI,3015
+haddock_curses-0.1.6.dist-info/WHEEL,sha256=IrRNNNJ-uuL1ggO5qMvT1GGhQVdQU54d6ZpYqEZfEWo,92
+haddock_curses-0.1.6.dist-info/RECORD,,
