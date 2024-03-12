@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: python-vectorspace
+Version: 0.0.1
+Summary: Directory file watcher for automatically creating and querying vector embeddings.
+Author-email: deathbeam <slusnucky@gmail.com>
+Project-URL: Homepage, https://github.com/deathbeam/vectorspace
+Project-URL: Issues, https://github.com/deathbeam/vectorspace/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chromadb
+Requires-Dist: watchdog
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: sentence-transformers
+
+# vectorspace
+
+## Run
+
+```bash
+python vectorspace/app.py
+```
+
+## Development
+
+```bash
+uvicorn vectorspace.app:app --reload
+```
+
+## API docs
+
+```
+http://localhost:8000/docs
+```
