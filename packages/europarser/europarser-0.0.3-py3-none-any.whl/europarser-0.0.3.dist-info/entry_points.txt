@@ -1,0 +1,3 @@
+[console_scripts]
+europarser = europarser.main:main
+europarser-api = europarser.api.api:main
