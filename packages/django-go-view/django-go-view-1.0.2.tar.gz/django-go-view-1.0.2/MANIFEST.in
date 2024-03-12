@@ -1,0 +1,2 @@
+recursive-include goview/frontend *
+recursive-include goview/migrations *.py
