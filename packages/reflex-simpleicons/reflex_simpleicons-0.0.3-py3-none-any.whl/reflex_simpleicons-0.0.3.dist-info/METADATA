@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: reflex-simpleicons
+Version: 0.0.3
+Summary: Reflex custom component simpleicons
+Author-email: cllatser <carlos@llatser.dev>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/cllatser/reflex-simpleicons
+Keywords: reflex,reflex-custom-components
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: reflex >=0.4.2
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# Reflex Simple Icons
+
+A Reflex wrapper for [Simple Icons](https://simpleicons.org/), the best library of SVG icons from the most popular brands. 
+
+## Installation
+
+```bash
+pip install reflex-simpleicons
+```
+
+## Usage
+
+Import like so:
+
+```python
+from reflex_simpleicons import simpleicons
+```
+
+Use in your Reflex UI:
+
+```python
+simpleicons("python")
+```
