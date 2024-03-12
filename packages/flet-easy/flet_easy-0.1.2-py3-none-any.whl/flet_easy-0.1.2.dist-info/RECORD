@@ -1,0 +1,9 @@
+flet_easy-0.1.2.dist-info/METADATA,sha256=CyR_6tCU3f1MJcHAI5WfG3lDFggatdrD5UhCMGXxKtQ,4789
+flet_easy-0.1.2.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+flet_easy-0.1.2.dist-info/licenses/LICENSE,sha256=x-wJTZVQRP_cAZ-CXTJk7icsUHn8MhH-Oj66lRfphC0,11541
+flet_easy/__init__.py,sha256=E5RQuEr88m26F2CkesWl1gzpO1gqQmR2rzjFXVPr77I,158
+flet_easy/fletEasy.py,sha256=rVlmEamrd2rNy9IZfFysRsHec0WTj68nxqMXeLQ0P4w,18909
+flet_easy/inheritance.py,sha256=DGXTp_jrHZ3bxgdW4a4Bo4XYUdw7uyQEfsJfYOxFGLM,29265
+flet_easy/route.py,sha256=5INTLAyj5lgJYoulqUUTe-WgzBGLHUU5cvAyu6H60ag,12059
+flet_easy/view_404.py,sha256=VZoNhv2nXBlktvtXhZdQN5nDiobJq7AIXnAe2a9MqOI,3104
+flet_easy-0.1.2.dist-info/RECORD,,
