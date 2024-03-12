@@ -1,0 +1,8 @@
+setup.py
+miau_mak/__init__.py
+miau_mak/one.py
+miau_mak/two.py
+miau_mak.egg-info/PKG-INFO
+miau_mak.egg-info/SOURCES.txt
+miau_mak.egg-info/dependency_links.txt
+miau_mak.egg-info/top_level.txt
