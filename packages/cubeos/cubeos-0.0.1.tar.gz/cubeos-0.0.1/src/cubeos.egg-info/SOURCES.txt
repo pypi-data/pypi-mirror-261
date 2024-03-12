@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/cu6e/__init__.py
+src/cu6e/functions.py
+src/cubeos.egg-info/PKG-INFO
+src/cubeos.egg-info/SOURCES.txt
+src/cubeos.egg-info/dependency_links.txt
+src/cubeos.egg-info/requires.txt
+src/cubeos.egg-info/top_level.txt
