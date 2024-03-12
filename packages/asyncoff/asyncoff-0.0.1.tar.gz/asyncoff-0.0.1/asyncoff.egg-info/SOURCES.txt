@@ -1,0 +1,5 @@
+setup.py
+asyncoff.egg-info/PKG-INFO
+asyncoff.egg-info/SOURCES.txt
+asyncoff.egg-info/dependency_links.txt
+asyncoff.egg-info/top_level.txt
