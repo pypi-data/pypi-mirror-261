@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+zigzag_cases.egg-info/PKG-INFO
+zigzag_cases.egg-info/SOURCES.txt
+zigzag_cases.egg-info/dependency_links.txt
+zigzag_cases.egg-info/top_level.txt
+zigzagcases/__init__.py
+zigzagcases/main.py
