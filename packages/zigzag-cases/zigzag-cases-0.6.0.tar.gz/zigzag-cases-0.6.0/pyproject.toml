@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zigzag-cases"
+authors = [
+  {name = "Avinash R"}
+]
+version = "0.6.0"
+description = "This is very short description"
+readme = "README.md"
