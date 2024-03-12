@@ -1,0 +1,10 @@
+matplotlib
+numpy
+pandas
+
+[dev]
+pylint
+pytest
+flake8
+coverage
+coveralls
