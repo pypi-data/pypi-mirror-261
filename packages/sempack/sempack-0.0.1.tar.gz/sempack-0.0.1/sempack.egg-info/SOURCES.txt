@@ -1,0 +1,8 @@
+setup.py
+semin_pokerface/__init__.py
+semin_pokerface/mod1.py
+semin_pokerface/mod2.py
+sempack.egg-info/PKG-INFO
+sempack.egg-info/SOURCES.txt
+sempack.egg-info/dependency_links.txt
+sempack.egg-info/top_level.txt
