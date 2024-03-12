@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: aa-skip-email
+Version: 0.1.1
+Summary: Allows you to skip entering your email after registering via EVE SSO
+Home-page: https://gitlab.com/zima-corp/aa-skip-email
+License: GPL-3.0-or-later
+Author: Boris Talovikov
+Author-email: boris@talovikov.ru
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: allianceauth (>=3.6)
+Project-URL: Repository, https://gitlab.com/zima-corp/aa-skip-email
+Description-Content-Type: text/markdown
+
+# AA Skip Email
+
+This module allows you to skip the email asking when registering a user.
+
+## Install
+
+Use pip to install the module:
+
+```bash
+pip install aa-skip-email
+```
+
+Edit the settings/local.py settings file.
+
+Add aa_skip_email to the INSTALLED_APPS list.
+
+```python
+INSTALLED_APPS += [
+    ...
+    'aa_skip_email'
+    ...
+]
+```
+
+Override the AUTHENTICATION_BACKENDS variable.
+
+```python
+AUTHENTICATION_BACKENDS = [
+    'aa_skip_email.authentication.backends.SkipEmailBackend',
+    'django.contrib.auth.backends.ModelBackend'
+]
+```
+
+Restart the allianceauth server.
+
+## See also
+
+- [allianceauth.allianceauth.backends](https://gitlab.com/allianceauth/allianceauth/-/blob/master/allianceauth/authentication/backends.py)
+- [github.com/allianceauth/allianceauth/issues/1060](https://github.com/allianceauth/allianceauth/issues/1060)
+
