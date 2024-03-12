@@ -1,0 +1,6 @@
+*.pyc
+demo.py
+main.py
+*.log
+*.ipynb
+test.xlsx
