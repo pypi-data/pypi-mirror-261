@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: bot424_sentiment
+Version: 0.1
+Summary: Fetches tweets and performs sentiment analysis
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Requires-Dist: tweepy
+Requires-Dist: textblob

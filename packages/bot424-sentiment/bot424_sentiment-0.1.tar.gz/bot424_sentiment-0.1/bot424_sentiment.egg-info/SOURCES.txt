@@ -1,0 +1,7 @@
+README.md
+setup.py
+bot424_sentiment.egg-info/PKG-INFO
+bot424_sentiment.egg-info/SOURCES.txt
+bot424_sentiment.egg-info/dependency_links.txt
+bot424_sentiment.egg-info/requires.txt
+bot424_sentiment.egg-info/top_level.txt
