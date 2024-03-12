@@ -1,0 +1,11 @@
+_hpsm.cpython-312-darwin.so,sha256=n1nq1g-XJYHu7U4egYvsdvf8tbN3FtTGuneRyHVnpoM,51976
+_winnowing.cpython-312-darwin.so,sha256=O5Z3ghAMVKAUTDZlhD1C37106SWYDXOzoI_9GTebRNc,52285
+scanoss_winnowing/winnowing.py,sha256=XCOavvjvsMnI7GwGYH-Kjy5j-rzFymFE4Ma6kr903ss,20900
+scanoss_winnowing/_hpsm.c,sha256=i_wqbSIxy3h3HSEGfpNBdpPPsvpn6d985cTOSBqCeeo,5667
+scanoss_winnowing/_winnowing.c,sha256=Qj-9gq56vGxrq8eE_bdWJTHlGH7FV5EQeTAF5JLDV8g,6101
+scanoss_winnowing/__init__.py,sha256=SftdGZMLhDc5GnHszaMJL4w0Phsbctt51kX2nzFz4Po,1162
+scanoss_winnowing-0.5.0.dist-info/RECORD,,
+scanoss_winnowing-0.5.0.dist-info/LICENSE,sha256=miMP9C7FhrGy19ClXgShigqjk2nUOQLNgr8bc_itAB4,1074
+scanoss_winnowing-0.5.0.dist-info/WHEEL,sha256=VdDmD53Z5Im3s3DzMnDRXVcjZVnzMxiqEPFSmUQBX3s,110
+scanoss_winnowing-0.5.0.dist-info/top_level.txt,sha256=YcsWTy2_alsm4OSQZAKh04bcWvX3TVyNYvCV4DHyVxY,35
+scanoss_winnowing-0.5.0.dist-info/METADATA,sha256=uRw8O0euqPCNhn-7CjU4HjWDEchjtEdks0UBYYxIOfw,2057
