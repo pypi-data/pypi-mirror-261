@@ -1,0 +1,3 @@
+include CHANGES LICENSE README.rst pyproject.toml setup.cfg setup.py VERSION
+graft tests
+graft source
