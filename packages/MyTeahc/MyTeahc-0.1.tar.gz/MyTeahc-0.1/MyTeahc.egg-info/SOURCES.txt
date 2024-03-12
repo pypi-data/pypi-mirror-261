@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+MyTeahc.egg-info/PKG-INFO
+MyTeahc.egg-info/SOURCES.txt
+MyTeahc.egg-info/dependency_links.txt
+MyTeahc.egg-info/requires.txt
+MyTeahc.egg-info/top_level.txt
