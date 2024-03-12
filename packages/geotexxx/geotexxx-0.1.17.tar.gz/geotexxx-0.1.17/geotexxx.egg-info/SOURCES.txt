@@ -1,0 +1,15 @@
+.gitignore
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+.github/workflows/publish-to-pypi.yml
+env/requirements-build.txt
+geotexxx.egg-info/PKG-INFO
+geotexxx.egg-info/SOURCES.txt
+geotexxx.egg-info/dependency_links.txt
+geotexxx.egg-info/requires.txt
+geotexxx.egg-info/top_level.txt
+geotexxx.egg-info/zip-safe
+src/geotexxx/__init__.py
+src/geotexxx/gefxml_reader.py
