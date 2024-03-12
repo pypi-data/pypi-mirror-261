@@ -1,0 +1,7 @@
+pyproject.toml
+shadb.py
+shadb.egg-info/PKG-INFO
+shadb.egg-info/SOURCES.txt
+shadb.egg-info/dependency_links.txt
+shadb.egg-info/requires.txt
+shadb.egg-info/top_level.txt

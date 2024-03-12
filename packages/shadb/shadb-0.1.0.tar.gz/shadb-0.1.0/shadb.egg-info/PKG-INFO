@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: shadb
+Version: 0.1.0
+Summary: A git-backed data store.
+Author-email: Derek Anderson <public@kered.org>
+Project-URL: Homepage, https://github.com/keredson/shadb
+Project-URL: Issues, https://github.com/keredson/shadb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: sh
+Requires-Dist: shortuuid
