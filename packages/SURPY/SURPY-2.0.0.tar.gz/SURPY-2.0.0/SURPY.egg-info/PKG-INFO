@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: SURPY
+Version: 2.0.0
+Summary: SURPY python for surgical data analysis
+Home-page: https://github.com/sasurasa/
+Author: Surasak Sangkhathat
+Author-email: s.sangkhathat@gmail.com
+License: Prince of Songkla University
+Description-Content-Type: text/markdown
+
+SURPY (เซอ-ปี้) is a Python module built by a group of surgical researchers with a primary aim to be used as a command line interface (CLI) tool for outcome data analysis, beginning from taking input files in .xlsx format, aggregate the basic statistics and basic hypothesis testing for association between a variable and a defined outcome. The following table describes packages within the module. SURPY and related packages are available from https://github.com/sasurasa/soda_ep1. The package uses Pandas, Numpy, Scipy, sklearn, lifelines, statsmodels and Matplotlob as base packages.
