@@ -1,0 +1,8 @@
+setup.py
+mashka/__init__.py
+mashka/one.py
+mashka/two.py
+mashka.egg-info/PKG-INFO
+mashka.egg-info/SOURCES.txt
+mashka.egg-info/dependency_links.txt
+mashka.egg-info/top_level.txt
