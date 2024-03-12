@@ -1,0 +1,5 @@
+numpy
+requests
+openai
+moviepy
+pydantic
