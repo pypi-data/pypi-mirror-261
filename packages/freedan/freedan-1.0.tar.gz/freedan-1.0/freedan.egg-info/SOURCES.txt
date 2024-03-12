@@ -1,0 +1,6 @@
+pyproject.toml
+freedan/__init__.py
+freedan.egg-info/PKG-INFO
+freedan.egg-info/SOURCES.txt
+freedan.egg-info/dependency_links.txt
+freedan.egg-info/top_level.txt
