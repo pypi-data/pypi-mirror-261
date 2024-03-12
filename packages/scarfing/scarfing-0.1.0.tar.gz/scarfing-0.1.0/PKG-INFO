@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: scarfing
+Version: 0.1.0
+Summary: A dummy python package to test out scarf.sh
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# Scarfing
+
+## Motivation
+A dummy python package to test out scarf.sh
+
+## How to setup
+
+Using poetry:
+
+```bash
+poetry add scarfing
+```
+
+Using pip:
+
+```bash
+pip install scarfing
+```
+
+
