@@ -1,0 +1,11 @@
+ssb_konjunk/__init__.py,sha256=dyBv5SgJECphmcyarHRzcNGncRNVMMwNHBj40f3Zwss,19
+ssb_konjunk/__main__.py,sha256=bqGEjbMKlKza1kQeyZ5NcjV5p5vsGpoQ81YhO8cGPvk,213
+ssb_konjunk/_functions.py,sha256=lyEL0eG-jJjkPuuKhk5R3tPuR3di2Sy_Cwa2eAv5puA,466
+ssb_konjunk/functions.py,sha256=0IhyZLbPRA2AZqS8zlp62tIFY2JSeX36mMsKZFzKr40,992
+ssb_konjunk/prompts.py,sha256=oh4bY0OOmpOn_cKEWRl70FklCS_1bgrdYOYJrBlpBGo,7069
+ssb_konjunk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssb_konjunk-0.0.4.dist-info/LICENSE,sha256=np3IfD5m0ZUofn_kVzDZqliozuiO6wrktw3LRPjyEiI,1073
+ssb_konjunk-0.0.4.dist-info/METADATA,sha256=512_6zU0rBCmcuc9cK_ihTBqfJAbwwhUTfNXILASoPU,3820
+ssb_konjunk-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ssb_konjunk-0.0.4.dist-info/entry_points.txt,sha256=qU7y58sZiFKYonuEJTbV0MhhbAJtposy46crLp4TjAM,57
+ssb_konjunk-0.0.4.dist-info/RECORD,,
