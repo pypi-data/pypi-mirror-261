@@ -1,0 +1,5 @@
+setup.py
+lovyagin.egg-info/PKG-INFO
+lovyagin.egg-info/SOURCES.txt
+lovyagin.egg-info/dependency_links.txt
+lovyagin.egg-info/top_level.txt
