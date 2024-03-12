@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aws-secrets-env
+Version: 0.1.0
+Summary: Fetch AWS secrets in a way similar to consul-env
+Author: Mathew Moon
+Author-email: me@mathewmoon.net
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.56,<2.0.0)
+Requires-Dist: yatc (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Fetch secrets from AWS Secrets Manager similar to env-consul
+
