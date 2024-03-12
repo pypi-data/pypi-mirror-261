@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/dreaditor/__init__.py
+src/dreaditor/__main__.py
+src/dreaditor/actor.py
+src/dreaditor/actor_reference.py
+src/dreaditor/config.py
+src/dreaditor/constants.py
+src/dreaditor/main_window.py
+src/dreaditor/rom_manager.py
+src/dreaditor.egg-info/PKG-INFO
+src/dreaditor.egg-info/SOURCES.txt
+src/dreaditor.egg-info/dependency_links.txt
+src/dreaditor.egg-info/top_level.txt
