@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bulge
+Version: 0.0.1
+Summary: A package for dealing with non-spherical exoplanets
+Author-email: Ben Cassese <b.c.cassese@columbia.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/ben-cassese/bulge
+Project-URL: Documentation, https://github.com/ben-cassese/bulge
+Keywords: astronomy,exoplanets
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bulge
+A package for dealing with non-spherical exoplanets
+
+WIP!

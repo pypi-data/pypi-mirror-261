@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bulge/__init__.py
+bulge/tmp.py
+bulge.egg-info/PKG-INFO
+bulge.egg-info/SOURCES.txt
+bulge.egg-info/dependency_links.txt
+bulge.egg-info/requires.txt
+bulge.egg-info/top_level.txt
