@@ -1,0 +1,7 @@
+nchr
+nlit
+chck
+quac
+atup
+
+[dev]
