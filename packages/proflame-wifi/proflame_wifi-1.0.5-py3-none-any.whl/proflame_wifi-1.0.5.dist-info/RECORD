@@ -1,0 +1,16 @@
+proflame_wifi/__init__.py,sha256=pt7zy2IR3_fvB4LTFtCHtHoE_MoKKhwM92zavV-2HT0,459
+proflame_wifi/client.py,sha256=I7Idiehwm5vwAv8JcdPHjaQgiSkMY_6H2TaeSc_x0Mc,10435
+proflame_wifi/connection.py,sha256=fHdHziIZuTj9Nnx6VCe1vBGzFqkj5guevHiOMgcg0fc,11931
+proflame_wifi/const.py,sha256=VHjEEnOajPEu6UKjgBdcE3iFlUgDyaa4RIlmXEddJII,1911
+proflame_wifi/get_state.py,sha256=KqlJ1t0JkccUXCwBrCED7XABI8216pYOa_DnAHJBsxI,1237
+proflame_wifi/manager.py,sha256=2x8-O4tlGT0HzmvSTkAD6hkMJocn6xJPMAowY4hhYW4,29432
+proflame_wifi/set_state.py,sha256=isXLguKBIuJeFNTUb11LHydAZV0Atsj6rwdxu0jqLpI,1718
+proflame_wifi/strings.py,sha256=JRRO5AG_GHZfXPZkghueDKltbGAWkwOe-EBwwhrMHA0,662
+proflame_wifi/temperature.py,sha256=G0JHOUxCOzw8gwGzVzEFloLtpN0LWNwK7VCQJeQKtPQ,3417
+proflame_wifi/util.py,sha256=LZ7Wg-BIfXbbZFO2SHq6EMJ2rmRYoEZj9T-qiGeu7Gg,573
+proflame_wifi-1.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+proflame_wifi-1.0.5.dist-info/METADATA,sha256=lOVc_uk4ZzhiRsMDFAapHa8HNXrA5vBB8AZorcWXTpM,2377
+proflame_wifi-1.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+proflame_wifi-1.0.5.dist-info/entry_points.txt,sha256=RTjYISP9q_G-iU0LBrZNq-y2Mr-VyFxd2enZS9CvSTo,106
+proflame_wifi-1.0.5.dist-info/top_level.txt,sha256=erPcV9lJEQ2Hp_3N1Z_Nius-9iX4Z_PGNVoHh_-SVmg,14
+proflame_wifi-1.0.5.dist-info/RECORD,,
