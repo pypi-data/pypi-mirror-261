@@ -1,0 +1,17 @@
+pypilot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypilot/agent/base.py,sha256=-Ky3J3XXLx9nNMkZH8ql1JvE8LPQQDq-4B6qA9Wue0I,1438
+pypilot/agent/chat.py,sha256=Zah-YnsDmPMcSod9WBwVZiCw9wDX1175rcWoi3dZ77k,561
+pypilot/agent/code.py,sha256=inFdI59T1C1d69yvABoUZu7K3yFRHrB7yDhHA_LMqdU,965
+pypilot/agent/prompt.py,sha256=ipwsOB9QK7pjHPA5wqbfJKeTU5YqaogR-FEJ9qn7J0E,557
+pypilot/agent/python_chat.py,sha256=Ftqilt23EVRrU81DwpQV1XH0TVJAlLDZm2JSOFGD6EM,2510
+pypilot/agent/router.py,sha256=W3aps0Ujdy9NnM2RGLXgt0D4GXS-8tje-gF4J8t6yeY,946
+pypilot/cli.py,sha256=XcKI7NoqLpo9850t-clbEMVgZ_YWkQchbzno9CUk8Aw,1535
+pypilot/console.py,sha256=aZvZSNudKRW6qUucVRsLQiq7lhg3UqURexSQ2tMq4GA,11375
+pypilot/oai_utils.py,sha256=8ExvR_a9tPhm8qr97gAnQQ8bqTVrP6Jw7BbG2l8hi_8,4641
+pypilot/parser.py,sha256=sRvEzRJf1_7fsEa8oPQJPSARjkD9PF43J3dWFL5WGY4,1593
+pypilot/utils.py,sha256=F1sIWegVpxU5eVn-zgsjBJaUEGiyE0a4jEimhvJLnEg,558
+pypilot/version.py,sha256=VziqZQWrsSA5KvRzV5zCOgNlH_2XIeF7YDZd44i7pp4,18
+python_pilot-0.0.5.dist-info/METADATA,sha256=6Y3etRrIc92czNy3cZm2IIhFqMNeXX_7CUYpPpYZkyk,3517
+python_pilot-0.0.5.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+python_pilot-0.0.5.dist-info/entry_points.txt,sha256=sb93xsUCN_bDm1yqjKjdzPTd-SUzx2X6XMaRVH5D1U8,44
+python_pilot-0.0.5.dist-info/RECORD,,
