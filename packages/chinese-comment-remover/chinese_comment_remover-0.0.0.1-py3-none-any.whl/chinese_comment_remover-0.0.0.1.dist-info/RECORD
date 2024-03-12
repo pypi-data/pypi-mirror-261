@@ -1,0 +1,9 @@
+chinese_comment_remover/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chinese_comment_remover/remove.py,sha256=hlAJjbhty7i7SY-ic3nesfudAyUratdoP2R6eImuwMo,3133
+scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripts/remove_comment.py,sha256=eGBURo_SBqWwzKRVr-Bl114GHMx_oobAJ_gOFI63cKY,2277
+chinese_comment_remover-0.0.0.1.dist-info/METADATA,sha256=VfuXG6ddpQLzVxIsxxUD89TnJ_lCv_L9WjeIrWtEuOc,771
+chinese_comment_remover-0.0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+chinese_comment_remover-0.0.0.1.dist-info/entry_points.txt,sha256=tEaMr4DXw4HuQNe0pxUYrR-IGGDELb037B_WKWM6Hog,63
+chinese_comment_remover-0.0.0.1.dist-info/top_level.txt,sha256=AzacrWplHS74yc2XVjhi1dxkp3CjZaKJMlz49HP5FE8,32
+chinese_comment_remover-0.0.0.1.dist-info/RECORD,,
