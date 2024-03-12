@@ -1,0 +1,3 @@
+browsergym-core==0.0.1a7
+browsergym-miniwob==0.0.1a7
+browsergym-webarena==0.0.1a7
