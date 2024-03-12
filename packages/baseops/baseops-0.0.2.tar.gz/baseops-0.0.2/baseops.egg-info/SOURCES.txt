@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+baseops/__init__.py
+baseops/qtnulls.py
+baseops.egg-info/PKG-INFO
+baseops.egg-info/SOURCES.txt
+baseops.egg-info/dependency_links.txt
+baseops.egg-info/requires.txt
+baseops.egg-info/top_level.txt
