@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: NxTransit
+Version: 0.1.18
+Summary: Construct and analyze time-dependent transit networks from GTFS data
+Author: Chingiz Zhanarbaev
+License: MIT License
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: geopandas>=0.14.0
+Requires-Dist: networkx>=3.2.0
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: osmnx>=1.9.1
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: Pympler>=1.0.1
+Requires-Dist: pytest>=8.0.1
+Requires-Dist: scipy>=1.12.0
+Requires-Dist: Shapely>=2.0.3
+Requires-Dist: tqdm>=4.66.1
+Requires-Dist: geocube>=0.5.0
+Provides-Extra: tests
+Requires-Dist: pytest>=8.0.1; extra == "tests"
