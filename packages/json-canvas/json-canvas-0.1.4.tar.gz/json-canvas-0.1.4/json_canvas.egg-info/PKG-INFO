@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: json-canvas
+Version: 0.1.4
+Summary: A simple package to work with JSON Canvas
+Home-page: https://github.com/ethanzh/json-canvas-python
+Author: Ethan Zedler Houston
+Author-email: ethan.houston@gmail.com
+License: MIT
+Requires-Dist: dataclasses
