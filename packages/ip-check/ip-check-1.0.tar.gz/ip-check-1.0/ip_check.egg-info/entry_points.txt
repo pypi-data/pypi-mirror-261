@@ -1,0 +1,2 @@
+[console_scripts]
+ip-check = ipcheck.main:main
