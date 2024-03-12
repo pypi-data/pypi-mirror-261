@@ -1,0 +1,14 @@
+[package]
+name = "lichen_core"
+version = "0.1.6"
+edition = "2021"
+description = "HTML link extractor"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ahash = "0.8.11"
+lol_html = "1.2.1"
+pretty_assertions = "1.4.0"
+url = "2.5.0"
