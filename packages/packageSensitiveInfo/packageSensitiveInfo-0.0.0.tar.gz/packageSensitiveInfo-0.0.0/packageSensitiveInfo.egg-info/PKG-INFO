@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: packageSensitiveInfo
+Version: 0.0.0
+Summary: It contains data and regex patterns in 2 separate files. My package validates how many regex patterns matches the data.
+Home-page: UNKNOWN
+Author: Simran
+Author-email: simran.saxena@dataverze.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+

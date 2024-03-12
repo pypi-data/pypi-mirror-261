@@ -1,0 +1,14 @@
+README.md
+setup.py
+packageSensitiveInfo.egg-info/PKG-INFO
+packageSensitiveInfo.egg-info/SOURCES.txt
+packageSensitiveInfo.egg-info/dependency_links.txt
+packageSensitiveInfo.egg-info/requires.txt
+packageSensitiveInfo.egg-info/top_level.txt
+src/__init__.py
+src/detection.py
+src/version.py
+tests/__init__.py
+tests/test_data_file.py
+tests/test_regex.py
+tests/test_regex_file.py
