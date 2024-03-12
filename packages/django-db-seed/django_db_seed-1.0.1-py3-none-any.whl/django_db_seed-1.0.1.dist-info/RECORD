@@ -1,0 +1,15 @@
+django_db_seed/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_db_seed/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+django_db_seed/apps.py,sha256=dbc3f8-4gZlfsbOnssG5b5g9-hw4_Gp2Rj1mlFPl9Qc,158
+django_db_seed/helpers.py,sha256=9xHWdM7CfMioXOXZMBtb49rr_PBJs-xYKCoEvF69-kE,3935
+django_db_seed/models.py,sha256=4OVMcDDx9fVgBEJ91B7dfMEG2Ni1LRSLJOKzIkVPsKo,60
+django_db_seed/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+django_db_seed/urls.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_db_seed/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_db_seed/management/commands/db-seed.py,sha256=smq7yLT25htz6bP1ur1tklj10n7tgNFQZHxCH83Pxo0,679
+django_db_seed/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_db_seed-1.0.1.dist-info/LICENSE.md,sha256=JfxUvagtA1TiY_11xTvng-URefMBoNjJ-V_8ksjAozs,1099
+django_db_seed-1.0.1.dist-info/METADATA,sha256=oZ1N-25aKG25c9vmhxtcLXHEZZY5-e9SpEOn3-nXqNY,3217
+django_db_seed-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+django_db_seed-1.0.1.dist-info/top_level.txt,sha256=k67Mlznql0Z5SIOAqheu2aX5ajml9RfOQAoPatu6k6I,15
+django_db_seed-1.0.1.dist-info/RECORD,,
