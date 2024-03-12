@@ -1,0 +1,9 @@
+libcomps.libs/liblzma-51a76f52.so.5.2.4,sha256=3EDuNDuc_qFaqWfrJ8TjbJH2lPntVHhFdyIyzxLyVuk,167585
+libcomps.libs/libxml2-e1bbf549.so.2.9.7,sha256=izJ5MXi4O4eO-Kc6-Xnx45IZ0W4xuotBNrSzwivDEdQ,1597833
+libcomps-0.1.21.post1.dist-info/COPYING,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+libcomps-0.1.21.post1.dist-info/RECORD,,
+libcomps-0.1.21.post1.dist-info/METADATA,sha256=nMo-ZskcBgzV0tPXOyap1fcw5i917NBkKKPiz1DQEh8,4793
+libcomps-0.1.21.post1.dist-info/WHEEL,sha256=UbPcdyXBZdVMgq9kok-czPI9tfx_lRTnimH5JAC0Lgc,106
+libcomps-0.1.21.post1.dist-info/top_level.txt,sha256=6GC0ANKUpJWv7muB9Wb8_RBVaHT4mJK5WbSsKw5a1wE,9
+libcomps/__init__.py,sha256=BmJb-gYiXKEji7lqV4kkEw37Y7xG3riWKOGjydzLm34,28
+libcomps/_libpycomps.so,sha256=-_sZt5uWJy8DoeuNghYlLRWhl94HLZ82rBbA5KTyr_g,1180921
