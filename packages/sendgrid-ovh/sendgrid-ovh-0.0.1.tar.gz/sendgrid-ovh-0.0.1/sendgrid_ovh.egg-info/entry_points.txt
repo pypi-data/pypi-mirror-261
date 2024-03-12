@@ -1,0 +1,2 @@
+[console_scripts]
+ovh-zone = sendgrid_ovh.__main__:cli
