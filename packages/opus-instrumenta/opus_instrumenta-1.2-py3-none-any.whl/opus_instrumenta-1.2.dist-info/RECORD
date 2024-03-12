@@ -1,0 +1,16 @@
+opus_instrumenta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opus_instrumenta/molitor.py,sha256=eS-wAll7U6P6BYtGwnD5FKqUtU0ZkJxN4rCzkPdhEw8,2862
+opus_instrumenta/hooks/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opus_instrumenta/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opus_instrumenta/hooks/kvs_hook.py,sha256=jv9rFNu8lZn5PsVBFFhqsaPsrYV82XDt8wbEST7H61s,6220
+opus_instrumenta/persistence/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opus_instrumenta/task_processors/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opus_instrumenta/task_processors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opus_instrumenta/task_processors/cli_input_prompt_v1.py,sha256=pKHWqu1LzzXKiiI1TXlnwEBp6DcoaRO-s4kr8bYOnps,12181
+opus_instrumenta/task_processors/shell_script_v1.py,sha256=Pw3H8dK3VgzrgxV5N8WG0c-IWPSFh73nIAfBWRTMbt0,21149
+opus_instrumenta/task_processors/web_download_file.py,sha256=GOwaQA_vo4fxNvxWmC6GZP5LuHrxr_3P-S0EJyjj8q8,30758
+opus_instrumenta-1.2.dist-info/METADATA,sha256=-JfiqCByG0chXTdBvzlNqGodCGTrT94HCRhq3fM9CmY,3887
+opus_instrumenta-1.2.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+opus_instrumenta-1.2.dist-info/entry_points.txt,sha256=KrN10BX2VsvXk6FqBOlkgtAjqq5HRMmI9XFXxBx4vfU,42
+opus_instrumenta-1.2.dist-info/licenses/LICENSE,sha256=usWaYqfV3axcfq-bI7xzQ3BW2lF5RRr1rVSTm2BDeZY,1069
+opus_instrumenta-1.2.dist-info/RECORD,,
