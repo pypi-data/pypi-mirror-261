@@ -1,0 +1,55 @@
+{
+    "collection": "feed_embeddings",
+    "texts": [
+        "<redacted_string>",
+        "<redacted_string>",
+        "<redacted_string>",
+        "<redacted_string>",
+        "<redacted_string>"
+    ],
+    "ids": [
+        46804987,
+        46804998,
+        46805000,
+        46805010,
+        46805019
+    ],
+    "metadatas": [
+        {
+            "user_id": 92305922,
+            "status": "published",
+            "deleted": false,
+            "updated_at": "<redacted_string>",
+            "is_reply": true
+        },
+        {
+            "user_id": 47042864,
+            "status": "published",
+            "deleted": false,
+            "updated_at": "<redacted_string>",
+            "is_reply": true
+        },
+        {
+            "user_id": 42345918,
+            "status": "published",
+            "deleted": false,
+            "updated_at": "<redacted_string>",
+            "is_reply": true
+        },
+        {
+            "user_id": 29248820,
+            "status": "published",
+            "deleted": false,
+            "updated_at": "<redacted_string>",
+            "is_reply": true
+        },
+        {
+            "user_id": 157173686,
+            "status": "published",
+            "deleted": false,
+            "updated_at": "<redacted_string>",
+            "is_reply": true
+        }
+    ],
+    "split": false
+}

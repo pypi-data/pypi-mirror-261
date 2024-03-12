@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "node": "GenerateText",
+      "id": "node_1",
+      "args": {
+        "prompt": "foo"
+      },
+      "_should_output_globally": true,
+      "extra_args": {}
+    },
+    {
+      "node": "GenerateText",
+      "id": "node_2",
+      "args": {
+        "prompt": {
+          "__$$SB_GRAPH_OP_ID$$__": "op_2"
+        }
+      },
+      "_should_output_globally": true,
+      "extra_args": {}
+    }
+  ],
+  "edges": [],
+  "initial_args": {},
+  "futures": [
+    {
+      "id": "op_2",
+      "directive": {
+        "type": "trace",
+        "op_stack": [
+            {
+              "key": "text",
+              "accessor": "attr",
+              "future_id": null
+            }
+        ],
+        "origin_node_id": "node_1"
+      }
+    }
+  ]
+}

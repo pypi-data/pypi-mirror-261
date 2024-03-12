@@ -1,0 +1,480 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Substrate Usage",
+    "version": "0.0.1",
+    "contact": {
+      "email": "support@substrate.run"
+    },
+    "description": "Models for tracking API usage"
+  },
+  "servers": [
+    {
+      "url": "https://api.substrate.run",
+      "description": "The production Substrate API"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "BaseExecutionUsage": {
+        "type": "object",
+        "description": "Base model for execution usage.",
+        "properties": {
+          "execution_seconds": {
+            "type": "float",
+            "description": "Total execution time."
+          },
+          "machine_config": {
+            "type": "string",
+            "description": "Machine config string in GPU(H100, count=1) format."
+          }
+        },
+        "required": [
+          "execution_seconds",
+          "machine_config"
+        ]
+      },
+      "XTTSUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_audio_bytes": {
+                "type": "integer",
+                "description": "Size of speaker conditioning audio."
+              },
+              "input_audio_seconds": {
+                "type": "number",
+                "format": "float",
+                "description": "Length of speaker conditioning audio."
+              },
+              "output_audio_bytes": {
+                "type": "integer",
+                "description": "Size of output audio"
+              },
+              "output_audio_seconds": {
+                "type": "number",
+                "format": "float",
+                "description": "Length of output audio"
+              }
+            },
+            "required": [
+              "input_audio_bytes",
+              "input_audio_seconds",
+              "output_audio_bytes",
+              "output_audio_seconds"
+            ]
+          }
+        ]
+      },
+      "SegmentAnythingUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_image_bytes": {
+                "type": "integer",
+                "description": "Size of input image."
+              },
+              "input_image_width": {
+                "type": "integer",
+                "description": "Widht of input."
+              },
+              "input_image_height": {
+                "type": "integer",
+                "description": "Height of input."
+              }
+            },
+            "required": [
+              "input_image_bytes",
+              "input_image_width",
+              "input_image_height"
+            ]
+          }
+        ]
+      },
+      "GroundingDINOUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_image_bytes": {
+                "type": "integer",
+                "description": "Size of input image."
+              },
+              "input_image_width": {
+                "type": "integer",
+                "description": "Widht of input."
+              },
+              "input_image_height": {
+                "type": "integer",
+                "description": "Height of input."
+              }
+            },
+            "required": [
+              "input_image_bytes",
+              "input_image_width",
+              "input_image_height"
+            ]
+          }
+        ]
+      },
+      "WhisperUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_audio_bytes": {
+                "type": "integer",
+                "description": "Size of input audio."
+              },
+              "input_audio_seconds": {
+                "type": "number",
+                "format": "float",
+                "description": "Length of input audio."
+              },
+              "output_segment_count": {
+                "type": "integer",
+                "description": "Number of segments."
+              },
+              "align_enabled": {
+                "type": "boolean",
+                "description": "Align toggle."
+              },
+              "diarize_enabled": {
+                "type": "boolean",
+                "description": "Diarize toggle."
+              },
+              "chapters_enabled": {
+                "type": "boolean",
+                "description": "Chapters toggle."
+              }
+            },
+            "required": [
+              "input_audio_bytes",
+              "input_audio_seconds",
+              "output_segment_count",
+              "align_enabled",
+              "diarize_enabled",
+              "chapters_enabled"
+            ]
+          }
+        ]
+      },
+      "FirellavaUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_image_bytes": {
+                "type": "integer",
+                "description": "Total bytes of input image(s)."
+              },
+              "input_image_count": {
+                "type": "integer",
+                "description": "Number of input images."
+              },
+              "input_token_count": {
+                "type": "integer",
+                "description": "Input prompt tokens."
+              },
+              "output_token_count": {
+                "type": "integer",
+                "description": "Output text tokens."
+              }
+            },
+            "required": [
+              "input_image_bytes",
+              "input_image_count",
+              "input_token_count",
+              "output_token_count"
+            ]
+          }
+        ]
+      },
+      "LamaUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "output_image_bytes": {
+                "type": "integer",
+                "description": "Total bytes of output image(s)."
+              },
+              "output_width": {
+                "type": "integer",
+                "description": "Width of output."
+              },
+              "output_height": {
+                "type": "integer",
+                "description": "Height of output."
+              }
+            },
+            "required": [
+              "output_image_bytes",
+              "output_width",
+              "output_height"
+            ]
+          }
+        ]
+      },
+      "RemoveBackgroundUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "output_image_bytes": {
+                "type": "integer",
+                "description": "Total bytes of output image(s)."
+              },
+              "output_width": {
+                "type": "integer",
+                "description": "Width of output."
+              },
+              "output_height": {
+                "type": "integer",
+                "description": "Height of output."
+              }
+            },
+            "required": [
+              "output_image_bytes",
+              "output_width",
+              "output_height"
+            ]
+          }
+        ]
+      },
+      "UpscaleImageUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "output_image_bytes": {
+                "type": "integer",
+                "description": "Total bytes of output image(s)."
+              },
+              "output_width": {
+                "type": "integer",
+                "description": "Width of output."
+              },
+              "output_height": {
+                "type": "integer",
+                "description": "Height of output."
+              }
+            },
+            "required": [
+              "output_image_bytes",
+              "output_width",
+              "output_height"
+            ]
+          }
+        ]
+      },
+      "BaseStableDiffusionUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "prompt_length": {
+                "type": "integer",
+                "description": "Characters of prompt."
+              },
+              "output_image_bytes": {
+                "type": "integer",
+                "description": "Total bytes of output image(s)."
+              },
+              "output_image_count": {
+                "type": "integer",
+                "description": "Number of output images."
+              },
+              "output_width": {
+                "type": "integer",
+                "description": "Width of output."
+              },
+              "output_height": {
+                "type": "integer",
+                "description": "Height of output."
+              }
+            },
+            "required": [
+              "prompt_length",
+              "output_image_bytes",
+              "output_image_count",
+              "output_width",
+              "output_height"
+            ]
+          }
+        ]
+      },
+      "StableDiffusionWithImageUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseStableDiffusionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_image_bytes": {
+                "type": "integer",
+                "description": "Size of input image."
+              }
+            },
+            "required": [
+              "input_image_bytes",
+              "output_resolution"
+            ]
+          }
+        ]
+      },
+      "AnimateImageUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_image_bytes": {
+                "type": "integer",
+                "description": "Size of input image."
+              },
+              "output_frames": {
+                "type": "integer",
+                "description": "Number of output images."
+              },
+              "output_width": {
+                "type": "integer",
+                "description": "Width of output."
+              },
+              "output_height": {
+                "type": "integer",
+                "description": "Height of output."
+              }
+            },
+            "required": [
+              "input_image_bytes",
+              "output_frames",
+              "output_width",
+              "output_height"
+            ]
+          }
+        ]
+      },
+      "ClipUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_image_count": {
+                "type": "integer",
+                "description": "Input images."
+              },
+              "input_image_bytes": {
+                "type": "integer",
+                "description": "Total size of input image(s)."
+              },
+              "input_text_count": {
+                "type": "integer",
+                "description": "Input texts."
+              },
+              "input_token_count": {
+                "type": "integer",
+                "description": "Total tokens from input text(s)."
+              },
+              "output_embedding_count": {
+                "type": "integer",
+                "description": "Output text tokens."
+              }
+            },
+            "required": [
+              "input_image_count",
+              "input_image_bytes",
+              "input_text_count",
+              "input_token_count",
+              "output_embedding_count"
+            ]
+          }
+        ]
+      },
+      "JinaUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_doc_count": {
+                "type": "integer",
+                "description": "Input documents."
+              },
+              "output_embedding_count": {
+                "type": "integer",
+                "description": "Output embeddings."
+              }
+            },
+            "required": [
+              "input_doc_count",
+              "output_embedding_count"
+            ]
+          }
+        ]
+      },
+      "MistralUsage": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseExecutionUsage"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "input_token_count": {
+                "type": "integer",
+                "description": "Input prompt tokens."
+              },
+              "output_token_count": {
+                "type": "integer",
+                "description": "Output text tokens."
+              }
+            },
+            "required": [
+              "input_token_count",
+              "output_token_count"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "paths": {}
+}
