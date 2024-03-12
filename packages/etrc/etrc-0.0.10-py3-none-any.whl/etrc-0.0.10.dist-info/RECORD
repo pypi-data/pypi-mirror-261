@@ -1,0 +1,16 @@
+etrc/__init__.py,sha256=iwwGSBqr1MoHOo7Voi8NDlNmE3WTxX5xvaJ2yx8r2S4,853
+etrc/_modidx.py,sha256=r2sB3zWbB98Ml5txyuhZuGE8GrHjqUS6CcQyepKy2eI,12952
+etrc/atyp.py,sha256=vVfqN7IdADkV8f4vyU4WII_Lq-Y8VFgUUCRwVlIsnqs,653
+etrc/cons.py,sha256=bc-39hnDJddvT8TLwOHjy4j1ODnSDIeEiIcQW0YhVXI,592
+etrc/emod.py,sha256=YNi7ZNSlAJS5n8jA6-pB3-9vXXcl2oq7pEN_wX_rw30,2562
+etrc/enum.py,sha256=vyKliYC3bFwExp-G9thhnSmGxS1NvRRfxoReLBJVLeE,28728
+etrc/kwds.py,sha256=PzP_mVd2jkYViHXQiOInJ-4dRL7sxgfdQXfNSi2bCp0,4734
+etrc/meta.py,sha256=lU0J96HPapV-zUuWW8iDIQ1oXYD6De-GP7GXGsnu9Oc,3568
+etrc/solv.py,sha256=vT5ikBVBYDswquO16eEJn6HRPAXLxUFrGGYaUO0DwPU,18602
+etrc/util.py,sha256=hHfhRIJ_q_iKt3VKK3Cfc8AlvFYOiTqjN6Gzmuf-OII,4983
+etrc-0.0.10.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+etrc-0.0.10.dist-info/METADATA,sha256=LcyTQOneNZB86FUPL00WPUUBOBFbntrQRXZpaB8bBVo,3744
+etrc-0.0.10.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+etrc-0.0.10.dist-info/entry_points.txt,sha256=K-uy5by9tdkAMq9GmvrUhiwwC-QFuMNoK-z7hgz-5d4,30
+etrc-0.0.10.dist-info/top_level.txt,sha256=0fvHSsXKXddMS8tcAqdztGk5TtXqp6wP8cpzwdtDils,5
+etrc-0.0.10.dist-info/RECORD,,
