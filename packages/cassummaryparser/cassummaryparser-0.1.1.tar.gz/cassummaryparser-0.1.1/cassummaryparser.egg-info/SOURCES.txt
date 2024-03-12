@@ -1,0 +1,11 @@
+README.rst
+setup.py
+cassummaryparser/CasParser.py
+cassummaryparser/CasRecord.py
+cassummaryparser/__init__.py
+cassummaryparser.egg-info/PKG-INFO
+cassummaryparser.egg-info/SOURCES.txt
+cassummaryparser.egg-info/dependency_links.txt
+cassummaryparser.egg-info/requires.txt
+cassummaryparser.egg-info/top_level.txt
+tests/test_casparser.py
