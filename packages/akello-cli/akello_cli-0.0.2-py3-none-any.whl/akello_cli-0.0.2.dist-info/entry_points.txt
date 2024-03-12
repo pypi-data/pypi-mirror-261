@@ -1,0 +1,2 @@
+[console_scripts]
+akello-cli = akello-cli:akello
