@@ -1,0 +1,40 @@
+import pyodbc
+
+from Metrik.models.Ticket import Orders, Tickets
+
+class SQLHelper:
+    def __init__(self, ip_address: str, port: str, db_name: str, driver: str):
+        self.ip_address = ip_address
+        self.port = port
+        self.db_name = db_name
+        self.driver = driver
+        self.connection = pyodbc.connect(
+            driver="{SQL Server}",
+            database=self.db_name,
+            server="LAPTOP-K3C6JQ36\\MSSQLPANDAPOS",
+            user="sa",
+            password="esat3535",
+        )
+    
+    
+    def get_orders(self):
+        orders = Orders.objects.all()
+        
+        return orders
+    
+    def get_orders_by_ticket_id(self, ticket_id):
+        orders = Orders.objects.filter(TicketId=ticket_id)
+        
+        return orders
+    
+    
+    def get_tickets(self) -> list[Tickets]:
+        tickets = Tickets.objects.all()
+        for ticket in tickets:
+            ticket.orders = self.get_orders_by_ticket_id(ticket.Id)
+            
+        return tickets
+    
+    
+        
+        
