@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "yatc"
+version = "0.1.0"
+description = "Yet another term color library"
+authors = ["Mathew Moon <me@mathewmoon.net>"]
+readme = "README.md"
+packages = [{include = "yatc", from = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "7.4.3"
+
+[tool.pytest.ini_options]
+xfail_strict = true
+
+[build-system]
+requires = ["poetry-core>=1.7.0"]
+build-backend = "poetry.core.masonry.api"
+
