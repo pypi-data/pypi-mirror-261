@@ -1,0 +1,3 @@
+[console_scripts]
+proflame-get = proflame_wifi.get_state:main
+proflame-set = proflame_wifi.set_state:main
