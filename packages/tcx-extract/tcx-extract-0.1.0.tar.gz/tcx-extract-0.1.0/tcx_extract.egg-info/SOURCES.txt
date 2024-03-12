@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tcx_extract/__init__.py
+tcx_extract/build_zig.py
+tcx_extract/extract.py
+tcx_extract.egg-info/PKG-INFO
+tcx_extract.egg-info/SOURCES.txt
+tcx_extract.egg-info/dependency_links.txt
+tcx_extract.egg-info/requires.txt
+tcx_extract.egg-info/top_level.txt
+tcx_extract/zig/extract
+tcx_extract/zig/extract.o
+tcx_extract/zig/extract.zig
