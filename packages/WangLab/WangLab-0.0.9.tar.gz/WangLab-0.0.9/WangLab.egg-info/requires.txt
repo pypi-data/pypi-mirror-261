@@ -1,0 +1,10 @@
+argcomplete
+biopython
+pandas
+numpy
+selenium
+cutadapt
+openpyxl
+MACS3
+samtools
+bowtie
