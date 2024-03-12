@@ -1,0 +1,3 @@
+[console_scripts]
+soundboar=soundboar.cli:cli
+

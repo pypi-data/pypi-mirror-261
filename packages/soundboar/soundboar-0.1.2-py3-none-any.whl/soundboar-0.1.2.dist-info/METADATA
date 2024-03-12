@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: soundboar
+Version: 0.1.2
+Summary: Web-accessible server-client sound board
+Home-page: https://github.com/soundboar/tail
+Author: Moritz Bock
+Author-email: mvb1996@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: fastapi (>=0.110,<0.111)
+Requires-Dist: platformdirs (>=4.2.0,<5.0.0)
+Requires-Dist: pydantic (>=2.6.2,<3.0.0)
+Requires-Dist: python-multipart (>=0.0.9,<0.0.10)
+Requires-Dist: python-vlc (>=3.0.20123,<4.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: uvicorn[standard] (>=0.27.1,<0.28.0)
+Requires-Dist: websockets (>=12.0,<13.0)
+Project-URL: Repository, https://github.com/soundboar/tail
+Description-Content-Type: text/markdown
+
+# soundboar/tail - the soundboards CLI and python backend
+
+Soundboar offers a web-accessible soundboard for self-hosting (e.g. on a Raspberry-Pi connected to a speaker).
+To install the soundboard on your machine, just install it from via pip:
+
+```shell
+$ pipx install soundboar
+$ soundboar run # Installs the data-repo and webserver in its default location
+```
+
+For more information run
+
+```shell
+$ soundboar --help
+```
+
+For developing soundboar, clone the repository, create a virtual environment, and run in its root
+
+```shell
+$ poetry install
+```
+
