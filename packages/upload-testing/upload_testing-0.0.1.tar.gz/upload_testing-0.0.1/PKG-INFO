@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: upload_testing
+Version: 0.0.1
+Summary: just testing sth
+Project-URL: Homepage, https://github.com/Fred-Evif/testing-ability
+Project-URL: Issues, https://github.com/Fred-Evif/testing-ability/issues
+Author-email: Example Author <author@example.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# testing-ability
+just testing sth for myself

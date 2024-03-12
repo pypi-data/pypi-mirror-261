@@ -1,0 +1,22 @@
+[project]
+name = "upload_testing"
+version = "0.0.1"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "just testing sth"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Fred-Evif/testing-ability"
+Issues = "https://github.com/Fred-Evif/testing-ability/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
