@@ -1,0 +1,12 @@
+django_prose_editor/.gitignore,sha256=Z2uR9FWnmIBEUQSJOH-rEylLMQsWT65BMBrHMGkkl7g,5
+django_prose_editor/__init__.py,sha256=aOHawL1zuHMfBWKXqwUkXcW96oXLNCY-CXdHDqkz4g4,18
+django_prose_editor/fields.py,sha256=CjkiI01ogn5w8i0OPwtFrr_iDIZ3yCNgf_yKreJSVMQ,661
+django_prose_editor/widgets.py,sha256=oh60riOYZ2J-TV--KpPY1KxleSul9rEnqwCiXDPnsUk,362
+django_prose_editor/static/django_prose_editor/editor.css,sha256=H4OXjQwTeg5A3LRNJy5adFrWNJ-YswysXYMX5abHJxw,6476
+django_prose_editor/static/django_prose_editor/editor.js,sha256=ItcFzFAMtMUmx5pJouO0wZdU2Yy4Jqm70GVIqQVAeY8,221423
+django_prose_editor/static/django_prose_editor/history-arrow-HHQ2TDW5.svg,sha256=EsHmJbjyOnrfwFvCq4qBw-dLR1tgBU-iOgRgPbNG6bE,290
+django_prose_editor/static/django_prose_editor/init.js,sha256=zumspz_CWLG6RzOlnXF_HxhisIsWIKjuhQ17iLozqBg,207
+django_prose_editor-0.1.0.dist-info/METADATA,sha256=JPQQZyg1dSZxKTzjazQZgUFulW6bKY-jLKtc1Q7fEI0,2674
+django_prose_editor-0.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+django_prose_editor-0.1.0.dist-info/licenses/LICENSE,sha256=m0ux3KrtrO8enIFqr8v6bH8uwW3FYq9EXzVP9kN3mVw,1519
+django_prose_editor-0.1.0.dist-info/RECORD,,
