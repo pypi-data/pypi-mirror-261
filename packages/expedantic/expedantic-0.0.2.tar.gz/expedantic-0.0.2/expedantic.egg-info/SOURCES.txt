@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+expedantic/__init__.py
+expedantic/config_base.py
+expedantic/utils.py
+expedantic.egg-info/PKG-INFO
+expedantic.egg-info/SOURCES.txt
+expedantic.egg-info/dependency_links.txt
+expedantic.egg-info/requires.txt
+expedantic.egg-info/top_level.txt
+tests/test.py
