@@ -1,0 +1,2 @@
+[console_script]
+sf2_baso_kontol = sf2_baso_kontol.cli:main
