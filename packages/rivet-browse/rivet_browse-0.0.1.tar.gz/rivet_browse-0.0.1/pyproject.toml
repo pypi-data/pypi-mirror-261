@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rivet-browse"
+version = "0.0.1"
+description = ""
+authors = ["Alexander Puck Neuwirth <alexander@neuwirth-informatik.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+matplotlib = "*"
+
+[tool.poetry.scripts]
+rivet-browse = "rivet_browse.__init__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
