@@ -1,0 +1,10 @@
+botgen/__init__.py,sha256=AqH3i3QoPEgTOt6jn6VtS2jsPOzONmgVplUSanz5wj4,79
+botgen/adapters/__init__.py,sha256=CrVoPaiqgaLMn5w2kwYPnLy65num7m1SFnN8D9c6j2E,36
+botgen/adapters/web_adapter.py,sha256=qyykOE8dPY0C90O_QzkNjFCsTysvmwZpGbc-zmot6_w,3035
+botgen/bot_worker.py,sha256=YZK20BhAst8sM9nixZulmS1pHTKKadAPIVGU-s2VYis,2171
+botgen/conversation.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botgen/conversation_state.py,sha256=4_zF7UuyJoVlOT7UrN4tBbnT6QdrvjTTOiOl0o2wZQg,1221
+botgen/core.py,sha256=elei8Gub7LcbISDhlhjvawPiAaOsOZzRwU-eLADFom0,7713
+botgen-0.0.1.dist-info/METADATA,sha256=duqoNEkCXpKscwQnNwdOarwPQcaClbqtiyBErO3AVsc,2074
+botgen-0.0.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+botgen-0.0.1.dist-info/RECORD,,
