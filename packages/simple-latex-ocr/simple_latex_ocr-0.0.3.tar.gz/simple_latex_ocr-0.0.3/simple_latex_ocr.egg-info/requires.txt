@@ -1,0 +1,13 @@
+onnxruntime-gpu
+tokenizers>=0.13.2
+numpy
+opencv-python
+Pillow>=9.2.0
+PyYAML>=6.0.0
+transformers
+flask
+fastapi
+uvicorn
+simple_latex_ocr
+opencv-python-headless
+easydict>=1.13
