@@ -1,0 +1,54 @@
+name: pydeps2env
+description: create conda environment file from python project dependencies
+branding:
+  icon: 'code'
+  color: 'yellow'
+inputs:
+  files:
+    description: >-
+      Specify the location of the dependencies files to parse. (defaults to 'pyproject.toml')
+    required: true
+    default: pyproject.toml
+  output:
+    description: >-
+      Specify the location and name of the conda environment file to generate. (defaults to 'environment.yml')
+    required: true
+    default: environment.yml
+  channels:
+    description: >-
+      List the conda channels to include in the environment file. (defaults to 'defaults')
+      Separate a list of multiple channels by spaces (e.g. 'conda-forge defaults').
+    required: true
+    default: defaults
+  extras:
+    description: >-
+      Specify one or more optional [extras_require] sections to add to the environment
+      (e.g. 'test' to include package that you would normally install with 'pip install pkg[test]')
+    required: false
+  build_system:
+    description: >-
+      if set to 'include' the dependencies listed under [build-system] or [options]:setup_requires will be added to the environment
+      (default is 'omit' so no setup dependencies will be installed)
+    required: false
+    default: omit
+  pip:
+    description: >-
+      List of packages to install via pip instead of conda.
+      The dependencies will be listet under the pip section in the environment file.
+    required: false
+runs:
+  using: composite
+  steps:
+  - name: create environment file
+    run: >
+      pip3 install tomli packaging pyyaml &&
+      python3 $GITHUB_ACTION_PATH/pydeps2env/generate_environment.py ${{ inputs.files }}
+      --output ${{ inputs.output }}
+      --channels ${{ inputs.channels }}
+      --extras ${{ inputs.extras }}
+      --build_system ${{ inputs.build_system }}
+      --pip ${{ inputs.pip }}
+    shell: bash
+  - name: show environment file
+    run: cat ${{ inputs.output }}
+    shell: bash
