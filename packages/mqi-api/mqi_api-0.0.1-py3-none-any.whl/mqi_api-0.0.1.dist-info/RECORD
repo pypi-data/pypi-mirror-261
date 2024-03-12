@@ -1,0 +1,6 @@
+src/mqi-api/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/mqi-api/v1/api.py,sha256=csRAfmbF8SLQnvAkaDVNY7_bJCSvGwi8V1l1-aVZy3E,6871
+mqi_api-0.0.1.dist-info/METADATA,sha256=RbPA0KdffcqUX8Pw59ZXGfIGYMYIwcd9QulfGYzWzFo,606
+mqi_api-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+mqi_api-0.0.1.dist-info/licenses/LICENSE,sha256=FGDdyhqA_Z0_9bMIShPbY5M_73GS0e-hqaIynUk4-wc,1097
+mqi_api-0.0.1.dist-info/RECORD,,
