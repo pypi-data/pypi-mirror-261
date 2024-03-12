@@ -1,0 +1,11 @@
+normi/__init__.py,sha256=y5D5Jo__I92chCRwYlvEtlXhsv82U6icfyNhvgjx0hY,256
+normi/__main__.py,sha256=2t9ZWY436qR6S_B-2o9T3n0OwkkqQlml9ROj2S9rIcg,3202
+normi/_estimators.py,sha256=s765mymVc_ajDQX3H8clR-fK18Zrclow1UrGH436BvE,14277
+normi/_typing.py,sha256=OjIBLWo3la-U25YjDnvU-L_Fb-hisaHeIjwAl1HXPYA,2878
+normi/_utils.py,sha256=nFfLj2O0Lz7ai6ixs9dYSq4zWD33RzNMor2SymfnW14,1263
+normi-0.2.0.dist-info/LICENSE,sha256=I39tZbartUOWmsY4uDQPovrnaVR6bL0iRjdpAHmzTjw,1078
+normi-0.2.0.dist-info/METADATA,sha256=V-v4GLWj061IudcQ21kw11syQP0SFVnIeHi00ZYGZj4,7739
+normi-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+normi-0.2.0.dist-info/entry_points.txt,sha256=BhKZw84BK_kwuVYETyra59CI8Gr0ljczid0dGLA1jR0,46
+normi-0.2.0.dist-info/top_level.txt,sha256=KUgEfLznYkK0uNNmjyiBRy12ZVPKwAqbveJZndDHAlM,6
+normi-0.2.0.dist-info/RECORD,,
