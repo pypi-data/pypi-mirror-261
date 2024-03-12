@@ -1,0 +1,14 @@
+cdktf_cdktf_provider_time/__init__.py,sha256=-RIgI_vEHO8NY-wsIKvprUwt3NBZXcPdkQ9mfWg-j9k,4007
+cdktf_cdktf_provider_time/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdktf_cdktf_provider_time/_jsii/__init__.py,sha256=KfowDjlX1JKtUB32_LBBkK-2SvILHGfTgWwcXu23u4s,400
+cdktf_cdktf_provider_time/_jsii/provider-time@10.1.0.jsii.tgz,sha256=eSDFAflRot3BzO4Bn5kyN9ekoDLNRQRJXerzkZ6duGI,42815
+cdktf_cdktf_provider_time/offset/__init__.py,sha256=GEULxZDQKkILaxPmAW4_Ril1d2qjWh10UbRfSUfRxVU,38941
+cdktf_cdktf_provider_time/provider/__init__.py,sha256=BSigAznERwEZRPQGuKacviOKvzl8pVOFCzX6LhtcPXg,7782
+cdktf_cdktf_provider_time/rotating/__init__.py,sha256=50-KzLSMZ5nKm7Cdz8nfW4FY_0QXj9PILtfGq7-u5sk,42043
+cdktf_cdktf_provider_time/sleep/__init__.py,sha256=O92IzFMDfeBfgLElp7aUi9OIbVD2iESoL9ksx7-KjKA,24844
+cdktf_cdktf_provider_time/static_resource/__init__.py,sha256=cIXBz3WZCRwmpbEFO5hEEv4j_DntjlOhJgUBSxxO0F4,22398
+cdktf_cdktf_provider_time-10.1.0.dist-info/LICENSE,sha256=iOtiyzVBa-Nu49EcWy_HpT9S3U1XmMPETULMqiNnRPc,16012
+cdktf_cdktf_provider_time-10.1.0.dist-info/METADATA,sha256=6m_oyofvPr1lg83yMk71RNhMxfaJ3sZSqldz7iO7GaI,4575
+cdktf_cdktf_provider_time-10.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cdktf_cdktf_provider_time-10.1.0.dist-info/top_level.txt,sha256=pbmjkzhVOTBs_gRye40se8NbRnFs6bNSJdvSUtiiVRg,26
+cdktf_cdktf_provider_time-10.1.0.dist-info/RECORD,,
