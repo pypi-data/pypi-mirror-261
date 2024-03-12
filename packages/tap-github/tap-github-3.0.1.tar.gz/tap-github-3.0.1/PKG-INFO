@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tap-github
+Version: 3.0.1
+Summary: Singer.io tap for extracting data from the GitHub API
+Home-page: http://singer.io
+Author: Stitch
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: singer-python==5.12.1
+Requires-Dist: requests==2.31.0
+Requires-Dist: backoff==1.8.0
+Provides-Extra: dev
+Requires-Dist: pylint==2.6.2; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
+Requires-Dist: nose; extra == "dev"
+Requires-Dist: requests-mock==1.9.3; extra == "dev"
