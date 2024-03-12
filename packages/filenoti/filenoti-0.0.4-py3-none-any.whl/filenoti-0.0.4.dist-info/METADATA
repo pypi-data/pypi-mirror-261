@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: filenoti
+Version: 0.0.4
+Summary: Notification about Python scripy end or error with LINE NOTI
+Home-page: https://github.com/Lucete28
+Author: Lucete28
+Author-email: 2580jhy28@gmail.com
+License: MIT
+Keywords: noti,line,alarm
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: requests (>=2.25.1)
+
+UNKNOWN
+
+
