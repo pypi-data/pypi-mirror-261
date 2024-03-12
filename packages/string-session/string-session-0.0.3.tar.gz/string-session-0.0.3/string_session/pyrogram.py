@@ -1,0 +1,1 @@
+print("Pyrogram String Session Generator")

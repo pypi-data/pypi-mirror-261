@@ -1,0 +1,3 @@
+[console_scripts]
+pyrogram = string_session.pyrogram
+telethon = string_session.telethon
