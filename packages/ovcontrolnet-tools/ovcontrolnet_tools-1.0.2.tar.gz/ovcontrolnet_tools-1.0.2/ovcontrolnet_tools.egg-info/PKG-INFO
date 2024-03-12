@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ovcontrolnet-tools
+Version: 1.0.2
+Summary: Packages for simple implementations of OVControlNet
+Home-page: https://github.com/suk-6/ovcontrolnet-tools
+Author: suk-6
+Author-email: me@suk.kr
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: openvino
+Requires-Dist: controlnet_aux
+Requires-Dist: diffusers
+Requires-Dist: transformers
+Requires-Dist: matplotlib
+Requires-Dist: accelerate
+Requires-Dist: mediapipe
+
+# OpenVINO ControlNet Tools
+
+This repository contains tools for using the OpenVino controlnet model.
+
+Refer to the [OpenVINO Text-to-Image Generation with ControlNet Conditioning](https://docs.openvino.ai/2024/notebooks/235-controlnet-stable-diffusion-with-output.html) for more information.
