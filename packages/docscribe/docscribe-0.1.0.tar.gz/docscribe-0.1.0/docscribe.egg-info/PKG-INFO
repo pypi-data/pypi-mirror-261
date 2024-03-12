@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: docscribe
+Version: 0.1.0
+Summary: A simple tool to generate documentation, reports, and more from your codebase.
+Author: sgg10
+Author-email: sgg10.develop@gmail.com
+License: MIT
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: click==8.1.7
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: rich==13.7.0
+Requires-Dist: boto3==1.34.39
+Requires-Dist: docxtpl==0.16.7
+Requires-Dist: Jinja2==3.1.3
+Requires-Dist: jsonschema==4.21.1
+Requires-Dist: packaging==23.2
