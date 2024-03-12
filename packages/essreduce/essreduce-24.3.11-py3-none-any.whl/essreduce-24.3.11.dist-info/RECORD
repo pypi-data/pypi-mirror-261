@@ -1,0 +1,9 @@
+ess/reduce/__init__.py,sha256=4QNAPVaH53uwheIL3JYt81qrvMroCvgEjGX4KX6MKrA,356
+ess/reduce/logging.py,sha256=6n8Czq4LZ3OK9ENlKsWSI1M3KvKv6_HSoUiV4__IUlU,357
+ess/reduce/nexus.py,sha256=fsRATeRdRERnia3lXayFggrWmQYwEGDNKRxKVYZXCSY,12458
+ess/reduce/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+essreduce-24.3.11.dist-info/LICENSE,sha256=nVEiume4Qj6jMYfSRjHTM2jtJ4FGu0g-5Sdh7osfEYw,1553
+essreduce-24.3.11.dist-info/METADATA,sha256=cFpIWjpfuRDknnXVZ5njXLg7RlL0sZyC-0HgZJTamT0,3360
+essreduce-24.3.11.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+essreduce-24.3.11.dist-info/top_level.txt,sha256=0JxTCgMKPLKtp14wb1-RKisQPQWX7i96innZNvHBr-s,4
+essreduce-24.3.11.dist-info/RECORD,,
