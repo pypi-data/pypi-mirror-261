@@ -1,0 +1,8 @@
+setup.py
+kirill_tools/__init__.py
+kirill_tools/one.py
+kirill_tools/two.py
+kirill_tools.egg-info/PKG-INFO
+kirill_tools.egg-info/SOURCES.txt
+kirill_tools.egg-info/dependency_links.txt
+kirill_tools.egg-info/top_level.txt
