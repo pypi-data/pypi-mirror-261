@@ -1,0 +1,9 @@
+CUOPT_SH_CLIENT
+===============
+
+**WARNING:** This project is not functional and is a placeholder from NVIDIA.
+To install, please execute the following:
+
+.. code-block:: bash
+
+    pip install --no-cache-dir --extra-index-url https://pypi.nvidia.com cuopt_sh_client
