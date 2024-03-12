@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Teahc
+Version: 0.2
+Summary: Teahc
+Home-page: https://github.com/richdwge/Teahc
+Download-URL: https://github.com/richdwge/Teahc
+Author: richdwge
+Author-email: rich_dwge@outlook.com
+License: MIT
+Project-URL: Source, https://github.com/richdwge/Teahc
+Keywords: Teahc
+License-File: LICENSE.txt
+Requires-Dist: MyTeahc
+Requires-Dist: httpcat-sdk
+Requires-Dist: myhttpcat
+Requires-Dist: myhcat
