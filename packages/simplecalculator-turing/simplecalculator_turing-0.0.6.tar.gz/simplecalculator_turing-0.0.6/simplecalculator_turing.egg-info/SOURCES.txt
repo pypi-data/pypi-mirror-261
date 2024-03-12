@@ -1,0 +1,12 @@
+LICENSE.TXT
+README.md
+setup.py
+app/__init__.py
+app/simplecalculator/__init__.py
+app/simplecalculator/src/__init__.py
+app/simplecalculator/src/calculator.py
+simplecalculator_turing.egg-info/PKG-INFO
+simplecalculator_turing.egg-info/SOURCES.txt
+simplecalculator_turing.egg-info/dependency_links.txt
+simplecalculator_turing.egg-info/entry_points.txt
+simplecalculator_turing.egg-info/top_level.txt
