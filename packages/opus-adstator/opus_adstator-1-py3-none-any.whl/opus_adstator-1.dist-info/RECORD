@@ -1,0 +1,7 @@
+opus_adstator/__init__.py,sha256=3rvgPYBSCeR78apZbcAjTmzSfpihftlJCLc3UJKrBhA,1009
+opus_adstator/file_io.py,sha256=hXFObpYr1hVC8qW99W0zCAf_72ZtZS-ohi3nggV66fk,13692
+opus_adstator/utils.py,sha256=QN4duX_zrk6Rr2gs2-wmJtxMQYrTjoVSnqbT5fWarpo,1754
+opus_adstator-1.dist-info/METADATA,sha256=9g8ibYL3Fp9gforwniOL2uMN4CK7lD513kusaZjgS5M,2505
+opus_adstator-1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+opus_adstator-1.dist-info/licenses/LICENSE,sha256=usWaYqfV3axcfq-bI7xzQ3BW2lF5RRr1rVSTm2BDeZY,1069
+opus_adstator-1.dist-info/RECORD,,
