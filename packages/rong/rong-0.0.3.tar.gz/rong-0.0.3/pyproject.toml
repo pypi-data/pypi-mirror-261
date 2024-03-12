@@ -1,0 +1,62 @@
+[project]
+name = "rong"
+dynamic = ["version"]
+dependencies = []
+requires-python = ">=3.7"
+authors = [{name = "Md. Almas Ali", email = "almaspr3@gmail.com"}]
+maintainers = [{name = "Md. Almas Ali", email = "almaspr3@gmail.com"}]
+description = "A coloring utility for Python console apps."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = [
+    "color",
+    "console",
+    "terminal",
+    "text",
+    "formatting",
+    "style",
+    "rgb",
+    "rong",
+    "coloring",
+    "colored",
+    "colour",
+    "utility",
+    "foreground",
+    "background",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Environment :: Console",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/Almas-Ali/rong"
+Documentation = "https://github.com/Almas-Ali/rong#readme"
+Repository = "https://github.com/Almas-Ali/rong"
+"Bug Tracker" = "https://github.com/Almas-Ali/rong/issues"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.hatch.version]
+path = "rong/__init__.py"
+
+
+[tool.ruff.format]
+quote-style = "double"
