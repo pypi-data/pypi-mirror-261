@@ -1,0 +1,10 @@
+
+[all]
+requests_mock>=1.9.3
+pytest-httpx>=0.21.0
+
+[http]
+requests_mock>=1.9.3
+
+[httpx]
+pytest-httpx>=0.21.0
