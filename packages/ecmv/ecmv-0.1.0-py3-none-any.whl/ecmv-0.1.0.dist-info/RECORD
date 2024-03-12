@@ -1,0 +1,14 @@
+ecmv/__init__.py,sha256=XTmEvHpvOP-CuOf9aTxSKSbFZ_c2Zy91-MKA1RDKOx4,229
+ecmv/constants.py,sha256=n0F0EVtU6_SSnh2Cwmf5l_0o1DVbpptA2nKS98NGnP0,291
+ecmv/decorators.py,sha256=Mvj92q6SU_d-Da-ZVbTerpQSkIldYfUYB2PYWwwaoB4,1976
+ecmv/errors.py,sha256=01MTppz_dbzp15tCugWzbfLNWjZL78u8BA6tVzHVfps,210
+ecmv/extract.py,sha256=uQVR-Zfh87JXDrKh9GCTRlgQie68hHJwadoqnEFM4is,2685
+ecmv/features.py,sha256=ZftvUIq-kpjQElSwwrTshb90-8frUHJ5yVUSCpEr3Q4,797
+ecmv/images/dist.jpg,sha256=h9N61kE8L6mwEXc5Y2W8nArD4xH2jqon8JQLkE4mrUI,170066
+ecmv/images/rice.jpg,sha256=KnS2KD08uzl5lTwKvvUaTAN8wB_AcFkzek7jYfa6Nto,4341
+ecmv/store/extract.csv,sha256=7qxz3JTanAAt1YmhMmshKSJugDucHZGKyO4mlRRn09A,6975824
+ecmv/store.py,sha256=vi43Iqqz4wdV3CydEwV2xq45oCo3FocHAzPWQIzYuZA,2488
+ecmv-0.1.0.dist-info/LICENSE,sha256=eVV0aIrHMVuF0otLJ8MrEpuYVrCi7L-Spq7yWoc_ais,18221
+ecmv-0.1.0.dist-info/METADATA,sha256=zHUe-IKq8wMDp5scDgbLXMWF4gG7STraYwsjJ865ba0,7943
+ecmv-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ecmv-0.1.0.dist-info/RECORD,,

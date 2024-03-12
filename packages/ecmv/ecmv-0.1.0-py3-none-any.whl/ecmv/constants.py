@@ -1,0 +1,14 @@
+import os
+
+from appdirs import user_data_dir
+
+MOD = "ecmv"
+
+
+class DSET:
+    url = r"https://github.com/JWSchaefer/RiceData.git"
+    path = os.path.join(user_data_dir(MOD, "digiLab Solutions Ltd"))
+
+
+class CACHE:
+    path = os.path.join(os.environ["ECMV_BASE_PATH"], "store", "extract.csv")
