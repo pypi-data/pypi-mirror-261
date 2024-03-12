@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: amISelected
+Version: 0.1.0
+Summary: A small repo to check whether you have been selected
+Home-page: https://github.com/leoguignard/amISelected
+Author: Leo Guignard
+Author-email: leo.guignard@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/leoguignard/AmISelected/issues
+Project-URL: Documentation, https://github.com/leoguignard/AmISelected#README.md
+Project-URL: Source Code, https://github.com/leoguignard/AmISelected
+Project-URL: User Support, https://github.com/leoguignard/AmISelected/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Am I Selected?
+
+Well are you?
+
+After installing it with pip:
+
+```shell
+pip install amISelected
+```
+
+You can run the following command to get an email when your status changed in the [coudert webpage](https://www.coudert.name/concours_cnrs_2023.html):
+
+```shell
+amISelected --name lastname firstname \
+            --year 2023 \
+            --username your_username \
+            --smtp smtp.your.server.com \
+            --port 587 \
+            --recipient you@mail.com \
+```
+
+Your `smtp` password will be then asked (leave empty if you don't want to recieve emails).
+
+It looks a bit fishy because it is ... But I don't know how to do otherwise
