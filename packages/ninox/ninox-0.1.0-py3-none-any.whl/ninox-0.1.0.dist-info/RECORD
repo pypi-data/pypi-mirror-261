@@ -1,0 +1,11 @@
+ninox/__init__.py,sha256=bofG46fF1s_O2kzIHjJdK3VJfjQB4KYRKc-bvjcA9UE,83
+ninox/ninox.py,sha256=B3144Y-ouoDfMNE710G_S_EM20a9pN3_VdIr551VoFQ,6817
+ninox/api/__init__.py,sha256=Slo42sPR9hwaOWRjY3f2uJ5iJmbZqmdbwjrvBI_Tf1c,30
+ninox/api/adapter.py,sha256=-_A_5qeg2TAXnCuP2R0lyPI9iU4UGV5PWLQezGK4-n8,2621
+ninox/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ninox/models/workspace.py,sha256=xBig8fvw07Ir7dEJpknOYvFPy8Q-Tbw6fDXLTzIHdQg,87
+ninox-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ninox-0.1.0.dist-info/METADATA,sha256=zEC6WmalLyeeq6KWYHawqTBGkJA1sxn6FZUBFX17EKs,1199
+ninox-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ninox-0.1.0.dist-info/top_level.txt,sha256=83GX7AoR-RV706jUfU9aP20EwvysogJih_yGfztsjiE,6
+ninox-0.1.0.dist-info/RECORD,,

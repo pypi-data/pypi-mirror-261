@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ninox
+Version: 0.1.0
+Summary: A wrapper for the Ninox DB API
+Author-email: Andrei Paraschiv <andrei@thephpfactory.com>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/AndyTheFactory/ninox-api
+Project-URL: Repository, https://github.com/AndyTheFactory/ninox-api.git
+Project-URL: Issues, https://github.com/AndyTheFactory/ninox-api/issues
+Project-URL: Changelog, https://github.com/AndyTheFactory/ninox-api/blob/master/CHANGELOG.md
+Keywords: database,web,api,ninox
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Ninox-API
+
+A python wrapper for the [Ninox API](https://docs.ninox.com/en/api/public-cloud-apis)
+
+You will need an api key to use this package. You can get one by logging into your Ninox account and going to the API section under Integrations.
