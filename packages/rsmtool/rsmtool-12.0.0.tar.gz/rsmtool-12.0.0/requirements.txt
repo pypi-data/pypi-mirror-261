@@ -1,0 +1,15 @@
+ipython
+jupyter
+notebook
+numpy<2
+openpyxl
+pandas
+pyarrow
+seaborn
+shap
+skll==5.0.1
+statsmodels
+tqdm
+wandb
+xlrd
+xlwt

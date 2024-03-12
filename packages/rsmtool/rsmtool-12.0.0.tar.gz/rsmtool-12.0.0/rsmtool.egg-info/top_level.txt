@@ -1,0 +1,9 @@
+build
+conda-recipe
+dist
+doc
+evaluation
+examples
+rsmtool
+test_outputs
+tests
