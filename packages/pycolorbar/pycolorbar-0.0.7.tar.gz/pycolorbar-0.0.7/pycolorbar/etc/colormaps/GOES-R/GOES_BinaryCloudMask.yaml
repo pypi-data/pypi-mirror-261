@@ -1,0 +1,5 @@
+colormap_type: ListedColormap
+color_space: name
+color_palette:
+- lightblue
+- darkgray
