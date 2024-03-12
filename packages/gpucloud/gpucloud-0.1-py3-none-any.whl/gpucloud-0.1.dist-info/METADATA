@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gpucloud
+Version: 0.1
+Summary: A simple Flask app
+Author: gpucloud
+Author-email: admin@project2you.com
+Description-Content-Type: text/markdown
+Requires-Dist: Flask >=1.1.2
+
+Test
