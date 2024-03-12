@@ -1,0 +1,11 @@
+ch9329/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ch9329/ascii_to_ch9329.py,sha256=Kd4SG72HygqQvYZR-cLvL7JnvCgJn5slHeL5GNcMN28,8070
+ch9329/keyboard.py,sha256=ZF9GqReHFSKxvkx9sQ0w9zIlXcKmkOVUHticcK8Vf-A,3425
+ch9329/mouse.py,sha256=bHpLHytXZ__2_9XeZEa7HCSg7_akefPCoGs5QSk4oLU,2047
+ch9329/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ch9329/serial_com.py,sha256=UQPZUvN35vpdnwPb0F6Hs-7pn3XzhgPB1cnj5r9MVyc,159
+ch9329-1.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+ch9329-1.0.1.dist-info/METADATA,sha256=Tt2FvqG03hPE6Ek408h3Wd8Ws_UQUMb9PYwLNc6DOMo,2563
+ch9329-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ch9329-1.0.1.dist-info/top_level.txt,sha256=vhWx3Eox5phCxf6wtgmenxNaus059FxLc18Fon89AZI,7
+ch9329-1.0.1.dist-info/RECORD,,
