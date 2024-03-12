@@ -1,0 +1,15 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+PubChemAPI.egg-info/SOURCES.txt
+PubChemAPI.egg-info/dependency_links.txt
+PubChemAPI.egg-info/requires.txt
+PubChemAPI.egg-info/top_level.txt
+PubChmAPI/__init__.py
+PubChmAPI.egg-info/PKG-INFO
+PubChmAPI.egg-info/SOURCES.txt
+PubChmAPI.egg-info/dependency_links.txt
+PubChmAPI.egg-info/requires.txt
+PubChmAPI.egg-info/top_level.txt
