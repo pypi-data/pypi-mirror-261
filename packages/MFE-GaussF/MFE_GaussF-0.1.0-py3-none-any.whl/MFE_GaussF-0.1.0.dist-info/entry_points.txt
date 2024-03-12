@@ -1,0 +1,7 @@
+[console_scripts]
+MFE_GaussF_esti = MFE_GaussF.MFE_GaussF_esti:main
+kmer_counting_loop = MFE_GaussF.kmer_counting_loop:main
+kmer_frequency_distribution_mini_shared = MFE_GaussF.mkmer_frequency_distribution_mini_shared:main
+merge_normalize_isoform_count_v1 = MFE_GaussF.merge_normalize_isoform_count_v1:main
+merge_normalized_isoform_count_TPM = MFE_GaussF.merge_normalized_isoform_count_TPM:main
+pipeline_abundance_GaussF_esti_loop = MFE_GaussF.pipeline_abundance_GaussF_esti_loop:main
