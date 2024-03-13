@@ -1,0 +1,15 @@
+chromadb
+loguru
+openai
+pandas
+
+[dev]
+pytest
+flake8
+mypy
+black
+isort
+jupyterlab
+
+[gpu]
+flash-attn

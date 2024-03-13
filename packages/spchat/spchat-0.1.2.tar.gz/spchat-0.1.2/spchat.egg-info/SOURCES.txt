@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+spchat/__init__.py
+spchat/core.py
+spchat/filters.py
+spchat/prompts.py
+spchat/retrievers.py
+spchat/utils.py
+spchat.egg-info/PKG-INFO
+spchat.egg-info/SOURCES.txt
+spchat.egg-info/dependency_links.txt
+spchat.egg-info/requires.txt
+spchat.egg-info/top_level.txt
+tests/test_chat.py

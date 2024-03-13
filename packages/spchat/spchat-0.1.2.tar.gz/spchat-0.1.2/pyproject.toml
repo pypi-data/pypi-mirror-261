@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spchat"
+description = "Chat utility library by Spiral.AI"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "ksterx", email = "kostonerx@gmail.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "chromadb",
+    "loguru",
+    "openai",
+    "pandas"
+]
+version = "0.1.2"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+    "mypy",
+    "black",
+    "isort",
+    "jupyterlab",
+]
+
+gpu = [
+    "flash-attn",
+]
+
+[tool.setuptools.packages.find]
+exclude = ["tests", "expriments", "train_model", "playground", "lm-evaluation-harness"]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+
+[tool.mypy]
+ignore_missing_imports = true
