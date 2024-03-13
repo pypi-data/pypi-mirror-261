@@ -1,0 +1,15 @@
+import setuptools
+
+setuptools.setup(
+    name="pyanasolution",
+    version="0.1",
+    author="P. Hong & F.Y. Zhao",
+    author_email="frankhp@163.com",
+    description="A calculation tool for common analytical solutions.",
+    url="https://gitee.com/geo-tech/py-ana-solution",
+    packages=setuptools.find_packages(),
+    python_requires=">=3.6"
+)
+
+# python setup.py sdist bdist_wheel
+# twine upload dist/*
