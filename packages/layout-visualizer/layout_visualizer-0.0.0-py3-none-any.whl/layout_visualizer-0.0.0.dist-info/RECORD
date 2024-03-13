@@ -1,0 +1,12 @@
+layout_visualizer/__init__.py,sha256=6AH9iqpPHyhJqIKuNkE6cG5JJdmpeG3ISJenHiz-84w,98
+layout_visualizer/fonts/NotoSansJP-Medium.ttf,sha256=_bQER0G8aPMOqLksGu_ZIFMKLQRPh1OmFIFIq96zOVg,5729332
+layout_visualizer/fonts/OFL.txt,sha256=ksND9-fK6_-LrONQvAkbeXVfTQyLcLsN8hVwoYKJF7g,4481
+layout_visualizer/fonts/README.txt,sha256=G6BX4QQkXxhxkaBYSF80XHoV4EV2K3jEIGnZdw_EBJE,2326
+layout_visualizer/layout_visualizer.py,sha256=BFV-mq8Dfg-cxJHxvJ9zEMN3uQ_PqwHDVK5Jmuo4SQw,5131
+layout_visualizer/model/bbox.py,sha256=kfa_2YszY2qFy1RzcMPENHNeePei2nzIOE5CCs5x1FY,1993
+layout_visualizer/utils/color.py,sha256=FOECFJdKYlm8v8scoEHkORKTYdardSa1e3jDcpNOWFQ,472
+layout_visualizer/utils/path.py,sha256=oc-4_NbyXR2FcNDVl0p3_fay93VdpypgyvCA1iBtf7Y,92
+layout_visualizer/utils/pillow.py,sha256=mudZd3Qo6AFO00_C4sZYkryd8RgC_O3MELBx3QeZ6bg,629
+layout_visualizer-0.0.0.dist-info/METADATA,sha256=eFkm2Bc0imnNCkaezcYmeP4TQhOFKaV_loXC-XwACyw,2039
+layout_visualizer-0.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+layout_visualizer-0.0.0.dist-info/RECORD,,
