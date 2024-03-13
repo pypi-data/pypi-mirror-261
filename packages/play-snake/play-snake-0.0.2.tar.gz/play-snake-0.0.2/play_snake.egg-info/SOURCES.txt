@@ -1,0 +1,16 @@
+Makefile
+README.md
+licence
+pyproject.toml
+.github/workflows/python-publish.yml
+doc/screenshot.png
+play_snake.egg-info/PKG-INFO
+play_snake.egg-info/SOURCES.txt
+play_snake.egg-info/dependency_links.txt
+play_snake.egg-info/entry_points.txt
+play_snake.egg-info/requires.txt
+play_snake.egg-info/top_level.txt
+snake_game/__init__.py
+snake_game/game.py
+snake_game/game_ui.py
+snake_game/main.py

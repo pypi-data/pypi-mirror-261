@@ -1,0 +1,3 @@
+[console_scripts]
+play-snake = snake_game.main:main
+snake = snake_game.main:main
