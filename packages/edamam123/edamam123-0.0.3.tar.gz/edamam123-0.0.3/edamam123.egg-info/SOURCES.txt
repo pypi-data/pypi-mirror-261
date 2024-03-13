@@ -1,0 +1,12 @@
+README.md
+eda_simple.py
+plot.py
+process.py
+setup.py
+txt2pkl.py
+edamam123.egg-info/PKG-INFO
+edamam123.egg-info/SOURCES.txt
+edamam123.egg-info/dependency_links.txt
+edamam123.egg-info/not-zip-safe
+edamam123.egg-info/requires.txt
+edamam123.egg-info/top_level.txt
