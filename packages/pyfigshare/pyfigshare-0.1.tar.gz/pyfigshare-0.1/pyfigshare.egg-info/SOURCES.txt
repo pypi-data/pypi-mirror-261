@@ -1,0 +1,16 @@
+.gitattributes
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyfigshare/__init__.py
+pyfigshare/_version.py
+pyfigshare/figshare.py
+pyfigshare.egg-info/PKG-INFO
+pyfigshare.egg-info/SOURCES.txt
+pyfigshare.egg-info/dependency_links.txt
+pyfigshare.egg-info/entry_points.txt
+pyfigshare.egg-info/requires.txt
+pyfigshare.egg-info/top_level.txt
