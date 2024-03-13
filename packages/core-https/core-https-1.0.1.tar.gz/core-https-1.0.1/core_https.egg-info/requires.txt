@@ -1,0 +1,5 @@
+core-tests==1.0.2
+core-mixins==1.0.3
+urllib3==1.26.16
+
+[test]
