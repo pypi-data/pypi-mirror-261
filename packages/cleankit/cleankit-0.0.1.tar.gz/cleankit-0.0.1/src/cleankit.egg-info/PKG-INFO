@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cleankit
+Version: 0.0.1
+Summary: Simple operations for navigation
+Home-page: https://github.com/cubelogistics/cleankit
+Author: Sacha Ichbiah
+Author-email: sacha@cube.sn
+Project-URL: Team website, https://github.com/cubelogistics
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: pydantic
+Requires-Dist: phonenumbers
+Requires-Dist: python-stdnum
+Requires-Dist: numpy
+
+# cleankit
+
+# TODO : Make better visualisation tool for email, that take into account the images in the body.
