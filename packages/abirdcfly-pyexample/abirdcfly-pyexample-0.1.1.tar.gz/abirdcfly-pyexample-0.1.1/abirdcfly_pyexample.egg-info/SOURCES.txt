@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+abirdcfly-pyexample/__init__.py
+abirdcfly-pyexample/module_mpi4py_1.py
+abirdcfly-pyexample/module_numpy_1.py
+abirdcfly-pyexample/module_numpy_2.py
+abirdcfly_pyexample.egg-info/PKG-INFO
+abirdcfly_pyexample.egg-info/SOURCES.txt
+abirdcfly_pyexample.egg-info/dependency_links.txt
+abirdcfly_pyexample.egg-info/requires.txt
+abirdcfly_pyexample.egg-info/top_level.txt
