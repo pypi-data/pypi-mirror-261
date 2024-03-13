@@ -1,0 +1,9 @@
+README.md
+setup.py
+pdf_tools/PdfUtils.py
+pdf_tools/__init__.py
+pdf_tools_0311.egg-info/PKG-INFO
+pdf_tools_0311.egg-info/SOURCES.txt
+pdf_tools_0311.egg-info/dependency_links.txt
+pdf_tools_0311.egg-info/requires.txt
+pdf_tools_0311.egg-info/top_level.txt
