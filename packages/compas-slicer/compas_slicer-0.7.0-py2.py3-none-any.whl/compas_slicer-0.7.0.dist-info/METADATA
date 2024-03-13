@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: compas_slicer
+Version: 0.7.0
+Summary: Slicing package for FDM 3D Printing with COMPAS
+Home-page: https://github.com/compas-dev/compas_slicer
+Author: Ioanna Mitropoulou and Joris Burger
+Author-email: mitropoulou@arch.ethz.ch
+License: MIT license
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: IronPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs >=19.2.0
+Requires-Dist: compas <2.0.0,>=1.16.0
+Requires-Dist: networkx <3.2,>=2.5
+Requires-Dist: numpy <=1.23.2
+Requires-Dist: progressbar2 <4.4,>=3.53
+Requires-Dist: pyclipper <1.3.0,>=1.2.0
+Requires-Dist: rdp ==0.8
+Requires-Dist: libigl <2.5.0,>=2.4.1
+
+# compas_slicer
+
+[![build](https://github.com/compas-dev/compas_slicer/workflows/build/badge.svg)](https://github.com/compas-dev/compas_slicer/actions)
+[![GitHub - License](https://img.shields.io/github/license/compas-dev/compas_slicer.svg)](https://github.com/compas-dev/compas_slicer/blob/master/LICENSE) 
+[![PyPI - Latest Release](https://img.shields.io/pypi/v/COMPAS-SLICER.svg)](https://pypi.python.org/project/COMPAS-SLICER)
+[![DOI](https://zenodo.org/badge/226364384.svg)](https://zenodo.org/badge/latestdoi/226364384)
+
+Python slicing package for FDM 3D Printing based on the [COMPAS](https://block.arch.ethz.ch/brg/tools/compas-computational-framework-for-collaboration-and-research-in-architecture-structures-and-digital-fabrication) framework.
+
+## Getting started
+
+You can find tutorials and documentation of the project in the [compas_slicer page](https://compas.dev/compas_slicer/latest/)
+
+For installation instructions, see here: [installation](https://compas.dev/compas_slicer/latest/installation.html)
+
+For troubleshooting, see here: [troubleshooting](https://compas.dev/compas_slicer/installation.html#troubleshooting-1)
+
+## Main features
+
+* Planar slicing (default method, and method based on Cgal library)
+* Curved slicing (interpolation of boundaries, UV slicing, scalar field slicing)
+* Generation of fabrication-related information
+* Export print data to Json and gcode format
+* Visualization of results in grasshopper
+
+## Authors
+
+* Ioanna Mitropoulou <<mitropoulou@arch.ethz.ch>> [@ioannaMitropoulou](https://github.com/ioannaMitropoulou)
+* Joris Burger <<burger@arch.ethz.ch>> [@joburger](https://github.com/joburger)
+* Andrei Jipa <<jipa@arch.ethz.ch>> [@stratocaster](https://github.com/stratocaster)
