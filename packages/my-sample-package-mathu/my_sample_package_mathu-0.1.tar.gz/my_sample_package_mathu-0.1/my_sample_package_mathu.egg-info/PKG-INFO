@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: my_sample_package_mathu
+Version: 0.1
+Summary: Sample test package to demonstrate package distribution
+Home-page: https://github.com/mathusuthanan_1981/my_sample_package_mathu
+Author: mathusuthanan_1981
+Author-email: mathusuthanan.thiruvengadam@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+This package contains the easy date calculation APIs
