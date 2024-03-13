@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rejectax
+Version: 0.0.2
+Summary: rejectax
+Home-page: https://github.com/mdmould/rejectax
+Author: Matthew Mould
+Author-email: mattdmould@gmail.com
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax
+Requires-Dist: equinox
+Requires-Dist: tqdm
+
+# rejectax
+
+Rejection sampling in JAX.
+
+I put this in a Python package so I don't have to figure out again how to implement it with a `jax.lax.while_loop`.
