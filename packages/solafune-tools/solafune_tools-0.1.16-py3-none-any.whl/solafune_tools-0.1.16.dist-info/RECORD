@@ -1,0 +1,14 @@
+solafune_tools/__init__.py,sha256=qENVn9wyyGMmN4G5XsTMXid396VOe5NX4VZ0tTtleLs,202
+solafune_tools/image_fetcher.py,sha256=FVikbxMs6_p9d0I6UgSDWCmpsgUtr2FAkZxBl6YKAcw,6119
+solafune_tools/junk.py,sha256=cdj-3jl1yFRJXsX_WLOVC-FwE7ox6JVZLJ48BkbpVF8,85
+solafune_tools/make_catalog.py,sha256=NxStsKwdzFk8bAUIdlyYeC-qbHMNAkqx5ywZz3C_TGY,5691
+solafune_tools/make_mosaic.py,sha256=7KfLoa3URcEna13pc3f3wlWN8QP2GqcN7R4nRYylK9Q,4821
+solafune_tools/pipeline.py,sha256=XWY_0p7QVoulR_1DFrYa9o9xLFXUVQj6fCj3H615fQo,1632
+solafune_tools/settings.py,sha256=hvyRJeXiBWFNFc3rnjkSnoeVaoBC42I3LfcwbD3nIw4,801
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_get_catalog.py,sha256=h0ljeqg2EV8hGpJdI_syVcAmcg0Gu0Uy6l0ZcorPy2k,2196
+tests/test_settings.py,sha256=g4dSgh-DXmVf-PhKfH6oN_TdjyIvwsT8HfvkD0J6PH0,271
+solafune_tools-0.1.16.dist-info/METADATA,sha256=tYcUgYKr8sblX4nogF0LsFUfBAFiWoinZPrSSuGXR1E,5833
+solafune_tools-0.1.16.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+solafune_tools-0.1.16.dist-info/top_level.txt,sha256=PCCH3v9otG2zo9YjZDlNYz6MbhK6GUMn8wPpcacOVLc,21
+solafune_tools-0.1.16.dist-info/RECORD,,
