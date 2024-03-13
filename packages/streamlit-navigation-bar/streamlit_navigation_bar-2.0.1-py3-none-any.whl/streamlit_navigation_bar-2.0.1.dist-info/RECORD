@@ -1,0 +1,13 @@
+streamlit_navigation_bar/__init__.py,sha256=4MP4KcxWk2I65wOOrX9OA87rDSBrFP5bH0_-2TvdGy0,18365
+streamlit_navigation_bar/errors.py,sha256=cl_jqBJzKk_EjkR6GGQ6pUG7PlyYGjPMnlM7YjOADQQ,7916
+streamlit_navigation_bar/example.py,sha256=4sGpKiwWo13GJjREh7dFby9qkYUrZYrAWCbebRd5frU,623
+streamlit_navigation_bar/frontend/dist/index.html,sha256=elRa70B_J6FO1cmhqZBrb2G7hjMf7mmaH67fXUXxHVY,683
+streamlit_navigation_bar/frontend/dist/assets/index-MAsMFB7K.css,sha256=okMW4y1ltDeLbO_R5xWLMsvyFCXBQaAQUvyO5anol2o,1108
+streamlit_navigation_bar/frontend/dist/assets/index-cSlw19uH.js,sha256=qcokZBBbCtpw90h6HcKhlhRgXckfQwLTJ_rXbCjCZe4,241378
+streamlit_navigation_bar/templates/base.css,sha256=PlOoVRPKFVrf0Edp5D2mTOh2PL8bIimmm82T0Ym2LDs,813
+streamlit_navigation_bar/templates/options.css,sha256=JdE179SZwwqRO9064_fpSIUd0r4LCq4E1Tq6EqcyAL8,1473
+streamlit_navigation_bar-2.0.1.dist-info/LICENSE,sha256=POAEQ-qruQoBHBZna5sWScZw7GeA37whSiNIv9z5K0M,1073
+streamlit_navigation_bar-2.0.1.dist-info/METADATA,sha256=42HgtyxdAjSj55kaLFJWmBoD-9JH0USEeeAWWR9UTpU,12311
+streamlit_navigation_bar-2.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+streamlit_navigation_bar-2.0.1.dist-info/top_level.txt,sha256=7SGxfFVqZ3ucoKpygJVWslT9NhZ6tWpzCJhLtQww4Uw,25
+streamlit_navigation_bar-2.0.1.dist-info/RECORD,,
