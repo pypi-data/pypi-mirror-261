@@ -1,0 +1,5 @@
+opentelemetry/instrumentation/vertexai/__init__.py,sha256=t-FnVuLBmzfINR5R3Dj5XJ9-VZI-KNHJomJ6q5Dlv6I,11457
+opentelemetry/instrumentation/vertexai/version.py,sha256=EVkhkQ4Bbkx92jXuCmt2_JDjQExgnrq2d3eBQIP9UAo,23
+opentelemetry_instrumentation_vertexai-0.14.0.dist-info/METADATA,sha256=yVRiWxbeOH5_rJRI7eBjLRwyu8heRNkqMkIH3CwxP8s,2163
+opentelemetry_instrumentation_vertexai-0.14.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+opentelemetry_instrumentation_vertexai-0.14.0.dist-info/RECORD,,
