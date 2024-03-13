@@ -1,0 +1,11 @@
+opencv-python
+rich
+torch
+torchvision
+ultralytics
+
+[dev]
+mypy
+pre-commit
+pytest
+ruff
