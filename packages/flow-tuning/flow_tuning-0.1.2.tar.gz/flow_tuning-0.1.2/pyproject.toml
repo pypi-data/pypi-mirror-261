@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "flow-tuning"
+version = "0.1.2"
+description = ""
+authors = ["thezzisu <thezzisu@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.34.44"
+typer = {extras = ["all"], version = "^0.9.0"}
+pyyaml = "^6.0.1"
+rich = "^13.7.0"
+numpy = "^1.26.4"
+scipy = "^1.12.0"
+pandas = "^2.2.1"
+matplotlib = "^3.8.3"
+aiohttp = "^3.9.3"
+alibabacloud-fc-open20210406 = "^2.0.11"
+alibabacloud-fnf20190315 = "^1.1.0"
+
+[tool.poetry.group.dev.dependencies]
+yapf = "^0.40.2"
+isort = "^5.13.2"
+
+[tool.poetry.scripts]
+ft = 'flow_tuning.cli:app'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.yapf]
+based_on_style = "yapf"
+coalesce_brackets = true
+dedent_closing_brackets = true
+
+[tool.isort]
+profile = "google"
+multi_line_output = 7

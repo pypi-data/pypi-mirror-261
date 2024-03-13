@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: flow-tuning
+Version: 0.1.2
+Summary: 
+Author: thezzisu
+Author-email: thezzisu@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.3,<4.0.0)
+Requires-Dist: alibabacloud-fc-open20210406 (>=2.0.11,<3.0.0)
+Requires-Dist: alibabacloud-fnf20190315 (>=1.1.0,<2.0.0)
+Requires-Dist: boto3 (>=1.34.44,<2.0.0)
+Requires-Dist: matplotlib (>=3.8.3,<4.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: scipy (>=1.12.0,<2.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Flow Tuning
+
+## Setup
+
+It's recommended to use DevContainers. Otherwise, you should install the following:
+
+- Python 3.12
+- Poetry
+
+You could try the example by executing the following commands:
+
+```bash
+mkdir -p tmp
+cp examples/01-function-tuning.yml tmp/function-tuning.yml
+poetry run ft function -c ./tmp/function-tuning.yml
+```
+
+## Commands
+
+Use `poetry run ft --help` to see the available commands.
+
+## Directory Structure
+
+```
+- benchmarks     # Benchmarks to test algorithms (WIP)
+  |- function    # Function benchmarks
+  -- workflow    # Workflow benchmarks
+- examples       # Config examples
+- flow_tuning    # Source Code
+  |- algorithms  # Tuning algorithms
+  |- generators  # Function payload generators
+  |- providers   # Cloud platform providers
+  |- utils       # Utilities
+  -- cli.py, function.py, workflow.py
+                 # Cli and command routines
+```
+
+## Supported algorithms
+
+| Algorithm   | Description                                                                                               | Function | Workflow |
+| ----------- | --------------------------------------------------------------------------------------------------------- | -------- | -------- |
+| PowerTuning | A modified version of [AWS Lambda Power Tuning](https://github.com/alexcasalboni/aws-lambda-power-tuning) | ✅       | ❎       |
+| OrionTurbo  | Simplified [Orion OSDI'22](https://www.usenix.org/conference/osdi22/presentation/mahgoub)                 | ❎       | ✅       |
+
