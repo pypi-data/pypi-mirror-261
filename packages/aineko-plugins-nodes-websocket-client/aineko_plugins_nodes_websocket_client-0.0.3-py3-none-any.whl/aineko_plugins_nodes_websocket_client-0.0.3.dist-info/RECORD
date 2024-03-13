@@ -1,0 +1,7 @@
+aineko_plugins/nodes/websocket_client/__init__.py,sha256=Z4O3DEug4bFopvAyr77pQKEOOwnWO_EPgJdYhq-2wdY,199
+aineko_plugins/nodes/websocket_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aineko_plugins/nodes/websocket_client/websocket_client.py,sha256=GrizbHH6JlcXMsBbBYmGRLtTCO54DeFxrHXhUDxzTLI,8506
+aineko_plugins_nodes_websocket_client-0.0.3.dist-info/LICENSE,sha256=ysXP0zTiJiCLcqlS_wETU728hENPDVTwG0ccW7_0KkU,11356
+aineko_plugins_nodes_websocket_client-0.0.3.dist-info/METADATA,sha256=T_ckg7FBJUN69nrNzbXAJ5ia7l8Je-MdCXs250PQfzw,1500
+aineko_plugins_nodes_websocket_client-0.0.3.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+aineko_plugins_nodes_websocket_client-0.0.3.dist-info/RECORD,,
