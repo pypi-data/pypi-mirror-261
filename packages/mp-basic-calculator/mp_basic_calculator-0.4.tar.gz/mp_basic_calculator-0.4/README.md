@@ -1,0 +1,84 @@
+# Basic calculator project for Turing College
+
+Simple calculator, which was created as project.
+Calculator has addition, subtraction, multiply, divide and take nth root from number.
+
+[https://pypi.org/project/mp-basic-calculator/](https://pypi.org/project/mp-basic-calculator/)
+
+## Usage
+
+```pip install mp_basic_calculator```
+
+To use it, import in your file:
+
+```python
+from mp_basic_calculator import Calculator
+```
+
+create variable which you will use:
+
+```python
+YOUR_VARIABLE_NAME = Calculator()
+```
+
+You ready to go!
+
+## Functions
+
+**Calculator accepts only INTEGERS and FLOATS**
+
+### Addition
+
+this function adds number to calculator memory (at start memory = 0):
+
+```python
+YOUR_VARIABLE_NAME.add(number)
+```
+
+### Subtraction
+
+this function subtracts number to calculator memory (at start memory = 0):
+
+```python
+YOUR_VARIABLE_NAME.subtract(number)
+```
+
+### Multiplication
+
+this function multiplies number to calculator memory (at first use memory = value, which was entered):
+
+```python
+YOUR_VARIABLE_NAME.multiply(number)
+```
+
+### Division
+
+this function divides number to calculator memory (at first use memory = value, which was entered):
+
+```python
+YOUR_VARIABLE_NAME.divide(number)
+```
+
+### Nth root
+
+this function takes nth root from number and stores result to memory:
+
+```python
+YOUR_VARIABLE_NAME.take_nth_root(number, nth_root)
+```
+
+### Memory reset
+
+this function resets calculator memory to 0:
+
+```python
+YOUR_VARIABLE_NAME.clean_memory()
+```
+
+### Get current memory
+
+this function return current memory value:
+
+```python
+YOUR_VARIABLE_NAME.get_memory()
+```
