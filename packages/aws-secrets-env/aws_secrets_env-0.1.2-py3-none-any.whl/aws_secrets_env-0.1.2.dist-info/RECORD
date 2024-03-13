@@ -1,0 +1,7 @@
+aws_secrets_env/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_secrets_env/cli.py,sha256=eaRGtImFWtrrpQ9Ep-i0lAbevVqk7SrDMGMNZAks2g8,5391
+aws_secrets_env/secretsmanager.py,sha256=6GpX6H-pbf7gFqHK88Wb6SGGnT0qNzJ5bPbVm3KIknQ,5935
+aws_secrets_env-0.1.2.dist-info/METADATA,sha256=uS33-7dyy1Hd1e0-Q7ucIHpWntye-BAeV2np7IvngU4,3358
+aws_secrets_env-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aws_secrets_env-0.1.2.dist-info/entry_points.txt,sha256=9eeTeBgqOACeta_a3XUHek2nKqIiZ-BLMEudxSevojI,56
+aws_secrets_env-0.1.2.dist-info/RECORD,,

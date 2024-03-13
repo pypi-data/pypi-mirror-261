@@ -1,0 +1,3 @@
+[console_scripts]
+secrets-env=aws_secrets_env.cli:main
+
