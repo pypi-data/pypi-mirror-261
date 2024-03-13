@@ -1,0 +1,14 @@
+torch
+torchvision
+numpy
+tqdm
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+black
+mypy
+pdoc
+pre-commit
+cellpose[gui]
