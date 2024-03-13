@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aws-ec2-tool
+Version: 2024.3.12.20.45
+Summary: AWS EC2 tool
+Home-page: https://github.com/Robot-Wranglers/aws-ec2-tool/
+Author: Robot-Wranglers
+License: MIT
+Project-URL: Documentation, https://github.com/Robot-Wranglers/aws-ec2-tool/
+Project-URL: Source, https://github.com/Robot-Wranglers/aws-ec2-tool/
+Project-URL: Download, https://github.com/Robot-Wranglers/aws-ec2-tool/#files
+Platform: any
+Classifier: Programming Language :: Python
+Requires-Python: >3.7
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: aws-ssm-tool>=2024.3.12.10.50
+Requires-Dist: shil>=2024.3.12.16.44
+Requires-Dist: inquirer==3.2.4
+Provides-Extra: dev
+Requires-Dist: IPython; extra == "dev"
+Provides-Extra: testing
+Requires-Dist: IPython; extra == "testing"
+Requires-Dist: tox==4.6.4; extra == "testing"
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Requires-Dist: mock; extra == "testing"
+Requires-Dist: flake8==5.0.4; extra == "testing"
+Provides-Extra: lint
+Requires-Dist: tox==4.6.4; extra == "lint"
+Provides-Extra: publish
+Requires-Dist: twine==4.0.2; extra == "publish"
+
+See the project README
