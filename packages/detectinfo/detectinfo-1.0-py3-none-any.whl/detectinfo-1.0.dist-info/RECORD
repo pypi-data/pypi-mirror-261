@@ -1,0 +1,9 @@
+sensitive_info_detector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sensitive_info_detector/detector.py,sha256=Zw1s3iXzkaWelTIQWJgiCteO_yXQ8iHE5Z3Mz4xk5BQ,815
+sensitive_info_detector/patterns.py,sha256=wltLax49_QvwL-Hv2bSKSQK9PulBIVASIqujmJGjSJA,619
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_detector.py,sha256=jQJUn6WdMFJD-evLY4aQECFRRD5yGQQQLczCVAZQJHk,806
+detectinfo-1.0.dist-info/METADATA,sha256=LFFY7kHNrDwNmART-S2PmefTyX05RE8pM6bAcHo_1wA,332
+detectinfo-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+detectinfo-1.0.dist-info/top_level.txt,sha256=r-JXHWB_vDqdghNyjabsjUiB8DfhqwdKuF-DArtzuR4,30
+detectinfo-1.0.dist-info/RECORD,,
