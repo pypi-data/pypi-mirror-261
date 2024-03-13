@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+LicenseVendor/__init__.py
+LicenseVendor/app.py
+LicenseVendor.egg-info/PKG-INFO
+LicenseVendor.egg-info/SOURCES.txt
+LicenseVendor.egg-info/dependency_links.txt
+LicenseVendor.egg-info/requires.txt
+LicenseVendor.egg-info/top_level.txt
