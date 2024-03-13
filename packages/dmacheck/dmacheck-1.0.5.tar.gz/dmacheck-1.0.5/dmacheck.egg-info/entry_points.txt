@@ -1,0 +1,2 @@
+[console_scripts]
+dmacheck = dmacheck.main:main

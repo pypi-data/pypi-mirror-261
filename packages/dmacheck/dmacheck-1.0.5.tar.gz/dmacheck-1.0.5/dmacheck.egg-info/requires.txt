@@ -1,0 +1,5 @@
+datadog
+opsgenie-sdk
+requests
+urllib3
+pytest
