@@ -1,0 +1,7 @@
+librosa
+matplotlib
+nlpaug
+scipy
+pydub
+noisereduce
+torch
