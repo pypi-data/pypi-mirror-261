@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pio2zip
+Version: 1.0.0
+Summary: Pack PlatformIO ESP32 firmware for upload
+Home-page: https://github.com/blackshieldpt/pio2zip
+Author: Bruno Teixeira
+License: MIT
+Project-URL: Source, https://github.com/blackshieldpt/pio2zip
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+PIO2ZIP 
+=======
+[![pypi](https://img.shields.io/pypi/v/pio2zip.svg)](https://pypi.org/project/pio2zip/)
+[![license](https://img.shields.io/pypi/l/pio2zip.svg)](https://github.com/blackshieldpt/pio2zip/blob/master/LICENSE)
+
+
+pio2zip is a cli tool to generate a zipfile from PlatformIO ESP32/ESP8266 generated binaries to aid the flashing of
+firmwares using [whysoserial.cc](https://whysoserial.cc). 
+
+## Installation
+
+Install via pip package:
+
+```shell
+$ pip install pio2zip
+```
+
+## Usage
+
+```python
+usage: pio2zip [-h] [--fw-name FW_NAME] [--fw-version FW_VERSION] [--build-base BUILD_BASE] [--idedata IDEDATA] [--firmware FIRMWARE] [--output OUTPUT]
+
+options:
+  -h, --help            show this help message and exit
+  --fw-name FW_NAME     Firmware name to use
+  --fw-version FW_VERSION
+                        Firmware version to use
+  --build-base BUILD_BASE
+                        PlatformIO build base folder
+  --idedata IDEDATA     PlatformIO offset map file
+  --firmware FIRMWARE   PlatformIO firmware file
+  --output OUTPUT       Output file
+```

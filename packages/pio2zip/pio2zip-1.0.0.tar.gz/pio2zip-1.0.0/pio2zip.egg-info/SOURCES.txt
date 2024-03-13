@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pio2zip/__init__.py
+pio2zip/cli.py
+pio2zip.egg-info/PKG-INFO
+pio2zip.egg-info/SOURCES.txt
+pio2zip.egg-info/dependency_links.txt
+pio2zip.egg-info/entry_points.txt
+pio2zip.egg-info/not-zip-safe
+pio2zip.egg-info/top_level.txt
