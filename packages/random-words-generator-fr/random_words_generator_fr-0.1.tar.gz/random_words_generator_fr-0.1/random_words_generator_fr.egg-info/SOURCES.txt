@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+random_words_generator_fr.egg-info/PKG-INFO
+random_words_generator_fr.egg-info/SOURCES.txt
+random_words_generator_fr.egg-info/dependency_links.txt
+random_words_generator_fr.egg-info/requires.txt
+random_words_generator_fr.egg-info/top_level.txt
+random_words_genrator/__init__.py
+random_words_genrator/words.py
+test/__init__.py
+test/test_words.py
