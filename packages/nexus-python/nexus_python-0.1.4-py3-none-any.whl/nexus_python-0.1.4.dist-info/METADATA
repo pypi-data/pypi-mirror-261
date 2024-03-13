@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nexus-python
+Version: 0.1.4
+Summary: A simple interface for interacting with NexusDB.
+Home-page: https://www.nexusdb.io/
+Author: Will Humble
+Author-email: w@astraanalytics.co
+License: UNKNOWN
+Keywords: database nexusdb
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: requests (>=2.25.1)
+
+UNKNOWN
+
