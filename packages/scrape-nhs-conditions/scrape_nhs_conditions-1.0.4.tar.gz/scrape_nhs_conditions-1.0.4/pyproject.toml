@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scrape_nhs_conditions"
+version = "1.0.4"
+authors = [
+    { name="Data Science team", email="datascience@nhs.net" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+"Homepage" = "https://github.com/nhsengland/scrape_nhs_conditions"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+# `isort` configurations
+[tool.isort]
+profile = "black"
+
+# `pytest` configurations
+[tool.pytest.ini_options]
+addopts = [
+    "-v",
+    "--doctest-modules",
+    "--doctest-report=cdiff",
+    "--doctest-continue-on-failure"
+]
+doctest_optionflags = "NORMALIZE_WHITESPACE"
+testpaths = [
+    "tests",
+    "src"
+]
+
+[tool.pylint.MASTER]
+ignore-patterns=['docs','.venv*','venv*']
