@@ -1,0 +1,10 @@
+nickgenfast/__init__.py,sha256=KfUYQoQ2ECQDzLUryGUGbttqXh13DV9Ey7OOpBLpvRI,46
+nickgenfast/adjectives.txt,sha256=QbhOcU9PifiWjdlHUW-YX0zieAsNk_l-zhqA5STO4qs,45884
+nickgenfast/nickgenfast.py,sha256=HKAcEnN5tRwmdPwYbgSKd9plDK1IgMRnWSDECwXxg44,892
+nickgenfast/nouns.txt,sha256=Cg5m8i1a5WT8Xmm0xAJWFaN7ANj91cEpEo1jhiHEqu4,61661
+nickgenfast/verbs.txt,sha256=vID6K508EZAzUVwSyqmxxjsymfiNHg8h_HdLgLU-_nE,15477
+nickgenfast-0.0.3.dist-info/LICENCE,sha256=4iWrV_Lwl3XymC8BUniIGp2ATXkBWpwftz2jLC8X_9w,1084
+nickgenfast-0.0.3.dist-info/METADATA,sha256=YhtWe_uzU-D5QSWVs0SxJ_gu1lpUWnYp7unN8P2pq14,860
+nickgenfast-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nickgenfast-0.0.3.dist-info/top_level.txt,sha256=v-ScFGGkVH7XBWA9QyzNnOEk_tUGOxP4iA50_7oPmjs,12
+nickgenfast-0.0.3.dist-info/RECORD,,
