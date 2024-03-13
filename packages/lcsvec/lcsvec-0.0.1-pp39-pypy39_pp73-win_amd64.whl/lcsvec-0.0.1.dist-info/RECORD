@@ -1,0 +1,8 @@
+lcsvec/__init__.py,sha256=PGWx87qbYJVqtesnafeCYsFEjHzotQhVJKzaXXu2wTU,196
+lcsvec/lcs_bind.pyi,sha256=1HMOFmfmaObfo7pJ8ct6JDWHAi28fnO5uDF4FMn9rQU,263
+lcsvec/lcsvec_ext.pypy39-pp73-win_amd64.pyd,sha256=WFsyw4caqZs1knPDYcWa4YrBEgVcgtG1r9-0eHozNXk,83968
+lcsvec-0.0.1.dist-info/METADATA,sha256=CfPOmlLtLMxwajRuFH5jTfZ1sT5ulChr6Mf5YOpSIU8,17106
+lcsvec-0.0.1.dist-info/WHEEL,sha256=H-djYKeAuLIH5cLI_9CX8tf8W2omRi2DE3K048H0IkY,110
+lcsvec-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lcsvec-0.0.1.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+lcsvec-0.0.1.dist-info/RECORD,,
