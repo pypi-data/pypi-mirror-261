@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django-pagetree
+Version: 1.5.0
+Summary: Tree of Pages helper application
+Home-page: https://github.com/ccnmtl/django-pagetree
+Author: Anders Pearson
+Author-email: ctl-dev@columbia.edu
+License: BSD
+Platform: any
+License-File: LICENSE
+Requires-Dist: Django
+Requires-Dist: django-treebeard
+Requires-Dist: coverage
+Requires-Dist: django-bootstrap3
+Requires-Dist: six
+Requires-Dist: Markdown
+Requires-Dist: django-markdownify
+
+Application for managing trees of pages

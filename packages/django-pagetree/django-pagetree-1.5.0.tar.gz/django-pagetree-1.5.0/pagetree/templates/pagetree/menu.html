@@ -1,0 +1,40 @@
+<ul>
+{% for s in module.get_descendants %}
+{% if s.id == module.id %}
+{% else %}
+<li class="menu-{{s.depth}}">
+  {% if s.id != section.id %}
+{% if menu_base == "/edit" %}
+  <a href="{{s.get_edit_url}}">
+{% else %}
+{% if menu_base == "/instructor" %}
+  <a href="{{s.get_instructor_url}}">
+{% else %}
+  <a href="{{menu_base}}{{s.get_absolute_url}}">
+{% endif %}
+{% endif %}
+  {% else %}
+     <b>
+  {% endif %}
+  {{s.label}}
+  {% if s.id != section.id %}
+    </a>
+  {% else %}
+    </b>
+  {% endif %}
+  {% if s.get_children %}
+     <ul id="section-ul-{{s.id}}">
+     {% else %}
+     {% if s.is_last_child %}
+     {% for lc in s.closing_children %}
+          </ul>
+     {% endfor %}
+{% endif %}
+{% endif %}
+{% if s.get_children %}
+{% else %}
+    </li>
+{% endif%}
+{% endif %}
+{% endfor %}
+</ul>
