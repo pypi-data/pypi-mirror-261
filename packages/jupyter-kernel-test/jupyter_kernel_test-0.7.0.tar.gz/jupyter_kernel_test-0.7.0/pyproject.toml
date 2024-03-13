@@ -1,0 +1,106 @@
+[build-system]
+requires = ["hatchling >=1.5"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyter_kernel_test"
+license = { file = "LICENSE" }
+readme = "README.rst"
+classifiers = [
+  "License :: OSI Approved :: BSD License",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Testing"
+]
+requires-python = ">=3.8"
+dependencies = [
+  "jupyter_client >=6.1.13",
+  "jsonschema"
+]
+dynamic = ["description", "version"]
+
+[[project.authors]]
+name = "Jupyter Development Team"
+email = "jupyter@googlegroups.com"
+
+[project.urls]
+Homepage = "https://github.com/jupyter/jupyter_kernel_test"
+
+[project.optional-dependencies]
+test = [
+  "ipykernel",
+  "pre-commit"
+]
+
+[tool.hatch.version]
+path = "jupyter_kernel_test/__init__.py"
+
+[tool.hatch.envs.test]
+features = ["test"]
+[tool.hatch.envs.test.scripts]
+test = "python -m unittest -v {args}"
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = ["pre-commit"]
+[tool.hatch.envs.lint.scripts]
+build = [
+  "pre-commit run --all-files ruff",
+  "pre-commit run --all-files ruff-format"
+]
+
+[tool.hatch.envs.typing]
+dependencies = [ "pre-commit"]
+detached = true
+[tool.hatch.envs.typing.scripts]
+test = "pre-commit run --all-files --hook-stage manual mypy"
+
+[tool.mypy]
+files = "jupyter_kernel_test"
+python_version = "3.8"
+strict = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+warn_unreachable = true
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+extend-select = [
+  "B",           # flake8-bugbear
+  "I",           # isort
+  "ARG",         # flake8-unused-arguments
+  "C4",          # flake8-comprehensions
+  #"EM",          # flake8-errmsg
+  "ICN",         # flake8-import-conventions
+  "G",           # flake8-logging-format
+  "PGH",         # pygrep-hooks
+  "PIE",         # flake8-pie
+  "PL",          # pylint
+  "PTH",         # flake8-use-pathlib
+  "PT",          # flake8-pytest-style
+  "RET",         # flake8-return
+  "RUF",         # Ruff-specific
+  "SIM",         # flake8-simplify
+  "T20",         # flake8-print
+  "UP",          # pyupgrade
+  "YTT",         # flake8-2020
+  "EXE",         # flake8-executable
+  "PYI",         # flake8-pyi
+  "S",           # flake8-bandit
+]
+ignore = [
+  "PLR",    # Design related pylint codes
+  "RUF012", # Mutable class attributes should be annotated with
+  "S101",   # Use of `assert` detected
+  "PT009"   # Use a regular `assert` instead of unittest-style"
+]
+unfixable = [
+  # Don't touch print statements
+  "T201",
+  # Don't touch noqa lines
+  "RUF100",
+]
+
+[tool.repo-review]
+ignore = ["PY004", "PY007","PP301", "PP308", "GH102", "RTD100"]
