@@ -1,0 +1,11 @@
+tree_sitter_bash/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_bash/binding.c,sha256=UttAs6ISyWdwA4sMulUzgflOLI_od9ts2wfEfqzP9Go,632
+tree_sitter_bash/__init__.py,sha256=-qvjhwmN0KA6y_YWeNZYZrEWqI95mk6rcd_JYhK_sjo,63
+tree_sitter_bash/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_bash/_binding.abi3.so,sha256=rD0sCJOzVJHqnn97yw5DNi_LhFRP_hBeFYr5sRp4Xew,1380896
+tree_sitter_bash/queries/highlights.scm,sha256=t0Ig2VT0hbdibSsrYfN7Ui4S6xgwgD44jlfdeX3JnxE,577
+tree_sitter_bash-0.21.0.dist-info/RECORD,,
+tree_sitter_bash-0.21.0.dist-info/LICENSE,sha256=Sb8zz3jvWJfk4WHOFRfffeGuUEKmW2vP1EQB4PxgZVk,1080
+tree_sitter_bash-0.21.0.dist-info/WHEEL,sha256=5MtC72lR06GuEshThU2oFK--LYc9L7Q4L38uzzcN5Pk,109
+tree_sitter_bash-0.21.0.dist-info/top_level.txt,sha256=JFCpVIfkqh02sMPaZegR_9qRCcFgsA2osH3x3jjxqCs,26
+tree_sitter_bash-0.21.0.dist-info/METADATA,sha256=kSGNtkYpEEnYPmpkog45f2VY28ripeQfs_fIXuSyC5w,2192
