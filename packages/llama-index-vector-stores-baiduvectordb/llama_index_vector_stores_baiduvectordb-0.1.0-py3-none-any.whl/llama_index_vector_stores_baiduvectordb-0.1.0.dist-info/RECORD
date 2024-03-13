@@ -1,0 +1,6 @@
+llama_index/vector_stores/baiduvectordb/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/vector_stores/baiduvectordb/__init__.py,sha256=fYyZ-9Uu1H4my5ir1nTRkhu8QnDpDpyA6CDwJcetd4M,171
+llama_index/vector_stores/baiduvectordb/base.py,sha256=b5SCyf4bI0pylMBPmJ9LGhnoLpUCQVpF4-cGpUjGDBU,16067
+llama_index_vector_stores_baiduvectordb-0.1.0.dist-info/METADATA,sha256=GqrmiRfaqA3bsq4TmsRQRtgBuIczZy26RSTz1_tuV8g,674
+llama_index_vector_stores_baiduvectordb-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_vector_stores_baiduvectordb-0.1.0.dist-info/RECORD,,
