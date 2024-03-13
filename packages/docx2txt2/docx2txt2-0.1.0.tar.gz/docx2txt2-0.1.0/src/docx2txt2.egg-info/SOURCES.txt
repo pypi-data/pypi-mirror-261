@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/docx2txt2/__init__.py
+src/docx2txt2/py.typed
+src/docx2txt2.egg-info/PKG-INFO
+src/docx2txt2.egg-info/SOURCES.txt
+src/docx2txt2.egg-info/dependency_links.txt
+src/docx2txt2.egg-info/requires.txt
+src/docx2txt2.egg-info/top_level.txt
+tests/test_extract_data.py
