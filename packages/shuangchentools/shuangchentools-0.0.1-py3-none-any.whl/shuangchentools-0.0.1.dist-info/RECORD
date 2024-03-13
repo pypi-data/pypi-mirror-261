@@ -1,0 +1,11 @@
+shuangchentools/__init__.py,sha256=uj2ZmnDAxiHpRB7oDsizqjILkSTpuXcix8eXEsMwUsI,62
+shuangchentools/doc_segment/__init__.py,sha256=IrmPtMqdbvkg4XMbGnnJwmEa-gJDTSfT6Mt1Hlvhguw,51
+shuangchentools/doc_segment/doc_segment_by_rule.py,sha256=vX9B2-_XMqDDoQvE-P9ZHEcoH5xMIXkeYRgjxorOVo4,6285
+shuangchentools/spider/__init__.py,sha256=BwDc-bpe6kkfeETw6M5fG-sUOIYIkS1eX6S-oQjZNLg,38
+shuangchentools/spider/selenium.py,sha256=OR4b3sMLPIAG7047BQ1cNmHRNweEee4NB6iYbq0xscI,2872
+shuangchentools/utils/__init__.py,sha256=7IxJXI1XYsV7VLgaZq-icdyeauMgDPq8ctPuy9ElDdo,20
+shuangchentools/utils/conv.py,sha256=etn3M7A5q-PMaCk8RMt9FOftfnaHQWOGC_3PC7z8y64,2384
+shuangchentools-0.0.1.dist-info/METADATA,sha256=zk3A7AFA2eszRD2uGWEZIGW1Pqv-mhKUJEoww3CLA7Q,840
+shuangchentools-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shuangchentools-0.0.1.dist-info/top_level.txt,sha256=6D4rJaE1yMnqlVsau4KzWYAHYY3EJx5nTMeZzDtpaPs,16
+shuangchentools-0.0.1.dist-info/RECORD,,
