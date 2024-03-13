@@ -1,0 +1,9 @@
+LICENSE
+README.md
+README.rst
+setup.py
+streaming_unzip.egg-info/PKG-INFO
+streaming_unzip.egg-info/SOURCES.txt
+streaming_unzip.egg-info/dependency_links.txt
+streaming_unzip.egg-info/requires.txt
+streaming_unzip.egg-info/top_level.txt

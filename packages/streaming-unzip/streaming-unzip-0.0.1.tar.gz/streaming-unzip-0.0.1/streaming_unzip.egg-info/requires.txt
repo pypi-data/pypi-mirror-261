@@ -1,0 +1,8 @@
+aiohttp
+loguru
+requests
+argparse
+asyncio
+aiofiles
+bz2
+lzma
