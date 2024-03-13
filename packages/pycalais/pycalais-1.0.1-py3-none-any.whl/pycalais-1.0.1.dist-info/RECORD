@@ -1,0 +1,13 @@
+calais/__init__.py,sha256=YJIhc2kvkeXWCWShU-hEitsoDnLOABoFr56mCq8HB3o,13
+calais/chat.py,sha256=cw2Tc5bmgEuT9wgG7bZ8qveqWxB2DdkadWML6vr0upw,7216
+calais/client.py,sha256=67jpK1l7fOyxL8IZB_byw9NE0asIMnhyTko6bzPjAAg,1939
+calais/content_printer.py,sha256=dgayseeSwTCJyVgZwGODsqjqj_Co5T6WGPj3WonqTkg,4699
+calais/main.py,sha256=U1A6lzJpT9M3gsEdvyaDLqTJA_h-8xfwDJp4Zreq_Pk,5994
+calais/response.py,sha256=0-iQ7YFmVad7hzar7lbh3IKpkDNctFprzdQOhF6Lr40,978
+calais/system_prompt.py,sha256=0iSuD9u_aLWZfkpmO3-6guHdcOb5WGXtKw5mCzT_Lso,4253
+pycalais-1.0.1.dist-info/LICENSE,sha256=7EKDXLWowyonj87TeJH0Vlli-RdyZP7uEaUUh2tMSVY,11343
+pycalais-1.0.1.dist-info/METADATA,sha256=v5GwwxHTlq4YIegyR-a63PPCBKdBsQJCV5JVMAcftn8,22147
+pycalais-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pycalais-1.0.1.dist-info/entry_points.txt,sha256=qzQijsj_XrVxTX31QjnYTuKvBnZ-MQ2SwxcqtEQPT4g,40
+pycalais-1.0.1.dist-info/top_level.txt,sha256=XLvFz4MnZQC9MWEuVMXzrROSuSz2K6rmFMZFS8RCFIc,63
+pycalais-1.0.1.dist-info/RECORD,,
