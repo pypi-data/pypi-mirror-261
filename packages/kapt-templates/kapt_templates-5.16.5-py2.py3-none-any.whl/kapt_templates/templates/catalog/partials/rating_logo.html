@@ -1,0 +1,29 @@
+{% load repeat_tag %}
+{% load thumbnail %}
+
+{% if labelling.touristic_label.logo %}
+  {% thumbnail labelling.touristic_label.logo 25x25 as logo_label_1x %}
+  {% thumbnail labelling.touristic_label.logo 50x50 as logo_label_2x %}
+  {% thumbnail labelling.touristic_label.logo 75x75 as logo_label_3x %}
+  <img
+    src="{{ logo_label_1x.url }}"
+    srcset="{{ logo_label_2x.url }} 2x, {{ logo_label_3x.url }} 3x"
+    alt="{{ labelling.touristic_label.name }}"
+    title="{{ labelling.touristic_label.name }}"
+    loading="lazy"
+  />&nbsp;
+{% endif %}
+
+{% if labelling.touristic_label.rating_unit %}
+  {% thumbnail labelling.touristic_label.rating_unit.icon 20x20 as logo_rating_1x %}
+  {% thumbnail labelling.touristic_label.rating_unit.icon 40x40 as logo_rating_2x %}
+  {% thumbnail labelling.touristic_label.rating_unit.icon 60x60 as logo_rating_3x %}
+  {% repeat labelling.rating %}
+    <img
+      src="{{ logo_rating_1x.url }}"
+      srcset="{{ logo_rating_2x.url }} 2x, {{ logo_rating_3x.url }} 3x"
+      alt="*"
+      title="{{ labelling.rating }} {{ labelling.touristic_label.rating_unit.name }} {{ labelling.touristic_label.name }}"
+    />&nbsp;
+  {% endrepeat %}
+{% endif %}

@@ -1,0 +1,31 @@
+{% load i18n %}
+{% load thumbnail %}
+
+<div class="brochure-item">
+  {% thumbnail object.cover 'brochure' subject_location=object.cover.subject_location as thumb %}
+  <a href="{{ default_url|default:"" }}" target="_blank" class="brochure-cover" title="{{ default_link_title }}">
+    <img src="{{ thumb.url }}" width="{{ thumb.width }}" height="{{ thumb.height }}" alt="{{ object.title }}" loading="lazy" />
+  </a>
+
+  <div class="brochure-informations">
+    <div class="brochure-caption">
+      <strong class="brochure-title">{{ object.title }}</strong>
+      <p class="brochure-description">{{ object.description }}</p>
+    </div>
+
+    {% if object.url and object.file %}
+      <div class="brochure-links">
+        <a href="{{ object.url }}" target="_blank" class="brochure-link brochure-link-view" title="{% trans "View the brochure online" %}">{% trans "View" context "verb" %}</a>
+        <a href="{{ object.file.url }}" class="brochure-link brochure-link-download" title="{% trans "Download the brochure" %}">{% trans "Download" %}</a>
+      </div>
+    {% elif object.url %}
+      <div class="brochure-links">
+        <a href="{{ default_url }}" target="_blank" class="brochure-link" title="{{ default_link_title }}">{% trans "View" context "verb" %}</a>
+      </div>
+    {% elif object.file %}
+      <div class="brochure-links">
+        <a href="{{ default_url }}" target="_blank" class="brochure-link" title="{{ default_link_title }}">{% trans "Download" %}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>

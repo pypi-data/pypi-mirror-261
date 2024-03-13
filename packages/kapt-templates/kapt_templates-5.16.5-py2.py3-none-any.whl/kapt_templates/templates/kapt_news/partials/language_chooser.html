@@ -1,0 +1,28 @@
+{% load i18n %}
+{% load menu_tags %}
+
+<li class="dropdown">
+  {% if languages|length > 1 %}
+    <a data-toggle="dropdown" class="btn-toggle" href="#">
+  {% else %}
+    <a class="btn-toggle">
+  {% endif %}
+  <i class="flags-sprite {{ current_language }}"></i><span class="visible-xs">&nbsp;&nbsp;{{ current_language|language_name_local|capfirst }}</span>
+  {% if languages|length > 1 %}
+    <span class="caret"></span>
+  {% endif %}
+</a>
+{% if languages|length > 1 %}
+  <ul class="dropdown-menu">
+    {% for language in languages %}
+      {% if current_language != language.0 %}
+        {% language language.0 %}
+          <li>
+            <a href="{% url config.namespace|add:':news_article' article.slug %}"><i class="flags-sprite {{ language.0 }}"></i>&nbsp;&nbsp;{{ language.0|language_name_local|capfirst }}</a>
+          </li>
+        {% endlanguage %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}
+</li>

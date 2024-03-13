@@ -1,0 +1,9 @@
+{% extends "error_base.html" %}
+{% load i18n %}
+
+{% block title_tag %}{% trans "Forbidden" %}{% endblock title_tag %}
+
+{% block message %}
+  <h1>{% trans "Forbidden" %}</h1>
+  <p>{% trans "You are not allowed to access this page." %}</p>
+{% endblock message %}

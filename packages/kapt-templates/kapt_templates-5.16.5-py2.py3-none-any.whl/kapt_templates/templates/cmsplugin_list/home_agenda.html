@@ -1,0 +1,28 @@
+{% load i18n %}
+{% load sekizai_tags %}
+{% load thumbnail %}
+{% load cms_tags %}
+
+{% for activity in activities %}
+  <div class="col-md-3">
+    <a href="{% url 'activity-detail' activity.slug %}" id="ev{{ activity.id }}" class="event">
+      {% with activity.structure.gallery.get_main_photo as photo %}
+        {% if photo %}
+          <div class="img-container">
+            <img src="{{ photo.file|thumbnail_url:'home_agenda_image' }}" alt="{{ activity.name }}" class="img-fluid" loading="lazy" />
+            {% if photo.copyright %}
+              <i class="img-author-icon" title="{{ photo.copyright }}" data-toggle="tooltip"></i>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% include "kapt_templates/partials/date_range.html" with start_date=activity.next_validity_date end_date=activity.ending_date %}
+
+        <h3>{{ activity.name|truncatechars:"46" }}</h3>
+        <p class="description">
+          {{ activity.description|safe }}
+        </p>
+      {% endwith %}
+    </a>
+  </div>
+{% endfor %}

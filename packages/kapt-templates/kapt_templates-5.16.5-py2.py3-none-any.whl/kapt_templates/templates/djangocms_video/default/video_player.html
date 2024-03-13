@@ -1,0 +1,43 @@
+{% load i18n cms_tags %}
+
+<div class="video">
+  <div class="video-player">
+    {% if instance.embed_link %}
+      {# show iframe if embed_link is provided #}
+      <iframe type="opt-in" data-name="Youtube" data-src="{{ instance.embed_link }}" {{ instance.attributes_str }} frameborder="0" allowfullscreen="true"></iframe>
+      {% with disabled=instance.embed_link %}
+        {% for plugin in instance.child_plugin_instances %}
+          {% render_plugin plugin %}
+        {% endfor %}
+      {% endwith %}
+    {% else %}
+      {# render <source> or <track> plugins #}
+      <video controls {{ instance.attributes_str }}
+             {% if instance.poster %} poster="{{ instance.poster.url }}"{% endif %}>
+        {% for plugin in instance.child_plugin_instances %}
+          {% render_plugin plugin %}
+        {% endfor %}
+        {% trans "Your browser doesn't support this video format." %}
+      </video>
+    {% endif %}
+  </div>
+  <div class="cookieoptin-notice cookieoptin-hide" data-cookieoptin>
+    <p>
+      <strong>{% trans "Please accept YouTube cookies to play this video." %}</strong>
+      {% trans "By accepting you will be accessing content from YouTube, a service provided by an external third party." %}
+    </p>
+    <p>
+      <a href="https://policies.google.com/privacy">{% trans "Show the YouTube privacy policy" %}</a>
+    </p>
+    <p>
+      {% trans "If you accept these cookies, your choice will be saved and the video will load." %}
+    </p>
+    <p>
+      <a href="#" data-optin-btn class="btn btn-success">{% trans "Accept YouTube Content" %}</a>
+    </p>
+  </div>
+
+  {% if instance.label %}
+    <p>{{ instance.label }}</p>
+  {% endif %}
+</div>

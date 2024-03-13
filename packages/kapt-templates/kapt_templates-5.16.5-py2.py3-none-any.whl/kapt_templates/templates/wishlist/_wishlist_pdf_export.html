@@ -1,0 +1,94 @@
+{% load static %}
+{% load i18n %}
+{% load thumbnail %}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+      @page {
+        size: a4 portrait;
+
+        @frame header_frame {
+          -pdf-frame-content: header_content;
+          left: 50pt; width: 512pt; top: 50pt; height: 40pt;
+        }
+        @frame content_frame {
+          left: 40pt; right: 40pt; top: 20pt; height: 1000px;
+        }
+        @frame footer_frame {
+          -pdf-frame-content: footer_content;
+          left: 50pt; width: 512pt; top: 772pt; height: 20pt;
+        }
+      }
+
+      h1, h2, h3, h4 { /* Don't add an outline to the document */
+        -pdf-outline: false;
+      }
+
+      .top-date{
+        text-align: right;
+      }
+
+      .top-image {
+        text-align: center;
+      }
+
+      h1.main-title{
+        margin-bottom: 0px;
+        text-align: center;
+        border-bottom: 2px solid #000;
+        color: #555;
+      }
+
+      table.tdefault {
+        padding-bottom: 2px;
+        border-bottom: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header_content"></div>
+    <div class="top-date">{{ now_dt|date:"D d M Y" }}</div>
+    <div class="top-image">
+      {% block main_logo %}
+        <img src="{% static "img/main_logo.png" %}" alt="logo" loading="lazy" />
+      {% endblock main_logo %}
+    </div>
+    <h1 class="main-title">{% trans "Your travel notebook" %}</h1>
+    <br />
+    {% for key, item in objects.items %}
+      {% for obj_data in item.objs %}
+        <table class="tdefault"><tr>
+          <td width="120px">
+            {% if obj_data.obj.gallery %}
+              <img src="{{ obj_data.obj.gallery.photo_set.all.0.file|thumbnail_url:'wishlist_export' }}" alt="{{ obj_data.obj.name }}" loading="lazy" />
+            {% elif obj_data.obj.structure.gallery %}
+              <img src="{{ obj_data.obj.structure.gallery.photo_set.all.0.file|thumbnail_url:'wishlist_export' }}" alt="{{ obj_data.obj.name }}" loading="lazy" />
+            {% endif %}
+          </td>
+          <td width="20px"></td>
+          <td>
+            <p>
+              <b>{{ obj_data.obj.name }}</b><br />
+              {% if obj_data.address.address1 %}{{ obj_data.address.address1 }}<br />{% endif %}
+              {% if obj_data.address.address2 %}{{ obj_data.address.address2 }}<br />{% endif %}
+              {% if obj_data.zip_code %}{{ obj_datazip_code }}{% endif %} {{ obj_data.address.place.name|upper }}<br />
+              {% if obj_data.referent_contact.first_phone_number %}
+                <b>{% trans "Phone:" %} </b>{{ obj_data.referent_contact.first_phone_number }}<br />
+              {% endif %}
+              {% if obj_data.referent_contact.first_email %}
+                <b>{% trans "Mail:" %} </b>{{ obj_data.referent_contact.first_email }}
+              {% endif %}
+            </p>
+          </td>
+        </tr></table>
+        <br />
+      {% endfor %}
+    {% endfor %}
+    <div id="footer_content">Page <pdf:pagenumber>
+      {% trans "of" %} <pdf:pagecount>
+      </div>
+    </body>
+    </html>

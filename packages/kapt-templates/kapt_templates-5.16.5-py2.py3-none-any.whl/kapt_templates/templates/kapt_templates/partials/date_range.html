@@ -1,0 +1,66 @@
+{% load i18n %}
+
+{% spaceless %}
+{% comment %}
+  In some situations we don't want spaces before or after each date element,
+  as it is easier with CSS to add margin between tags than removing space
+  characters, we use spaceless to remove all spaces between tags.
+{% endcomment %}
+  {% with day_format=day_format|default:"d" month_format=month_format|default:"F" local_start_date=start_date local_end_date=end_date %}
+    {% if local_start_date or local_end_date %}
+      <div class="date-range">
+        {% if not local_end_date %}
+          {% blocktrans with day=local_start_date|date:day_format month=local_start_date|date:month_format year=local_start_date|date:"Y" trimmed %}
+            <span class="date-range-on">On</span>
+            <span class="date-range-start date-range-day">{{ day }}</span>
+            <span class="date-range-start date-range-month">{{ month }}</span>
+            <span class="date-range-start date-range-year">{{ year }}</span>
+          {% endblocktrans %}
+        {% else %}
+          {% if local_start_date.year == local_end_date.year %}
+            {% if local_start_date.month == local_end_date.month %}
+              {% if local_start_date.day == local_end_date.day %}
+                {% blocktrans with day=local_start_date|date:day_format month=local_start_date|date:month_format year=local_start_date|date:"Y" trimmed %}
+                  <span class="date-range-on">On</span>
+                  <span class="date-range-start date-range-day">{{ day }}</span>
+                  <span class="date-range-start date-range-month">{{ month }}</span>
+                  <span class="date-range-start date-range-year">{{ year }}</span>
+                {% endblocktrans %}
+              {% else %}
+                {% blocktrans with start_day=local_start_date|date:day_format end_day=local_end_date|date:day_format end_month=local_end_date|date:month_format end_year=local_end_date|date:"Y" trimmed %}
+                  <span class="date-range-from">From</span>
+                  <span class="date-range-start date-range-day">{{ start_day }}</span>
+                  <span class="date-range-to">to</span>
+                  <span class="date-range-end date-range-day">{{ end_day }}</span>
+                  <span class="date-range-end date-range-month">{{ end_month }}</span>
+                  <span class="date-range-end date-range-year">{{ end_year }}</span>
+                {% endblocktrans %}
+              {% endif %}
+            {% else %}
+              {% blocktrans with start_day=local_start_date|date:day_format start_month=local_start_date|date:month_format end_day=local_end_date|date:day_format end_month=local_end_date|date:month_format end_year=local_end_date|date:"Y" trimmed %}
+                <span class="date-range-from">From</span>
+                <span class="date-range-start date-range-day">{{ start_day }}</span>
+                <span class="date-range-start date-range-month">{{ start_month }}</span>
+                <span class="date-range-to">to</span>
+                <span class="date-range-end date-range-day">{{ end_day }}</span>
+                <span class="date-range-end date-range-month">{{ end_month }}</span>
+                <span class="date-range-end date-range-year">{{ end_year }}</span>
+              {% endblocktrans %}
+            {% endif %}
+          {% else %}
+            {% blocktrans with start_day=local_start_date|date:day_format start_month=local_start_date|date:month_format start_year=local_start_date|date:"Y" end_day=local_end_date|date:day_format end_month=local_end_date|date:month_format end_year=local_end_date|date:"Y" trimmed %}
+              <span class="date-range-from">From</span>
+              <span class="date-range-start date-range-day">{{ start_day }}</span>
+              <span class="date-range-start date-range-month">{{ start_month }}</span>
+              <span class="date-range-start date-range-year">{{ start_year }}</span>
+              <span class="date-range-to">to</span>
+              <span class="date-range-end date-range-day">{{ end_day }}</span>
+              <span class="date-range-end date-range-month">{{ end_month }}</span>
+              <span class="date-range-end date-range-year">{{ end_year }}</span>
+            {% endblocktrans %}
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endwith %}
+{% endspaceless %}

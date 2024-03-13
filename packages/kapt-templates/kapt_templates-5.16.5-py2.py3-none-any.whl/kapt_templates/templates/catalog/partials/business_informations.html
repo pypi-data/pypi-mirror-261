@@ -1,0 +1,88 @@
+{% load i18n %}
+
+<h2>{% trans "Business information" %}</h2>
+
+{% if business_service.business_tourism_max_capacity or business_service.equipped_meeting_rooms_quantity or business_service.adjustable_rooms_quantity %}
+  <h3>{% trans "Informations" %}</h3>
+  <ul class="business__informations">
+    {% if business_service.business_tourism_max_capacity %}
+      <li><strong>{% trans "Maximum capacity:" %}</strong> {% blocktrans count capacity=business_service.business_tourism_max_capacity %}{{ capacity }} person{% plural %}{{ capacity }} people{% endblocktrans %}</li>
+    {% endif %}
+    {% if business_service.equipped_meeting_rooms_quantity %}
+      <li><strong>{% trans "Equipped meeting rooms quantity:" %}</strong> {{ business_service.equipped_meeting_rooms_quantity }}</li>
+    {% endif %}
+    {% if business_service.adjustable_rooms_quantity %}
+      <li><strong>{% trans "Adjustable rooms quantity:" %}</strong> {{ business_service.adjustable_rooms_quantity }}</li>
+    {% endif %}
+  </ul>
+{% endif %}
+
+{% if business_service.characteristics.all %}
+  <h3>{% trans "Services" %}</h3>
+  <ul class="business__services">
+    {% for char in business_service.characteristics.all %}
+      <li><i class="fa fa-check"></i>&nbsp;{{ char.name }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if meeting_rooms %}
+  <h3>{% trans "Meetings rooms" %}</h3>
+  <div class="business__meetingrooms">
+    <div class="select-box" {% if meeting_rooms|length == 1 %} style="display: none;"{% endif %}>
+      <label for="room_selector">{% trans "Select a metting room:" %}&nbsp;</label>
+      <div class="meetingrooms__selector">
+        <select name="" id="room_selector" >
+          {% for room in meeting_rooms %}
+            <option value="room_{{ room.id }}" id="{{ room.name }}">
+              {{ room.name }}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    {% for room in meeting_rooms %}
+      <div id="room_{{ room.id }}" class="meetingroom" {% if not forloop.first %}style="display: none;"{% endif %}>
+        <h4 class="meetingroom__title">{% if room.name %}{{ room.name }}{% else %}{% trans 'Meeting room' %} {{ forloop.counter }}{% endif %}</h4>
+        <div class="meetingroom__content">
+          {% if room.descriptions.first %}
+            <p>{{ room.descriptions.first.text }}</p>
+          {% endif %}
+          {% if room.capacity > 0 %}
+            <dl>
+              <dt>{% trans "Capacity" %}</dt>
+              <dd>{% blocktrans count capacity=room.capacity %}{{ capacity }} person{% plural %}{{ capacity }} people{% endblocktrans %}</dd>
+            </dl>
+          {% endif %}
+          {% if room.area > 0 %}
+            <dl>
+              <dt>{% trans "Area" %}</dt>
+              <dd>{{ room.area }} m<sup>2</sup></dd>
+            </dl>
+          {% endif %}
+          {% if room.height %}
+            <dl>
+              <dt>{% trans "Height" %}</dt>
+              <dd>{{ room.height }} m</dd>
+            </dl>
+          {% endif %}
+          {% if room.natural_lighting %}
+            <dl>
+              <dt>{% trans "Natural light" %}</dt>
+              <dd>{% trans "Yes" %}</dd>
+            </dl>
+          {% endif %}
+          {% if room.roomlayout_set.all|length > 0 %}
+            <h5>{% trans "Disposition" %}</h5>
+            {% for layout in room.roomlayout_set.all %}
+              <dl>
+                <dt>{{ layout.layout.name }}</dt>
+                <dd>{% if layout.capacity > 0 %}{{ layout.capacity }} {% trans "places" %}{% else %}{% trans "N.C" %}{% endif %}</dd>
+              </dl>
+            {% endfor %}
+          {% endif %}
+        </div>
+    {% endfor %}
+  </div>
+  </div>
+{% endif %}

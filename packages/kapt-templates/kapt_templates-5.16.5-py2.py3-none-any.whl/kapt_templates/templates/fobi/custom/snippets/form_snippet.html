@@ -1,0 +1,18 @@
+{% extends 'fobi/generic/snippets/form_snippet.html' %}
+{% load i18n %}
+
+{% block form_required_fields_message_block %}
+  <div class="{% block form_required_fields_message_wrapper_class %}form-required-field-message-wrapper{% endblock %}">
+    <div class="required-field-message">
+      {% blocktrans %}Fields marked with <span class="required-field">*</span> are required{% endblocktrans %}
+    </div>
+  </div>
+{% endblock form_required_fields_message_block %}
+
+{% block form_element_wrapper_html_class %}{% spaceless %}
+  {{ block.super }}
+  form-element-wrapper-{{ field.html_name }}
+  form-{{ field.field.widget.input_type|default:"textarea" }}-wrapper
+{% endspaceless %}{% endblock form_element_wrapper_html_class %}
+
+{% block form_element_wrapper_error_html_class %}has-error{% endblock form_element_wrapper_error_html_class %}

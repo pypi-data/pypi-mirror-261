@@ -1,0 +1,75 @@
+{% load i18n %}
+
+{% comment %}
+  This is the base template:
+  - a kapt-catalog specific version exists in `catalog/partials/social_share.html`
+  - a django-cms specific version exists in `cms/partials/social_share.html`
+
+  To use this template, add the following lines in your template:
+  {% trans "my custom text" as TWITTER_TEXT %}
+  {% trans "my custom text" as LINKEDIN_TEXT %}
+  {% trans "my custom text" as EMAIL_SUBJECT %}
+  {% include "kapt_templates/partials/social_share.html" with twitter_text=TWITTER_TEXT linkedin_text=LINKEDIN_TEXT email_subject=EMAIL_SUBJECT %}
+  ```
+{% endcomment %}
+
+<div class="social-share-buttons">
+  {% block facebook_share %}
+    <a title="{% trans "Share on Facebook" %}"
+       href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri|urlencode }}"
+       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=no,width=600,height=400');return false;"
+       rel="nofollow"
+       class="social-share-button facebook-share-button">
+      {% block facebook_icon %}<i class="fab fa-facebook"></i>{% endblock facebook_icon %}
+    </a>
+  {% endblock facebook_share %}
+
+  {% block twitter_share %}
+    {% if not twitter_text and debug %}
+      <div class="alert alert-info">
+        Missing Twitter text. You must add the following line on your include tag:
+        <pre>twitter_text=&lt;your-sharing-text&gt;</pre>
+      </div>
+    {% endif %}
+    <a target="_blank"
+       title="{% trans "Share on Twitter" %}"
+       href="https://twitter.com/intent/tweet?text={{ twitter_text|urlencode }}%20&amp;url={{ request.build_absolute_uri|urlencode }}{% if twitter_account %}&amp;via={{ twitter_account }}{% endif %}"
+       rel="nofollow"
+       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=550,height=420');return false;"
+       class="social-share-button twitter-share-button">
+      {% block twitter_icon %}<i class="fab fa-twitter"></i>{% endblock twitter_icon %}
+    </a>
+  {% endblock twitter_share %}
+
+  {% block linkedin_share %}
+    {% if not linkedin_text and debug %}
+      <div class="alert alert-info">
+        Missing LinkedIn text. You must add the following line on your include tag:
+        <pre>linkedin_text=&lt;your-sharing-text&gt;</pre>
+      </div>
+    {% endif %}
+    <a target="_blank"
+       title="{% trans "Share on LinkedIn" %}"
+       href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ request.build_absolute_uri|urlencode }}&amp;title={{ linkedin_text|urlencode }}&amp;source=website"
+       rel="nofollow"
+       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=320,width=600');return false;"
+       class="social-share-button linkedin-share-button">
+      {% block linkedin_icon %}<i class="fab fa-linkedin"></i>{% endblock linkedin_icon %}
+    </a>
+  {% endblock linkedin_share %}
+
+  {% block mailto_share %}
+    {% if not email_subject and debug %}
+      <div class="alert alert-info">
+        Missing e-mail subject. You must add the following line on your include tag:
+        <pre>email_subject=&lt;your-email-subject&gt;</pre>
+      </div>
+    {% endif %}
+    <a title="{% trans "Share by email" %}"
+       href="mailto:?subject={{ email_subject|urlencode }}&amp;body={{ request.build_absolute_uri|urlencode }}"
+       rel="nofollow"
+       class="social-share-button email-share-button">
+      {% block mailto_icon %}<i class="fas fa-envelope"></i>{% endblock mailto_icon %}
+    </a>
+  {% endblock mailto_share %}
+</div>

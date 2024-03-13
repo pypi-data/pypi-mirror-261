@@ -1,0 +1,28 @@
+{% load static %}
+{% load i18n %}
+
+{% for file in folder_files %}
+  <a
+    href="{{ file.url }}"
+    {% if instance.link_target %}target="{{ instance.link_target }}"{% endif %}
+    {% if instance.link_title %}title="{{ instance.link_title }}"{% endif %}
+    {{ instance.attributes_str }}
+  >
+    <img
+      src='{% static "img/icon_file.png" %}'
+      width="60"
+      height="76"
+      alt="{{ file.label }}"
+      loading="lazy"
+    />
+    <span class="title">
+      {{ file.label }}
+      {% if instance.show_file_size %}
+        <span>({{ file.size|filesizeformat }})</span>
+      {% endif %}
+    </span>
+  </a>
+  {% if not forloop.last %}<br> <br>{% endif %}
+{% empty %}
+  <p>{% trans "No files were found in the specified folder." %}</p>
+{% endfor %}

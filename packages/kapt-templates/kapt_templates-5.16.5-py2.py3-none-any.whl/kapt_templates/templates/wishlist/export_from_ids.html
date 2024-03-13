@@ -1,0 +1,274 @@
+{% load cms_tags i18n static thumbnail %}
+
+{# biblorhapte.kapt.mobi (weasyprint) template #}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin: 0;
+        color: #334;
+        font-family: "Roboto";
+      }
+      h1{
+        font-size: 3.7em;
+        bottom: 8em;
+        left: 4em;
+        font-family: "Roboto Bold";
+      }
+      #title h1, #title h2{
+        position: absolute;
+      }
+      #title h2{
+        font-family: "Roboto Thin";
+        font-weight: 200;
+        font-size: 3em;
+        bottom: 9em;
+        left: 6em;
+      }
+      #title .banner{
+        position: absolute;
+        bottom: 2em;
+        width: 100%;
+        height: 5em;
+        padding-left: 0;
+        background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 75%);
+      }
+      #title{
+        color: white;
+        background-color: rgba(150,150,150,0.7);
+      }
+      .banner{
+        height: 2.5em;
+        width: 90%;
+        background-color: #31373d;
+        display: flex;
+        padding-left: 30px;
+        align-items: center;
+      }
+      h2{
+        color: #ddd;
+        font-size: 2em;
+        font-family: "Roboto-Light";
+        font-weight: 200;
+      }
+      h3{
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: 200;
+      }
+      h4{
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .activities_type article h4{
+        margin: 5px 0;
+      }
+      .about{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .about div{
+        width: 45%;
+      }
+      img{
+        max-width: 100%;
+      }
+      .about-list h4, .about-list p{
+        margin-left: 10%;
+        width: 80%;
+      }
+      article{
+        margin: 10mm;
+      }
+      .oneliner h4, .oneliner p{
+        margin: 0;
+        width: 45%;
+      }
+      .oneliner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #activities h3{
+        padding-top: 1em;
+        margin: 0 0 0 2em;
+      }
+      .activities_type{
+        margin-top: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+        align-items: stretch;
+      }
+      .activities_type article{
+        page-break-inside: avoid;
+        margin: 1%;
+        padding: 2% 2% 0 2%;
+        align-self: stretch;
+        justify-content: start;
+        width: 25%;
+        border: 2px solid #666;
+      }
+      a{
+        text-decoration: none;
+        color: #fa709d;
+      }
+      h4 a{
+        font-weight: 600;
+      }
+      .activities_type p{
+        margin: 5px 0;
+      }
+      .uppercase{
+        text-transform: uppercase;
+      }
+      .contact a{
+        overflow-wrap: break-word;
+        font-size: 0.7em;
+      }
+      .separator{
+        width: 40%;
+        border: 1px solid #666;
+      }
+      .new-page{
+        page-break-before: always;
+      }
+      @page{
+        size: A4;
+        margin: 0mm;
+        background-color: #e0dcdf;
+      }
+      @page:nth(1){
+        background-color: white;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section id="title">
+      <h1>Titre</h1>
+      <h2>L'essentiel</h2>
+      <div class="banner"></div>
+    </section>
+
+    <section id="about" class="new-page">
+      <h2 class="banner">À propos</h2>
+
+      <article class="about">
+        <div>
+          <h3>Lieu</h3>
+          <p>
+            §1
+          </p>
+          <p>
+            §2
+          </p>
+        </div>
+        <div>
+          {% comment %}<img src="{% static "img/map.png" %}" alt="carte" />{% endcomment %}
+        </div>
+      </article>
+
+
+      <article class="about-list">
+        <h3>Les incontournables</h3>
+        {% comment %}
+            <h4><a href="https://www.dolce-via.com/">La Dolce Via</a></h4>
+            <p>
+                Avec ses 90 km de voie douce aménagée et sécurisée, et située au coeur des paysages préservés et des grands espaces naturels de l’Ardèche, la Dolce Via est une vélo-route exceptionnelle.
+            </p>
+            <h4><a href="https://www.gerbier-de-jonc.fr/">Le mont Gerbier de Jonc</a></h4>
+            <p>
+                La Loire a fait son berceau au pied de ce belvédère naturel culminant à 1551m. L'ascension dure environ 30 minutes, et offre une vue à 360° sur les paysages, la faune ainsi que la flore alentours.
+            </p>
+            <h4><a href="https://www.trainardeche.fr/">Le Train de l'Ardèche</a></h4>
+            <p>
+                Embarquez à bord du Mastrou à Saint-Jean de Muzols pour rejoindre Lamastre, passez une journée de vacances inoubliable !
+            </p>
+            {% endcomment %}
+      </article>
+
+      <article>
+        <h3>Numéros utiles</h3>
+        {% comment %}
+            <article class="oneliner">
+                <h4>Office du Tourisme Lamastre</h4>
+                <p>+33(0) 4 75 06 48 99</p>
+            </article>
+
+            <article class="oneliner">
+                <h4>Office du Tourisme Désaignes</h4>
+                <p>+33(0) 4 75 06 61 19</p>
+            </article>
+            {% endcomment %}
+      </article>
+
+    </section>
+
+
+    <section id="activities" class="new-page">
+
+      <h2 class="banner">Votre sélection</h2>
+
+      {% regroup activities by type as activity_list %}
+
+      {% for activity in activity_list %}
+        <h3>{{ activity.grouper }}</h3>
+        <article class="activities_type">
+          {% for activity in activity.list %}
+            <article>
+              {% if activity.structure.gallery and activity.structure.gallery.has_main_photo and activity.structure.gallery.get_main_photo.file|thumbnail_url:'wishlist_result' %}
+                <img src="{{ activity.structure.gallery.get_main_photo.file|thumbnail_url:'wishlist_result' }}" alt="[{{ activity.structure.name }}]" loading="lazy" />
+              {% endif %}
+
+              <h4><a target="_blank" href="{% url 'activity-detail' activity.slug %}">{{ activity.structure.name }}</a></h4>
+
+              <div class="separator"></div>
+
+              <p>
+                {% if activity.structure.address.address1 %}
+                  {{ activity.structure.address.address1 }}<br />
+                {% endif %}
+                {% if activity.structure.address.address2 %}
+                  {{ activity.structure.address.address2 }}<br />
+                {% endif %}
+                <span class="uppercase">{{ activity.structure.address.place.name }}</span>
+              </p>
+
+              <p class="contact">
+                {% if activity.structure.referent_contact.first_phone_number %}
+                  <a href="tel:{{ activity.structure.referent_contact.first_phone_number }}">{{ activity.structure.referent_contact.first_phone_number }}</a><br />
+                {% endif %}
+                {% if activity.structure.referent_contact.first_email %}
+                  <a href="mailto:{{ activity.structure.referent_contact.first_email }}">{{ activity.structure.referent_contact.first_email }}</a>
+                  {% if activity.structure.referent_contact.website_url %}
+                    <br />
+                  {% endif %}
+                {% endif %}
+                {% if activity.structure.referent_contact.website_url %}
+                  <a href="{{ activity.structure.referent_contact.website_url }}">{{ activity.structure.referent_contact.website_url }}</a>
+                {% endif %}
+              </p>
+            </article>
+            {% if forloop.counter != forloop.first and forloop.counter != forloop.last and forloop.counter|divisibleby:9 %}
+              </article>
+              <article class="activities_type">
+            {% endif %}
+          {% endfor %}
+        </article>
+      {% endfor %}
+
+    </section>
+
+  </body>
+</html>

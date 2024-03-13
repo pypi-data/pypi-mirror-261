@@ -1,0 +1,13 @@
+{% load cms_tags %}
+
+<div class="brochure-row">
+  {% for plugin in instance.child_plugin_instances %}
+    {% render_plugin plugin %}
+  {% endfor %}
+</div>
+
+{% if brochures.paginator.num_pages > 1 %}
+  <div class="col-md-12 pagination-container">
+    {% include "cmsplugin_brochure/partials/pagination.html" %}
+  </div>
+{% endif %}

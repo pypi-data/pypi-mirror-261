@@ -1,0 +1,9 @@
+{% load i18n %}
+<a href="{% url 'wishlist:wishlist' %}" class="wishlist-wrapper">
+  <span class="wishlist-count {% if request.wishlist.count == 0 %}wishlist-empty{% endif %}" data-wishlist-button>
+    <i class="icon-heart"></i><span class="count" data-wishlist-counter>{{ request.wishlist.count }}</span>
+  </span>
+  <span class="text hidden-xs">{% trans "My selection" %}</span>
+</a>
+<!-- Silly workaround to force all views that display the wishlist to send the CSRF cookie -->
+<!-- {% csrf_token %} -->

@@ -1,0 +1,31 @@
+{% load i18n %}
+
+{% for ance in ancestors %}
+  <li class="breadcrumb-item">
+    <a href="{{ ance.get_absolute_url }}" title="{% blocktrans with title=ance.title %}Go to {{ title }}{% endblocktrans %}">
+      {{ ance.get_menu_title }}
+    </a>
+  </li>
+{% endfor %}
+
+{% if post %}
+  <li class="breadcrumb-item" aria-current="page">
+    {{ post.title }}
+  </li>
+{% elif category %}
+  <li class="breadcrumb-item" aria-current="page">
+    {{ category.name }}
+  </li>
+{% elif tagged_entries %}
+  <li class="breadcrumb-item" aria-current="page">
+    {{ tagged_entries|capfirst }}
+  </li>
+{% elif author %}
+  <li class="breadcrumb-item" aria-current="page">
+    {{ author.get_full_name }}
+  </li>
+{% elif archive_date %}
+  <li class="breadcrumb-item" aria-current="page">
+    {% trans "Archive" %} &ndash; {% if month %}{{ archive_date|date:'F' }} {% endif %}{{ year }}
+  </li>
+{% endif %}

@@ -1,0 +1,28 @@
+{% load static %}
+
+{# The default behavior is to fetch JSON-LD from django-meta #}
+{% block json_ld_thing %}
+  {% if meta or meta_html %}
+    <script type="application/ld+json">
+      {% with meta=meta_html|default:meta %}
+        {
+          "@context": "https://schema.org/",
+          "@type": "Thing",
+          {% if meta.title and meta.description and meta.image %}
+            "name": "{{ meta.title }}",
+            "description": "{{ meta.description }}",
+            "image": "{{ meta.image }}"
+          {% elif meta.title and meta.description %}
+            "name": "{{ meta.title }}",
+            "description": "{{ meta.description }}"
+          {% elif meta.title %}
+            "name": "{{ meta.title }}"
+          {% endif %}
+        }
+      {% endwith %}
+    </script>
+  {% endif %}
+{% endblock json_ld_thing %}
+
+{% block json_ld_organization %}
+{% endblock json_ld_organization %}

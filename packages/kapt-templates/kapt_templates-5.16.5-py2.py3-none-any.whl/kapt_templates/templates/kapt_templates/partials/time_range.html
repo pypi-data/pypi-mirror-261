@@ -1,0 +1,16 @@
+{% load i18n %}
+{% load tz %}
+
+{% with time_format=time_format|default:"H:i" local_start_date=start_date|localtime local_end_date=end_date|localtime %}
+  {% if not local_end_date or local_start_date|date:"H" == local_end_date|date:"H" and local_start_date|date:"i" == local_end_date|date:"i" %}
+    {% if local_start_date.date == local_end_date.date %}
+      {% blocktrans with start_time=local_start_date|date:time_format trimmed %}
+        at {{ start_time }}
+      {% endblocktrans %}
+    {% endif %}
+  {% else %}
+    {% blocktrans with start_time=local_start_date|date:time_format end_time=local_end_date|date:time_format trimmed %}
+      From {{ start_time }} to {{ end_time }}
+    {% endblocktrans %}
+  {% endif %}
+{% endwith %}

@@ -1,0 +1,67 @@
+{% extends "djangocms_blog/base.html" %}
+{% load i18n %}
+{% load page_meta_tags %}
+{% load cms_tags %}
+{% load menu_tags %}
+
+{% block title_tag %}
+  {% if author %}
+    {% trans "Articles by" %} {{ author.get_full_name }}
+  {% elif archive_date %}
+    {% trans "Archive" %} &ndash; {% if month %}{{ archive_date|date:'F' }} {% endif %}{{ year }}
+  {% elif tagged_entries %}
+    {% trans "Tag" %} &ndash; {{ tagged_entries|capfirst }}
+  {% elif category %}
+    {% trans "Category" %} &ndash; {{ category }}
+  {% else %}
+    {% page_attribute "page_title" %}
+  {% endif %}
+{% endblock title_tag %}
+
+
+{% block seo_meta_tags %}
+  {% page_meta request.current_page as meta %}
+  {% include "djangocms_blog/partials/seo_meta_tags.html" with meta=meta %}
+{% endblock seo_meta_tags %}
+
+{% block cms_title %}
+  {% if author %}
+    <h1>{% trans "Articles by" %} {{ author.get_full_name }}</h1>
+  {% elif archive_date %}
+    <h1>{% trans "Archive" %} &ndash; {% if month %}{{ archive_date|date:'F' }} {% endif %}{{ year }}</h1>
+  {% elif tagged_entries %}
+    <h1>{% trans "Tag" %} &ndash; {{ tagged_entries|capfirst }}</h1>
+  {% elif category %}
+    <h1>{% trans "Category" %} {{ category }}</h1>
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock cms_title %}
+
+{% block content_blog %}
+  <section class="blog-list">
+    {% for post in post_list %}
+      {% include "djangocms_blog/includes/blog_item.html" with post=post image="true" TRUNCWORDS_COUNT=TRUNCWORDS_COUNT %}
+    {% empty %}
+      <p class="blog-empty">{% trans "No article found." %}</p>
+    {% endfor %}
+
+    {% if author or archive_date or tagged_entries %}
+      <p class="blog-back"><a href="{% url 'djangocms_blog:posts-latest' %}">{% trans "Back" %}</a></p>
+    {% endif %}
+
+    {% if is_paginated %}
+      <nav class="{% firstof css_grid instance.css_grid %} pagination">
+        {% if page_obj.has_previous %}
+          <a href="?{{ view.page_kwarg }}={{ page_obj.previous_page_number }}">&laquo; {% trans "previous" %}</a>
+        {% endif %}
+        <span class="current">
+          {% trans "Page" %} {{ page_obj.number }} {% trans "of" %} {{ paginator.num_pages }}
+        </span>
+        {% if page_obj.has_next %}
+          <a href="?{{ view.page_kwarg }}={{ page_obj.next_page_number }}">{% trans "next" %} &raquo;</a>
+        {% endif %}
+      </nav>
+    {% endif %}
+  </section>
+{% endblock content_blog %}

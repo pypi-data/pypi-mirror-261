@@ -1,0 +1,43 @@
+{% extends 'djangocms_picture/default/picture.html' %}
+{% load thumbnail %}
+
+
+{% block link %}
+  {% thumbnail instance.picture 'cms_image_gallery' as picture %}
+  {% if picture_link %}
+    <a
+      href="{{ picture_link }}"
+      {% if instance.link_target %}target="{{ instance.link_target }}"{% endif %}
+      class="img-thumbnail-wrapper {% if instance.alignment == "left" %}img-align-left{% elif instance.alignment == "right" %}img-align-right{% elif instance.alignment == "center" %}img-align-center{% endif %}"
+      {{ instance.link_attributes_str }}
+    >
+  {% else %}
+    {% if not request.toolbar.edit_mode_active %}
+      <a
+        href="{{ picture.url }}"
+        data-lightbox="gallery"
+        {% if instance.caption_text %}data-title="{{ instance.caption_text }}"{% endif %}
+        {% if instance.link_target %}target="{{ instance.link_target }}"{% endif %}
+        class="img-thumbnail-wrapper {% if instance.alignment == "left" %}img-align-left{% elif instance.alignment == "right" %}img-align-right{% elif instance.alignment == "center" %}img-align-center{% endif %}"
+        {{ instance.link_attributes_str }}
+      >
+    {% else %}
+      <div class="img-thumbnail-wrapper {% if instance.alignment == "left" %}img-align-left{% elif instance.alignment == "right" %}img-align-right{% elif instance.alignment == "center" %}img-align-center{% endif %}">
+    {% endif %}
+  {% endif %}
+  {% block image %}
+    {{ block.super }}
+  {% endblock image %}
+
+  {% if request.toolbar.edit_mode_active %}
+    <a href="{{ picture.url }}" data-lightbox="gallery" {% if instance.caption_text %}data-title="{{ instance.caption_text }}"{% endif %} class="photo-zoom-button"><i class="fas fa-search-plus"></i></a>
+  {% else %}
+    <div class="photo-zoom-button"><i class="fas fa-search-plus"></i></div>
+  {% endif %}
+
+  {% if picture_link or not request.toolbar.edit_mode_active %}
+    </a>
+  {% else %}
+    </div>
+  {% endif %}
+{% endblock link %}

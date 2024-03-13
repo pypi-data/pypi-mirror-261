@@ -1,0 +1,12 @@
+{% load i18n %}
+
+{% for article in articles %}
+  <h3 class="news-title">
+    {% if not article.is_displayed and request.user.is_staff %}<span class="badge badge-info">{% trans "Draft" %}</span>{% endif %}
+    {{ article.title|striptags }}
+  </h3>
+  <div class="news-description">
+    {{ article.summary|safe|truncatechars_html:300 }}
+  </div>
+  <a href="{% url 'news:news_article' article.slug %}" class="news-show-more">{% trans "Show more" %}</a>
+{% endfor %}

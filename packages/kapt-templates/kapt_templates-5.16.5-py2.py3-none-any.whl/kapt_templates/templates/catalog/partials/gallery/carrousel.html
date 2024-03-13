@@ -1,0 +1,79 @@
+{% load thumbnail %}
+{% load i18n %}
+{% load static %}
+{% load embed_video_tags %}
+
+{% comment %}
+The carousel automatically slide if there are no videos
+{% endcomment %}
+{% with photos_count=photos|length videos_count=videos|length %}
+  {% with  total_count=photos_count|add:videos_count %}
+    <div id="carousel-activity-photos" class="activity-gallery-carousel carousel slide" {% if videos_count == 0 %}data-ride="carousel" data-interval="8000"{% else %}data-ride="false" data-interval="false"{% endif %}>
+      {% if activity.structure.gallery %}
+        {% if total_count > 1 %}
+          <ol class="carousel-indicators">
+            {% for video in videos %}
+              <li data-target="#carousel-activity-photos" data-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+            {% endfor %}
+            {% for photo in photos %}
+              <li data-target="#carousel-activity-photos" data-slide-to="{{ forloop.counter0|add:videos_count }}" {% if videos_count == 0 and forloop.first %}class="active"{% endif %}></li>
+            {% endfor %}
+          </ol>
+        {% endif %}
+        <div class="carousel-inner">
+          {% for video in videos %}
+            {% if video.type == 'link' %}
+              <div class="carousel-item {% if forloop.first %}active{% endif %} video">
+                <video id="video{{ video.pk }}" width="1110" height="562">
+                  <source src="{{ video.url }}" type="video/{{ video.extension }}">
+                  {% trans "Your browser does not support the video tag." %}
+                </video>
+                <div id="video{{ video.pk }}_controls" class="video-controls initial" data-target="video{{ video.pk }}">
+                  <button class="video-control video-control-start"><i class="fas fa-play"></i></button>
+                  <button class="video-control video-control-pause"><i class="fas fa-pause"></i></button>
+                  <button class="video-control video-control-restart"><i class="fas fa-step-backward"></i></button>
+                </div>
+              </div>
+            {% else %}
+              <div class="carousel-item {% if forloop.first %}active{% endif %} video">{% video video.url '730x484' %}</div>
+            {% endif %}
+          {% endfor %}
+
+          {% for photo in photos %}
+            <div class="carousel-item {% if videos_count == 0 and forloop.first %}active{% endif %}">
+              {% if photo %}
+                {% thumbnail photo.file 'activity_detail_image' as thumb %}
+                {% thumbnail photo.file 'activity_detail_image_xl' as thumb_xl %}
+                <a href="{{ thumb_xl.url }}" data-lightbox="gallery">
+                  <img src="{{ thumb.url }}" width="{{ thumb.width }}" height="{{ thumb.height }}" alt="{% if photo.name %}{{ photo.name }}{% else %}{% if photo.label %}{{ photo.label }}{% else %}{% trans "Photo" %} {{ forloop.counter }}{% endif %}{% endif %}" loading="lazy" />
+                </a>
+              {% else %}
+                <img src="{% static 'img/default_detail_placeholder.jpg' %}" class="img-fluid" alt="{% trans "No photo" %}" loading="lazy" />
+              {% endif %}
+              {% if photo.copyright %}<i class="img-author-icon" title="&copy;{{ photo.copyright }}" data-toggle="tooltip"></i>{% endif %}
+              <div class="zoom">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        {% if total_count > 1 %}
+          <a class="carousel-control-prev" href="#carousel-activity-photos" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">{% trans "Previous" %}</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-activity-photos" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">{% trans "Next" %}</span>
+          </a>
+        {% endif %}
+      {% else %}
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="{% static 'img/default_detail_placeholder.jpg' %}" class="img-fluid" alt="{% trans "No photo" %}" loading="lazy" />
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  {% endwith %}
+{% endwith %}

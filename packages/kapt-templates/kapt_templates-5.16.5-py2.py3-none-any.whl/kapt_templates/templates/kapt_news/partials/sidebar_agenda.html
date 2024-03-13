@@ -1,0 +1,16 @@
+<div class="tab-month">
+  {% for year, dates in event_months.items reversed %}
+    <ul class="years list-unstyled">
+      <li {% if wanted_year == year %}class="active"{% endif %}><a href="{% if category_obj %}{% url 'news:news_by_year_per_category' category_slug=category_obj.slug year=year %}{% else %}{% url 'news:news_by_year' year=year %}{% endif %}">{{ year }}</a></li>
+      <ul class="month-wrapper list-unstyled {% if wanted_year == year %}active{% endif %}" id="{{ year }}">
+        {% if wanted_year == year %}
+          {% for date in dates %}
+            <li class="{% if wanted_year == year and not wanted_month %}year-active{% endif %}{% if wanted_year == year and wanted_month == date.month %}month-active{% endif %}">
+              <a class="month {% if wanted_year == year and wanted_month == date.month %}btn-active{% endif %}" href="{% if category_obj %}{% url 'news:news_by_year_and_month_per_category' category_slug=category_obj.slug year=year month=date.month %}{% else %}{% url 'news:news_by_year_and_month' year=year month=date.month %}{% endif %}"><span class="month-span">{{ date|date:"F" }}</span></a>
+            </li>
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </ul>
+  {% endfor %}
+</div>

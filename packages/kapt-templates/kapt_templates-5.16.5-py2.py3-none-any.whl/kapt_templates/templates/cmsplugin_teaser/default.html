@@ -1,0 +1,30 @@
+{% load i18n %}
+{% load thumbnail %}
+
+<div class="teaser teaser-default">
+  {% if link %}
+    <a href="{{ link }}" class="{{ object.css_class|default:"" }}">
+  {% else %}
+    <div class="{{ object.css_class|default:"" }}">
+  {% endif %}
+  {% if object.image %}
+    <div class="teaser-image">
+      {% thumbnail object.image 'teaser_default' subject_location=object.image.subject_location as thumbnail %}
+      <img src="{{ thumbnail.url }}" alt="{{ object.image.default_alt_text|default:object.image.label }}" width="{{ thumbnail.width }}" height="{{ thumbnail.height }}" {% if object.image.author %}title="{{ object.image.author }}"{% endif %} loading="lazy" />
+      {% if object.image.author %}
+        <i class="img-author-icon" title="{{ object.image.author }}" data-toggle="tooltip"></i>
+      {% endif %}
+    </div>
+  {% endif %}
+  <div class="teaser-content">
+    {{ object.title|safe }}
+    {% if object.description %}
+      <p>{{ object.description|safe }}</p>
+    {% endif %}
+  </div>
+  {% if link %}
+    </a>
+  {% else %}
+    </div>
+  {% endif %}
+</div>

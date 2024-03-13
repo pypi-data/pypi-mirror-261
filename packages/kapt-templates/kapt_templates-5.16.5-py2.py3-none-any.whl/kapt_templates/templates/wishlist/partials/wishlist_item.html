@@ -1,0 +1,55 @@
+{% load l10n %}
+{% load cms_tags %}
+{% load i18n %}
+{% load site_catalog_tags %}
+{% load static %}
+{% load thumbnail %}
+
+<li id="id_result_{{ object_dict.obj.id }}"
+    class="col-lg-4 col-md-6 result col-sm-6 result__item"
+    data-object-id="{{ object_dict.obj.id }}"
+    data-contenttype-id="{{ object_dict.obj_type.id }}"
+    data-is-in-wishlist=true
+    data-name="{{ object_dict.obj.name }}"
+    data-locality="{{ object_dict.obj.structure.address.place }}"
+    data-latitude="{{ object_dict.obj.structure.address.latitude|unlocalize }}"
+    data-longitude="{{ object_dict.obj.structure.address.longitude|unlocalize }}"
+    data-uri="{{ object_dict.detail_uri }}"
+    data-wishlist-url-remove="{% url 'wishlist-remove' object_dict.obj_type.id object_dict.obj.id %}">
+  <div class="figure-str">
+    <div class="img-wrapper">
+      <a href="{{ object_dict.detail_uri }}">
+        {% if object_dict.obj.structure.gallery.get_main_photo %}
+          <img src="{{ object_dict.obj.structure.gallery.get_main_photo.file|thumbnail_url:'search_result' }}" alt="{{ object_dict.obj.name }}" class="img-responsive" loading="lazy" />
+        {% elif object_dict.obj.gallery.get_main_photo %}
+          <img src="{{ object_dict.obj.gallery.get_main_photo.file|thumbnail_url:'search_result' }}" alt="{{ object_dict.obj.name }}" loading="lazy" />
+        {% endif %}
+        <div class="figure-rating">
+          {% include "catalog/partials/rating.html" %}
+        </div>
+        {% if object_dict.obj.min_price %}
+          <div class="figure-min-price">
+            <span class="min-price__from">{% trans "From" context "Minimum price" %}</span><br />
+            {{ object_dict.obj.min_price }}&#x20AC;
+            {% if object_dict.obj|is_accommodation %}
+              {% trans "per night" %}
+            {% endif %}
+          </div>
+        {% endif %}
+      </a>
+    </div>
+    <div class="figure-content">
+      <div class="figure-name">
+        <a href="{{ object_dict.detail_uri }}">
+          {{ object_dict.obj.name }}
+        </a>
+      </div>
+      <div class="figure-locality">
+        {{ object_dict.obj.structure.address.place }}
+      </div>
+      <button data-wishlist-item-remove="#id_result_{{ object_dict.obj.id }}" class="btn" data-toggle="tooltip" data-placement="top" title="{% trans "Remove from my selection" %}">
+        <i class="fas fa-trash"></i> {% trans "Remove from my selection" %}
+      </button>
+    </div>
+  </div>
+</li>

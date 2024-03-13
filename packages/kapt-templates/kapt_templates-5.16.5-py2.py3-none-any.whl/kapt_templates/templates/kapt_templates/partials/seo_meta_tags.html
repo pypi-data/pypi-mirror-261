@@ -1,0 +1,117 @@
+{% load i18n %}
+{% load meta %}
+{% load menu_tags %}
+{% load easy_thumbnails_tags %}
+{% load kapt_templates_templatetags %}
+
+{% autoescape off %}
+  {# SEO meta tags #}
+  {% block simple_seo_meta_tags %}
+    {% block simple_seo_meta_description_tag %}
+      {% if meta.description %}{% meta 'description' meta.description %}{% endif %}
+    {% endblock simple_seo_meta_description_tag %}
+    {% if meta.keywords %}{% meta_list 'keywords' meta.keywords %}{% endif %}
+    {% if meta.extra_props %}{% meta_extras meta.extra_props %}{% endif %}
+    {% if meta.extra_custom_props %}{% custom_meta_extras meta.extra_custom_props %}{% endif %}
+  {% endblock simple_seo_meta_tags %}
+
+  {# Dublin Core #}
+  {% block dublin_core_meta_tags %}
+    {% get_current_language as CURRENT_LANGUAGE_CODE %}
+    <meta name="dcterms.language" content="{{ CURRENT_LANGUAGE_CODE }}" />
+
+    {% if meta.title %}<meta name="dcterms.title" content="{{ meta.title }}" />{% endif %}
+    {% if meta.description %}<meta name="dcterms.description" content="{{ meta.description }}" />{% endif %}
+  {% endblock dublin_core_meta_tags %}
+
+  {# Facebook #}
+  {% block facebook_meta_tags %}
+    {% if meta.facebook_app_id %}{% facebook_prop 'app_id' meta.facebook_app_id %}{% endif %}
+    {% if meta.fb_pages %}{% facebook_prop 'pages' meta.fb_pages %}{% endif %}
+  {% endblock facebook_meta_tags %}
+
+  {# Twitter card #}
+  {% block twitter_card_meta_tags %}
+    {% if meta.use_twitter %}
+      {% if meta.twitter_site %}{% twitter_prop 'site' meta.twitter_site %}{% endif %}
+      {% if meta.twitter_creator %}{% twitter_prop 'creator' meta.twitter_creator %}{% endif %}
+      {% if meta.twitter_card %}{% twitter_prop 'card' meta.twitter_card %}{% endif %}
+      {% if meta.title %}{% twitter_prop 'title' meta.title %}{% endif %}
+      {% if meta.url %}{% twitter_prop 'url' meta.url %}{% endif %}
+      {% if meta.description %}{% twitter_prop 'description' meta.description %}{% endif %}
+      {% if meta.image %}{% twitter_prop 'image' meta.image %}{% endif %}
+    {% endif %}
+  {% endblock twitter_card_meta_tags %}
+
+  {# Open graph#}
+  {% block open_graph_meta_tags %}
+    {% if meta.use_og %}
+      {% if meta.title %}{% og_prop 'title' meta.title %}{% endif %}
+      {% if meta.url %}{% og_prop 'url' meta.url %}{% endif %}
+      {% if meta.og_description %}{% og_prop 'description' meta.og_description %}{% endif %}
+      {% block open_graph_meta_image_tag %}
+        {% if meta.image %}
+          {% og_prop 'image' meta.image %}
+        {% endif %}
+      {% endblock open_graph_meta_image_tag %}
+      {% if meta.object_type %}{% og_prop 'type' meta.object_type %}{% endif %}
+      {% if meta.site_name %}{% og_prop 'site_name' meta.site_name %}{% endif %}
+      {% if meta.og_author_url %}{% generic_prop 'article' 'author' meta.og_author_url %}{% endif %}
+      {% if meta.published_time %}{% generic_prop 'article' 'published_time' meta.published_time %}{% endif %}
+      {% if meta.modified_time %}{% generic_prop 'article' 'modified_time' meta.modified_time %}{% endif %}
+      {% if meta.expiration_time %}{% generic_prop 'article' 'expiration_time' meta.expiration_time %}{% endif %}
+      {% if meta.og_publisher %}{% generic_prop 'article' 'publisher' meta.og_publisher %}{% endif %}
+      {% if meta.og_app_id %}{% facebook_prop 'app_id' meta.og_app_id %}
+      {% elif meta.facebook_app_id %}{% facebook_prop 'app_id' meta.facebook_app_id %}{% endif %}
+      {% if meta.fb_pages %}{% facebook_prop 'pages' meta.fb_pages %}{% endif %}
+      {% if meta.og_profile_id %}{% facebook_prop 'profile_id' meta.og_profile_id %}{% endif %}
+      {% if meta.tag %}{% generic_prop 'article' 'tag' meta.tag %}{% endif %}
+      {% if meta.locale %}{% og_prop 'locale' meta.locale %}{% endif %}
+    {% endif %}
+  {% endblock open_graph_meta_tags %}
+
+  {# Canonical url #}
+  {% block canonical_url_tag %}
+    <link rel="canonical" href="{% block canonical_url %}{{ CANONICAL_URL }}{% endblock canonical_url %}" />
+  {% endblock canonical_url_tag %}
+
+  {# Alternate locales urls (hreflang, x-default) #}
+  {% block alternate_lang_url %}
+    {# Depends on each application #}
+    {% if post %}{# djangocms-blog post, get translations using post.translations.all #}
+      {% for translation in post.translations.all %}
+        <link rel="alternate" href="{{ BASE_URL }}{% page_language_url translation.language_code %}" hreflang="{{ translation.language_code }}" />
+      {% endfor %}
+    {% elif criteria_form %}{# interactive map homepage #}
+      {% for title in request.current_page.title_set.all %}
+        {% if title.published and title.redirect is None %}
+          {% language title.language %}
+            <link rel="alternate" href="{% url config.namespace|add:':results-list' selection_id=selection_identifier %}" hreflang="{{ title.language }}" />
+          {% endlanguage %}
+        {% endif %}
+      {% endfor %}
+    {% else %}{# regular cms page #}
+      {% for title in request.current_page.title_set.all %}
+        {% if title.published and title.redirect is None %}
+          <link rel="alternate" href="{{ BASE_URL }}{% page_language_url title.language %}" hreflang="{{ title.language }}" />
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {# get x-default alternate (try "en" first, or "fr", or any other language) using a nice little templatetag #}
+    {% with request|get_x_default_url as x_default_url %}
+      {% if x_default_url %}
+        <link rel="alternate" href="{{ BASE_URL }}{{ x_default_url }}" hreflang="x-default" />
+      {% endif %}
+    {% endwith %}
+  {% endblock alternate_lang_url %}
+
+  {# Robots #}
+  {% block robots_meta_tag %}
+    {% if meta_index and meta_follow %}
+      <meta name="robots" content="{{ meta_index }},{{ meta_follow }}">
+    {% endif %}
+  {% endblock robots_meta_tag %}
+
+  {% block extra_seo_tags %}
+  {% endblock extra_seo_tags %}
+{% endautoescape %}

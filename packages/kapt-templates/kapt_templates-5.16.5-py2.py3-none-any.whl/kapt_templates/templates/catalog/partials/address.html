@@ -1,0 +1,12 @@
+<address class="activity-address">
+  {% if activity.structure.place_name %}
+    <p class="activity-address-place-name">{{ activity.structure.place_name }}</p>
+  {% endif %}
+  {% if activity.structure.address.address1 %}
+    <p class="activity-address-address1">{{ activity.structure.address.address1 }}</p>
+  {% endif %}
+  {% if activity.structure.address.address2 and activity.structure.address.address2 != activity.structure.address.place.name%}
+    <p class="activity-address-address2">{{ activity.structure.address.address2 }}</p>
+  {% endif %}
+  <p class="activity-address-city">{% if zip_code %}{{ zip_code }}&nbsp;{% endif %}{{ activity.structure.address.place.name|upper }}</p>
+</address>

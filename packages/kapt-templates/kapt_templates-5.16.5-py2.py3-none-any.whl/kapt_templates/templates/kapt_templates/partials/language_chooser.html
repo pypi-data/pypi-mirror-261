@@ -1,0 +1,44 @@
+{% load i18n %}
+{% load menu_tags %}
+
+<li class="dropdown">
+  {% if current_page.get_languages|length > 1 or activity or request.current_page.title_set.all|length > 1 %}
+    <a data-toggle="dropdown" class="btn-toggle" href="#">
+  {% else %}
+    <a class="btn-toggle">
+  {% endif %}
+  <i class="flags-sprite {{ current_language }}"></i><span class="visible-xs">&nbsp;&nbsp;{{ current_language|language_name_local|capfirst }}</span>
+  {% if current_page.get_languages|length > 1 or activity or request.current_page.title_set.all|length > 1 %}
+    <span class="caret"></span>
+  {% endif %}
+</a>
+{% if current_page.get_languages|length > 1 or activity or request.current_page.title_set.all|length > 1 %}
+  <ul class="dropdown-menu">
+    {% if activity %}{# Activity detail page #}
+      {% for language in languages %}
+        {% if current_language != language.0 %}
+          <li>
+            <a href="{% page_language_url language.0 %}"><i class="flags-sprite {{ language.0 }}"></i>&nbsp;&nbsp;{{ language.0|language_name_local|capfirst }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% elif current_page %}{# Regular CMS page #}
+      {% for language in current_page.get_languages %}
+        {% if current_language != language %}
+          <li>
+            <a href="{% page_language_url language.0 %}"><i class="flags-sprite {{ language }}"></i>&nbsp;&nbsp;{{ language|language_name_local|capfirst }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% else %}{# Other type of page (djangocms-blog, ...) #}
+      {% for title in request.current_page.title_set.all %}
+        {% if current_language != title.language %}
+          <li>
+            <a href="{% page_language_url title.language %}"><i class="flags-sprite {{ title.language }}"></i>&nbsp;&nbsp;{{ title.language|language_name_local|capfirst }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </ul>
+{% endif %}
+</li>

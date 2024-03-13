@@ -1,0 +1,109 @@
+{% extends "cms/base.html" %}
+{% load thumbnail %}
+{% load static %}
+{% load i18n %}
+{% load cms_tags %}
+{% load menu_tags %}
+
+{% block title_tag %}{% page_attribute 'page_title' %}{% if wanted_year or wanted_month_name %} - {% endif %}{% if wanted_month_name %}{{ wanted_month_name|title }}{% endif %}{% if wanted_year %} {{ wanted_year }}{% endif %}
+{% endblock title_tag %}
+
+{% block body_id %}id_news{% endblock body_id %}
+
+{% block cms_breadcrumb %}
+  <div class="breadcrumb-block">
+    <ol class="breadcrumb">
+      {% show_breadcrumb %}
+    </ol>
+  </div>
+{% endblock cms_breadcrumb %}
+
+{% block cms_title %}
+  <div class="col-md-12">
+    <h1>{% page_attribute 'title' %}</h1>
+  </div>
+{% endblock cms_title %}
+
+{% block cms_content %}
+  <div class="col-md-9">
+    {% block articles-list %}
+      <div class="news__list">
+        <ul class="articles list-unstyled">
+          {% for article in articles %}
+            <li class="article {% cycle "odd" "even" %} {% if request.user.is_staff %}{{ article.is_displayed|yesno:",article-draft" }}{% endif %}">
+              <a href="{% url 'news:news_article' article.slug %}" class="article-image img-wrapper">
+                {% if article.image %}
+                  <img src="{{ article.image|thumbnail_url:'news_img_list_panoramic'}}" alt="{% if article.image.default_alt_text %}{{ article.image.default_alt_text }}{% else %}{{ article.image.label }}{% endif %}" class="img-fluid" loading="lazy" />
+                {% else %}
+                  <img src="{% static "img/news_list_placeholder.jpg" %}" alt="{{ article.title }}" class="img-fluid" loading="lazy" />
+                {% endif %}
+              </a>
+              {% block event_date %}
+                {% if article.event_start_date %}
+                  <div class="article-event-date ">
+                    {% include "kapt_templates/partials/date_range.html" with start_date=article.event_start_date end_date=article.event_end_date %}
+                  </div>
+                {% endif %}
+              {% endblock event_date %}
+              {% if article.get_author_name %}
+                <div class="article-publication-informations">
+                  {% blocktrans with author=article.get_author_name publication_date=article.publication_date|date:"SHORT_DATE_FORMAT" publication_time=article.publication_date|time:"H:i" trimmed %}
+                    Posted by {{ author }} on {{ publication_date }} at {{ publication_time }}
+                  {% endblocktrans %}
+                </div>
+              {% else %}
+                <div class="article-publication-informations">
+                  {% blocktrans with publication_date=article.publication_date|date:"SHORT_DATE_FORMAT" publication_time=article.publication_date|time:"H:i" trimmed %}
+                    Posted on {{ publication_date }} at {{ publication_time }}
+                  {% endblocktrans %}
+                </div>
+              {% endif %}
+              <h2 class="article-title">
+                <a href="{% url 'news:news_article' article.slug %}">
+                  {% if not article.is_displayed and request.user.is_staff %}<span class="badge badge-info">{% trans "Draft" %}</span>&emsp;{% endif %}{{ article.title|striptags }}
+                </a>
+              </h2>
+              <div class="article-summary">{% render_model article "summary" None None "safe|truncatewords:20" %}</div>
+            </li>
+          {% empty %}
+            <div class="alert">{% trans "No article available." %}</div>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endblock articles-list %}
+
+    {% block pagination %}
+      {% if is_paginated %}
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            {% if page_obj.has_previous %}
+              <li class="page-item">
+                <a href="?page={{ page_obj.previous_page_number }}" class="page-link" aria-label="Previous" rel="prev">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% for page_number in page_obj.paginator.page_range %}
+              <li class="page-item {% if page_number == page_obj.number %}active{% endif %}"><a href="?page={{ page_number }}" class="page-link">{{ page_number }}{% if page_number == page_obj.number %}<span class="sr-only">(current)</span>{% endif %}</a></li>
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+              <li class="page-item">
+                <a href="?page={{ page_obj.next_page_number }}" class="page-link" aria-label="Next" rel="next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+        </nav>
+      {% endif %}
+    {% endblock pagination %}
+  </div>
+
+  <div class="col-md-3 news__sidebar">
+    {% block sidebar %}
+      {% include "kapt_news/partials/sidebar_news.html" %}
+    {% endblock sidebar %}
+  </div>
+{% endblock cms_content %}

@@ -1,0 +1,35 @@
+{% block form_page_header_wrapper %}
+  {% if not fobi_hide_form_title %}
+    <div class="page-header">
+      <h2>{% block form_page_title %}{% endblock form_page_title %}</h2>
+    </div>
+  {% endif %}
+{% endblock form_page_header_wrapper %}
+
+<form
+  method="{% block form_method %}post{% endblock form_method %}"
+  action="{% block form_action %}{{ form_entry.action|default:request.path }}{% endblock form_action %}"
+  {% block form_enctype %}enctype="multipart/form-data"{% endblock form_enctype %}
+  class="fobi-form"
+  {% block form_extra_attrs %}{% endblock form_extra_attrs %}
+>
+  {% csrf_token %}
+
+  {% if form.errors %}
+    <div class="alert alert-danger" role="alert">
+      <h4 class="alert-heading">Merci de vérifier certaines informations avant de continuer</h4>
+      Veuillez vérifier les informations dans les champs marqués en rouge ci-dessous.
+    </div>
+  {% endif %}
+
+  {% include "fobi/custom/snippets/form_snippet.html" %}
+
+  <div class="form-button-wrapper">
+    {% block form_buttons %}
+      <button type="submit" class="btn btn-primary">
+        {% block form_primary_button_text %}{% endblock form_primary_button_text %}
+      </button>
+    {% endblock %}
+  </div>
+</form>
+

@@ -1,0 +1,32 @@
+{% load i18n %}
+{% load cms_tags %}
+
+{% if total_count <= 4 %}
+  <div class="few-results result">
+    {% if total_count == 0 %}
+      {% if config.namespace|slice:":3" == "all" %}
+        <p>{% trans "Oops! There are no results for your criteria" %} {% include "catalog/partials/few_results_link.html" %}</p>
+      {% else %}
+        {% page_attribute "menu_title" request.current_page as title %}
+        <p>
+          {% blocktrans with title=title trimmed %}
+            Oops! There are no results for thematic <strong>{{ title }}</strong>
+          {% endblocktrans %}
+          {% include "catalog/partials/few_results_link.html" %}
+        </p>
+      {% endif %}
+    {% elif total_count <= 4 %}
+      {% if config.namespace|slice:":3" == "all" %}
+        <p>{% trans "Oops! There are few results for your criteria. For more results" %} {% include "catalog/partials/few_results_link.html" %}</p>
+      {% else %}
+        {% page_attribute "menu_title" request.current_page as title %}
+        <p>
+          {% blocktrans with title=title trimmed %}
+            Oops! There are few results for thematic <strong>{{ title }}</strong>.
+          {% endblocktrans %}
+          {% include "catalog/partials/few_results_link.html" %}
+        </p>
+      {% endif %}
+    {% endif %}
+  </div>
+{% endif %}

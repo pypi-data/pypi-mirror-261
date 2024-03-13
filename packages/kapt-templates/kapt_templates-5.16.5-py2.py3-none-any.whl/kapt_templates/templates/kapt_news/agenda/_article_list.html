@@ -1,0 +1,43 @@
+{% extends "kapt_news/article_list_base.html" %}
+{% load thumbnail %}
+{% load static %}
+{% load i18n %}
+{% load cms_tags %}
+{% load menu_tags %}
+
+
+{% block articles-list %}
+  <ul class="articles list-unstyled">
+    {% for article in articles %}
+      <li class="article {% cycle "odd" "even" %}">
+        <a href="{% url 'news:news_article' article.slug %}" class="img-wrapper relative">
+          <img src="{{ article.image|thumbnail_url:'news_img_list_panoramic'}}" alt="{% if article.image.default_alt_text %}{{ article.image.default_alt_text }}{% else %}{{ article.image.label }}{% endif %}" class="img-fluid" loading="lazy" />
+          {% if article.event_start_date %}
+            <p class="article-event-date">
+              {% include "kapt_templates/partials/date_range.html" with start_date=article.event_start_date end_date=article.event_end_date %}
+            </p>
+          {% endif %}
+        </a>
+        <h2>
+          <a href="{% url 'news:news_article' article.slug %}">
+            {% if not article.is_displayed and request.user.is_staff %}<span class="badge badge-info">{% trans "Draft" %}</span>&emsp;{% endif %}{{ article.title|striptags }}
+          </a>
+        </h2>
+
+        {% if article.author %}
+          {% blocktrans with author=article.author.contact.get_full_name publication_date=article.publication_date|date:"SHORT_DATE_FORMAT" publication_time=article.publication_date|time:"H:i" trimmed %}
+            Posted by {{ author }} on {{ publication_date }} at {{ publication_time }}
+          {% endblocktrans %}
+        {% endif %}
+        <div class="clear"></div>
+      </li>
+    {% empty %}
+      <div class="alert">{% trans "No article available." %}</div>
+    {% endfor %}
+  </ul>
+{% endblock articles-list %}
+
+{% block sidebar %}
+  {% include "kapt_news/partials/sidebar_agenda.html" %}
+{% endblock sidebar %}
+

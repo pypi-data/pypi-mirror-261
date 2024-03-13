@@ -1,0 +1,18 @@
+{% load i18n %}
+
+{% if object.file.url %}
+  <a href="{{ object.file.url }}"{% if object.target_blank %} target="_blank"{% endif %} class="file">
+    {% if object.title %}
+      {{ object.title }}
+    {% else %}
+      {{ object.get_file_name }}
+    {% endif %}
+    <span class="file__size">
+      {% if object.file_exists %}
+        ({{ object.file.size|filesizeformat }})
+      {% else %}
+        {% trans "(file missing!)" %}
+      {% endif %}
+    </span>
+  </a>
+{% endif %}

@@ -1,0 +1,67 @@
+{% extends "cms/base.html" %}
+{% load i18n highlight more_like_this cms_tags %}
+{% block cms_content %}
+  <div class="plugin__search">
+    {% block search_form %}
+      <form method="get" action="." class="frm frm__search">
+        <div class="wrapper">
+          {# full form with model select: #}
+          {# {{ form.as_p }} #}
+          {# manually-defined default form (only search bar): #}
+          <p><label for="id_q">{% trans "Rechercher" %} :</label> <input id="id_q" name="q" type="search" {% if request.GET.q %}value="{{ request.GET.q }}"{% endif %} /></p>
+          <input type="submit" value="Rechercher" class="btn btn-primary">
+        </div>
+      </form>
+    {% endblock search_form %}
+
+    {% if query %}
+      <p class="results-count">{% blocktrans count counter=paginator.count trimmed %}{{ counter }} result match your research{% plural %}{{ counter }} results match your research{% endblocktrans %}</p>
+      <div class="search-results">
+        <ul class="result-list">
+          {% for result in page.object_list %}
+            <li>
+              {% if result.model_name in "eventactivity,bnbactivity,campervanactivity,campingactivity,hotelactivity,leisureactivity,mealactivity,pointofinterestactivity,relayactivity,rentalactivity" %}
+                <h3><a href="{% url 'activity-detail' result.object.slug %}">{{ result.object.name }}</a></h3>
+              {% elif result.model_name == "post" %}
+                <h3><a href="{{ result.object.get_absolute_url }}">{{ result.object }}</a></h3>
+              {% else %}
+                <h3><a href="{% page_url result.object.pk %}">{{ result.object }}</a></h3>
+              {% endif %}
+              {% if result.text %}
+                <p>{% highlight result.text with request.GET.q %}</p>
+              {% endif %}
+              {% if result.spellcheck %}
+                <p>{% trans "Suggestions :" %}</p>
+                <ul>
+                  {% for suggestion in result.spellcheck.suggestions %}
+                    <li>{{ suggestion }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% empty %}
+            <li>{% trans "No results found for" %} "{{ request.GET.q }}".</li>
+          {% endfor %}
+        </ul>
+
+        {% if page.has_previous or page.has_next %}
+          <nav aria-label="Pagination" class="pagenav">
+            <ul class="pagination">
+              <li class="page-item{% if not page.has_previous %} disabled{% endif %}">
+                {% if page.has_previous %}<a class="page-link" href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% else %}<span class="page-link">{% endif %}&laquo; {% trans "Previous" %}{% if page.has_previous %}</a>{% else %}</span>{% endif %}
+              </li>
+              {% if page %}<li class="page-item page-counter"><span>{% trans "Page" %} {{ page.number }} {% trans "of" context "nb_pages" %} {{ page.paginator.num_pages }}</span></li>{% endif %}
+              <li class="page-item{% if not page.has_next %} disabled{% endif %}">{% if page.has_next %}<a class="page-link" href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% else %}<span class="page-link">{% endif %}{% trans "Next" %} &raquo;{% if page.has_next %}</a>{% else %}</span>{% endif %}</li>
+            </ul>
+          </nav>
+        {% endif %}
+      </div>
+    {% else %}
+      <div class="search-results">
+        <ul class="result-list">
+          <li>{% trans "No results, use the search field above to look for a some specific term in the site content." %}.</li>
+        </ul>
+    {% endif %}
+
+  </div>
+{% endblock %}

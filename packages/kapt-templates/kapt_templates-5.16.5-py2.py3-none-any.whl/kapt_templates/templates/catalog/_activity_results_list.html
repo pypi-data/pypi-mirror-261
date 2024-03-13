@@ -1,0 +1,51 @@
+{% extends "cms/_base.html" %}
+{% load i18n %}
+{% load static %}
+{% load cms_tags %}
+{% load djangobars %}
+{% load site_translation_tags %}
+{% load menu_tags %}
+{% load thumbnail %}
+
+{% block extra_css %}
+  {% for form in forms.values %}
+    {{ form.media.css }}
+  {% endfor %}
+{% endblock extra_css %}
+
+{% block body_id %}id_activity_results_list{% endblock body_id %}
+{% block data_controller %}catalog_activity_results_list{% endblock data_controller %}
+{% block data_action %}{{ suffix }}{% endblock data_action %}
+
+{% block main %}
+  <div id="id_loading" class="loading">
+    {% trans 'Loading...' %}
+  </div>
+  <div class="container">
+    <form action="{% url 'catalog_engine:results-list' %}" method="GET" id="id_criteria_form" class="form-criteria">
+      {{ criteria_form.as_p }}
+    </form>
+    <a href="#" id="criteria_form_submit" class="update-btn">{% trans "Update" %}</a>
+
+    <div id="id_results_map_wrapper" class="col-map">
+      <div id="id_map"></div>
+    </div>
+
+    <div id="id_results_list_wrapper" class="results-list">
+      {% block raw_handlebars_html_block %}
+        {% include_handlebars "catalog/partials/results_list.html" %}
+      {% endblock raw_handlebars_html_block %}
+    </div>
+  </div>
+{% endblock main %}
+
+{% block extra_js %}
+  <script id="list-item-template" type="text/x-handlebars-template">
+    {% block raw_handlebars_js_block %}
+      {% include_raw_handlebars "catalog/partials/results_list.html" %}
+    {% endblock raw_handlebars_js_block %}
+  </script>
+  {% for form in forms.values %}
+    {{ form.media.js }}
+  {% endfor %}
+{% endblock extra_js %}

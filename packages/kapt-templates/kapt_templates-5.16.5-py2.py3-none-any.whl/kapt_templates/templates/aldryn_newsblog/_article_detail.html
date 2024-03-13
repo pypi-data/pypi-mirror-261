@@ -1,0 +1,40 @@
+{% extends "aldryn_newsblog/base.html" %}
+{% load thumbnail %}
+
+{% block seo_meta_tags %}
+  <meta name="description"
+        content="{% if article.meta_description %}{{ article.meta_description }}{% else %}{{ article.title }}{% endif %}" />
+  <meta name="keywords"
+        content="{% if article.meta_keywords %}{{ article.meta_keywords }}{% endif %}{% if article.tags.exists and LANGUAGE_CODE == "fr" %},{% endif %}{% if LANGUAGE_CODE == "fr" %}{% for tag in article.tags.all %}{{ tag }}{% if not forloop.last %},{% endif %}{% endfor %}{% endif %}" />
+
+  <meta name="dcterms.language" content="{{ LANGUAGE_CODE }}" />
+  <meta name="dcterms.title"
+        content="{% if article.meta_title %}{{ article.meta_title|capfirst }}{% else %}{{ article.title|capfirst }}{% endif %}" />
+  <meta name="dcterms.description"
+        content="{% if article.meta_description %}{{ article.meta_description }}{% else %}{{ article.title }}{% endif %}" />
+
+  <meta property="og:url" content="{{ request.build_absolute_uri }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title"
+        content="{% if article.meta_title %}{{ article.meta_title|capfirst }}{% else %}{{ article.title|capfirst }}{% endif %}" />
+  <meta property="og:description"
+        content="{% if article.meta_description %}{{ article.meta_description }}{% else %}{{ article.title }}{% endif %}" />
+  <meta property="og:image"
+        content="{% thumbnail article.featured_image 300x300 crop subject_location=article.featured_image.subject_location %}" />
+
+  <meta name="twitter:title"
+        content="{% if article.meta_title %}{{ article.meta_title|capfirst }}{% else %}{{ article.title|capfirst }}{% endif %}" />
+  <meta name="twitter:description"
+        content="{% if article.meta_description %}{{ article.meta_description }}{% else %}{{ article.title }}{% endif %}" />
+  <meta name="twitter:image"
+        content="{% thumbnail article.featured_image 300x300 crop subject_location=article.featured_image.subject_location %}" />
+
+  <meta itemprop="name"
+        content="{% if article.meta_title %}{{ article.meta_title|capfirst }}{% else %}{{ article.title|capfirst }}{% endif %}" />
+  <meta itemprop="description"
+        content="{% if article.meta_description %}{{ article.meta_description }}{% else %}{{ article.title }}{% endif %}" />
+  <meta itemprop="image"
+        content="{% thumbnail article.featured_image 300x300 crop subject_location=article.featured_image.subject_location %}" />
+{% endblock seo_meta_tags %}
+
+{% block title_tag %}{% if article.meta_title %}{{ article.meta_title|capfirst }}{% else %}{{ article.title|capfirst }}{% endif %}{% endblock title_tag %}

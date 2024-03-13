@@ -1,0 +1,47 @@
+{% load columns %}
+{% load thumbnail %}
+
+{% if srcset_enabled %}
+  {% heightratio slide.image.height slide.image.width default_img_width.0 as default_img_size %}
+  {% thumbnail slide.image default_img_size subject_location=opts.subject_location as default_thumbnail %}
+
+  {% if xs_img_width %}
+    {% heightratio slide.image.height slide.image.width xs_img_width.0 as xs_img_size %}
+    {% thumbnail slide.image xs_img_size subject_location=opts.subject_location as xs_thumbnail %}
+  {% endif %}
+
+  {% if sm_img_width %}
+    {% heightratio slide.image.height slide.image.width sm_img_width.0 as sm_img_size %}
+    {% thumbnail slide.image sm_img_size subject_location=opts.subject_location as sm_thumbnail %}
+  {% endif %}
+
+  {% if md_img_width %}
+    {% heightratio slide.image.height slide.image.width md_img_width.0 as md_img_size %}
+    {% thumbnail slide.image md_img_size subject_location=opts.subject_location as md_thumbnail %}
+  {% endif %}
+
+  {% if lg_img_width %}
+    {% heightratio slide.image.height slide.image.width lg_img_width.0 as lg_img_size %}
+    {% thumbnail slide.image lg_img_size subject_location=opts.subject_location as lg_thumbnail %}
+  {% endif %}
+
+  <img
+    class="img-responsive"
+    alt="{% if instance.alt %}{{ instance.alt }}{% endif %}"
+    src="{{ xs_thumbnail.url }}"
+    srcset="
+            {% if lg_img_width %}{{ lg_thumbnail.url }} {{ lg_img_width.0 }}w,{% endif %}
+            {% if md_img_width %}{{ md_thumbnail.url }} {{ md_img_width.0 }}w,{% endif %}
+            {% if sm_img_width %}{{ sm_thumbnail.url }} {{ sm_img_width.0 }}w,{% endif %}
+            {% if xs_img_width %}{{ xs_thumbnail.url }} {{ xs_img_width.0 }}w,{% endif %}
+            {{ default_thumbnail.url }} {{ default_img_width.0 }}w"
+    sizes="
+           {% if lg_img_width %}min-width: {{ screen_lg }}px) {{ lg_img_width.0 }}px,{% endif %}
+           {% if md_img_width %}min-width: {{ screen_md }}px) {{ md_img_width.0 }}px,{% endif %}
+           {% if sm_img_width %}min-width: {{ screen_sm }}px) {{ sm_img_width.0 }}px,{% endif %}
+           100vw"
+    {% if instance.caption %}title="{{ instance.caption }}"{% endif %} loading="lazy" />
+{% else %}
+  {% thumbnail slide.image size subject_location=opts.subject_location as thumbnail %}
+  <img class="img-responsive" alt="{% if instance.alt %}{{ instance.alt }}{% endif %}" src="{{ thumbnail.url }}"{% if thumbnail.width %} width="{{ thumbnail.width }}"{% endif %}{% if thumbnail.height %} height="{{ thumbnail.height }}"{% endif %}{% if instance.caption %} title="{{ instance.caption }}"{% endif %} loading="lazy" />
+{% endif %}

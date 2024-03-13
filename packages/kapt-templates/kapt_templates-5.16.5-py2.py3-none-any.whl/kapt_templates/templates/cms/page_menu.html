@@ -1,0 +1,14 @@
+{% extends "cms/base.html" %}
+{% load cms_tags %}
+{% load menu_tags %}
+{% load i18n %}
+
+{% block body_id %}id_page_menu{% endblock body_id %}
+
+{% block cms_content %}
+  <div class="col-md-12 content">
+    {% placeholder "before menu" %}
+    {% show_sub_menu 1 None 0 "cms/partials/submenu.html" %}
+    {% placeholder "after menu" %}
+  </div>
+{% endblock cms_content %}

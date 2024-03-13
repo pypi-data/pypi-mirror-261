@@ -1,0 +1,27 @@
+{% load i18n %}
+
+{% if config.detail_url_namespace %}
+  <a href="{% url config.detail_url_namespace|add:":results-list" %}" class="">
+    {% if config.engine_type == "accommodation" %}
+      {% trans "Show all accommodations" %}
+    {% elif config.engine_type == "restaurant" %}
+      {% trans "Show all restaurants" %}
+    {% elif config.engine_type == "activity" %}
+      {% trans "Show all activities" %}
+    {% elif config.engine_type == "event" %}
+      {% trans "Show all events" %}
+    {% endif %}
+  </a>
+{% else %}
+  <a href="{{ request.path }}" class="">
+    {% if config.engine_type == "accommodation" %}
+      {% trans "Show all accommodations" %}
+    {% elif config.engine_type == "restaurant" %}
+      {% trans "Show all restaurants" %}
+    {% elif config.engine_type == "activity" %}
+      {% trans "Show all activities" %}
+    {% elif config.engine_type == "event" %}
+      {% trans "Show all events" %}
+    {% endif %}
+  </a>
+{% endif %}
