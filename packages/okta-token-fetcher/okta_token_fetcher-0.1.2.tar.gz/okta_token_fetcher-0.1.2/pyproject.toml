@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "okta-token-fetcher"
+version = "0.1.2"
+description = "Used to fetch OKTA tokens for an application using web a browser that redirects to a commandline server"
+authors = ["Mathew Moon <me@mathewmoon.net>"]
+readme = "README.md"
+homepage = "https://github.com/mathewmoon/okta-token-fetcher"
+repository = "https://github.com/mathewmoon/okta-token-fetcher"
+packages = [{include = "okta_token_fetcher", from = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+PyJWT = "^2.8.0"
+keyring = "^24.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "7.4.3"
+
+[tool.poetry.scripts]
+okta-fetch = "okta_token_fetcher.cli:main"
+
+[tool.pytest.ini_options]
+xfail_strict = true
+
+[build-system]
+requires = ["poetry-core>=1.7.0"]
+build-backend = "poetry.core.masonry.api"
