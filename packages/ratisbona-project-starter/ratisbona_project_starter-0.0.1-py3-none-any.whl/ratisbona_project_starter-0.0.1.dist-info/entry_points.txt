@@ -1,0 +1,2 @@
+[console_scripts]
+ratisbona_project_starter = ratisbona_project_starter.__main__:main
