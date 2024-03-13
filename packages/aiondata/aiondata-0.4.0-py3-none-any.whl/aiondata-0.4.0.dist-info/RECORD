@@ -1,0 +1,10 @@
+aiondata/__init__.py,sha256=je6gzrWG7rgsVdjUy7Mawlx2sAAwOSf5CMU-Aems3d0,419
+aiondata/bindingdb.py,sha256=hAR4agODMXtPZ2SGalVERooTBCjJTAo7Xesum85RRYU,5155
+aiondata/datasets.py,sha256=D2MNIkamEUxfPsJaR9H-BGFY1zYCxFoA0ZbT3yjra7s,2118
+aiondata/moleculenet.py,sha256=C4Wk3ekjmB8Wxjr02JAhlmg84EuYg_4JoLzZE1tsBjg,4714
+aiondata/protein_structure.py,sha256=Sem5wcfigJ-Gj3XL_7maywXiykasH9WiR0wIQKYOYIE,8714
+aiondata/weizmann_ccca.py,sha256=HA26gHJ_u2tCWpo1KzZEhBdiQqGM6t7vEWW-sFkz5hs,3645
+aiondata-0.4.0.dist-info/LICENSE,sha256=0IPOJH3-iTW-zg6hUd2MigGoioyS-OEkVoEOWVg0PxA,11372
+aiondata-0.4.0.dist-info/METADATA,sha256=QHxOP5jRRiwZS2aka_LctY9XEsMc0JN7vinuakxt-L8,6299
+aiondata-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aiondata-0.4.0.dist-info/RECORD,,
