@@ -1,0 +1,68 @@
+# Pdf-Image-Text
+
+A library to get data from standalone images and images present inside pdf.
+Powered by fitz and OpenAI.
+
+### Github - https://github.com/Bain/aag-pdf-image-text
+
+### Description: 
+This library provides below two functionalities:
+1. PdfToText - A class which fetch the images present on pdf files, get image transcriptions from openAI, fetches plain text from the pdf page and return a object with image and text data.
+The users can command to process full pdf file or specific page. 
+2. ImageToText - A class which process the transcription of the provided image.
+
+## Instructions
+
+### 1. Installation
+
+`pip install pdf-image-text`
+
+### 2. Initialize
+
+`pdf_to_text = PdfToText(open_ai_key='<>', model='<>')`
+`image_to_text = ImageToText(open_ai_key='<>', model='<>')`
+
+
+Note: The parameters are not required if already present in environment variables as 'OPEN_AI_KEY' and 'MODEL'
+
+### 3. Load data
+
+From file - 
+##### Pdf2Text: `pdf_to_text.load_data(file_name='<Path to file>')`
+##### Image2Text: `image_to_text.load_data(file_name='<Path to file>')`
+
+From file object - 
+
+##### Pdf2Text: `pdf_to_text.load_data(file_bytes_object='<file content>')`
+##### Image2Text: `image_to_text.load_data(file_bytes_object='<file content>')`
+
+
+
+### 3. Get output
+
+##### Pdf2Text: 
+`image_filter = ImageFilter(lower_height=<int>, upper_height=<int>, lower_width=<int>, upper_width=<int>)`
+
+`output = pdf_to_text.get_pdf_content(image_filter=image_filter, page_index=<optional field: int>, include_formatted_content=<optional field: bool>)`
+
+##### Image2Text: 
+`output = image_to_text.get_image_transcription()`
+
+
+### 4. Response Object
+
+##### Pdf2Text: 
+
+The output response contains a list of Page object. 
+The page object consists of below attributes - 
+1. image_content: A list of transcriptions for images fetched from the current pdf page.
+2. text_content: The plain text fetched from the current pdf page.
+3. formatted_content [Optional] : An optional attribute which contains the formatted string output containing the
+plain text and figure data (Inside FIGURE TRANSCRIPTIONS section). This is useful in knowledge bot applications.
+The default value for this flag is false.
+
+##### Image2Text: 
+
+The response contains a string representing the transcription of the provided image. 
+
+

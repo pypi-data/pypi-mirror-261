@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "pdf-image-text9-test"
+version = "0.1.8"
+description = "A python package to generate text from pdf and images"
+authors = ["Devesh Singh <devesh.singh@bain.com>"]
+readme = "README.md"
+license = "LICENCE"
+keywords = ["test", "dependencies", "documentation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+include = [
+"LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "2.31.0"
+pydantic = "2.6.3"
+pymupdf = "^1.22.0"
+filetype = "1.2.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
