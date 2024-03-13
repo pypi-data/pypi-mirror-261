@@ -1,0 +1,9 @@
+cuxrft/__init__.py,sha256=ycpefYPb-nTQ89Id56EYLV5Sp1jnCTTw57vitnys6rA,118
+cuxrft/byte_converter.py,sha256=eEYVQCt1DTqSBfK1ij8rGvf5-wQoX9gDK4N9IT3dhPU,3113
+cuxrft/xarray.py,sha256=kQhAqEoEtFkMrRCvvUPKkBZ2Y12JLFBsj6xa-b8qtn8,844
+cuxrft/xr_controller_fft.py,sha256=-mT0SJhj6Pa36SO-baFn-gEJb9cSaLIV0M6TK0-cAcs,48870
+cuxrft-0.0.5.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+cuxrft-0.0.5.dist-info/METADATA,sha256=uff4xi-KnVcyp8AEr3MaYPTxaH4K3tHt5zvDXAfHa6w,856
+cuxrft-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cuxrft-0.0.5.dist-info/top_level.txt,sha256=oOqOiS3v7so1vOXZNET8PeF_jq-bUzDZt6AqDaSygaI,7
+cuxrft-0.0.5.dist-info/RECORD,,
