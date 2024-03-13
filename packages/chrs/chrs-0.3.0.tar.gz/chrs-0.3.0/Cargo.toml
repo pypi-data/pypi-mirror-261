@@ -1,0 +1,11 @@
+[workspace]
+
+resolver = "2"
+
+members = ["chrs", "chris"]
+
+# https://github.com/johnthagen/min-sized-rust
+[profile.release]
+strip = "symbols"
+lto = "fat"
+codegen-units = 1
