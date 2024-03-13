@@ -1,0 +1,5 @@
+[console_scripts]
+config_routes=remote_hub.config_routes:main
+ssh_to_server=remote_hub.ssh_to_server:main
+transfer=remote_hub.transfer:main
+

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: remote-hub
+Version: 0.2.2
+Summary: 
+Author: Jean Carraro
+Author-email: jgcarraro@gmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: paramiko (>=3.4.0,<4.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: questionary (>=2.0.1,<3.0.0)
+Requires-Dist: scp (>=0.14.5,<0.15.0)
