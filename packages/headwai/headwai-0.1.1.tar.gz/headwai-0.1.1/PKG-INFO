@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: headwai
+Version: 0.1.1
+Summary: A package for evaluating text correctness.
+Home-page: https://github.com/richard-headwai/headwai
+Author: Richard
+Author-email: richard.deetlefs@headwai.org
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websockets
+
+# Installation
+
+It's recommended to install this package in a virtual environment:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Then, install the package:
+
+```bash
+pip install headwai
+```
+OR
+```bash
+pip install git+https://github.com/richard-headwai/headwai.git
+```
