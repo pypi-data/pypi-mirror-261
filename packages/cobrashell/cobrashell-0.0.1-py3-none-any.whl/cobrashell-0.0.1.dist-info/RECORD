@@ -1,0 +1,13 @@
+snakeshell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snakeshell/__main__.py,sha256=sSDtZLBEZl7ODdh0-cTq2r0MiUydEM5aXeGbdADHpt0,85
+snakeshell/console.py,sha256=tsjwBlzYxHLlb-Uqgd0nBABv_b-k3qU492Ows6EUNEE,1543
+snakeshell/grammar.py,sha256=NM1_pq1kpPxyKAUDkVRSvg3aUIcFLf4VqS7IOJ20K9M,602
+snakeshell/parser.py,sha256=jf-16Fu4pg665u6_Z1jb5HjYMKX7K6bsGjdNthmMfHI,1564
+snakeshell/shell.py,sha256=OjwkUiTlvEDGVmYG6Nb1LdHSkOT6VwTNypJRATFJFJw,783
+snakeshell/tree.py,sha256=6Y_x3PfPGZhAzofF3tYoSWWIxb3dQwnAuFb0j-KDhRI,3440
+cobrashell-0.0.1.dist-info/LICENSE,sha256=hdQGeAlah0SMA00fV0oAkQx8ANcZJqiBd7-gzwxazDk,1069
+cobrashell-0.0.1.dist-info/METADATA,sha256=MVa5Vo9VRY5Ru83b712cfx77t1XsGTl1ElQ7KsFvs_s,2564
+cobrashell-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cobrashell-0.0.1.dist-info/entry_points.txt,sha256=UZujRt-5urZNOHZ1CiuZyGrFpbO8wrBTv98YilZcNPk,53
+cobrashell-0.0.1.dist-info/top_level.txt,sha256=MhtVDnVBWS9hN2vQdkDYY6z4bVPdkrSr_WIL_kGG1B8,11
+cobrashell-0.0.1.dist-info/RECORD,,
