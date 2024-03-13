@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Perceptron-Aayush007A
+Version: 0.0.1
+Summary: A simple perceptron package
+Home-page: https://github.com/Aayush007A/Perceptron
+Author: Aayush007A
+Author-email: upadhyaychirag851@gmail.com
+Project-URL: Bug Tracker, https://github.com/Aayush007A/Perceptron/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy==1.25.2
+Requires-Dist: pandas==1.5.3
+Requires-Dist: joblib==1.2.0
+
+# Perceptron Package
+
+## This is a simple python package that provides you the Perceptron model that can be used for solving the tasks like Simple Linear Regression and Simple Linear Binary Classification .

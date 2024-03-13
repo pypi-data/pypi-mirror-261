@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/AayushUpadhyay/__init__.py
+src/AayushUpadhyay/perceptron.py
+src/Perceptron_Aayush007A.egg-info/PKG-INFO
+src/Perceptron_Aayush007A.egg-info/SOURCES.txt
+src/Perceptron_Aayush007A.egg-info/dependency_links.txt
+src/Perceptron_Aayush007A.egg-info/requires.txt
+src/Perceptron_Aayush007A.egg-info/top_level.txt
