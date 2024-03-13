@@ -1,0 +1,14 @@
+pytetwild/py.typed,sha256=mDShSrm8qg9qjacQc2F-rI8ATllqP6EdgHuEYxuCXZ0,7
+pytetwild/PyfTetWildWrapper.pyd,sha256=qY_7ac27j4iFpTIsNINU1hez1_I9aMqQYzNSy9PwM9Q,4992000
+pytetwild/pytetwild.py,sha256=PSLlG5czLo2Z2aZtcgxmZAy97E9eAtbo7EdvY0WONIs,4646
+pytetwild/_version.py,sha256=hbg9UkagWDGV6Zg23kEpex_otuUYHUzMCHXYTnFnHmE,118
+pytetwild/__init__.py,sha256=QdK3GINbrnK1cwEauX0cPgzkVCa1VPait8aGT2AJN4Q,486
+pytetwild-0.1.dev1.dist-info/DELVEWHEEL,sha256=1CRpEzc_AUEnYZnt1Kh9fEzAekI8sXjRGcm3ixZdtRM,423
+pytetwild-0.1.dev1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytetwild-0.1.dev1.dist-info/METADATA,sha256=6I1FzXoY9ezDC8EWamtUR2MVxWtBvgjD5frhxz4gw6Y,4587
+pytetwild-0.1.dev1.dist-info/RECORD,,
+pytetwild-0.1.dev1.dist-info/WHEEL,sha256=I4fjUu5CKXtMlETsB-F4Q7DROW-oHB8rNWT-iDmQHok,105
+pytetwild-0.1.dev1.dist-info/licenses/LICENSE,sha256=k0P1sbYupRWlxoESvbYq2UzoMW6MXA84LltqR-4mEo4,17096
+pytetwild.libs/concrt140-ddbfd8b75976783430ced289c6b989c3.dll,sha256=BZPGv1uz0YBgBOgTWBBL0elt7C3clmR348_2Zlqh47Q,302080
+pytetwild.libs/mpir-0f58ffaa159ebf7efb9359a55c2d7f23.dll,sha256=qd6vEIL0JPtRZ39EzelGE9rApfJ6duoMgV8jT8UHGns,612352
+pytetwild.libs/msvcp140-3499a3a8427eec4915749ee9a8991ddd.dll,sha256=oDDcLf0uyiipN1ySmJrfTa8WH5iNteFrnhBnjrDf9Mc,573008
