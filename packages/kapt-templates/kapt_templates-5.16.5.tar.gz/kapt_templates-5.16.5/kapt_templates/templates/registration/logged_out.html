@@ -1,0 +1,19 @@
+{% extends "registration/base.html" %}
+
+{% load i18n %}
+
+{% block registration_titletag %}
+  {% trans 'Logged out' %}
+{% endblock registration_titletag %}
+
+{% block registration_metadescription %}{% trans 'Logged out' %}{% endblock registration_metadescription %}
+
+{% block registration_title %}
+  <h1>{% trans 'Logged out' %}</h1>
+{% endblock %}
+
+{% block registration_content %}
+  <p>
+    {% trans "You've been logged out." %}
+  </p>
+{% endblock %}

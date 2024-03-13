@@ -1,0 +1,19 @@
+{% load i18n %}
+{% load cms_tags %}
+{% load static %}
+{% load legal_tags %}
+
+<div id="footer" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav justify-content-center">
+        <li class="nav-item nav-link">{% copyright %}</li>
+        <li class="nav-item"><a href="{% url "legalnotice:legalnotice" %}" class="nav-link">{% trans "Legal notice" %}</a></li>
+        <li class="nav-item"><a  class="nav-link" href="#" data-cookies-management>{% trans "Cookies management" %}</a></li>
+        <li class="nav-item"><a href="{% url "legalnotice:credits" %}" class="nav-link">{% trans "Credits" %}</a></li>
+        <li class="nav-item"><a href="{% page_url "id_sitemap" %}" class="nav-link">{% trans "Sitemap" %}</a></li>
+        <li class="nav-item nav-link">{% trans "Made in France by" %} <a href="http://kapt.mobi" class="kapt-logo" ><img id="id_logo_kapt" src="{% static "img/logo_kapt.png" %}" alt="Logo de la société Kapt" width="39" height="13" loading="lazy" /></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

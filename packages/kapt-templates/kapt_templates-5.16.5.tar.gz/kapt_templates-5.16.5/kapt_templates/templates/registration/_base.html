@@ -1,0 +1,27 @@
+{% extends "cms/base.html" %}
+{% load i18n %}
+
+{% block title_tag %}
+  {% block registration_titletag %}
+    {% trans "Registration page" %}
+  {% endblock registration_titletag %}
+{% endblock title_tag %}
+
+{% block seo_meta_tags %}
+  <meta name="description" content="{% block registration_metadescription %}{% trans "Registration page" %}{% endblock registration_metadescription %}" />
+{% endblock seo_meta_tags %}
+
+{% block body_id %}id_registration{% endblock body_id %}
+
+{% block main %}
+  <div class="container">
+
+    {% block registration_title %}
+      {% trans "Registration page" %}
+    {% endblock registration_title %}
+
+    {% block registration_content %}
+    {% endblock registration_content %}
+
+  </div>
+{% endblock main %}

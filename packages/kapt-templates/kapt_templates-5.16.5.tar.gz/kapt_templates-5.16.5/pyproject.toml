@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "kapt-templates"
+version = "5.16.5"
+description = "Templates for Kapt modules"
+authors = ["KAPT dev team <dev@kapt.mobi>"]
+license = "Proprietary"
+
+[tool.poetry.dependencies]
+python = "^2.7 || ^3.8"
+Django = ">=1.11"
+django-embed-video = "^1.3.3"
+djangocms-page-meta = "^1.0.1"
+django-cms = "^3.5"
+django-widget-tweaks = "^1.4.12"
+
+[tool.poetry.dev-dependencies]
+gitchangelog = "^3.0.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

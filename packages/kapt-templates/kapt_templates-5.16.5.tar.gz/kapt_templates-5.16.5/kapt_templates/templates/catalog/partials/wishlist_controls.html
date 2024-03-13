@@ -1,0 +1,10 @@
+{% load i18n %}
+
+<div class="wishlist-controls-wrapper">
+  <a href="#" data-wishlist-item-add="#id_activity_{{ activity.pk }}" class="add-to-wishlist">
+    {% trans "Add to my selection" %}
+  </a>
+  <a href="#" data-wishlist-item-remove="#id_activity_{{ activity.pk }}" class="remove-from-wishlist" style="display: none;">
+    {% trans "Remove from my selection" %}
+  </a>
+</div>

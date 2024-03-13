@@ -1,0 +1,18 @@
+{% load site_catalog_tags %}
+
+<!-- Pour les restaurants -->
+{% if activity|is_meal %}
+  {{ activity.type }}
+  {% if activity.categories.all %}
+    <span class="activity-type-categorie">
+      (
+      {% for categorie in activity.categories.all %}
+        {{categorie.name}}{% if not forloop.last %} <span class="activity-type-categorie-separator">/</span>{% endif%}
+      {% endfor %}
+      )
+    </span>
+  {% endif %}
+  <!--  Pour les hôtels-->
+{% elif activity|is_accommodation %}
+  {{ activity.type }}
+{% endif %}

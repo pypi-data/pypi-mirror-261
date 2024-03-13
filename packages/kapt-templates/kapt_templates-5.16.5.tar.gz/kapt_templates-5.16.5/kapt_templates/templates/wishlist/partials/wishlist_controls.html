@@ -1,0 +1,10 @@
+{% load i18n %}
+
+<div class="wishlist-controls">
+  <a class="modal-action btn btn-primary wishlist-empty" href="#emptyConfirmModal" role="button" data-toggle="modal"><i class="fas fa-trash"></i>{% trans "Empty" context "verb" %}</a>
+  {% if weasyprint_activate %}
+    <a class="bar-link btn btn-primary" href="{{ weasyprint_url }}/pdf/?url=http://{{ request.get_host }}{% url 'wishlist:wishlist-id' %}?activities={{ ids }}&name={{ weasyprint_name }}" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;{% trans "Export to PDF" %}</a>
+  {% else %}
+    <a class="btn btn-primary" href="{% url 'wishlist:wishlist-pdf-export' %}" target="_blank"><i class="fas fa-file-pdf"></i>{% trans "Export to PDF" %}</a>
+  {% endif %}
+</div>

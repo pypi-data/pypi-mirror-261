@@ -1,0 +1,48 @@
+{% extends "kapt_templates/partials/seo_meta_tags.html" %}
+{% load easy_thumbnails_tags %}
+{% load meta %}
+
+{% block simple_seo_meta_description_tag %}
+  {% if category %}
+    <meta name="description" content="{{ category.meta_description }}" />
+  {% elif meta.description %}
+    {% meta 'description' meta.description %}
+  {% endif %}
+{% endblock simple_seo_meta_description_tag %}
+
+{% block robots_meta_tag %}
+  {% if author or archive_date or category or tagged_entries %}
+    <meta name="robots" content="noindex" />
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock robots_meta_tag %}
+
+{% block canonical_url_tag %}
+  <link rel="canonical" href="{{ meta.url }}{% if page_obj.number > 1 %}?{{ view.page_kwarg }}={{ page_obj.number }}{% endif %}" />
+{% endblock canonical_url_tag %}
+
+{% block extra_seo_tags %}
+  {% if is_paginated %}
+    {% if page_obj.has_previous %}
+      {% if page_obj.previous_page_number == 1 %}
+        <link rel="prev" href="{{ request.path }}" />
+      {% else %}
+        <link rel="prev" href="{{ request.path }}?{{ view.page_kwarg }}={{ page_obj.previous_page_number }}" />
+      {% endif %}
+    {% endif %}
+    {% if page_obj.has_next %}
+      <link rel="next" href="{{ request.path }}?{{ view.page_kwarg }}={{ page_obj.next_page_number }}" />
+    {% endif %}
+  {% endif %}
+{% endblock extra_seo_tags %}
+
+{% block open_graph_meta_image_tag %}
+  {% if post %}
+    {# making a thumbnail may not be needed anymore once https://github.com/nephila/djangocms-blog/pull/718/files will be merged (soonTM) #}
+    {% thumbnail post.main_image 1600x1600 crop subject_location=post.main_image.subject_location as thumb %}
+    {% og_prop 'image' thumb.url %}
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock open_graph_meta_image_tag %}

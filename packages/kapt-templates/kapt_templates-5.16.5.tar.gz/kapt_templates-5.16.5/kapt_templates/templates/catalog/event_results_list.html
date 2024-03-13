@@ -1,0 +1,10 @@
+{% extends "catalog/activity_results_list.html" %}
+{% load djangobars %}
+
+{% block raw_handlebars_html_block %}
+  {% include_handlebars "catalog/partials/event_results_list.html" %}
+{% endblock raw_handlebars_html_block %}
+
+{% block raw_handlebars_js_block %}
+  {% include_raw_handlebars "catalog/partials/event_results_list.html" %}
+{% endblock raw_handlebars_js_block %}

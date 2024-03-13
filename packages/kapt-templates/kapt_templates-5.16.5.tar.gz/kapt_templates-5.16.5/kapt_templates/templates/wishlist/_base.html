@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load cms_tags %}
+{% load menu_tags %}
+{% load site_translation_tags %}
+
+
+{% block title_tag %}{% trans "Travel notebook" %}{% endblock title_tag %}
+
+{% block meta_tags %}
+  {{ block.super }}
+  <meta name="robots" content="noindex, nofollow">
+{% endblock meta_tags %}
+
+{% block body_id %}id_wishlist{% endblock body_id %}
+{% block data_controller %}wishlist{% endblock data_controller %}
+
+{% block main %}
+  <div class="container">
+    {% block title %}
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{% trans "Travel notebook" %}</h1>
+        </div>
+      </div>
+    {% endblock title %}
+
+    {% block top-controls %}
+      <div class="row">
+        <div class="col-md-12">
+          {% include "wishlist/partials/wishlist_controls.html" %}
+        </div>
+      </div>
+    {% endblock top-controls %}
+
+    {% block list %}
+      <div class="row">
+        <div class="col-md-12">
+          <ul id="id_results_list" class="row wishlist-list">
+            {% for object_dict in objects %}
+              {% include "wishlist/partials/wishlist_item.html" with object=object_dict.obj %}
+            {% empty %}
+              <li class="col-md-12 wishlist-empty">{% trans "Your travel notebook is empty! Explore the website and add your favorite places in your travel notebook." %}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endblock list %}
+
+    {% block map %}
+      {% if objects %}
+        <div class="row">
+          <div class="col-md-12">
+            <div class="search-panel__map hidden-sm hidden-xs">
+              <div id="id_wishlist_map" style="height: 1000px"></div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endblock map %}
+  </div>
+
+  <div class="modal fade" id="displayModal" style="display:none;"></div>
+  <div class="modal fade" id="emptyConfirmModal" style="display:none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">{% trans "Are you sure?" %}</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>{% trans "Would you empty your travel notebook?" %}</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-link" data-dismiss="modal">{% trans "Cancel" %}</a>
+          <a href="#" id="id_empty_button" data-wishlist-url-empty="{% url 'wishlist-empty' %}" class="btn btn-primary">{% trans "Empty" context "verb" %}</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock main %}

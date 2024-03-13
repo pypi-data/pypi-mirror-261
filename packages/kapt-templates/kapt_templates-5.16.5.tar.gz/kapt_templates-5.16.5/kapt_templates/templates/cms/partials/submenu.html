@@ -1,0 +1,30 @@
+{% load cms_tags %}
+{% load extension_tags %}
+{% load i18n %}
+{% load menu_tags %}
+{% load static %}
+{% load thumbnail %}
+
+{% if children %}
+  <ul class="row">
+    {% for child in children %}
+      {% with child|extension as extension %}
+        <li class="child col-sm-4 {% if child.selected %}selected{% endif %} {% if child.ancestor %}ancestor{% endif %} {% if child.sibling %}sibling{% endif %} {% if child.descendant %}descendant{% endif %}">
+          <a href="{% if request.toolbar.edit_mode_active %}{{ child.get_absolute_url }}{% else %}{{ child.attr.redirect_url|default:child.get_absolute_url }}{% endif %}">
+            <div class="img-wrapper"><img src="{% if extension.image %}{{ extension.image|thumbnail_url:'submenu_image' }}{% else %}{% static 'img/default.jpg' %}{% endif %}" alt="{% if extension.image.default_alt_text %}{{ extension.image.default_alt_text }}{% elif extension.image %}{{ extension.image.label }}{% else %}{% trans "No image" %}{% endif %}" loading="lazy" /></div>
+            <div class="text">
+              {{ child.get_menu_title }}
+            </div>
+            {% with description=extension.description %}
+              {% if description %}
+                <div class="description">
+                  {{ description }}
+                </div>
+              {% endif %}
+            {% endwith %}
+          </a>
+        </li>
+      {% endwith %}
+    {% endfor %}
+  </ul>
+{% endif %}

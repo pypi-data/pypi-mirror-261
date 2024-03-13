@@ -1,0 +1,342 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% load cms_tags %}
+{% load thumbnail %}
+{% load menu_tags %}
+{% load site_translation_tags %}
+{% load site_catalog_tags %}
+{% load site_price_tags %}
+{% load cache %}
+
+
+{% block title_tag %}{{ activity.name }}{% endblock title_tag %}
+
+{% block seo_meta_tags %}
+  {% include "kapt_templates/partials/seo_meta_tags.html" %}
+{% endblock seo_meta_tags %}
+
+{% block body_id %}id_activity_detail{% endblock body_id %}
+{% block data_controller %}catalog_activity_details{% endblock data_controller %}
+
+
+{% block main %}
+  <div
+    id="id_activity_{{ activity.pk }}"
+    class="content content__detail"
+    data-object-id="{{ activity.pk }}"
+    data-contenttype-id="{{ ct_id }}"
+    data-is-in-wishlist="{{ wishlist_flagged|yesno:'true,false' }}"
+    data-wishlist-id="{{ wishlist_id }}"
+    data-wishlist-url-add="{{ wishlist_url_add }}"
+    data-wishlist-url-remove="{{ wishlist_url_remove }}"
+  >
+    {% block content %}
+      {% block breadcrumb %}
+        <ol class="breadcrumb breadcrumb__detail">
+          {% show_breadcrumb 0 "menu/breadcrumb_catalog.html" %}
+        </ol>
+      {% endblock breadcrumb %}
+
+      {% block activity_header %}
+        <h1 class="activity-name">
+          {{ activity.name }}
+          {% if is_registered %}
+            <i class="fas fa-award text-primary" title="{% trans "Tourist office partner" %}" data-toggle="tooltip" data-placement="top"></i>
+          {% endif %}
+        </h1>
+
+        <span class="activity-rating">
+          {% include "catalog/partials/rating.html" %}
+        </span>
+
+        <div class="activity-type">
+          {% include "catalog/partials/type.html" %}
+        </div>
+      {% endblock activity_header %}
+
+      {% block wishlist-controls %}
+        {% include "catalog/partials/wishlist_controls.html" %}
+      {% endblock wishlist-controls %}
+
+      {% block location %}
+        {% cache 3600 "activity-address" activity.pk LANGUAGE_CODE %}
+          <div class="activity-location">
+            {% block location_map %}
+              {% with latitude=activity.structure.address.latitude|stringformat:"f" longitude=activity.structure.address.longitude|stringformat:"f"  %}
+                <div id="id_address_map" class="address-map" data-latitude="{{ latitude }}" data-longitude="{{ longitude }}" data-name="{{ activity.name }}"></div>
+              {% endwith %}
+            {% endblock location_map %}
+            {% with latitude=activity.structure.address.latitude|stringformat:"f" longitude=activity.structure.address.longitude|stringformat:"f"  %}
+              <a href="https://maps.google.com/maps?daddr={{ latitude }},{{ longitude }}" target="_blank" class="btn btn-itinerary"><i class="fas fa-location-arrow"></i> {% trans "Route" %}</a>
+            {% endwith %}
+
+            <h2>{% trans "Address" %}</h2>
+            {% include "catalog/partials/address.html" %}
+
+            {% block access_mean %}
+              {% if activity_access_mean_description %}
+                <div class="activity-address-access">
+                  <h3>{% trans "Info" %}</h3>
+                  <p>{{ activity_access_mean_description.text|linebreaks }}</p>
+                </div>
+              {% endif %}
+            {% endblock access_mean %}
+
+            {% block environment %}
+              {% if activity.environment.exists %}
+                <h3>{% trans "Environment" %}</h3>
+                <ul class="activity-address-environment">
+                  {% for environment in activity.environment.all %}
+                    <li>{{ environment.name }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            {% endblock environment %}
+          </div>
+        {% endcache %}
+      {% endblock location %}
+
+      {% block contact %}
+        {% cache 3600 "activity-contact" activity.pk LANGUAGE_CODE %}
+          {% if referent_contact %}
+            <h3>{% trans "Contact" %}</h3>
+            <ul class="activity-contact">
+              {% if referent_contact.first_phone_number %}
+                <li>
+                  <a href="{{ referent_contact.first_phone_number.as_rfc3966 }}">
+                    {% trans "Phone:" %} {{ referent_contact.first_phone_number.as_international }}
+                  </a>
+                </li>
+              {% endif %}
+              {% if referent_contact.website_url %}
+                <li>
+                  <a href="{{ referent_contact.website_url }}" data-content-type="{{ activity_reference_ct_id }}" data-object-id="{{ activity.reference.id }}" data-metric="{{ METRIC_ACTIVITY_WEBSITE_CLICK }}" class="track" target="_blank" title="{% blocktrans with name=activity.name %}Visit {{ name }}'s website in a new window{% endblocktrans %}">
+                    {% trans "Website:" %} {{ referent_contact.website_url|cut:"http://"|cut:"https://"|truncatechars:60 }}
+                  </a>
+                </li>
+              {% endif %}
+              {% if referent_contact.first_email %}
+                <li>
+                  <a href="mailto:{{ referent_contact.first_email }}" data-metric='{{ METRIC_ACTIVITY_EMAIL_CONTACT_CLICK }}' class="track" data-content-type="{{ activity_reference_ct_id }}" data-object-id="{{ activity.reference.id }}">
+                    {% trans "E-mail:" %} {{ referent_contact.first_email }}
+                  </a>
+                </li>
+              {% endif %}
+              {% if referent_contact.facebook_url %}
+                <li>
+                  <a href="{{ referent_contact.facebook_url }}" target="_blank" rel="nofollow" title="{% trans "Visit our Facebook page" %}">
+                    <i class="fab fa-facebook"></i>&nbsp;{% trans "Visit our Facebook page" %}
+                  </a>
+                </li>
+              {% endif %}
+              {% if referent_contact.twitter_url %}
+                <li>
+                  <a href="{{ referent_contact.twitter_url }}" target="_blank" rel="nofollow" title="{% trans "Visit our Twitter profile" %}">
+                    <i class="fab fa-twitter"></i>&nbsp;{% trans "Visit our Twitter profile" %}
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
+          {% endif %}
+          {% if activity.structure.spoken_languages %}
+            <h3>{% trans "Spoken languages" %}</h3>
+            <ul class="activity-spokenlanguages">
+              <li class="lang fr">{% trans "French" %}</li>
+              {% for language in structure.spoken_languages.all %}
+                <li class="lang {{ language.code }}">{{ language }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endcache %}
+      {% endblock contact %}
+
+      {% block opening_periods %}
+        {% if opening_textual_description %}
+          <div class="activity-opening-periods">
+            <h3>{% trans "Opening periods" %}</h3>
+            <p>{{ opening_textual_description.text|linebreaks }}</p>
+          </div>
+        {% endif %}
+      {% endblock opening_periods %}
+
+      {% block rates %}
+        {% if  activity.min_price or textual_prices %}
+          <h3>{% trans "Rates" %}</h3>
+        {% endif %}
+
+        {% if activity.min_price %}
+          <div class="activity-min-price">
+            <span class="activity-min-price-from">{% trans "From" context "Min price" %}</span>
+            <span class="activity-min-price-amount">{% format_price activity.min_price force_language='fr' %}</span>
+            <span class="activity-min-price-base">{{ min_price_base }}</span>
+          </div>
+        {% endif %}
+
+        {% if textual_prices %}
+          <p>{{ textual_prices.text|linebreaks }}</p>
+        {% endif %}
+
+        {% if means_of_payments %}
+          <h3>{% trans "Means of payments" %}</h3>
+          <ul class="activity-meansofpayments">
+            {% for mean_of_payment in means_of_payments %}
+              <li>{{ mean_of_payment.name }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if activity_additional_booking_informations_description %}
+          <p>{{ activity_additional_booking_informations_description.text|linebreaks }}</p>
+        {% endif %}
+      {% endblock rates %}
+
+      {% block gallery %}
+        {% include "catalog/partials/gallery/carrousel.html" with photos=activity.structure.gallery.photo_set.all %}
+      {% endblock gallery %}
+
+      {% block description %}
+        {% if activity_detail_long_description or activity_detail_short_description %}
+          <div class="activity-description">
+            <h3>{% trans "Description" %}</h3>
+            {% block description_content %}
+              {% if activity_detail_short_description %}
+                <p>{{ activity_detail_short_description.text|linebreaks }}</p>
+              {% endif %}
+
+              {% if activity_detail_long_description %}
+                <p>{{ activity_detail_long_description.text|linebreaks }}</p>
+              {% endif %}
+            {% endblock description_content %}
+          </div>
+        {% endif %}
+      {% endblock description %}
+
+      {% block services %}
+        {% if services %}
+          <h3>{% trans "Facilities and services" %}</h3>
+          <ul class="activity-facilities">
+            {% for service in services %}
+              <li>{{ service.name }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endblock services %}
+
+      {% block characteristics %}
+        <h3>{% trans "Characteristics" %}</h3>
+
+        <dl class="activity-facilities">
+          {% if activity.area %}
+            <dt>{% trans "Area" %}</dt>
+            <dd>{{ object.area }} m<sup>2</sup></dd>
+          {% endif %}
+
+          {% if housing_types %}
+            <dt>{% trans "Housing type" %}</dt>
+            <dd>{{ housing_types|join:", " }}</dd>
+          {% endif %}
+
+          {% if bedrooms_quantity %}
+            <dt>{% trans "Bedrooms" %}</dt>
+            <dd>{{ bedrooms_quantity }}</dd>
+          {% endif %}
+          {% if single_beds_quantity %}
+            <dt>{% trans "Single beds" %}</dt>
+            <dd>{{ single_beds_quantity }}</dd>
+          {% endif %}
+          {% if double_beds_quantity %}
+            <dt>{% trans "Double beds" %}</dt>
+            <dd>{{ double_beds_quantity }}</dd>
+          {% endif %}
+
+          {% if single_rooms_quantity %}
+            <dt>{% trans "Single bedrooms" %}</dt>
+            <dd>{{ single_rooms_quantity }}</dd>
+          {% endif %}
+          {% if double_rooms_quantity %}
+            <dt>{% trans "Double bedrooms" %}</dt>
+            <dd>{{ double_rooms_quantity }}</dd>
+          {% endif %}
+          {% if suite_rooms_quantity %}
+            <dt>{% trans "Suites" %}</dt>
+            <dd>{{ suite_rooms_quantity }}</dd>
+          {% endif %}
+          {% if ranked_rooms_quantity %}
+            <dt>{% trans "Ranked bedrooms" %}</dt>
+            <dd>{{ ranked_rooms_quantity }}</dd>
+          {% endif %}
+          {% if hotel_declared_rooms_quantity %}
+            <dt>{% trans "Bedrooms" %}</dt>
+            <dd>{{ hotel_declared_rooms_quantity }}</dd>
+          {% endif %}
+          {% if reduced_mobility_rooms_quantity %}
+            <dt>{% trans "Accessible rooms" %}</dt>
+            <dd>{{ reduced_mobility_rooms_quantity }}</dd>
+          {% endif %}
+
+          {% if ranked_campingplot_quantity %}
+            <dt>{% trans "Ranked camping plots" %}</dt>
+            <dd>{{ ranked_campingplot_quantity }}</dd>
+          {% endif %}
+        </dl>
+      {% endblock characteristics %}
+
+      {% block business_informations %}
+        {% include "catalog/partials/business_informations.html" %}
+      {% endblock business_informations %}
+
+      {% block related_documents %}
+        {% if related_documents %}
+          <h3>{% trans "Documents to download" %}</h3>
+          <ul class="documents-list">
+            {% for doc in related_documents %}
+              <li>
+                <a href="{{ doc.url }}" target="_blank" download="{{ doc.label|default:activity.name|slugify }}.{{ doc.extension }}">
+                  <i class="icon icon-file"></i>
+                  {% if doc.label %}
+                    {{ doc.label }}
+                  {% else %}
+                    {{ activity.name }}
+                  {% endif %}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endblock related_documents %}
+
+      {% block linked_activities %}
+        {% if linked_activities %}
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>{% trans "See also" %}</h2>
+              </div>
+            </div>
+            <div id="linked_activities" class="linked-activities">
+              {% for activity in linked_activities %}
+                <div class="item">
+                  <figure class="figure">
+                    {% if activity.structure.gallery and activity.structure.gallery.has_main_photo %}
+                      <img src="{{ activity.structure.gallery.get_main_photo.file|thumbnail_url:'linked_activity' }}" alt="{{ activity.name }}" loading="lazy" />
+                    {% else %}
+                      <img src="{% static 'img/default_search_placeholder.png' %}" alt="{{ activity.name }}" loading="lazy" />
+                    {% endif %}
+                    <figcaption>
+                      <h2>
+                        {{ activity.name }}
+                      </h2>
+                      <p>{{ activity.type }}</p>
+                      <a href="{% url 'activity-detail' activity.slug %}" class="">  {% trans "See more" %}</a>
+                    </figcaption>
+                  </figure>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      {% endblock linked_activities %}
+    {% endblock content %}
+  </div>
+{% endblock main %}

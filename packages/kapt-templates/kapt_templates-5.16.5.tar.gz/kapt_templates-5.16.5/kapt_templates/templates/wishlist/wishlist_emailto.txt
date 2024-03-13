@@ -1,0 +1,9 @@
+{% load i18n %}
+
+{% blocktrans with email_from=sender_email first_name=sender_first_name|safe last_name=sender_last_name %}
+Hello,
+
+{{ first_name}} {{ last_name }} ({{ email_from }}) sent you the attached travel notebook.
+{% endblocktrans %}
+
+**********************************************************************

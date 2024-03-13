@@ -1,0 +1,21 @@
+{% load static %}
+
+{% if object.file.url %}
+  <a href="{{ object.file.url }}"{% if object.target_blank %} target="_blank"{% endif %} class="file">
+    <img src="{% static "img/icon_file.png" %}" width="60" height="76" alt="{{ object.file.label }}" loading="lazy" />
+    <span class="title">
+      {% if object.title %}
+        {{ object.title }}
+      {% else %}
+        {{ object.get_file_name }}
+      {% endif %}
+      <span class="filesize">
+        {% if object.file_exists %}
+          ({{ object.file.size|filesizeformat }})
+        {% else %}
+          (file missing!)
+        {% endif %}
+      </span>
+    </span>
+  </a>
+{% endif %}

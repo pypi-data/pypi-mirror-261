@@ -1,0 +1,23 @@
+{% load i18n %}
+{% load extra_cms_tags %}
+
+{# if extra_cms_tags is missing in your project, have a look on ot-tournonais... fp #}
+
+<div class="video">
+  {{ instance.html|optin:"Youtube"|safe }}
+  <div class="cookieoptin-notice cookieoptin-hide" data-cookieoptin>
+    <p>
+      <strong>{% trans "Please accept YouTube cookies to play this video." %}</strong>
+      {% trans "By accepting you will be accessing content from YouTube, a service provided by an external third party." %}
+    </p>
+    <p>
+      <a href="https://policies.google.com/privacy">{% trans "Show the YouTube privacy policy" %}</a>
+    </p>
+    <p>
+      {% trans "If you accept these cookies, your choice will be saved and the video will load." %}
+    </p>
+    <p>
+      <a href="#" data-optin-btn class="btn btn-success">{% trans "Accept YouTube Content" %}</a>
+    </p>
+  </div>
+</div>

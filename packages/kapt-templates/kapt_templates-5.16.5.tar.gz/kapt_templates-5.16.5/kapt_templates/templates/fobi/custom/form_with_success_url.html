@@ -1,0 +1,5 @@
+{% extends "fobi/custom/view_form_entry_ajax.html" %}
+
+{% block form_action %}
+  {% url "fobi.view_form_entry" form_entry.slug %}
+{% endblock form_action %}

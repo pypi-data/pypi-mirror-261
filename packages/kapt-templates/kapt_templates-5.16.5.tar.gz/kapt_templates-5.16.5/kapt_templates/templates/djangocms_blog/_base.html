@@ -1,0 +1,14 @@
+{% extends "cms/base.html" %}
+{% load thumbnail %}
+{% load meta %}
+{% load i18n %}
+{% load cms_tags %}
+{% load page_meta_tags %}
+
+{% block title_tag %}{% page_attribute "page_title" %}{% endblock title_tag %}
+
+{% block cms_content %}
+  <div class="app app-blog">
+    {% block content_blog %}{% endblock content_blog %}
+  </div>
+{% endblock cms_content %}

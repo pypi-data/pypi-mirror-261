@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load menu_tags %}
+{% load i18n %}
+{% load static %}
+{% load page_meta_tags %}
+
+{% block title_tag %}{% page_attribute "page_title" %}{% endblock title_tag %}
+{% block body_class %}{% if current_page.reverse_id %}page-{{ current_page.reverse_id }}{% endif %}{% endblock body_class %}
+
+{% block seo_meta_tags %}
+  {% page_meta request.current_page as meta %}
+  {% include "kapt_templates/partials/seo_meta_tags.html" with meta=meta %}
+{% endblock seo_meta_tags %}
+
+{% block main %}
+  <div class="container">
+    {% block cms_breadcrumb %}
+      <ol class="breadcrumb">
+        {% show_breadcrumb 0 "cms/partials/breadcrumb.html" 0 %}
+      </ol>
+    {% endblock cms_breadcrumb %}
+
+    <div class="row">
+      {% block cms_title %}
+        <div class="col-md-12">
+          <h1>{% page_attribute "title" %}</h1>
+        </div>
+      {% endblock cms_title %}
+
+      {% block cms_content %}
+        <div class="col-md-12 content">
+          {% placeholder "content" %}
+        </div>
+      {% endblock cms_content %}
+    </div>
+  </div>
+{% endblock main %}

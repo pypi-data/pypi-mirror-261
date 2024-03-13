@@ -1,0 +1,16 @@
+{% extends "kapt_templates/email_base.html" %}
+{% load i18n %}
+
+{% block title %}
+  {% blocktrans with first_name=sender_first_name|safe last_name=sender_last_name|safe %}{{ first_name }} {{ last_name }}'s travel notebook{% endblocktrans %}
+{% endblock title %}
+
+{% block content %}
+  {% blocktrans with email_from=sender_email first_name=sender_first_name|safe last_name=sender_last_name|safe trimmed %}
+    <p>Hello,</p>
+
+    <p><b>{{ first_name}} {{ last_name }}</b> ({{email_from }}) sent you the attached travel notebook.</p>
+    <hr />
+    <br />
+  {% endblocktrans %}
+{% endblock content %}

@@ -1,0 +1,195 @@
+{% load cache %}
+{% load cms_tags %}
+{% load i18n %}
+{% load meta %}
+{% load page_meta_tags %}
+{% load sekizai_tags %}
+{% load static %}
+{% load statici18n %}
+
+<!doctype html>
+{% get_current_language as CURRENT_LANGUAGE_CODE %}
+<html
+  class="no-js "
+  lang="{{ CURRENT_LANGUAGE_CODE }}"
+  itemscope
+  itemtype="{% block html_itemtype %}https://schema.org/Thing{% endblock html_itemtype %}"
+>
+  <head>
+    {# meta #}
+    {% block meta_tags %}
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      {% block meta_viewport %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      {% endblock meta_viewport %}
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      {% include "partials/favicons.html" %}
+    {% endblock meta_tags %}
+
+    <title>{% block title_tag %}{% endblock title_tag %}</title>
+
+    {% block seo_meta_tags %}
+      {% include "kapt_templates/partials/seo_meta_tags.html" %}
+    {% endblock seo_meta_tags %}
+
+    {% block analytics_tag %}
+      {% include "kapt_templates/partials/analytics.html" %}
+    {% endblock analytics_tag %}
+
+    {% block gtm_tag %}
+      <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+
+        gtag("consent", "default", {
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          ad_storage: "denied",
+          analytics_storage: "denied",
+          wait_for_update: 2000
+        });
+
+        gtag("set", "ads_data_redaction", true);
+      </script>
+
+      {% if not debug and not staging and gtm_tag %}
+        <script type="text/javascript">
+          (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+              'gtm.start': new Date().getTime(),
+              event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+              'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', '{{ gtm_tag }}');
+        </script>
+      {% endif %}
+    {% endblock gtm_tag %}
+
+    {% block fb_pixel_tag %}
+      {% if not debug and not staging and pixel_tag %}
+        <!-- Facebook Pixel Code -->
+        <script type="opt-in" data-name="FacebookPixel" data-type="text/javascript">
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '{{ pixel_tag }}');
+          fbq('track', 'PageView');
+        </script>
+        <noscript>
+          <img height="1" width="1"
+               src="https://www.facebook.com/tr?id={{ pixel_tag }}&ev=PageView&noscript=1"/>
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+      {% endif %}
+    {% endblock fb_pixel_tag %}
+
+    {% block google_site_verification %}
+      {% if not staging and google_site_verification %}
+        <meta name="google-site-verification" content="{{ google_site_verification }}" />
+      {% endif %}
+    {% endblock google_site_verification %}
+
+    {# CSS #}
+    {# skeizai's render_block must not be inside a block tag #}
+    {% render_block "css" %}
+    {% block css %}
+      <link href="{% static 'css/theme.min.css' %}" rel="stylesheet" type="text/css" />
+    {% endblock css %}
+
+    {% block extra_css %}
+    {% endblock extra_css %}
+
+    {% block json_ld %}
+      {% page_meta request.current_page as meta %}
+      {% include "kapt_templates/partials/json_ld.html" with meta=meta %}
+    {% endblock json_ld %}
+  </head>
+
+  <body
+    id="{% block body_id %}{% endblock body_id %}"
+    class="{% block body_class %}{% endblock body_class %}"
+    data-controller="{% block data_controller %}{% endblock data_controller %}"
+    data-action="{% block data_action %}{% endblock data_action %}"
+  >
+    {% if not debug and not staging and gtm_tag %}
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtm_tag }}" height="0" width="0"
+                        style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
+    {% cms_toolbar %}
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">{% blocktrans %}You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.{% endblocktrans %}</p>
+    <![endif]-->
+
+    {% block layout_wrapper %}
+      {% block header %}
+        {% include "kapt_templates/partials/header.html" %}
+      {% endblock header %}
+
+      {% block main_wrapper %}
+        <main>
+          {% block main %}
+          {% endblock main %}
+        </main>
+      {% endblock main_wrapper %}
+
+      {% block footer %}
+        {% include "kapt_templates/partials/footer.html" %}
+      {% endblock footer %}
+    {% endblock layout_wrapper %}
+
+    {% block after_content %}
+    {% endblock after_content %}
+
+    {% block js-variables %}
+      {% comment %}Global window attached values{% endcomment %}
+      <script>
+        window.DJANGO_JS_CSRF = true;
+        window.DJANGO_JS_INIT = true;
+        {% if django_js_urls %}window.DJANGO_JS_URLS = {{ django_js_urls|safe }};{% endif %}
+        {% if django_js_context %}window.DJANGO_JS_CONTEXT = {{ django_js_context|safe }};{% endif %}
+        window.CKEDITOR_BASEPATH = "{{ STATIC_URL }}ckeditor/ckeditor/";
+        window.DJANGO_STATIC_URL = "{{ STATIC_URL }}"
+      </script>
+    {% endblock js-variables %}
+
+    {# skeizai's render_block must not be inside a block tag #}
+    {% render_block "js" %}
+
+    {% if LANGUAGE_CODE %}
+      <script src="{% statici18n LANGUAGE_CODE %}"></script>
+    {% endif %}
+
+    <script src="{% static 'js/common.min.js' %}"></script>
+    <script src="{% static 'js/bundle.min.js' %}"></script>
+
+    {% block cookie_optin %}
+      <script defer type="text/javascript" src="{% url 'cookie_optin:config' %}"></script>
+    {% endblock cookie_optin %}
+
+    {% block js %}
+    {% endblock js %}
+
+    {# skeizai's render_block must not be inside a block tag #}
+    {% render_block "bottom_js" %}
+
+    {% block extra_js %}
+    {% endblock extra_js %}
+  </body>
+</html>

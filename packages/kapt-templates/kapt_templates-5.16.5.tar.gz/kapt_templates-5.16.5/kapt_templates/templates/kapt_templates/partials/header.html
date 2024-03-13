@@ -1,0 +1,30 @@
+{% load static %}
+{% load i18n %}
+{% load cms_tags %}
+{% load menu_tags %}
+
+<header{% if user.is_authenticated and user.is_staff %} class="cms-toolbar-offset"{% endif %}>
+  <nav class="container">
+    <div class="row">
+      {% block logo %}
+        <a id="id_main_logo"  href="/">
+          <img src="" width="" height="" alt="logo" loading="lazy" />
+        </a>
+      {% endblock logo %}
+
+      {% block menu %}
+        <ul>
+          {% show_menu 0 100 100 100 %}
+        </ul>
+      {% endblock menu %}
+
+      {% block wishlist_button %}
+        {# {% include "kapt_templates/partials/wishlist_button.html" %} #}
+      {% endblock wishlist_button %}
+
+      {% block language_chooser %}
+        {% language_chooser "kapt_templates/partials/language_chooser.html" %}
+      {% endblock language_chooser %}
+    </div>
+  </nav>
+</header>

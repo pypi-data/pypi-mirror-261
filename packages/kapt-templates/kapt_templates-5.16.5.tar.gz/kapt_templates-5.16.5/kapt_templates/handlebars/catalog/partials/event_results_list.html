@@ -1,0 +1,116 @@
+<div class="result__count">
+  <span class="count">{{ meta.total_count }}</span> <span class="count-text">{{ meta.count_text }}</span>
+</div>
+
+<div id="id_results_list" class="results-wrapper">
+  {{#if objects}}
+  {{#each objects}}
+  <div
+    id="id_result_{{ id }}"
+    class="result"
+    data-latitude={{ latitude }}
+    data-longitude={{ longitude }}
+    data-object-id="{{ id }}"
+    data-name="{{ name }}"
+    data-locality="{{ locality }}"
+    data-map-thumbnail="{{ map_thumbnail }}"
+    data-contenttype-id="{{ ct_id }}"
+    data-wishlist-url-add="{{ wishlist_url_add }}"
+    data-wishlist-url-remove="{{ wishlist_url_remove }}"
+    {{#if in_wishlist}}data-is-in-wishlist=true{{/if}}
+  >
+    <figure>
+      <a href="{{this.detail_uri}}">
+        {{#if thumbnail}}
+        <a href="{{this.detail_uri}}"> <img src="{{ thumbnail }}" alt="{{name}}" class="item-photo" loading="lazy" /></a>
+        {{/if}}
+        {{#unless thumbnail}}
+        <a href="{{this.detail_uri}}"><img src="{{ default_thumbnail }}" alt="{{name}}" class="item-photo item-photo-default" loading="lazy" /></a>
+        {{/unless}}
+        <span class="wishlist-controls-wrapper">
+          <a href="#" data-wishlist-item-add="#id_result_{{id}}" title="{{wishlist_add_str}}">
+            <i class="far fa-heart"></i>
+          </a>
+          <a href="#" data-wishlist-item-remove="#id_result_{{id}}" title="{{wishlist_remove_str}}">
+            <i class="fas fa-heart"></i>
+          </a>
+        </span>
+        {{#if next_opening_date}}
+        <span class="item-date">{{next_opening_date}}</span>
+        {{/if}}
+      </a>
+      <figcaption>
+        <span class="item-type">{{type_str}}</span>
+        <a href="{{this.detail_uri}}" class="item-name">
+          {{#if named}}{{name}}{{/if}}
+          {{#unless name}}{{id}}{{/unless}}
+        </a>
+        <div class="item-locality"><i class="fas fa-map-pin"></i>&nbsp;{{locality}}</div>
+        {{#if is_partner}}
+        {{#if formated_min_price}}
+        <span class="price">
+          {{formated_min_price}}
+        </span>
+        {{/if}}
+        {{/if}}
+      </figcaption>
+    </figure>
+  </div>
+  {{/each}}
+  {{/if}}
+  {{ meta.pagination.few_results_html }}
+</div>
+
+{{#if_gt meta.pagination.pageCount compare=1 }}
+<nav class="pagination-container col-md-12">
+  <ul class="pagination">
+    {{#paginate meta.pagination type="previous"}}
+    {{#unless disabled}}
+    <li class="page-item paginate-previous">
+      <a class="page-link" data-offset="{{offset}}"
+         href="{{baseUrl}}{{#if hasQueryParam}}&amp;{{/if}}{{#unless hasQueryParam}}?{{/unless}}offset={{offset}}"
+         rel="prev">&lt;</a>
+    </li>
+    {{/unless}}
+    {{/paginate}}
+
+    {{#paginate meta.pagination type="middle" limit=5}}
+    {{#if ellipsis_last}}
+    <li class="page-item disabled"><a href="#" tabindex="-1" class="page-link">...</a></li>
+    {{/if}}
+    {{#unless ellipsis_first}}
+    {{#unless ellipsis_last}}
+    <li class="page-item {{#if active}}active{{/if}}">
+      <a
+        class="page-link"
+        data-offset="{{offset}}"
+        href="{{baseUrl}}{{#if hasQueryParam}}&amp;{{/if}}{{#unless hasQueryParam}}?{{/unless}}offset={{offset}}"
+      >
+        {{page}}
+        {{#if active}}
+        <span class="sr-only">(current)</span>
+        {{/if}}
+      </a>
+    </li>
+    {{/unless}}
+    {{/unless}}
+    {{#if ellipsis_first}}
+    <li class="page-item disabled"><a href="#" tabindex="-1" class="page-link">...</a></li>
+    {{/if}}
+    {{/paginate}}
+
+    {{#paginate meta.pagination type="next"}}
+    {{#unless disabled}}
+    <li class="page-item paginate-next">
+      <a
+        class="page-link"
+        data-offset="{{offset}}"
+        href="{{baseUrl}}{{#if hasQueryParam}}&amp;{{/if}}{{#unless hasQueryParam}}?{{/unless}}offset={{offset}}"
+        rel="next"
+      >&gt;</a>
+    </li>
+    {{/unless}}
+    {{/paginate}}
+  </ul>
+</nav>
+{{/if_gt}}

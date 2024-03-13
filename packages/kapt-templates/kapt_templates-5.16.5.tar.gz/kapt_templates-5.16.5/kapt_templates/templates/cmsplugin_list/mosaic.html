@@ -1,0 +1,84 @@
+{% load i18n %}
+{% load static %}
+{% load thumbnail %}
+
+<div class="col-md-12 results-count-wrapper">
+  {% block results-count %}
+    {% if activities.paginator.num_pages > 1 %}
+      {% blocktrans count counter=activities.paginator.count trimmed %}
+        <span class="count-text">No result</span>
+      {% plural %}
+        <span class="count">{{ counter }}</span>
+        <span class="count-text"> results</span>
+      {% endblocktrans %}
+    {% endif %}
+  {% endblock results-count %}
+</div>
+
+<div class="col-md-12 pagination-container">
+  {% block top-pagination %}
+    {% include "cmsplugin_list/partials/pagination.html" %}
+  {% endblock top-pagination %}
+</div>
+
+<div class="results-list-wrapper">
+  {% block results-list %}
+    <div id="id_results_list" class="results-wrapper">
+      {% for activity in activities %}
+        <div
+          id="id_result_{{ activity.id }}"
+          class="result col-md-4"
+          data-object-id="{{ activity.id }}"
+          data-contenttype-id="{{ content_type_id }}"
+          {# For retrocompatibility purposes, we show wishlit informations if `is_wishlist_instaled` is True or None. #}
+          {% if is_wishlist_installed != False %}
+            data-wishlist-url-add="{% url 'wishlist-add' content_type_id=activity_ct_id object_id=activity.id %}"
+            data-wishlist-url-remove="{% url 'wishlist-remove' content_type_id=activity_ct_id object_id=activity.id %}"
+            {% if activity.in_wishlist %}data-is-in-wishlist=true{% endif %}
+          {% endif %}
+        >
+          <a href="{% url 'activity-detail' activity.slug %}?page_id={{ request.current_page.id }}" class="main-result-link">
+            <figure class="thumbnail-image">
+              {% if activity.structure.gallery and activity.structure.gallery.has_main_photo %}
+                <img src="{{ activity.structure.gallery.get_main_photo.file|thumbnail_url:'selection_result' }}" class="img-fluid" alt="{{ activity.name }}" loading="lazy" />
+                {% if activity.structure.gallery.get_main_photo.copyright %}
+                  <i class="img-author-icon" title="{{ activity.structure.gallery.get_main_photo.copyright }}" data-toggle="tooltip"></i>
+                {% endif %}
+              {% else %}
+                <img src="{% static 'img/default.jpg' %}" class="img-fluid" alt="{{ activity.name }}" loading="lazy" />
+              {% endif %}
+              <figcaption>
+                <span>{% trans "Show more..." %}</span>
+              </figcaption>
+            </figure>
+            <div class="list-item-content">
+              <h3 class="item-name">
+                {{ activity.name|truncatechars:40 }}
+              </h3>
+              <span class="item-type"> {{ activity.type|truncatechars:20 }} {% include "catalog/partials/rating.html" with object=activity %}</span>
+              <span class="item-locality">
+                {{ activity.structure.address.place.name}}
+              </span>
+            </div>
+          </a>
+          {# For retrocompatibility purposes, we show wishlit informations if `is_wishlist_instaled` is True or None. #}
+          {% if is_wishlist_installed != False %}
+            <span class="wishlist-controls-wrapper">
+              <a href="#" data-wishlist-item-add="#id_result_{{ activity.id }}">+ {{ wishlist_add_str }}</a>
+              <a href="#" data-wishlist-item-remove="#id_result_{{ activity.id }}">- {{ wishlist_remove_str }}</a>
+            </span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="clear"></div>
+  {% endblock results-list %}
+</div>
+
+<div class="col-md-12 pagination-container">
+  {% block bottom-pagination %}
+    {% include "cmsplugin_list/partials/pagination.html" %}
+  {% endblock bottom-pagination %}
+</div>
+
+

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title_tag %}
+  {% block legalnotice_titletag %}
+    {{ block.super }}
+  {% endblock legalnotice_titletag %}
+{% endblock title_tag %}
+
+{% block seo_meta_tags %}
+  {{ block.super }}
+  {% block legalnotice_metadescription %}
+  {% endblock legalnotice_metadescription %}
+{% endblock seo_meta_tags %}
+
+{% block body_id %}id_legalnotice{% endblock body_id %}
+
+{% block main %}
+  <div class="container">
+    {% block legalnotice_breadcrumb %}
+      <ul class="breadcrumb">
+        <li><a href="/">{% trans "Home" %}</a></li>
+        {% block legalnotice_breadcrumb_content %}
+        {% endblock legalnotice_breadcrumb_content %}
+      </ul>
+    {% endblock legalnotice_breadcrumb %}
+
+    {% block legalnotice_title %}
+    {% endblock legalnotice_title %}
+
+    {% block legalnotice_content %}
+    {% endblock legalnotice_content %}
+  </div>
+{% endblock main %}

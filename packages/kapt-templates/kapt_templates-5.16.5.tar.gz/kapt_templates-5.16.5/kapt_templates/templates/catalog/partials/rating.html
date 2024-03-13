@@ -1,0 +1,26 @@
+{% load repeat_tag %}
+
+{% comment %}
+  This template requires kapt-site >= 4.13.0 and kapt-catalog >= 4.1.0
+
+  if there is a default labelling
+    - if it is not a prefectoral labelling
+      - if a logo exists, display it
+      - if rating logos exist, display them
+    - else, display a default icon (star)
+
+  if there is a main labelling
+    - if a logo exists, display it
+    - if rating logos exist, display them
+{% endcomment %}
+{% if object.default_labelling %}
+  {% if object.default_labelling.touristic_label.identifier != "classement-prefectoral" %}
+    {% include "catalog/partials/rating_logo.html" with labelling=object.default_labelling %}
+  {% else %}
+    {% repeat object.default_labelling.rating %}<i class="fas fa-star"></i>{% endrepeat %}
+  {% endif %}
+{% endif %}
+
+{% if object.main_labelling and object.main_labelling != object.default_labelling %}
+  {% include "catalog/partials/rating_logo.html" with labelling=object.main_labelling %}
+{% endif %}

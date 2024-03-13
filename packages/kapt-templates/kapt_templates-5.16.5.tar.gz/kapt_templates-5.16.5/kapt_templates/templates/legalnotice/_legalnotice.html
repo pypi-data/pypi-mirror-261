@@ -1,0 +1,11 @@
+{% extends "legalnotice/_raw_content.html" %}
+
+{% block legalnotice_content %}
+  {% block legalnotice_list %}
+    <ol class="legalnotice-list">
+      {% block legalnotice_list_content %}
+        {{ block.super }}
+      {% endblock legalnotice_list_content %}
+    </ol>
+  {% endblock legalnotice_list %}
+{% endblock legalnotice_content %}

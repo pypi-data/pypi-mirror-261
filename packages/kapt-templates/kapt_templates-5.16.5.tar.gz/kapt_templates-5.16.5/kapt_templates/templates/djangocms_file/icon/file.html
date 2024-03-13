@@ -1,0 +1,26 @@
+{% load static %}
+
+<a
+  href="{{ instance.file_src.url }}"
+  {% if instance.link_target %}target="{{ instance.link_target }}"{% endif %}
+  {% if instance.link_title %}title="{{ instance.link_title }}"{% endif %}
+  {{ instance.attributes_str }}
+>
+  <img
+    src="{% static "img/icon_file.png" %}"
+    width="60"
+    height="76"
+    alt="{{ object.file.label }}"
+    loading="lazy"
+  />
+  <span class="title">
+    {% if instance.file_name %}
+      {{ instance.file_name }}
+    {% else %}
+      {{ instance.file_src.label }}
+    {% endif %}
+    {% if instance.show_file_size %}
+      <span>{{ instance.file_src.size|filesizeformat }}</span>
+    {% endif %}
+  </span>
+</a>

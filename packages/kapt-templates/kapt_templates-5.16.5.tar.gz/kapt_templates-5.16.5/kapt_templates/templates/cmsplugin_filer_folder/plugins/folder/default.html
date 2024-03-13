@@ -1,0 +1,31 @@
+{% load i18n thumbnail sekizai_tags %}
+
+
+{% firstof object.title object.folder.name  %}
+
+{% if object.view_option == "list" %}
+  <div class="folder-list" id="folder_{{ object.id }}">
+    <!--The files should go there    -->
+    {% if folder_files %}
+      <ul>
+        {% for files in folder_files %}
+          <li>{{ files }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if folder_images %}
+      <ul class="thumbnails row">
+        {% for image in folder_images %}
+          <li class="col-md-3">
+            <a href="{{ image.url }}" class="thumbnail">
+              <img src="{% thumbnail image.file 260x260 crop="True" upscale="True" %}" width="260" height="260" alt="{{ image.label }}"loading="lazy" />
+              {% if image.default_caption %}<strong>{{ image.default_caption }}</strong>{% endif %}
+              {% if image.description %}<p>{{ image.description }}</p>{% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+{% endif %}

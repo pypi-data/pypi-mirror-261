@@ -1,0 +1,10 @@
+{% extends "cms/base.html" %}
+
+{% block data_controller %}blog{% endblock data_controller %}
+{% block body_id %}id_blog{% endblock body_id %}
+
+{% block cms_content %}
+  {% block newsblog_content %}
+    {# article_list.html and article_detail.html extend this template #}
+  {% endblock newsblog_content %}
+{% endblock cms_content %}

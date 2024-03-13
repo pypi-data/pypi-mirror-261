@@ -1,0 +1,9 @@
+{% load i18n %}
+
+{% comment %}
+  To use this template:
+  - add "core.context_processors.site" to you context processors
+  - add `{% include "catalog/partials/social_share.html" %}` in your template
+{% endcomment %}
+{% blocktrans with name=activity.name site=site.name asvar SHARE_TEXT %}{{ name }} on {{ site }} website{% endblocktrans %}
+{% include "kapt_templates/partials/social_share.html" with twitter_text=SHARE_TEXT linkedin_text=SHARE_TEXT email_subject=SHARE_TEXT %}

@@ -1,0 +1,107 @@
+{% extends "cms/base.html" %}
+{% load thumbnail %}
+{% load static %}
+{% load i18n %}
+{% load cms_tags %}
+{% load menu_tags %}
+
+{% block title_tag %}{{ article.get_meta_title }}{% endblock title_tag %}
+
+{% block seo_meta_tags %}
+  {% if article.get_meta_title %}
+    <meta property="og:title" content="{{ article.get_meta_title }}" />
+    <meta name="twitter:title" content="{{ article.get_meta_title }}" />
+    <meta name="dcterms.title" content="{{ article.get_meta_title }}" />
+  {% endif %}
+
+  {% if article.get_meta_description %}
+    <meta name="description" content="{{ article.get_meta_description }}" />
+    <meta property="og:description" content="{{ article.get_meta_description }}" />
+    <meta name="twitter:description" content="{{ article.get_meta_description }}" />
+    <meta name="dcterms.description" content="{{ article.get_meta_description }}" />
+  {% endif %}
+
+  <meta property="og:url" content="{{ request.build_absolute_uri|urlencode }}" />
+  <meta property="og:type" content="Article">
+  <meta name="twitter:url" content="{{ request.build_absolute_uri|urlencode }}" />
+  <meta name="twitter:domain" content="{{ request.get_host }}" />
+  <meta name="twitter:card" content="summary">
+
+  {% thumbnail article.image 'social_share' as thumb %}
+  <meta property="og:image" content="{{ thumb.url }}">
+  <meta name="twitter:image:src" content="{{ thumb.url }}">
+{% endblock seo_meta_tags %}
+
+{% block body_id %}id_news{% endblock body_id %}
+
+{% block cms_breadcrumb %}
+  <ol class="breadcrumb">
+    {% show_breadcrumb 0 "menu/breadcrumb_kapt_news.html" %}
+  </ol>
+{% endblock cms_breadcrumb %}
+
+{% block cms_title %}
+  <h1>{% if not article.is_displayed and request.user.is_staff %}<span class="badge badge-info">{% trans "Draft" %}</span>&emsp;{% endif %}{% render_model article "title" None None "striptags" %} {% render_model_icon object %}</h1>
+{% endblock cms_title %}
+
+{% block cms_content %}
+  <div class="news--content" itemscope itemtype="{% block html_itemtype %}http://schema.org/Article{% endblock html_itemtype %}">
+    <div class="article--body">
+      {% block article_body %}
+        {% render_placeholder article.body_placeholder %}
+
+        {% block article_author %}
+          <div class="posted">
+            {% if article.get_author_name %}
+              <span itemprop="datePublished">{% blocktrans with author=article.get_author_name date=article.publication_date|date:"SHORT_DATE_FORMAT" time=article.publication_date|time:"H:i" %}Posted by {{ author }} on {{ date }} at {{ time }}{% endblocktrans %}</span>
+            {% else %}
+              <span itemprop="datePublished">{% blocktrans with date=article.publication_date|date:"SHORT_DATE_FORMAT" time=article.publication_date|time:"H:i" %}Posted on {{ date }} at {{ time }}{% endblocktrans %}</span>
+            {% endif %}
+            {% if article.changed_date %}
+              <span class="articledetail--date" itemprop="dateModified">{% blocktrans with changed_date=article.changed_date|date:"SHORT_DATE_FORMAT" changed_time=article.changed_date|time:"H:i" trimmed %} and updated on {{ changed_date }} at {{ changed_time }}{% endblocktrans %}</span>
+            {% endif %}
+          </div>
+        {% endblock article_author %}
+      {% endblock article_body %}
+    </div>
+    <div class="article--side-bar">
+      {% block sidebar %}
+        {% block event_dates %}
+          {% if article.event_start_date %}
+            <p class="article-event-datetime">
+              <span class="article-event-date">{% include "kapt_templates/partials/date_range.html" with start_date=article.event_start_date end_date=article.event_end_date %}</span><br />
+              <span class="article-event-time">{% include "kapt_templates/partials/time_range.html" with start_date=article.event_start_date end_date=article.event_end_date %}</span>
+            </p>
+          {% endif %}
+        {% endblock event_dates %}
+
+        {% block event_infos %}
+          {% if article.place or article.address or article.locality or article.contact_name or article.contact_phone or article.contact_email or article.information_link %}
+            <dl>
+              {% if article.place or article.address or article.locality %}
+                <dt>{% trans "Address" %}</dt>
+                <dd>
+                  {% if article.place %}{{ article.place }}<br />{% endif %}
+                  {% if article.address %}{{ article.address }}<br />{% endif %}
+                  {% if article.locality %}{{ article.locality }}{% endif %}
+                </dd>
+              {% endif %}
+              {% if article.contact_name or article.contact_phone or article.contact_email %}
+                <dt>{% trans "Contact" %}</dt>
+                <dd>
+                  {% if article.contact_name %}{{ article.contact_name }}<br />{% endif %}
+                  {% if article.contact_phone %}{{ article.contact_phone }}<br />{% endif %}
+                  {% if article.contact_email %}{{ article.contact_email|urlize }}{% endif %}
+                </dd>
+              {% endif %}
+              {% if article.information_link %}
+                <dt>{% trans "Website" %}</dt>
+                <dd>{{ article.information_link|urlizetrunc:30 }}</dd>
+              {% endif %}
+            </dl>
+          {% endif %}
+        {% endblock event_infos %}
+      {% endblock sidebar %}
+    </div>
+  </div>
+{% endblock cms_content %}

@@ -1,0 +1,732 @@
+# KAPT-TEMPLATES
+# Copyright (C) 2019 KAPT
+# This file is distributed under the same license as the kapt-template package.
+# Dev Kapt <dev@kapt.mobi>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-31 17:33+0100\n"
+"PO-Revision-Date: 2023-01-02 16:09+0100\n"
+"Last-Translator: Adrien Delhorme <ad@kapt.mobi>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+msgid "Forbidden"
+msgstr "Interdit"
+
+msgid "You are not allowed to access this page."
+msgstr "Vous n’êtes pas autorisé à accéder à cette page."
+
+msgid "Page not found"
+msgstr "Cette page n’a pas été trouvée"
+
+msgid "We're sorry, but the requested page could not be found."
+msgstr "Nous sommes désolés, mais la page demandée est introuvable."
+
+msgid "Server error"
+msgstr "Erreur du serveur"
+
+msgid "There's been an error. It's been reported to the site administrators via email and should be fixed shortly. Thanks for your patience."
+msgstr "Une erreur est survenue. Elle a été transmise par courriel aux administrateurs du site et sera corrigée dans les meilleurs délais. Merci pour votre patience."
+
+msgid "Maintenance"
+msgstr "Maintenance"
+
+msgid "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr "Vous utilisez un navigateur <strong>obsolète</strong>. Merci de <a href=\"http://browsehappy.com/\">mettre à jour votre navigateur</a> pour améliorer votre navigation sur internet."
+
+msgid "Tourist office partner"
+msgstr "Partenaire de l’office de tourisme"
+
+msgid "Route"
+msgstr "Itinéraire"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Environment"
+msgstr "Environnement"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Phone:"
+msgstr "Téléphone :"
+
+#, python-format
+msgid "Visit %(name)s's website in a new window"
+msgstr "Visiter le site de %(name)s dans une nouvelle fenêtre"
+
+msgid "Website:"
+msgstr "Site internet :"
+
+msgid "E-mail:"
+msgstr "E-mail:"
+
+msgid "Visit our Facebook page"
+msgstr "Visitez notre page Facebook"
+
+msgid "Visit our Twitter profile"
+msgstr "Visitez notre profil Twitter"
+
+msgid "Spoken languages"
+msgstr "Langues parlées"
+
+msgid "French"
+msgstr "Français"
+
+msgid "Opening periods"
+msgstr "Périodes d'ouverture"
+
+msgid "Rates"
+msgstr "Tarifs"
+
+msgctxt "Min price"
+msgid "From"
+msgstr "À partir de"
+
+msgid "Means of payments"
+msgstr "Moyens de paiement"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Facilities and services"
+msgstr "Équipements et services"
+
+msgid "Characteristics"
+msgstr "Caractéristiques"
+
+msgid "Area"
+msgstr "Surface"
+
+msgid "Housing type"
+msgstr "Type d’hébergement"
+
+msgid "Bedrooms"
+msgstr "Chambres"
+
+msgid "Single beds"
+msgstr "Lits simples"
+
+msgid "Double beds"
+msgstr "Lits doubles"
+
+msgid "Single bedrooms"
+msgstr "Chambres simples"
+
+msgid "Double bedrooms"
+msgstr "Chambres doubles"
+
+msgid "Suites"
+msgstr "Suites"
+
+msgid "Ranked bedrooms"
+msgstr "Chambres classées"
+
+msgid "Accessible rooms"
+msgstr "Chambres accessibles"
+
+msgid "Ranked camping plots"
+msgstr "Emplacement de camping classé"
+
+msgid "Documents to download"
+msgstr "Documents à télécharger"
+
+msgid "See also"
+msgstr "À voir aussi"
+
+msgid "See more"
+msgstr "Voir la suite"
+
+msgid "Loading..."
+msgstr "Chargement…"
+
+msgid "Update"
+msgstr "Mettre à jour"
+
+msgid "Business information"
+msgstr "Tourisme d'affaire"
+
+msgid "Informations"
+msgstr "Informations"
+
+msgid "Maximum capacity:"
+msgstr "Capacité maximum :"
+
+#, python-format
+msgid "%(capacity)s person"
+msgid_plural "%(capacity)s people"
+msgstr[0] "%(capacity)s personne"
+msgstr[1] "%(capacity)s personnes"
+
+msgid "Equipped meeting rooms quantity:"
+msgstr "Nombre de salles de réunion équipées :"
+
+msgid "Adjustable rooms quantity:"
+msgstr "Nombre de salles modulables  :"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Meetings rooms"
+msgstr "Salles de réunion"
+
+msgid "Select a metting room:"
+msgstr "Sélectionnez une salle de réunion :"
+
+msgid "Meeting room"
+msgstr "Salle de réunion"
+
+msgid "Capacity"
+msgstr "Capacité"
+
+msgid "Height"
+msgstr "Hauteur"
+
+msgid "Natural light"
+msgstr "Lumière naturelle"
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "Disposition"
+msgstr "Disposition"
+
+msgid "places"
+msgstr "lieux"
+
+msgid "N.C"
+msgstr "N.C"
+
+msgid "Oops! There are no results for your criteria"
+msgstr "Oups ! Il n’y a aucun résultats pour vos critères"
+
+#, python-format
+msgid "Oops! There are no results for thematic <strong>%(title)s</strong>"
+msgstr "Oups ! Il n’y a aucun résultats pour la thématique <strong>%(title)s</strong>"
+
+msgid "Oops! There are few results for your criteria. For more results"
+msgstr "Oups ! Il y a peu de résultats pour vos critères. Pour plus de résultats"
+
+#, python-format
+msgid "Oops! There are few results for thematic <strong>%(title)s</strong>."
+msgstr "Oups ! Il y a peu de résultats pour la thématique <strong>%(title)s</strong>."
+
+msgid "Show all accommodations"
+msgstr "Voir tous les hébergements"
+
+msgid "Show all restaurants"
+msgstr "Voir tous les restaurants"
+
+msgid "Show all activities"
+msgstr "Voir toutes les activités"
+
+msgid "Show all events"
+msgstr "Voir tous les événements"
+
+msgid "Your browser does not support the video tag."
+msgstr "Votre navigateur ne supporte pas la balise vidéo."
+
+msgid "Photo"
+msgstr "Photo"
+
+msgid "No photo"
+msgstr "Aucune photo"
+
+msgid "Previous"
+msgstr "Précédent"
+
+msgid "Next"
+msgstr "Suivant"
+
+#, python-format
+msgid "%(name)s on %(site)s website"
+msgstr "%(name)s sur le site %(site)s"
+
+msgid "Add to my selection"
+msgstr "Ajouter à ma sélection"
+
+msgid "Remove from my selection"
+msgstr "Supprimer de ma sélection"
+
+#, python-format
+msgid "%(page)s on %(site)s website"
+msgstr "%(page)s sur le site %(site)s"
+
+msgid "No image"
+msgstr "Pas d'image"
+
+msgid "View the brochure online"
+msgstr "Voir la brochure en ligne"
+
+msgctxt "verb"
+msgid "View"
+msgstr "Voir"
+
+msgid "Download the brochure"
+msgstr "Télécharger la brochure"
+
+msgid "Download"
+msgstr "Télécharger"
+
+msgid "(file missing!)"
+msgstr "(fichier manquant !)"
+
+#, python-format
+msgid "<span class=\"count-text\">No result</span>"
+msgid_plural "<span class=\"count\">%(counter)s</span> <span class=\"count-text\"> results</span>"
+msgstr[0] "<span class=\"count-text\">Aucun résultat</span>"
+msgstr[1] "<span class=\"count\">%(counter)s</span> <span class=\"count-text\"> résultats</span>"
+
+msgid "Show more..."
+msgstr "Voir plus…"
+
+msgid "Draft"
+msgstr "Brouillon"
+
+msgid "Show more"
+msgstr "Voir plus"
+
+msgid "Articles by"
+msgstr "Articles par"
+
+msgid "Archive"
+msgstr "Archive"
+
+msgid "Tag"
+msgstr "Tag"
+
+msgid "Category"
+msgstr "Catégorie"
+
+msgid "No article found."
+msgstr "Aucun article trouvé."
+
+msgid "Back"
+msgstr "Retour"
+
+msgid "previous"
+msgstr "précédent"
+
+msgid "Page"
+msgstr "Page"
+
+msgid "of"
+msgstr "sur"
+
+msgid "next"
+msgstr "suivant"
+
+msgid "by"
+msgstr "par"
+
+msgid "on"
+msgstr "le"
+
+msgid "Modified on"
+msgstr "Mis à jour le"
+
+#, python-format
+msgid "%(post)s on %(site)s website"
+msgstr "%(post)s sur le site %(site)s"
+
+#, python-format
+msgid "1 article"
+msgid_plural "%(articles)s articles"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "0 articles"
+msgstr ""
+
+msgid "Authors"
+msgstr "Auteurs"
+
+msgid "No author found."
+msgstr "Aucun auteur trouvé."
+
+msgid "Categories"
+msgstr "Catégories"
+
+msgid "No categories found."
+msgstr "Aucunes catégories trouvées."
+
+msgid "Tags"
+msgstr ""
+
+msgid "No files were found in the specified folder."
+msgstr "Aucun fichier trouvé dans le dossier choisi."
+
+msgid "Modules"
+msgstr "Modules"
+
+msgid "Please accept YouTube cookies to play this video."
+msgstr "Veuillez accepter les cookies de YouTube pour lire cette vidéo."
+
+msgid "By accepting you will be accessing content from YouTube, a service provided by an external third party."
+msgstr "En acceptant, vous accéderez au contenu de YouTube, un service fourni par un tiers externe."
+
+msgid "Show the YouTube privacy policy"
+msgstr "Voir la politique de confidentialité de Youtube"
+
+msgid "If you accept these cookies, your choice will be saved and the video will load."
+msgstr "Si vous acceptez ces cookies, votre choix sera enregistré et la vidéo se chargera."
+
+msgid "Accept YouTube Content"
+msgstr "Accepter le contenu de YouTube"
+
+msgid "Your browser doesn't support this video format."
+msgstr "Votre navigateur ne supporte pas ce format vidéo."
+
+msgid "Fields marked with <span class=\"required-field\">*</span> are required"
+msgstr "Les champs marqués d’un <span class=\"required-field\">*</span> sont requis"
+
+msgid "Submit"
+msgstr "Envoyer"
+
+#, python-format
+msgid "Posted by %(author)s on %(date)s at %(time)s"
+msgstr "Posté par %(author)s le %(date)s à %(time)s"
+
+#, python-format
+msgid "Posted on %(date)s at %(time)s"
+msgstr "Posté le %(date)s à %(time)s"
+
+#, python-format
+msgid "and updated on %(changed_date)s at %(changed_time)s"
+msgstr "et mis à jour le %(changed_date)s à %(changed_time)s"
+
+msgid "Website"
+msgstr "Site internet"
+
+#, python-format
+msgid "Posted by %(author)s on %(publication_date)s at %(publication_time)s"
+msgstr "Posté par %(author)s le %(publication_date)s à %(publication_time)s"
+
+#, python-format
+msgid "Posted on %(publication_date)s at %(publication_time)s"
+msgstr "Posté le %(publication_date)s à %(publication_time)s"
+
+msgid "No article available."
+msgstr "Aucun article disponible."
+
+#, python-format
+msgid "Go to %(site_name)s"
+msgstr "Aller sur %(site_name)s"
+
+#, python-format
+msgid "<span class=\"date-range-on\">On</span> <span class=\"date-range-start date-range-day\">%(day)s</span> <span class=\"date-range-start date-range-month\">%(month)s</span> <span class=\"date-range-start date-range-year\">%(year)s</span>"
+msgstr "<span class=\"date-range-on\">Le</span> <span class=\"date-range-start date-range-day\">%(day)s</span> <span class=\"date-range-start date-range-month\">%(month)s</span> <span class=\"date-range-start date-range-year\">%(year)s</span>"
+
+#, python-format
+msgid "<span class=\"date-range-from\">From</span> <span class=\"date-range-start date-range-day\">%(start_day)s</span> <span class=\"date-range-to\">to</span> <span class=\"date-range-end date-range-day\">%(end_day)s</span> <span class=\"date-range-end date-range-month\">%(end_month)s</span> <span class=\"date-range-end date-range-year\">%(end_year)s</span>"
+msgstr "<span class=\"date-range-from\">Du</span> <span class=\"date-range-start date-range-day\">%(start_day)s</span> <span class=\"date-range-to\">au</span> <span class=\"date-range-end date-range-day\">%(end_day)s</span> <span class=\"date-range-end date-range-month\">%(end_month)s</span> <span class=\"date-range-end date-range-year\">%(end_year)s</span>"
+
+#, python-format
+msgid "<span class=\"date-range-from\">From</span> <span class=\"date-range-start date-range-day\">%(start_day)s</span> <span class=\"date-range-start date-range-month\">%(start_month)s</span> <span class=\"date-range-to\">to</span> <span class=\"date-range-end date-range-day\">%(end_day)s</span> <span class=\"date-range-end date-range-month\">%(end_month)s</span> <span class=\"date-range-end date-range-year\">%(end_year)s</span>"
+msgstr "<span class=\"date-range-from\">Du</span> <span class=\"date-range-start date-range-day\">%(start_day)s</span> <span class=\"date-range-start date-range-month\">%(start_month)s</span> <span class=\"date-range-to\">au</span> <span class=\"date-range-end date-range-day\">%(end_day)s</span> <span class=\"date-range-end date-range-month\">%(end_month)s</span> <span class=\"date-range-end date-range-year\">%(end_year)s</span>"
+
+#, python-format
+msgid "<span class=\"date-range-from\">From</span> <span class=\"date-range-start date-range-day\">%(start_day)s</span> <span class=\"date-range-start date-range-month\">%(start_month)s</span> <span class=\"date-range-start date-range-year\">%(start_year)s</span> <span class=\"date-range-to\">to</span> <span class=\"date-range-end date-range-day\">%(end_day)s</span> <span class=\"date-range-end date-range-month\">%(end_month)s</span> <span class=\"date-range-end date-range-year\">%(end_year)s</span>"
+msgstr "<span class=\"date-range-from\">Du</span> <span class=\"date-range-start date-range-day\">%(start_day)s</span> <span class=\"date-range-start date-range-month\">%(start_month)s</span> <span class=\"date-range-start date-range-year\">%(start_year)s</span> <span class=\"date-range-to\">au</span> <span class=\"date-range-end date-range-day\">%(end_day)s</span> <span class=\"date-range-end date-range-month\">%(end_month)s</span> <span class=\"date-range-end date-range-year\">%(end_year)s</span>"
+
+msgid "Legal notice"
+msgstr "Mentions légales"
+
+msgid "Cookies management"
+msgstr "Gestion des cookies"
+
+msgid "Credits"
+msgstr "Crédits"
+
+msgid "Sitemap"
+msgstr "Plan du site"
+
+msgid "Made in France by"
+msgstr "Fait en France par"
+
+msgid "Share on Facebook"
+msgstr "Partager sur Facebook"
+
+msgid "Share on Twitter"
+msgstr "Partager sur Twitter"
+
+msgid "Share on LinkedIn"
+msgstr "Partager sur Linkedln"
+
+msgid "Share by email"
+msgstr "Partager par email"
+
+#, python-format
+msgid "at %(start_time)s"
+msgstr "à %(start_time)s"
+
+#, python-format
+msgid "From %(start_time)s to %(end_time)s"
+msgstr "De %(start_time)s à %(end_time)s"
+
+msgid "My selection"
+msgstr "Ma sélection"
+
+msgid "Home"
+msgstr "Accueil"
+
+msgid "Registration page"
+msgstr "Page d'inscription"
+
+msgid "Logged out"
+msgstr "Déconnecté"
+
+msgid "You've been logged out."
+msgstr "Vous avez été déconnecté."
+
+msgid "Login"
+msgstr "Connexion"
+
+msgid "Your username and password didn't match. Please try again."
+msgstr "Votre pseudonyme et votre mot de passe ne correspondent pas. Veuillez réessayer."
+
+msgid "Your account doesn't have access to this page. To proceed, please login with an account that has access."
+msgstr "Votre compte n'a pas accès à cette page. Pour continuer, veuillez vous connecter avec un compte ayant les accès."
+
+msgid "Please login to see this page."
+msgstr "Vous n’êtes pas autorisé à accéder à cette page."
+
+msgid "Lost password?"
+msgstr "Mot de passe oublié ?"
+
+msgid "Reset password"
+msgstr "Réinitialiser le mot de passe"
+
+msgid "Your password has been updated successfully!"
+msgstr "Votre mot de passe a été mis à jour avec succès !"
+
+msgid "Password reset"
+msgstr "Réinitialisation de mot de passe"
+
+msgid "Enter new password"
+msgstr "Entrez le nouveau mot de passe"
+
+msgid "Password reset unsuccessful"
+msgstr "Echec de la réinitialisation du mot de passe"
+
+msgid "Please enter your new password twice so we can verify you typed it in correctly."
+msgstr "Veuillez entrer votre nouveau mot de passe deux fois afin de vérifier que vous l'avez écrit correctement."
+
+msgid "Change my password"
+msgstr "Changer de mot de passe"
+
+msgid "The password reset link was invalid, possibly because it has already been used. Please request a new password reset."
+msgstr "Le lien de réinitialisation du mot de passe est invalide, probablement parce qu'il a déjà été utilisé. Veuillez relancer une procédure de réinitialisation du mot de passe."
+
+msgid "An email has been sent to the address you entered."
+msgstr "Un email a bien été envoyé à l'adresse spécifiée."
+
+#, python-format
+msgid ""
+"\n"
+"  Hi,\n"
+"You are receiving this email because you asked to reset your password on %(site_name)s."
+msgstr ""
+"\n"
+"  Bonjour,\n"
+"Vous avez reçu cet email parce que vous avez demandé une réinitialisation de votre mot de passe sur %(site_name)s."
+
+msgid "Please open this url on your browser in order to reset your password :"
+msgstr "Ouvrez ce lien dans votre navigateur afin de réinitialiser votre mot de passe :"
+
+msgid "Here's your username, in case you forget it :"
+msgstr "Voici votre nom d'utilisateur, au cas où vous l'auriez oublié :"
+
+msgid "Thanks for using"
+msgstr "Merci d'utiliser"
+
+msgid "Forgotten your password? Enter your email address below, and we’ll email instructions for setting a new one."
+msgstr "Vous avez oublié votre mot de passe ? Entrez votre adresse email ci dessous, et nous vous enverrons les instruction pour le réinitialiser."
+
+msgid "Reset my password"
+msgstr "Réinitialiser mon mot de passe"
+
+msgid "Suggestions :"
+msgstr "Suggestions :"
+
+msgid "No results found for"
+msgstr "Pas de résultats pour"
+
+msgctxt "nb_pages"
+msgid "of"
+msgstr "sur"
+
+msgid "Travel notebook"
+msgstr "Carnet de voyage"
+
+msgid "Your travel notebook is empty! Explore the website and add your favorite places in your travel notebook."
+msgstr "Votre carnet de voyage est vide ! Explorez le site et ajoutez vos lieux favoris à votre sélection."
+
+msgid "Are you sure?"
+msgstr "Êtes vous sûre ?"
+
+msgid "Would you empty your travel notebook?"
+msgstr "Voulez-vous vider votre carnet de voyage ?"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgctxt "verb"
+msgid "Empty"
+msgstr "Vider"
+
+msgid "Your travel notebook"
+msgstr "Votre carnet de voyage"
+
+msgid "Mail:"
+msgstr "E-mail :"
+
+msgid "Export to PDF"
+msgstr "Exporter en PDF"
+
+msgctxt "Minimum price"
+msgid "From"
+msgstr "À partir de"
+
+msgid "per night"
+msgstr "la nuit"
+
+#, python-format
+msgid "%(first_name)s %(last_name)s's travel notebook"
+msgstr "Carnet de voyage de %(first_name)s %(last_name)s"
+
+#, python-format
+msgid "<p>Hello,</p> <p><b>%(first_name)s %(last_name)s</b> (%(email_from)s) sent you the attached travel notebook.</p> <hr /> <br />"
+msgstr "<p>Bonjour,</p> <p><b>%(first_name)s %(last_name)s</b> (%(email_from)s) vous a envoyé le carnet de voyage ci-joint.</p> <hr /> <br />"
+
+#, python-format
+msgid ""
+"\n"
+"Hello,\n"
+"\n"
+"%(first_name)s %(last_name)s (%(email_from)s) sent you the attached travel notebook.\n"
+msgstr ""
+"\n"
+"Bonjour,\n"
+"\n"
+"%(first_name)s %(last_name)s (%(email_from)s) vous a envoyé le carnet de voyage ci-joint.\n"
+
+msgid "Send your travel notebook to your friends"
+msgstr "Envoyez votre carnet de voyage à vos amis"
+
+msgid "Send"
+msgstr "Envoyer"
+
+msgid "No results, use the search field above to look for a some specific term in the site content."
+msgstr "Aucun résultat, utilisez le champ de recherche ci-dessus pour rechercher un terme spécifique dans le contenu du site."
+
+#, python-format
+msgid "%(counter)s result match your research"
+msgid_plural "%(counter)s results match your research"
+msgstr[0] "%(counter)s resultat correspond à votre recherche"
+msgstr[1] "%(counter)s resultats correspondent à votre recherche"
+
+#~ msgid "Featured on"
+#~ msgstr "Mis à la une le"
+
+#~ msgid "results corresponding to your request"
+#~ msgstr "résultats correspondant à votre recherche"
+
+#~ msgid "New password:"
+#~ msgstr "Nouveau mot de passe"
+
+#~ msgid "Confirm password:"
+#~ msgstr "Confirmez le mot de passe :"
+
+#~ msgid "Email address:"
+#~ msgstr "Adresse email :"
+
+#~ msgid "Comfort and services"
+#~ msgstr "Équipements et services"
+
+#~ msgid "Area:"
+#~ msgstr "Superficie :"
+
+#~ msgid "Type:"
+#~ msgstr "Type : "
+
+#~ msgid "Capacity:"
+#~ msgstr "Capacité :"
+
+#~ msgid "Document"
+#~ msgstr "Document"
+
+#~ msgid "Send to friends"
+#~ msgstr "Envoyer à des amis"
+
+#~ msgid "Opening dates:"
+#~ msgstr "Périodes d’ouvertures :"
+
+#~ msgid "Visit our Google+ page"
+#~ msgstr "Visitez notre page Google+"
+
+#~ msgid "Share"
+#~ msgstr "Partager"
+
+#~ msgid "Share on Google+"
+#~ msgstr "Partager sur Google+"
+
+#~ msgid "Legal notices"
+#~ msgstr "Mentions légales"
+
+#~ msgid "H:i"
+#~ msgstr "H\\hi"
+
+#~ msgid "Empty"
+#~ msgstr "Vider"
+
+#~ msgid "<span class=\"%(class_on)s\">On</span> <span class=\"%(class_date_start)s\">%(date)s</span>"
+#~ msgstr "<span class=\"%(class_on)s\">Le</span> <span class=\"%(class_date_start)s\">%(date)s</span>"
+
+#~ msgid "until"
+#~ msgstr "jusqu’à"
+
+#~ msgid "d M."
+#~ msgstr "d M."
+
+#~ msgid "l"
+#~ msgstr "l"
+
+#~ msgid "d b."
+#~ msgstr "d b."
+
+#~ msgid "on %(event_date)s"
+#~ msgstr "Le %(event_date)s"
+
+#~ msgid "From %(event_start_date)s to %(event_end_date)s"
+#~ msgstr "Du %(event_start_date)s au %(event_end_date)s"
+
+#~ msgid "Fax:"
+#~ msgstr "Fax :"
+
+#~ msgid "Back to home page"
+#~ msgstr "Retour à la page d’accueil"
+
+#~ msgid "Back to news page"
+#~ msgstr "Retour à la liste des actualités"
+
+#~ msgid "News"
+#~ msgstr "Actualités"
+
+#~ msgid "Posted"
+#~ msgstr "Posté"
+
+#~ msgid "at"
+#~ msgstr "à"
