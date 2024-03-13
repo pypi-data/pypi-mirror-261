@@ -1,0 +1,4 @@
+maturin[patchelf]
+polars
+pre-commit
+ipykernel
