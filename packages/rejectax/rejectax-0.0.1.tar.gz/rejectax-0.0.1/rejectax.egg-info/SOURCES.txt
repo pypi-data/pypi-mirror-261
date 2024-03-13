@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rejectax/__init__.py
+rejectax/rejectax.py
+rejectax.egg-info/PKG-INFO
+rejectax.egg-info/SOURCES.txt
+rejectax.egg-info/dependency_links.txt
+rejectax.egg-info/requires.txt
+rejectax.egg-info/top_level.txt
