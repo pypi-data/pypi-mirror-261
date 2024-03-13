@@ -1,0 +1,1 @@
+Add a 'rollback' method to the Task API for removing changes to persistent stores performed by the task.
