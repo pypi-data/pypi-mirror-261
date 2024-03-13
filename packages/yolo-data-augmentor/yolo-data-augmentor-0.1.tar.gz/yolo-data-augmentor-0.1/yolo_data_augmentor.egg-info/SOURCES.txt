@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+yolo_data_augmentor.egg-info/PKG-INFO
+yolo_data_augmentor.egg-info/SOURCES.txt
+yolo_data_augmentor.egg-info/dependency_links.txt
+yolo_data_augmentor.egg-info/entry_points.txt
+yolo_data_augmentor.egg-info/requires.txt
+yolo_data_augmentor.egg-info/top_level.txt
