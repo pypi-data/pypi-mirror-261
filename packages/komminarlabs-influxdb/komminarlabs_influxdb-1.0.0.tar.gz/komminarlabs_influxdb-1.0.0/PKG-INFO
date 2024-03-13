@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: komminarlabs_influxdb
+Version: 1.0.0
+Summary: A Pulumi package for creating and managing InfluxDB resources.
+Home-page: https://www.influxdata.com
+License: Apache-2.0
+Project-URL: Repository, https://github.com/komminarlabs/pulumi-influxdb
+Keywords: pulumi influxdb category/database
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pulumi-influxdb
+Pulumi provider for InfluxDB
+
+
