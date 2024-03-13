@@ -1,0 +1,8 @@
+lcsvec-0.0.1.dist-info/RECORD,,
+lcsvec-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lcsvec-0.0.1.dist-info/METADATA,sha256=CfPOmlLtLMxwajRuFH5jTfZ1sT5ulChr6Mf5YOpSIU8,17106
+lcsvec-0.0.1.dist-info/WHEEL,sha256=JIq8iPzSKcbdUO9BggjLgohzoSsx5T8EDse9oRfeqAc,117
+lcsvec-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lcsvec/__init__.py,sha256=-31VWP9YzDQ8kXJqqPGB95M5PfLjTU_4SL9euY7XVcA,189
+lcsvec/lcs_bind.pyi,sha256=2DN37l0AXK25NyAOwAXwfaCecB6DbQRBiue_oLKVTy0,252
+lcsvec/lcsvec_ext.abi3.so,sha256=F23oMNS3QfyH-nrsPK-3Zc2Ow4JAYiP5fE_kxC3lvQ4,330600
