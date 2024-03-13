@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bitlinear/__init__.py
+bitlinear/bitlinear.py
+bitlinear_pytorch.egg-info/PKG-INFO
+bitlinear_pytorch.egg-info/SOURCES.txt
+bitlinear_pytorch.egg-info/dependency_links.txt
+bitlinear_pytorch.egg-info/requires.txt
+bitlinear_pytorch.egg-info/top_level.txt
+tests/test_bitlinear.py
