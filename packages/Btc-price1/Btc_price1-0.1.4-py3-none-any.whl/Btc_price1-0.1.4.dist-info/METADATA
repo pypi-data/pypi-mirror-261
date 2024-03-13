@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Btc-price1
+Version: 0.1.4
+Summary: 基于Paddle构建简单神经网络比特币价格预测
+Home-page: https://github.com/toy1v/Btc_price1
+Author: toy1v
+License: MIT License
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# (Btc_price_forecast/setup.py)
+基于Paddle构建简单神经网络比特币价格预测
