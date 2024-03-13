@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+nickgenfast/__init__.py
+nickgenfast/adjectives.txt
+nickgenfast/nickgenfast.py
+nickgenfast/nouns.txt
+nickgenfast/verbs.txt
+nickgenfast.egg-info/PKG-INFO
+nickgenfast.egg-info/SOURCES.txt
+nickgenfast.egg-info/dependency_links.txt
+nickgenfast.egg-info/top_level.txt
