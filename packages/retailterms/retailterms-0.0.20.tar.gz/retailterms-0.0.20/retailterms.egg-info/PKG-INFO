@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: retailterms
+Version: 0.0.20
+Summary: NLP Library to find Retail terms
+Author: Marcel Tino
+Author-email: <marceltino92@gmail.com>
+Keywords: retail,retailterms
+Description-Content-Type: text/markdown
+
+This library helps to find Retail Terms that are there in unstructured text. Developers can build on top of it.
