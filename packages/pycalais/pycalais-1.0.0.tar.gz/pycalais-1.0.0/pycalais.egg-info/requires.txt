@@ -1,0 +1,4 @@
+openai>=0.10.2
+
+[:python_version < "3.8"]
+typing-extensions
