@@ -1,0 +1,32 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "wheel",
+    "setuptools",
+    "cmake",
+    "importlib_metadata",
+    "numpy",
+    "parameterized"
+]
+
+[project]
+name = "pyurx"
+version = "0.0.1"
+dependencies = [
+    "cmake_build_extension",
+    "numpy",
+    "parameterized",
+    "cmake"
+]
+description = "URX python binding"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: Unix",
+    "Operating System :: Microsoft",
+    "Programming Language :: C++",
+    "Programming Language :: Python",
+    ]
+requires-python = ">=3.9"
+
+[tool.setuptools]
+py-modules = []

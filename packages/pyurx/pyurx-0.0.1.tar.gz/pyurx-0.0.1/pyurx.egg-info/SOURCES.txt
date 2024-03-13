@@ -1,0 +1,6 @@
+pyproject.toml
+pyurx.egg-info/PKG-INFO
+pyurx.egg-info/SOURCES.txt
+pyurx.egg-info/dependency_links.txt
+pyurx.egg-info/requires.txt
+pyurx.egg-info/top_level.txt

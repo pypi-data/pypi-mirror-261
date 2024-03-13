@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyurx
+Version: 0.0.1
+Summary: URX python binding
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Requires-Dist: cmake_build_extension
+Requires-Dist: numpy
+Requires-Dist: parameterized
+Requires-Dist: cmake
