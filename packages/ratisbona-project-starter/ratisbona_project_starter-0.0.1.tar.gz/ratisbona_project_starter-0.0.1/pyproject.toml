@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ratisbona_project_starter"
+version = "0.0.1"
+authors = [
+  { name="Ulrich Schwenk", email="ulrich-schwenk@gmx.de" },
+]
+description = "An application sthat is able to start a python project in a manner that can be published"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "typer==0.9.0"
+]
+
+[project.scripts]
+ratisbona_project_starter = "ratisbona_project_starter.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "pylint",
+    # Code style
+    "black[d]",
+    # Strict typing
+    "mypy",
+    # Test coverage
+    "coverage",
+]
+
+
+[project.urls]
+"Homepage" = "https://sourceforge.net/projects/ratisbona-project-starter/"
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ratisbona_project_starter"]
