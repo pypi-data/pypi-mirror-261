@@ -1,0 +1,8 @@
+attrs>=19.2.0
+compas==1.16.0
+networkx>=2.5
+numpy
+progressbar2>=3.53
+pyclipper>=1.2.0
+rdp>=0.8
+libigl>=2.4.1
