@@ -1,0 +1,2 @@
+funcy<2
+requests<3,>=2.24.0
