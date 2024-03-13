@@ -1,0 +1,10 @@
+aiohttp
+cloudscraper
+bs4
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest

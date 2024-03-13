@@ -1,0 +1,2 @@
+[console_scripts]
+realpython = ssf_downloader.scripts.ssf_downloader:main

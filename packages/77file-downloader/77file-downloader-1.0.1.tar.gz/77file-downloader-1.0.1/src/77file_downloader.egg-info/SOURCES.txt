@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+src/77file_downloader.egg-info/PKG-INFO
+src/77file_downloader.egg-info/SOURCES.txt
+src/77file_downloader.egg-info/dependency_links.txt
+src/77file_downloader.egg-info/entry_points.txt
+src/77file_downloader.egg-info/requires.txt
+src/77file_downloader.egg-info/top_level.txt
+src/ssf_downloader/__init__.py
+src/ssf_downloader/client.py
+src/ssf_downloader/models.py
+src/ssf_downloader/scripts/__init__.py
+src/ssf_downloader/scripts/ssf_downloader.py
