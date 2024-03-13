@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: spchat
+Version: 0.1.2
+Summary: Chat utility library by Spiral.AI
+Author-email: ksterx <kostonerx@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: chromadb
+Requires-Dist: loguru
+Requires-Dist: openai
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: jupyterlab ; extra == 'dev'
+Provides-Extra: gpu
+Requires-Dist: flash-attn ; extra == 'gpu'
+
+# SpiralChat
+
+## Installation
+
+```bash
+pip install spchat
+```
+
+- Development
+
+```bash
+git clone https://github.com/Spiral-AI/SpiralChat.git
+cd SpiralChat
+pip install -e ".[dev]"
+```
