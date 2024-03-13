@@ -1,0 +1,13 @@
+FruceAPI/__init__.py,sha256=4NKVjDklYdXIvAhQUBKyn_Mgpw8LqBIQks8Q10s5Xr8,21110
+FruceAPI/__pycache__/__init__.cpython-311.pyc,sha256=gNdYtwdAAFdhJ3Ihki1epoMP2zJsIWE-IVCU-ymXyAU,33599
+FruceAPI/exceptions/__init__.py,sha256=2VhiRD9rSMhTe8iw57qNy9kib42PzO1Sy1kwnKtzY44,297
+FruceAPI/exceptions/__pycache__/__init__.cpython-311.pyc,sha256=TjNvNacGbtqvgg09GSMGcnTIy2i2iXhHcNfDQz-JIL8,1391
+FruceAPI/objects/__init__.py,sha256=c3jv0wOxI4cMsO1F3OV2ekvgS5JnyR5SqN28bLDAg-4,8215
+FruceAPI/objects/__pycache__/__init__.cpython-311.pyc,sha256=_XLG54uNOIM0SDwuka8utYMaPKT9x1DMX1KSUERWgFk,13229
+FruceAPI/objects/__pycache__/__init___.cpython-311.pyc,sha256=lrKQa2H2eAVeiJyTqOe0bFqFQDsACkD6CNQ5nKJ7FgU,13167
+FruceAPI/utils/__init__.py,sha256=labMSTizeVLFWesQ1bMJhbVSLAj5t_ab--rvjqH29ow,453
+FruceAPI/utils/__pycache__/__init__.cpython-311.pyc,sha256=Iwo4gC3hj-x66TmZncIwclXM07evxkN8Pe2NMFl7XVI,895
+FruceAPI-1.2.3.dist-info/METADATA,sha256=N6_LstWG7IpDK4u1bVA_Ws5QCWebqJmYU9ST-hlG37s,2377
+FruceAPI-1.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+FruceAPI-1.2.3.dist-info/top_level.txt,sha256=q1wdk3JzKb7-LFf2ZWNTVMM9ByDhGrH5zFC5I64gpLM,9
+FruceAPI-1.2.3.dist-info/RECORD,,
