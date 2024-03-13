@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: TineAppiumFlutterLibrary
+Version: 1.1.0
+Summary: This Library is support to appiumlibrary and appiumflutterlibrary
+Home-page: https://github.com/pornpawit08/TineAppiumFlutterLibrary.git
+Author: Pornpawit Suttha
+Author-email: pornpawit14suttha@gmail.com
+License: UNKNOWN
+Description: # TineAppiumFlutterLibrary
+        This Library is support AppiumLibrary and AppiumFlutterLibrary
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Library
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
