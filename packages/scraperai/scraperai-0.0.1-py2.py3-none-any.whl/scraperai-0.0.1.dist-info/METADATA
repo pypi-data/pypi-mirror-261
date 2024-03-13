@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: scraperai
+Version: 0.0.1
+Summary: AI scraping util
+Home-page: https://github.com/scraperai/scraperai
+Author: Iakov Kaiumov
+Author-email: help@scraper-ai.com
+License: GPL-3.0 license
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: htmlmin
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Requires-Dist: selenium (==4.9.1)
+Requires-Dist: webdriver-manager
+Requires-Dist: openai
+Requires-Dist: tiktoken
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: langchain-openai
+Requires-Dist: langchain-text-splitters
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: tabulate
+Requires-Dist: python-dotenv
+Requires-Dist: tqdm
+Requires-Dist: retry
+Requires-Dist: Pillow
+Requires-Dist: pydantic
+Requires-Dist: click
+
+# Scraper AI 
