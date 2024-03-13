@@ -1,0 +1,13 @@
+hdbscan
+ipykernel
+nbformat>=4.2.0
+numpy
+pandas
+plotly
+scikit-learn
+scipy
+seaborn
+statsmodels
+tqdm
+umap-learn
+wheel
