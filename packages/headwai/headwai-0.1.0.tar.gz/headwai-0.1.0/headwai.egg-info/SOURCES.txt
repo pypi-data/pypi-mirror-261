@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+headwai/__init__.py
+headwai/headwai.py
+headwai.egg-info/PKG-INFO
+headwai.egg-info/SOURCES.txt
+headwai.egg-info/dependency_links.txt
+headwai.egg-info/requires.txt
+headwai.egg-info/top_level.txt
