@@ -1,0 +1,12 @@
+jijmodeling-1.4.1.dist-info/METADATA,sha256=D0zWooG9sgTrJIuHnLd17t8Yq-UddDoEmpjz9v4HKDY,12958
+jijmodeling-1.4.1.dist-info/WHEEL,sha256=yyFKlh2Hj7-pCR68FwtlgdrTCrBLngJxML8qfYNOvS0,95
+jijmodeling-1.4.1.dist-info/license_files/LICENSE.txt,sha256=llUjgcEN5bUeFlj1RqxJxDMxUnlYvowLsldCF6Lwq8c,3445
+jijmodeling/dataset.py,sha256=L8yUjKp81m6_CoSfdPJMoJmlCQ_gf7n8okURTKRMXaw,190
+jijmodeling/dataset.pyi,sha256=i3Y3e7i9w66IUSR6OobnxRJ3YYtWSZ2tiWfKga3mElM,4129
+jijmodeling/experimental.py,sha256=aUbfLKR5snV8jqyWXvvhV_1OEU66IbO9CI-qqhKADf8,587
+jijmodeling/experimental.pyi,sha256=mjW_OGT7ftb46TxMcnuhv7VsUi5LIV2P_fbvY3s6LI0,7717
+jijmodeling/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jijmodeling/__init__.py,sha256=jJ6o5wp3MPAP1uR3dqSvjaXG57t1IwcS8ojqPpZL-gU,45
+jijmodeling/__init__.pyi,sha256=DZgSrniBXKBkM-m9zuzcoPkxa2Z0mTbe5YI7Kgy1u6w,119159
+jijmodeling/_jijmodeling.cp310-win_amd64.pyd,sha256=_PyhkFDfwMONQgN_4VV462alQsh0m467ecvSXV3wlL8,4774400
+jijmodeling-1.4.1.dist-info/RECORD,,
