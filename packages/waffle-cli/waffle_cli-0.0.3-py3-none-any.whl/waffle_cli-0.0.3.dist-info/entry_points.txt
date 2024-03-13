@@ -1,0 +1,3 @@
+[console_scripts]
+waffle=waffle_cli.cli:main
+
