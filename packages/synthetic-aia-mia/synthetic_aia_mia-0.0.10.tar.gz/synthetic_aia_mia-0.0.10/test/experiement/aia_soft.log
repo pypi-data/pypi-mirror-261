@@ -1,0 +1,722 @@
+DEBUG:root:       soft0     soft1  attribute
+0   1.359122 -1.481949        1.0
+1  -0.085317 -1.070847        0.0
+2  -0.063140  0.723418        1.0
+3   0.953007  1.106180        1.0
+5  -0.101511  0.000536        1.0
+..       ...       ...        ...
+94       NaN       NaN        NaN
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+97       NaN       NaN        NaN
+98       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 129231284399888 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/node_ip_address.json.lock
+DEBUG:filelock:Lock 129231284399888 acquired on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 129231284399888 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/node_ip_address.json.lock
+DEBUG:filelock:Lock 129231284399888 released on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 129231284398160 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231284398160 acquired on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 129231284398160 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231284398160 released on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 129231399712144 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231399712144 acquired on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 129231399712144 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231399712144 released on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 129231399712144 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231399712144 acquired on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 129231399712144 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231399712144 released on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 129231399712144 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231399712144 acquired on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 129231399712144 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231399712144 released on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 129231284191824 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231284191824 acquired on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 129231284191824 on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:filelock:Lock 129231284191824 released on /tmp/ray/session_2024-03-12_11-56-05_334962_431384/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+1  -0.502390  0.839925        0.0
+2   0.949921  0.846837        1.0
+3   1.376605 -1.037272        1.0
+4   0.188131  0.790848        1.0
+5   1.355615  0.205806        1.0
+..       ...       ...        ...
+92       NaN       NaN        NaN
+93       NaN       NaN        NaN
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 132426458919632 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/node_ip_address.json.lock
+DEBUG:filelock:Lock 132426458919632 acquired on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 132426458919632 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/node_ip_address.json.lock
+DEBUG:filelock:Lock 132426458919632 released on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 132426477105360 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426477105360 acquired on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132426477105360 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426477105360 released on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 132426458922896 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426458922896 acquired on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132426458922896 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426458922896 released on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 132426477105360 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426477105360 acquired on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132426477105360 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426477105360 released on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 132426477105360 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426477105360 acquired on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132426477105360 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426477105360 released on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 132426477105360 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426477105360 acquired on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132426477105360 on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:filelock:Lock 132426477105360 released on /tmp/ray/session_2024-03-12_11-56-40_241032_432401/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+2   1.494102  0.433583        1.0
+3   0.439358  0.331018        0.0
+4  -0.902308  1.004712        1.0
+5  -0.139089  1.105149        0.0
+6  -0.028129  1.370480        1.0
+..       ...       ...        ...
+91       NaN       NaN        NaN
+92       NaN       NaN        NaN
+93       NaN       NaN        NaN
+96       NaN       NaN        NaN
+97       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 125074295292112 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/node_ip_address.json.lock
+DEBUG:filelock:Lock 125074295292112 acquired on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 125074295292112 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/node_ip_address.json.lock
+DEBUG:filelock:Lock 125074295292112 released on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 125074277012880 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074277012880 acquired on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 125074277012880 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074277012880 released on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 125074277053264 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074277053264 acquired on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 125074277053264 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074277053264 released on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 125074295091344 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074295091344 acquired on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 125074295091344 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074295091344 released on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 125074277053264 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074277053264 acquired on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 125074277053264 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074277053264 released on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 125074277053264 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074277053264 acquired on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 125074277053264 on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:filelock:Lock 125074277053264 released on /tmp/ray/session_2024-03-12_12-00-52_118614_433284/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+1   1.520437  1.787744        0.0
+2   0.402784 -0.480826        0.0
+3  -0.552262  0.219852        1.0
+4   0.715266 -0.447323        0.0
+5  -1.290335  1.589329        0.0
+..       ...       ...        ...
+92       NaN       NaN        NaN
+93       NaN       NaN        NaN
+94       NaN       NaN        NaN
+97       NaN       NaN        NaN
+98       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 138115925976144 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/node_ip_address.json.lock
+DEBUG:filelock:Lock 138115925976144 acquired on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 138115925976144 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/node_ip_address.json.lock
+DEBUG:filelock:Lock 138115925976144 released on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 138115924558096 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115924558096 acquired on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 138115924558096 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115924558096 released on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 138115906261904 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115906261904 acquired on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 138115906261904 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115906261904 released on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 138115924558096 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115924558096 acquired on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 138115924558096 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115924558096 released on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 138115924558096 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115924558096 acquired on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 138115924558096 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115924558096 released on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 138115924558096 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115924558096 acquired on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 138115924558096 on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:filelock:Lock 138115924558096 released on /tmp/ray/session_2024-03-12_12-01-28_905365_434268/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+1   1.395390 -0.294236        0.0
+3   1.386802  0.148605        1.0
+4  -1.461779  0.264944        0.0
+5   1.480410 -1.442690        0.0
+6  -0.332841  0.074697        1.0
+..       ...       ...        ...
+91       NaN       NaN        NaN
+93       NaN       NaN        NaN
+95       NaN       NaN        NaN
+97       NaN       NaN        NaN
+98       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 128563523678288 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/node_ip_address.json.lock
+DEBUG:filelock:Lock 128563523678288 acquired on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 128563523678288 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/node_ip_address.json.lock
+DEBUG:filelock:Lock 128563523678288 released on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 128563523678288 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563523678288 acquired on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128563523678288 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563523678288 released on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 128563541316752 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563541316752 acquired on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128563541316752 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563541316752 released on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 128563541316752 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563541316752 acquired on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128563541316752 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563541316752 released on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 128563541316752 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563541316752 acquired on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128563541316752 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563541316752 released on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 128563541999888 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563541999888 acquired on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128563541999888 on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:filelock:Lock 128563541999888 released on /tmp/ray/session_2024-03-12_12-02-35_676182_435171/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0  -1.223485  1.352228        1.0
+1  -1.674477  0.876009        0.0
+3   0.716294  0.629646        1.0
+4  -1.377767  1.050435        1.0
+7  -1.679099  0.904617        1.0
+..       ...       ...        ...
+94       NaN       NaN        NaN
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+98       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 132568857748816 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/node_ip_address.json.lock
+DEBUG:filelock:Lock 132568857748816 acquired on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 132568857748816 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/node_ip_address.json.lock
+DEBUG:filelock:Lock 132568857748816 released on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 132568857545872 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857545872 acquired on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132568857545872 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857545872 released on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 132568857748816 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857748816 acquired on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132568857748816 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857748816 released on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 132568857584592 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857584592 acquired on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132568857584592 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857584592 released on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 132568857545872 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857545872 acquired on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132568857545872 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857545872 released on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 132568857545872 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857545872 acquired on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 132568857545872 on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:filelock:Lock 132568857545872 released on /tmp/ray/session_2024-03-12_12-03-59_457006_452876/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+1   0.504646 -0.278852        0.0
+2  -1.466996 -0.776474        0.0
+3   1.488308  0.878871        0.0
+5   0.446168 -0.180820        0.0
+6   0.832333 -0.582641        0.0
+..       ...       ...        ...
+94       NaN       NaN        NaN
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+97       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 128157424443536 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/node_ip_address.json.lock
+DEBUG:filelock:Lock 128157424443536 acquired on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 128157424443536 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/node_ip_address.json.lock
+DEBUG:filelock:Lock 128157424443536 released on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 128158424693328 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128158424693328 acquired on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128158424693328 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128158424693328 released on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 128157427331088 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128157427331088 acquired on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128157427331088 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128157427331088 released on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 128157427331472 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128157427331472 acquired on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128157427331472 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128157427331472 released on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 128158424693328 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128158424693328 acquired on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128158424693328 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128158424693328 released on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 128157410209296 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128157410209296 acquired on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 128157410209296 on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:filelock:Lock 128157410209296 released on /tmp/ray/session_2024-03-12_12-04-07_417780_452940/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0   1.603804 -0.112922        1.0
+2   1.385809 -0.843374        0.0
+4   0.251825 -0.768215        1.0
+5  -1.371866 -0.134467        0.0
+6  -0.488594 -0.645764        0.0
+..       ...       ...        ...
+94       NaN       NaN        NaN
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+97       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 140467249953360 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/node_ip_address.json.lock
+DEBUG:filelock:Lock 140467249953360 acquired on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 140467249953360 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/node_ip_address.json.lock
+DEBUG:filelock:Lock 140467249953360 released on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 140468265519056 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140468265519056 acquired on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 140468265519056 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140468265519056 released on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 140467250111120 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140467250111120 acquired on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 140467250111120 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140467250111120 released on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 140467249950352 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140467249950352 acquired on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 140467249950352 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140467249950352 released on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 140468265519056 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140468265519056 acquired on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 140468265519056 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140468265519056 released on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 140468265519056 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140468265519056 acquired on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 140468265519056 on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:filelock:Lock 140468265519056 released on /tmp/ray/session_2024-03-12_12-09-19_751564_453654/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0  -0.729358 -0.773667        0.0
+1   0.017843 -0.754296        1.0
+2   0.931099  0.344112        1.0
+3   1.128634  1.452065        0.0
+6  -1.225112  0.519984        0.0
+..       ...       ...        ...
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+97       NaN       NaN        NaN
+98       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 134778239397136 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/node_ip_address.json.lock
+DEBUG:filelock:Lock 134778239397136 acquired on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 134778239397136 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/node_ip_address.json.lock
+DEBUG:filelock:Lock 134778239397136 released on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 134778239397136 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778239397136 acquired on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 134778239397136 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778239397136 released on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 134778224166032 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778224166032 acquired on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 134778224166032 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778224166032 released on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 134778223999568 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778223999568 acquired on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 134778223999568 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778223999568 released on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 134778239397136 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778239397136 acquired on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 134778239397136 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778239397136 released on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 134778239397136 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778239397136 acquired on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 134778239397136 on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:filelock:Lock 134778239397136 released on /tmp/ray/session_2024-03-12_12-09-48_055317_454295/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0  -0.883733 -0.025201        1.0
+3   1.591482  0.784113        1.0
+4  -0.013701  1.669932        0.0
+5   0.502153 -1.170594        0.0
+6   1.010036 -1.550736        0.0
+..       ...       ...        ...
+93       NaN       NaN        NaN
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+97       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 124228891330320 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/node_ip_address.json.lock
+DEBUG:filelock:Lock 124228891330320 acquired on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 124228891330320 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/node_ip_address.json.lock
+DEBUG:filelock:Lock 124228891330320 released on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 124228891330320 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891330320 acquired on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124228891330320 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891330320 released on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 124228891465232 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891465232 acquired on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124228891465232 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891465232 released on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 124228891465232 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891465232 acquired on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124228891465232 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891465232 released on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 124228891465232 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891465232 acquired on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124228891465232 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891465232 released on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 124228891465232 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891465232 acquired on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124228891465232 on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:filelock:Lock 124228891465232 released on /tmp/ray/session_2024-03-12_12-12-11_469767_454968/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0  -0.569969 -0.925264        0.0
+1  -0.202917  0.817597        1.0
+2  -0.301959  0.495480        0.0
+5  -1.144616 -0.846582        1.0
+7  -1.737564 -0.326683        1.0
+..       ...       ...        ...
+94       NaN       NaN        NaN
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+97       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/node_ip_address.json.lock
+DEBUG:filelock:Lock 130777109662416 acquired on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/node_ip_address.json.lock
+DEBUG:filelock:Lock 130777109662416 released on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 acquired on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 released on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 acquired on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 released on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 acquired on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 released on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 acquired on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 released on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 acquired on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 130777109662416 on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:filelock:Lock 130777109662416 released on /tmp/ray/session_2024-03-12_12-12-22_281940_455500/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0  -1.034414  0.611048        0.0
+2  -0.941570 -1.185843        1.0
+3   0.164602  0.382025        1.0
+4  -0.218668  1.094175        0.0
+5  -0.388597 -0.502367        1.0
+..       ...       ...        ...
+91       NaN       NaN        NaN
+94       NaN       NaN        NaN
+95       NaN       NaN        NaN
+97       NaN       NaN        NaN
+98       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 137349931861392 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/node_ip_address.json.lock
+DEBUG:filelock:Lock 137349931861392 acquired on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 137349931861392 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/node_ip_address.json.lock
+DEBUG:filelock:Lock 137349931861392 released on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 137349931861392 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137349931861392 acquired on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 137349931861392 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137349931861392 released on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 137346998290192 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137346998290192 acquired on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 137346998290192 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137346998290192 released on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 137347016247696 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137347016247696 acquired on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 137347016247696 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137347016247696 released on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 137346998290192 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137346998290192 acquired on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 137346998290192 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137346998290192 released on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 137349931861392 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137349931861392 acquired on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 137349931861392 on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:filelock:Lock 137349931861392 released on /tmp/ray/session_2024-03-12_12-34-35_391874_550773/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0  -0.462251  0.598311        0.0
+1   0.548395  0.138100        0.0
+3  -0.368573 -1.503656        1.0
+5   1.257531 -1.036455        0.0
+6  -1.438734 -0.885465        0.0
+..       ...       ...        ...
+93       NaN       NaN        NaN
+95       NaN       NaN        NaN
+97       NaN       NaN        NaN
+98       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 126900454331472 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/node_ip_address.json.lock
+DEBUG:filelock:Lock 126900454331472 acquired on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 126900454331472 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/node_ip_address.json.lock
+DEBUG:filelock:Lock 126900454331472 released on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 126900454058704 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454058704 acquired on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126900454058704 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454058704 released on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 126900454056016 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454056016 acquired on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126900454056016 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454056016 released on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 126900454056016 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454056016 acquired on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126900454056016 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454056016 released on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 126900454056016 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454056016 acquired on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126900454056016 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454056016 released on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 126900454056016 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454056016 acquired on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126900454056016 on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:filelock:Lock 126900454056016 released on /tmp/ray/session_2024-03-12_12-36-10_589566_551835/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+2  -0.328902 -0.601542        0.0
+3   1.652491  0.161458        1.0
+4   0.725356  0.398498        0.0
+5   0.786921  1.397304        0.0
+6  -0.704243  0.266481        1.0
+..       ...       ...        ...
+91       NaN       NaN        NaN
+92       NaN       NaN        NaN
+94       NaN       NaN        NaN
+96       NaN       NaN        NaN
+97       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 124293534912656 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/node_ip_address.json.lock
+DEBUG:filelock:Lock 124293534912656 acquired on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 124293534912656 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/node_ip_address.json.lock
+DEBUG:filelock:Lock 124293534912656 released on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 acquired on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 released on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 acquired on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 released on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 acquired on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 released on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 acquired on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 released on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 acquired on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 124293535048720 on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:filelock:Lock 124293535048720 released on /tmp/ray/session_2024-03-12_12-37-19_315922_552530/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0   1.404101 -0.756752        0.0
+2  -1.499024 -1.048314        1.0
+3   0.868299  0.927686        0.0
+4   1.167055  0.518655        1.0
+5   0.868630 -1.751093        1.0
+..       ...       ...        ...
+93       NaN       NaN        NaN
+94       NaN       NaN        NaN
+95       NaN       NaN        NaN
+97       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 123910998588304 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/node_ip_address.json.lock
+DEBUG:filelock:Lock 123910998588304 acquired on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 123910998588304 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/node_ip_address.json.lock
+DEBUG:filelock:Lock 123910998588304 released on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 123910998588304 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910998588304 acquired on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123910998588304 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910998588304 released on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123910981644432 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910981644432 acquired on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123910981644432 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910981644432 released on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123910981644432 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910981644432 acquired on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123910981644432 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910981644432 released on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123910981644432 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910981644432 acquired on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123910981644432 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910981644432 released on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123910981644432 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910981644432 acquired on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123910981644432 on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:filelock:Lock 123910981644432 released on /tmp/ray/session_2024-03-12_12-39-27_000549_553262/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0  -1.332977  1.422841        1.0
+2  -1.534656  0.819826        1.0
+5  -1.168675  0.910343        0.0
+6  -0.540666  1.553576        1.0
+7   0.629109 -0.945760        1.0
+..       ...       ...        ...
+93       NaN       NaN        NaN
+95       NaN       NaN        NaN
+97       NaN       NaN        NaN
+98       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 123331373280720 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/node_ip_address.json.lock
+DEBUG:filelock:Lock 123331373280720 acquired on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 123331373280720 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/node_ip_address.json.lock
+DEBUG:filelock:Lock 123331373280720 released on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 123331351722064 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331351722064 acquired on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123331351722064 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331351722064 released on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123331373280720 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331373280720 acquired on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123331373280720 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331373280720 released on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123331351722064 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331351722064 acquired on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123331351722064 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331351722064 released on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123331370009488 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331370009488 acquired on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123331370009488 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331370009488 released on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123331465628240 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331465628240 acquired on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123331465628240 on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:filelock:Lock 123331465628240 released on /tmp/ray/session_2024-03-12_12-45-13_576275_554047/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+1  -1.200995 -0.459441        0.0
+2   1.199575  1.505947        1.0
+3   0.743508  1.254149        1.0
+4   1.281962 -1.477925        1.0
+5   1.746118 -0.782210        1.0
+..       ...       ...        ...
+93       NaN       NaN        NaN
+94       NaN       NaN        NaN
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+98       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 123921952084240 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/node_ip_address.json.lock
+DEBUG:filelock:Lock 123921952084240 acquired on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 123921952084240 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/node_ip_address.json.lock
+DEBUG:filelock:Lock 123921952084240 released on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 123921952084240 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123921952084240 acquired on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123921952084240 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123921952084240 released on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123923116132944 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123923116132944 acquired on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123923116132944 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123923116132944 released on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123923116132944 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123923116132944 acquired on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123923116132944 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123923116132944 released on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123921952084240 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123921952084240 acquired on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123921952084240 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123921952084240 released on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 123921952084240 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123921952084240 acquired on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 123921952084240 on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:filelock:Lock 123921952084240 released on /tmp/ray/session_2024-03-12_12-49-17_440394_554350/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0  -0.574982 -0.061797        0.0
+1  -0.713661 -1.268519        0.0
+3   0.580761 -1.247119        1.0
+4  -0.065872 -1.469599        1.0
+5  -1.135637  0.229540        1.0
+..       ...       ...        ...
+91       NaN       NaN        NaN
+94       NaN       NaN        NaN
+95       NaN       NaN        NaN
+96       NaN       NaN        NaN
+99       NaN       NaN        NaN
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 126065009162448 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/node_ip_address.json.lock
+DEBUG:filelock:Lock 126065009162448 acquired on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 126065009162448 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/node_ip_address.json.lock
+DEBUG:filelock:Lock 126065009162448 released on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 126065007490128 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065007490128 acquired on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126065007490128 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065007490128 released on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 126065025352720 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065025352720 acquired on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126065025352720 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065025352720 released on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 126065025352720 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065025352720 acquired on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126065025352720 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065025352720 released on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 126065025352720 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065025352720 acquired on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126065025352720 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065025352720 released on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 126065007112976 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065007112976 acquired on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 126065007112976 on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:filelock:Lock 126065007112976 released on /tmp/ray/session_2024-03-12_12-53-23_025903_554629/ports_by_node.json.lock
+DEBUG:root:       soft0     soft1  attribute
+0  -0.590494 -0.634669          0
+1   1.521922  0.442269          0
+2  -1.269386  0.273112          1
+3   0.527256  1.479344          0
+4  -0.653974 -0.460134          1
+..       ...       ...        ...
+75  0.649366  0.870077          0
+76 -0.195094  0.593300          1
+77  0.429297 -0.127103          1
+78 -0.933083  0.672652          0
+79  0.574762  1.612702          1
+
+[80 rows x 3 columns]
+DEBUG:filelock:Attempting to acquire lock 127285779818512 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/node_ip_address.json.lock
+DEBUG:filelock:Lock 127285779818512 acquired on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/node_ip_address.json.lock
+DEBUG:filelock:Attempting to release lock 127285779818512 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/node_ip_address.json.lock
+DEBUG:filelock:Lock 127285779818512 released on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/node_ip_address.json.lock
+DEBUG:filelock:Attempting to acquire lock 127285779817872 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285779817872 acquired on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 127285779817872 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285779817872 released on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 127285797033104 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285797033104 acquired on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 127285797033104 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285797033104 released on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 127285779817872 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285779817872 acquired on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 127285779817872 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285779817872 released on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 127285779817872 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285779817872 acquired on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 127285779817872 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285779817872 released on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Attempting to acquire lock 127285779817872 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285779817872 acquired on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Attempting to release lock 127285779817872 on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
+DEBUG:filelock:Lock 127285779817872 released on /tmp/ray/session_2024-03-12_12-57-34_984590_555413/ports_by_node.json.lock
