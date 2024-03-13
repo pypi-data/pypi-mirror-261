@@ -1,0 +1,463 @@
+Metadata-Version: 2.1
+Name: pycalais
+Version: 0.1.0
+Summary: Fast shell command generation using GPT-4
+Author-email: Gary Boone <gary.boone@gmail.com>
+License: Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [2024] [Gary Boone]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+Project-URL: Homepage, http://github.com/garyboone/calais
+Keywords: AI,GPT-4,CLI
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai >=0.10.2
+Requires-Dist: typing-extensions ; python_version < "3.8"
+
+
+# Calais
+
+### Command Line AI for fast, easy commands.
+
+`Calais` speeds your interaction in terminal shells by commands for you using
+`GPT-4`. So
+ * You write natural language requests instead of commands.
+ * You don't have to remember which commands to use.
+ * You don't have to remember command syntax. 
+ * You can execute almost as fast as you can type what you want.
+ * You can learn Linux shell commands by watching best-practice examples.
+
+### Features
+ * For safety, it shows you the command before running it so you can confirm it.
+   [Always review the command before running it. See 
+   [Safeties and Cautions](#safeties-and-cautions).]
+ * You can ask it to explain the command it returns.
+ * It will ask for needed parameters.
+ * You can chat with GPT-4 in addition to generating commands.
+ * The command is `ai` for simplicity and speed.
+ * It assumes common command line utilities so casual language will usually
+   return the right result.
+
+
+### Examples
+
+```
+$ ai list uncommitted files
+Command: `git status --porcelain`
+[r]un,(e)xplain],(q)uit, or continue chatting:             # <-- [Hit enter]
+ M README.md
+MM chat.py
+MM client.py
+AM content_printer.py
+...
+```
+Note that you didn't have to even specify `git`. It assumes common utilities so
+you can use casual language and GPT-4 understands what you intend. You can
+specify what you need if necessary.
+
+It provides a speedup over looking up arcane command syntax:
+
+```
+$ ai update current commit without writing
+Command: `git commit --amend --no-edit`
+[r]un,(e)xplain],(q)uit, or continue chatting:             # <-- [Hit enter]
+```
+
+The commands can be as sophisticated as you can describe and GPT-4 can generate:
+
+```
+$ ai list Python files by size then search the top 3 for the word api
+Command: `find . -name '*.py' -exec ls -lS {} + | head -3 | awk '{print $9}' | xargs grep -l 'api'`
+[r]un,(e)xplain],(q)uit, or continue chatting:             # <-- [Hit enter]
+./tests/test_chat.py
+./chat.py
+```
+
+I even find that it's faster to use `Calais` for simple commands that I already
+know because it's faster to type without correct syntax.
+
+```
+$ ai echo path
+The command is: `echo $PATH`
+Run [Y/n/(e)xplain] `echo $PATH`:      # <-- [Hit enter]
+/opt/homebrew/Cellar/pyenv/2.3.36/plugins/python-build/bin:/usr/local/Caskroom/...
+```
+### Argument Request
+
+If you ask for a command that needs more information, `Calais` will ask for it
+and use it to complete the command:
+
+```
+$ ai add and commit files
+Enter the value for <message>: added JSON response parsing from OpenAI API
+Command: `git add . && git commit -m 'added JSON response parsing from OpenAI API'`
+[r]un,(e)xplain],(q)uit, or continue chatting:
+```
+
+
+### Explain
+
+You can ask `Calais` to explain the command it generated:
+
+```
+$ ai list Python files by size then search the top 3 for the word api
+Command: `find . -name '*.py' -exec ls -lS {} + | head -n 3 | awk '{print $9}' | xargs grep -l 'api'`
+[r]un,(e)xplain],(q)uit, or continue chatting: e
+This command performs several actions in sequence to find Python files
+containing the word 'api'. Here's a breakdown: 1. `find . -name '*.py'` searches
+the current directory and subdirectories for files ending in '.py'. 2. `-exec ls
+-lS {} +` executes `ls -lS` on the found files, listing them in long format
+sorted by size in descending order. 3. `head -n 3` takes the top 3 of these
+files (the largest ones). 4. `awk '{print $9}'` extracts the 9th field from the
+output, which corresponds to the filenames. 5. `xargs grep -l 'api'` uses `grep
+-l` to search for the word 'api' in these files, listing only the filenames that
+contain the match.
+Command: `find . -name '*.py' -exec ls -lS {} + | head -n 3 | awk '{print $9}' | xargs grep -l 'api'`
+[r]un,(e)xplain],(q)uit, or continue chatting:
+```
+
+
+## Chatting with GPT-4
+You can also use `Calais` to chat with GPT-4:
+
+Here, we ask for some Old English then ask for a translation:
+
+```text
+$ ai write out the first 4 lines of the canterbury tales
+Whan that Aprille with his shoures soote,
+The droghte of March hath perced to the roote,
+And bathed every veyne in swich licour
+Of which vertu engendred is the flour;
+[q]uit, or continue chatting: translate
+When April with its sweet-smelling showers
+Has pierced the drought of March to the root,
+And bathed every vein (of the plants) in such liquid
+By which strength the flower is created;
+[q]uit, or continue chatting:
+```
+
+## Requirements
+`Calais` requires an OpenAI API key that can run `GPT-4`. 
+
+## Installation
+
+Install the Python package using Pip:
+```bash
+$ pip install calais
+```
+
+`Calais` will need your OpenAI API key exported as an environment variable:
+
+```bash
+$ export OPENAI_API_KEY='sk-your-open-ai-key'
+```
+
+
+## Limitations
+
+1. Shell interpolation
+
+Note that on the command line, you can't use punctuation that would be
+interpreted by the shell like apostrophes or question marks. If you want to use
+this punctuation, enclose the string in quotes.
+
+```text
+$ ai what's the OS version
+quote> ^C                      # It's continuing the quote started in "what's"
+$ ai "what's the OS version?"  # Surrounding the prompt with quotes works...
+Command: `sw_vers -productVersion`
+[r]un,(e)xplain],(q)uit, or continue chatting:
+14.2.1
+```
+
+Or just skip the punctuation. GPT-4 will likely understand.
+
+```
+$ ai whats the OS version
+Command: `sw_vers -productVersion`
+[r]un,(e)xplain],(q)uit, or continue chatting:
+14.2.1
+```
+
+2. Complex Scripts
+  
+Although it uses a system prompt that instructs it to prefer generate runnable
+commands, `GPT-4` sometimes returns scripts:
+
+
+```text
+$ ai automatically watch files for changes and turn unit tests, sending an email if they fail
+To automatically watch files for changes, run unit tests, and send an email if
+they fail, you can use a combination of shell scripting and tools like
+`inotifywait` (for Linux) or `fswatch` (for macOS), along with your testing
+framework and a command-line email tool like `sendmail` or `mail`. Since the OS
+is Darwin, we'll use `fswatch`. This script is a basic example and might need
+adjustments based on your specific testing framework and email setup:
+
+#!/bin/bash
+
+DIRECTORY_TO_WATCH='./your_project_directory'
+TEST_COMMAND='your_test_command' # Replace with your specific test command
+EMAIL='your_email@example.com'
+
+fswatch -o $DIRECTORY_TO_WATCH | while read change; do
+  $TEST_COMMAND
+  if [ $? -ne 0 ]; then
+    echo 'Tests failed, sending email.'
+    echo 'Unit tests failed at $(date)' | mail -s 'Unit Test Failure' $EMAIL
+  fi
+done
+
+1. Replace `./your_project_directory` with the path to the directory containing
+   the files you want to watch.
+2. Replace `your_test_command` with the command you use to run your unit tests.
+3. Replace `your_email@example.com` with your email address.
+
+Make sure you have `fswatch` installed (`brew install fswatch` if you're using
+Homebrew). Also, ensure you have a mail server configured for sending emails
+from the command line, or use a command-line email tool that supports your
+email provider.
+[q]uit, or continue chatting:
+```
+
+`Calais` does not try to save or run these scripts. You can copy these from the
+output to run them.
+
+3. GPT-4, like all current Large Language Models may hallucinate or make other
+   errors. 
+   
+   Always review the returned command before running it.
+
+## Safeties and Cautions
+
+This program presents commands generated by GPT-4 for you to run. Unsafe
+commands could be generated. Unsafe commands are those that could delete data,
+cause your system to become unresponsive, or cause other problems. __Always review
+the commands before running them.__
+
+Two safety mechanisms are included:
+1. GPT-4 is instructed not to return unsafe commands.
+2. The program does simple checks for unsafe commands and inputs.
+
+```
+$ ai erase the disk
+GPT-4 returned an error:
+[unsafe command requested]
+Exiting.
+```
+
+Unsafe commands could slip past these checks. These checks cannot prevent all
+potentially unsafe commands from being generated or run. Do not use this program
+on systems with sensitive or valuable data. Use at your own risk.
+
+The primary risk mitigation is that commands are shown to you for confirmation
+before they are run. Always review the commands before running them. 
+
+Note that these simple safety checks may prevent the programs from generating 
+commands that are actually safe to run.
+
+## Code 
+
+The code demonstrates the following features in working with the OpenAI API:
+- Streaming Chat Completions so that the text is returned to the user as it is generated. 
+- JSON output so that GPT-4 returns structured output.
+- Streaming JSON extraction so that the user sees clean generated text, even though the text is embedded within JSON structures that have not yet completed.
+- Retry and error handling so that network or other intermittent errors do not prevent a successful API call.
+
