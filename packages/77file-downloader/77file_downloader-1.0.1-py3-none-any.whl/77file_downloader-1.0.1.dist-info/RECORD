@@ -1,0 +1,10 @@
+ssf_downloader/__init__.py,sha256=Lh7NOd9-n-o-7iRw3-RIoQCF_F57zhZQktJjCkSYOgA,76
+ssf_downloader/client.py,sha256=2xaN_D2Y7yK9c5Dm4XYWpiEhBMqFHyEHFWNqX5fmx5c,3107
+ssf_downloader/models.py,sha256=rjqpN33aQ9XEtBMD0K-3MEgYcxtryizHezhixHDetZc,418
+ssf_downloader/scripts/__init__.py,sha256=Lh7NOd9-n-o-7iRw3-RIoQCF_F57zhZQktJjCkSYOgA,76
+ssf_downloader/scripts/ssf_downloader.py,sha256=_KRaCFTGsQbPHPL8SEExckF9aGYMC1HagxzbkRsJusQ,3263
+77file_downloader-1.0.1.dist-info/METADATA,sha256=pT7lumUB3VREFXTZAcOvQbfS0WNf7tIdOyjp1vz6Ed0,3339
+77file_downloader-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+77file_downloader-1.0.1.dist-info/entry_points.txt,sha256=dn3MjDInMmVE3GdoNFFtOiq_VH7QhhyrBmPHCM3DARI,74
+77file_downloader-1.0.1.dist-info/top_level.txt,sha256=wr3A1KJbs3fwz-2alIT0epppS7qyKQcBYWAU4RVTn64,15
+77file_downloader-1.0.1.dist-info/RECORD,,
