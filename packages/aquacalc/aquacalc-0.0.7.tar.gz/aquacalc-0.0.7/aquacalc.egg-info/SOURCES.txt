@@ -1,0 +1,7 @@
+setup.py
+aquacalc/__init__.py
+aquacalc/aquacalc.py
+aquacalc.egg-info/PKG-INFO
+aquacalc.egg-info/SOURCES.txt
+aquacalc.egg-info/dependency_links.txt
+aquacalc.egg-info/top_level.txt
