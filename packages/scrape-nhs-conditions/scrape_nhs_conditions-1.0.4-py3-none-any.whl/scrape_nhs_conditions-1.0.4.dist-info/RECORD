@@ -1,0 +1,12 @@
+scrape_nhs_conditions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrape_nhs_conditions/data_exports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrape_nhs_conditions/data_ingestion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrape_nhs_conditions/data_ingestion/simple_nhs_conditions_scrape.py,sha256=T_PQUqu4vRWmCflYWi71OetGb_RFkimlrNifQwmX_j4,9272
+scrape_nhs_conditions/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrape_nhs_conditions/processing/process_html.py,sha256=0eR96KTresyJFHfdRcDlMx4ITqG9Jbya4vHh9vyeIwo,1006
+scrape_nhs_conditions/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrape_nhs_conditions-1.0.4.dist-info/LICENCE,sha256=EiTuNjdhnX9vQquRnnUAXvtMhCQZAr1XR3IoxN2FhD0,1106
+scrape_nhs_conditions-1.0.4.dist-info/METADATA,sha256=XMwQdfxT9B0iivHv6IJKWOehzKbJcNZprLLINMOGQHo,8113
+scrape_nhs_conditions-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+scrape_nhs_conditions-1.0.4.dist-info/top_level.txt,sha256=yOKN1DXD40v1GXCD2czVclhNVXqrH3fXkKb_x0rteM0,22
+scrape_nhs_conditions-1.0.4.dist-info/RECORD,,
