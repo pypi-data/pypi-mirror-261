@@ -1,0 +1,12 @@
+ratisbona_utils/__init__.py,sha256=l3Vm1eat4x3h-qEZ_nV35NN9p4mdTpO5d3a8x45piWU,55
+ratisbona_utils/__main__.py,sha256=IFxn1-qfmWDECtdOeZIVecu1CddMaVBU4Di6EDmIs7E,105
+ratisbona_utils/example.py,sha256=CzmfbnG6mRMDPdi0yI7CfuuGcuJSpxMfaHk0_q-4UY4,152
+ratisbona_utils/binary/__init__.py,sha256=n8MfRFBM-97xWFqD78JgKlwLQg-5BCeFfQZlKUKHcso,66
+ratisbona_utils/binary/binary_tools.py,sha256=ucWwJy_Z_5wFgo95W-L_UPHCE_XOfawDl9affMC5IkA,4699
+ratisbona_utils/compression/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ratisbona_utils/datetime/__init__.py,sha256=KFw1r3kk7pQkiUwK08m0zB8F-Tta_XRgjZLoWIakrM8,33
+ratisbona_utils/datetime/stopwatch.py,sha256=3aeQ_FD_sky36cIRKTyXLXc_-fXT777_2_v69I3_oMs,3072
+ratisbona_utils-0.0.1.dist-info/METADATA,sha256=trmBZtzuNXYbCAoBQJKCDrinSkcxXc2AVhdOJjXqeYg,1772
+ratisbona_utils-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+ratisbona_utils-0.0.1.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+ratisbona_utils-0.0.1.dist-info/RECORD,,
