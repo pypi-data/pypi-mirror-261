@@ -1,0 +1,10 @@
+finch/__init__.py,sha256=wvF0Hv17VFdRiTb22OzsQzC7nJUu9iW5fwH8sIJXNlk,967
+finch/dtypes.py,sha256=hQxwI4HyXcpv5N4nJLyHvbzngaCK_PTgMw9HuZ4YHS8,532
+finch/julia.py,sha256=x9-OewtlgixNfkJ1SEC3fAd-NJeM8f2alfR4RNjXBNs,208
+finch/levels.py,sha256=52SO_sra93wGXcwcWLS9B_sflMSJdo_4W5qT17QClao,2078
+finch/tensor.py,sha256=yg3bdD44aHpEVCK6yYKryWj7StCNoKvrGvW2uHQKc20,15215
+finch/typing.py,sha256=3VCfp92x_RHH9FhiJmtie5ZpRcPJ9QLNnjvKiSp2nfQ,243
+finch_tensor-0.1.6.dist-info/LICENSE,sha256=STex5lrOfGqV3BOj4kiLUjupAjxRfeHWcBFOxNMEDSU,1070
+finch_tensor-0.1.6.dist-info/METADATA,sha256=LCG2laSLATuZaVnUVIEuUOwms_9p_RJ_UaS6lZs9Kn4,2425
+finch_tensor-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+finch_tensor-0.1.6.dist-info/RECORD,,
