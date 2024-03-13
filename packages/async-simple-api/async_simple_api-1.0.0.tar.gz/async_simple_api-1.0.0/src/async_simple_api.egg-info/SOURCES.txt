@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/async_simple_api.egg-info/PKG-INFO
+src/async_simple_api.egg-info/SOURCES.txt
+src/async_simple_api.egg-info/dependency_links.txt
+src/async_simple_api.egg-info/requires.txt
+src/async_simple_api.egg-info/top_level.txt
