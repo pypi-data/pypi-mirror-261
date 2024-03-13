@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: idegrity-identity
+Version: 0.1.4
+Summary: Python Wrapper for Idegrity's Identity services
+Author: Cookie
+Author-email: cookie@idegrity.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: aiofiles
+Requires-Dist: requests
+
+# Idegrity IDentity Product Python Wrapper
+
+This library provides a wrapper to access Idegrity's IDentity services
+
+## Features
+
+- Easy authentication
+- Handles both image streams and image file
+- Provides results in JSON or TOML
+
+## Installation
+
+Install this package with pip:
+
+```
+pip install idegrity-identity
+```
+
+## Usage
+
+This library provides both synchronous and asynchronous clients to interact with the VerifyAPI. Here's how you can use each of them.
+
+### Synchronous Usage
+
+The synchronous version of the API can be used in scripts where asynchronous programming is not a requirement. Here's an example of how to use it:
+
+```py
+from idegrity_identity import IdentityAPI
+
+# Initialize the API client with your credentials
+identity_api = IdentityAPI(user_id=123, key="your_api_key", key_secret="your_api_secret")
+
+# Use the client to upload images
+try:
+    response = identity_api.verify_images("path/to/id_image.png", "path/to/face_image.png")
+    print(response)  # Process the response
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+### Asynchronous Usage
+
+The asynchronous client is suitable for applications that are designed to take advantage of asynchronous programming, making your I/O-bound tasks more efficient. Here's how to use the asynchronous client:
+
+```py
+from idegrity_identity import AsyncIdentityAPI
+import asyncio
+
+async def main():
+    # Initialize the API client with your credentials
+    async_identity_api = AsyncIdentityAPI(user_id=123, key="your_api_key", key_secret="your_api_secret")
+    # async_identity_api = AsyncIdentityAPI(user_id=123, key="your_api_key", key_secret="your_api_secret", endpoint_url="https://customurl.local") # optionally provide a custom API endpoint
+    
+    # Use the client to asynchronously upload images
+    try:
+        response = await async_identity_api.verify_images("path/to/id_image.png", "path/to/face_image.png")
+        print(response)  # Process the response
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Run the async main function
+asyncio.run(main())
+```
+
+### Handling File-Like Objects
+
+Both synchronous and asynchronous clients support uploading images from file-like objects(streams) (e.g., **io.BytesIO**). Here's how you can do it:
+
+```py
+from idegrity_identity import IdentityAPI
+from io import BytesIO
+
+# Imagine these are your image bytes
+id_image_bytes = b'...'
+face_image_bytes = b'...'
+
+# Convert bytes to file-like objects
+id_image_file = BytesIO(id_image_bytes)
+face_image_file = BytesIO(face_image_bytes)
+
+# Initialize the API client with your credentials
+identity_api = IdentityAPI(user_id=123, key="your_api_key", key_secret="your_api_secret")
+
+# Upload the images
+response = identity_api.verify_images(id_image_file, face_image_file)
+print(response)
+```
+
+## Support
+
+If you encounter any issues or have questions, please file an issue on GitHub.
