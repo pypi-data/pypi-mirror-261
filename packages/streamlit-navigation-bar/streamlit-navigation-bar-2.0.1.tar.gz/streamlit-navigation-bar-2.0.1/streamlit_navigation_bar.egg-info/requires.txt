@@ -1,0 +1,2 @@
+streamlit>=1.30
+st-theme>=1.1.0
