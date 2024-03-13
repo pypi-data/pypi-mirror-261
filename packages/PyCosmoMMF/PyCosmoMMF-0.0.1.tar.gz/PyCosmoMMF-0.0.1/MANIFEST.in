@@ -1,0 +1,7 @@
+include *.py
+include *.txt
+include *.md
+include PyCosmoMMF/*.py
+include PyCosmoMMF/*.npy
+include MANIFEST.in
+include *.pypirc
