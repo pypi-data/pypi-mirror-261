@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: fast2sms
+Version: 1.0.0
+Summary: Python package for Fast2 Sms API Client
+Home-page: https://github.com/MrMKN/fast2sms
+Author: MrMKN
+License: GNU General Public License v3.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Fast2 SMS
+
+> Python package for [FAST2 SMS](https://www.fast2sms.com) API Client
+
+## Client setup
+
+```python
+
+from fast2sms import F2Client
+
+# Initialize The Client 
+f2 = F2Client(api_key="YOUR_API_KEY")
+
+
+response = f2.quick_sms(
+    numbers="999999999, 1111111111, 8888888888", # You can use multiple number split with coma 
+    msg="Hey This Is Test Message",
+)
+
+print(response.text) # return is json value 
+
+```
+
+## Installing
+```
+pip install fast2sms
+```
+
+## Dependencies
+
+• requests
+
+• Python 3+
+
+
+### Support
+
+- [MR MKN](https://github.com/MrMKN)
+- [Telegram](https://t.me/mkn_bots_updates)

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fast2sms/__init__.py
+fast2sms/client.py
+fast2sms.egg-info/PKG-INFO
+fast2sms.egg-info/SOURCES.txt
+fast2sms.egg-info/dependency_links.txt
+fast2sms.egg-info/top_level.txt
