@@ -1,0 +1,12 @@
+auSankey/.coveragerc,sha256=zfRews2ZZmgwxsrlL6LMtHUk6nVvRRYy6HloRLaTfwc,50
+auSankey/__init__.py,sha256=CmfPc_9HBup1u4vbr5h25EUdmAlPARcrul0KRKGY8xw,193
+auSankey/sankey.py,sha256=QkgD1ndF_Ov0diva3MvK2NTPILTXTU3ka1AB5L_Wguo,13878
+auSankey/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auSankey/tests/fruit.csv,sha256=M7w5GwptDvSLZfhTtSMUHba42H_Qh5RqyxxSelYkK0M,133
+auSankey/tests/generic_test.py,sha256=gHMcap4lNvGQBXHYqSO_Z1JUi1PSY1dEkxYBegMEIxA,407
+auSankey/tests/test_fruit_defaults.py,sha256=UV8MCCjjXHsTdxpgQM-CJNvwU4Ou8hHA-ASoC30Sv9Y,1098
+auSankey/tests/test_fruit_setup.py,sha256=sY9VBoeM34CdfUCFPpxfLF8jfxMV8gxDk3POrsSkxCA,493
+ausankey-1.0.dist-info/METADATA,sha256=1BT_9FivCLitRZgwACPDpbWs1T2r_D7ytv_1b5E9Avs,43222
+ausankey-1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+ausankey-1.0.dist-info/licenses/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+ausankey-1.0.dist-info/RECORD,,
