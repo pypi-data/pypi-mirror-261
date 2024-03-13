@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: emploid
+Version: 0.0.1
+Summary: Emploid is a simple open-source automation framework for automating web and android activities.
+Author: ayoub almontaser
+Author-email: twyyre <twyyre1996@gmail.com>
+Project-URL: Homepage, https://github.com/twyyre/emploid
+Project-URL: Issues, https://github.com/twyyre/emploid/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### hello world
