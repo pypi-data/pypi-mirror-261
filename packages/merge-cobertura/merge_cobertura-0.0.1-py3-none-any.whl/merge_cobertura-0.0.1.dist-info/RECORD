@@ -1,0 +1,10 @@
+merge_cobertura/__init__.py,sha256=DGVs1Ud0p4pXhdbBNKb90IcOc-S-RMBIJFQeTufFoDI,28
+merge_cobertura/coverage_source.py,sha256=jb74ruCKcgdO1yolTKXisb8qjMDcUJ4PQerWgO3V968,1453
+merge_cobertura/coverage_stats.py,sha256=FjQ5EWeyXin-ktXKMq8KRdg8a2ok0IqDv-bdkMX_mY8,700
+merge_cobertura/main.py,sha256=4C7TdZAd2P6H_uPeKjBdR0XdboTlNT6VFdmI3jc_3go,1742
+merge_cobertura-0.0.1.dist-info/LICENSE,sha256=_x2ZEnYC6dHo6gA2xSnU42XRlGqMajjxmB-XjC6mvvU,1055
+merge_cobertura-0.0.1.dist-info/METADATA,sha256=2ogRh4j6RDkYfa5AP5YQEC2Auwss98fFQSl7fgYJmD4,870
+merge_cobertura-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+merge_cobertura-0.0.1.dist-info/entry_points.txt,sha256=y8sffWCJRly4lglB5nHbo_jKHb2mcy4mNkAbU9o3e94,56
+merge_cobertura-0.0.1.dist-info/top_level.txt,sha256=x7UDgMU2ojNZXxPZD4B_9-AGiZELATYlCeDc1kxmrcg,16
+merge_cobertura-0.0.1.dist-info/RECORD,,
