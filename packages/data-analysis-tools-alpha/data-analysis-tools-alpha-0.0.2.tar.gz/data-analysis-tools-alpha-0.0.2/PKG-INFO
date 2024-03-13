@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: data-analysis-tools-alpha
+Version: 0.0.2
+Summary: A text processor package
+Home-page: https://github.com/a731062834/data-analysis-tools-alpha
+Author: Alpha
+Author-email: mailwb3@gmail.com
+Project-URL: Source, https://github.com/a731062834/data-analysis-tools-alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.24.0
+Requires-Dist: jieba>=0.42.1
+Requires-Dist: setuptools>=42
+Requires-Dist: numpy>=1.24.4
+Requires-Dist: data-analysis-tools-jms-diy>=0.0.1
+Requires-Dist: data-analysis-tools-fdx>=0.0.1
+
+# data-analysis-tools-alpha
+
+使用结巴分词，实现对文本的处理。
+添加DataSetSpliter接口。
