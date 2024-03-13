@@ -1,0 +1,8 @@
+arrow_mssql/__init__.py,sha256=kYnXaYJXASOVKScROqCRFs0cWNknHivY1EkXHonBUBY,130
+arrow_mssql/connector.py,sha256=yhSpBcRDluAHs07NkES70QUiz-kndCr5s3xlQJa2tYo,574
+arrow_mssql/datatypes.py,sha256=JXvimusLw498QphMusW2liPUOx8tMNVyRszeLoeuE4Y,2553
+arrow_mssql/export.py,sha256=FeK_8rcv8XNT9JY7a1e9hBMnhgS5oJwzQgxw5REKfXM,3689
+arrow_mssql/schemas.py,sha256=P-BhTOBgGuJxGVVm1HCbA3PHZeXEgHrnCv1V1GBW7QM,3082
+arrow_mssql-0.0.1.dist-info/METADATA,sha256=kjrl7_2xGbpSEWdt9gzhPy66Lzn-hwNGdfbxNbyza8k,1866
+arrow_mssql-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+arrow_mssql-0.0.1.dist-info/RECORD,,
