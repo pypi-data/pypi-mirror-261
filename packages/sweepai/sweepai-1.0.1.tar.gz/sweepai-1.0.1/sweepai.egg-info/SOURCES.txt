@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+sweepai/__init__.py
+sweepai/api.py
+sweepai/api_test.py
+sweepai/cli.py
+sweepai/global_threads.py
+sweepai/watch.py
+sweepai.egg-info/PKG-INFO
+sweepai.egg-info/SOURCES.txt
+sweepai.egg-info/dependency_links.txt
+sweepai.egg-info/entry_points.txt
+sweepai.egg-info/requires.txt
+sweepai.egg-info/top_level.txt
+tests/test_watch.py
