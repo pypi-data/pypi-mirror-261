@@ -1,0 +1,7 @@
+pymongo
+requests
+tqdm
+pandas
+commentjson
+simple_slurm
+pydantic
