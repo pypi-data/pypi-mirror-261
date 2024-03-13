@@ -1,0 +1,11 @@
+minimax_client-0.1.3.dist-info/METADATA,sha256=vjEAqFSosOZZbLzQjeELvW7WDXdbyWwRNJ62efDQHnA,6150
+minimax_client-0.1.3.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+minimax_client-0.1.3.dist-info/licenses/LICENSE.md,sha256=Lr7rKDjurJDC4ObkuQrBkYYjSxK0OC3R8wKckdIr9ms,1076
+minimax_client/__init__.py,sha256=1sP5NWpzwshrQtuT300wqgyQNQ0Bn7iYhO9j_lDdo5E,78
+minimax_client/__version__.py,sha256=lkcwJI5HhVH-mp3hACFiSLSCUgO8BMd2rMjnGfaEsHs,47
+minimax_client/client.py,sha256=kLpmEN7ZqiseyC9UnqsffeiUZpFenP4GQZkdTXmNcOc,3981
+minimax_client/entities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minimax_client/entities/chat_completion.py,sha256=EuC4bbfQPXBY3lF7YkZ4mT102LdZ4AH0LzJIH4Wp2h4,1277
+minimax_client/interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minimax_client/interfaces/chat_completion.py,sha256=9b3f4O1v9sJEdf9s4IG-5n_vkgj0I-AQMGH9PM582Bw,8852
+minimax_client-0.1.3.dist-info/RECORD,,
