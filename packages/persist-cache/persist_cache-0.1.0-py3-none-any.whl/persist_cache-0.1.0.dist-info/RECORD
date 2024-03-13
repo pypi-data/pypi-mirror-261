@@ -1,0 +1,10 @@
+persist_cache/__init__.py,sha256=5Y3qUntE3zYb8jNAz1RxRadx17WF2Kmb99jFzi7tetY,119
+persist_cache/caching.py,sha256=M4oqywkXr3RRDItxjtkJJp8m9tj6UX-k0CyjkmjX6yw,2996
+persist_cache/helpers.py,sha256=BR4lzKNl5lT0DPjMGnO05L8jSIlJlCYE4H_uh4XfQBs,2254
+persist_cache/persist_cache.py,sha256=TFli26T8Wz5uN1ijvw6WHd2bcmCRt3rcgzEerL74LXw,7822
+persist_cache/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+persist_cache/serialization.py,sha256=MpExw65qhTch2Q2t7dON1pAxRUmBo3wataszXvUuSw8,7083
+persist_cache-0.1.0.dist-info/METADATA,sha256=Az0iX866PTO-X-loeFKC1G4tECR30uBMgtHN50L6-mA,6085
+persist_cache-0.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+persist_cache-0.1.0.dist-info/licenses/LICENSE,sha256=ic6MqzcIrhDN2VSlr-fk8jWfg4dTGPxV7NP_-phMeKs,1072
+persist_cache-0.1.0.dist-info/RECORD,,
