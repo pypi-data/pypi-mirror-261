@@ -1,0 +1,4 @@
+opencv-python
+crcmod
+numpy
+numba
