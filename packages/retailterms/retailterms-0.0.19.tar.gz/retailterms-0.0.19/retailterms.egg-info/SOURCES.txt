@@ -1,0 +1,8 @@
+setup.py
+retailterms/__init__.py
+retailterms/retailterms.py
+retailterms.egg-info/PKG-INFO
+retailterms.egg-info/SOURCES.txt
+retailterms.egg-info/dependency_links.txt
+retailterms.egg-info/requires.txt
+retailterms.egg-info/top_level.txt
