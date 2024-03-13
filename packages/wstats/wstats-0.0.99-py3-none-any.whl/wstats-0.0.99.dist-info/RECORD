@@ -1,0 +1,9 @@
+weighted_stats/__init__.py,sha256=pOoeq-OXxeJaAhY3sZ5QNF5wFoZNaWdCIb_0d6ICCXs,54
+weighted_stats/weighted_t_test.py,sha256=TVlK0ceNYS_F49_qKzNNW6wvfGrouCwVncPfoyOSiJ0,3052
+wstats/__init__.py,sha256=Pj_XBlzC2XCWYDYhqYRvwukFtr9OEynqM8agV5sdBIE,46
+wstats/weighted_t_test.py,sha256=TVlK0ceNYS_F49_qKzNNW6wvfGrouCwVncPfoyOSiJ0,3052
+wstats-0.0.99.dist-info/LICENSE,sha256=Gy8vH2mM6HXyWWGoykNc3huIW6c91ZD2QifGm72IQLk,1068
+wstats-0.0.99.dist-info/METADATA,sha256=9pql2i5XoXaJxKlz3QIW9UTnG1hlwDrbY3_J2hqfbNM,1203
+wstats-0.0.99.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wstats-0.0.99.dist-info/top_level.txt,sha256=4_sdNj9k7rhk02vLNhNNZ_AwTUDmncvhdHZ9Iw30Mrw,7
+wstats-0.0.99.dist-info/RECORD,,
