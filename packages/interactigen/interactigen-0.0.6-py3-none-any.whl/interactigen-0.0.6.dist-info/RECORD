@@ -1,0 +1,10 @@
+interactigen/__init__.py,sha256=frOQ6jhPdiJyjiGTQWDlNc_F_hdED-kopBMk46hC0-U,1277
+interactigen/commands/__init__.py,sha256=pCzjBVy4ZCcHYZ6kdHMkf-XeKZNef0HbChTO0lxLYqw,1285
+interactigen/commands/gen_new_phrasings.py,sha256=KRUOSH8r8eFVyVZGhJdnF-gxdhBbkHBrXhVk0zz3w3s,3365
+interactigen/commands/gen_transformed_phrasings.py,sha256=SdA_sH3dPGWZ3hTw3A24KY4Y0QS3g_zvTRikegNjumE,3585
+interactigen/commons.py,sha256=JD6-weLIUcYVQaPel8ERnqkfjxl2UN7k2MreggXFjlY,1452
+interactigen/interactigen.py,sha256=Th-KKhNPzK0sojdUvpHU5AkPv3uCb2Bfw_YannhlGAA,11059
+interactigen-0.0.6.dist-info/LICENSE,sha256=cQYGhd4RTa_UcWaJSr_jAjxRpidhEXM2w1eU6LpSejc,1116
+interactigen-0.0.6.dist-info/METADATA,sha256=3R8c6NojngPBNwuRB4GGoOHHP7H2kbxri2Ky7N399TM,692
+interactigen-0.0.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+interactigen-0.0.6.dist-info/RECORD,,
