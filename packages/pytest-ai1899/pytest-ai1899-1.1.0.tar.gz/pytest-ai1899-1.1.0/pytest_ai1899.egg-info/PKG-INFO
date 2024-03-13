@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pytest-ai1899
+Version: 1.1.0
+Summary: pytest plugin for connecting to ai1899 smart system stack
+Home-page: https://github.com/Formartha/pytest-ai1899
+Author: Mor Dabastany
+License: MIT
+Keywords: pyest-ai1899
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+<img src=".readme/pytest-ai1899-plugin.jpeg" alt="pytest-ai1899-plugin" width="220">
+
+------
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit)
+
+What?
+------
+To enable seamless integration with ai1899 stack (https://github.com/Formartha/ai1899), a pytest plugin was created.
+The plugin accepts query as an input or from pytest.ini directory and uses it to select testcases based on predefined citeria.
+
+How to install?
+----------
+```
+pip install pytest-ai1899
+```
+
+pytest.ini options examples:
+-----------------------------------------------------
+to start the plugin, please pass ```--ai1899_activate``` or use ```'ai1899_activate=true'``` in the pytest.ini file.
+```
+[pytest]
+ai1899_endpoint = http://127.0.0.1/ai
+ai1899_query = a test with data
+ai1899_collection = Tests
+ai1899_limit = 5
+```

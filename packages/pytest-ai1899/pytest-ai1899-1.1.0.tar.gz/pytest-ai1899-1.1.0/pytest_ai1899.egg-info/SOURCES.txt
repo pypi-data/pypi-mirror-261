@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pytest_ai1899/__init__.py
+pytest_ai1899/plugin.py
+pytest_ai1899.egg-info/PKG-INFO
+pytest_ai1899.egg-info/SOURCES.txt
+pytest_ai1899.egg-info/dependency_links.txt
+pytest_ai1899.egg-info/entry_points.txt
+pytest_ai1899.egg-info/requires.txt
+pytest_ai1899.egg-info/top_level.txt
