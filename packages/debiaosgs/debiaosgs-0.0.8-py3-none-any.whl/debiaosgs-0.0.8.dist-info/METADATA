@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: debiaosgs
+Version: 0.0.8
+Summary: SGS Room Monitor
+Home-page: https://github.com/foolmuyi/debiaosgs
+Author: Debiao
+Author-email: muyiorlk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.7.4)
+Requires-Dist: eth-account (>=0.8.0)
+Requires-Dist: matplotlib (>=3.3.3)
+Requires-Dist: numpy (>=1.21.2)
+Requires-Dist: pandas (>=1.1.1)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: selenium (>=4.4.3)
+Requires-Dist: web3 (>=6.0.0)
+
+Monitoring SGS website for new listed room, notify by email
+
