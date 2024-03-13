@@ -1,0 +1,1 @@
+from .korean_news_scaper import googleNewsScraper
