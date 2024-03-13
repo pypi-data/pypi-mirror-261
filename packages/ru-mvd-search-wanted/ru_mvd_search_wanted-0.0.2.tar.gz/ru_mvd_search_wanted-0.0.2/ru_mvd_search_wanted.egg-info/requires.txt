@@ -1,0 +1,4 @@
+httpx
+beautifulsoup4
+pip_system_certs
+fake-useragent
