@@ -1,0 +1,5 @@
+llama_index/llms/llamafile/__init__.py,sha256=PFvUTDZbJsYci3yavwUSVD8Cjpm1-VkvmMHwrhwCzRs,79
+llama_index/llms/llamafile/base.py,sha256=DHrQxbIXX0But2v0d6J2XgrEZiQma3tI1tqZA2Te1So,9279
+llama_index_llms_llamafile-0.1.2.dist-info/METADATA,sha256=VNB-X_Jy1A7Hua1QQ_WK_kAtOjwsZqUL0Ef9DT3jhc0,594
+llama_index_llms_llamafile-0.1.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_llms_llamafile-0.1.2.dist-info/RECORD,,
