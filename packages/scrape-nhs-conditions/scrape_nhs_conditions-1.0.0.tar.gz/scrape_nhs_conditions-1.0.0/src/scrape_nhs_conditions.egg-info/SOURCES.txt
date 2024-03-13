@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+src/data_exports/__init__.py
+src/data_ingestion/__init__.py
+src/data_ingestion/simple_nhs_conditions_scrape.py
+src/processing/__init__.py
+src/processing/process_html.py
+src/scrape_nhs_conditions.egg-info/PKG-INFO
+src/scrape_nhs_conditions.egg-info/SOURCES.txt
+src/scrape_nhs_conditions.egg-info/dependency_links.txt
+src/scrape_nhs_conditions.egg-info/top_level.txt
+src/utils/__init__.py
