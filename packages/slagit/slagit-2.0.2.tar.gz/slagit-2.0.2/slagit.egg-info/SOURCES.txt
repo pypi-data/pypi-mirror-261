@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sharelatex/__init__.py
+sharelatex/__version__.py
+sharelatex/cli.py
+slagit.egg-info/PKG-INFO
+slagit.egg-info/SOURCES.txt
+slagit.egg-info/dependency_links.txt
+slagit.egg-info/entry_points.txt
+slagit.egg-info/requires.txt
+slagit.egg-info/top_level.txt
