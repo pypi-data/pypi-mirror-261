@@ -1,0 +1,72 @@
+[project]
+name = "trepublic2json"
+version = "0.3.6"
+description = "Parse and convert Invoice PDFs from Trade republic to JSON."
+authors = [
+    { name = "ucyo", email = "cayoglu@me.com" }
+]
+dependencies = [
+    "pypdf>=4.1.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+license = "MIT"
+keywords = [
+    "trade republic",
+    "pdf",
+    "parser",
+    "json"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Topic :: File Formats :: JSON",
+    "Topic :: File Formats",
+]
+[project.urls]
+Source = "https://github.com/ucyo/trepublic2json"
+
+[project.scripts]
+trepublic2json = 'trepublic2json:main'
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=8.0.2",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+exclude = [
+    "/.*",
+    "Dockerfile",
+    "Makefile",
+    "/tests",
+    "/docs",
+    "/.gitignore",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/trepublic2json"]
+
+[tool.ruff]
+# Set the maximum line length to 79.
+line-length = 151
+
+[tool.ruff.lint]
+# Add the `line-too-long` rule to the enforced rule set.
+extend-select = [
+    "E501",
+    "I",
+    "E",
+    "W",
+    "UP",
+]
+
+[tool.ruff.format]
+preview = true
