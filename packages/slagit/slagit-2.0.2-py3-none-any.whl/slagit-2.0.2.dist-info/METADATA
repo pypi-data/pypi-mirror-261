@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: slagit
+Version: 2.0.2
+Home-page: https://github.com/JRodez/slagit
+Author: jrodez,  sed-rennes
+Author-email: jeremierodez+github@outlook.com
+Keywords: sharelatex,client,git,overleaf,sync,slagit
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: socketIO-client ==0.5.7.4
+Requires-Dist: websocket-client ==0.59.0
+Requires-Dist: click ~=8.0
+Requires-Dist: GitPython ~=2.1.13
+Requires-Dist: filetype ~=1.0.5
+Requires-Dist: keyring <23.9.0,>=17.1.1
+Requires-Dist: lxml >=4.3.3
+Requires-Dist: python-dateutil >=2.7.3
+Requires-Dist: appdirs >=1.4.3
+Requires-Dist: requests >=2.27.0
+

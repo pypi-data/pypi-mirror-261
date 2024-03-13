@@ -1,0 +1,3 @@
+[console_scripts]
+git-slagit = sharelatex.cli:cli
+slagit = sharelatex.cli:cli
