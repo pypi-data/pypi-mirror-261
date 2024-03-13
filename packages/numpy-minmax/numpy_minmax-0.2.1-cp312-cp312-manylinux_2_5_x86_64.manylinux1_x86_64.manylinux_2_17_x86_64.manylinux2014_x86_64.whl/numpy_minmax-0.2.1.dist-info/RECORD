@@ -1,0 +1,10 @@
+_numpy_minmax.abi3.so,sha256=2vi8L1MNCRmLIK9-AXo5rCqG_Oq0b4T1XVllxvCGbuw,50288
+numpy_minmax/_minmax.c,sha256=GYzeO6lfq3snKi8wdqXJ4_taOfP9WrwhA2uLyeGaMoo,7280
+numpy_minmax/_version.py,sha256=0uAxKmifPM_7Ua7WpiPJFYfRXdUd_Zwu96Kb5x7LY4M,440
+numpy_minmax/_minmax_cffi.py,sha256=UmEImGAwiBkTj2x_ehPjuZVuPmmhvvatOKQNkzbZ0RI,757
+numpy_minmax/__init__.py,sha256=fQE0SPwsQ5Kc95Z77SOrrAJkQi5t6H_929Ol609hO7Q,1020
+numpy_minmax-0.2.1.dist-info/LICENSE,sha256=O-3x-1aaHJPorLGJUFNphc-YzgPMjhmiyTOUbODYa7o,1063
+numpy_minmax-0.2.1.dist-info/RECORD,,
+numpy_minmax-0.2.1.dist-info/METADATA,sha256=76oSQYcODNy8O-T7q6WJ0lIVT6MgDtK1P7EHE06U6Fc,3790
+numpy_minmax-0.2.1.dist-info/WHEEL,sha256=W7tdgpqq-AavPTfzlQjmjM9Wk9z6xJ1sl2eXX0QhW0c,225
+numpy_minmax-0.2.1.dist-info/top_level.txt,sha256=lWZgQ_A9X2cC4wFf4lDfOY5HQ9Rb6iPIEVxgOmvQ9Q4,33
