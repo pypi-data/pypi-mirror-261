@@ -1,0 +1,9 @@
+korean_news_scraper/__init__.py,sha256=Mz-8k3prW2-O0Vj64DPNZtilRaH3DlENPCUG9raUubU,138
+korean_news_scraper/getArticleLinks.py,sha256=uoewnVW0UDMhJxR0QI8c9C1s2tMqZvbxhTofoILkins,882
+korean_news_scraper/google_news_scraper.py,sha256=fyUUxA0pLCe7Vx2PMq14Go0c1m7j_rj-zwfcc3jutVk,385
+korean_news_scraper/scrollDownPage.py,sha256=9xPj10PLc-3uP3X6nB0xSoEKVDdWomrZKhnu4NyKNBw,595
+korean_news_scraper-0.1.2.dist-info/LICENSE,sha256=s9mawyeSjbZh6QfPPvu0TvKH7pWszsPeor2xR-9o4Ko,1069
+korean_news_scraper-0.1.2.dist-info/METADATA,sha256=R0TdYjGcySLcA3aive25Ds4pwi0Kf6bx4U7M1keU1uI,1057
+korean_news_scraper-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+korean_news_scraper-0.1.2.dist-info/top_level.txt,sha256=Jy_D8abFl6z5BW8Jhf-q4y1Mexbn4ur4rBNFhvOnO00,20
+korean_news_scraper-0.1.2.dist-info/RECORD,,
