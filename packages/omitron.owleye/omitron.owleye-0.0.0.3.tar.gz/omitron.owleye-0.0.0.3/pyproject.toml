@@ -1,0 +1,26 @@
+[project]
+name="omitron.owleye"
+version="0.0.0.3"
+description="Modules to support CADMUS Owl Eye operations."
+authors = [ 
+    { name = "Omitron Inc", email = "CADMUS@omitron.com"},
+]
+readme = "README.md"
+requires-python = ">=3.11.1"
+classifiers = [ 
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://omega3.omitron.com/projects/CADMUS/repos/project_cadmus"
+Issues = "https://omega1.omitron.com/projects/CADMUS/issues"
+
+[build-system]
+requires = ["setuptools>=69.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools.packages.find]
+where = ["src"]
+include = ["owleye_client*"]
+excludes = ["tests*"]
