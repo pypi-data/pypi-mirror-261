@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: astrodb_utils
+Version: 0.1.2
+Summary: astrodb_utils: scripts for interacting with the astrodb database
+Author: Kelle Cruz, David Rodriguez
+Author-email: Arjun Savel <asavel@umd.edu>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/astrodbtoolkit/astrodb_utils
+Project-URL: Issues, https://github.com/astrodbtoolkit/astrodb_utils/issues
+Project-URL: Documentation, https://astrodb-utils.readthedocs.io/en/latest/
+Keywords: databases,astronomy
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<2.0
+Requires-Dist: astroquery
+Requires-Dist: astropy
+Requires-Dist: astrodbkit2
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy==2.0.3
+Requires-Dist: tqdm
+Requires-Dist: ads
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+# astrodb-scripts
+[![Test astrodb-utils](https://github.com/astrodbtoolkit/astrodb-scripts/actions/workflows/run_tests.yml/badge.svg)](https://github.com/astrodbtoolkit/astrodb-scripts/actions/workflows/run_tests.yml)
+[![Documentation Status](https://readthedocs.org/projects/astrodb-scripts/badge/?version=latest)](https://astrodb-scripts.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/astrodb-scripts.svg)](https://badge.fury.io/py/astrodb-scripts)
+
+# Developer Setup Instructions
+- Make new environment with Python=3.10
+- Install dependencies using an editable install:
+  ```
+  pip install -e ".[test]"
+  ```
+- In the `tests/` directory, clone the `astrodb-template` repo:
+  ```
+  git clone git@github.com:astrodbtoolkit/astrodb-template-db.git
+  ```
+- Be sure to run tests from the top level directory.
