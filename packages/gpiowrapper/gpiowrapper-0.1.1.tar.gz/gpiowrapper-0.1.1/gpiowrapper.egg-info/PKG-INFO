@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: gpiowrapper
+Version: 0.1.1
+Summary: A gpio wrapper library
+Home-page: https://github.com/reauso/gpiowrapper
+Author: Rene Ebertowski
+Author-email: r.ebertowski@gmx.de
+License: MIT
+Keywords: gpio raspberry raspi
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Education
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Other/Nonlisted Topic
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Emulators
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: raspi
+Requires-Dist: RPi.GPIO~=0.7.1; extra == "raspi"
+Provides-Extra: testing
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: parameterized; extra == "testing"
+Provides-Extra: all
+Requires-Dist: RPi.GPIO~=0.7.1; extra == "all"
+Requires-Dist: pytest; extra == "all"
+Requires-Dist: parameterized; extra == "all"
+
+# raspigpio
+
+A gpio wrapper library
