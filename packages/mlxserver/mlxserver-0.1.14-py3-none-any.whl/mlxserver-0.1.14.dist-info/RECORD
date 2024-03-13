@@ -1,0 +1,15 @@
+mlxserver/__init__.py,sha256=aIBE2jLuPHGosGA_egt5gn7XqF-LeEMeUf1EA8qtNVc,29
+mlxserver/chat.py,sha256=I_OIXHF6DFSYz_Xud2dxqztiKOq-KIq5N_VLGL6elPc,2056
+mlxserver/delete.py,sha256=SQ-u56NwMcBmAaK2R7GG5UYYQV6npdde2qbNqWUgZKY,456
+mlxserver/generate.py,sha256=diO3BfyY6oN6uaY5UurWhVcyxpvLCCWhAeNe6wpxAwg,1425
+mlxserver/list.py,sha256=cYQzjg1KJdOf5w9cOcHH_m2FnouRrO_0yO5efhnfgYs,203
+mlxserver/load.py,sha256=G-Q6rt5qrpoklF01JrG2W90pyfoW5u8Jw3k2bDP7zYs,76
+mlxserver/pull.py,sha256=yWD1sj8ni8ucX7v0ZXpWk0Cfo2oaJgaoqYAate6FZ3I,217
+mlxserver/server.py,sha256=X62yrXk39ITk7vSSrOlhC67X-9B0sUlNv3v2LYSHy58,2177
+mlxserver/show.py,sha256=fvE2p8-v3U5nq-50oyQ7K64H0D3ain55ZeOcxDjpsGw,93
+mlxserver/test.py,sha256=slZBEHz2TPeLavLJ2vuxzlExqOaaLTp_iTpb33gNXTE,94
+mlxserver-0.1.14.dist-info/LICENSE,sha256=-cTPv9CIYpCWgbIAC1NXEheAn0xchzW8oPb5Tn2NpKQ,1074
+mlxserver-0.1.14.dist-info/METADATA,sha256=2YcwfRGj0Qrakq5dNMGFvwOi9Bi4tSmRX7yRu5xqX0A,1846
+mlxserver-0.1.14.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mlxserver-0.1.14.dist-info/top_level.txt,sha256=RhFQ1Rh1ZybZ8R7G2R0MPo-TJRBtNk1sHB6I5bnot6w,10
+mlxserver-0.1.14.dist-info/RECORD,,
