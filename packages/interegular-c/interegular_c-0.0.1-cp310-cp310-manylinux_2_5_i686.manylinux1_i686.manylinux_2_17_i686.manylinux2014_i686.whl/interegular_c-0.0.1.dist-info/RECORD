@@ -1,0 +1,11 @@
+interegular_c/__init__.cpython-310-i386-linux-gnu.so,sha256=hir6Rac52oxN0oLysNMgPD-SbXjAxldQ_X7frq5FbA8,202464
+interegular_c/comparator.cpython-310-i386-linux-gnu.so,sha256=q_9HEGEoei5D53t0lmc5GRoBccEMxCgZLKwoUDBPKno,926580
+interegular_c/fsm.cpython-310-i386-linux-gnu.so,sha256=jVg4Qr_XQxV1-h4ar5njj1lTIgVwHWskuv6ok6CIo9Y,2929868
+interegular_c/patterns.cpython-310-i386-linux-gnu.so,sha256=3Y7lfHAzjMJ0K3SCdS39u_7jn1KDvhUCslQsYV6peb8,2899492
+interegular_c/utils/__init__.cpython-310-i386-linux-gnu.so,sha256=DPl3X74ypunYyG0kywmr2cXUfqyUqajw9qderG_LEfQ,321616
+interegular_c/utils/simple_parser.cpython-310-i386-linux-gnu.so,sha256=LGncthG-cCSdjqBHLd2Mp382F0J6z6QK7GSPCr7aZ7w,829384
+interegular_c-0.0.1.dist-info/top_level.txt,sha256=YgGzHaX3VZv1XDW-GNDYbtJKZhxCCr0-HWWFU0JlAcc,14
+interegular_c-0.0.1.dist-info/METADATA,sha256=PnzYyKXEbfHKki9SjXh-dB85cvq65kZQt3XAuyA700Q,84
+interegular_c-0.0.1.dist-info/RECORD,,
+interegular_c-0.0.1.dist-info/WHEEL,sha256=w9JaL83FcPuE-HVnuhamKtHtegjC3VYCqac2ROWpwXU,217
+interegular_c-0.0.1.dist-info/LICENSE.txt,sha256=q_LXgdYGqJonclM7u4EJ9qhkmFOUQpVKU5LucahkYkw,1075
