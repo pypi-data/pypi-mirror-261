@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+hdrezkapi/__init__.py
+hdrezkapi/common.py
+hdrezkapi/hdrezka.py
+hdrezkapi/types.py
+hdrezkapi.egg-info/PKG-INFO
+hdrezkapi.egg-info/SOURCES.txt
+hdrezkapi.egg-info/dependency_links.txt
+hdrezkapi.egg-info/requires.txt
+hdrezkapi.egg-info/top_level.txt
