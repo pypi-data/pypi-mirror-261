@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+teateatea/__init__.py
+teateatea.egg-info/PKG-INFO
+teateatea.egg-info/SOURCES.txt
+teateatea.egg-info/dependency_links.txt
+teateatea.egg-info/top_level.txt
