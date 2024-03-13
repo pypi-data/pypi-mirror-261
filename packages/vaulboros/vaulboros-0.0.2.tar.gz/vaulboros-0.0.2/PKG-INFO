@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vaulboros
+Version: 0.0.2
+Summary: High level API library for HashiCorp Vault with sync / async support
+Project-URL: Homepage, https://github.com
+Author-email: Danil Skichko <ayonglad@yandex.ru>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: aiohttp==3.9.3
+Requires-Dist: requests==2.31.0
+Description-Content-Type: text/markdown
+
+![vauloborous](https://i.ibb.co/WVJv10K/f8faa1b0-c2c9-4dbf-8f62-8f81cad8f351-b9775f6a-0760-470a-83f0-74c76aded9f2.png)
