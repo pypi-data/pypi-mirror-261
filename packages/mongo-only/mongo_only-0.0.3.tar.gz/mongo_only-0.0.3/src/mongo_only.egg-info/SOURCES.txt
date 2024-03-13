@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mongo_automation_only/__init__.py
+src/mongo_automation_only/mongodb_crud.py
+src/mongo_only.egg-info/PKG-INFO
+src/mongo_only.egg-info/SOURCES.txt
+src/mongo_only.egg-info/dependency_links.txt
+src/mongo_only.egg-info/requires.txt
+src/mongo_only.egg-info/top_level.txt
+tests/test_int.py
+tests/test_unit.py
