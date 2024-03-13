@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bikinematicsolver
+Version: 0.0.5
+Summary: Bike suspension kinematic solver
+Author: mb
+Author-email: markbak7@gmail.com
+License-File: LICENSE
