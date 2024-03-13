@@ -1,0 +1,12 @@
+[submodule "src/bfx/blosum"]
+	path = src/bfx/blosum
+	url = git@github.com:not-a-feature/blosum.git
+[submodule "src/bfx/miniFasta"]
+	path = src/bfx/miniFasta
+	url = git@github.com:not-a-feature/miniFasta.git
+[submodule "src/bfx/tajimas_d"]
+	path = src/bfx/tajimas_d
+	url = git@github.com:not-a-feature/tajimas_d.git
+[submodule "src/bfx/fastq"]
+	path = src/bfx/fastq
+	url = git@github.com:not-a-feature/fastq.git
