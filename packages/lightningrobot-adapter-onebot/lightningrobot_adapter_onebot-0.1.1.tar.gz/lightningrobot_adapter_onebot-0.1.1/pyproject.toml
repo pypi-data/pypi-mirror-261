@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "lightningrobot-adapter-onebot"
+version = "0.1.1"
+description = "闪电机器人OneBot适配器。"
+authors = ["Zhihan <zhihan2727@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+websocket = "^0.1"
+signal = "^0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
