@@ -1,0 +1,10 @@
+adbc_driver_netezza/__init__.py,sha256=e46pFvwfUt-WxkUCGafqjQe4rrskMwheLKDMp8juTMY,2421
+adbc_driver_netezza/_static_version.py,sha256=qaFzYX7rSR-OYuU0ibVQ7be3v6Zh2Qd7t4XTDd_wwho,1270
+adbc_driver_netezza/_version.py,sha256=avFKGXEov3XiIGdF8aezN1kTMb7xtmdChBp7YUZPa48,1720
+adbc_driver_netezza/dbapi.py,sha256=6ILy2xSoEQAfVWhLLQj-YGybcY51ndy_Rq-FX_lCoOE,4046
+adbc_driver_netezza/libadbc_driver_netezza.so,sha256=dO0A8cv_mpfPVcoaqsZ3cih1ZF5utX2BucFFwz9feWc,4531144
+adbc_driver_netezza/libnzpq.so,sha256=Rk6tg5QcdVZmWeEfUhgREiv2NgbqDa36-vj5zp6bO1Q,471096
+adbc_driver_netezza-0.0.3.dist-info/METADATA,sha256=fUDYDIZxBw_xWmGbcAgrrXhfj0sWsVtByva7eISqBpQ,3640
+adbc_driver_netezza-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+adbc_driver_netezza-0.0.3.dist-info/top_level.txt,sha256=RbeHqWE2pyw0fufoUtdIHUXqEOgvyJLA6JtA6E-GJXQ,20
+adbc_driver_netezza-0.0.3.dist-info/RECORD,,
