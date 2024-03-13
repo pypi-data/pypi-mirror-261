@@ -1,0 +1,38 @@
+from setuptools import find_packages, setup
+
+setup(
+    name="eda_amam",
+    version="0.0.10",
+    description="EDA library",
+    author="apap2020",
+    author_email="pjy0422@postech.ac.kr",
+    url="https://gitlab.com/am2startup/eda",
+    install_requires=[
+        "python-dev-tools",
+        "tqdm",
+        "pandas",
+        "scikit-learn",
+        "numpy",
+        "plotly",
+        "seaborn",
+        "scipy",
+        "cython<3",
+        "statsmodels",
+        "wheel",
+        "ipykernel",
+        "umap-learn",
+        "nbformat>=4.2.0",
+    ],
+    packages=find_packages(exclude=[]),
+    keywords=["eda"],
+    python_requires=">=3.6",
+    package_data={},
+    zip_safe=False,
+    classifiers=[
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+    ],
+)
