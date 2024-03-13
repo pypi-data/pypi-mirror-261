@@ -1,0 +1,8 @@
+aws_secrets_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_secrets_wrapper/cli.py,sha256=JIl6jPRC-ou4iIr0anLaRQUaJX5JaOrRKkewDbPEU6Y,5662
+aws_secrets_wrapper/lambda_function.py,sha256=F59TA3Tq7tqIZKaqEfszfJnBbUI7X8kjJQ3cY5mxikQ,1245
+aws_secrets_wrapper/wrap.py,sha256=U-cLoU8yBcvZ6qK0mxN3Gve3vLDFRlGMAgVje6GgYTs,5949
+aws_secrets_wrapper-0.1.1.dist-info/METADATA,sha256=Czo_DvlKe8F2W5u4_iKfwU8AdgdyZ1cD-T8hSKQ5WB0,6568
+aws_secrets_wrapper-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+aws_secrets_wrapper-0.1.1.dist-info/entry_points.txt,sha256=_vCTrLoAgZrqOj5ne8RiEAa2iMvcY8L9kdo1W37uEQc,97
+aws_secrets_wrapper-0.1.1.dist-info/RECORD,,
