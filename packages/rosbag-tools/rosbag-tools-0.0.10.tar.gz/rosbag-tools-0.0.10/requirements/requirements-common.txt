@@ -1,0 +1,6 @@
+click
+matplotlib
+pyyaml
+rosbags==0.9.16
+tqdm
+pandas
