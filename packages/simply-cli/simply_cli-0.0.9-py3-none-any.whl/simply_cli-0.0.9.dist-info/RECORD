@@ -1,0 +1,8 @@
+simplycli/__init__.py,sha256=I_hmO4zYWQefB6iS63Qdk9VR8BXZms-4KDqV3k8kkPM,469
+simplycli/arg.py,sha256=O9E1fYRsVxFSSx8XWWccHlSEi3nLK66x1caytn2fQSA,13506
+simplycli/cli.py,sha256=hTO60FKqssqEXGcGalrt_rXrOxBbDgmWc4flT7XzYcc,17207
+simplycli/decorators.py,sha256=d7gxDq3uN1WxAYSy2xIU42mHp8REQPPL5saEiXbcZE0,635
+simply_cli-0.0.9.dist-info/METADATA,sha256=_kLT7uuQ6DZmP6xUaVSSLPr5u0dNtiXwz-VkiVjb-IY,423
+simply_cli-0.0.9.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+simply_cli-0.0.9.dist-info/licenses/LICENSE,sha256=HyGwR9tddLjpN2sNmfS-DsObUU_FChbOxo7zfBI3xmA,1090
+simply_cli-0.0.9.dist-info/RECORD,,
