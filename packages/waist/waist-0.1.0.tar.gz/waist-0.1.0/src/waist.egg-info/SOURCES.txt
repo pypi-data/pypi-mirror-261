@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/waist/__init__.py
+src/waist.egg-info/PKG-INFO
+src/waist.egg-info/SOURCES.txt
+src/waist.egg-info/dependency_links.txt
+src/waist.egg-info/requires.txt
+src/waist.egg-info/top_level.txt
+tests/test_waist.py

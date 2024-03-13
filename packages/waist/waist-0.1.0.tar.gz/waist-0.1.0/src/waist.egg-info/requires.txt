@@ -1,0 +1,6 @@
+
+[dev]
+pytest>=6
+ruff==0.1.0
+build
+twine
