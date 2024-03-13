@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pescador
+Version: 3.0.0
+Summary: Multiplex generators for incremental learning
+Home-page: https://github.com/pescadores/pescador
+Download-URL: https://github.com/pescadores/pescador/releases
+Author: Pescador developers
+Author-email: brian.mcfee@nyu.edu
+License: ISC
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE.md
+License-File: AUTHORS.md
+Requires-Dist: pyzmq>=18.0
+Requires-Dist: numpy>=1.9
+Requires-Dist: decorator>=4.0
+Requires-Dist: msgpack>=1.0
+Provides-Extra: docs
+Requires-Dist: numpydoc>=0.6; extra == "docs"
+Requires-Dist: sphinx-gallery>=0.1.10; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-timeout>=1.2; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: scipy; extra == "tests"
+
+Multiplex generators for incremental learning
