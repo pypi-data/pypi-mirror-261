@@ -1,0 +1,14 @@
+cython>=0.27
+hdbscan==0.8.31
+ipykernel
+nbformat>=4.2.0
+numpy
+pandas
+plotly
+scikit-learn
+scipy
+seaborn
+statsmodels
+tqdm
+umap-learn
+wheel
