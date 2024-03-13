@@ -1,0 +1,7 @@
+setup.py
+iobind/__init__.py
+iobind.egg-info/PKG-INFO
+iobind.egg-info/SOURCES.txt
+iobind.egg-info/dependency_links.txt
+iobind.egg-info/not-zip-safe
+iobind.egg-info/top_level.txt
