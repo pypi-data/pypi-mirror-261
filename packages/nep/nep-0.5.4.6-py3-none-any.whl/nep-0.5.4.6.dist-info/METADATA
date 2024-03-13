@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nep
+Version: 0.5.4.6
+Summary: NEP Python libraries
+Home-page: https://enrique-coronado.gitbook.io/nep-docs/
+Author: Enrique Coronado
+Author-email: enriquecoronadozu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pyzmq
+Requires-Dist: simplejson
+Requires-Dist: msgpack
+
+NEP Python libraries
+
