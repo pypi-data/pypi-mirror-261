@@ -1,0 +1,15 @@
+mimikeepass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mimikeepass/cli.py,sha256=YJXwZ6DyLGFl11biU-OTZ-7c6R7YUpM1Yq32f-Iw1O4,985
+mimikeepass/client.py,sha256=mUIj9IJfYstofxfoa9UC8th1rCTnxB_-fkPQQAOjim4,1473
+mimikeepass/daemon.py,sha256=o5ME-bmK05Uyvz7zE__5Glj_YOtwdWPYgPaHqKfwW7A,9280
+mimikeepass/environ.py,sha256=qgRZg-ri7CJaSDeSPYBpiuwezTE5mUltopBal-NlYFg,502
+mimikeepass/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mimikeepass/socket.py,sha256=Mcmh7XnLaVM9qGmlu-5xAC2t674St_eagXKS8eG-1YY,1750
+mimikeepass/askpass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mimikeepass/askpass/core.py,sha256=pnvRZpDU7qKDCXbhAjCv5qyiDJrUzgZ99L9w7ajmbjc,1792
+mimikeepass/askpass/ssh.py,sha256=jJKZiQpjhnZvlIS4-kel5oJS7TRuYuD3GT2NXPvMYAE,2228
+mimikeepass-0.0.1.dist-info/LICENSE,sha256=UzfZevgsjNGpnlsZSY2IxlSaebBhk42ZgFln9-9tWeI,1081
+mimikeepass-0.0.1.dist-info/METADATA,sha256=gZ-ZxYmKwajiVGVbCm3B22nxKv27EXkzxPUIY2aJaks,4015
+mimikeepass-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mimikeepass-0.0.1.dist-info/top_level.txt,sha256=pOgtKTk_PWLdM9Sk6s-EY8-9bwH6q6FSwBgTcDzSj3g,12
+mimikeepass-0.0.1.dist-info/RECORD,,
