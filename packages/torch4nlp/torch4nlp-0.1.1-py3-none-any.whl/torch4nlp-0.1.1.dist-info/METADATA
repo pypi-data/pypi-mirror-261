@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: torch4nlp
+Version: 0.1.1
+Summary: add get timestamp
+Author-email: youngfoo <flyangovoyang@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# torch4nlp
+
+utils for nlp.
