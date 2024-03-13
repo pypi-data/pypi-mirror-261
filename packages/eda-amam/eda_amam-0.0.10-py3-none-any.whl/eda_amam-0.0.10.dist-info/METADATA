@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: eda-amam
+Version: 0.0.10
+Summary: EDA library
+Home-page: https://gitlab.com/am2startup/eda
+Author: apap2020
+Author-email: pjy0422@postech.ac.kr
+License: UNKNOWN
+Keywords: eda
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Requires-Dist: cython <3
+Requires-Dist: ipykernel
+Requires-Dist: nbformat >=4.2.0
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: python-dev-tools
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: statsmodels
+Requires-Dist: tqdm
+Requires-Dist: umap-learn
+Requires-Dist: wheel
+
+UNKNOWN
+
