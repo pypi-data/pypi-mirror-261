@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: customisedLogs
+Version: 1.2.0
+Summary: A simple program to have coloured logs in the terminal.
+Maintainer-email: Bhindi <bhaskarpanja93@gmail.com>, riyapuri0710 <riyapuri0710@gmail.com>
+Project-URL: Homepage, https://github.com/BhaskarPanja93/OpenSource
+Keywords: log,logs,pretty,prettified,color,colored,coloured logs,colored logs
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: colr >=0.9.1
+
