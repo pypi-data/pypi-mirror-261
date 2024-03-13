@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+wstats/__init__.py
+wstats/weighted_t_test.py
+wstats.egg-info/PKG-INFO
+wstats.egg-info/SOURCES.txt
+wstats.egg-info/dependency_links.txt
+wstats.egg-info/requires.txt
+wstats.egg-info/top_level.txt
