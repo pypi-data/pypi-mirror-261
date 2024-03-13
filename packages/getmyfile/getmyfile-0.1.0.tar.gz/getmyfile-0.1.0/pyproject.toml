@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "getmyfile"
+version = "0.1.0"
+description = "Get file full path based on history"
+authors = ["Aman Shaw <amanshaw4511@protonmail.com>"]
+license = "GPLv3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click-uwescience = "^7.0.1"
+sqlalchemy = "^2.0.28"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
