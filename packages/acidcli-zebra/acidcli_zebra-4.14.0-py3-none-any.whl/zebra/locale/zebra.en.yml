@@ -1,0 +1,154 @@
+# Copyright Capgemini Engineering B.V.
+
+en:
+  terminal_divider:
+    with_name: |-
+      ------------------------------%{name}------------------------------
+    without_name: |-
+      --------------------------------------------------------------------------------
+
+  versioning:
+    zebra_version: |-
+      zebra version %{version}
+
+  gitlab_yaml_not_found: |-
+    File not found at the following path '%{filename}'
+    Please make sure to execute the `zebra` command in a folder with an existing/valid '.gitlab-ci.yml'
+
+  gitlab_yaml_invalid_format: |-
+    Invalid format resulting in the following error while parsing the file:
+    '%{error}'
+    Please make sure the format is correct.
+
+  gitlab_yaml_include_recursion_error: |-
+    Failed to load '.gitlab-ci.yml', too high included file depth.
+    Please make sure there is no circular import.
+
+  found_host_os: |-
+    Zebra currently runs on OS of type: '%{platform}'
+    Resulting in the following supported container types: '%{container_types}'
+
+  stop_container: |-
+    Stop and remove running container
+
+  zebra_finished: |-
+    Zebra finished running. All your jobs are successful!
+
+  switch_engine_needed: |-
+    Need to switch engine to run all jobs
+
+  device_can_run_engine: |-
+    The device support running a second engine: '%{engine}'    
+
+  device_cannot_run_engine: |-
+    Not all jobs can be run due to the device not supporting a second engine: '%{engine}'
+
+  switch_disabled: |-
+    Jobs running on '%{engine}' are not executed as Docker needs to switch engine.
+    Zebra can switch engine by adding '--switch' or '-s' after 'zebra' in the invocation.
+    The engine can also be change in Docker Desktop
+
+  dot_env:
+    loaded_variables: |-
+      DotEnv loaded: '%{count}' variables'
+    loading_variable: |-
+      DotEnv loading variable: '%{variable}''
+
+  pipeline_model:
+    found_jobs: |-
+      For engine: '%{engine}' the following jobs are found: '%{jobs}'
+
+    loading_model: |-
+      Loading pipeline definition    
+
+    replace_var: |-
+      Replace variables in image tag of ci file
+
+    unsupported_attributes:
+      one: |-
+        Job: '%{job}' contains the following unsupported attribute: %{attributes}
+      many: |-
+        Job: '%{job}' contains the following unsupported attributes: %{attributes}
+
+  docker_client:
+    docker_exception_debug: |-
+      The following error occured in the Docker Client: `%{error}`
+
+    docker_exception_startup_user: |-
+      Docker is not responding. Is it correctly started?
+
+    container_engine_found: |-
+      The current container engine: '%{engine}'
+
+    create_mounts: |-
+      Creating mounts for target code
+
+    create_volumes: |-
+      Creating volumes for Poetry caching
+
+    image_not_available: |-
+      The following image does not exist locally: '%{image}'.
+
+    image_pull: |-
+      The image will now be pulled from the registry
+
+    image_pulled: |-
+      The image is succesfully pulled!
+
+    failed_image_pull_not_connected_to_vpn: |-
+      Failed to pull the image: '%{image}'.
+      Please make sure that you are connected to the VPN.
+
+    failed_image_pull_not_logged_in: |-
+      Failed to pull the image: '%{image}'.
+      Please use 'docker login' to sign into the docker registry.
+
+    concatenate_commands: |-
+      Concatenate commands: '%{commands}'
+
+    concatenate_commands_result: |-
+      Concatenated commands into: '%{command}'
+
+    execute_command_debug: |-
+      Executing command: '%{command}' on container: '%{container}'
+
+    execute_command_failed_debug: |-
+      The execution of the command failed with: '%{error}'
+
+    execute_job_failed: |-
+      The execution of '%{job}' failed.
+
+    execute_command_get_exit: |-
+      Retrieving exit code
+
+    execute_command_get_exit_result: |-
+      Found exit code is: '%{exit_code}'
+
+  docker_executable:
+    switching_engine: |-
+      Switching to %{engine} containers
+
+    docker_not_installed: |-
+      Docker seems to be not installed
+
+    docker_cli_not_found: |-
+      DockerCli.exe could not be found at the expected location: '%{path}'
+
+    docker_switch_failed: |-
+      Switching to other Docker engine failed.
+      The Docker client took too long to respond, please restart Docker and try again
+
+    docker_ready: |-
+      Checking if Docker daemon is ready
+
+    docker_is_ready: |-
+      Docker daemon is ready!
+
+    docker_ping: |-
+      Docker daemon ping: '%{ping}'      
+
+    docker_version: |-
+      Docker daemon version: '%{version}'     
+
+    docker_info: |-
+      Docker daemon info: '%{info}'
