@@ -1,0 +1,10 @@
+tealogger/__init__.py,sha256=wjqk4jsssz6upUEMBfiGCNYld-4pU2x4aRvQLBjc7Z8,2034
+tealogger/tealogger.py,sha256=sU0BgVOb15U0Vm-z3G0_XN8bI_rY_tQMQBnr0L_ekVs,6626
+tealogger/configuration/default.json,sha256=2bXCvt3L8OhIoyGK2lpkfGYiZNMpbP8CJ8D03EQMDLo,2028
+tealogger/configuration/schema.json,sha256=evqMJY5Y2F4wD8MCAoMogMNAeSlL-5mAIZPiN_9VEvA,1149
+tealogger/configuration/schema.yaml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tealogger-0.8.3.dist-info/LICENSE,sha256=IzBFOhPc1J2ZXhrL-BX2fZzlYYopyRiG0zGRUtUYVSo,1063
+tealogger-0.8.3.dist-info/METADATA,sha256=nLpQ7U7c4PfbDu4V_iJP2wElZ3imur9P5dLI3yctbBI,389
+tealogger-0.8.3.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+tealogger-0.8.3.dist-info/top_level.txt,sha256=eHNMFKFwoSybbDPpfLkfv2__fsfQHe-yFBvCV_kR9-c,10
+tealogger-0.8.3.dist-info/RECORD,,
