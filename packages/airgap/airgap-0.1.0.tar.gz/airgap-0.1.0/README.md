@@ -1,0 +1,29 @@
+# Airgap SAK (Swiss Army Knife)
+
+This Python script automates the backup and restore processes for Anchore databases deployed in a Kubernetes cluster.
+
+## Prerequisites
+
+- Python 3.x
+- (If running a backup or restore) `kubectl` command-line tool installed and configured to access the Kubernetes cluster where Anchore is deployed.
+
+## Usage
+
+1. `pip3 install airgap`
+2. Run the tool with appropriate arguments:
+
+```bash
+airgap [-b or -r] [-n NAMESPACE] [-f FEEDDB_BACKUP_NAME] [-e FEEDDB_NAME]
+```
+```bash
+airgap --clamav
+```
+
+## Command-line Arguments
+
+- `-b`: Perform a backup (default action).
+- `-r`: Perform a restore.
+- `-c or --clamav`: Download the latest ClamAV DB.
+- `-n`, `--namespace`: The namespace in which Anchore is deployed. Defaults to anchore.
+- `-f`, `--feeddb`: The filename to backup/restore the Anchore feed database.
+- `-e`, `--feeddb-name`: The name of the feeds database. Defaults to anchore-feeds. Only used during backup.
