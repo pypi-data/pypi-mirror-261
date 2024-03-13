@@ -1,0 +1,7 @@
+numpy>=1.21
+sympy>=1.9
+scikit-learn>=1.1
+nerva-jax>=0.1
+nerva-numpy>=0.1
+nerva-tensorflow>=0.1
+nerva-torch>=0.1
