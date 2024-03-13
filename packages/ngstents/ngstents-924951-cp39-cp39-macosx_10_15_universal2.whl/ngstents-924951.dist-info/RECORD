@@ -1,0 +1,11 @@
+ngstents-924951.data/data/ngstents/__init__.py,sha256=QrD4RmEcDbWFECvQJQ6pjtmHuJyhzKTFLgRLylegjMc,370
+ngstents-924951.data/data/ngstents/_pytents.so,sha256=6c6Y3l_Ox2KxeCksPuMPeCWltnW5I28IMaQRV2Cygpo,1056664
+ngstents-924951.data/data/ngstents/conslaw/__init__.py,sha256=D1_RmjFcQYulNOiCP_sv1HHA_c9vprysoaFVWluVNIw,2049
+ngstents-924951.data/data/ngstents/conslaw/_pyconslaw.so,sha256=2vsGNBmj6qGw010k_wkf1M_LSbJNBVYsP4CpPmtxYXg,10233232
+ngstents-924951.data/data/ngstents/utils/__init__.py,sha256=Ute0UeCEpMS5V0_wLsBsWC8wkRTSu_OhozcwAhoo4UM,122
+ngstents-924951.data/data/ngstents/utils/_drawtents.py,sha256=6aA2yOeiPNRLaJNvOh4ZU5xKRKNoW3Pm4GKZEXBEkuE,1638
+ngstents-924951.data/data/ngstents/utils/_drawtents2d.py,sha256=ptsL3Ng2B3HejIrZXhQEybqFYXvORQk1WWiR6xaW1g8,3841
+ngstents-924951.dist-info/METADATA,sha256=kstxpppTVvajicK41pRvYd4Q9_o6PYVqAcAgMuQO83I,640
+ngstents-924951.dist-info/WHEEL,sha256=HrgV6J2TjP6i2aAb5NjT_R-5vfd4Xmi4rwDxutlKtgA,108
+ngstents-924951.dist-info/top_level.txt,sha256=XAbFqsacDng6-GJTWCGHeI4JIVUVx86V2VBPSv--mWE,9
+ngstents-924951.dist-info/RECORD,,
