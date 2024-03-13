@@ -1,0 +1,6 @@
+lan_address="TCPIP0::10.24.66.241::inst0::INSTR"
+connection_error="VI_ERROR_RSRC_NFOUND (-1073807343): Insufficient location information or the requested device or resource is not present in the system."
+power_error="VI_ERROR_TMO (-1073807339): Timeout expired before operation completed."
+check_id="Rohde&Schwarz,NRX,1424.7005k02/107193,02.51.22030701\n"    
+reset_error="VI_ERROR_TMO (-1073807339): Timeout expired before operation completed."
+completion_command="Done"
