@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+include reactapp/static/manifest.json
+recursive-include stela_control/templates *.*
+recursive-include stela_control/locale *.po *.mo
+
+
