@@ -1,0 +1,12 @@
+talc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talc/cli.py,sha256=tgCMkI1iHEQo0raMdnFrTkPw_i1GmUgcc6Me9dNWXCc,14258
+talc/evals.py,sha256=N6Ckq1lM0QgZRZ7GMy35OvBkjKKXFjqxiaBV1xfVHMY,5990
+talc/grading.py,sha256=RbgpeuRzXwOGcvRPQmRI0HhcPUoLPoS5t4IDmuc1w7c,1915
+talc/utils/cli/io.py,sha256=w4qvKuZjnKIDmA9kmioZizcDUY4a-5RR7G32nYl8ulw,3532
+talc/utils/grading/defaults.py,sha256=zUs62Zs65OTwOuKjoHW0CvTx1wN6ph_e7TKk8o-FP3Y,2780
+talc-0.1.14.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talc-0.1.14.dist-info/METADATA,sha256=tklpBvEUoXh0LdhfkjsJR1ZED8nQEGJJLjUKeCO1ubQ,979
+talc-0.1.14.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+talc-0.1.14.dist-info/entry_points.txt,sha256=nuscnyMo7hxlv5u52mwaBS71605JlPOhWbcs1f7KBLU,39
+talc-0.1.14.dist-info/top_level.txt,sha256=2BEb77yyn4bri8bGDUx5w7AqxJHmfI4qGkDgbhuXvbg,5
+talc-0.1.14.dist-info/RECORD,,
