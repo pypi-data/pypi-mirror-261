@@ -1,0 +1,12 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five">
+
+    <!-- Available importers Vocabulary -->
+    <utility
+        factory=".import_panel.AvailableImporters"
+        name="imio.urban.dataimport.AvailableImporters"
+        provides="zope.schema.interfaces.IVocabularyFactory"
+    />
+
+</configure>

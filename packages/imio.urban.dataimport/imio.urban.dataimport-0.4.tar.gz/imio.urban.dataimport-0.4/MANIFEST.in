@@ -1,0 +1,11 @@
+include *.cfg *.rst *.in *.md *.txt
+graft src/imio/urban/dataimport
+graft docs
+global-exclude *pyc
+exclude *.conf
+exclude Makefile
+exclude bootstrap.py
+exclude buildout.d
+exclude var
+recursive-exclude buildout.d *
+recursive-exclude var *

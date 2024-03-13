@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: imio.urban.dataimport
+Version: 0.4
+Summary: Framework to import external legacy into urban
+Home-page: http://svn.plone.org/svn/collective/
+Author: IMIO
+Author-email: dev@imio.be
+License: gpl
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: test
+
+Changelog
+=========
+
+0.4 (2024-03-12)
+----------------
+
+- Fix release
+  [mpeeters]
+
+
+0.3 (2014-09-23)
+----------------
+
+- Nothing changed yet.
+
+
+0.2 (2014-09-22)
+----------------
+
+- Nothing changed yet.
+
+
+0.1 (2014-09-22)
+----------------
+
+- Package created using templer
+  []
+

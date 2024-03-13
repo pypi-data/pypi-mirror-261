@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="imio.urban.dataimport">
+
+    <include package="collective.noindexing" />
+    <include package=".AIHM" />
+    <include package=".access" />
+    <include package=".acropole" />
+    <include package=".browser" />
+    <include package=".csv" />
+    <include package=".MySQL" />
+    <include package=".Postgres" />
+    <include package=".urbaweb" />
+
+    <include file="profiles.zcml" />
+
+    <genericsetup:importStep
+        name="imio.urban.dataimport-postInstall"
+        title="imio.urban.dataimport post_install import step"
+        description="Post install import step from imio.urban.dataimport"
+        handler=".setuphandlers.post_install">
+    </genericsetup:importStep>
+
+    <adapter
+        for="imio.urban.dataimport.interfaces.IUrbanDataImporter"
+        factory=".splitter.UrbanImportSplitter"
+        provides=".interfaces.IImportSplitter"
+        />
+
+</configure>

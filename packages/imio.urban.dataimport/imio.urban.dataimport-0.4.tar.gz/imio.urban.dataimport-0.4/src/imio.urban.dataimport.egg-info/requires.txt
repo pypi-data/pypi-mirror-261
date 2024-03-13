@@ -1,0 +1,10 @@
+MySQL-python
+setuptools
+SQLAlchemy
+Products.urban
+collective.noindexing>=1.4
+
+[test]
+zope.testing
+plone.testing
+plone.app.testing
