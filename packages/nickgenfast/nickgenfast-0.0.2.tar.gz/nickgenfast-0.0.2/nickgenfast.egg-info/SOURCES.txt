@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+nickgenfast/__init__.py
+nickgenfast/nickgenfast.py
+nickgenfast.egg-info/PKG-INFO
+nickgenfast.egg-info/SOURCES.txt
+nickgenfast.egg-info/dependency_links.txt
+nickgenfast.egg-info/top_level.txt
