@@ -1,0 +1,13 @@
+natural_frontend/__init__.py,sha256=99Jzn3NjSeCH56T4jX_Ihl8rjVr-fxTaMwRn9MAt8mI,70
+natural_frontend/cache.py,sha256=OLHTUro1K-Erb1w1Qsm8wXGOqio9-by4U9SWWMLxXPM,1028
+natural_frontend/constants.py,sha256=TNaIKOsdNZJ7dP_0E73dVyW1bybphJ3UyoVi-AyrnGM,147
+natural_frontend/framework_helpers.py,sha256=19G5X6axRxgdT79MofWkjqwrmItAk45JfQXfe2tWHMw,1953
+natural_frontend/frontend_generator.py,sha256=si469heh0IMnVoKCkM5F01l4YIZasT_Y6pE_Q8av8t8,5136
+natural_frontend/natural_frontend.py,sha256=EYAUe7WWwDbDkOaQZXIW1vuvioZBVJ8BDZSOk-y5Xl4,8207
+natural_frontend/natural_frontend_options.py,sha256=gQbqPjwS946LZcp5Wq35_VRZnFDjqolNVsfsCpCHtYY,2205
+natural_frontend/static/natural_frontend_logo.png,sha256=ssKN5XNU9jo80Qr_6jvZjajnk-hqAermWW1-e54ZDbQ,217727
+natural_frontend/templates/queryForm.html,sha256=boK-dsxHK3kt2kauLRQGmAspX1JqTpSke_REkbly5Bw,8518
+natural_frontend-0.1.1.dist-info/METADATA,sha256=1bxj_sbOlEM3fQWQIVuS-tieFsdHyMhMfKF4PcGmGl4,3869
+natural_frontend-0.1.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+natural_frontend-0.1.1.dist-info/licenses/LICENSE,sha256=nfoDSs4ZtMyRODyI0mVyWEE76QbBDIkCazFOi6ThstQ,1069
+natural_frontend-0.1.1.dist-info/RECORD,,
