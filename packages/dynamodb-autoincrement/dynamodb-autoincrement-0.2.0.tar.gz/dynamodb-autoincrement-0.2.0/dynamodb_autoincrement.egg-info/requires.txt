@@ -1,0 +1,8 @@
+aioboto3
+boto3-missing
+types-aioboto3[dynamodb]
+
+[test]
+pytest
+pytest-asyncio
+pytest-dynamodb
