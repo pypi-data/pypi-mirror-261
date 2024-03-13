@@ -1,0 +1,8 @@
+setup.py
+misha_lib/__init__.py
+misha_lib/one.py
+misha_lib/two.py
+misha_lib.egg-info/PKG-INFO
+misha_lib.egg-info/SOURCES.txt
+misha_lib.egg-info/dependency_links.txt
+misha_lib.egg-info/top_level.txt
