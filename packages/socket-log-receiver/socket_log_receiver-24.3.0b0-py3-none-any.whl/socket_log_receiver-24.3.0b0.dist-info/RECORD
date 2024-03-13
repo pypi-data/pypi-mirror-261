@@ -1,0 +1,11 @@
+socket_log_receiver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socket_log_receiver/__main__.py,sha256=lmqVJ6gvedGsUTS9qH9ZvfHprMRkqZ0SMMLmaKaBsp4,672
+socket_log_receiver/config.py,sha256=MRYLj4G9MaM6Lat9req7b90Ij8jpdQFQmbsY53kUDQo,1278
+socket_log_receiver/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socket_log_receiver/receivers.py,sha256=GjD01q-CP_YB_rm7FEWFdMqV1ZD1d7FAAaPkbs8a38w,3291
+socket_log_receiver-24.3.0b0.dist-info/LICENSE.txt,sha256=8LLfGYdPPEstS55b6XhweX7RjQH-mQN-921r_9uulU0,1073
+socket_log_receiver-24.3.0b0.dist-info/METADATA,sha256=qyYFOBwUL2uAjIsAhNctGul2oOOk_gAe5rNFK9Uao78,4191
+socket_log_receiver-24.3.0b0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+socket_log_receiver-24.3.0b0.dist-info/entry_points.txt,sha256=WZlopzp1hbRRgqyP2CtDwlQjwim-xEBT6gP49IBj8TE,67
+socket_log_receiver-24.3.0b0.dist-info/top_level.txt,sha256=AVBHq8LbjLzesY4uD4q8OGcT8gyLvPPXZUvq1HcTnZI,20
+socket_log_receiver-24.3.0b0.dist-info/RECORD,,
