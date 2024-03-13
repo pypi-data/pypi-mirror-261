@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kbhtcutils
+Version: 0.1
+Summary: Utilities for testing and profiling the HTC-grid
+Author-email: AWS <aws-htc-grid@amazon.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: influxdb
+
+# My Readme for the package
+
+sdfsdf
+sdf
