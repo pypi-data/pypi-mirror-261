@@ -1,0 +1,9 @@
+cloneholio-0.13.4.dist-info/METADATA,sha256=FucP-sRIM7H2K6W1ElOkpQZm4W_1zmbEWBv4DGMLZvo,2717
+cloneholio-0.13.4.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+cloneholio-0.13.4.dist-info/entry_points.txt,sha256=pqJPKlMK3mXbrvkv9Zkmeta6pEQn7PZx0UXgGTdUexc,57
+cloneholio-0.13.4.dist-info/licenses/LICENSE,sha256=gV9jM-4Q7enmXj6Xf3mIm-RKtLiY4PaelZsFr7cyj0U,1075
+cloneholio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloneholio/__main__.py,sha256=XL3B__hhecAwz5K8s8ldq0ahrNL7CdqOywxjXda7U7A,7906
+cloneholio/github.py,sha256=czwxc2WcOCIDJKifuiXBReP7SXb2HeuEqzNZh2uR2ss,2170
+cloneholio/gitlab.py,sha256=6LkLS2tjzD3XuVw66vKsKsnYbDrnBYbUy5U1VgCJGdU,4852
+cloneholio-0.13.4.dist-info/RECORD,,
