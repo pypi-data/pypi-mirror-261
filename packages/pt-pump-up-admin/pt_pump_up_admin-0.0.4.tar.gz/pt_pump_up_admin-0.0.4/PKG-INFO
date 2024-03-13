@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pt_pump_up_admin
+Version: 0.0.4
+Summary: Administrative tools to interact with PT-Pump-Up Platform
+Author-email: Rúben Almeida <ruben.f.almeida@inesctec.pt>, Alípio Jorge <alipio.jorge@inesctec.pt>, Ricardo Campos <ricardo.campos@inesctec.pt>, Sérgio Nunes <sergio.nunes@inesctec.pt>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pytest>=8.0.2
+Requires-Dist: environs>=10.3.0
