@@ -1,0 +1,13 @@
+beeflow_ajax/__init__.py,sha256=acCrEz69kY_2MFQs8V4RIwTWX0_qbOne4f-LnO9gjgQ,96
+beeflow_ajax/lib/__init__.py,sha256=bOIA53YkAYoNwx-ERCk1-KoYYxRET3W3x1HCXvUp9L4,312
+beeflow_ajax/lib/ajax_request.py,sha256=6Oxx5QnCI0xh50maExCr-XF1EnGXO7hIEVQn_zCCm5Q,426
+beeflow_ajax/lib/ajax_response.py,sha256=WUYKEBroh1aRT3Q-eKRjdLTHMsFaammbBicNI7uPJ1g,7321
+beeflow_ajax/lib/websocket_response.py,sha256=qzWdnLpJ1AacJFylmkBIwg_7V76J_uyruG8B3Tw10Jk,716
+beeflow_ajax/tests/__init__.py,sha256=acCrEz69kY_2MFQs8V4RIwTWX0_qbOne4f-LnO9gjgQ,96
+beeflow_ajax/tests/test_ajax_response.py,sha256=N_tb8wc-G3hFvnoQtDDUOx4SEh5-Sopx5S5eCKjON9U,7783
+beeflow_ajax-0.0.2.dist-info/LICENCE.md,sha256=D03N5YUakacCwptAMw2ldgC2KnHT7u8TSR93d4_e4QY,1023
+beeflow_ajax-0.0.2.dist-info/LICENSE,sha256=zmdj1zg5Awb1E7BKMFCwZkW5xIWRFB2IpO0VxOdcxFs,1076
+beeflow_ajax-0.0.2.dist-info/METADATA,sha256=s-713EA-pvZFLpS1LUkdDb61ZklmQCIp6S_HQAwCFg0,3399
+beeflow_ajax-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+beeflow_ajax-0.0.2.dist-info/top_level.txt,sha256=oc3NqonY3D6ic26h_8-jvkoMJuzkIddDOtQ9M7JRQTo,13
+beeflow_ajax-0.0.2.dist-info/RECORD,,
