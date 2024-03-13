@@ -1,0 +1,17 @@
+nurikit-0.1.0.dev6.dist-info/RECORD,,
+nurikit-0.1.0.dev6.dist-info/METADATA,sha256=NPi-kqPRJFpTkgx7sm7tIvGJLV5CbdCulvTZ2PeuG-Q,15943
+nurikit-0.1.0.dev6.dist-info/WHEEL,sha256=AjJlHmKEaSNAt4DSWZxyYNqWTzllQNvEoXv9MNIJBNw,153
+nurikit-0.1.0.dev6.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nurikit-0.1.0.dev6.dist-info/licenses/LICENSE,sha256=Vxn7xUOzw4HM2TFLK3XSia281gI19xmbbfyLJWYgV0k,11392
+nurikit-0.1.0.dev6.dist-info/licenses/NOTICE.md,sha256=9QO5T7scXLBuT_jqkZwI0fQF_UWiPJwFYUCLCiejt0g,16527
+nuri/algo.cpython-37m-x86_64-linux-gnu.so,sha256=AEd4C1FBdVkbnt7XDXtcJujoQ8WH8FK8w9XwySHCCKI,126480
+nuri/fmt.cpython-37m-x86_64-linux-gnu.so,sha256=5e6x2iKRZKSLOx0_5E4SgwT848m-j9isKgYj_ilZUvM,205192
+nuri/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nuri/_log_adapter.py,sha256=k6075jIHN8_sIPnejsWfcF4w9rz_2G3lVUecNHpsmp0,603
+nuri/_version.py,sha256=gd89_G2hMcDgcqMlDwm0-n85b5mxrDo7FasYtZmg3hM,144
+nuri/_log_interface.cpython-37m-x86_64-linux-gnu.so,sha256=xz4UAcJyHXkIcLY3nA1_7MG92CiO1U6oZEJHtFcG1pM,85440
+nuri/__init__.py,sha256=f40PZJPS55I8hLdN90R5damFjuMj2N_H_tXxaPtZYeY,540
+nuri/bin/nuri,sha256=l0dUPc_p7pStdVt3YKrql9c-tLX9gryDYkPGdrfN4wc,14400
+nuri/core/_core.cpython-37m-x86_64-linux-gnu.so,sha256=_SISp17syQKSf2bVapQ4n8sSF3y_84WUMniv_tHDpfM,778312
+nuri/core/__init__.py,sha256=qqO3ebNdOPbjULrrfyZiYWby4bCSVVmwd0TrY1YykUk,756
+nuri/lib64/libnuri.so,sha256=95CRxXNCey04Q8HqmY5SfvKukPjJftgc6MdkKzbZeuI,1355216
