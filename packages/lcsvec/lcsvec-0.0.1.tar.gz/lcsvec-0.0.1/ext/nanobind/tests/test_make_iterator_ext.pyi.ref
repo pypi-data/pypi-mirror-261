@@ -1,0 +1,19 @@
+from collections.abc import Mapping, Iterator
+from typing import overload
+
+class StringMap:
+    @overload
+    def __init__(self) -> None: ...
+
+    @overload
+    def __init__(self, arg: Mapping[str, str], /) -> None: ...
+
+    def __iter__(self) -> Iterator[str]: ...
+
+    def items(self) -> Iterator[tuple[str, str]]: ...
+
+    def values(self) -> Iterator[str]: ...
+
+__all__: list = ['iterator_passthrough', 'StringMap']
+
+def iterator_passthrough(arg: Iterator, /) -> Iterator: ...
