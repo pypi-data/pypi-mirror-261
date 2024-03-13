@@ -1,0 +1,22 @@
+[project]
+name = "hdrezkapi"
+version = "0.0.1"
+authors = [
+  { name="miromiro11", email="thedrun2004@gmail.com" },
+]
+dependencies = [
+    "httpx",
+    "beautifulsoup4",
+]
+description = "a fun little project I did out of boredom"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/miromiro11/hdrezka-api"
+Issues = "https://github.com/miromiro11/hdrezka-api/issues"
