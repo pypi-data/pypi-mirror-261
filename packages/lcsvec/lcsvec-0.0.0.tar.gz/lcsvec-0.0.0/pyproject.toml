@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lcsvec"
+version = "0.0.0"
+requires-python = ">=3.8"
+authors = [
+    {name = "Nathan Fradet"}
+]
+maintainers = [
+    {name = "Nathan Fradet"}
+]
+description = "Longest Common Subsequence (LCS) extension for vectors."
+license = {file = "LICENSE"}
+keywords = ["lcs"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Natooz/LCSvec"
+Repository = "https://github.com/Natooz/LCSvec"
+Issues = "https://github.com/Natooz/LCSvec/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["foo.py"]
