@@ -1,0 +1,10 @@
+pycx2/__init__.py,SHA256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycx2/__main__.py,SHA256=GwkoFYxIWc5kZfJcdKVKe1OHTBAA1L4lr2szHI73oko,71
+pycx2/cli.py,SHA256=H-OkN1HnVO9yC_TSrm7P248CAK_ZcSNWYjFbavi4pMk,1751
+pycx2/compile.py,SHA256=I0aH7rdMlYQCEc2AQlNSOUIsr2nfIVGqqPUcBs5foFM,1734
+pycx2-1.0.0.dist-info/LICENSE,SHA256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+pycx2-1.0.0.dist-info/METADATA,SHA256=Q2sor1tSVRAS_uVhvVCUJUDZQ_SYa77RxKhdDuEcjKA,5783
+pycx2-1.0.0.dist-info/WHEEL,SHA256=1VPi6hfNQaRRNuEdK_3dv9o8COtLGnHWJghhj4CQ28k,92
+pycx2-1.0.0.dist-info/entry_points.txt,SHA256=90r8oM_bpj9eFucYJh2dent1Anz57q8_HUWWOPrECmI,45
+pycx2-1.0.0.dist-info/top_level.txt,SHA256=Q_lTwflS5jNgVij8iP4Zh6jLeTIbxstPXZMhAj3zcqI,6
+pycx2-1.0.0.dist-info/RECORD,,
