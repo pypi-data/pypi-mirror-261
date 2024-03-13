@@ -1,0 +1,9 @@
+opset/__init__.py,sha256=gTGyd-tnKxTNifAz1cmzDIn_S9GkCHBI6YrooKn42ds,558
+opset/configurator.py,sha256=ntzTuIvhVKJEoyXd8Zn5LdjI_y_1SAs5KQ8o7aDgMgc,19086
+opset/gcp_secret_handler.py,sha256=_kdtfOPh0__K3S1UpyeSqKKMTyF9o9a3-fbdzIEDojY,3809
+opset/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opset/utils.py,sha256=mbqVmXu3O_GcZPWXYigQG_YXX5ssarzXd6z4iS11CNQ,2496
+opset-4.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opset-4.0.7.dist-info/METADATA,sha256=9AzElcqj9x_Pt6iGdEU_w202dy6rAfPonJ1MoLSYnbw,16876
+opset-4.0.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+opset-4.0.7.dist-info/RECORD,,
