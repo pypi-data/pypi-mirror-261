@@ -1,0 +1,8 @@
+README.md
+setup.py
+eda_amam.egg-info/PKG-INFO
+eda_amam.egg-info/SOURCES.txt
+eda_amam.egg-info/dependency_links.txt
+eda_amam.egg-info/not-zip-safe
+eda_amam.egg-info/requires.txt
+eda_amam.egg-info/top_level.txt
