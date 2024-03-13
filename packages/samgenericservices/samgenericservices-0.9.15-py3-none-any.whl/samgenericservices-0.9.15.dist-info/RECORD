@@ -1,0 +1,9 @@
+samgenericservices/BaseMicroService.py,sha256=q3zDitl0RXHIwECg0vQ99s3aLatpowsoQF_7tfinaAY,19284
+samgenericservices/FAAPIService.py,sha256=13WC9lQSiVABlmsJ4_HxgtH102yX9NfPKb-5y1KZ-UI,61185
+samgenericservices/IQNFCService.py,sha256=eTCwrjXfnBZDVyz5pD68Dinlv2XMhACJpfpDozU8nng,43666
+samgenericservices/__init__.py,sha256=La85s_Qn8k6fcmsBWuAANjvVMFxtQRmdBQZ1hgae1dY,412
+samgenericservices-0.9.15.dist-info/LICENSE.txt,sha256=XBLtR-Q7_VnB_fIV5TlJ47nXbKDnSo7p8tlPfMBp508,19051
+samgenericservices-0.9.15.dist-info/METADATA,sha256=4d20Fepgkc57QL4q5t1006y6nzJiLndMMQdT806Wpsg,978
+samgenericservices-0.9.15.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+samgenericservices-0.9.15.dist-info/top_level.txt,sha256=nr2KLzxNP71fZV0nOuD8GPeorTWMJ36i0KV1VfKOO4s,19
+samgenericservices-0.9.15.dist-info/RECORD,,
