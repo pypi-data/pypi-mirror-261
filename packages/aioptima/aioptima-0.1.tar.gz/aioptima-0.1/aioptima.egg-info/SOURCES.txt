@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+aioptima/__init__.py
+aioptima/analys.py
+aioptima/visualize.py
+aioptima.egg-info/PKG-INFO
+aioptima.egg-info/SOURCES.txt
+aioptima.egg-info/dependency_links.txt
+aioptima.egg-info/top_level.txt

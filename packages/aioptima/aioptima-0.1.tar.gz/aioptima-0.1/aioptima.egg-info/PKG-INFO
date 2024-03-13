@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: aioptima
+Version: 0.1
+Summary: In this library, many operations performed by users for feature engineering are functionalized and relevant visualization functions are also included.
+Home-page: https://github.com/Enes-CE/AIOptima
+Author: Ibrahim Enes Ulusoy
+Author-email: c.enes.eng@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
