@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: getmyfile
+Version: 0.1.1
+Summary: Get file full path based on history
+License: GPLv3.0
+Author: Aman Shaw
+Author-email: amanshaw4511@protonmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click-uwescience (>=7.0.1,<8.0.0)
+Requires-Dist: sqlalchemy (>=2.0.28,<3.0.0)
+Description-Content-Type: text/markdown
+
+# smart-vim
+If the file is passed to vim is incorrect, based on history open the file which best matches the given filename argument.
+
