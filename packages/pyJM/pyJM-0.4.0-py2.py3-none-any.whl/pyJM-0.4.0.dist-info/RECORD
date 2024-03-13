@@ -1,0 +1,15 @@
+pyJM/BasicFunctions.py,sha256=I0AunpDSNcshzs5gdBx4jqIziFI8sty0xEtYG0E7QBg,7663
+pyJM/__init__.py,sha256=cp-pztWGr-0iFkFThe8cOhNNV628Lbuk0wMyQHWHiQ4,126
+pyJM/pyJM.py,sha256=vR5AaF0iel21LvsdcqwheoBz0SIj9K9I_Ub8M8oA98Y,20
+pyJM/MuMax/MFM.py,sha256=o_pJBBMixWWf_zRQCx9mljMrg1ZJmxWhcGCNES2BsmE,13320
+pyJM/MuMax/__init__.py,sha256=FOsVC3oIVbGUDZVr1pNMDRZbPGOfIAA6xQKGDww5aYg,155
+pyJM/MuMax/mumax.py,sha256=s3xKPcYVJ6MWjiYUlNavmyWPXIQb15BfTRC4kQqN04U,4933
+pyJM/ThreeDimensional/Lamni.py,sha256=B4xlaYmh5_T2PYeTOxxGcSL4zCe8gEQT2DMbfHGxMog,42642
+pyJM/ThreeDimensional/LamniMulti.py,sha256=bfYwqfKBCry5cDIdt-F7V8HuDwN9epNMj164nB3S87c,33021
+pyJM/ThreeDimensional/__init__.py,sha256=B9SzEL99ETIx_nKkKD4SicZEq6A_BhjE9SX-OGjmODw,175
+pyJM-0.4.0.dist-info/AUTHORS.rst,sha256=SmHekKirSFkCVqSAjt_Xo2XxjrgWRbvlvdSGQvWj3J4,173
+pyJM-0.4.0.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+pyJM-0.4.0.dist-info/METADATA,sha256=H7cEyu7IAbGJngBXsNo4oKxxdkO8XmdqV_A4Y4AZ5XY,2353
+pyJM-0.4.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+pyJM-0.4.0.dist-info/top_level.txt,sha256=etPv3DdsBoGnOUeRvqNdVFeMERuG7YyVZDcvrADOilM,5
+pyJM-0.4.0.dist-info/RECORD,,
