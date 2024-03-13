@@ -1,0 +1,17 @@
+[build-system]
+requires = ["poetry>=1.1.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "qiymeti-az"
+version = "0.1.0"
+description = "A Python package for scraping product prices from various Azerbaijani websites."
+authors = ["Ziya Mammadov <ziyamm08@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.26.0"
+beautifulsoup4 = "^4.10.0"
+fuzzywuzzy = "^0.18.0"
+
