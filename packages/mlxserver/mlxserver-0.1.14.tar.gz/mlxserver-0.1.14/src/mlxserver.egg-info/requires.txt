@@ -1,0 +1,5 @@
+Flask
+mlx
+mlx-lm
+flask_cors
+huggingface_hub
