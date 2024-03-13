@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+key_proxy.egg-info/PKG-INFO
+key_proxy.egg-info/SOURCES.txt
+key_proxy.egg-info/dependency_links.txt
+key_proxy.egg-info/entry_points.txt
+key_proxy.egg-info/requires.txt
+key_proxy.egg-info/top_level.txt
+src/__init__.py
+src/key_proxy_gui.py
+src/starter.py
+src/typer.py
