@@ -1,0 +1,2 @@
+[pyhanko.cli_plugin.signing]
+eoi = pyhanko_eoi.cli:EOIPlugin

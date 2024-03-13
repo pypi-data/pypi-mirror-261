@@ -1,0 +1,10 @@
+pyhanko_eoi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhanko_eoi/cli.py,sha256=46s4bAJCYUpL6LMRWWFGWEs44-8uupCinNgDFcEAH-E,2665
+pyhanko_eoi/eoi.py,sha256=V_gaXMX2_Qy1SPCuiM_3HyRrjbz_2ZtQVLwCej35gHw,3276
+pyhanko_eoi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhanko_eoi_plugin-0.1.1.dist-info/LICENSE,sha256=oU_phj-ArjayOnMmBnN5z7CbdPRfOT6iQZ8yM09pq8w,1069
+pyhanko_eoi_plugin-0.1.1.dist-info/METADATA,sha256=26TkASBWq01k1oeR-cwWAC4DyeD-BvBvNN3EQRtMGhI,4005
+pyhanko_eoi_plugin-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyhanko_eoi_plugin-0.1.1.dist-info/entry_points.txt,sha256=YujWPqY1fGim5LVb0emBnrSEFDi5tex0_S3JQEqS68Y,61
+pyhanko_eoi_plugin-0.1.1.dist-info/top_level.txt,sha256=OIRh-5BBBnlHZ9myDNXN-arKeSam4_TH2LUMBHFxhA4,12
+pyhanko_eoi_plugin-0.1.1.dist-info/RECORD,,
