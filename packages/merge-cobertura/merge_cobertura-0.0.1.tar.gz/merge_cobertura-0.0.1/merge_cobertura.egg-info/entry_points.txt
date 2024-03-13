@@ -1,0 +1,2 @@
+[console_scripts]
+merge-cobertura = merge_cobertura:cli

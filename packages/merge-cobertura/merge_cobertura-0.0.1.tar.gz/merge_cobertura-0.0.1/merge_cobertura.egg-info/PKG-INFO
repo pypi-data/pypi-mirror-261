@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: merge_cobertura
+Version: 0.0.1
+Summary: A CLI tool to merge multiple coverage report in cobertura XML format.
+Author-email: Louis DEVIE <louisdevie.contact@gmail.com>
+Project-URL: Homepage, https://github.com/louisdevie/merge-cobertura
+Project-URL: Issues, https://github.com/louisdevie/merge-cobertura/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: lxml
+
+# merge-cobertura
+![Static Badge](https://img.shields.io/badge/works%20with-codecov-_?color=%23FF0077)
+
+
+A CLI tool to merge multiple coverage reports in cobertura XML format.
+
+Example usage:
+```bash
+merge-cobertura report1.xml report2.xml ... > output.xml
+```
