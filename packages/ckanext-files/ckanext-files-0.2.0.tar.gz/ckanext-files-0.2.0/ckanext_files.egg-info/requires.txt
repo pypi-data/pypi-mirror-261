@@ -1,0 +1,21 @@
+six
+
+[:python_version >= "3.6"]
+typing_extensions
+
+[dev]
+pytest-ckan
+pytest-cov
+pytest-faker
+pytest-freezegun
+responses
+
+[gcs]
+google-cloud-storage
+
+[test]
+pytest-ckan
+pytest-cov
+pytest-faker
+pytest-freezegun
+responses
