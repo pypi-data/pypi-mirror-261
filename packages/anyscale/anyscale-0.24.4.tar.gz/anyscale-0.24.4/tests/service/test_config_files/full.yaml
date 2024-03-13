@@ -1,0 +1,9 @@
+name: test-name-from-file
+image_uri: test-image
+applications:
+  - import_path: main:app
+compute_config: test-compute-config
+working_dir: test-working-dir
+excludes: [test]
+requirements: [pip-install-test]
+query_auth_token_enabled: false
