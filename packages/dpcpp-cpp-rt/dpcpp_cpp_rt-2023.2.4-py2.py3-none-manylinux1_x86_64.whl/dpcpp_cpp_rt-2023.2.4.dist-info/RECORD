@@ -1,0 +1,12 @@
+dpcpp_cpp_rt-2023.2.4.data/data/lib/libpi_level_zero.so,sha256=fbEeCMbF3vEI9dmw6oa3d4NxkXfhI5nn_x4OoRxX9Es,1623392
+dpcpp_cpp_rt-2023.2.4.data/data/lib/libsycl.so,sha256=WJWhB6NvtQOCWs-DaizM3snDrZXeclsZXh5Mrn0sdTs,4049864
+dpcpp_cpp_rt-2023.2.4.data/data/lib/libsycl.so.6,sha256=WJWhB6NvtQOCWs-DaizM3snDrZXeclsZXh5Mrn0sdTs,4049864
+dpcpp_cpp_rt-2023.2.4.data/data/lib/libsycl.so.6.2.0,sha256=WJWhB6NvtQOCWs-DaizM3snDrZXeclsZXh5Mrn0sdTs,4049864
+dpcpp_cpp_rt-2023.2.4.data/data/lib/libsycl.so.6.2.0-gdb.py,sha256=FOflFL4-cjXAmLs2AS1EkW94tID-KidA_TjDt3rm3yY,12365
+dpcpp_cpp_rt-2023.2.4.data/data/licensing/credist.txt,sha256=3AIXJUSahqeLgB0n9FMXQse3OGWHssKfhCmiFnkq8rw,2661
+dpcpp_cpp_rt-2023.2.4.data/data/licensing/compiler/c/third-party-programs.txt,sha256=e0JrTAI5cY__0nKMS2uQBNb0aMQemtf-m4vgmPpDYeY,71661
+dpcpp_cpp_rt-2023.2.4.dist-info/LICENSE.txt,sha256=TyK6HfzztsNLyEwvmp1-Ba2ER1VYu0RXTae2w4ESb9c,26661
+dpcpp_cpp_rt-2023.2.4.dist-info/METADATA,sha256=zrSNF1qO6FAywMv1cTiZl0ln44BY4pktwslVj6I1eWE,1311
+dpcpp_cpp_rt-2023.2.4.dist-info/WHEEL,sha256=dNxT-MG8LzRaqJYFQzfes411XUTOrT0gsWYZz0BoKLo,138
+dpcpp_cpp_rt-2023.2.4.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dpcpp_cpp_rt-2023.2.4.dist-info/RECORD,,
