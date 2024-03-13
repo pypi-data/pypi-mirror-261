@@ -1,0 +1,3 @@
+dbt-common<2.0,>=1.0.0b1
+dbt-adapters<2.0,>=1.0.0b1
+trino~=0.326
