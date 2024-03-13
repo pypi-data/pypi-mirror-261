@@ -1,0 +1,8 @@
+setup.py
+qwertyuiop_porsevati/__init__.py
+qwertyuiop_porsevati/one.py
+qwertyuiop_porsevati/two.py
+qwertyuiop_porsevati.egg-info/PKG-INFO
+qwertyuiop_porsevati.egg-info/SOURCES.txt
+qwertyuiop_porsevati.egg-info/dependency_links.txt
+qwertyuiop_porsevati.egg-info/top_level.txt
