@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: exdyn
+Version: 0.0.1
+Summary: Analyze cell state dynamics dependent on extrinsic factors
+Home-page: https://github.com/kojikoji/exdyn
+Author: Kojima Yasuhiro
+Author-email: tiisaishima@gmail.com
+Project-URL: Bug Tracker, https://github.com/kojikoji/exdyn/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scanpy >=1.7.2
+Requires-Dist: torch >=1.11.0
+Requires-Dist: pytorch-lightning <1.7.0,>=1.6.1
+Requires-Dist: scvelo >=0.2.3
+Requires-Dist: pandas >=1.4.2
+Requires-Dist: numpy >=1.21.6
+Requires-Dist: functorch >=0.1.1
+Requires-Dist: torchsde >=0.2.5
+Requires-Dist: einops >=0.4.1
+Requires-Dist: leidenalg >=0.8.9
+
+# Exdyn
+Exdyn is intended to analyze colocalization relation ships between single cell transcriptomes, integrating them with spatial transcriptome.
+
+## Instalation
+You can install exdyn using pip command from your shell.
+```shell
+pip install exdyn
+```
+
+## Usage
+You need to prepare [`AnnData` objects](https://anndata.readthedocs.io/en/latest/) which includes spliced and unspliced transcript counts for single cell transcriptome respectively. You can see the usage in [IPython Notebook1](tutorial/sim_analysis_batched_experimental_conditions.ipynb) and [IPython Notebook2](tutorial/scc_analysis_colocalization_conditions.ipynb).
