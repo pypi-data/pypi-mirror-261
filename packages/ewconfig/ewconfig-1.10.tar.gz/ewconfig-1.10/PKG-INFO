@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ewconfig
+Version: 1.10
+Summary: Create EW config from Station XML etc
+Author-email: andrew cooke <andrewcooke@isti.com>
+Project-URL: homepage, https://pypi.org/project/ewconfig/
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: obspy
+
+
+# ewconfig
+
+* Generate Earthworm configuration from Station XML
+  ([stationxml2ew](doc/stationxml2ew.md)) or SEED files (rdseed and
+  [sacpz2ew](doc/sacpz2ew.md)).
+
+* Merge data from different configurations ([ewmerge](doc/ewmerge.md)).
+
+* Remove sources from a configuration ([ewprune](doc/ewprune.md)).
+
+## Further Documentation
+
+* [Install](INSTALL.md)
+
+* [Examples](EXAMPLES.md)
+

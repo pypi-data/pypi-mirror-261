@@ -1,0 +1,28 @@
+
+[project]
+name='ewconfig'
+version='1.10'
+authors=[
+  {name='andrew cooke', email='andrewcooke@isti.com'},
+]
+description='Create EW config from Station XML etc'
+readme='README.md'
+requires-python='>=3.9'
+classifiers=[
+  "Programming Language :: Python :: 3.9",
+  "Operating System :: OS Independent",
+  "Development Status :: 4 - Beta",
+]
+dependencies=[
+  'numpy',
+  'obspy',
+]
+
+[project.scripts]
+sacpz2ew='ewconfig.sacpz2ew:main_args'
+stationxml2ew='ewconfig.stationxml2ew:main_args'
+ewmerge='ewconfig.ewmerge:main_args'
+ewprune='ewconfig.ewprune:main_args'
+
+[project.urls]
+homepage='https://pypi.org/project/ewconfig/'
