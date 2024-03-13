@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "python-pilot"
+version = "0.0.6"
+description = ""
+authors = ["Roy Pasternak <roy@larium.co>"]
+readme = "README.md"
+packages = [
+    { include = "pypilot" },
+]
+
+[tool.poetry.scripts]
+pypilot = "pypilot.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^1.13.3"
+python-dotenv = "^1.0.1"
+tiktoken = "^0.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
