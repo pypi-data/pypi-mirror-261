@@ -1,0 +1,14 @@
+browserforge/__main__.py,sha256=rSP-znD1bZ8LQgdF5K3AmtOmg5EiPNAdX6i4AyhGdfU,1097
+browserforge/bayesian_network.py,sha256=dxvqz5SQsw3DUIOfykN-6FqmoMIdPHPWgRQr997oY08,10067
+browserforge/download.py,sha256=-x0MdK0K6xOFCW5H4kJ2yhSN0YUCyWVRkJgVExSMBzE,7238
+browserforge/fingerprints/__init__.py,sha256=ZBYrkK71vMG--xvBAvdTrKz5L5si8DQyegAaaSa_-gk,280
+browserforge/fingerprints/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+browserforge/fingerprints/generator.py,sha256=ueQJoCUYJf0y5ClNJtsDaLtp0xWp-4IKTj_wdGXjPgc,11206
+browserforge/headers/__init__.py,sha256=R1Xvd14leMu_yIKPZuvRGHkEw8-sTtRW-7fiFqf3dEg,131
+browserforge/headers/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+browserforge/headers/generator.py,sha256=63A_e5yzCnt8t_6ClPZUcS-6k-WUl7cSxGfPkRQcxTE,21353
+browserforge/headers/utils.py,sha256=jO4I2WNw6jrA3ymPSfRkssdoKMPN3_RsvAnfmyMeFIw,1218
+browserforge-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+browserforge-1.0.0.dist-info/METADATA,sha256=3myOhxH8n4BWLDO25jFLqpSYJ-OYQaRJ3_XhSzA7tBc,24802
+browserforge-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+browserforge-1.0.0.dist-info/RECORD,,
