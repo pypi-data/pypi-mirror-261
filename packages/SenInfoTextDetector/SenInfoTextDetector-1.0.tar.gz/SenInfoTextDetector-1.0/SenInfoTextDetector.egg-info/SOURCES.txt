@@ -1,0 +1,7 @@
+README.md
+setup.py
+SenInfoTextDetector.egg-info/PKG-INFO
+SenInfoTextDetector.egg-info/SOURCES.txt
+SenInfoTextDetector.egg-info/dependency_links.txt
+SenInfoTextDetector.egg-info/requires.txt
+SenInfoTextDetector.egg-info/top_level.txt
