@@ -1,0 +1,9 @@
+aiocsv_utils/__init__.py,sha256=VGt6tDUg0ZepPkr96HHSX1V0CNl8ii7FNqZy6qWaZDw,68
+aiocsv_utils/convert.py,sha256=m0NIh9BkVeuk0qs2wSV2f5mRnlogopvCEIAr1uXvTm8,735
+aiocsv_utils/read.py,sha256=NABbbrAeMQGtlujl-AmKllyHWeMAIbXEVMVV-BvpQyM,8211
+aiocsv_utils/write.py,sha256=cGOBRLt1ySWu1CTk-N6XEATU8lP_N9_4N49iWDSv_oU,6170
+aiocsv_utils-0.0.1.dist-info/LICENSE,sha256=oFq9FEIyAGvzUW2asR4JnQiFiH0X7cNCLO4N_bhiZUk,1068
+aiocsv_utils-0.0.1.dist-info/METADATA,sha256=sdowghDRDyajxoPt9Qefu-7QUBlldWMwTxHaHUeUlqs,951
+aiocsv_utils-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aiocsv_utils-0.0.1.dist-info/top_level.txt,sha256=SEDRXS4lAgXu37U9fhsWrKpXEGjdmWZfmXwmOnhe2z0,13
+aiocsv_utils-0.0.1.dist-info/RECORD,,
