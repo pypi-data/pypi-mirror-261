@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+wzy_learn/__init__.py
+wzy_learn.egg-info/PKG-INFO
+wzy_learn.egg-info/SOURCES.txt
+wzy_learn.egg-info/dependency_links.txt
+wzy_learn.egg-info/top_level.txt
