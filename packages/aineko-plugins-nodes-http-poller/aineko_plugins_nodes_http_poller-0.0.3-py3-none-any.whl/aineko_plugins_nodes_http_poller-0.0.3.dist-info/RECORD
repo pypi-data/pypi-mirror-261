@@ -1,0 +1,7 @@
+aineko_plugins/nodes/http_poller/__init__.py,sha256=SqZh7_jS8LbHUpsxma9joWi1rk0OOjr2fQhzJpWEFmE,180
+aineko_plugins/nodes/http_poller/http_poller.py,sha256=ON6gc6QQTN-Q7btY8EUAsHOxq9OJotnLq2p4J7B1fX4,10230
+aineko_plugins/nodes/http_poller/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aineko_plugins_nodes_http_poller-0.0.3.dist-info/LICENSE,sha256=ysXP0zTiJiCLcqlS_wETU728hENPDVTwG0ccW7_0KkU,11356
+aineko_plugins_nodes_http_poller-0.0.3.dist-info/METADATA,sha256=q7hzar6KMD0AOz92aDNOF3QNIgo7hlaaARc8-C-LlME,1414
+aineko_plugins_nodes_http_poller-0.0.3.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+aineko_plugins_nodes_http_poller-0.0.3.dist-info/RECORD,,
