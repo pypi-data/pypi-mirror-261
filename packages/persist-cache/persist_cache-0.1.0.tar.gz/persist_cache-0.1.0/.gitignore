@@ -1,0 +1,28 @@
+# Exclude everything.
+*
+
+# Then, include just the folders and files we want.
+!README.md
+!LICENCE
+!CHANGELOG.md
+!pyproject.toml
+!src/
+!src/**/*
+!tests/
+!tests/**/*
+!.github/
+!.github/**/*
+
+# Finally, exclude anything in the above inclusions that we don't want.
+*.pyc
+*.pyo
+*.ipynb
+__pycache__/
+.pytest_cache/
+tests/profiler.py
+tests/bench.py
+.archive/
+.cachier/
+.persist_cache/
+.joblib/
+bench.cache/
