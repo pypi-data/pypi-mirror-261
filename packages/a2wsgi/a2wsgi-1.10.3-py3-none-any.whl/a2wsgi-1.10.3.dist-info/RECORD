@@ -1,0 +1,10 @@
+a2wsgi-1.10.3.dist-info/METADATA,sha256=eOoj4TncjEsl4-YNg0J2Ag5ohD2tmOeuyNkJgGSZE5g,3850
+a2wsgi-1.10.3.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+a2wsgi-1.10.3.dist-info/licenses/LICENSE,sha256=xacnkn1wNfIpygUKxURVJVv8YmVdFUbRJvAcC1X67xk,11341
+a2wsgi/__init__.py,sha256=-Nx1j3W9XISNozSNjA3_oESLVCNzy8hLNAK6fduyPn0,184
+a2wsgi/asgi.py,sha256=lbtJJTJUWJ9C9B7xEspBYFW6LIjmIya3GXrjUHFfdmo,9114
+a2wsgi/asgi_typing.py,sha256=I8HtcFfZIK-hZrvimhWmK4PuOjyI6RtZf81qRw9hzxU,4118
+a2wsgi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+a2wsgi/wsgi.py,sha256=sXnPfRmiTwbOUDwMRihzcH_l8f1GuTOUcyewhmHlRt0,9144
+a2wsgi/wsgi_typing.py,sha256=-vIccby9jhWPkR0085WXZRCSjj6zJTHM4zTMioDaE84,7904
+a2wsgi-1.10.3.dist-info/RECORD,,
