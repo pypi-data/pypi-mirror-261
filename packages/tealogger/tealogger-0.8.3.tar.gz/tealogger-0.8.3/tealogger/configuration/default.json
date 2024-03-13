@@ -1,0 +1,78 @@
+{
+    "version": 1,
+    "formatters": {
+        "default": {
+            "format": "[%(levelname)s %(name)s %(asctime)s] %(message)s",
+            "datefmt": "%Y-%m-%dT%H:%M:%S%z"
+        },
+        "short": {
+            "format": "[%(levelname)-.1s %(asctime)s] %(message)s",
+            "datefmt": "%Y-%m-%dT%H:%M:%S%z"
+        },
+        "color": {
+            "()": "tealogger.tealogger.ColorFormatter",
+            "record_format": "[%(levelname)s %(name)s %(asctime)s] %(message)s",
+            "date_format": "%Y-%m-%dT%H:%M:%S%z"
+        }
+    },
+    "filters": {},
+    "handlers": {
+        "default": {
+            "class": "logging.StreamHandler",
+            "level": "WARNING",
+            "formatter": "default",
+            "filters": [],
+            "stream": "ext://sys.stdout"
+        },
+        "stdout": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "color",
+            "filters": [],
+            "stream": "ext://sys.stdout"
+        },
+        "stderr": {
+            "class": "logging.StreamHandler",
+            "level": "ERROR",
+            "formatter": "color",
+            "filters": [],
+            "stream": "ext://sys.stderr"
+        }
+    },
+    "loggers": {
+        "base": {
+            "level": "WARNING",
+            "propagate": false,
+            "filters": [],
+            "handlers": [
+                "stdout"
+            ]
+        },
+        "tea": {
+            "level": "DEBUG",
+            "propagate": false,
+            "filters": [],
+            "handlers": [
+                "stdout"
+            ]
+        },
+        "tealogger": {
+            "level": "WARNING",
+            "propagate": false,
+            "filters": [],
+            "handlers": [
+                "stdout"
+            ]
+        }
+    },
+    "root": {
+        "level": "WARNING",
+        "propagate": false,
+        "filters": [],
+        "handlers": [
+            "default"
+        ]
+    },
+    "incremental": "",
+    "disable_existing_loggers": false
+}
