@@ -1,0 +1,12 @@
+pywaybackup/SnapshotCollection.py,sha256=G6DjNKvBkXeEJXFqESHSfZEQ0b0cMbuI9sB2_fXam1M,3144
+pywaybackup/Verbosity.py,sha256=7uzKynCoFqIuFSQjuiCSaysXtO8NkWnx_Ojwah8ASew,1669
+pywaybackup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywaybackup/__version__.py,sha256=ZbrGjsYU2ekVSe1-DcOOl7YsjrwB1bbJTUQlEi8pMjU,21
+pywaybackup/archive.py,sha256=CYO9Gunb3Fs0dmyeWqq6sgvI7ZPRg_b3GqAwYxRPEyA,13627
+pywaybackup/main.py,sha256=EGUqmqlZhCvLgqSow9qwkh2thE5L4TN0UqsYNPITe88,3147
+pywaybackup-0.6.4.dist-info/LICENSE,sha256=ZQtS7nJ9j30EbPLxK4DiDdeJrLdYBciWUOFReXIiVC0,1065
+pywaybackup-0.6.4.dist-info/METADATA,sha256=2qr70XuHw6pIMxfTgxMsbelPOZkWYpODZih5r8Qc4ak,4967
+pywaybackup-0.6.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pywaybackup-0.6.4.dist-info/entry_points.txt,sha256=ZmF_VKgIYENo5P4wHdmW6GsgTDrJ6hDGx8rYT2lI8y0,52
+pywaybackup-0.6.4.dist-info/top_level.txt,sha256=4wVBZuqGxJVPt63G09FzoOGsB_yWzRJLqmLDEZbz_ck,12
+pywaybackup-0.6.4.dist-info/RECORD,,
