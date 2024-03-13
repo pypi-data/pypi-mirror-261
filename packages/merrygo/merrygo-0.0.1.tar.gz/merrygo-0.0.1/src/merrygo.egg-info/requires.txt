@@ -1,0 +1,5 @@
+typer
+
+[dev]
+mypy>=0.3.2
+ruff
