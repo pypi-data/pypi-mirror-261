@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eda_amam
+Version: 0.0.4
+Summary: EDA library
+Home-page: https://gitlab.com/am2startup/eda
+Author: apap2020
+Author-email: pjy0422@postech.ac.kr
+License: UNKNOWN
+Keywords: eda
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+
+UNKNOWN
+
