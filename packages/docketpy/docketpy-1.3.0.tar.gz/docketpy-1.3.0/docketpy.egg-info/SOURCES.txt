@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+docketpy/__init__.py
+docketpy/core.py
+docketpy/mathx.py
+docketpy.egg-info/PKG-INFO
+docketpy.egg-info/SOURCES.txt
+docketpy.egg-info/dependency_links.txt
+docketpy.egg-info/top_level.txt
+tests/test_core.py
+tests/test_mathx.py
