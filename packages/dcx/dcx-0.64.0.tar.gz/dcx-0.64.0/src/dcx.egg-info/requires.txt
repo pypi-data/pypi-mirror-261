@@ -1,0 +1,7 @@
+reportlab
+requests
+selenium
+rich
+turbowriter
+turbodinwriter
+pillow
