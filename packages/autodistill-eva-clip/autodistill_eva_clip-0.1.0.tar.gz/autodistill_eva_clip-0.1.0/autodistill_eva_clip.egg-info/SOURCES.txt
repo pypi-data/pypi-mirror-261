@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+autodistill_eva_clip.egg-info/PKG-INFO
+autodistill_eva_clip.egg-info/SOURCES.txt
+autodistill_eva_clip.egg-info/dependency_links.txt
+autodistill_eva_clip.egg-info/requires.txt
+autodistill_eva_clip.egg-info/top_level.txt
+src/__init__.py
+src/eva_clip_model.py
+test/test_eva_clip.py
