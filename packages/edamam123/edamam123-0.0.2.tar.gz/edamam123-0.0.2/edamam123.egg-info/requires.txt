@@ -1,0 +1,14 @@
+cython<3
+ipykernel
+nbformat>=4.2.0
+numpy
+pandas
+plotly
+python-dev-tools
+scikit-learn
+scipy
+seaborn
+statsmodels
+tqdm
+umap-learn
+wheel
