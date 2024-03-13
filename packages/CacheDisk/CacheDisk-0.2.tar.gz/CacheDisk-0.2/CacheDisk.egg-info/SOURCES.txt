@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+CacheDisk.egg-info/PKG-INFO
+CacheDisk.egg-info/SOURCES.txt
+CacheDisk.egg-info/dependency_links.txt
+CacheDisk.egg-info/top_level.txt
+cachedisk/__init__.py
+cachedisk/core.py
+tests/test_caching.py
