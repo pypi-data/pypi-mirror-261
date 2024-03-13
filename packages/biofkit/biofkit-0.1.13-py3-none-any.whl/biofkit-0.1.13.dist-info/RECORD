@@ -1,0 +1,12 @@
+biofkit/__init__.py,sha256=JO0sexYe6zoJKAuv6JBG5t9Gl9XSo2lqauk7MZeJukc,100
+biofkit/proteinKit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biofkit/proteinKit/oldProtein.py,sha256=3WZwmWyts1p6n5AOKK3qA-z7Q556IupJsJsm3CR7wIw,11777
+biofkit/proteinKit/pdbKit.py,sha256=DJfyvqI3SRxuViAPtBQpuMa4-TdzhwkQr3-tJELlQPA,11207
+biofkit/proteinKit/proteinClass.py,sha256=kS0HFNh4NJ0ToUBgtnwwC95LwJdF-tP2FXgEWiEkxIk,6745
+biofkit/seqKit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biofkit/seqKit/convKit.py,sha256=m_hoeDK6ziEA0Y0t2BB1pC-hsL8rbzbMpOGT7ppWlSE,36493
+biofkit-0.1.13.dist-info/LICENSE,sha256=YNgUXVtgGKLKAwZ_QOut_JtfStIcyBuvAFneQqQxzm0,11357
+biofkit-0.1.13.dist-info/METADATA,sha256=5Jvnu0dKD3QFXe0aDGBkIuwJ37b6VPQ0XswU91DdAWg,1127
+biofkit-0.1.13.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+biofkit-0.1.13.dist-info/top_level.txt,sha256=nDVVeAwetdq_k16gShzzOfyBVTO3eHEEoLYiPCNsCT0,8
+biofkit-0.1.13.dist-info/RECORD,,
