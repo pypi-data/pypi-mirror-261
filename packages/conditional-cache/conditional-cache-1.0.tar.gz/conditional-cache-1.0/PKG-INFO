@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: conditional-cache
+Version: 1.0
+Summary: Conditional cache is a wrapper over functools.lru_cache that allows for conditionally caching based on the output of the function.
+Home-page: https://github.com/Eric-Canas/ConditionalCache
+Author: Eric-Canas
+Author-email: eric@ericcanas.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: circular-dict
+
+# ConditionalCache
+A wrapper over functools that allows to add conditions over the output to cache decorators
