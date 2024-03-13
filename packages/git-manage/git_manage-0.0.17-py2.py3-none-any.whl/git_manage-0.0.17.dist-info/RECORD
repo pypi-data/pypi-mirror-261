@@ -1,0 +1,12 @@
+git_manage/__init__.py,sha256=JatCzT9RIqVBFUmemNDTpfz8i0NF6BYV7Tq_aELBcZs,635
+git_manage/git_tools.py,sha256=4j5Fz6_8DlUT5EOGBZko0mLfl5yXUP9OnDJk6fShJ10,23049
+git_manage/url.py,sha256=10hhNrZGQNQT8WvLACg14bfCqlhw6qJmgRqqrcchRiA,783
+git_manage/support/config.yaml,sha256=IHGZSQrtObeHre3WuAWYp4ANi6rOCfcpZF7fBTFGHqM,209
+git_manage-0.0.17.data/scripts/gitman,sha256=OU8IUB_-iWOf7XtX_Yo76gIszU7DY6-Ulsv6ApT3B6g,1426
+git_manage-0.0.17.data/scripts/gitman.bat,sha256=udrEDR7YyxdgdUOm8zkR54EYqhI4yVg9IG0dF5o0ja4,36
+git_manage-0.0.17.data/scripts/gitpush,sha256=pV8FJ2KXvPx6-k-q7m7sxE8E6bZ_O34LyglnTq2d4Qk,62
+git_manage-0.0.17.dist-info/LICENSE,sha256=D4AI_CISRMvvnLqKDPx-1wYnqXCJa6eF619ahj0xAVE,1055
+git_manage-0.0.17.dist-info/METADATA,sha256=IYWUVCsOMpCXypouuRL9cNyfcndiG06NsA_Qt8dqb4E,463
+git_manage-0.0.17.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+git_manage-0.0.17.dist-info/top_level.txt,sha256=4anXa5eY-0gAExAaBiZo0EIxKUrAP0u-W0PBrd33jCM,11
+git_manage-0.0.17.dist-info/RECORD,,
