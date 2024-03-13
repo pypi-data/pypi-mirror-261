@@ -1,0 +1,6 @@
+click
+langchain
+langchain-anthropic
+langchain-community
+langchain-openai
+setuptools
