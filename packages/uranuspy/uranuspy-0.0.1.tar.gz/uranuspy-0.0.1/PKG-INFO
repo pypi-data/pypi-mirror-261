@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: uranuspy
+Version: 0.0.1
+Summary: uranuspy is the python SDK in Tianmu client
+Home-page: https://github.com/ManaAI/uranuspy
+Author: Strange AI
+Author-email: strangeai2019@163.com
+License: GPL-3.0
+Keywords: AI Bot,LLM,chatbot,chatting
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client
+Requires-Dist: paho-mqtt
+Requires-Dist: validators
+Requires-Dist: pydantic
+Requires-Dist: loguru
+Requires-Dist: lsb_release_ex
+
+# F.R.I.D.A.Y
+
+the next generation artificial intelligence bot after Jarvis. in this vision, some improvements were made:
+
+- More robust;
+- Connect to *uranus*;
+- Mission support, I can add missions to Friday;
+- Learnable, Friday supports learning new things with mental;
+- More..
+
+
+## Updates
+
+- **2021.11.14**: Add new Siren client support, it now can be connected with Siren client;
+
+
+## Requirements
+
+For ubuntu setup simply:
+
+```
+pip install -r requirements.txt
+```
+
+If on windows, for some package might not easy to install, like PyAduio, it can be installed via `pipwin`:
+
+```
+pip install pipwin
+pipwin install pyaudio
+```
