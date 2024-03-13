@@ -1,0 +1,7 @@
+[project]
+name = "kenverters"
+authors = [
+    {name = "Valerie Faucon-Morin", email = "valerie.fauconmorin@kensho.com"},
+]
+version = "0.0.0"
+description = "Coming soon"
