@@ -1,0 +1,16 @@
+_gaussianfft.so,sha256=3_lq6yHWwdpP2mpp3vxYjgP10Odnjysi9buUAL_2pRM,38759920
+gaussianfft/__init__.py,sha256=qwvVlK8q6iDdekfaQKbVVLqUmKfyQava-mC3s1_x0cY,851
+gaussianfft/__init__.pyi,sha256=zrRZKlYJpj2nlbS0L0mVbZJ6AnLmfIGgNJ3kwhm-C-o,6487
+gaussianfft/_version.py,sha256=nmVMEP2kpLDIzjgS-U1taCdJbVrmv_k8ao6RojGcvRg,411
+gaussianfft/advanced/__init__.py,sha256=5Qb1I3nkFDdHfQYqmWdFe7LBgfJOX6kOyc45CL3m1FQ,61
+gaussianfft/advanced/__init__.pyi,sha256=yp65_7fQ_oaUprlWPERdvqTB-Fbq3f0MXK48sdbU5JE,1856
+gaussianfft/util/__init__.py,sha256=BWuyxmeO2TWyfFbuE5tsbO_noUMAnWdai45TW6ZW0rk,366
+gaussianfft/util/empirical_variogram.py,sha256=STet-_tJ5NJkXvGYE1BhvNnEiw1kyvCcH8sVmw4htR4,8380
+gaussianfft/util/empirical_variogram2.py,sha256=DSDGotvg8wH8Jfb3k0a9CYuYd7ur905pAY9z_rRrbI0,8481
+gaussianfft/util/padding_analyzer.py,sha256=psgHaqOinzsWIRpZHYOfVi44EcNop7gH0vt2QaRM7fE,3037
+gaussianfft/util/resource_extrapolator.py,sha256=-jL8hXN1WG6shPFiXAAzkYJoewKnf8RdfBoRuHOMW08,2063
+gaussianfft-1.1.2.dist-info/METADATA,sha256=VCTWA85pPNjIPup0coMFDbyT_rUf6dX2VQSms6I1p78,9055
+gaussianfft-1.1.2.dist-info/WHEEL,sha256=aUBZok4bsr5e0xUcuapzwqR9C46Pu8ONyZv1nWtu2QU,114
+gaussianfft-1.1.2.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaussianfft-1.1.2.dist-info/licenses/LICENSE.txt,sha256=PA7ZJrSxCkMWZZpqy5-fEMT4oFW3gYehdhkLWbhmxfQ,1323
+gaussianfft-1.1.2.dist-info/RECORD,,
