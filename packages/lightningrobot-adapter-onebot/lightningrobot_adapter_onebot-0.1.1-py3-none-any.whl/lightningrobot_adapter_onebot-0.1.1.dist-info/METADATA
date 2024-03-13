@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lightningrobot-adapter-onebot
+Version: 0.1.1
+Summary: 闪电机器人OneBot适配器。
+Author: Zhihan
+Author-email: zhihan2727@hotmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: signal (>=0.1,<0.2)
+Requires-Dist: websocket (>=0.1,<0.2)
+Description-Content-Type: text/markdown
+
+
