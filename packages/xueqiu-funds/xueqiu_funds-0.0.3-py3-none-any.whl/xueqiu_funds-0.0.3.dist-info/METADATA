@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: xueqiu-funds
+Version: 0.0.3
+Summary: ❄️ 雪球基金 Python Client
+Home-page: https://github.com/QIN2DIM/xueqiu_funds
+License: Apache-2.0
+Keywords: xueqiu,雪球,雪球基金,蛋卷基金,xueqiu-funds,snowball
+Author: QIN2DIM
+Author-email: yaoqinse@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: httpx[http2]
+Requires-Dist: jupyterlab
+Requires-Dist: openpyxl
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: pydantic (>=2.6.3,<3.0.0)
+Requires-Dist: tabulate
+Project-URL: Documentation, https://github.com/QIN2DIM/xueqiu_funds
+Project-URL: Repository, https://github.com/QIN2DIM/xueqiu_funds
+Description-Content-Type: text/markdown
+
+# 雪球基金 Python Client
+
+## Get started
+
+### Install package
+
+```shell
+pip install xueqiu_funds
+```
+
+### Quick start
+
+```python
+from xueqiu_funds import XueQiuFunds
+
+# 华夏上证科创板50成份ETF联接C
+fd_code = "011613"
+
+xqf = XueQiuFunds()
+
+detail = xqf.get_fund_detail(fd_code)
+intro = xqf.get_fund_intro(fd_code)
+
+fd_name = intro["data"]["fd_name"]
+other_rate_table = detail["data"]["fund_rates"]["other_rate_table"]
+
+print({fd_name: other_rate_table})
+
+```
+
+
+
+
