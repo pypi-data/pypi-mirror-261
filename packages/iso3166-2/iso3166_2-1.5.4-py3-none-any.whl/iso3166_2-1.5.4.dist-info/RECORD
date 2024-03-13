@@ -1,0 +1,8 @@
+iso3166_2/README.md,sha256=LUd1QnRJu_pVjNhEHIQfHvd8kI2jWO78K3GWNEvWVbw,4330
+iso3166_2/__init__.py,sha256=7tazl0nl25frOLnXybiQQGlTR5cNoQnwVvbI7r-vBas,884
+iso3166_2/iso3166-2.json,sha256=TC8CzpJ7OPq2d77q5dVNLC9CYIXaPqNw-QG0lvXTGAk,1696422
+iso3166_2/iso3166_2.py,sha256=D1tZO3_KLQD7MpXQNUyqzDst6N9IR4gKo1erFGpdhn0,37977
+iso3166_2-1.5.4.dist-info/LICENSE,sha256=SDsAtNKwUidzPXXmuOsvPnIot2qAwdLbNbPE2QU2Qrs,1058
+iso3166_2-1.5.4.dist-info/METADATA,sha256=-okCNEiIlScoSEJYjWb_hdm3T5-TH6QXIhljO--fKz8,24343
+iso3166_2-1.5.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+iso3166_2-1.5.4.dist-info/RECORD,,
