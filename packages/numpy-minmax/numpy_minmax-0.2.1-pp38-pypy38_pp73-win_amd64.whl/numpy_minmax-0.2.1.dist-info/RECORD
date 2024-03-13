@@ -1,0 +1,10 @@
+_numpy_minmax.pypy38-pp73-win_amd64.pyd,sha256=roHvuZ2XivomF1q7p4i7YBcgsH7G7uVdMmFgKLcgyxc,13312
+numpy_minmax/__init__.py,sha256=V_QfPj-DI3atyBswcuQls4wPL1JaxMPQwu9OPUZpISk,1048
+numpy_minmax/_minmax.c,sha256=rhLgmACAv00j3cZeo5ghbzzL0DmjDZteIQ-jUUrwMzI,7517
+numpy_minmax/_minmax_cffi.py,sha256=aMGVH41FnLPEM4P6gOGyGdYeakpg3jMuSDeotlcbSFg,786
+numpy_minmax/_version.py,sha256=o6YwDA0ah54nUlRwdHt1glbdDrM6-6unpDOnww_R_Fg,456
+numpy_minmax-0.2.1.dist-info/LICENSE,sha256=tyMnN85VdHAxz4vXCRhVzlEGhlRn81EFESZo2iAWw2o,1084
+numpy_minmax-0.2.1.dist-info/METADATA,sha256=cIQtpTeN_8WGB57wubCWH1t7MqoaG4UI2TSqMmX7X5E,3881
+numpy_minmax-0.2.1.dist-info/WHEEL,sha256=fAsO8Y4sTZ_pYj32GOpGS8gjaRg1Ie4l9VhGLuQJiq4,107
+numpy_minmax-0.2.1.dist-info/top_level.txt,sha256=lWZgQ_A9X2cC4wFf4lDfOY5HQ9Rb6iPIEVxgOmvQ9Q4,33
+numpy_minmax-0.2.1.dist-info/RECORD,,
