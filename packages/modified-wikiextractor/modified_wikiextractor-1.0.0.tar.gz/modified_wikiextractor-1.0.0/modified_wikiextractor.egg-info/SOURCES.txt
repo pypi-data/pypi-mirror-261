@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+modified_wikiextractor.egg-info/PKG-INFO
+modified_wikiextractor.egg-info/SOURCES.txt
+modified_wikiextractor.egg-info/dependency_links.txt
+modified_wikiextractor.egg-info/entry_points.txt
+modified_wikiextractor.egg-info/top_level.txt
+wikiextractor/WikiExtractor.py
+wikiextractor/__init__.py
+wikiextractor/cirrus-extract.py
+wikiextractor/clean.py
+wikiextractor/extract.py
+wikiextractor/extractPage.py
