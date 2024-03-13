@@ -1,0 +1,12 @@
+interacticore/__init__.py,sha256=u8gOdtJex3wLxTmvi9nd3A2PRJjgOvtV5fl8qTw-_G4,1328
+interacticore/commands/__init__.py,sha256=r-2Of8UmphML7QlL8EQKGezGhb24FYub1kS7tVWDcVg,1247
+interacticore/commands/chatcommand.py,sha256=G0KdqtaiWN8w5-52gWA1UdWFCxRj-1dfxz5a5OXHh7U,3412
+interacticore/commands/llmcommand.py,sha256=Qb10tKRVVNrHRyNNR4J6V3vw9zSmwBDnLOImvMy3q8A,3399
+interacticore/interacticore.py,sha256=-xY3llL4YZZzyBtj_7sXV-6JTg0pB1cEBpggTwMioyk,7643
+interacticore/parsers/__init__.py,sha256=80oFXKImaFnMH-mSJsEkxfgZ7ROAj-0ZA7Jd27sJLyQ,1227
+interacticore/parsers/brokenjsonparser.py,sha256=hiIRjIB8a6QxEZHdgqmcPs56FRG5QGP-L29worWv0ko,8897
+interacticore/utils.py,sha256=0C4y9k7gGQXqEPy0cE3QWBf6OmqZmafAvV_VdScNlhg,1467
+interacticore-0.0.4.dist-info/LICENSE,sha256=cQYGhd4RTa_UcWaJSr_jAjxRpidhEXM2w1eU6LpSejc,1116
+interacticore-0.0.4.dist-info/METADATA,sha256=Lp91Rlb23cs-JjzS4jFTbB3wdL7J51S9IMugTWzTVdA,731
+interacticore-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+interacticore-0.0.4.dist-info/RECORD,,
