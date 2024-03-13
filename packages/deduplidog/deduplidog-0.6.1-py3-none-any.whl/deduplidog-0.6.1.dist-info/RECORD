@@ -1,0 +1,10 @@
+deduplidog/__init__.py,sha256=v8n76HbOWVbpiJug2WzyDsOn1oqyoZ7xIn7Xcg39G4w,61
+deduplidog/__main__.py,sha256=EgVEWam1TUImehe9RzPZhXtVbYZyrVam2gwJ-dK7x_Y,3717
+deduplidog/deduplidog.py,sha256=kAz24NqcDUWwFOINNstUmI_4U06NQ0A6sNvT9ykUfZQ,28587
+deduplidog/form.tcss,sha256=dqN3Mn1Kz-Esz5IYHvcHsF6-d16DqijeHS7SGbQIDcI,132
+deduplidog/interface_utils.py,sha256=JyYh-Kq_Up5rzZ2H5-kdp4gmaPI6bGObqLeMI_MCPso,1367
+deduplidog/utils.py,sha256=t4oXtpwfDzc0mhAfblabYtbKlB0PK6c1od9tKwE2hc8,7274
+deduplidog-0.6.1.dist-info/METADATA,sha256=7pSrpDftmJ5KyQH_Mi9H1twH1VyVMX9SH_rTpYZIXZI,11972
+deduplidog-0.6.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+deduplidog-0.6.1.dist-info/entry_points.txt,sha256=s6u2WmmuQTO-7An1ERmHQmvSntBr07almZ0iqFDTxhE,55
+deduplidog-0.6.1.dist-info/RECORD,,
