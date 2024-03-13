@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ms-auth
+Version: 1.1.6
+Summary: Microsoft Login Lib
+Author: Harry-zklcdc
+Author-email: zklcdc@qq.com
+Platform: linux
+Platform: windows
+Platform: macos
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
