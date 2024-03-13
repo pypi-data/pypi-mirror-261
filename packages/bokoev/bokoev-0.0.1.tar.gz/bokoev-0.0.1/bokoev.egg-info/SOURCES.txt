@@ -1,0 +1,8 @@
+setup.py
+bokoev.egg-info/PKG-INFO
+bokoev.egg-info/SOURCES.txt
+bokoev.egg-info/dependency_links.txt
+bokoev.egg-info/top_level.txt
+files/__init__.py
+files/one.py
+files/two.py
