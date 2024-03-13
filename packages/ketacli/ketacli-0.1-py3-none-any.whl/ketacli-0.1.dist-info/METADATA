@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ketacli
+Version: 0.1
+Summary: KetaDB Client
+Home-page: https://xishuhq.com
+Author: lvheyang
+Author-email: cuiwenzheng@ymail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: prettytable
+Requires-Dist: pyyaml
+Requires-Dist: mando
+
+# ketadb 工具
+
+示例：
+
+```shell
+ketacli login --name <username> --endpoint http://localhost:9000 --token <yourtoken>
+
+ketacli logout
+
+# 枚举所有仪表盘
+ketacli.py list dashboard --fields id,app,updateTime --sort updateTime --order asc --prefix test 
+```
